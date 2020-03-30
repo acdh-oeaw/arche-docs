@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">Documentation</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/acdhoeaw-oai.html"><abbr title="\acdhOeaw\oai">oai</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/acdhoeaw.html">acdhOeaw</a></li>
+                    <li><a href="../namespaces/acdhoeaw-oai.html">oai</a></li>
+                    <li><a href="../namespaces/acdhoeaw-oai-metadata.html">metadata</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            LiveCmdiMetadata
+                                                    <span class="phpdocumentor-class__implements">
+                    implements
+                                            <a href="../classes/acdhOeaw-oai-metadata-MetadataInterface.html"><abbr title="\acdhOeaw\oai\metadata\MetadataInterface">MetadataInterface</abbr></a>                                    </span>
+                                </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">122</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary">Creates &amp;lt;metadata&amp;gt; element by filling in an XML template with values
+read from the repository resource&#039;s metadata.</p>
+        <section class="phpdocumentor-class__description"><p>Required metadata format definitition properties:</p>
+<ul>
+<li><code class="prettyprint">uriProp</code> - metadata property storing resource's OAI-PMH id</li>
+<li><code class="prettyprint">idProp</code> - metadata property identifying a repository resource</li>
+<li><code class="prettyprint">labelProp</code> - metadata property storing repository resource label</li>
+<li><code class="prettyprint">schemaProp</code> - metadata property storing resource's CMDI profile URL</li>
+<li><code class="prettyprint">templateDir</code> - path to a directory storing XML templates;
+each template should have exactly same name as the CMDI profile id, e.g. <code class="prettyprint">clarin.eu:cr1:p_1290431694580.xml</code></li>
+<li><code class="prettyprint">defaultLang</code> - default language to be used when the template doesn't explicitly specify one</li>
+</ul>
+<p>Optional metadata format definition properties:</p>
+<ul>
+<li><code class="prettyprint">propNmsp[prefix]</code> - an array of property URLs namespaces used in the template</li>
+<li><code class="prettyprint">schemaDefault</code> provides a default CMDI profile (e.g. <code class="prettyprint">clarin.eu:cr1:p_1290431694580.xml</code>)
+to be used when a resource's metadata don't contain the <code class="prettyprint">schemaProp</code> or none of its values
+correspond to an existing CMDI template.
+If <code class="prettyprint">schemaDefault</code> isn't provided, resources which don't contain the <code class="prettyprint">schemaProp</code>
+in their metadata are automatically excluded from the OAI-PMH search.</li>
+<li><code class="prettyprint">schemaEnforce</code> if provided, only resources with a given value of the <code class="prettyprint">schemaProp</code>
+are processed.</li>
+<li><code class="prettyprint">iiifBaseUrl</code> used for <code class="prettyprint">val="IIIFURL</code> (see below)</li>
+</ul>
+<p>XML tags in the template can be annotated with following attributes:</p>
+<ul>
+<li><code class="prettyprint">val="valuePath"</code> specifies how to get the value. Possible <code class="prettyprint">valuePath</code> variants are:
+<ul>
+<li><code class="prettyprint">/propUri</code> - get a value from a given metadata property value</li>
+<li><code class="prettyprint">/propUri[key]</code> - parse given metadata property value as YAML and take the value
+at the key <code class="prettyprint">key</code></li>
+<li><code class="prettyprint">@propUri1/propUri2</code> - get another resource URL from the <code class="prettyprint">propUri1</code> metadata
+property value, then use the <code class="prettyprint">propUri2</code> metadata property value of this resource</li>
+<li><code class="prettyprint">@propUri</code> in a tag having the <code class="prettyprint">ComponentId</code> attribute - inject the CMDI component
+identified by the <code class="prettyprint">ComponentId</code> attribute taking the resource <code class="prettyprint">propUri</code> metadata
+property points to as its base resource</li>
+<li><code class="prettyprint">NOW</code> - current time</li>
+<li><code class="prettyprint">URL</code> - resource's repository URL</li>
+<li><code class="prettyprint">ID</code> - resource's ACDH repo UUID</li>
+<li><code class="prettyprint">OAIURI</code> - resource's OAI-PMH ID</li>
+<li><code class="prettyprint">IIIFURL</code> - resource's IIIF URL which is a concatenation of the metadata format's
+<code class="prettyprint">iiifBaseUrl</code> parameter value and the path part of the repository resource ID
+(this is a special corner case for ARCHE)</li>
+</ul></li>
+<li><code class="prettyprint">count="N"</code> (default <code class="prettyprint">1</code>)
+<ul>
+<li>when &quot;*&quot; and metadata contain no property specified by the <code class="prettyprint">val</code> attribute
+the tag is removed from the template;</li>
+<li>when &quot;*&quot; or &quot;+&quot; and metadata contain many properties specified by the <code class="prettyprint">val</code> attribute
+the tag is repeated for each metadata property value</li>
+<li>when &quot;1&quot; or &quot;+&quot; and metadata contain no property specified by the <code class="prettyprint">val</code> attribute
+the tag is left empty in the template;</li>
+<li>when &quot;1&quot; and metadata contain many properties specified by the <code class="prettyprint">val</code> attribute
+first metadata property value is used</li>
+</ul></li>
+<li><code class="prettyprint">lang="true"</code> if present and a metadata property value contains information about
+the language, the <code class="prettyprint">xml:lang</code> attribute is added to the template tag</li>
+<li><code class="prettyprint">asXML="true"</code> if present, value specified with the <code class="prettyprint">val</code> attribute is parsed and added
+as XML</li>
+<li><code class="prettyprint">replaceXMLTag="true"</code> if present, value specified with the <code class="prettyprint">val</code> attribute substitus the
+XML tag itself instead of being injected as its value.</li>
+<li><code class="prettyprint">dateFormat="FORMAT"</code> (default native precision read from the resource metadata value)
+can be <code class="prettyprint">Date</code> or <code class="prettyprint">DateTime</code> which will automatically adjust date precision.  Watch out
+as when present it will also naivly process any string values (cutting them or appending
+with a default time).</li>
+<li><code class="prettyprint">format="FORMAT"</code> forces an URL value fetched according to the <code class="prettyprint">val</code> attribute to be
+extended with a <code class="prettyprint">?format=FORMAT</code>. Allows to provide links to particular serialization
+of repository objects when the default one (typically the repository GUI) is not the
+desired one. The <code class="prettyprint">asXML</code> attribute takes a precedense.
+Doesn't work for special <code class="prettyprint">val</code> attribute values of <code class="prettyprint">NOW</code>, <code class="prettyprint">URL</code> and <code class="prettyprint">OAIURI</code>.</li>
+<li><code class="prettyprint">valueMapProp="RDFpropertyURL"</code> causes value denoted by the <code class="prettyprint">val</code> attribute to be
+mapped to another values using a given RDF property. The <code class="prettyprint">val</code> attribute value must be
+an URL (e.g. a SKOS concept URL) which returns an RDF graph. All <code class="prettyprint">valueMapProp</code> property
+values from the fetched graph are taken as a template values.
+of indicated property are returned.</li>
+<li><code class="prettyprint">valueMapKeepSrc="false"</code> if present, removes the original value fetched according to the
+<code class="prettyprint">val</code> attribute and returns only values fetched according to the <code class="prettyprint">valueMapProp</code> attribute.
+Taken into account only if <code class="prettyprint">valueMapProp</code> provided and not empty.</li>
+<li><code class="prettyprint">ComponentId</code> specifies a component (template) to substitue a given tag (see the <code class="prettyprint">val</code>
+attribute description). The component name should match the template file name without the
+.xml extension. When the <code class="prettyprint">ComponentId</code> is used the actual tag in the template is
+not important because it's anyway replaced by the component's root tag.</li>
+</ul></section>
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#constant_FAKE_ROOT_TAG">FAKE_ROOT_TAG</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">&#039;fakeRoot&#039;</td>
+                </tr>
+                                        <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#property_mapper">$mapper</a></th>
+                    <td class="phpdocumentor-cell">Value mapping cache</td>
+                    <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-oai-metadata-ValueMapper.html"><abbr title="\acdhOeaw\oai\metadata\ValueMapper">ValueMapper</abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#property_res">$res</a></th>
+                    <td class="phpdocumentor-cell">Repository resource object</td>
+                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\acdhRepoLib\RepoResourceDb">RepoResourceDb</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#property_format">$format</a></th>
+                    <td class="phpdocumentor-cell">Metadata format descriptor</td>
+                    <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#property_template">$template</a></th>
+                    <td class="phpdocumentor-cell">Path to the XML template file</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                                                                <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method___construct">__construct()</a></th>
+                    <td class="phpdocumentor-cell">Creates a metadata object for a given repository resource.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_getXml">getXml()</a></th>
+                    <td class="phpdocumentor-cell">Creates resource&#039;s XML metadata</td>
+                    <td class="phpdocumentor-cell"><abbr title="\DOMElement">DOMElement</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_extendSearchFilterQuery">extendSearchFilterQuery()</a></th>
+                    <td class="phpdocumentor-cell">Applies metadata format restrictions.</td>
+                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_extendSearchDataQuery">extendSearchDataQuery()</a></th>
+                    <td class="phpdocumentor-cell">Allows to extend a search query with additional clauses specific to the
+given metadata source.</td>
+                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_processElement">processElement()</a></th>
+                    <td class="phpdocumentor-cell">Recursively processes all XML elements</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_insertValue">insertValue()</a></th>
+                    <td class="phpdocumentor-cell">Injects metadata values into a given DOM element of the CMDI template.</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_parseVal">parseVal()</a></th>
+                    <td class="phpdocumentor-cell">Parses the `val` attribute into three components and returns them as
+an array.</td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_insertCmdiComponents">insertCmdiComponents()</a></th>
+                    <td class="phpdocumentor-cell">Inserts a value by injecting an external CMDI template.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_insertMetaValues">insertMetaValues()</a></th>
+                    <td class="phpdocumentor-cell">Inserts a value from metadata.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_collectMetaValue">collectMetaValue()</a></th>
+                    <td class="phpdocumentor-cell">Extracts metadata value from a given EasyRdf node</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_replacePropNmsp">replacePropNmsp()</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_getResourcesByPath">getResourcesByPath()</a></th>
+                    <td class="phpdocumentor-cell">Prepares fake resource metadata allowing to resolve inverse and/or
+recursively targetted resources.</td>
+                    <td class="phpdocumentor-cell"><abbr title="\EasyRdf\Resource">Resource</abbr></td>
+                </tr>
+                                            </table>
+
+                    <section>
+                <h3 class="phpdocumentor-constants__header">Constants</h3>
+                                    <a id="constant_FAKE_ROOT_TAG"></a>
+<article
+        class="
+            phpdocumentor-element
+            phpdocumentor-constant
+            phpdocumentor-constant--
+                    "
+>
+    <h4 class="phpdocumentor-constant__name">FAKE_ROOT_TAG</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">124</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility"></span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$FAKE_ROOT_TAG</span>
+        = <span class="phpdocumentor-signature__default-value">&#039;fakeRoot&#039;</span>
+    </code>
+    </article>
+                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_mapper"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--private
+            phpdocumentor-property--static                    "
+>
+    <h4 class="phpdocumentor-property__name">$mapper</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">130</span>
+    </aside>
+            <p class="phpdocumentor-summary">Value mapping cache</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__type"><a href="../classes/acdhOeaw-oai-metadata-ValueMapper.html"><abbr title="\acdhOeaw\oai\metadata\ValueMapper">ValueMapper</abbr></a></span>
+        <span class="phpdocumentor-signature__name">$mapper</span>
+            </code>
+    </article>
+                                    <a id="property_res"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--private
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$res</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">136</span>
+    </aside>
+            <p class="phpdocumentor-summary">Repository resource object</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResourceDb">RepoResourceDb</abbr></span>
+        <span class="phpdocumentor-signature__name">$res</span>
+            </code>
+    </article>
+                                    <a id="property_format"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--private
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$format</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">142</span>
+    </aside>
+            <p class="phpdocumentor-summary">Metadata format descriptor</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__type"><a href="../classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a></span>
+        <span class="phpdocumentor-signature__name">$format</span>
+            </code>
+    </article>
+                                    <a id="property_template"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--private
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$template</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">148</span>
+    </aside>
+            <p class="phpdocumentor-summary">Path to the XML template file</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$template</span>
+            </code>
+    </article>
+                                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method___construct"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">159</span>
+    </aside>
+        <p class="phpdocumentor-summary">Creates a metadata object for a given repository resource.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">__construct</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$resource</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResourceDb">RepoResourceDb</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$searchResultRow</span> :
+                <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$format</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$resource</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResourceDb">RepoResourceDb</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>a repository
+resource object</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$searchResultRow</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>SPARQL search query result row</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$format</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>metadata format descriptor
+describing this resource</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_getXml"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getXml()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">195</span>
+    </aside>
+        <p class="phpdocumentor-summary">Creates resource&#039;s XML metadata</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getXml</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\DOMElement">DOMElement</abbr></span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>If the template's root element has an <code class="prettyprint">val</code> attribute a fake
+root element is introduced to the template to assure it will be a valid
+XML after the substitution (XML documents have to have a single root
+element).</p></section>
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\DOMElement">DOMElement</abbr></span>
+            
+</article>
+                                    <a id="method_extendSearchFilterQuery"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                    phpdocumentor-element--static                    "
+>
+    <h4 class="phpdocumentor-method__name">extendSearchFilterQuery()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">218</span>
+    </aside>
+        <p class="phpdocumentor-summary">Applies metadata format restrictions.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">extendSearchFilterQuery</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$format</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Remark! PHP doesn't consider static methods as an interface part
+therefore existance of this method in classes implementing this interface
+is not enforced.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$format</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>metadata format descriptor</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
+            
+</article>
+                                    <a id="method_extendSearchDataQuery"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                    phpdocumentor-element--static                    "
+>
+    <h4 class="phpdocumentor-method__name">extendSearchDataQuery()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">222</span>
+    </aside>
+        <p class="phpdocumentor-summary">Allows to extend a search query with additional clauses specific to the
+given metadata source.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">extendSearchDataQuery</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$format</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Remark! PHP doesn't consider static methods as an interface part
+therefore existance of this method in classes implementing this interface
+is not enforced.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$format</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>metadata format descriptor</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
+            
+</article>
+                                    <a id="method_processElement"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">processElement()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">239</span>
+    </aside>
+        <p class="phpdocumentor-summary">Recursively processes all XML elements</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">processElement</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$el</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DOMElement">DOMElement</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$el</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DOMElement">DOMElement</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>DOM element to be processed</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            
+</article>
+                                    <a id="method_insertValue"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">insertValue()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">266</span>
+    </aside>
+        <p class="phpdocumentor-summary">Injects metadata values into a given DOM element of the CMDI template.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">insertValue</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$el</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DOMElement">DOMElement</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$el</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DOMElement">DOMElement</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>DOM element to be processes</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash; <span class="phpdocumentor-description"><p>should <code class="prettyprint">$el</code> DOMElement be removed from the document</p></span>
+            
+</article>
+                                    <a id="method_parseVal"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">parseVal()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">338</span>
+    </aside>
+        <p class="phpdocumentor-summary">Parses the `val` attribute into three components and returns them as
+an array.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">parseVal</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$val</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">array</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>The components are:</p>
+<ul>
+<li><code class="prettyprint">prop</code> the metadata property to be read</li>
+<li><code class="prettyprint">recursive</code> should the property be follow recursively?</li>
+<li><code class="prettyprint">subprop</code> the YAML object key (null if the property value should be
+taken as it is)</li>
+<li><code class="prettyprint">extUriProp</code> if <code class="prettyprint">prop</code> value points to a resource, metadata property
+which should be read from the target resource's metadata</li>
+<li><code class="prettyprint">inverse</code> boolean value indicating if <code class="prettyprint">extUriProp</code> points to the
+external resource (<code class="prettyprint">false</code>) or if the external resource is pointing
+to the current one (<code class="prettyprint">true</code>)</li>
+</ul></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$val</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array</span>
+            
+</article>
+                                    <a id="method_insertCmdiComponents"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">insertCmdiComponents()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">381</span>
+    </aside>
+        <p class="phpdocumentor-summary">Inserts a value by injecting an external CMDI template.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">insertCmdiComponents</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$el</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DOMElement">DOMElement</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$meta</span> :
+                <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$component</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$prop</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$el</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DOMElement">DOMElement</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$meta</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$component</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$prop</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_insertMetaValues"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">insertMetaValues()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">446</span>
+    </aside>
+        <p class="phpdocumentor-summary">Inserts a value from metadata.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">insertMetaValues</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$el</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DOMElement">DOMElement</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$meta</span> :
+                <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$prop</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$subprop</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$extUriProp</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$el</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DOMElement">DOMElement</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$meta</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$prop</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$subprop</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$extUriProp</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_collectMetaValue"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">collectMetaValue()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">551</span>
+    </aside>
+        <p class="phpdocumentor-summary">Extracts metadata value from a given EasyRdf node</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">collectMetaValue</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$values</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$metaVal</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Literal">Literal</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$subprop</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\oai\metadata\type">type</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$dateFormat</span> :
+                <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$values</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$metaVal</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Literal">Literal</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$subprop</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\oai\metadata\type">type</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$dateFormat</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_replacePropNmsp"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">replacePropNmsp()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">580</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">replacePropNmsp</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$prop</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">string</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$prop</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            
+</article>
+                                    <a id="method_getResourcesByPath"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getResourcesByPath()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php"><a href="../files/src-acdhoeaw-oai-metadata-livecmdimetadata.html"><abbr title="src/acdhOeaw/oai/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">596</span>
+    </aside>
+        <p class="phpdocumentor-summary">Prepares fake resource metadata allowing to resolve inverse and/or
+recursively targetted resources.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">getResourcesByPath</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$prop</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$recursive</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$inverse</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$prop</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$recursive</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$inverse</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+            
+</article>
+                                                            </section>
+            </article>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

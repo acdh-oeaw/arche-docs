@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="icon" href="../images/favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
+    <script src="../js/search.js"></script>
+    <script defer src="../js/searchIndex.js"></script>
+    </head>
+<body>
+<header class="phpdocumentor-top-header"></header>
+<header class="phpdocumentor-header">
+    <section class="phpdocumentor-section">
+        <h1 class="phpdocumentor-title">Documentation</h1>
+    </section>
+</header>
+<main class="phpdocumentor">
+    <div class="phpdocumentor-section">
+        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+    <section data-search-form class="phpdocumentor-search">
+        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
+        <label class="phpdocumentor-label">
+            <span class="visually-hidden">Search for</span>
+            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+        </label>
+    </section>
+
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
+            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h3>
+            <ul class="phpdocumentor-list">
+                                    <li><a href="../namespaces/acdhoeaw-oai.html"><abbr title="\acdhOeaw\oai">oai</abbr></a></li>
+                            </ul>
+            
+    
+    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
+        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
+    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+</aside>
+
+        <div class="nine phpdocumentor-columns phpdocumentor-content">
+            <ul class="phpdocumentor-breadcrumbs">
+    <li><a href="../index.html">Home</a></li>
+                        <li><a href="../namespaces/acdhoeaw.html">acdhOeaw</a></li>
+                    <li><a href="../namespaces/acdhoeaw-oai.html">oai</a></li>
+                    <li><a href="../namespaces/acdhoeaw-oai-data.html">data</a></li>
+            </ul>
+
+    <article class="phpdocumentor-element phpdocumentor-class">
+        <h2 class="phpdocumentor-content__title">
+            RepositoryInfo
+                                                        </h2>
+        <aside class="phpdocumentor-element-found-in">
+            <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/data/RepositoryInfo.php"><a href="../files/src-acdhoeaw-oai-data-repositoryinfo.html"><abbr title="src/acdhOeaw/oai/data/RepositoryInfo.php">RepositoryInfo.php</abbr></a></abbr>
+            :
+            <span class="phpdocumentor-element-found-in__line">34</span>
+        </aside>
+
+        <p class="phpdocumentor-class__summary">Container for OAI-PMH repository information</p>
+        <section class="phpdocumentor-class__description"></section>
+
+        <h3>Table of Contents</h3>
+        <table class="phpdocumentor-table_of_contents">
+                                        <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_repositoryName">$repositoryName</a></th>
+                    <td class="phpdocumentor-cell">Repository name to be reported</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_baseURL">$baseURL</a></th>
+                    <td class="phpdocumentor-cell">OAI-PMH service location</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_protocolVersion">$protocolVersion</a></th>
+                    <td class="phpdocumentor-cell">OAI-PMH protocol version.</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_adminEmail">$adminEmail</a></th>
+                    <td class="phpdocumentor-cell">List of repository admin emails</td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_earliestDatestamp">$earliestDatestamp</a></th>
+                    <td class="phpdocumentor-cell">Earliest date which can be reported.</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_deletedRecord">$deletedRecord</a></th>
+                    <td class="phpdocumentor-cell">If repository supports information on deleted records (no by default).</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_granularity">$granularity</a></th>
+                    <td class="phpdocumentor-cell">Date granularity (defaults to Fedora dates granularity)</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                                                                <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-data-RepositoryInfo.html#method___construct">__construct()</a></th>
+                    <td class="phpdocumentor-cell">Creates a RepositoryInfo object setting up provided property values.</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                                            </table>
+
+        
+                    <section>
+                <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_repositoryName"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$repositoryName</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/data/RepositoryInfo.php"><a href="../files/src-acdhoeaw-oai-data-repositoryinfo.html"><abbr title="src/acdhOeaw/oai/data/RepositoryInfo.php">RepositoryInfo.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">40</span>
+    </aside>
+            <p class="phpdocumentor-summary">Repository name to be reported</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$repositoryName</span>
+         = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span>    </code>
+    </article>
+                                    <a id="property_baseURL"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$baseURL</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/data/RepositoryInfo.php"><a href="../files/src-acdhoeaw-oai-data-repositoryinfo.html"><abbr title="src/acdhOeaw/oai/data/RepositoryInfo.php">RepositoryInfo.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">46</span>
+    </aside>
+            <p class="phpdocumentor-summary">OAI-PMH service location</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$baseURL</span>
+         = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span>    </code>
+    </article>
+                                    <a id="property_protocolVersion"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$protocolVersion</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/data/RepositoryInfo.php"><a href="../files/src-acdhoeaw-oai-data-repositoryinfo.html"><abbr title="src/acdhOeaw/oai/data/RepositoryInfo.php">RepositoryInfo.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">52</span>
+    </aside>
+            <p class="phpdocumentor-summary">OAI-PMH protocol version.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$protocolVersion</span>
+         = <span class="phpdocumentor-signature__default-value">&#039;2.0&#039;</span>    </code>
+    </article>
+                                    <a id="property_adminEmail"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$adminEmail</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/data/RepositoryInfo.php"><a href="../files/src-acdhoeaw-oai-data-repositoryinfo.html"><abbr title="src/acdhOeaw/oai/data/RepositoryInfo.php">RepositoryInfo.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">58</span>
+    </aside>
+            <p class="phpdocumentor-summary">List of repository admin emails</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">array</span>
+        <span class="phpdocumentor-signature__name">$adminEmail</span>
+         = <span class="phpdocumentor-signature__default-value">array()</span>    </code>
+    </article>
+                                    <a id="property_earliestDatestamp"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$earliestDatestamp</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/data/RepositoryInfo.php"><a href="../files/src-acdhoeaw-oai-data-repositoryinfo.html"><abbr title="src/acdhOeaw/oai/data/RepositoryInfo.php">RepositoryInfo.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">64</span>
+    </aside>
+            <p class="phpdocumentor-summary">Earliest date which can be reported.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$earliestDatestamp</span>
+         = <span class="phpdocumentor-signature__default-value">&#039;1900-01-01T00:00:00Z&#039;</span>    </code>
+    </article>
+                                    <a id="property_deletedRecord"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$deletedRecord</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/data/RepositoryInfo.php"><a href="../files/src-acdhoeaw-oai-data-repositoryinfo.html"><abbr title="src/acdhOeaw/oai/data/RepositoryInfo.php">RepositoryInfo.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">70</span>
+    </aside>
+            <p class="phpdocumentor-summary">If repository supports information on deleted records (no by default).</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$deletedRecord</span>
+         = <span class="phpdocumentor-signature__default-value">&#039;no&#039;</span>    </code>
+    </article>
+                                    <a id="property_granularity"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$granularity</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/data/RepositoryInfo.php"><a href="../files/src-acdhoeaw-oai-data-repositoryinfo.html"><abbr title="src/acdhOeaw/oai/data/RepositoryInfo.php">RepositoryInfo.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">76</span>
+    </aside>
+            <p class="phpdocumentor-summary">Date granularity (defaults to Fedora dates granularity)</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__name">$granularity</span>
+         = <span class="phpdocumentor-signature__default-value">&#039;YYYY-MM-DDThh:mm:ssZ&#039;</span>    </code>
+    </article>
+                                                            </section>
+        
+                    <section>
+                <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method___construct"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/data/RepositoryInfo.php"><a href="../files/src-acdhoeaw-oai-data-repositoryinfo.html"><abbr title="src/acdhOeaw/oai/data/RepositoryInfo.php">RepositoryInfo.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">82</span>
+    </aside>
+        <p class="phpdocumentor-summary">Creates a RepositoryInfo object setting up provided property values.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">__construct</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$param</span> :
+                <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$param</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>property values</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                                            </section>
+            </article>
+            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+
+                <h2>Search results</h2>
+                <ul class="phpdocumentor-search-results__entries">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
