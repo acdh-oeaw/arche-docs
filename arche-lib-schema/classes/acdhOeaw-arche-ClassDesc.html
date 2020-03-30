@@ -75,17 +75,27 @@
         <table class="phpdocumentor-table_of_contents">
                                         <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-ClassDesc.html#property_class">$class</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Class URI</td>
                     <td class="phpdocumentor-cell">string</td>
                 </tr>
                             <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-ClassDesc.html#property_label">$label</a></th>
+                    <td class="phpdocumentor-cell">Associative array of skos:altLabel values (langauge as a key)</td>
+                    <td class="phpdocumentor-cell">string[]</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-ClassDesc.html#property_comment">$comment</a></th>
+                    <td class="phpdocumentor-cell">Associative array of rdfs:comments values (langauge as a key)</td>
+                    <td class="phpdocumentor-cell">string[]</td>
+                </tr>
+                            <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-ClassDesc.html#property_classes">$classes</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Array of classes this class inherits from (including the class URI itself)</td>
                     <td class="phpdocumentor-cell">string[]</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-ClassDesc.html#property_properties">$properties</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Associative array of class properties (property URIs as keys).</td>
                     <td class="phpdocumentor-cell">\acdhOeaw\arche\PropertyDesc[]</td>
                 </tr>
                                                                                         <tr>
@@ -109,13 +119,54 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/ClassDesc.php"><a href="../files/src-acdhoeaw-arche-classdesc.html"><abbr title="src/acdhOeaw/arche/ClassDesc.php">ClassDesc.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">40</span>
+        <span class="phpdocumentor-element-found-in__line">41</span>
     </aside>
+            <p class="phpdocumentor-summary">Class URI</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$class</span>
             </code>
+    </article>
+                                    <a id="property_label"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$label</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/ClassDesc.php"><a href="../files/src-acdhoeaw-arche-classdesc.html"><abbr title="src/acdhOeaw/arche/ClassDesc.php">ClassDesc.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">48</span>
+    </aside>
+            <p class="phpdocumentor-summary">Associative array of skos:altLabel values (langauge as a key)</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string[]</span>
+        <span class="phpdocumentor-signature__name">$label</span>
+         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
+    </article>
+                                    <a id="property_comment"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$comment</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/ClassDesc.php"><a href="../files/src-acdhoeaw-arche-classdesc.html"><abbr title="src/acdhOeaw/arche/ClassDesc.php">ClassDesc.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">55</span>
+    </aside>
+            <p class="phpdocumentor-summary">Associative array of rdfs:comments values (langauge as a key)</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string[]</span>
+        <span class="phpdocumentor-signature__name">$comment</span>
+         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
     </article>
                                     <a id="property_classes"></a>
 <article
@@ -128,8 +179,9 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/ClassDesc.php"><a href="../files/src-acdhoeaw-arche-classdesc.html"><abbr title="src/acdhOeaw/arche/ClassDesc.php">ClassDesc.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">46</span>
+        <span class="phpdocumentor-element-found-in__line">62</span>
     </aside>
+            <p class="phpdocumentor-summary">Array of classes this class inherits from (including the class URI itself)</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__type">string[]</span>
@@ -147,8 +199,9 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/ClassDesc.php"><a href="../files/src-acdhoeaw-arche-classdesc.html"><abbr title="src/acdhOeaw/arche/ClassDesc.php">ClassDesc.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">52</span>
+        <span class="phpdocumentor-element-found-in__line">69</span>
     </aside>
+            <p class="phpdocumentor-summary">Associative array of class properties (property URIs as keys).</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__type">\acdhOeaw\arche\PropertyDesc[]</span>
@@ -170,7 +223,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="../files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">36</span>
+        <span class="phpdocumentor-element-found-in__line">40</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>

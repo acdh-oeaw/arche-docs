@@ -75,37 +75,47 @@
         <table class="phpdocumentor-table_of_contents">
                                         <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_property">$property</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Property URI</td>
                     <td class="phpdocumentor-cell">string</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_type">$type</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Property type URI (owl:DatatypeProperty or owl:ObjectProperty)</td>
                     <td class="phpdocumentor-cell">string</td>
                 </tr>
                             <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_label">$label</a></th>
+                    <td class="phpdocumentor-cell">Associative array of skos:altLabel values (langauge as a key)</td>
+                    <td class="phpdocumentor-cell">string[]</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_comment">$comment</a></th>
+                    <td class="phpdocumentor-cell">Associative array of rdfs:comments values (langauge as a key)</td>
+                    <td class="phpdocumentor-cell">string[]</td>
+                </tr>
+                            <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_domain">$domain</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Property domain URI</td>
                     <td class="phpdocumentor-cell">string</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_properties">$properties</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Property URIs of all properties this one inhertis from (includint itself)</td>
                     <td class="phpdocumentor-cell">string[]</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_range">$range</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Property range URI</td>
                     <td class="phpdocumentor-cell">string</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_min">$min</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Minimum count</td>
                     <td class="phpdocumentor-cell">int</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_max">$max</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Maximum count</td>
                     <td class="phpdocumentor-cell">int</td>
                 </tr>
                                                                                         <tr>
@@ -129,8 +139,9 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">40</span>
+        <span class="phpdocumentor-element-found-in__line">41</span>
     </aside>
+            <p class="phpdocumentor-summary">Property URI</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__type">string</span>
@@ -148,13 +159,54 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">46</span>
+        <span class="phpdocumentor-element-found-in__line">48</span>
     </aside>
+            <p class="phpdocumentor-summary">Property type URI (owl:DatatypeProperty or owl:ObjectProperty)</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__type">string</span>
         <span class="phpdocumentor-signature__name">$type</span>
             </code>
+    </article>
+                                    <a id="property_label"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$label</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">55</span>
+    </aside>
+            <p class="phpdocumentor-summary">Associative array of skos:altLabel values (langauge as a key)</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string[]</span>
+        <span class="phpdocumentor-signature__name">$label</span>
+         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
+    </article>
+                                    <a id="property_comment"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--public
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$comment</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">62</span>
+    </aside>
+            <p class="phpdocumentor-summary">Associative array of rdfs:comments values (langauge as a key)</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__type">string[]</span>
+        <span class="phpdocumentor-signature__name">$comment</span>
+         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
     </article>
                                     <a id="property_domain"></a>
 <article
@@ -167,8 +219,9 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">52</span>
+        <span class="phpdocumentor-element-found-in__line">69</span>
     </aside>
+            <p class="phpdocumentor-summary">Property domain URI</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__type">string</span>
@@ -186,8 +239,9 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">58</span>
+        <span class="phpdocumentor-element-found-in__line">76</span>
     </aside>
+            <p class="phpdocumentor-summary">Property URIs of all properties this one inhertis from (includint itself)</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__type">string[]</span>
@@ -205,8 +259,9 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">64</span>
+        <span class="phpdocumentor-element-found-in__line">83</span>
     </aside>
+            <p class="phpdocumentor-summary">Property range URI</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__type">string</span>
@@ -224,8 +279,9 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">70</span>
+        <span class="phpdocumentor-element-found-in__line">90</span>
     </aside>
+            <p class="phpdocumentor-summary">Minimum count</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__type">int</span>
@@ -243,8 +299,9 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">76</span>
+        <span class="phpdocumentor-element-found-in__line">97</span>
     </aside>
+            <p class="phpdocumentor-summary">Maximum count</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__type">int</span>
@@ -266,7 +323,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="../files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">36</span>
+        <span class="phpdocumentor-element-found-in__line">40</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>

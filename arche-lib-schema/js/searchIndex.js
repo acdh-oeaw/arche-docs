@@ -18,17 +18,27 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024class",
             "name": "class",
-            "summary": "",
+            "summary": "Class\u0020URI",
             "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_class"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024label",
+            "name": "label",
+            "summary": "Associative\u0020array\u0020of\u0020skos\u003AaltLabel\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
+            "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_label"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024comment",
+            "name": "comment",
+            "summary": "Associative\u0020array\u0020of\u0020rdfs\u003Acomments\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
+            "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_comment"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024classes",
             "name": "classes",
-            "summary": "",
+            "summary": "Array\u0020of\u0020classes\u0020this\u0020class\u0020inherits\u0020from\u0020\u0028including\u0020the\u0020class\u0020URI\u0020itself\u0029",
             "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_classes"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024properties",
             "name": "properties",
-            "summary": "",
+            "summary": "Associative\u0020array\u0020of\u0020class\u0020properties\u0020\u0028property\u0020URIs\u0020as\u0020keys\u0029.",
             "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_properties"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology",
@@ -103,37 +113,47 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024property",
             "name": "property",
-            "summary": "",
+            "summary": "Property\u0020URI",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_property"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024type",
             "name": "type",
-            "summary": "",
+            "summary": "Property\u0020type\u0020URI\u0020\u0028owl\u003ADatatypeProperty\u0020or\u0020owl\u003AObjectProperty\u0029",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_type"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024label",
+            "name": "label",
+            "summary": "Associative\u0020array\u0020of\u0020skos\u003AaltLabel\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_label"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024comment",
+            "name": "comment",
+            "summary": "Associative\u0020array\u0020of\u0020rdfs\u003Acomments\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_comment"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024domain",
             "name": "domain",
-            "summary": "",
+            "summary": "Property\u0020domain\u0020URI",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_domain"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024properties",
             "name": "properties",
-            "summary": "",
+            "summary": "Property\u0020URIs\u0020of\u0020all\u0020properties\u0020this\u0020one\u0020inhertis\u0020from\u0020\u0028includint\u0020itself\u0029",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_properties"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024range",
             "name": "range",
-            "summary": "",
+            "summary": "Property\u0020range\u0020URI",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_range"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024min",
             "name": "min",
-            "summary": "",
+            "summary": "Minimum\u0020count",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_min"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024max",
             "name": "max",
-            "summary": "",
+            "summary": "Maximum\u0020count",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_max"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\RestrictionDesc",
