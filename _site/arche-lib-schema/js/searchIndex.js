@@ -63,7 +63,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AgetProperty\u0028\u0029",
             "name": "getProperty",
-            "summary": "Returns\u0020a\u0020given\u0020property\u0020description\u0020for\u0020a\u0020given\u0020RDF\u0020resource.",
+            "summary": "Returns\u0020a\u0020given\u0020property\u0020description\u0020for\u0020a\u0020given\u0020set\u0020of\u0020RDF\u0020classes\u0020or\nan\u0020RDF\u0020resource\u0020\u0028in\u0020the\u0020latter\u0020case\u0020classes\u0020list\u0020is\u0020extracted\u0020from\u0020the\nresource\u0029.",
             "url": "../classes/acdhOeaw-arche-Ontology.html#method_getProperty"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AloadClasses\u0028\u0029",
