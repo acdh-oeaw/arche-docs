@@ -73,7 +73,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetFlatStructure\u0028\u0029",
             "name": "setFlatStructure",
-            "summary": "Sets\u0020if\u0020child\u0020resources\u0020be\u0020directly\u0020attached\u0020to\u0020the\u0020indexed\u0020RepoResource\n\u0028\u0060\u0024ifFlat\u0060\u0020equals\u0020to\u0020\u0060true\u0060\u0029\u0020or\u0020a\u0020separate\u0020collection\u0020repository\u0020resource\nbe\u0020created\u0020for\u0020each\u0020subdirectory\u0020\u0028\u0060\u0024ifFlat\u0060\u0020equals\u0020to\u0020\u0060false\u0060\u0029.",
+            "summary": "Sets\u0020if\u0020child\u0020resources\u0020be\u0020directly\u0020attached\u0020to\u0020the\u0020indexed\u0020RepoResource\n\u0028\u0060\u0024isFlat\u0060\u0020equals\u0020to\u0020\u0060true\u0060\u0029\u0020or\u0020a\u0020separate\u0020collection\u0020repository\u0020resource\nbe\u0020created\u0020for\u0020each\u0020subdirectory\u0020\u0028\u0060\u0024isFlat\u0060\u0020equals\u0020to\u0020\u0060false\u0060\u0029.",
             "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setFlatStructure"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetUploadSizeLimit\u0028\u0029",
