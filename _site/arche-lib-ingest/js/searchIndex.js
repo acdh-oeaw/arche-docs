@@ -436,6 +436,16 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#constant_CREATE"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AERRMODE_FAIL",
+            "name": "ERRMODE_FAIL",
+            "summary": "",
+            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#constant_ERRMODE_FAIL"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AERRMODE_PASS",
+            "name": "ERRMODE_PASS",
+            "summary": "",
+            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#constant_ERRMODE_PASS"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A\u0024debug",
             "name": "debug",
             "summary": "Turns\u0020debug\u0020messages\u0020on",
