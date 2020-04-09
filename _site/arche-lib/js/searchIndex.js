@@ -131,6 +131,11 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020repository\u0020object\u0020instance\u0020from\u0020a\u0020given\u0020configuration\u0020file.",
             "url": "../classes/acdhOeaw-acdhRepoLib-Repo.html#method_factory"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003AfactoryInteractive\u0028\u0029",
+            "name": "factoryInteractive",
+            "summary": "",
+            "url": "../classes/acdhOeaw-acdhRepoLib-Repo.html#method_factoryInteractive"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020an\u0020repository\u0020connection\u0020object.",
