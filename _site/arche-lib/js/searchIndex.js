@@ -426,6 +426,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-acdhRepoLib-RepoResource.html#constant_UPDATE_MERGE"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003ADELETE_STEP",
+            "name": "DELETE_STEP",
+            "summary": "",
+            "url": "../classes/acdhOeaw-acdhRepoLib-RepoResource.html#constant_DELETE_STEP"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "",
