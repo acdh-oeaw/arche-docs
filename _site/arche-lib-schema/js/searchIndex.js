@@ -156,6 +156,16 @@ Search.appendIndex(
             "summary": "Maximum\u0020count",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_max"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024recommended",
+            "name": "recommended",
+            "summary": "If\u0020a\u0020class\u0020is\u0020among\u0020acdh\u003ArecommendedClass\u0020for\u0020this\u0020property.",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_recommended"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024order",
+            "name": "order",
+            "summary": "achd\u003Aordering\u0020annotation\u0020property\u0020value",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_order"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\RestrictionDesc",
             "name": "RestrictionDesc",
             "summary": "A\u0020container\u0020for\u0020an\u0020OWL\u0020restriction\u0020description",
