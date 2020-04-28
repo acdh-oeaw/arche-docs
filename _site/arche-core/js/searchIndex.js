@@ -481,6 +481,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-acdhRepo-Resource.html#method_patchMetadata"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\Resource\u003A\u003Amove\u0028\u0029",
+            "name": "move",
+            "summary": "",
+            "url": "../classes/acdhOeaw-acdhRepo-Resource.html#method_move"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\Resource\u003A\u003Aoptions\u0028\u0029",
             "name": "options",
             "summary": "",
