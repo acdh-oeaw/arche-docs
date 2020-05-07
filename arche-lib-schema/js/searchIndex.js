@@ -128,7 +128,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024comment",
             "name": "comment",
-            "summary": "Associative\u0020array\u0020of\u0020rdfs\u003Acomments\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
+            "summary": "Associative\u0020array\u0020of\u0020rdfs\u003Acomments\u0020values\u0020\u0028language\u0020as\u0020a\u0020key\u0029",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_comment"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024domain",
@@ -165,6 +165,16 @@ Search.appendIndex(
             "name": "order",
             "summary": "achd\u003Aordering\u0020annotation\u0020property\u0020value",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_order"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024langTag",
+            "name": "langTag",
+            "summary": "acdh\u003AlangTag\u0020annotation\u0020property\u0020value",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_langTag"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024vocabs",
+            "name": "vocabs",
+            "summary": "acdh\u003Avocabs\u0020annotation\u0020property\u0020value",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_vocabs"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\RestrictionDesc",
             "name": "RestrictionDesc",
