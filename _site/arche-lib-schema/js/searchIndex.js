@@ -51,6 +51,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-arche-Ontology.html#method___construct"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AfetchVocabularies\u0028\u0029",
+            "name": "fetchVocabularies",
+            "summary": "Fetches\u0020vocabulary\u0020definitions\u0020provided\u0020in\u0020the\u0020ontology.",
+            "url": "../classes/acdhOeaw-arche-Ontology.html#method_fetchVocabularies"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AisA\u0028\u0029",
             "name": "isA",
             "summary": "Checks\u0020if\u0020a\u0020given\u0020RDF\u0020resource\u0020is\u0020of\u0020a\u0020given\u0020class\u0020taking\u0020into\u0020account\nontology\u0020class\u0020inheritance.",
@@ -176,6 +181,11 @@ Search.appendIndex(
             "summary": "acdh\u003Avocabs\u0020annotation\u0020property\u0020value",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_vocabs"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024vocabsValues",
+            "name": "vocabsValues",
+            "summary": "Array\u0020of\u0020vocabulary\u0020values\u0020fetched\u0020from\u0020vocabulary\u0020pointed\u0020by\u0020acdh\u003Avocabs\nannotation\u0020property",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_vocabsValues"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\RestrictionDesc",
             "name": "RestrictionDesc",
             "summary": "A\u0020container\u0020for\u0020an\u0020OWL\u0020restriction\u0020description",
@@ -205,6 +215,51 @@ Search.appendIndex(
             "name": "max",
             "summary": "",
             "url": "../classes/acdhOeaw-arche-RestrictionDesc.html#property_max"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc",
+            "name": "SkosConceptDesc",
+            "summary": "Container\u0020class\u0020for\u0020a\u0020skos\u003AConcept",
+            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003AfromResource\u0028\u0029",
+            "name": "fromResource",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#method_fromResource"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003AfromObject\u0028\u0029",
+            "name": "fromObject",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#method_fromObject"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003AgetLabel\u0028\u0029",
+            "name": "getLabel",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#method_getLabel"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024uri",
+            "name": "uri",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_uri"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024broader",
+            "name": "broader",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_broader"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024narrower",
+            "name": "narrower",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_narrower"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024altLabel",
+            "name": "altLabel",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_altLabel"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024prefLabel",
+            "name": "prefLabel",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_prefLabel"
         },                {
             "fqsen": "\\",
             "name": "\\",
