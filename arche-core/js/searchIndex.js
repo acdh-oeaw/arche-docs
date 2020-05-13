@@ -501,6 +501,16 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-acdhRepo-Resource.html#method_get"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\Resource\u003A\u003AvaluesOfGraphProperties\u0028\u0029",
+            "name": "valuesOfGraphProperties",
+            "summary": "Get\u0020the\u0020values\u0020of\u0020all\u0020properties\u0020of\u0020a\u0020graph\u0020to\u0020a\u0020Metadata.",
+            "url": "../classes/acdhOeaw-acdhRepo-Resource.html#method_valuesOfGraphProperties"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\Resource\u003A\u003AdiffGraphProperties\u0028\u0029",
+            "name": "diffGraphProperties",
+            "summary": "Compare\u0020two\u0020property\u002Darrays\u0020and\u0020return\u0020all\u0020differences.\u0020The\u0020reference\u0020is\npropMerge\u003A\u0020It\u0020is\u0020only\u0020of\u0020relevance,\u0020what\u0020values\u0020from\u0020propMerge\u0020are\u0020different\nto\u0020propOriginal.\u0020It\u0020is\u0020expected,\u0020that\u0020propMerge\u0020has\u0020every\u0020property\u0020that\npropPoriginal\u0020also\u0020has.",
+            "url": "../classes/acdhOeaw-acdhRepo-Resource.html#method_diffGraphProperties"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\Resource\u003A\u003Aput\u0028\u0029",
             "name": "put",
             "summary": "",
