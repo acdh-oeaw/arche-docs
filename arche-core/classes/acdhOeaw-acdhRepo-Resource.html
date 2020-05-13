@@ -136,6 +136,19 @@
                     <td class="phpdocumentor-cell">void</td>
                 </tr>
                             <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Resource.html#method_valuesOfGraphProperties">valuesOfGraphProperties()</a></th>
+                    <td class="phpdocumentor-cell">Get the values of all properties of a graph to a Metadata.</td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Resource.html#method_diffGraphProperties">diffGraphProperties()</a></th>
+                    <td class="phpdocumentor-cell">Compare two property-arrays and return all differences. The reference is
+propMerge: It is only of relevance, what values from propMerge are different
+to propOriginal. It is expected, that propMerge has every property that
+propPoriginal also has.</td>
+                    <td class="phpdocumentor-cell">array</td>
+                </tr>
+                            <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Resource.html#method_put">put()</a></th>
                     <td class="phpdocumentor-cell"></td>
                     <td class="phpdocumentor-cell">void</td>
@@ -574,6 +587,99 @@
         
     
 </article>
+                                    <a id="method_valuesOfGraphProperties"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">valuesOfGraphProperties()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">146</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get the values of all properties of a graph to a Metadata.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">valuesOfGraphProperties</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-acdhRepo-Metadata.html"><abbr title="\acdhOeaw\acdhRepo\Metadata">Metadata</abbr></a></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">array</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>This is used for calculating a diff between two Metadata graphs.</p></section>
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$meta</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-acdhRepo-Metadata.html"><abbr title="\acdhOeaw\acdhRepo\Metadata">Metadata</abbr></a></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array</span>
+            
+</article>
+                                    <a id="method_diffGraphProperties"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">diffGraphProperties()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">166</span>
+    </aside>
+        <p class="phpdocumentor-summary">Compare two property-arrays and return all differences. The reference is
+propMerge: It is only of relevance, what values from propMerge are different
+to propOriginal. It is expected, that propMerge has every property that
+propPoriginal also has.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">diffGraphProperties</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$propOriginal</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$propMerge</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">array</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$propOriginal</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$propMerge</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array</span>
+            
+</article>
                                     <a id="method_put"></a>
 <article
         class="
@@ -585,7 +691,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">139</span>
+        <span class="phpdocumentor-element-found-in__line">183</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -610,7 +716,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">154</span>
+        <span class="phpdocumentor-element-found-in__line">227</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -635,7 +741,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">182</span>
+        <span class="phpdocumentor-element-found-in__line">255</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -672,7 +778,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">187</span>
+        <span class="phpdocumentor-element-found-in__line">260</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -697,7 +803,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">204</span>
+        <span class="phpdocumentor-element-found-in__line">277</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -734,7 +840,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">209</span>
+        <span class="phpdocumentor-element-found-in__line">282</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -759,7 +865,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">228</span>
+        <span class="phpdocumentor-element-found-in__line">301</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -796,7 +902,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">234</span>
+        <span class="phpdocumentor-element-found-in__line">307</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -821,7 +927,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">251</span>
+        <span class="phpdocumentor-element-found-in__line">324</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -848,7 +954,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">255</span>
+        <span class="phpdocumentor-element-found-in__line">328</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -885,7 +991,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">270</span>
+        <span class="phpdocumentor-element-found-in__line">343</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -910,7 +1016,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">275</span>
+        <span class="phpdocumentor-element-found-in__line">348</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -947,7 +1053,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">310</span>
+        <span class="phpdocumentor-element-found-in__line">383</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -972,7 +1078,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Resource.php"><a href="../files/src-acdhoeaw-acdhrepo-resource.html"><abbr title="src/acdhOeaw/acdhRepo/Resource.php">Resource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">320</span>
+        <span class="phpdocumentor-element-found-in__line">393</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
