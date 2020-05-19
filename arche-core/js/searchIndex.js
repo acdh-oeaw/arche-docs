@@ -351,11 +351,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-acdhRepo-Metadata.html#method_autoAddId"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepo\\Metadata\u003A\u003ADATETIME_REGEX",
-            "name": "DATETIME_REGEX",
-            "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepo-Metadata.html#constant_DATETIME_REGEX"
-        },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\Metadata\u003A\u003ASAVE_ADD",
             "name": "SAVE_ADD",
             "summary": "",
