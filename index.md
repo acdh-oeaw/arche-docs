@@ -15,4 +15,5 @@ Documentation automatically generated from the source code comments:
 * [arche-lib-schema](arche-lib-schema/) - high-level representation of the repository's ontology data
 * [arche-oaipmh](arche-oaipmh/) - OAI-PMH service for the ARCHE
 * [arche-resolver](arche-resolver/) - resolver for the ARCHE (a service providing redirection to correct dissemination services based on a repository resource URI and a requested resource representation format)
+* [arche-gui](arche-gui/) - Drupal 8 GUI for ARCHE
 
