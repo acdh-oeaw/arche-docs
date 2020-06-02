@@ -111,6 +111,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020ontology\u0020metadata",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getMetadata"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_baseOntology\u0028\u0029",
+            "name": "repo_baseOntology",
+            "summary": "The\u0020pure\u0020basic\u0020ontology\u0020for\u0020checking",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_baseOntology"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getMetadataGui\u0028\u0029",
             "name": "repo_getMetadataGui",
             "summary": "Get\u0020the\u0020ontology\u0020metadata\u0020for\u0020the\u0020JS\u0020plugin\u0020table",
@@ -695,6 +700,11 @@ Search.appendIndex(
             "name": "siteLang",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#property_siteLang"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003A\u0024langConf",
+            "name": "langConf",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#property_langConf"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CacheVocabsHelper",
             "name": "CacheVocabsHelper",
@@ -1945,6 +1955,16 @@ Search.appendIndex(
             "name": "createExampleTitleData",
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_createExampleTitleData"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetTitle\u0028\u0029",
+            "name": "testGetTitle",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetTitle"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetTitleFailure\u0028\u0029",
+            "name": "testGetTitleFailure",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetTitleFailure"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AstartTimer\u0028\u0029",
             "name": "startTimer",
