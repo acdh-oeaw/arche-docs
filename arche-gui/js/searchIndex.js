@@ -1663,12 +1663,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AcountWordsFromDb\u0028\u0029",
             "name": "countWordsFromDb",
-            "summary": "Count\u0020the\u0020words\u0020defined\u0020from\u0020the\u0020search\u0020input\u0020fields",
+            "summary": "Count\u0020the\u0020words\u0020\u002B\u0020rdf\u003Atype\u0020\u002B\u0020years\u0020defined\u0020from\u0020the\u0020search\u0020input\u0020fields",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_countWordsFromDb"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AcountYearsFromDb\u0028\u0029",
             "name": "countYearsFromDb",
-            "summary": "",
+            "summary": "COunt\u0020the\u0020years\u0020\u002B\u0020rdf\u003Atype\u0020selected\u0020values",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_countYearsFromDb"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AcountTypesFromDB\u0028\u0029",
@@ -1683,12 +1683,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AgetTypesFromDB\u0028\u0029",
             "name": "getTypesFromDB",
-            "summary": "",
+            "summary": "Get\u0020the\u0020type\u0020\u002B\u0020year\u0020resources\u0020from\u0020the\u0020DB",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_getTypesFromDB"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AgetYearsFromDB\u0028\u0029",
             "name": "getYearsFromDB",
-            "summary": "",
+            "summary": "Get\u0020the\u0020years\u0020from\u0020the\u0020database",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_getYearsFromDB"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AinitPaging\u0028\u0029",
@@ -1725,11 +1725,6 @@ Search.appendIndex(
             "name": "metaObj",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_metaObj"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024searchData",
-            "name": "searchData",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_searchData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024log",
             "name": "log",
@@ -1768,7 +1763,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetData\u0028\u0029",
             "name": "getData",
-            "summary": "",
+            "summary": "get\u0020the\u0020data\u0020based\u0020on\u0020the\u0020property",
             "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AsetData\u0028\u0029",
@@ -1778,7 +1773,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetTitle\u0028\u0029",
             "name": "getTitle",
-            "summary": "Resource\u0020title",
+            "summary": "Get\u0020the\u0020Resource\u0020title",
             "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getTitle"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetIdentifiers\u0028\u0029",
@@ -1788,7 +1783,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetNonAcdhIdentifiers\u0028\u0029",
             "name": "getNonAcdhIdentifiers",
-            "summary": "",
+            "summary": "Get\u0020all\u0020identifiers\u0020which\u0020are\u0020not\u0020acdh\u0020related",
             "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getNonAcdhIdentifiers"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetPid\u0028\u0029",
@@ -1803,7 +1798,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetAvailableDate\u0028\u0029",
             "name": "getAvailableDate",
-            "summary": "",
+            "summary": "Get\u0020the\u0020available\u0020date\u0020in\u0020a\u0020specified\u0020format",
             "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getAvailableDate"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetUUID\u0028\u0029",
@@ -1818,7 +1813,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetRepoGuiUrl\u0028\u0029",
             "name": "getRepoGuiUrl",
-            "summary": "",
+            "summary": "Get\u0020the\u0020Gui\u0020related\u0020url\u0020for\u0020the\u0020resource",
             "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getRepoGuiUrl"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetRepoID\u0028\u0029",
