@@ -1786,6 +1786,11 @@ Search.appendIndex(
             "summary": "All\u0020identifiers",
             "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getIdentifiers"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetNonAcdhIdentifiers\u0028\u0029",
+            "name": "getNonAcdhIdentifiers",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getNonAcdhIdentifiers"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetPid\u0028\u0029",
             "name": "getPid",
             "summary": "PID",
