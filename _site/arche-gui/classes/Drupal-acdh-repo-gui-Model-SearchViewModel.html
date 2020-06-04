@@ -106,11 +106,6 @@
                     <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
                 </tr>
                             <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_searchData">$searchData</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
-                </tr>
-                            <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_log">$log</a></th>
                     <td class="phpdocumentor-cell"></td>
                     <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
@@ -167,12 +162,12 @@
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_countWordsFromDb">countWordsFromDb()</a></th>
-                    <td class="phpdocumentor-cell">Count the words defined from the search input fields</td>
+                    <td class="phpdocumentor-cell">Count the words + rdf:type + years defined from the search input fields</td>
                     <td class="phpdocumentor-cell">int</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_countYearsFromDb">countYearsFromDb()</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">COunt the years + rdf:type selected values</td>
                     <td class="phpdocumentor-cell">int</td>
                 </tr>
                             <tr>
@@ -187,13 +182,13 @@
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_getTypesFromDB">getTypesFromDB()</a></th>
-                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">Get the type + year resources from the DB</td>
                     <td class="phpdocumentor-cell"><abbr title="\Drupal\acdh_repo_gui\Model\type">type</abbr></td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_getYearsFromDB">getYearsFromDB()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">mixed</td>
+                    <td class="phpdocumentor-cell">Get the years from the database</td>
+                    <td class="phpdocumentor-cell"><abbr title="\Drupal\acdh_repo_gui\Model\type">type</abbr></td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_initPaging">initPaging()</a></th>
@@ -334,25 +329,6 @@
         <span class="phpdocumentor-signature__name">$metaObj</span>
             </code>
     </article>
-                                    <a id="property_searchData"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$searchData</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">26</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">mixed</span>
-        <span class="phpdocumentor-signature__name">$searchData</span>
-         = <span class="phpdocumentor-signature__default-value">array()</span>    </code>
-    </article>
                                     <a id="property_log"></a>
 <article
         class="
@@ -364,7 +340,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">27</span>
+        <span class="phpdocumentor-element-found-in__line">26</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -383,7 +359,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">29</span>
+        <span class="phpdocumentor-element-found-in__line">28</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -402,7 +378,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">30</span>
+        <span class="phpdocumentor-element-found-in__line">29</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -421,7 +397,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">31</span>
+        <span class="phpdocumentor-element-found-in__line">30</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -440,7 +416,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">32</span>
+        <span class="phpdocumentor-element-found-in__line">31</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -482,7 +458,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">35</span>
+        <span class="phpdocumentor-element-found-in__line">34</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -509,7 +485,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">52</span>
+        <span class="phpdocumentor-element-found-in__line">51</span>
     </aside>
         <p class="phpdocumentor-summary">get the search view data</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -576,7 +552,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">85</span>
+        <span class="phpdocumentor-element-found-in__line">84</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -603,7 +579,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">106</span>
+        <span class="phpdocumentor-element-found-in__line">105</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -630,7 +606,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">130</span>
+        <span class="phpdocumentor-element-found-in__line">129</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -657,9 +633,9 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">159</span>
+        <span class="phpdocumentor-element-found-in__line">158</span>
     </aside>
-        <p class="phpdocumentor-summary">Count the words defined from the search input fields</p>
+        <p class="phpdocumentor-summary">Count the words + rdf:type + years defined from the search input fields</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
                                 <span class="phpdocumentor-signature__name">countWordsFromDb</span>(
@@ -687,6 +663,7 @@
         :
         <span class="phpdocumentor-element-found-in__line">203</span>
     </aside>
+        <p class="phpdocumentor-summary">COunt the years + rdf:type selected values</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
                                 <span class="phpdocumentor-signature__name">countYearsFromDb</span>(
@@ -740,7 +717,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">288</span>
+        <span class="phpdocumentor-element-found-in__line">280</span>
     </aside>
         <p class="phpdocumentor-summary">Collect the words and/or type/years keywords</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -768,8 +745,9 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">336</span>
+        <span class="phpdocumentor-element-found-in__line">330</span>
     </aside>
+        <p class="phpdocumentor-summary">Get the type + year resources from the DB</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
                                 <span class="phpdocumentor-signature__name">getTypesFromDB</span>(
@@ -795,20 +773,21 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">378</span>
+        <span class="phpdocumentor-element-found-in__line">372</span>
     </aside>
+        <p class="phpdocumentor-summary">Get the years from the database</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
                                 <span class="phpdocumentor-signature__name">getYearsFromDB</span>(
                 )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\acdh_repo_gui\Model\type">type</abbr></span>
     </code>
 
     
     
         
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\acdh_repo_gui\Model\type">type</abbr></span>
             
 </article>
                                     <a id="method_initPaging"></a>
@@ -822,7 +801,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/SearchViewModel.php"><a href="../files/src-model-searchviewmodel.html"><abbr title="src/Model/SearchViewModel.php">SearchViewModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">412</span>
+        <span class="phpdocumentor-element-found-in__line">410</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
