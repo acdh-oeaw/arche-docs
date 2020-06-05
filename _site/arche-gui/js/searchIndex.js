@@ -1846,6 +1846,11 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020data",
             "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getExpertTableData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetFormattedDateByProperty\u0028\u0029",
+            "name": "getFormattedDateByProperty",
+            "summary": "Format\u0020the\u0020date\u0020values\u0020for\u0020the\u0020twig\u0020template",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getFormattedDateByProperty"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
