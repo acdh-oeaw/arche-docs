@@ -121,10 +121,10 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020ontology\u0020metadata\u0020for\u0020the\u0020JS\u0020plugin\u0020table",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getMetadataGui"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_inverse_result\u0028\u0029",
-            "name": "repo_inverse_result",
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getInverseData\u0028\u0029",
+            "name": "repo_getInverseData",
             "summary": "Get\u0020the\u0020actual\u0020resource\u0020inverse\u0020data\nWhere\u0020the\u0020id\u0020is\u0020available,\u0020but\u0020not\u0020identifier,\u0020pid\u0020or\u0020ispartof",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_inverse_result"
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getInverseData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_checkIdentifier\u0028\u0029",
             "name": "repo_checkIdentifier",
@@ -145,6 +145,11 @@ Search.appendIndex(
             "name": "repo_getOntologyJSPluginData",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getOntologyJSPluginData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getMembers\u0028\u0029",
+            "name": "repo_getMembers",
+            "summary": "Get\u0020the\u0020Members\u0020list\u0020for\u0020the\u0020gui\u0020Organisations\u0020Members\u0020function",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getMembers"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024config",
             "name": "config",
@@ -581,6 +586,11 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020inverse\u0020result\u0020for\u0020the\u0020datatable",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatInverseData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AformatMembersData\u0028\u0029",
+            "name": "formatMembersData",
+            "summary": "Format\u0020the\u0020sql\u0020result\u0020to\u0020the\u0020getMembers\u0020api\u0020endpoint",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatMembersData"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AsetupMetadataType\u0028\u0029",
             "name": "setupMetadataType",
             "summary": "Create\u0020the\u0020reponse\u0020header",
@@ -706,6 +716,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#property_langConf"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003A\u0024prefixesToChange",
+            "name": "prefixesToChange",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#property_prefixesToChange"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CacheVocabsHelper",
             "name": "CacheVocabsHelper",
             "summary": "Description\u0020of\u0020CacheVocabsHelper",
@@ -820,31 +835,6 @@ Search.appendIndex(
             "name": "repo",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#property_repo"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ConfigConstants",
-            "name": "ConfigConstants",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-ConfigConstants.html"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ConfigConstants\u003A\u003AgetCustomDetailViewTemplateDataProperties\u0028\u0029",
-            "name": "getCustomDetailViewTemplateDataProperties",
-            "summary": "Special\u0020view\u0020properties",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-ConfigConstants.html#method_getCustomDetailViewTemplateDataProperties"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ConfigConstants\u003A\u003AgetDetailChildViewProperties\u0028\u0029",
-            "name": "getDetailChildViewProperties",
-            "summary": "Get\u0020the\u0020necessary\u0020properties\u0020for\u0020the\u0020ChildViewGeneraton,\u0020based\u0020on\u0020the\u0020root\nresource\u0020property\u0020\u0028fe\u003A\u0020Person,\u0020Organisation,\u0020etc..\u0029",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-ConfigConstants.html#method_getDetailChildViewProperties"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ConfigConstants\u003A\u003A\u0024prefixesToChange",
-            "name": "prefixesToChange",
-            "summary": "Prefixes\u0020to\u0020shortcur\u0020conversion",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-ConfigConstants.html#property_prefixesToChange"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ConfigConstants\u003A\u003A\u0024availableCustomViews",
-            "name": "availableCustomViews",
-            "summary": "Detail\u0020view\u0020special\u0020custom\u0020view\u0020types",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-ConfigConstants.html#property_availableCustomViews"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DetailViewHelper",
             "name": "DetailViewHelper",
@@ -1035,11 +1025,6 @@ Search.appendIndex(
             "name": "detailViewUrlDecodeEncode",
             "summary": "Encode\u0020or\u0020decode\u0020the\u0020detail\u0020view\u0020url",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_detailViewUrlDecodeEncode"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AcreatePrefixesFromString\u0028\u0029",
-            "name": "createPrefixesFromString",
-            "summary": "create\u0020prefix\u0020from\u0020string\u0020based\u0020on\u0020the\u0020\u0020prefixes",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_createPrefixesFromString"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AspecialIdentifierToUUID\u0028\u0029",
             "name": "specialIdentifierToUUID",
@@ -1280,6 +1265,11 @@ Search.appendIndex(
             "name": "getData",
             "summary": "Generate\u0020the\u0020entity\u0020box\u0020data",
             "url": "../classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetMembers\u0028\u0029",
+            "name": "getMembers",
+            "summary": "Generate\u0020the\u0020Members\u0020data\u0020for\u0020the\u0020root\u0020repoid",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getMembers"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AcountCollectionsBinaries\u0028\u0029",
             "name": "countCollectionsBinaries",
