@@ -166,7 +166,7 @@
                     <td class="phpdocumentor-cell"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></td>
                 </tr>
                             <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_inverse_result">repo_inverse_result()</a></th>
+                    <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getInverseData">repo_getInverseData()</a></th>
                     <td class="phpdocumentor-cell">Get the actual resource inverse data
 Where the id is available, but not identifier, pid or ispartof</td>
                     <td class="phpdocumentor-cell"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></td>
@@ -190,6 +190,11 @@ $repoid = number</td>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getOntologyJSPluginData">repo_getOntologyJSPluginData()</a></th>
                     <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getMembers">repo_getMembers()</a></th>
+                    <td class="phpdocumentor-cell">Get the Members list for the gui Organisations Members function</td>
                     <td class="phpdocumentor-cell"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></td>
                 </tr>
                                             </table>
@@ -758,14 +763,14 @@ $repoid = number</td>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span>
             
 </article>
-                                    <a id="method_repo_inverse_result"></a>
+                                    <a id="method_repo_getInverseData"></a>
 <article
         class="
             phpdocumentor-method
             phpdocumentor-method--public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">repo_inverse_result()</h4>
+    <h4 class="phpdocumentor-method__name">repo_getInverseData()</h4>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Controller/ArcheApiController.php"><a href="../files/src-controller-archeapicontroller.html"><abbr title="src/Controller/ArcheApiController.php">ArcheApiController.php</abbr></a></abbr>
         :
@@ -775,7 +780,7 @@ $repoid = number</td>
 Where the id is available, but not identifier, pid or ispartof</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">repo_inverse_result</span>(
+                                <span class="phpdocumentor-signature__name">repo_getInverseData</span>(
                     <span class="phpdocumentor-signature__argument">
                             <span class="phpdocumentor-signature__argument__name">$repoid</span> :
                 <span class="phpdocumentor-signature__argument__return-type">string</span>
@@ -939,6 +944,46 @@ $repoid = number</p>
                     <span class="phpdocumentor-signature__argument__name">$lng</span>
                     : <span class="phpdocumentor-signature__argument__return-type">string</span>
                      = <span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span>
+            
+</article>
+                                    <a id="method_repo_getMembers"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">repo_getMembers()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Controller/ArcheApiController.php"><a href="../files/src-controller-archeapicontroller.html"><abbr title="src/Controller/ArcheApiController.php">ArcheApiController.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">495</span>
+    </aside>
+        <p class="phpdocumentor-summary">Get the Members list for the gui Organisations Members function</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">repo_getMembers</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$repoid</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$repoid</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
                 <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
