@@ -151,6 +151,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020Members\u0020list\u0020for\u0020the\u0020gui\u0020Organisations\u0020Members\u0020function",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getMembers"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getRelatedPublicationsResources\u0028\u0029",
+            "name": "repo_getRelatedPublicationsResources",
+            "summary": "Get\u0020the\u0020RelatedPublicationsResources\u0020list\u0020for\u0020the\u0020gui\u0020basic\u0020view",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getRelatedPublicationsResources"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
@@ -1305,6 +1310,11 @@ Search.appendIndex(
             "name": "getGNDPersonData",
             "summary": "Generate\u0020GND\u0020person\u0020data",
             "url": "../classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getGNDPersonData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetRPR\u0028\u0029",
+            "name": "getRPR",
+            "summary": "Check\u0020the\u0020repoid\u0020in\u0020the\u0020DB",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getRPR"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003A\u0024repodb",
             "name": "repodb",
