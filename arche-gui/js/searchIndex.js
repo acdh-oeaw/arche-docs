@@ -143,7 +143,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getOntologyJSPluginData\u0028\u0029",
             "name": "repo_getOntologyJSPluginData",
-            "summary": "",
+            "summary": "Generate\u0020the\u0020counted\u0020Collections\u0020and\u0020binaries\u0020text\u0020for\u0020the\u0020gui",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getOntologyJSPluginData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getMembers\u0028\u0029",
@@ -1085,6 +1085,11 @@ Search.appendIndex(
             "name": "formatMetadataGuiView",
             "summary": "Format\u0020the\u0020metadata\u0020gui\u0020result\u0020for\u0020the\u0020json\u0020output",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_formatMetadataGuiView"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AreorderPropertiesByOrderValue\u0028\u0029",
+            "name": "reorderPropertiesByOrderValue",
+            "summary": "Reorder\u0020the\u0020elements\u0020based\u0020on\u0020the\u0020ordering\u0020value",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_reorderPropertiesByOrderValue"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AmetadataGuiCardinality\u0028\u0029",
             "name": "metadataGuiCardinality",
