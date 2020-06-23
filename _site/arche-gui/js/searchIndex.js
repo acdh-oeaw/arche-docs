@@ -131,11 +131,6 @@ Search.appendIndex(
             "summary": "Check\u0020the\u0020repoid\u0020is\u0020already\u0020available\u0020in\u0020the\u0020system\u0020or\u0020not\n\u0024repoid\u0020\u003D\u0020number",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_checkIdentifier"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_recacheControlledVocabs\u0028\u0029",
-            "name": "repo_recacheControlledVocabs",
-            "summary": "Recache\u0020the\u0020controlled\u0020vocabs",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_recacheControlledVocabs"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_gndPerson\u0028\u0029",
             "name": "repo_gndPerson",
             "summary": "The\u0020gnd\u0020file\u0020generation\u0020API\u0020endpoint",
@@ -726,56 +721,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#property_prefixesToChange"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CacheVocabsHelper",
-            "name": "CacheVocabsHelper",
-            "summary": "Description\u0020of\u0020CacheVocabsHelper",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CacheVocabsHelper.html"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CacheVocabsHelper\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CacheVocabsHelper.html#method___construct"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CacheVocabsHelper\u003A\u003AgetVocabsTitle\u0028\u0029",
-            "name": "getVocabsTitle",
-            "summary": "Get\u0020the\u0020vocabs\u0020title",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CacheVocabsHelper.html#method_getVocabsTitle"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CacheVocabsHelper\u003A\u003AgetControlledVocabStrings\u0028\u0029",
-            "name": "getControlledVocabStrings",
-            "summary": "get\u0020the\u0020vocabs\u0020values",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CacheVocabsHelper.html#method_getControlledVocabStrings"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CacheVocabsHelper\u003A\u003AgetVocabsFromDB\u0028\u0029",
-            "name": "getVocabsFromDB",
-            "summary": "Get\u0020ALL\u0020vocabs\u0020cache\u0020from\u0020db",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CacheVocabsHelper.html#method_getVocabsFromDB"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CacheVocabsHelper\u003A\u003A\u0024customCache",
-            "name": "customCache",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CacheVocabsHelper.html#property_customCache"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CacheVocabsHelper\u003A\u003A\u0024cacheVocabs",
-            "name": "cacheVocabs",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CacheVocabsHelper.html#property_cacheVocabs"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CacheVocabsHelper\u003A\u003A\u0024vocabsFile",
-            "name": "vocabsFile",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CacheVocabsHelper.html#property_vocabsFile"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CacheVocabsHelper\u003A\u003A\u0024ontology",
-            "name": "ontology",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CacheVocabsHelper.html#property_ontology"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CacheVocabsHelper\u003A\u003A\u0024vocabs",
-            "name": "vocabs",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CacheVocabsHelper.html#property_vocabs"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ChildApiHelper",
             "name": "ChildApiHelper",
             "summary": "Description\u0020of\u0020ApiViewHelper",
@@ -855,11 +800,6 @@ Search.appendIndex(
             "name": "mergeAccessRes",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-DetailViewHelper.html#method_mergeAccessRes"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DetailViewHelper\u003A\u003AgetVocabsForDetailViewTable\u0028\u0029",
-            "name": "getVocabsForDetailViewTable",
-            "summary": "Update\u0020the\u0020actual\u0020resource\u0020values\u0020with\u0020the\u0020right\u0020vocabs",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-DetailViewHelper.html#method_getVocabsForDetailViewTable"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DetailViewHelper\u003A\u003AformatTooltip\u0028\u0029",
             "name": "formatTooltip",
@@ -1380,61 +1320,6 @@ Search.appendIndex(
             "name": "repodb",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Model-BlocksModel.html#property_repodb"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\CacheVocabsModel",
-            "name": "CacheVocabsModel",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Model-CacheVocabsModel.html"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\CacheVocabsModel\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Model-CacheVocabsModel.html#method___construct"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\CacheVocabsModel\u003A\u003AchangeBackDBConnection\u0028\u0029",
-            "name": "changeBackDBConnection",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Model-CacheVocabsModel.html#method_changeBackDBConnection"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\CacheVocabsModel\u003A\u003AgetAllCache\u0028\u0029",
-            "name": "getAllCache",
-            "summary": "Get\u0020all\u0020cache\u0020for\u0020testing",
-            "url": "../classes/Drupal-acdh-repo-gui-Model-CacheVocabsModel.html#method_getAllCache"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\CacheVocabsModel\u003A\u003AgetAllCacheByProperty\u0028\u0029",
-            "name": "getAllCacheByProperty",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Model-CacheVocabsModel.html#method_getAllCacheByProperty"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\CacheVocabsModel\u003A\u003AgetCacheByPropUri\u0028\u0029",
-            "name": "getCacheByPropUri",
-            "summary": "Get\u0020the\u0020already\u0020cached\u0020resource\u0020data",
-            "url": "../classes/Drupal-acdh-repo-gui-Model-CacheVocabsModel.html#method_getCacheByPropUri"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\CacheVocabsModel\u003A\u003AdeleteCacheByPropUri\u0028\u0029",
-            "name": "deleteCacheByPropUri",
-            "summary": "Delete\u0020the\u0020existing\u0020resource\u0020from\u0020the\u0020DB\u0020to\u0020we\u0020can\u0020update\u0020it\u0020with\u0020new\u0020data",
-            "url": "../classes/Drupal-acdh-repo-gui-Model-CacheVocabsModel.html#method_deleteCacheByPropUri"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\CacheVocabsModel\u003A\u003AaddCacheToDB\u0028\u0029",
-            "name": "addCacheToDB",
-            "summary": "Add\u0020the\u0020resource\u0020cache\u0020to\u0020Database",
-            "url": "../classes/Drupal-acdh-repo-gui-Model-CacheVocabsModel.html#method_addCacheToDB"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\CacheVocabsModel\u003A\u003A\u0024db",
-            "name": "db",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Model-CacheVocabsModel.html#property_db"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\CacheVocabsModel\u003A\u003A\u0024query",
-            "name": "query",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Model-CacheVocabsModel.html#property_query"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\CacheVocabsModel\u003A\u003A\u0024table",
-            "name": "table",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Model-CacheVocabsModel.html#property_table"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel",
             "name": "ChildApiModel",
