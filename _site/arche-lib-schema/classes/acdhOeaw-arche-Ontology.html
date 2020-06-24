@@ -62,7 +62,7 @@
         <aside class="phpdocumentor-element-found-in">
             <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
             :
-            <span class="phpdocumentor-element-found-in__line">45</span>
+            <span class="phpdocumentor-element-found-in__line">40</span>
         </aside>
 
         <p class="phpdocumentor-class__summary">Provides an API for the ARCHE oontology.</p>
@@ -71,6 +71,16 @@
         <h3>Table of Contents</h3>
         <table class="phpdocumentor-table_of_contents">
                                         <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Ontology.html#property_pdo">$pdo</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Ontology.html#property_schema">$schema</a></th>
+                    <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
+                </tr>
+                            <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Ontology.html#property_classes">$classes</a></th>
                     <td class="phpdocumentor-cell"></td>
                     <td class="phpdocumentor-cell">\acdhOeaw\arche\ClassDesc[]</td>
@@ -96,11 +106,6 @@
                     <td class="phpdocumentor-cell">mixed</td>
                 </tr>
                             <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Ontology.html#method_fetchVocabularies">fetchVocabularies()</a></th>
-                    <td class="phpdocumentor-cell">Fetches vocabulary definitions provided in the ontology.</td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Ontology.html#method_isA">isA()</a></th>
                     <td class="phpdocumentor-cell">Checks if a given RDF resource is of a given class taking into account
 ontology class inheritance.</td>
@@ -117,6 +122,12 @@ ontology class inheritance.</td>
 an RDF resource (in the latter case classes list is extracted from the
 resource).</td>
                     <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-arche-PropertyDesc.html"><abbr title="\acdhOeaw\arche\PropertyDesc">PropertyDesc</abbr></a>|null</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Ontology.html#method_getVocabularyValues">getVocabularyValues()</a></th>
+                    <td class="phpdocumentor-cell">Fetches an array of SkosConceptDesc objects desribing allowed vocabulary
+values.</td>
+                    <td class="phpdocumentor-cell">\acdhOeaw\arche\SkosConceptDesc[]</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Ontology.html#method_loadClasses">loadClasses()</a></th>
@@ -143,6 +154,44 @@ resource).</td>
         
                     <section>
                 <h3 class="phpdocumentor-properties__header">Properties</h3>
+                                    <a id="property_pdo"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--private
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$pdo</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">42</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$pdo</span>
+            </code>
+    </article>
+                                    <a id="property_schema"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--private
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$schema</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">43</span>
+    </aside>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__name">$schema</span>
+            </code>
+    </article>
                                     <a id="property_classes"></a>
 <article
         class="
@@ -154,7 +203,7 @@ resource).</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">51</span>
+        <span class="phpdocumentor-element-found-in__line">49</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -173,7 +222,7 @@ resource).</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">57</span>
+        <span class="phpdocumentor-element-found-in__line">55</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -192,7 +241,7 @@ resource).</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">63</span>
+        <span class="phpdocumentor-element-found-in__line">61</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -211,7 +260,7 @@ resource).</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">69</span>
+        <span class="phpdocumentor-element-found-in__line">67</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -234,7 +283,7 @@ resource).</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">75</span>
+        <span class="phpdocumentor-element-found-in__line">74</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -271,60 +320,6 @@ resource).</td>
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
 </article>
-                                    <a id="method_fetchVocabularies"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">fetchVocabularies()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">99</span>
-    </aside>
-        <p class="phpdocumentor-summary">Fetches vocabulary definitions provided in the ontology.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">fetchVocabularies</span>(
-                    <span class="phpdocumentor-signature__argument">
-            [                <span class="phpdocumentor-signature__argument__name">$cacheFile</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$validTime</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;PT0S&#039;</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
-
-        <section class="phpdocumentor-description"><p>Fetching is done in a best-affort way - no error is thrown if a given
-vocabulary can't be fetched.</p>
-<p>May use a cache.</p>
-<p>Be aware fetching and parsing all vocabularies may be time consuming.</p></section>
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$cacheFile</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>cache file to use. If it doesn't exist, it will
-be created.</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$validTime</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">&#039;PT0S&#039;</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>cache validity time in the ISO8601 duration format.
-(see <a href="https://en.wikipedia.org/wiki/ISO_8601#Durations">https://en.wikipedia.org/wiki/ISO_8601#Durations</a>, e.g. <code class="prettyprint">PT3H</code> means
-3 hours). Be aware default value is 0 seconds meaning effectively no caching.</p></section></dd>
-                    </dl>
-    
-        
-    
-</article>
                                     <a id="method_isA"></a>
 <article
         class="
@@ -336,7 +331,7 @@ be created.</p></section></dd>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">159</span>
+        <span class="phpdocumentor-element-found-in__line">92</span>
     </aside>
         <p class="phpdocumentor-summary">Checks if a given RDF resource is of a given class taking into account
 ontology class inheritance.</p>
@@ -386,7 +381,7 @@ ontology class inheritance.</p>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">178</span>
+        <span class="phpdocumentor-element-found-in__line">111</span>
     </aside>
         <p class="phpdocumentor-summary">Returns class description.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -426,7 +421,7 @@ ontology class inheritance.</p>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">200</span>
+        <span class="phpdocumentor-element-found-in__line">133</span>
     </aside>
         <p class="phpdocumentor-summary">Returns a given property description for a given set of RDF classes or
 an RDF resource (in the latter case classes list is extracted from the
@@ -473,6 +468,47 @@ RDF class URIs or an RDF class URI</p></section></dd>
         <span class="phpdocumentor-signature__response_type"><a href="../classes/acdhOeaw-arche-PropertyDesc.html"><abbr title="\acdhOeaw\arche\PropertyDesc">PropertyDesc</abbr></a>|null</span>
             
 </article>
+                                    <a id="method_getVocabularyValues"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">getVocabularyValues()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">157</span>
+    </aside>
+        <p class="phpdocumentor-summary">Fetches an array of SkosConceptDesc objects desribing allowed vocabulary
+values.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">getVocabularyValues</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$vocabularyUrl</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">\acdhOeaw\arche\SkosConceptDesc[]</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$vocabularyUrl</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">\acdhOeaw\arche\SkosConceptDesc[]</span>
+            
+</article>
                                     <a id="method_loadClasses"></a>
 <article
         class="
@@ -484,37 +520,16 @@ RDF class URIs or an RDF class URI</p></section></dd>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">217</span>
+        <span class="phpdocumentor-element-found-in__line">234</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
                                 <span class="phpdocumentor-signature__name">loadClasses</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$pdo</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$nmspSkip</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
                 )
         : <span class="phpdocumentor-signature__response_type">void</span>
     </code>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$pdo</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$nmspSkip</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
     
         
     
@@ -530,37 +545,16 @@ RDF class URIs or an RDF class URI</p></section></dd>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">290</span>
+        <span class="phpdocumentor-element-found-in__line">308</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
                                 <span class="phpdocumentor-signature__name">loadProperties</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$pdo</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$schema</span> :
-                <span class="phpdocumentor-signature__argument__return-type">object</span>
-                            </span>
                 )
         : <span class="phpdocumentor-signature__response_type">void</span>
     </code>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$pdo</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$schema</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">object</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
     
         
     
@@ -576,37 +570,16 @@ RDF class URIs or an RDF class URI</p></section></dd>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">386</span>
+        <span class="phpdocumentor-element-found-in__line">408</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
                                 <span class="phpdocumentor-signature__name">loadRestrictions</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$pdo</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$nmspSkip</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
                 )
         : <span class="phpdocumentor-signature__response_type">void</span>
     </code>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$pdo</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$nmspSkip</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
     
         
     
@@ -622,7 +595,7 @@ RDF class URIs or an RDF class URI</p></section></dd>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Ontology.php"><a href="../files/src-acdhoeaw-arche-ontology.html"><abbr title="src/acdhOeaw/arche/Ontology.php">Ontology.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">442</span>
+        <span class="phpdocumentor-element-found-in__line">465</span>
     </aside>
         <p class="phpdocumentor-summary">Combines class, property and restriction information</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
