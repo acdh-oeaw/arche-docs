@@ -11,6 +11,16 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-arche-BaseDesc.html#method___construct"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003AgetLabel\u0028\u0029",
+            "name": "getLabel",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-BaseDesc.html#method_getLabel"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003A\u0024label",
+            "name": "label",
+            "summary": "Associative\u0020array\u0020of\u0020label\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
+            "url": "../classes/acdhOeaw-arche-BaseDesc.html#property_label"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc",
             "name": "ClassDesc",
             "summary": "A\u0020container\u0020for\u0020and\u0020RDF\u0020class\u0020description",
@@ -20,11 +30,6 @@ Search.appendIndex(
             "name": "class",
             "summary": "Class\u0020URI",
             "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_class"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024label",
-            "name": "label",
-            "summary": "Associative\u0020array\u0020of\u0020skos\u003AaltLabel\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
-            "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_label"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024comment",
             "name": "comment",
@@ -51,11 +56,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-arche-Ontology.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AfetchVocabularies\u0028\u0029",
-            "name": "fetchVocabularies",
-            "summary": "Fetches\u0020vocabulary\u0020definitions\u0020provided\u0020in\u0020the\u0020ontology.",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#method_fetchVocabularies"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AisA\u0028\u0029",
             "name": "isA",
             "summary": "Checks\u0020if\u0020a\u0020given\u0020RDF\u0020resource\u0020is\u0020of\u0020a\u0020given\u0020class\u0020taking\u0020into\u0020account\nontology\u0020class\u0020inheritance.",
@@ -70,6 +70,11 @@ Search.appendIndex(
             "name": "getProperty",
             "summary": "Returns\u0020a\u0020given\u0020property\u0020description\u0020for\u0020a\u0020given\u0020set\u0020of\u0020RDF\u0020classes\u0020or\nan\u0020RDF\u0020resource\u0020\u0028in\u0020the\u0020latter\u0020case\u0020classes\u0020list\u0020is\u0020extracted\u0020from\u0020the\nresource\u0029.",
             "url": "../classes/acdhOeaw-arche-Ontology.html#method_getProperty"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AgetVocabularyValues\u0028\u0029",
+            "name": "getVocabularyValues",
+            "summary": "Fetches\u0020an\u0020array\u0020of\u0020SkosConceptDesc\u0020objects\u0020desribing\u0020allowed\u0020vocabulary\nvalues.",
+            "url": "../classes/acdhOeaw-arche-Ontology.html#method_getVocabularyValues"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AloadClasses\u0028\u0029",
             "name": "loadClasses",
@@ -90,6 +95,16 @@ Search.appendIndex(
             "name": "preprocess",
             "summary": "Combines\u0020class,\u0020property\u0020and\u0020restriction\u0020information",
             "url": "../classes/acdhOeaw-arche-Ontology.html#method_preprocess"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A\u0024pdo",
+            "name": "pdo",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-Ontology.html#property_pdo"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-Ontology.html#property_schema"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A\u0024classes",
             "name": "classes",
@@ -116,6 +131,16 @@ Search.appendIndex(
             "summary": "A\u0020container\u0020for\u0020an\u0020RDF\u0020property\u0020description",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003AsetOntology\u0028\u0029",
+            "name": "setOntology",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#method_setOntology"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#method___get"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024property",
             "name": "property",
             "summary": "Property\u0020URI",
@@ -125,11 +150,6 @@ Search.appendIndex(
             "name": "type",
             "summary": "Property\u0020type\u0020URI\u0020\u0028owl\u003ADatatypeProperty\u0020or\u0020owl\u003AObjectProperty\u0029",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_type"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024label",
-            "name": "label",
-            "summary": "Associative\u0020array\u0020of\u0020skos\u003AaltLabel\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_label"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024comment",
             "name": "comment",
@@ -186,6 +206,11 @@ Search.appendIndex(
             "summary": "Array\u0020of\u0020vocabulary\u0020values\u0020fetched\u0020from\u0020vocabulary\u0020pointed\u0020by\u0020acdh\u003Avocabs\nannotation\u0020property",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_vocabsValues"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024ontologyObj",
+            "name": "ontologyObj",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_ontologyObj"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\RestrictionDesc",
             "name": "RestrictionDesc",
             "summary": "A\u0020container\u0020for\u0020an\u0020OWL\u0020restriction\u0020description",
@@ -221,20 +246,10 @@ Search.appendIndex(
             "summary": "Container\u0020class\u0020for\u0020a\u0020skos\u003AConcept",
             "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003AfromResource\u0028\u0029",
-            "name": "fromResource",
+            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024id",
+            "name": "id",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#method_fromResource"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003AfromObject\u0028\u0029",
-            "name": "fromObject",
-            "summary": "",
-            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#method_fromObject"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003AgetLabel\u0028\u0029",
-            "name": "getLabel",
-            "summary": "",
-            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#method_getLabel"
+            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_id"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024uri",
             "name": "uri",
@@ -250,16 +265,6 @@ Search.appendIndex(
             "name": "narrower",
             "summary": "",
             "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_narrower"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024altLabel",
-            "name": "altLabel",
-            "summary": "",
-            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_altLabel"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024prefLabel",
-            "name": "prefLabel",
-            "summary": "",
-            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_prefLabel"
         },                {
             "fqsen": "\\",
             "name": "\\",
