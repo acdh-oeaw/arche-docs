@@ -591,6 +591,11 @@ Search.appendIndex(
             "summary": "Format\u0020the\u0020sql\u0020result\u0020to\u0020the\u0020getMembers\u0020api\u0020endpoint",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatMembersData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AformatRPRData\u0028\u0029",
+            "name": "formatRPRData",
+            "summary": "Format\u0020the\u0020sql\u0020result\u0020to\u0020the\u0020Related\u0020Publications\u0020and\u0020Resources\u0020api\u0020endpoint",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatRPRData"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AsetupMetadataType\u0028\u0029",
             "name": "setupMetadataType",
             "summary": "Create\u0020the\u0020reponse\u0020header",
