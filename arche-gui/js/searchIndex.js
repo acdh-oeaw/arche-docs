@@ -801,11 +801,6 @@ Search.appendIndex(
             "summary": "Build\u0020up\u0020the\u0020necessary\u0020data\u0020for\u0020the\u0020detail\u0020view",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-DetailViewHelper.html#method_createView"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DetailViewHelper\u003A\u003AmergeAccessRes\u0028\u0029",
-            "name": "mergeAccessRes",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-DetailViewHelper.html#method_mergeAccessRes"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DetailViewHelper\u003A\u003AformatTooltip\u0028\u0029",
             "name": "formatTooltip",
             "summary": "Format\u0020the\u0020sql\u0020result\u0020for\u0020the\u0020gui",
