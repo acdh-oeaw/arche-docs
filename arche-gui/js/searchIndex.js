@@ -1741,6 +1741,11 @@ Search.appendIndex(
             "summary": "Format\u0020the\u0020date\u0020values\u0020for\u0020the\u0020twig\u0020template",
             "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getFormattedDateByProperty"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetCopyResourceLink\u0028\u0029",
+            "name": "getCopyResourceLink",
+            "summary": "Select\u0020the\u0020identifier\u0020for\u0020the\u0020Copy\u0020resource\u0020link",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getCopyResourceLink"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
