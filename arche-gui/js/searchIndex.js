@@ -1696,6 +1696,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020resource\u0020acdh\u0020uuid",
             "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getUUID"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetAcdhID\u0028\u0029",
+            "name": "getAcdhID",
+            "summary": "Get\u0020the\u0020resource\u0020acdh\u0020id",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getAcdhID"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetRepoUrl\u0028\u0029",
             "name": "getRepoUrl",
             "summary": "Get\u0020the\u0020full\u0020repo\u0020url\u0020with\u0020the\u0020identifier\u0020for\u0020the\u0020actual\u0020resource",
@@ -1775,6 +1780,11 @@ Search.appendIndex(
             "name": "language",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#property_language"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024thumbUrl",
+            "name": "thumbUrl",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#property_thumbUrl"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\PathProcessor\\AcdhRepoGuiPathProcessor",
             "name": "AcdhRepoGuiPathProcessor",
