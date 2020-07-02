@@ -961,11 +961,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method___construct"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AcreateDetailViewUrl\u0028\u0029",
-            "name": "createDetailViewUrl",
-            "summary": "Check\u0020the\u0020data\u0020array\u0020for\u0020the\u0020PID,\u0020identifier\u0020or\u0020uuid\u0020identifier",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_createDetailViewUrl"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AdetailViewUrlDecodeEncode\u0028\u0029",
             "name": "detailViewUrlDecodeEncode",
             "summary": "Encode\u0020or\u0020decode\u0020the\u0020detail\u0020view\u0020url",
@@ -973,7 +968,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AspecialIdentifierToUUID\u0028\u0029",
             "name": "specialIdentifierToUUID",
-            "summary": "NOT\u0020CHANGED\u0020YET",
+            "summary": "This\u0020function\u0020is\u0020get\u0020the\u0020acdh\u0020identifier\u0020by\u0020the\u0020PID,\u0020because\u0020all\u0020of\u0020the\u0020functions\nare\u0020using\u0020the\u0020identifier\u0020and\u0020not\u0020the\u0020pid\u0020\u003A\u0029",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_specialIdentifierToUUID"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AformatSizeUnits\u0028\u0029",
@@ -1465,6 +1460,41 @@ Search.appendIndex(
             "name": "sqlResult",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Model-DisseminationServicesModel.html#property_sqlResult"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\GeneralFunctionsModel",
+            "name": "GeneralFunctionsModel",
+            "summary": "Description\u0020of\u0020DetailViewModel",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-GeneralFunctionsModel.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\GeneralFunctionsModel\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-GeneralFunctionsModel.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\GeneralFunctionsModel\u003A\u003AgetViewData\u0028\u0029",
+            "name": "getViewData",
+            "summary": "Get\u0020the\u0020data\u0020for\u0020the\u0020left\u0020side\u0020boxes",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-GeneralFunctionsModel.html#method_getViewData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\GeneralFunctionsModel\u003A\u003AgetRepoIdBySpecialID\u0028\u0029",
+            "name": "getRepoIdBySpecialID",
+            "summary": "Get\u0020the\u0020ARCHE\u0020REPO\u0020ID\u0020based\u0020on\u0020the\u0020special\u0020identifier",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-GeneralFunctionsModel.html#method_getRepoIdBySpecialID"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\GeneralFunctionsModel\u003A\u003A\u0024repodb",
+            "name": "repodb",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-GeneralFunctionsModel.html#property_repodb"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\GeneralFunctionsModel\u003A\u003A\u0024identifier",
+            "name": "identifier",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-GeneralFunctionsModel.html#property_identifier"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\GeneralFunctionsModel\u003A\u003A\u0024sqlResult",
+            "name": "sqlResult",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-GeneralFunctionsModel.html#property_sqlResult"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\RootViewModel",
             "name": "RootViewModel",
