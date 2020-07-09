@@ -151,6 +151,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020RelatedPublicationsResources\u0020list\u0020for\u0020the\u0020gui\u0020basic\u0020view",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getRelatedPublicationsResources"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getRootTable\u0028\u0029",
+            "name": "repo_getRootTable",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getRootTable"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
@@ -1041,6 +1046,26 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_metadataGuiCardinalityByMartina"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AgetRootTable\u0028\u0029",
+            "name": "getRootTable",
+            "summary": "Get\u0020the\u0020root\u0020table\u0020data",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getRootTable"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AcreateRootTableHtml\u0028\u0029",
+            "name": "createRootTableHtml",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTableHtml"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003ArtCardinality\u0028\u0029",
+            "name": "rtCardinality",
+            "summary": "Create\u0020the\u0020cardinality\u0020for\u0020the\u0020roottable",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_rtCardinality"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AreorderRt\u0028\u0029",
+            "name": "reorderRt",
+            "summary": "Reorder\u0020the\u0020root\u0020table\u0020result",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_reorderRt"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003A\u0024data",
             "name": "data",
             "summary": "",
@@ -1230,6 +1255,11 @@ Search.appendIndex(
             "name": "getOntologyGui",
             "summary": "get\u0020the\u0020onotology\u0020data\u0020for\u0020the\u0020js\u0020plugin",
             "url": "../classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getOntologyGui"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetRootTableOntology\u0028\u0029",
+            "name": "getRootTableOntology",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getRootTableOntology"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetInverseData\u0028\u0029",
             "name": "getInverseData",
