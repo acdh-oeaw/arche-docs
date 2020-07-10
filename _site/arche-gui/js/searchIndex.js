@@ -1056,6 +1056,26 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTableHtml"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AgetRtTypeValues\u0028\u0029",
+            "name": "getRtTypeValues",
+            "summary": "Create\u0020the\u0020HTML\u0020table\u0020acdh\u0020class\u0020values",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getRtTypeValues"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AgetRtTypeDomain\u0028\u0029",
+            "name": "getRtTypeDomain",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getRtTypeDomain"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AgetRtTypeRecommended\u0028\u0029",
+            "name": "getRtTypeRecommended",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getRtTypeRecommended"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AgetRtTypeRange\u0028\u0029",
+            "name": "getRtTypeRange",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getRtTypeRange"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003ArtCardinality\u0028\u0029",
             "name": "rtCardinality",
             "summary": "Create\u0020the\u0020cardinality\u0020for\u0020the\u0020roottable",
@@ -1301,10 +1321,20 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003AsetActiveConnection\u0028\u0029",
+            "name": "setActiveConnection",
+            "summary": "Allow\u0020the\u0020DB\u0020connection",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_setActiveConnection"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003AchangeBackDBConnection\u0028\u0029",
             "name": "changeBackDBConnection",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_changeBackDBConnection"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003AsetSqlTimeout\u0028\u0029",
+            "name": "setSqlTimeout",
+            "summary": "Set\u0020the\u0020sql\u0020execution\u0020max\u0020time",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_setSqlTimeout"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003AgetViewData\u0028\u0029",
             "name": "getViewData",
