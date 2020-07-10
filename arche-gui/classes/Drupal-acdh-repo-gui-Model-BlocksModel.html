@@ -111,8 +111,18 @@
                     <td class="phpdocumentor-cell">mixed</td>
                 </tr>
                             <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_setActiveConnection">setActiveConnection()</a></th>
+                    <td class="phpdocumentor-cell">Allow the DB connection</td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_changeBackDBConnection">changeBackDBConnection()</a></th>
                     <td class="phpdocumentor-cell"></td>
+                    <td class="phpdocumentor-cell">mixed</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_setSqlTimeout">setSqlTimeout()</a></th>
+                    <td class="phpdocumentor-cell">Set the sql execution max time</td>
                     <td class="phpdocumentor-cell">mixed</td>
                 </tr>
                             <tr>
@@ -273,7 +283,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/BlocksModel.php"><a href="../files/src-model-blocksmodel.html"><abbr title="src/Model/BlocksModel.php">BlocksModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">82</span>
+        <span class="phpdocumentor-element-found-in__line">83</span>
     </aside>
         <p class="phpdocumentor-summary">Generate the year box data</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -317,6 +327,34 @@
         <span class="phpdocumentor-signature__response_type">mixed</span>
             
 </article>
+                                    <a id="method_setActiveConnection"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setActiveConnection()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Model/ArcheModel.php"><a href="../files/src-model-archemodel.html"><abbr title="src/Model/ArcheModel.php">ArcheModel.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">25</span>
+    </aside>
+        <p class="phpdocumentor-summary">Allow the DB connection</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">setActiveConnection</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
                                     <a id="method_changeBackDBConnection"></a>
 <article
         class="
@@ -328,7 +366,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/ArcheModel.php"><a href="../files/src-model-archemodel.html"><abbr title="src/Model/ArcheModel.php">ArcheModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">23</span>
+        <span class="phpdocumentor-element-found-in__line">31</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
@@ -338,6 +376,46 @@
     </code>
 
     
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+            
+</article>
+                                    <a id="method_setSqlTimeout"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">setSqlTimeout()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Model/ArcheModel.php"><a href="../files/src-model-archemodel.html"><abbr title="src/Model/ArcheModel.php">ArcheModel.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">40</span>
+    </aside>
+        <p class="phpdocumentor-summary">Set the sql execution max time</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">setSqlTimeout</span>(
+                    <span class="phpdocumentor-signature__argument">
+            [                <span class="phpdocumentor-signature__argument__name">$timeout</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;7000&#039;</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$timeout</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">&#039;7000&#039;</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
     
         
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -355,7 +433,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Model/ArcheModel.php"><a href="../files/src-model-archemodel.html"><abbr title="src/Model/ArcheModel.php">ArcheModel.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">33</span>
+        <span class="phpdocumentor-element-found-in__line">60</span>
     </aside>
         <p class="phpdocumentor-summary">get the views data</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
