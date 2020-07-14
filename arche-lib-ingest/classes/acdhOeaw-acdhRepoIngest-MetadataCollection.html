@@ -109,9 +109,10 @@
                     <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></td>
                 </tr>
                             <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_fedoraLoc">$fedoraLoc</a></th>
-                    <td class="phpdocumentor-cell">Fedora path in the repo where imported resources are created.</td>
-                    <td class="phpdocumentor-cell">string</td>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_addTitle">$addTitle</a></th>
+                    <td class="phpdocumentor-cell">Should the title property be added automatically for ingested resources
+missing it.</td>
+                    <td class="phpdocumentor-cell">bool</td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_autoCommit">$autoCommit</a></th>
@@ -122,6 +123,11 @@
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_autoCommitCounter">$autoCommitCounter</a></th>
                     <td class="phpdocumentor-cell">Used to determine when the autocommit should tak place</td>
                     <td class="phpdocumentor-cell">int</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_preprocessed">$preprocessed</a></th>
+                    <td class="phpdocumentor-cell">Is the metadata graph preprocessed already?</td>
+                    <td class="phpdocumentor-cell">bool</td>
                 </tr>
                                                                 <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_makeAgent">makeAgent()</a></th>
@@ -140,14 +146,20 @@ graph imported by the import() method.</td>
                     <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\util\MetadataCollection">MetadataCollection</abbr></td>
                 </tr>
                             <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setFedoraLocation">setFedoraLocation()</a></th>
-                    <td class="phpdocumentor-cell">Sets a location where the resource will be placed.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\util\MetadataCollection">MetadataCollection</abbr></td>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setAddTitle">setAddTitle()</a></th>
+                    <td class="phpdocumentor-cell">Sets if the title property should be automatically added for ingested
+resources which are missing it.</td>
+                    <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html"><abbr title="\acdhOeaw\acdhRepoIngest\MetadataCollection">MetadataCollection</abbr></a></td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setAutoCommit">setAutoCommit()</a></th>
                     <td class="phpdocumentor-cell">Controls the automatic commit behaviour.</td>
                     <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\util\MetadataCollection">MetadataCollection</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_preprocess">preprocess()</a></th>
+                    <td class="phpdocumentor-cell">Performs preprocessing - removes literal IDs, promotes URIs to IDs, etc.</td>
+                    <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html"><abbr title="\acdhOeaw\acdhRepoIngest\MetadataCollection">MetadataCollection</abbr></a></td>
                 </tr>
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_import">import()</a></th>
@@ -353,25 +365,26 @@ resource is referenced acrossed the whole graph with only one URI</td>
         <span class="phpdocumentor-signature__name">$resource</span>
             </code>
     </article>
-                                    <a id="property_fedoraLoc"></a>
+                                    <a id="property_addTitle"></a>
 <article
         class="
             phpdocumentor-property
             phpdocumentor-property--private
                                 "
 >
-    <h4 class="phpdocumentor-property__name">$fedoraLoc</h4>
+    <h4 class="phpdocumentor-property__name">$addTitle</h4>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">85</span>
+        <span class="phpdocumentor-element-found-in__line">86</span>
     </aside>
-            <p class="phpdocumentor-summary">Fedora path in the repo where imported resources are created.</p>
+            <p class="phpdocumentor-summary">Should the title property be added automatically for ingested resources
+missing it.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">string</span>
-        <span class="phpdocumentor-signature__name">$fedoraLoc</span>
-         = <span class="phpdocumentor-signature__default-value">&#039;/&#039;</span>    </code>
+                <span class="phpdocumentor-signature__type">bool</span>
+        <span class="phpdocumentor-signature__name">$addTitle</span>
+         = <span class="phpdocumentor-signature__default-value">false</span>    </code>
     </article>
                                     <a id="property_autoCommit"></a>
 <article
@@ -384,7 +397,7 @@ resource is referenced acrossed the whole graph with only one URI</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">91</span>
+        <span class="phpdocumentor-element-found-in__line">92</span>
     </aside>
             <p class="phpdocumentor-summary">Number of resource automatically triggering a commit (0 - no auto commit)</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -404,7 +417,7 @@ resource is referenced acrossed the whole graph with only one URI</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">97</span>
+        <span class="phpdocumentor-element-found-in__line">98</span>
     </aside>
             <p class="phpdocumentor-summary">Used to determine when the autocommit should tak place</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -412,6 +425,26 @@ resource is referenced acrossed the whole graph with only one URI</td>
                 <span class="phpdocumentor-signature__type">int</span>
         <span class="phpdocumentor-signature__name">$autoCommitCounter</span>
             </code>
+    </article>
+                                    <a id="property_preprocessed"></a>
+<article
+        class="
+            phpdocumentor-property
+            phpdocumentor-property--private
+                                "
+>
+    <h4 class="phpdocumentor-property__name">$preprocessed</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">104</span>
+    </aside>
+            <p class="phpdocumentor-summary">Is the metadata graph preprocessed already?</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__type">bool</span>
+        <span class="phpdocumentor-signature__name">$preprocessed</span>
+         = <span class="phpdocumentor-signature__default-value">false</span>    </code>
     </article>
                                                             </section>
         
@@ -468,7 +501,7 @@ resource is referenced acrossed the whole graph with only one URI</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">106</span>
+        <span class="phpdocumentor-element-found-in__line">113</span>
     </aside>
         <p class="phpdocumentor-summary">Creates a new metadata parser.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -526,7 +559,7 @@ resource is referenced acrossed the whole graph with only one URI</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">122</span>
+        <span class="phpdocumentor-element-found-in__line">129</span>
     </aside>
         <p class="phpdocumentor-summary">Sets the repository resource being parent of all resources in the
 graph imported by the import() method.</p>
@@ -563,49 +596,45 @@ graph imported by the import() method.</p>
         <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\util\MetadataCollection">MetadataCollection</abbr></span>
             
 </article>
-                                    <a id="method_setFedoraLocation"></a>
+                                    <a id="method_setAddTitle"></a>
 <article
         class="
             phpdocumentor-method
             phpdocumentor-method--public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">setFedoraLocation()</h4>
+    <h4 class="phpdocumentor-method__name">setAddTitle()</h4>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
         <span class="phpdocumentor-element-found-in__line">141</span>
     </aside>
-        <p class="phpdocumentor-summary">Sets a location where the resource will be placed.</p>
+        <p class="phpdocumentor-summary">Sets if the title property should be automatically added for ingested
+resources which are missing it.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">setFedoraLocation</span>(
+                                <span class="phpdocumentor-signature__name">setAddTitle</span>(
                     <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$fedoraLoc</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            <span class="phpdocumentor-signature__argument__name">$add</span> :
+                <span class="phpdocumentor-signature__argument__return-type">bool</span>
                             </span>
                 )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\util\MetadataCollection">MetadataCollection</abbr></span>
+        : <span class="phpdocumentor-signature__response_type"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html"><abbr title="\acdhOeaw\acdhRepoIngest\MetadataCollection">MetadataCollection</abbr></a></span>
     </code>
 
-        <section class="phpdocumentor-description"><p>Can be absolute (but will be sanitized anyway) or relative to the
-repository root.</p>
-<p>Given location must already exist.</p>
-<p>Note that this parameter is used ONLY if the resource DOES NOT EXISTS.
-If it exists already, its location is not changed.</p></section>
     
             <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
         <dl class="phpdocumentor-argument-list">
                             <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$fedoraLoc</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                    <span class="phpdocumentor-signature__argument__name">$add</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                                     </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>fedora location</p></section></dd>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
                     </dl>
     
         
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\util\MetadataCollection">MetadataCollection</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html"><abbr title="\acdhOeaw\acdhRepoIngest\MetadataCollection">MetadataCollection</abbr></a></span>
             
 </article>
                                     <a id="method_setAutoCommit"></a>
@@ -653,6 +682,34 @@ don't want to do that for performance reasons).</p></section>
         <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\util\MetadataCollection">MetadataCollection</abbr></span>
             
 </article>
+                                    <a id="method_preprocess"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">preprocess()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">167</span>
+    </aside>
+        <p class="phpdocumentor-summary">Performs preprocessing - removes literal IDs, promotes URIs to IDs, etc.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                                <span class="phpdocumentor-signature__name">preprocess</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html"><abbr title="\acdhOeaw\acdhRepoIngest\MetadataCollection">MetadataCollection</abbr></a></span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html"><abbr title="\acdhOeaw\acdhRepoIngest\MetadataCollection">MetadataCollection</abbr></a></span>
+            
+</article>
                                     <a id="method_import"></a>
 <article
         class="
@@ -664,7 +721,7 @@ don't want to do that for performance reasons).</p></section>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">194</span>
+        <span class="phpdocumentor-element-found-in__line">208</span>
     </aside>
         <p class="phpdocumentor-summary">Imports the whole graph by looping over all resources.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -750,7 +807,7 @@ thrown at the end of the import.</p></section></dd>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">273</span>
+        <span class="phpdocumentor-element-found-in__line">284</span>
     </aside>
         <p class="phpdocumentor-summary">Returns set of resources to be imported skipping all other.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -802,7 +859,7 @@ MetadataCollection::CREATE)</p></section></dd>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">312</span>
+        <span class="phpdocumentor-element-found-in__line">323</span>
     </aside>
         <p class="phpdocumentor-summary">Checks if a given resource is a schema:id of some other node in
 the graph.</p>
@@ -843,7 +900,7 @@ the graph.</p>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">337</span>
+        <span class="phpdocumentor-element-found-in__line">348</span>
     </aside>
         <p class="phpdocumentor-summary">To avoid creation of duplicated resources it must be assured every
 resource is referenced acrossed the whole graph with only one URI</p>
@@ -872,7 +929,7 @@ a convenient choice</p></section>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">369</span>
+        <span class="phpdocumentor-element-found-in__line">380</span>
     </aside>
         <p class="phpdocumentor-summary">Checks if a node contains wrong edges (references to blank nodes).</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -912,7 +969,7 @@ a convenient choice</p></section>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">384</span>
+        <span class="phpdocumentor-element-found-in__line">395</span>
     </aside>
         <p class="phpdocumentor-summary">Promotes BNodes to their first schema:id and fixes references to them.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -940,7 +997,7 @@ a convenient choice</p></section>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">417</span>
+        <span class="phpdocumentor-element-found-in__line">428</span>
     </aside>
         <p class="phpdocumentor-summary">Promotes subjects being fully qualified URLs to ids.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -966,7 +1023,7 @@ a convenient choice</p></section>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">435</span>
+        <span class="phpdocumentor-element-found-in__line">446</span>
     </aside>
         <p class="phpdocumentor-summary">Cleans up resource metadata.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1013,7 +1070,7 @@ a convenient choice</p></section>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">470</span>
+        <span class="phpdocumentor-element-found-in__line">481</span>
     </aside>
         <p class="phpdocumentor-summary">Removes literal ids from the graph.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -1039,7 +1096,7 @@ a convenient choice</p></section>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php"><a href="../files/src-acdhoeaw-acdhrepoingest-metadatacollection.html"><abbr title="src/acdhOeaw/acdhRepoIngest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">484</span>
+        <span class="phpdocumentor-element-found-in__line">495</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
