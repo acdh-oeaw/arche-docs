@@ -366,15 +366,20 @@ Search.appendIndex(
             "summary": "Sets\u0020the\u0020repository\u0020resource\u0020being\u0020parent\u0020of\u0020all\u0020resources\u0020in\u0020the\ngraph\u0020imported\u0020by\u0020the\u0020import\u0028\u0029\u0020method.",
             "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setResource"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AsetFedoraLocation\u0028\u0029",
-            "name": "setFedoraLocation",
-            "summary": "Sets\u0020a\u0020location\u0020where\u0020the\u0020resource\u0020will\u0020be\u0020placed.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setFedoraLocation"
+            "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AsetAddTitle\u0028\u0029",
+            "name": "setAddTitle",
+            "summary": "Sets\u0020if\u0020the\u0020title\u0020property\u0020should\u0020be\u0020automatically\u0020added\u0020for\u0020ingested\nresources\u0020which\u0020are\u0020missing\u0020it.",
+            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setAddTitle"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AsetAutoCommit\u0028\u0029",
             "name": "setAutoCommit",
             "summary": "Controls\u0020the\u0020automatic\u0020commit\u0020behaviour.",
             "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setAutoCommit"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003Apreprocess\u0028\u0029",
+            "name": "preprocess",
+            "summary": "Performs\u0020preprocessing\u0020\u002D\u0020removes\u0020literal\u0020IDs,\u0020promotes\u0020URIs\u0020to\u0020IDs,\u0020etc.",
+            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_preprocess"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003Aimport\u0028\u0029",
             "name": "import",
@@ -461,10 +466,10 @@ Search.appendIndex(
             "summary": "Parent\u0020resource\u0020for\u0020all\u0020imported\u0020graph\u0020nodes",
             "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_resource"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A\u0024fedoraLoc",
-            "name": "fedoraLoc",
-            "summary": "Fedora\u0020path\u0020in\u0020the\u0020repo\u0020where\u0020imported\u0020resources\u0020are\u0020created.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_fedoraLoc"
+            "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A\u0024addTitle",
+            "name": "addTitle",
+            "summary": "Should\u0020the\u0020title\u0020property\u0020be\u0020added\u0020automatically\u0020for\u0020ingested\u0020resources\nmissing\u0020it.",
+            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_addTitle"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A\u0024autoCommit",
             "name": "autoCommit",
@@ -475,6 +480,11 @@ Search.appendIndex(
             "name": "autoCommitCounter",
             "summary": "Used\u0020to\u0020determine\u0020when\u0020the\u0020autocommit\u0020should\u0020tak\u0020place",
             "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_autoCommitCounter"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A\u0024preprocessed",
+            "name": "preprocessed",
+            "summary": "Is\u0020the\u0020metadata\u0020graph\u0020preprocessed\u0020already\u003F",
+            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_preprocessed"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupConstant",
             "name": "MetaLookupConstant",
