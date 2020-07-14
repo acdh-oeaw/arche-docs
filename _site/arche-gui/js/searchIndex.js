@@ -153,7 +153,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getRootTable\u0028\u0029",
             "name": "repo_getRootTable",
-            "summary": "",
+            "summary": "Create\u0020root\u0020table\u0020clone\u0020based\u0020on\u0020the\u0020actual\u0020ontology",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getRootTable"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024config",
@@ -1278,7 +1278,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetRootTableOntology\u0028\u0029",
             "name": "getRootTableOntology",
-            "summary": "",
+            "summary": "Get\u0020ontology\u0020for\u0020the\u0020roottable",
             "url": "../classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getRootTableOntology"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetInverseData\u0028\u0029",
