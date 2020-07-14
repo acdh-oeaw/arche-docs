@@ -16,10 +16,25 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-arche-BaseDesc.html#method_getLabel"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003AgetComment\u0028\u0029",
+            "name": "getComment",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-BaseDesc.html#method_getComment"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003AgetPropInLang\u0028\u0029",
+            "name": "getPropInLang",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-BaseDesc.html#method_getPropInLang"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003A\u0024label",
             "name": "label",
             "summary": "Associative\u0020array\u0020of\u0020label\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
             "url": "../classes/acdhOeaw-arche-BaseDesc.html#property_label"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003A\u0024comment",
+            "name": "comment",
+            "summary": "Associative\u0020array\u0020of\u0020rdfs\u003Acomment\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
+            "url": "../classes/acdhOeaw-arche-BaseDesc.html#property_comment"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc",
             "name": "ClassDesc",
@@ -30,11 +45,6 @@ Search.appendIndex(
             "name": "class",
             "summary": "Class\u0020URI",
             "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_class"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024comment",
-            "name": "comment",
-            "summary": "Associative\u0020array\u0020of\u0020rdfs\u003Acomments\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
-            "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_comment"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024classes",
             "name": "classes",
@@ -150,11 +160,6 @@ Search.appendIndex(
             "name": "type",
             "summary": "Property\u0020type\u0020URI\u0020\u0028owl\u003ADatatypeProperty\u0020or\u0020owl\u003AObjectProperty\u0029",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_type"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024comment",
-            "name": "comment",
-            "summary": "Associative\u0020array\u0020of\u0020rdfs\u003Acomments\u0020values\u0020\u0028language\u0020as\u0020a\u0020key\u0029",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_comment"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024domain",
             "name": "domain",
