@@ -1081,10 +1081,10 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020cardinality\u0020for\u0020the\u0020roottable",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_rtCardinality"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AreorderRt\u0028\u0029",
-            "name": "reorderRt",
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AreorderRootTable\u0028\u0029",
+            "name": "reorderRootTable",
             "summary": "Reorder\u0020the\u0020root\u0020table\u0020result",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_reorderRt"
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_reorderRootTable"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003A\u0024data",
             "name": "data",
