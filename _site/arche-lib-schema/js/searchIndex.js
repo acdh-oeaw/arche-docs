@@ -26,6 +26,16 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-arche-BaseDesc.html#method_getPropInLang"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "Internal\u0020id\u0020of\u0020a\u0020corresponding\u0020repository\u0020resource",
+            "url": "../classes/acdhOeaw-arche-BaseDesc.html#property_id"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003A\u0024uri",
+            "name": "uri",
+            "summary": "The\u0020ontology\u0020entity\u0020URI\u0020within\u0020the\u0020ontology\u0020namespace",
+            "url": "../classes/acdhOeaw-arche-BaseDesc.html#property_uri"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003A\u0024label",
             "name": "label",
             "summary": "Associative\u0020array\u0020of\u0020label\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
@@ -41,9 +51,14 @@ Search.appendIndex(
             "summary": "A\u0020container\u0020for\u0020and\u0020RDF\u0020class\u0020description",
             "url": "../classes/acdhOeaw-arche-ClassDesc.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003AgetProperties\u0028\u0029",
+            "name": "getProperties",
+            "summary": "Returns\u0020distinct\u0020set\u0020of\u0020class\u0020properties",
+            "url": "../classes/acdhOeaw-arche-ClassDesc.html#method_getProperties"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024class",
             "name": "class",
-            "summary": "Class\u0020URI",
+            "summary": "Class\u0020URIs",
             "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_class"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024classes",
@@ -53,7 +68,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024properties",
             "name": "properties",
-            "summary": "Associative\u0020array\u0020of\u0020class\u0020properties\u0020\u0028property\u0020URIs\u0020as\u0020keys\u0029.",
+            "summary": "Associative\u0020array\u0020of\u0020class\u0020properties\u0020\u0028property\u0020URIs\u0020as\u0020keys,\u0020if\na\u0020property\u0020has\u0020many\u0020URIs,\u0020it\u0020will\u0020exist\u0020under\u0020all\u0020of\u0020them\u0020\u002D\u0020use\u0020the\n\u0060getProperties\u0028\u0029\u0060\u0020method\u0020to\u0020get\u0020a\u0020distinct\u0020list\u0020of\u0020properties\u0029.",
             "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_properties"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology",
@@ -131,6 +146,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-arche-Ontology.html#property_properties"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A\u0024distinctProperties",
+            "name": "distinctProperties",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-Ontology.html#property_distinctProperties"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A\u0024restrictions",
             "name": "restrictions",
             "summary": "",
@@ -151,9 +171,14 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#method___get"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003AgetVocabsValues\u0028\u0029",
+            "name": "getVocabsValues",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#method_getVocabsValues"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024property",
             "name": "property",
-            "summary": "Property\u0020URI",
+            "summary": "Property\u0020URIs",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_property"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024type",
@@ -186,20 +211,30 @@ Search.appendIndex(
             "summary": "Maximum\u0020count",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_max"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024recommended",
-            "name": "recommended",
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024recommendedClass",
+            "name": "recommendedClass",
             "summary": "If\u0020a\u0020class\u0020is\u0020among\u0020acdh\u003ArecommendedClass\u0020for\u0020this\u0020property.",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_recommended"
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_recommendedClass"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024order",
-            "name": "order",
-            "summary": "achd\u003Aordering\u0020annotation\u0020property\u0020value",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_order"
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024automatedFill",
+            "name": "automatedFill",
+            "summary": "achd\u003AautomatedFill\u0020annotation\u0020property\u0020value",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_automatedFill"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024defaultValue",
+            "name": "defaultValue",
+            "summary": "acdh\u003AdefaultValue\u0020annotation\u0020property\u0020value",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_defaultValue"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024langTag",
             "name": "langTag",
             "summary": "acdh\u003AlangTag\u0020annotation\u0020property\u0020value",
             "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_langTag"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024ordering",
+            "name": "ordering",
+            "summary": "achd\u003Aordering\u0020annotation\u0020property\u0020value",
+            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_ordering"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024vocabs",
             "name": "vocabs",
@@ -231,11 +266,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-arche-RestrictionDesc.html#property_onProperty"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\RestrictionDesc\u003A\u003A\u0024range",
-            "name": "range",
-            "summary": "",
-            "url": "../classes/acdhOeaw-arche-RestrictionDesc.html#property_range"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\RestrictionDesc\u003A\u003A\u0024min",
             "name": "min",
             "summary": "",
@@ -253,13 +283,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024id",
             "name": "id",
-            "summary": "",
+            "summary": "Internal\u0020id\u0020of\u0020a\u0020corresponding\u0020repository\u0020resource",
             "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_id"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024uri",
-            "name": "uri",
+            "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024concept",
+            "name": "concept",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_uri"
+            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_concept"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024broader",
             "name": "broader",
