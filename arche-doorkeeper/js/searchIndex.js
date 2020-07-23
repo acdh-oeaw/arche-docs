@@ -96,6 +96,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-arche-Doorkeeper.html#constant_NON_NEGATIVE_NUMBERS"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003ALITERAL_TYPES",
+            "name": "LITERAL_TYPES",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-Doorkeeper.html#constant_LITERAL_TYPES"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003A\u0024ontology",
             "name": "ontology",
             "summary": "",
