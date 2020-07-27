@@ -127,6 +127,12 @@
                     <td class="phpdocumentor-cell">string</td>
                 </tr>
                                         <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoLib-RepoResource.html#method_factory">factory()</a></th>
+                    <td class="phpdocumentor-cell">Creates a repository resource object from the PSR-7 response object
+returning the metadata.</td>
+                    <td class="phpdocumentor-cell"><abbr title="\self">self</abbr></td>
+                </tr>
+                            <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoLib-RepoResource.html#method___construct">__construct()</a></th>
                     <td class="phpdocumentor-cell">Creates an object representing a repository resource.</td>
                     <td class="phpdocumentor-cell">mixed</td>
@@ -334,7 +340,7 @@ $metadata object automatically affect the resource metadata.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">51</span>
+        <span class="phpdocumentor-element-found-in__line">75</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -353,7 +359,7 @@ $metadata object automatically affect the resource metadata.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">57</span>
+        <span class="phpdocumentor-element-found-in__line">81</span>
     </aside>
         <code class="phpdocumentor-signature phpdocumentor-code ">
         <span class="phpdocumentor-signature__visibility">private</span>
@@ -441,6 +447,57 @@ $metadata object automatically affect the resource metadata.</td>
         
                     <section>
                 <h3 class="phpdocumentor-methods__header">Methods</h3>
+                                    <a id="method_factory"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--public
+                                    phpdocumentor-element--static                    "
+>
+    <h4 class="phpdocumentor-method__name">factory()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">56</span>
+    </aside>
+        <p class="phpdocumentor-summary">Creates a repository resource object from the PSR-7 response object
+returning the metadata.</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">factory</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$response</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            [,                 <span class="phpdocumentor-signature__argument__name">$uri</span> :
+                <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\self">self</abbr></span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$response</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Response">Response</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>PSR-7 repository response object</p></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$uri</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>resource URI (if not provided, a Location HTTP header
+from the response will be used)</p></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\self">self</abbr></span>
+            
+</article>
                                     <a id="method___construct"></a>
 <article
         class="
@@ -452,7 +509,7 @@ $metadata object automatically affect the resource metadata.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">65</span>
+        <span class="phpdocumentor-element-found-in__line">89</span>
     </aside>
         <p class="phpdocumentor-summary">Creates an object representing a repository resource.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -501,7 +558,7 @@ $metadata object automatically affect the resource metadata.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">75</span>
+        <span class="phpdocumentor-element-found-in__line">99</span>
     </aside>
         <p class="phpdocumentor-summary">Returns repository resource binary content.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -530,7 +587,7 @@ $metadata object automatically affect the resource metadata.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">86</span>
+        <span class="phpdocumentor-element-found-in__line">110</span>
     </aside>
         <p class="phpdocumentor-summary">Updates repository resource binary content with a given payload.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -568,7 +625,7 @@ $metadata object automatically affect the resource metadata.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">98</span>
+        <span class="phpdocumentor-element-found-in__line">122</span>
     </aside>
         <p class="phpdocumentor-summary">Checks if the resource has the binary content.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -596,7 +653,7 @@ $metadata object automatically affect the resource metadata.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">117</span>
+        <span class="phpdocumentor-element-found-in__line">141</span>
     </aside>
         <p class="phpdocumentor-summary">Saves the object metadata to the repository.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -649,7 +706,7 @@ $metadata object automatically affect the resource metadata.</td>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">144</span>
+        <span class="phpdocumentor-element-found-in__line">168</span>
     </aside>
         <p class="phpdocumentor-summary">Deletes the repository resource.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -697,7 +754,7 @@ from other resources?</p></section></dd>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">194</span>
+        <span class="phpdocumentor-element-found-in__line">218</span>
     </aside>
         <p class="phpdocumentor-summary">Deletes the repository resource as well as all the resources pointing to
 it with a given metadata property.</p>
@@ -756,7 +813,7 @@ from other resources?</p></section></dd>
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">225</span>
+        <span class="phpdocumentor-element-found-in__line">249</span>
     </aside>
         <p class="phpdocumentor-summary">Loads current metadata from the repository.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -818,7 +875,7 @@ or e.g. reset them back to their current state in the repository)</p></section><
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">246</span>
+        <span class="phpdocumentor-element-found-in__line">270</span>
     </aside>
         <p class="phpdocumentor-summary">Parses metadata fetched from the repository.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -856,7 +913,7 @@ or e.g. reset them back to their current state in the repository)</p></section><
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResource.php"><a href="../files/src-acdhoeaw-acdhrepolib-reporesource.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResource.php">RepoResource.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">259</span>
+        <span class="phpdocumentor-element-found-in__line">283</span>
     </aside>
         <p class="phpdocumentor-summary">Returns an internal repository resource identifier.</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">

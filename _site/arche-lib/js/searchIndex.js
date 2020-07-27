@@ -361,6 +361,11 @@ Search.appendIndex(
             "summary": "Description\u0020of\u0020RepoResource",
             "url": "../classes/acdhOeaw-acdhRepoLib-RepoResource.html"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003Afactory\u0028\u0029",
+            "name": "factory",
+            "summary": "Creates\u0020a\u0020repository\u0020resource\u0020object\u0020from\u0020the\u0020PSR\u002D7\u0020response\u0020object\nreturning\u0020the\u0020metadata.",
+            "url": "../classes/acdhOeaw-acdhRepoLib-RepoResource.html#method_factory"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020an\u0020object\u0020representing\u0020a\u0020repository\u0020resource.",
