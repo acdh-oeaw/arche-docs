@@ -446,11 +446,6 @@ Search.appendIndex(
             "summary": "Exception\u0020thrown\u0020by\u0020the\u0020BinaryPayload\u0020class\u0020when\u0020a\u0020resource\u0020has\u0020no\u0020binary\npayload.",
             "url": "../classes/acdhOeaw-acdhRepo-NoBinaryException.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepo\\NoBinaryException\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepo-NoBinaryException.html#method___construct"
-        },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\RepoException",
             "name": "RepoException",
             "summary": "Description\u0020of\u0020RepoException",
