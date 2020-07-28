@@ -1053,7 +1053,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AcreateRootTableHtml\u0028\u0029",
             "name": "createRootTableHtml",
-            "summary": "",
+            "summary": "Create\u0020the\u0020response\u0020html\u0020string",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTableHtml"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AgetRtTypeValues\u0028\u0029",
