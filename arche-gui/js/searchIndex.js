@@ -1063,17 +1063,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AgetRtTypeDomain\u0028\u0029",
             "name": "getRtTypeDomain",
-            "summary": "",
+            "summary": "Get\u0020and\u0020display\u0020the\u0020domain\u0020values\u0020from\u0020the\u0020ontology",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getRtTypeDomain"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AgetRtTypeRecommended\u0028\u0029",
             "name": "getRtTypeRecommended",
-            "summary": "",
+            "summary": "Get\u0020and\u0020display\u0020the\u0020recommended\u0020values\u0020from\u0020the\u0020ontology",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getRtTypeRecommended"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AgetRtTypeRange\u0028\u0029",
             "name": "getRtTypeRange",
-            "summary": "",
+            "summary": "Get\u0020and\u0020display\u0020the\u0020range\u0020values\u0020from\u0020the\u0020ontology",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getRtTypeRange"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003ArtCardinality\u0028\u0029",
