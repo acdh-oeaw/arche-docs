@@ -271,6 +271,11 @@ Search.appendIndex(
             "summary": "Generate\u0020the\u0020basic\u0020metadata\u0020for\u0020the\u0020root\u0020resource\/collection\u0020in\u0020the\u0020dissemination\u0020services\u0020view",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_generateObjDataForDissService"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AgetChildData\u0028\u0029",
+            "name": "getChildData",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_getChildData"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
@@ -475,11 +480,6 @@ Search.appendIndex(
             "name": "helper",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_helper"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024numberOfResults",
-            "name": "numberOfResults",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_numberOfResults"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\EventSubscriber\\AcdhRepoGuiConfigEventSubscriber",
             "name": "AcdhRepoGuiConfigEventSubscriber",
@@ -1956,6 +1956,21 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_createExampleTitleData"
         },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AcreateExampleIdentifierData\u0028\u0029",
+            "name": "createExampleIdentifierData",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_createExampleIdentifierData"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AcreateExampleAcdhIdentifierData\u0028\u0029",
+            "name": "createExampleAcdhIdentifierData",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_createExampleAcdhIdentifierData"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AcreateExampleAvailabelDateData\u0028\u0029",
+            "name": "createExampleAvailabelDateData",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_createExampleAvailabelDateData"
+        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetTitle\u0028\u0029",
             "name": "testGetTitle",
             "summary": "",
@@ -1965,6 +1980,36 @@ Search.appendIndex(
             "name": "testGetData",
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetData"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetIdentifiers\u0028\u0029",
+            "name": "testGetIdentifiers",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetIdentifiers"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetNonAcdhIdentifiers\u0028\u0029",
+            "name": "testGetNonAcdhIdentifiers",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetNonAcdhIdentifiers"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetUUID\u0028\u0029",
+            "name": "testGetUUID",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetUUID"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetAcdhID\u0028\u0029",
+            "name": "testGetAcdhID",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetAcdhID"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetInsideUrl\u0028\u0029",
+            "name": "testGetInsideUrl",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetInsideUrl"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetAvailableDate\u0028\u0029",
+            "name": "testGetAvailableDate",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetAvailableDate"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AstartTimer\u0028\u0029",
             "name": "startTimer",
