@@ -846,21 +846,6 @@ Search.appendIndex(
             "summary": "Sets\u0020a\u0020logger\u0020for\u0020the\u0020search\u0020object",
             "url": "../classes/acdhOeaw-oai-search-SearchInterface.html#method_setLogger"
         },                {
-            "fqsen": "\\acdhOeaw\\oai\\set\\Acdh",
-            "name": "Acdh",
-            "summary": "Implements\u0020sets\u0020by\u0020simply\u0020taking\u0020the\u0020\u0026llt\u003BsetSpec\u0026gt\u003B\u0020from\u0020a\u0020given\u0020resource\u0027s\nmetadataRDF\u0020property.",
-            "url": "../classes/acdhOeaw-oai-set-Acdh.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\oai\\set\\Acdh\u003A\u003AgetSetFilter\u0028\u0029",
-            "name": "getSetFilter",
-            "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020an\u0020\u0060id\u0060\u0020column\u0020providing\nrepository\u0020resource\u0020ids\u0020belonging\u0020to\u0020a\u0020given\u0020set.",
-            "url": "../classes/acdhOeaw-oai-set-Acdh.html#method_getSetFilter"
-        },                {
-            "fqsen": "\\acdhOeaw\\oai\\set\\Acdh\u003A\u003AgetSetData\u0028\u0029",
-            "name": "getSetData",
-            "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020two\u0020columns\u003A",
-            "url": "../classes/acdhOeaw-oai-set-Acdh.html#method_getSetData"
-        },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Complex",
             "name": "Complex",
             "summary": "Provides\u0020full\u0020sets\u0020support.",
