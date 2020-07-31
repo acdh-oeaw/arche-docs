@@ -1981,26 +1981,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetData"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetIdentifiers\u0028\u0029",
-            "name": "testGetIdentifiers",
-            "summary": "",
-            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetIdentifiers"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetUUID\u0028\u0029",
-            "name": "testGetUUID",
-            "summary": "",
-            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetUUID"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetAcdhID\u0028\u0029",
-            "name": "testGetAcdhID",
-            "summary": "",
-            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetAcdhID"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetInsideUrl\u0028\u0029",
-            "name": "testGetInsideUrl",
-            "summary": "",
-            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetInsideUrl"
-        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AstartTimer\u0028\u0029",
             "name": "startTimer",
             "summary": "",
