@@ -2011,6 +2011,26 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#property_resourceData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ArcheTwigDateExtension",
+            "name": "ArcheTwigDateExtension",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ArcheTwigDateExtension\u003A\u003AgetFilters\u0028\u0029",
+            "name": "getFilters",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_getFilters"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ArcheTwigDateExtension\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "Gets\u0020a\u0020unique\u0020identifier\u0020for\u0020this\u0020Twig\u0020extension.",
+            "url": "../classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_getName"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ArcheTwigDateExtension\u003A\u003AextendDateFormat\u0028\u0029",
+            "name": "extendDateFormat",
+            "summary": "change\u0020the\u0020datefomat\u0020to\u0020work\u0020with\u0020strftime",
+            "url": "../classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_extendDateFormat"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -2090,5 +2110,10 @@ Search.appendIndex(
             "name": "Tests",
             "summary": "",
             "url": "../namespaces/drupal-tests.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension",
+            "name": "TwigExtension",
+            "summary": "",
+            "url": "../namespaces/drupal-acdh-repo-gui-twigextension.html"
         }            ]
 );
