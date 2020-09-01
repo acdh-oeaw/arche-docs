@@ -56,6 +56,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_checkLanguage"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckPropertyTypes\u0028\u0029",
+            "name": "checkPropertyTypes",
+            "summary": "Checks\u0020property\u0020types\u0020\u0028datatype\/object\u0029.",
+            "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_checkPropertyTypes"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckCardinalities\u0028\u0029",
             "name": "checkCardinalities",
             "summary": "Checks\u0020property\u0020cardinalities\u0020according\u0020to\u0020the\u0020ontology.",
