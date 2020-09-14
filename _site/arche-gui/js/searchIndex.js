@@ -466,10 +466,20 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_generateView"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003Afulltext_search\u0028\u0029",
+            "name": "fulltext_search",
+            "summary": "New\u0020fulltext\u0020search\u0020with\u0020binary\u0020search",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_fulltext_search"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_repo"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_config"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024model",
             "name": "model",
@@ -480,6 +490,11 @@ Search.appendIndex(
             "name": "helper",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_helper"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024pagingHelper",
+            "name": "pagingHelper",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_pagingHelper"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\EventSubscriber\\AcdhRepoGuiConfigEventSubscriber",
             "name": "AcdhRepoGuiConfigEventSubscriber",
@@ -1621,15 +1636,30 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AgetViewData_V2\u0028\u0029",
+            "name": "getViewData_V2",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_getViewData_V2"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AgetViewData\u0028\u0029",
             "name": "getViewData",
             "summary": "get\u0020the\u0020search\u0020view\u0020data",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_getViewData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AformatYearsFilter_V2\u0028\u0029",
+            "name": "formatYearsFilter_V2",
+            "summary": "Change\u0020the\u0020years\u0020format\u0020for\u0020the\u0020sql\u0020query",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_formatYearsFilter_V2"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AformatYearsFilter\u0028\u0029",
             "name": "formatYearsFilter",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_formatYearsFilter"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AformatTypeFilter_V2\u0028\u0029",
+            "name": "formatTypeFilter_V2",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_formatTypeFilter_V2"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AformatTypeFilter\u0028\u0029",
             "name": "formatTypeFilter",
@@ -1681,6 +1711,16 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_repodb"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_config"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_repo"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024repolibDB",
             "name": "repolibDB",
             "summary": "",
@@ -1730,6 +1770,11 @@ Search.appendIndex(
             "name": "orderby_column",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_orderby_column"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024namespace",
+            "name": "namespace",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_namespace"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject",
             "name": "ResourceObject",
@@ -1860,11 +1905,6 @@ Search.appendIndex(
             "name": "repoid",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#property_repoid"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024repoUrl",
-            "name": "repoUrl",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#property_repoUrl"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024language",
             "name": "language",
