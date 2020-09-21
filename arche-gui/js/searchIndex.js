@@ -13,7 +13,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003Arepo_root\u0028\u0029",
             "name": "repo_root",
-            "summary": "Root\u0020view",
+            "summary": "Create\u0020root\u0020view",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#method_repo_root"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003Arepo_complexsearch\u0028\u0029",
@@ -273,7 +273,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AgetChildData\u0028\u0029",
             "name": "getChildData",
-            "summary": "",
+            "summary": "Get\u0020the\u0020child\u0020view\u0020data",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_getChildData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003A\u0024config",
