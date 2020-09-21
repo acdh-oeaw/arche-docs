@@ -463,7 +463,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003AgenerateView\u0028\u0029",
             "name": "generateView",
-            "summary": "",
+            "summary": "Create\u0020the\u0020search\u0020view\u0020content",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_generateView"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003Afulltext_search\u0028\u0029",
