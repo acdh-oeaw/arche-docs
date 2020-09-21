@@ -1871,6 +1871,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020acdh\u0020type\u0020string",
             "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getAcdhType"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetSkosType\u0028\u0029",
+            "name": "getSkosType",
+            "summary": "Get\u0020the\u0020skos\u0020concept\u0020type\u0020for\u0020the\u0020custom\u0020gui\u0020detail\u0020view",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getSkosType"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetExpertTableData\u0028\u0029",
             "name": "getExpertTableData",
             "summary": "Get\u0020all\u0020data",
