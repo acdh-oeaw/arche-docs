@@ -21,11 +21,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_maintainPid"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AmaintainHosting\u0028\u0029",
-            "name": "maintainHosting",
-            "summary": "",
-            "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_maintainHosting"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AmaintainBinarySize\u0028\u0029",
             "name": "maintainBinarySize",
             "summary": "",
@@ -45,6 +40,11 @@ Search.appendIndex(
             "name": "maintainPropertyRange",
             "summary": "",
             "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_maintainPropertyRange"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AmaintainDefaultValues\u0028\u0029",
+            "name": "maintainDefaultValues",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_maintainDefaultValues"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AnormalizeIds\u0028\u0029",
             "name": "normalizeIds",
