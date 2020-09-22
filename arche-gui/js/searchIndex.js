@@ -1016,6 +1016,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020dissemination\u0020services",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_getDissServices"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AhandleShibbolethUser\u0028\u0029",
+            "name": "handleShibbolethUser",
+            "summary": "Handle\u0020the\u0020default\u0020shibboleth\u0020user\u0020for\u0020the\u0020federated\u0020login",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_handleShibbolethUser"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003A\u0024langConf",
             "name": "langConf",
             "summary": "",
