@@ -26,11 +26,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_maintainBinarySize"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AmaintainAccessRestriction\u0028\u0029",
-            "name": "maintainAccessRestriction",
-            "summary": "",
-            "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_maintainAccessRestriction"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AmaintainAccessRights\u0028\u0029",
             "name": "maintainAccessRights",
             "summary": "Access\u0020rights\u0020should\u0020be\u0020maintained\u0020according\u0020to\u0020the\n\u0060cfg.schema.accessRestriction\u0060\u0020value\u003A",
