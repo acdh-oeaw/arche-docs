@@ -31,6 +31,11 @@ Search.appendIndex(
             "summary": "Change\u0020language\u0020session\u0020variable\u0020API\nBecause\u0020of\u0020the\u0020special\u0020path\u0020handling,\u0020the\u0020basic\u0020language\u0020selector\u0020is\u0020not\u0020working",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#method_oeaw_change_lng"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003Ashibboleth_login\u0028\u0029",
+            "name": "shibboleth_login",
+            "summary": "Displaying\u0020the\u0020federated\u0020login\u0020with\u0020shibboleth",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#method_shibboleth_login"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
@@ -520,6 +525,11 @@ Search.appendIndex(
             "name": "setupMainClasses",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-EventSubscriber-AcdhRepoGuiEventSubscriber.html#method_setupMainClasses"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\EventSubscriber\\AcdhRepoGuiEventSubscriber\u003A\u003AcheckForShibboleth\u0028\u0029",
+            "name": "checkForShibboleth",
+            "summary": "Check\u0020the\u0020shibboleth\u0020user\u0020logins",
+            "url": "../classes/Drupal-acdh-repo-gui-EventSubscriber-AcdhRepoGuiEventSubscriber.html#method_checkForShibboleth"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\EventSubscriber\\AcdhRepoGuiEventSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
             "name": "getSubscribedEvents",
