@@ -66,10 +66,20 @@ Search.appendIndex(
             "summary": "Every\u0020resource\u0020must\u0020have\u0020a\u0020title\u0020property\u0020\u0028cfg.schema.label\u0029.",
             "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_checkTitleProp"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AupdateCollectionExtent\u0028\u0029",
-            "name": "updateCollectionExtent",
+            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AupdateCollections\u0028\u0029",
+            "name": "updateCollections",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollectionExtent"
+            "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollections"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AupdateCollectionSize\u0028\u0029",
+            "name": "updateCollectionSize",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollectionSize"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AupdateCollectionAggregates\u0028\u0029",
+            "name": "updateCollectionAggregates",
+            "summary": "",
+            "url": "../classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollectionAggregates"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AloadOntology\u0028\u0029",
             "name": "loadOntology",
