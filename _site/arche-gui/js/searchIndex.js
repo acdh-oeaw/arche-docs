@@ -788,7 +788,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper",
             "name": "CiteHelper",
-            "summary": "Description\u0020of\u0020CiteHelper",
+            "summary": "https\u003A\/\/redmine.acdh.oeaw.ac.at\/issues\/11771\u0020\u002D\u0020CITE\u0020Widget",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003A__construct\u0028\u0029",
@@ -798,8 +798,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003AgetCiteWidgetData\u0028\u0029",
             "name": "getCiteWidgetData",
-            "summary": "",
+            "summary": "Get\u0020the\u0020property\u0020data\u0020from\u0020the\u0020object\u0020as\u0020a\u0020string",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_getCiteWidgetData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003AcreateCiteWidgetCollectionProject\u0028\u0029",
+            "name": "createCiteWidgetCollectionProject",
+            "summary": "Create\u0020the\u0020Collection\u0020\/\u0020project\u0020Cite\u0020widget\nEXAMPLE\u003A\nYoshida\u0020Sayuri,\u0020Klaus\u0020Bieber,\u0020Gertrude\u0020Bieber.\u0020The\u0020postcard\u0020collections\u0020of\u0020Friedrich\u0020Julius\u0020Bieber.",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_createCiteWidgetCollectionProject"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003AcreateCiteWidgetResourceMetadata\u0028\u0029",
+            "name": "createCiteWidgetResourceMetadata",
+            "summary": "Create\u0020the\u0020Resource\u0020\/\u0020Metadata\u0020Cite\u0020widget",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_createCiteWidgetResourceMetadata"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003AcreateCiteThisWidget\u0028\u0029",
             "name": "createCiteThisWidget",
@@ -811,15 +821,15 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#property_cite"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#property_config"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#property_repo"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003A\u0024obj",
+            "name": "obj",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#property_obj"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DetailViewHelper",
             "name": "DetailViewHelper",
