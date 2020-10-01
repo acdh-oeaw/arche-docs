@@ -98,6 +98,11 @@
                     <td class="phpdocumentor-cell">string</td>
                 </tr>
                             <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_removeDuplication">removeDuplication()</a></th>
+                    <td class="phpdocumentor-cell">Remove the duplications</td>
+                    <td class="phpdocumentor-cell">string</td>
+                </tr>
+                            <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_createCiteWidgetCollectionProject">createCiteWidgetCollectionProject()</a></th>
                     <td class="phpdocumentor-cell">Create the Collection / project Cite widget
 EXAMPLE:
@@ -107,11 +112,6 @@ Yoshida Sayuri, Klaus Bieber, Gertrude Bieber. The postcard collections of Fried
                             <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_createCiteWidgetResourceMetadata">createCiteWidgetResourceMetadata()</a></th>
                     <td class="phpdocumentor-cell">Create the Resource / Metadata Cite widget</td>
-                    <td class="phpdocumentor-cell">array</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_createCiteThisWidget">createCiteThisWidget()</a></th>
-                    <td class="phpdocumentor-cell">Create the HTML content of the cite-this widget on single resource view</td>
                     <td class="phpdocumentor-cell">array</td>
                 </tr>
                                             </table>
@@ -277,6 +277,55 @@ Yoshida Sayuri, Klaus Bieber, Gertrude Bieber. The postcard collections of Fried
         <span class="phpdocumentor-signature__response_type">string</span>
             
 </article>
+                                    <a id="method_removeDuplication"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">removeDuplication()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/CiteHelper.php"><a href="../files/src-helper-citehelper.html"><abbr title="src/Helper/CiteHelper.php">CiteHelper.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">75</span>
+    </aside>
+        <p class="phpdocumentor-summary">Remove the duplications</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">removeDuplication</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__name">$arr1</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                    <span class="phpdocumentor-signature__argument">
+            ,                 <span class="phpdocumentor-signature__argument__name">$arr2</span> :
+                <span class="phpdocumentor-signature__argument__return-type">array</span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">string</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$arr1</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$arr2</span>
+                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            
+</article>
                                     <a id="method_createCiteWidgetCollectionProject"></a>
 <article
         class="
@@ -288,7 +337,7 @@ Yoshida Sayuri, Klaus Bieber, Gertrude Bieber. The postcard collections of Fried
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/CiteHelper.php"><a href="../files/src-helper-citehelper.html"><abbr title="src/Helper/CiteHelper.php">CiteHelper.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">74</span>
+        <span class="phpdocumentor-element-found-in__line">98</span>
     </aside>
         <p class="phpdocumentor-summary">Create the Collection / project Cite widget
 EXAMPLE:
@@ -319,7 +368,7 @@ Yoshida Sayuri, Klaus Bieber, Gertrude Bieber. The postcard collections of Fried
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/CiteHelper.php"><a href="../files/src-helper-citehelper.html"><abbr title="src/Helper/CiteHelper.php">CiteHelper.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">148</span>
+        <span class="phpdocumentor-element-found-in__line">187</span>
     </aside>
         <p class="phpdocumentor-summary">Create the Resource / Metadata Cite widget</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
@@ -350,35 +399,6 @@ ARCHE, <a href="https://repo.hephaistos.arz.oeaw.ac.at/browser/oeaw_detail/52249
         
             <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array</span>
-            
-</article>
-                                    <a id="method_createCiteThisWidget"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">createCiteThisWidget()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/Helper/CiteHelper.php"><a href="../files/src-helper-citehelper.html"><abbr title="src/Helper/CiteHelper.php">CiteHelper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">238</span>
-    </aside>
-        <p class="phpdocumentor-summary">Create the HTML content of the cite-this widget on single resource view</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">createCiteThisWidget</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">array</span>
-    </code>
-
-    
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array</span>
-                    &mdash; <span class="phpdocumentor-description"><p>$this-&gt;cite Returns the cite-this widget as HTML</p></span>
             
 </article>
                                                             </section>

@@ -801,6 +801,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020property\u0020data\u0020from\u0020the\u0020object\u0020as\u0020a\u0020string",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_getCiteWidgetData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003AremoveDuplication\u0028\u0029",
+            "name": "removeDuplication",
+            "summary": "Remove\u0020the\u0020duplications",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_removeDuplication"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003AcreateCiteWidgetCollectionProject\u0028\u0029",
             "name": "createCiteWidgetCollectionProject",
             "summary": "Create\u0020the\u0020Collection\u0020\/\u0020project\u0020Cite\u0020widget\nEXAMPLE\u003A\nYoshida\u0020Sayuri,\u0020Klaus\u0020Bieber,\u0020Gertrude\u0020Bieber.\u0020The\u0020postcard\u0020collections\u0020of\u0020Friedrich\u0020Julius\u0020Bieber.",
@@ -810,11 +815,6 @@ Search.appendIndex(
             "name": "createCiteWidgetResourceMetadata",
             "summary": "Create\u0020the\u0020Resource\u0020\/\u0020Metadata\u0020Cite\u0020widget",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_createCiteWidgetResourceMetadata"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003AcreateCiteThisWidget\u0028\u0029",
-            "name": "createCiteThisWidget",
-            "summary": "Create\u0020the\u0020HTML\u0020content\u0020of\u0020the\u0020cite\u002Dthis\u0020widget\u0020on\u0020single\u0020resource\u0020view",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_createCiteThisWidget"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003A\u0024cite",
             "name": "cite",
