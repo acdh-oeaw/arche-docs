@@ -1661,9 +1661,14 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AsetUpPayload\u0028\u0029",
+            "name": "setUpPayload",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_setUpPayload"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AgetViewData_V2\u0028\u0029",
             "name": "getViewData_V2",
-            "summary": "",
+            "summary": "Full\u0020content\u0020search",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_getViewData_V2"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AgetViewData\u0028\u0029",
@@ -1795,6 +1800,11 @@ Search.appendIndex(
             "name": "orderby_column",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_orderby_column"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024binarySearch",
+            "name": "binarySearch",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_binarySearch"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024namespace",
             "name": "namespace",
