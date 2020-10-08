@@ -21,11 +21,6 @@ Search.appendIndex(
             "summary": "Repo\u0020search\/root\u0020main\u0020view",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#method_repo_complexsearch"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003Arepo_detail\u0028\u0029",
-            "name": "repo_detail",
-            "summary": "the\u0020detail\u0020view",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#method_repo_detail"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003Aoeaw_change_lng\u0028\u0029",
             "name": "oeaw_change_lng",
             "summary": "Change\u0020language\u0020session\u0020variable\u0020API\nBecause\u0020of\u0020the\u0020special\u0020path\u0020handling,\u0020the\u0020basic\u0020language\u0020selector\u0020is\u0020not\u0020working",
@@ -55,11 +50,6 @@ Search.appendIndex(
             "name": "searchViewController",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#property_searchViewController"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003A\u0024detailViewController",
-            "name": "detailViewController",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#property_detailViewController"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003A\u0024siteLang",
             "name": "siteLang",
@@ -265,6 +255,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003Arepo_detail\u0028\u0029",
+            "name": "repo_detail",
+            "summary": "the\u0020detail\u0020view",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_repo_detail"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AgenerateDetailView\u0028\u0029",
             "name": "generateDetailView",
