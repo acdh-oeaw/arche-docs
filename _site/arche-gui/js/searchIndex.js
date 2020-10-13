@@ -2026,11 +2026,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_setUp"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestBaseurl\u0028\u0029",
-            "name": "testBaseurl",
-            "summary": "",
-            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testBaseurl"
-        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestDetailViewUrlDecodeEncode\u0028\u0029",
             "name": "testDetailViewUrlDecodeEncode",
             "summary": "",
