@@ -2011,6 +2011,46 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/exampleData.html#method_exampleResourceData"
         },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest",
+            "name": "GeneralFunctionsTest",
+            "summary": "Tests\u0020GeneralFunctions",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AsetUpBeforeClass\u0028\u0029",
+            "name": "setUpBeforeClass",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_setUpBeforeClass"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AsetUp\u0028\u0029",
+            "name": "setUp",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_setUp"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestBaseurl\u0028\u0029",
+            "name": "testBaseurl",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testBaseurl"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestDetailViewUrlDecodeEncode\u0028\u0029",
+            "name": "testDetailViewUrlDecodeEncode",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testDetailViewUrlDecodeEncode"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#property_repo"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#property_config"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003A\u0024object",
+            "name": "object",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#property_object"
+        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest",
             "name": "ResourceObjectTest",
             "summary": "Tests\u0020ResourceObject",
@@ -2201,11 +2241,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../namespaces/drupal-acdh-repo-gui-plugin.html"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object",
-            "name": "Object",
-            "summary": "",
-            "url": "../namespaces/drupal-tests-acdh-repo-gui-unit-object.html"
-        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit",
             "name": "Unit",
             "summary": "",
@@ -2220,6 +2255,11 @@ Search.appendIndex(
             "name": "Tests",
             "summary": "",
             "url": "../namespaces/drupal-tests.html"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object",
+            "name": "Object",
+            "summary": "",
+            "url": "../namespaces/drupal-tests-acdh-repo-gui-unit-object.html"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension",
             "name": "TwigExtension",
