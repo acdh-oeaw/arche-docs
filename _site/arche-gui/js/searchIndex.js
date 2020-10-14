@@ -2031,6 +2031,16 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testDetailViewUrlDecodeEncode"
         },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AexampleUUIDData\u0028\u0029",
+            "name": "exampleUUIDData",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_exampleUUIDData"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestSpecialIdentifierToUUID\u0028\u0029",
+            "name": "testSpecialIdentifierToUUID",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testSpecialIdentifierToUUID"
+        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "",
