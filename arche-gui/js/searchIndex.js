@@ -1006,11 +1006,6 @@ Search.appendIndex(
             "summary": "This\u0020function\u0020is\u0020get\u0020the\u0020acdh\u0020identifier\u0020by\u0020the\u0020PID,\u0020because\u0020all\u0020of\u0020the\u0020functions\nare\u0020using\u0020the\u0020identifier\u0020and\u0020not\u0020the\u0020pid\u0020\u003A\u0029",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_specialIdentifierToUUID"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AformatSizeUnits\u0028\u0029",
-            "name": "formatSizeUnits",
-            "summary": "Create\u0020nice\u0020format\u0020from\u0020file\u0020sizes",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_formatSizeUnits"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AchangeCollDLScript\u0028\u0029",
             "name": "changeCollDLScript",
             "summary": "Extend\u0020the\u0020collection\u0020download\u0020python\u0020script\u0020with\u0020the\u0020url",
@@ -1025,11 +1020,6 @@ Search.appendIndex(
             "name": "handleShibbolethUser",
             "summary": "Handle\u0020the\u0020default\u0020shibboleth\u0020user\u0020for\u0020the\u0020federated\u0020login",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_handleShibbolethUser"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003A\u0024langConf",
-            "name": "langConf",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#property_langConf"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003A\u0024config",
             "name": "config",
@@ -2111,6 +2101,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetInsideUrl"
         },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetUUID\u0028\u0029",
+            "name": "testGetUUID",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetUUID"
+        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetAvailableDate\u0028\u0029",
             "name": "testGetAvailableDate",
             "summary": "",
@@ -2126,10 +2121,45 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testAccessRestriction"
         },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetRepoID\u0028\u0029",
+            "name": "testGetRepoID",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetRepoID"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetRepoUrl\u0028\u0029",
+            "name": "testGetRepoUrl",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetRepoUrl"
+        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestCopyResourceLink\u0028\u0029",
             "name": "testCopyResourceLink",
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testCopyResourceLink"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestIsTitleImage\u0028\u0029",
+            "name": "testIsTitleImage",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testIsTitleImage"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetAcdhType\u0028\u0029",
+            "name": "testGetAcdhType",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetAcdhType"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetSkosType\u0028\u0029",
+            "name": "testGetSkosType",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetSkosType"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetExpertTableData\u0028\u0029",
+            "name": "testGetExpertTableData",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetExpertTableData"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetFormattedDateByProperty\u0028\u0029",
+            "name": "testGetFormattedDateByProperty",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetFormattedDateByProperty"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AstartTimer\u0028\u0029",
             "name": "startTimer",
