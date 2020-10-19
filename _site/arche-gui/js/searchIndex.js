@@ -56,11 +56,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#property_siteLang"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003A\u0024langConf",
-            "name": "langConf",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#property_langConf"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController",
             "name": "ArcheApiController",
             "summary": "Description\u0020of\u0020ArcheApiController",
@@ -571,11 +566,6 @@ Search.appendIndex(
             "summary": "this\u0020function\u0020creates\u0020the\u0020search\u0020input\u0020field",
             "url": "../classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_createSearchInput"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024langConf",
-            "name": "langConf",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_langConf"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024model",
             "name": "model",
             "summary": "",
@@ -740,11 +730,6 @@ Search.appendIndex(
             "name": "siteLang",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#property_siteLang"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003A\u0024langConf",
-            "name": "langConf",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#property_langConf"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003A\u0024prefixesToChange",
             "name": "prefixesToChange",
