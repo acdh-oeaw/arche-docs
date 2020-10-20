@@ -16,11 +16,6 @@ Search.appendIndex(
             "summary": "Create\u0020root\u0020view",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#method_repo_root"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003Arepo_complexsearch\u0028\u0029",
-            "name": "repo_complexsearch",
-            "summary": "Repo\u0020search\/root\u0020main\u0020view",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#method_repo_complexsearch"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003Aoeaw_change_lng\u0028\u0029",
             "name": "oeaw_change_lng",
             "summary": "Change\u0020language\u0020session\u0020variable\u0020API\nBecause\u0020of\u0020the\u0020special\u0020path\u0020handling,\u0020the\u0020basic\u0020language\u0020selector\u0020is\u0020not\u0020working",
@@ -45,11 +40,6 @@ Search.appendIndex(
             "name": "rootViewController",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#property_rootViewController"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003A\u0024searchViewController",
-            "name": "searchViewController",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#property_searchViewController"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003A\u0024siteLang",
             "name": "siteLang",
@@ -196,10 +186,10 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#method___construct"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003Arepo_child_api\u0028\u0029",
-            "name": "repo_child_api",
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003AgenerateView\u0028\u0029",
+            "name": "generateView",
             "summary": "This\u0020API\u0020will\u0020generate\u0020the\u0020child\u0020html\u0020view.",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#method_repo_child_api"
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#method_generateView"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003A\u0024config",
             "name": "config",
@@ -251,10 +241,10 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method___construct"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003Arepo_detail\u0028\u0029",
-            "name": "repo_detail",
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AdetailViewMainMethod\u0028\u0029",
+            "name": "detailViewMainMethod",
             "summary": "the\u0020detail\u0020view",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_repo_detail"
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_detailViewMainMethod"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AgenerateDetailView\u0028\u0029",
             "name": "generateDetailView",
