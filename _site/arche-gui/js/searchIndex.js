@@ -1036,6 +1036,11 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020reponse\u0020header",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_setupMetadataGuiType"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AcheckDataProperty\u0028\u0029",
+            "name": "checkDataProperty",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_checkDataProperty"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AformatMetadataGuiView\u0028\u0029",
             "name": "formatMetadataGuiView",
             "summary": "Format\u0020the\u0020metadata\u0020gui\u0020result\u0020for\u0020the\u0020json\u0020output",
