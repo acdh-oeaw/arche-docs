@@ -691,10 +691,50 @@ Search.appendIndex(
             "summary": "Create\u0020gui\u0020inside\u0020uri\u0020from\u0020the\u0020identifier",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_makeInsideUri"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003AsetLanguage\u0028\u0029",
+            "name": "setLanguage",
+            "summary": "Set\u0020the\u0020language\u0020tag\u0020for\u0020the\u0020object",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_setLanguage"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003AsetUpRepoIdForExternalType\u0028\u0029",
+            "name": "setUpRepoIdForExternalType",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_setUpRepoIdForExternalType"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003AsetTitle\u0028\u0029",
+            "name": "setTitle",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_setTitle"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003AsetAcdhId\u0028\u0029",
+            "name": "setAcdhId",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_setAcdhId"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003AsetUri\u0028\u0029",
+            "name": "setUri",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_setUri"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003AextendActualObj\u0028\u0029",
             "name": "extendActualObj",
             "summary": "Extend\u0020the\u0020actual\u0020object\u0020with\u0020the\u0020shortcuts",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_extendActualObj"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003AsetIDTypeAcdhId\u0028\u0029",
+            "name": "setIDTypeAcdhId",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_setIDTypeAcdhId"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003AsetIDTypeRepoId\u0028\u0029",
+            "name": "setIDTypeRepoId",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_setIDTypeRepoId"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003AsetIDTypeUri\u0028\u0029",
+            "name": "setIDTypeUri",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_setIDTypeUri"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper\u003A\u003AcreateView\u0028\u0029",
             "name": "createView",
