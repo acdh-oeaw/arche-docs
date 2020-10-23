@@ -246,10 +246,25 @@ Search.appendIndex(
             "summary": "the\u0020detail\u0020view",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_detailViewMainMethod"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AsetBreadcrumb\u0028\u0029",
+            "name": "setBreadcrumb",
+            "summary": "set\u0020up\u0020the\u0020breadcrumb\u0020data",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_setBreadcrumb"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AgenerateDetailView\u0028\u0029",
             "name": "generateDetailView",
             "summary": "Generate\u0020the\u0020detail\u0020view",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_generateDetailView"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AsetToolTip\u0028\u0029",
+            "name": "setToolTip",
+            "summary": "Set\u0020up\u0020tooltip\u0020data",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_setToolTip"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AsetCiteData\u0028\u0029",
+            "name": "setCiteData",
+            "summary": "Set\u0020up\u0020cite\u0020data",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_setCiteData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AgenerateObjDataForDissService\u0028\u0029",
             "name": "generateObjDataForDissService",
@@ -295,6 +310,16 @@ Search.appendIndex(
             "name": "generalFunctions",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#property_generalFunctions"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003A\u0024citeAcdhTypes",
+            "name": "citeAcdhTypes",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#property_citeAcdhTypes"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003A\u0024citeAcdhParentTypes",
+            "name": "citeAcdhParentTypes",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#property_citeAcdhParentTypes"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController",
             "name": "DisseminationServicesController",
@@ -365,11 +390,6 @@ Search.appendIndex(
             "name": "basicViewData",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#property_basicViewData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003A\u0024extraViewData",
-            "name": "extraViewData",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#property_extraViewData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003A\u0024generalFunctions",
             "name": "generalFunctions",
@@ -1035,6 +1055,11 @@ Search.appendIndex(
             "name": "handleShibbolethUser",
             "summary": "Handle\u0020the\u0020default\u0020shibboleth\u0020user\u0020for\u0020the\u0020federated\u0020login",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_handleShibbolethUser"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AjsonDecodeData\u0028\u0029",
+            "name": "jsonDecodeData",
+            "summary": "Return\u0020the\u0020json\u0020decoded\u0020string",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_jsonDecodeData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003A\u0024config",
             "name": "config",
