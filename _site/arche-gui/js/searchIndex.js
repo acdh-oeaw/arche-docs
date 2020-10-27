@@ -1056,6 +1056,26 @@ Search.appendIndex(
             "summary": "Handle\u0020the\u0020default\u0020shibboleth\u0020user\u0020for\u0020the\u0020federated\u0020login",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_handleShibbolethUser"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AloadTheUserData\u0028\u0029",
+            "name": "loadTheUserData",
+            "summary": "Load\u0020the\u0020user\u0020from\u0020the\u0020drupal\u0020db",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_loadTheUserData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AcreateShibbolethUser\u0028\u0029",
+            "name": "createShibbolethUser",
+            "summary": "create\u0020the\u0020shibboleth\u0020users\u0020drupal\u0020user",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_createShibbolethUser"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AcheckEmail\u0028\u0029",
+            "name": "checkEmail",
+            "summary": "check\u0020the\u0020string\u0020for\u0020email\u0020address",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_checkEmail"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AcreateShibbiolethUserPwd\u0028\u0029",
+            "name": "createShibbiolethUserPwd",
+            "summary": "Generate\u0020a\u0020new\u0020custom\u0020password\u0020for\u0020the\u0020new\u0020shibboleth\u0020drupal\u0020user",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_createShibbiolethUserPwd"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AjsonDecodeData\u0028\u0029",
             "name": "jsonDecodeData",
             "summary": "Return\u0020the\u0020json\u0020decoded\u0020string",
