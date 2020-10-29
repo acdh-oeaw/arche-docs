@@ -1081,6 +1081,16 @@ Search.appendIndex(
             "summary": "Return\u0020the\u0020json\u0020decoded\u0020string",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_jsonDecodeData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AcheckShibbolethGroup\u0028\u0029",
+            "name": "checkShibbolethGroup",
+            "summary": "Check\u0020the\u0020shibboleth\u0020user\u0020role\u0020exists\u0020or\u0020not",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_checkShibbolethGroup"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AcreateShobbolethGroup\u0028\u0029",
+            "name": "createShobbolethGroup",
+            "summary": "Create\u0020the\u0020shibboleth\u0020user\u0020role",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_createShobbolethGroup"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
