@@ -946,6 +946,21 @@ Search.appendIndex(
             "summary": "Generate\u0020tar\u0020file\u0020from\u0020the\u0020selected\u0020files",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_collectionDownload"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcreatePathForCollectionDownload\u0028\u0029",
+            "name": "createPathForCollectionDownload",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_createPathForCollectionDownload"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcreateFileNameForCollectionDownload\u0028\u0029",
+            "name": "createFileNameForCollectionDownload",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_createFileNameForCollectionDownload"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcreateCollectionDir\u0028\u0029",
+            "name": "createCollectionDir",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_createCollectionDir"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcollectionDownloadFiles\u0028\u0029",
             "name": "collectionDownloadFiles",
             "summary": "Download\u0020the\u0020selected\u0020binaries",
