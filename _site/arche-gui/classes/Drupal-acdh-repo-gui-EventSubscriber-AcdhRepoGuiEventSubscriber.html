@@ -86,6 +86,26 @@
                     <td class="phpdocumentor-cell"><abbr title="\Drupal\Core\Routing\TrustedRedirectResponse">TrustedRedirectResponse</abbr></td>
                 </tr>
                             <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-EventSubscriber-AcdhRepoGuiEventSubscriber.html#method_loginShibbolethUser">loginShibbolethUser()</a></th>
+                    <td class="phpdocumentor-cell">login the shibboleth user</td>
+                    <td class="phpdocumentor-cell"><abbr title="\Drupal\Core\Routing\TrustedRedirectResponse">TrustedRedirectResponse</abbr></td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-EventSubscriber-AcdhRepoGuiEventSubscriber.html#method_logoutShibbolethUserManually">logoutShibbolethUserManually()</a></th>
+                    <td class="phpdocumentor-cell">If the user clicks the logout button</td>
+                    <td class="phpdocumentor-cell">void</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-EventSubscriber-AcdhRepoGuiEventSubscriber.html#method_checkUserShibbolethRole">checkUserShibbolethRole()</a></th>
+                    <td class="phpdocumentor-cell">Check the user shibboleth role</td>
+                    <td class="phpdocumentor-cell">bool</td>
+                </tr>
+                            <tr>
+                    <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-EventSubscriber-AcdhRepoGuiEventSubscriber.html#method_logOutShibbolethUser">logOutShibbolethUser()</a></th>
+                    <td class="phpdocumentor-cell">logout the shibboleth user if we dont have a HTTP_EPPN value</td>
+                    <td class="phpdocumentor-cell">void</td>
+                </tr>
+                            <tr>
                     <th class="phpdocumentor-heading"><a href="../classes/Drupal-acdh-repo-gui-EventSubscriber-AcdhRepoGuiEventSubscriber.html#method_getSubscribedEvents">getSubscribedEvents()</a></th>
                     <td class="phpdocumentor-cell">This is the event handler main method</td>
                     <td class="phpdocumentor-cell">string</td>
@@ -170,6 +190,138 @@
         <span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\Core\Routing\TrustedRedirectResponse">TrustedRedirectResponse</abbr></span>
             
 </article>
+                                    <a id="method_loginShibbolethUser"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">loginShibbolethUser()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/EventSubscriber/AcdhRepoGuiEventSubscriber.php"><a href="../files/src-eventsubscriber-acdhrepoguieventsubscriber.html"><abbr title="src/EventSubscriber/AcdhRepoGuiEventSubscriber.php">AcdhRepoGuiEventSubscriber.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">51</span>
+    </aside>
+        <p class="phpdocumentor-summary">login the shibboleth user</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">loginShibbolethUser</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$event</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\Core\Routing\TrustedRedirectResponse">TrustedRedirectResponse</abbr></span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$event</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\Core\Routing\TrustedRedirectResponse">TrustedRedirectResponse</abbr></span>
+            
+</article>
+                                    <a id="method_logoutShibbolethUserManually"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">logoutShibbolethUserManually()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/EventSubscriber/AcdhRepoGuiEventSubscriber.php"><a href="../files/src-eventsubscriber-acdhrepoguieventsubscriber.html"><abbr title="src/EventSubscriber/AcdhRepoGuiEventSubscriber.php">AcdhRepoGuiEventSubscriber.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">76</span>
+    </aside>
+        <p class="phpdocumentor-summary">If the user clicks the logout button</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">logoutShibbolethUserManually</span>(
+                    <span class="phpdocumentor-signature__argument">
+                            <span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$event</span> :
+                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr></span>
+                            </span>
+                )
+        : <span class="phpdocumentor-signature__response_type">void</span>
+    </code>
+
+    
+            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+        <dl class="phpdocumentor-argument-list">
+                            <dt class="phpdocumentor-argument-list__entry">
+                    <span class="phpdocumentor-signature__argument__name">$event</span>
+                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr></span>
+                                    </dt>
+                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
+                    </dl>
+    
+        
+    
+</article>
+                                    <a id="method_checkUserShibbolethRole"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">checkUserShibbolethRole()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/EventSubscriber/AcdhRepoGuiEventSubscriber.php"><a href="../files/src-eventsubscriber-acdhrepoguieventsubscriber.html"><abbr title="src/EventSubscriber/AcdhRepoGuiEventSubscriber.php">AcdhRepoGuiEventSubscriber.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">96</span>
+    </aside>
+        <p class="phpdocumentor-summary">Check the user shibboleth role</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">checkUserShibbolethRole</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">bool</span>
+    </code>
+
+    
+    
+        
+            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            
+</article>
+                                    <a id="method_logOutShibbolethUser"></a>
+<article
+        class="
+            phpdocumentor-method
+            phpdocumentor-method--private
+                                                        "
+>
+    <h4 class="phpdocumentor-method__name">logOutShibbolethUser()</h4>
+    <aside class="phpdocumentor-element-found-in">
+        <abbr class="phpdocumentor-element-found-in__file" title="src/EventSubscriber/AcdhRepoGuiEventSubscriber.php"><a href="../files/src-eventsubscriber-acdhrepoguieventsubscriber.html"><abbr title="src/EventSubscriber/AcdhRepoGuiEventSubscriber.php">AcdhRepoGuiEventSubscriber.php</abbr></a></abbr>
+        :
+        <span class="phpdocumentor-element-found-in__line">112</span>
+    </aside>
+        <p class="phpdocumentor-summary">logout the shibboleth user if we dont have a HTTP_EPPN value</p>
+        <code class="phpdocumentor-signature phpdocumentor-code ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+                                <span class="phpdocumentor-signature__name">logOutShibbolethUser</span>(
+                )
+        : <span class="phpdocumentor-signature__response_type">void</span>
+    </code>
+
+    
+    
+        
+    
+</article>
                                     <a id="method_getSubscribedEvents"></a>
 <article
         class="
@@ -181,7 +333,7 @@
     <aside class="phpdocumentor-element-found-in">
         <abbr class="phpdocumentor-element-found-in__file" title="src/EventSubscriber/AcdhRepoGuiEventSubscriber.php"><a href="../files/src-eventsubscriber-acdhrepoguieventsubscriber.html"><abbr title="src/EventSubscriber/AcdhRepoGuiEventSubscriber.php">AcdhRepoGuiEventSubscriber.php</abbr></a></abbr>
         :
-        <span class="phpdocumentor-element-found-in__line">73</span>
+        <span class="phpdocumentor-element-found-in__line">129</span>
     </aside>
         <p class="phpdocumentor-summary">This is the event handler main method</p>
         <code class="phpdocumentor-signature phpdocumentor-code ">
