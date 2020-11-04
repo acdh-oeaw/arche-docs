@@ -531,6 +531,26 @@ Search.appendIndex(
             "summary": "Check\u0020the\u0020shibboleth\u0020user\u0020logins",
             "url": "../classes/Drupal-acdh-repo-gui-EventSubscriber-AcdhRepoGuiEventSubscriber.html#method_checkForShibboleth"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\EventSubscriber\\AcdhRepoGuiEventSubscriber\u003A\u003AloginShibbolethUser\u0028\u0029",
+            "name": "loginShibbolethUser",
+            "summary": "login\u0020the\u0020shibboleth\u0020user",
+            "url": "../classes/Drupal-acdh-repo-gui-EventSubscriber-AcdhRepoGuiEventSubscriber.html#method_loginShibbolethUser"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\EventSubscriber\\AcdhRepoGuiEventSubscriber\u003A\u003AlogoutShibbolethUserManually\u0028\u0029",
+            "name": "logoutShibbolethUserManually",
+            "summary": "If\u0020the\u0020user\u0020clicks\u0020the\u0020logout\u0020button",
+            "url": "../classes/Drupal-acdh-repo-gui-EventSubscriber-AcdhRepoGuiEventSubscriber.html#method_logoutShibbolethUserManually"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\EventSubscriber\\AcdhRepoGuiEventSubscriber\u003A\u003AcheckUserShibbolethRole\u0028\u0029",
+            "name": "checkUserShibbolethRole",
+            "summary": "Check\u0020the\u0020user\u0020shibboleth\u0020role",
+            "url": "../classes/Drupal-acdh-repo-gui-EventSubscriber-AcdhRepoGuiEventSubscriber.html#method_checkUserShibbolethRole"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\EventSubscriber\\AcdhRepoGuiEventSubscriber\u003A\u003AlogOutShibbolethUser\u0028\u0029",
+            "name": "logOutShibbolethUser",
+            "summary": "logout\u0020the\u0020shibboleth\u0020user\u0020if\u0020we\u0020dont\u0020have\u0020a\u0020HTTP_EPPN\u0020value",
+            "url": "../classes/Drupal-acdh-repo-gui-EventSubscriber-AcdhRepoGuiEventSubscriber.html#method_logOutShibbolethUser"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\EventSubscriber\\AcdhRepoGuiEventSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
             "name": "getSubscribedEvents",
             "summary": "This\u0020is\u0020the\u0020event\u0020handler\u0020main\u0020method",
