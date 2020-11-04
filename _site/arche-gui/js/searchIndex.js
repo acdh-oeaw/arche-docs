@@ -56,6 +56,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003AcreateDbHelperObject\u0028\u0029",
+            "name": "createDbHelperObject",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_createDbHelperObject"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_persons\u0028\u0029",
             "name": "repo_persons",
             "summary": "Get\u0020the\u0020Persons\u0020data\u0020for\u0020the\u0020Metadata\u0020Editor",
@@ -191,6 +196,16 @@ Search.appendIndex(
             "summary": "This\u0020API\u0020will\u0020generate\u0020the\u0020child\u0020html\u0020view.",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#method_generateView"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003AsetupPagingVariables\u0028\u0029",
+            "name": "setupPagingVariables",
+            "summary": "setup\u0020the\u0020variables\u0020for\u0020the\u0020paging",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#method_setupPagingVariables"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003AsetupIdentifier\u0028\u0029",
+            "name": "setupIdentifier",
+            "summary": "create\u0020the\u0020identifiers",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#method_setupIdentifier"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
@@ -231,6 +246,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#property_repoid"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003A\u0024identifier",
+            "name": "identifier",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#property_identifier"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController",
             "name": "DetailViewController",
             "summary": "Description\u0020of\u0020DetailViewController",
@@ -240,6 +260,16 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AcheckAjaxRequestIsOn\u0028\u0029",
+            "name": "checkAjaxRequestIsOn",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_checkAjaxRequestIsOn"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AgetIdentifierFromAjax\u0028\u0029",
+            "name": "getIdentifierFromAjax",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_getIdentifierFromAjax"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AdetailViewMainMethod\u0028\u0029",
             "name": "detailViewMainMethod",
@@ -1273,7 +1303,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\PagingHelper\u003A\u003AcreateView\u0028\u0029",
             "name": "createView",
-            "summary": "",
+            "summary": "Create\u0020Pagination\u0020view",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-PagingHelper.html#method_createView"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\PagingHelper\u003A\u003AcreatePaginationHTML\u0028\u0029",
