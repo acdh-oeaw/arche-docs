@@ -2156,6 +2156,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_setUp"
         },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AinitObject\u0028\u0029",
+            "name": "initObject",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_initObject"
+        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestDetailViewUrlDecodeEncode\u0028\u0029",
             "name": "testDetailViewUrlDecodeEncode",
             "summary": "",
