@@ -2161,11 +2161,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#method_initObject"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003AtestCreateViewWithoutData\u0028\u0029",
-            "name": "testCreateViewWithoutData",
-            "summary": "",
-            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#method_testCreateViewWithoutData"
-        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "",
