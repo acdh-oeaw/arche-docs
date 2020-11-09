@@ -2141,6 +2141,56 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/exampleData.html#method_exampleResourceData"
         },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest",
+            "name": "ArcheApiHelperTest",
+            "summary": "Tests\u0020ArcheApiHelper",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003AsetUpBeforeClass\u0028\u0029",
+            "name": "setUpBeforeClass",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#method_setUpBeforeClass"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003AsetUp\u0028\u0029",
+            "name": "setUp",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#method_setUp"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003AinitObject\u0028\u0029",
+            "name": "initObject",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#method_initObject"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003AtestCreateViewWithoutData\u0028\u0029",
+            "name": "testCreateViewWithoutData",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#method_testCreateViewWithoutData"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#property_repo"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#property_config"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003A\u0024object",
+            "name": "object",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#property_object"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003A\u0024mdStub",
+            "name": "mdStub",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#property_mdStub"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheHelperTest",
+            "name": "ArcheHelperTest",
+            "summary": "Description\u0020of\u0020ArcheHelperTest",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheHelperTest.html"
+        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest",
             "name": "GeneralFunctionsTest",
             "summary": "Tests\u0020GeneralFunctions",
