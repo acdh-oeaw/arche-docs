@@ -2161,20 +2161,30 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_initObject"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestDetailViewUrlDecodeEncode\u0028\u0029",
-            "name": "testDetailViewUrlDecodeEncode",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestDetailViewUrlDecodeEncode_Decode_Acdh\u0028\u0029",
+            "name": "testDetailViewUrlDecodeEncode_Decode_Acdh",
             "summary": "",
-            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testDetailViewUrlDecodeEncode"
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testDetailViewUrlDecodeEncode_Decode_Acdh"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestDetailViewUrlDecodeEncode_Encode\u0028\u0029",
+            "name": "testDetailViewUrlDecodeEncode_Encode",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testDetailViewUrlDecodeEncode_Encode"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AexampleUUIDData\u0028\u0029",
             "name": "exampleUUIDData",
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_exampleUUIDData"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestSpecialIdentifierToUUID\u0028\u0029",
-            "name": "testSpecialIdentifierToUUID",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestSpecialIdentifierToUUID_ViewData\u0028\u0029",
+            "name": "testSpecialIdentifierToUUID_ViewData",
             "summary": "",
-            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testSpecialIdentifierToUUID"
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testSpecialIdentifierToUUID_ViewData"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestSpecialIdentifierToUUID_UrlEncode\u0028\u0029",
+            "name": "testSpecialIdentifierToUUID_UrlEncode",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testSpecialIdentifierToUUID_UrlEncode"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003A\u0024repo",
             "name": "repo",
@@ -2190,6 +2200,16 @@ Search.appendIndex(
             "name": "object",
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#property_object"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003A\u0024gfStub",
+            "name": "gfStub",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#property_gfStub"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003A\u0024gfService",
+            "name": "gfService",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#property_gfService"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest",
             "name": "ResourceObjectTest",
