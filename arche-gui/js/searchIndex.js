@@ -866,6 +866,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-ChildApiHelper.html#property_siteLang"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ChildApiHelper\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Helper-ChildApiHelper.html#property_data"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper",
             "name": "CiteHelper",
             "summary": "https\u003A\/\/redmine.acdh.oeaw.ac.at\/issues\/11771\u0020\u002D\u0020CITE\u0020Widget",
