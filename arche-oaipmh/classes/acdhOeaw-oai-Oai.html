@@ -3,908 +3,1252 @@
 <head>
     <meta charset="utf-8">
     <title>Documentation</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/template.css">
-    <link rel="icon" href="../images/favicon.ico"/>
-        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
-    <script src="../js/search.js"></script>
-    <script defer src="../js/searchIndex.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
     </head>
-<body>
-<header class="phpdocumentor-top-header"></header>
-<header class="phpdocumentor-header">
-    <section class="phpdocumentor-section">
-        <h1 class="phpdocumentor-title">Documentation</h1>
-    </section>
-</header>
-<main class="phpdocumentor">
-    <div class="phpdocumentor-section">
-        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
     <section data-search-form class="phpdocumentor-search">
-        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
-        <label class="phpdocumentor-label">
-            <span class="visually-hidden">Search for</span>
-            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-        </label>
-    </section>
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                                <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/acdhoeaw-oai.html"><abbr title="\acdhOeaw\oai">oai</abbr></a></li>
+                                    </ul>
+                        </section>
 
     
-    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
-            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
-                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h3>
-            <ul class="phpdocumentor-list">
-                                    <li><a href="../namespaces/acdhoeaw-oai.html"><abbr title="\acdhOeaw\oai">oai</abbr></a></li>
-                            </ul>
-            
-    
-    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
-        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
 </aside>
 
-        <div class="nine phpdocumentor-columns phpdocumentor-content">
-            <ul class="phpdocumentor-breadcrumbs">
-    <li><a href="../index.html">Home</a></li>
-                        <li><a href="../namespaces/acdhoeaw.html">acdhOeaw</a></li>
-                    <li><a href="../namespaces/acdhoeaw-oai.html">oai</a></li>
-            </ul>
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-oai.html">oai</a></li>
+    </ul>
 
-    <article class="phpdocumentor-element phpdocumentor-class">
+    <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-            Oai
-                                                        </h2>
-        <aside class="phpdocumentor-element-found-in">
-            <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-            :
-            <span class="phpdocumentor-element-found-in__line">54</span>
-        </aside>
+    Oai
 
-        <p class="phpdocumentor-class__summary">Implements controller for the OAI-PMH service:
+    
+    
+    
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+</aside>
+
+            <p class="phpdocumentor-summary">Implements controller for the OAI-PMH service:
 - checks OAI-PMH requests correctness,
 - handles OAI-PMH `identify` and `ListMetadataFormats` commands
 - delegates OAI-PMH `GetRecord`, `ListIdentifiers` and `ListRecords` commands
   to a chosen class implementing the `acdhOeaw\oai\search\SearchInterface`
 - delegates OAI-PMH `ListSets` command to a chosen class extending the
   `acdhOeaw\oai\set\SetInterface` class.</p>
-        <section class="phpdocumentor-class__description"><ul>
+
+    <section class="phpdocumentor-description"><ul>
 <li>generates OAI-PMH compliant output from results of above mentioned actions</li>
 <li>catches errors and generates OAI-PMH compliant error responses</li>
-</ul></section>
+</ul>
+</section>
 
-        <h3>Table of Contents</h3>
-        <table class="phpdocumentor-table_of_contents">
-                                        <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#property_respBegin">$respBegin</a></th>
-                    <td class="phpdocumentor-cell">OAI-PMH response beginning template</td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#property_respEnd">$respEnd</a></th>
-                    <td class="phpdocumentor-cell">OAI-PMH response ending template</td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#property_dateRegExp">$dateRegExp</a></th>
-                    <td class="phpdocumentor-cell">OAI-PMH date format regexp</td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#property_config">$config</a></th>
-                    <td class="phpdocumentor-cell">Configuration options</td>
-                    <td class="phpdocumentor-cell">object</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#property_pdo">$pdo</a></th>
-                    <td class="phpdocumentor-cell">Repository database connection object</td>
-                    <td class="phpdocumentor-cell"><abbr title="\PDO">PDO</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#property_response">$response</a></th>
-                    <td class="phpdocumentor-cell">XML object used to serialize OAI-PMH response parts</td>
-                    <td class="phpdocumentor-cell"><abbr title="\DOMDocument">DOMDocument</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#property_info">$info</a></th>
-                    <td class="phpdocumentor-cell">Repository info object used to serve OAI-PMH `Identify` requests</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\oai\RepositoryInfo">RepositoryInfo</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#property_metadataFormats">$metadataFormats</a></th>
-                    <td class="phpdocumentor-cell">List of metadata descriptors</td>
-                    <td class="phpdocumentor-cell">\acdhOeaw\oai\data\MetadataFormat[]</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#property_sets">$sets</a></th>
-                    <td class="phpdocumentor-cell">Object handling sets</td>
-                    <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-oai-set-SetInterface.html"><abbr title="\acdhOeaw\oai\set\SetInterface">SetInterface</abbr></a></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#property_deleted">$deleted</a></th>
-                    <td class="phpdocumentor-cell">Object handling deleted resources information</td>
-                    <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-oai-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\oai\deleted\DeletedInterface">DeletedInterface</abbr></a></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#property_cache">$cache</a></th>
-                    <td class="phpdocumentor-cell">Cache object</td>
-                    <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-oai-Cache.html"><abbr title="\acdhOeaw\oai\Cache">Cache</abbr></a></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#property_log">$log</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><abbr title="\zozlak\logging\Log">Log</abbr></td>
-                </tr>
-                                                                <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#method___construct">__construct()</a></th>
-                    <td class="phpdocumentor-cell">Initialized the OAI-PMH server object.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#method_handleRequest">handleRequest()</a></th>
-                    <td class="phpdocumentor-cell">Handles OAI-PMH request.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#method_oaiIdentify">oaiIdentify()</a></th>
-                    <td class="phpdocumentor-cell">Implements the Identify OAI-PMH verb</td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#method_oaiListMetadataFormats">oaiListMetadataFormats()</a></th>
-                    <td class="phpdocumentor-cell">Implements the ListMetadataFormats OAI-PMH verb</td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#method_oaiListRecords">oaiListRecords()</a></th>
-                    <td class="phpdocumentor-cell">Implements the ListIdentifiers, ListRecords and GetRecord OAI-PMH verbs</td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#method_oaiListRecordRaw">oaiListRecordRaw()</a></th>
-                    <td class="phpdocumentor-cell">Returns a single metadata record without any OAI structures</td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#method_oaiListSets">oaiListSets()</a></th>
-                    <td class="phpdocumentor-cell">Implements the ListSets OAI-PMH verb.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#method_createHeader">createHeader()</a></th>
-                    <td class="phpdocumentor-cell">Creates a resource&#039;s &lt;header&gt; element as defined by OAI-PMH standard.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\DOMElement">DOMElement</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#method_createElement">createElement()</a></th>
-                    <td class="phpdocumentor-cell">Returns a PHP reresentation of an XML node.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\DOMNode">DOMNode</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#method_checkRequestParam">checkRequestParam()</a></th>
-                    <td class="phpdocumentor-cell">Validates request parameters.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-Oai.html#method_getParam">getParam()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                                            </table>
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>zozlak</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+                <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#property_cache">$cache</a>
+    <span>
+                &nbsp;: <a href="classes/acdhOeaw-oai-Cache.html"><abbr title="\acdhOeaw\oai\Cache">Cache</abbr></a>            </span>
+</dt>
+<dd>Cache object</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#property_config">$config</a>
+    <span>
+                &nbsp;: object            </span>
+</dt>
+<dd>Configuration options</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#property_dateRegExp">$dateRegExp</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>OAI-PMH date format regexp</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#property_deleted">$deleted</a>
+    <span>
+                &nbsp;: <a href="classes/acdhOeaw-oai-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\oai\deleted\DeletedInterface">DeletedInterface</abbr></a>            </span>
+</dt>
+<dd>Object handling deleted resources information</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#property_info">$info</a>
+    <span>
+                &nbsp;: <abbr title="\acdhOeaw\oai\RepositoryInfo">RepositoryInfo</abbr>            </span>
+</dt>
+<dd>Repository info object used to serve OAI-PMH `Identify` requests</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#property_log">$log</a>
+    <span>
+                &nbsp;: <abbr title="\zozlak\logging\Log">Log</abbr>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#property_metadataFormats">$metadataFormats</a>
+    <span>
+                &nbsp;: array&lt;string|int, <a href="classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a>&gt;            </span>
+</dt>
+<dd>List of metadata descriptors</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#property_pdo">$pdo</a>
+    <span>
+                &nbsp;: <abbr title="\PDO">PDO</abbr>            </span>
+</dt>
+<dd>Repository database connection object</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#property_respBegin">$respBegin</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>OAI-PMH response beginning template</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#property_respEnd">$respEnd</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>OAI-PMH response ending template</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#property_response">$response</a>
+    <span>
+                &nbsp;: <abbr title="\DOMDocument">DOMDocument</abbr>            </span>
+</dt>
+<dd>XML object used to serialize OAI-PMH response parts</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#property_sets">$sets</a>
+    <span>
+                &nbsp;: <a href="classes/acdhOeaw-oai-set-SetInterface.html"><abbr title="\acdhOeaw\oai\set\SetInterface">SetInterface</abbr></a>            </span>
+</dt>
+<dd>Object handling sets</dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-Oai.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Initialized the OAI-PMH server object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-Oai.html#method_handleRequest">handleRequest()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Handles OAI-PMH request.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-Oai.html#method_oaiIdentify">oaiIdentify()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Implements the Identify OAI-PMH verb</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-Oai.html#method_oaiListMetadataFormats">oaiListMetadataFormats()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Implements the ListMetadataFormats OAI-PMH verb</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-Oai.html#method_oaiListRecordRaw">oaiListRecordRaw()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Returns a single metadata record without any OAI structures</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-Oai.html#method_oaiListRecords">oaiListRecords()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Implements the ListIdentifiers, ListRecords and GetRecord OAI-PMH verbs</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-Oai.html#method_oaiListSets">oaiListSets()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Implements the ListSets OAI-PMH verb.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#method_checkRequestParam">checkRequestParam()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Validates request parameters.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#method_createElement">createElement()</a>
+    <span>
+                        &nbsp;: <abbr title="\DOMNode">DOMNode</abbr>    </span>
+</dt>
+<dd>Returns a PHP reresentation of an XML node.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#method_createHeader">createHeader()</a>
+    <span>
+                        &nbsp;: <abbr title="\DOMElement">DOMElement</abbr>    </span>
+</dt>
+<dd>Creates a resource&#039;s &lt;header&gt; element as defined by OAI-PMH standard.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-oai-Oai.html#method_getParam">getParam()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+        </dl>
+
+
 
         
-                    <section>
-                <h3 class="phpdocumentor-properties__header">Properties</h3>
-                                    <a id="property_respBegin"></a>
-<article
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/acdhOeaw-oai-Oai.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-            phpdocumentor-property--static                    "
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$respBegin</h4>
+    <h4 class="phpdocumentor-element__name" id="property_cache">
+        $cache
+        <a href="classes/acdhOeaw-oai-Oai.html#property_cache" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">60</span>
-    </aside>
-            <p class="phpdocumentor-summary">OAI-PMH response beginning template</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__type">string</span>
-        <span class="phpdocumentor-signature__name">$respBegin</span>
-         = <span class="phpdocumentor-signature__default-value">&lt;&lt;&lt;TMPL
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">128</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Cache object</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-oai-Cache.html"><abbr title="\acdhOeaw\oai\Cache">Cache</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$cache</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_config">
+        $config
+        <a href="classes/acdhOeaw-oai-Oai.html#property_config" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">86</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Configuration options</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">object</span>
+    <span class="phpdocumentor-signature__name">$config</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_dateRegExp">
+        $dateRegExp
+        <a href="classes/acdhOeaw-oai-Oai.html#property_dateRegExp" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+</aside>
+
+        <p class="phpdocumentor-summary">OAI-PMH date format regexp</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$dateRegExp</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;|^[0-9]{4}-[0-1][0-9]-[0-3][0-9](T[0-2][0-9]:[0-5][0-9]:[0-5][0-9]Z)?$|&#039;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_deleted">
+        $deleted
+        <a href="classes/acdhOeaw-oai-Oai.html#property_deleted" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">122</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Object handling deleted resources information</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-oai-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\oai\deleted\DeletedInterface">DeletedInterface</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$deleted</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_info">
+        $info
+        <a href="classes/acdhOeaw-oai-Oai.html#property_info" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">104</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Repository info object used to serve OAI-PMH `Identify` requests</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\oai\RepositoryInfo">RepositoryInfo</abbr></span>
+    <span class="phpdocumentor-signature__name">$info</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_log">
+        $log
+        <a href="classes/acdhOeaw-oai-Oai.html#property_log" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">134</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\zozlak\logging\Log">Log</abbr></span>
+    <span class="phpdocumentor-signature__name">$log</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_metadataFormats">
+        $metadataFormats
+        <a href="classes/acdhOeaw-oai-Oai.html#property_metadataFormats" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
+</aside>
+
+        <p class="phpdocumentor-summary">List of metadata descriptors</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__name">$metadataFormats</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_pdo">
+        $pdo
+        <a href="classes/acdhOeaw-oai-Oai.html#property_pdo" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">92</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Repository database connection object</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\PDO">PDO</abbr></span>
+    <span class="phpdocumentor-signature__name">$pdo</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_respBegin">
+        $respBegin
+        <a href="classes/acdhOeaw-oai-Oai.html#property_respBegin" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+</aside>
+
+        <p class="phpdocumentor-summary">OAI-PMH response beginning template</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$respBegin</span>
+     = <span class="phpdocumentor-signature__default-value">&lt;&lt;&lt;TMPL
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;OAI-PMH xmlns=&quot;http://www.openarchives.org/OAI/2.0/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd&quot;&gt;
     &lt;responseDate&gt;%s&lt;/responseDate&gt;
     &lt;request %s&gt;%s&lt;/request&gt;
 
 TMPL
-</span>    </code>
-    </article>
-                                    <a id="property_respEnd"></a>
-<article
+</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-            phpdocumentor-property--static                    "
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
 >
-    <h4 class="phpdocumentor-property__name">$respEnd</h4>
+    <h4 class="phpdocumentor-element__name" id="property_respEnd">
+        $respEnd
+        <a href="classes/acdhOeaw-oai-Oai.html#property_respEnd" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">72</span>
-    </aside>
-            <p class="phpdocumentor-summary">OAI-PMH response ending template</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__type">string</span>
-        <span class="phpdocumentor-signature__name">$respEnd</span>
-         = <span class="phpdocumentor-signature__default-value">&lt;&lt;&lt;TMPL
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">72</span>
+</aside>
+
+        <p class="phpdocumentor-summary">OAI-PMH response ending template</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$respEnd</span>
+     = <span class="phpdocumentor-signature__default-value">&lt;&lt;&lt;TMPL
 &lt;/OAI-PMH&gt;     
 TMPL
-</span>    </code>
-    </article>
-                                    <a id="property_dateRegExp"></a>
-<article
+</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-            phpdocumentor-property--static                    "
->
-    <h4 class="phpdocumentor-property__name">$dateRegExp</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">80</span>
-    </aside>
-            <p class="phpdocumentor-summary">OAI-PMH date format regexp</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__type">string</span>
-        <span class="phpdocumentor-signature__name">$dateRegExp</span>
-         = <span class="phpdocumentor-signature__default-value">&#039;|^[0-9]{4}-[0-1][0-9]-[0-3][0-9](T[0-2][0-9]:[0-5][0-9]:[0-5][0-9]Z)?$|&#039;</span>    </code>
-    </article>
-                                    <a id="property_config"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$config</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">86</span>
-    </aside>
-            <p class="phpdocumentor-summary">Configuration options</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">object</span>
-        <span class="phpdocumentor-signature__name">$config</span>
-            </code>
-    </article>
-                                    <a id="property_pdo"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$pdo</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">92</span>
-    </aside>
-            <p class="phpdocumentor-summary">Repository database connection object</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><abbr title="\PDO">PDO</abbr></span>
-        <span class="phpdocumentor-signature__name">$pdo</span>
-            </code>
-    </article>
-                                    <a id="property_response"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$response</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">98</span>
-    </aside>
-            <p class="phpdocumentor-summary">XML object used to serialize OAI-PMH response parts</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><abbr title="\DOMDocument">DOMDocument</abbr></span>
-        <span class="phpdocumentor-signature__name">$response</span>
-            </code>
-    </article>
-                                    <a id="property_info"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$info</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">104</span>
-    </aside>
-            <p class="phpdocumentor-summary">Repository info object used to serve OAI-PMH `Identify` requests</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\oai\RepositoryInfo">RepositoryInfo</abbr></span>
-        <span class="phpdocumentor-signature__name">$info</span>
-            </code>
-    </article>
-                                    <a id="property_metadataFormats"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$metadataFormats</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">110</span>
-    </aside>
-            <p class="phpdocumentor-summary">List of metadata descriptors</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">\acdhOeaw\oai\data\MetadataFormat[]</span>
-        <span class="phpdocumentor-signature__name">$metadataFormats</span>
-         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
-    </article>
-                                    <a id="property_sets"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$sets</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">116</span>
-    </aside>
-            <p class="phpdocumentor-summary">Object handling sets</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><a href="../classes/acdhOeaw-oai-set-SetInterface.html"><abbr title="\acdhOeaw\oai\set\SetInterface">SetInterface</abbr></a></span>
-        <span class="phpdocumentor-signature__name">$sets</span>
-            </code>
-    </article>
-                                    <a id="property_deleted"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$deleted</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">122</span>
-    </aside>
-            <p class="phpdocumentor-summary">Object handling deleted resources information</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><a href="../classes/acdhOeaw-oai-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\oai\deleted\DeletedInterface">DeletedInterface</abbr></a></span>
-        <span class="phpdocumentor-signature__name">$deleted</span>
-            </code>
-    </article>
-                                    <a id="property_cache"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$cache</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">128</span>
-    </aside>
-            <p class="phpdocumentor-summary">Cache object</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><a href="../classes/acdhOeaw-oai-Cache.html"><abbr title="\acdhOeaw\oai\Cache">Cache</abbr></a></span>
-        <span class="phpdocumentor-signature__name">$cache</span>
-            </code>
-    </article>
-                                    <a id="property_log"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$log</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">134</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><abbr title="\zozlak\logging\Log">Log</abbr></span>
-        <span class="phpdocumentor-signature__name">$log</span>
-            </code>
-    </article>
-                                                            </section>
-        
-                    <section>
-                <h3 class="phpdocumentor-methods__header">Methods</h3>
-                                    <a id="method___construct"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+            phpdocumentor-element
+            -property
+            -private
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <h4 class="phpdocumentor-element__name" id="property_response">
+        $response
+        <a href="classes/acdhOeaw-oai-Oai.html#property_response" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">141</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">98</span>
+</aside>
+
+        <p class="phpdocumentor-summary">XML object used to serialize OAI-PMH response parts</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\DOMDocument">DOMDocument</abbr></span>
+    <span class="phpdocumentor-signature__name">$response</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_sets">
+        $sets
+        <a href="classes/acdhOeaw-oai-Oai.html#property_sets" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">116</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Object handling sets</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-oai-set-SetInterface.html"><abbr title="\acdhOeaw\oai\set\SetInterface">SetInterface</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$sets</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/acdhOeaw-oai-Oai.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/acdhOeaw-oai-Oai.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">141</span>
+</aside>
+
         <p class="phpdocumentor-summary">Initialized the OAI-PMH server object.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">__construct</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$config</span> :
-                <span class="phpdocumentor-signature__argument__return-type">object</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$config</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">object</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
 </article>
-                                    <a id="method_handleRequest"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">handleRequest()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_handleRequest">
+        handleRequest()
+        <a href="classes/acdhOeaw-oai-Oai.html#method_handleRequest" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">175</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">175</span>
+</aside>
+
         <p class="phpdocumentor-summary">Handles OAI-PMH request.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">handleRequest</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">handleRequest</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
 
     
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
 </article>
-                                    <a id="method_oaiIdentify"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">oaiIdentify()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_oaiIdentify">
+        oaiIdentify()
+        <a href="classes/acdhOeaw-oai-Oai.html#method_oaiIdentify" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">236</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">236</span>
+</aside>
+
         <p class="phpdocumentor-summary">Implements the Identify OAI-PMH verb</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">oaiIdentify</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">oaiIdentify</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
 
     
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
 </article>
-                                    <a id="method_oaiListMetadataFormats"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">oaiListMetadataFormats()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_oaiListMetadataFormats">
+        oaiListMetadataFormats()
+        <a href="classes/acdhOeaw-oai-Oai.html#method_oaiListMetadataFormats" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">255</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">255</span>
+</aside>
+
         <p class="phpdocumentor-summary">Implements the ListMetadataFormats OAI-PMH verb</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">oaiListMetadataFormats</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">oaiListMetadataFormats</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
 
     
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
-</article>
-                                    <a id="method_oaiListRecords"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">oaiListRecords()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">303</span>
-    </aside>
-        <p class="phpdocumentor-summary">Implements the ListIdentifiers, ListRecords and GetRecord OAI-PMH verbs</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">oaiListRecords</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$verb</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$id</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-oai-OaiException.html"><abbr title="\acdhOeaw\oai\OaiException">OaiException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$verb</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$id</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
 </article>
-                                    <a id="method_oaiListRecordRaw"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">oaiListRecordRaw()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_oaiListRecordRaw">
+        oaiListRecordRaw()
+        <a href="classes/acdhOeaw-oai-Oai.html#method_oaiListRecordRaw" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">385</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">385</span>
+</aside>
+
         <p class="phpdocumentor-summary">Returns a single metadata record without any OAI structures</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">oaiListRecordRaw</span>(
-                    <span class="phpdocumentor-signature__argument">
-            [                <span class="phpdocumentor-signature__argument__name">$id</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">oaiListRecordRaw</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$id</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
 </article>
-                                    <a id="method_oaiListSets"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">oaiListSets()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_oaiListRecords">
+        oaiListRecords()
+        <a href="classes/acdhOeaw-oai-Oai.html#method_oaiListRecords" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">419</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">303</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Implements the ListIdentifiers, ListRecords and GetRecord OAI-PMH verbs</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">oaiListRecords</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$verb</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$verb</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-oai-OaiException.html"><abbr title="\acdhOeaw\oai\OaiException">OaiException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_oaiListSets">
+        oaiListSets()
+        <a href="classes/acdhOeaw-oai-Oai.html#method_oaiListSets" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">419</span>
+</aside>
+
         <p class="phpdocumentor-summary">Implements the ListSets OAI-PMH verb.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">oaiListSets</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">oaiListSets</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Fetches set description using a chosen (config:oaiSetClass) class and
-formats its output as an OAI-PMH XML.</p></section>
-    
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
-</article>
-                                    <a id="method_createHeader"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">createHeader()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">446</span>
-    </aside>
-        <p class="phpdocumentor-summary">Creates a resource&#039;s &lt;header&gt; element as defined by OAI-PMH standard.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                                <span class="phpdocumentor-signature__name">createHeader</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$res</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\StdClass">StdClass</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\DOMElement">DOMElement</abbr></span>
-    </code>
+formats its output as an OAI-PMH XML.</p>
+</section>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$res</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\StdClass">StdClass</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\DOMElement">DOMElement</abbr></span>
-            
-</article>
-                                    <a id="method_createElement"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">createElement()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">468</span>
-    </aside>
-        <p class="phpdocumentor-summary">Returns a PHP reresentation of an XML node.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                                <span class="phpdocumentor-signature__name">createElement</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$element</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$value</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span> ]            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$attributes</span> :
-                <span class="phpdocumentor-signature__argument__return-type">array</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\DOMNode">DOMNode</abbr></span>
-    </code>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$element</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$value</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$attributes</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">array()</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\DOMNode">DOMNode</abbr></span>
-            
 </article>
-                                    <a id="method_checkRequestParam"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">checkRequestParam()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_checkRequestParam">
+        checkRequestParam()
+        <a href="classes/acdhOeaw-oai-Oai.html#method_checkRequestParam" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">486</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">486</span>
+</aside>
+
         <p class="phpdocumentor-summary">Validates request parameters.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                                <span class="phpdocumentor-signature__name">checkRequestParam</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$allowed</span> :
-                <span class="phpdocumentor-signature__argument__return-type">array</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">checkRequestParam</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowed</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$allowed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>allowed parameter names list</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$allowed</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>allowed parameter names list</p></section></dd>
-                    </dl>
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-oai-OaiException.html"><abbr title="\acdhOeaw\oai\OaiException">OaiException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
 </article>
-                                    <a id="method_getParam"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">getParam()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_createElement">
+        createElement()
+        <a href="classes/acdhOeaw-oai-Oai.html#method_createElement" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="../files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">512</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                                <span class="phpdocumentor-signature__name">getParam</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$name</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">468</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns a PHP reresentation of an XML node.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">createElement</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$element</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DOMNode">DOMNode</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$element</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$attributes</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$name</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\DOMNode">DOMNode</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
 </article>
-                                                            </section>
-            </article>
-            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createHeader">
+        createHeader()
+        <a href="classes/acdhOeaw-oai-Oai.html#method_createHeader" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">446</span>
+</aside>
 
-                <h2>Search results</h2>
-                <ul class="phpdocumentor-search-results__entries">
+        <p class="phpdocumentor-summary">Creates a resource&#039;s &lt;header&gt; element as defined by OAI-PMH standard.</p>
 
-                </ul>
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">createHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\StdClass">StdClass</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DOMElement">DOMElement</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$res</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\StdClass">StdClass</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\DOMElement">DOMElement</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getParam">
+        getParam()
+        <a href="classes/acdhOeaw-oai-Oai.html#method_getParam" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/Oai.php"><a href="files/src-acdhoeaw-oai-oai.html"><abbr title="src/acdhOeaw/oai/Oai.php">Oai.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">512</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getParam</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+            </section>
+
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
             </div>
         </div>
-    </div>
-</main>
+        <a href="classes/acdhOeaw-oai-Oai.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
 </body>
 </html>
