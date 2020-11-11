@@ -4,796 +4,796 @@ Search.appendIndex(
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer",
             "name": "Indexer",
             "summary": "Ingests\u0020files\u0020into\u0020the\u0020repository",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AgetRelPath\u0028\u0029",
             "name": "getRelPath",
             "summary": "Extracts\u0020relative\u0020path\u0020from\u0020a\u0020full\u0020path\u0020\u0028by\u0020skipping\u0020cfg\u003AcontainerDir\u0029",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_getRelPath"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_getRelPath"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AdetectPathEncoding\u0028\u0029",
             "name": "detectPathEncoding",
             "summary": "Tries\u0020to\u0020detect\u0020path\u0020encoding\u0020used\u0020in\u0020the\u0020operating\u0020system\u0020by\u0020looking\ninto\u0020locale\u0020settings.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_detectPathEncoding"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_detectPathEncoding"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsanitizePath\u0028\u0029",
             "name": "sanitizePath",
             "summary": "Sanitizes\u0020file\u0020path\u0020\u002D\u0020turns\u0020all\u0020\\\u0020into\u0020\/\u0020and\u0020assures\u0020it\u0020is\u0020UTF\u002D8\u0020encoded.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_sanitizePath"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_sanitizePath"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method___construct"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetRepo\u0028\u0029",
             "name": "setRepo",
             "summary": "Sets\u0020the\u0020repository\u0020connection\u0020object",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setRepo"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setRepo"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetParent\u0028\u0029",
             "name": "setParent",
             "summary": "Sets\u0020the\u0020parent\u0020resource\u0020for\u0020the\u0020indexed\u0020files.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setParent"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setParent"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetPaths\u0028\u0029",
             "name": "setPaths",
             "summary": "Overrides\u0020file\u0020system\u0020paths\u0020to\u0020look\u0020into\u0020for\u0020child\u0020resources.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setPaths"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setPaths"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetAutoCommit\u0028\u0029",
             "name": "setAutoCommit",
             "summary": "Controls\u0020the\u0020automatic\u0020commit\u0020behaviour.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setAutoCommit"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setAutoCommit"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetSkip\u0028\u0029",
             "name": "setSkip",
             "summary": "Defines\u0020if\u0020\u0028and\u0020how\u0029\u0020resources\u0020should\u0020be\u0020skipped\u0020from\u0020indexing\u0020based\u0020on\ntheir\u0020\u0028not\u0029existance\u0020in\u0020Fedora.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setSkip"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setSkip"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetVersioning\u0028\u0029",
             "name": "setVersioning",
             "summary": "Defines\u0020if\u0020new\u0020versions\u0020of\u0020binary\u0020resources\u0020should\u0020be\u0020created\u0020or\u0020if\u0020they\nshould\u0020be\u0020simply\u0020overwritten\u0020with\u0020a\u0020new\u0020binary\u0020payload.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setVersioning"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setVersioning"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetCollectionClass\u0028\u0029",
             "name": "setCollectionClass",
             "summary": "Sets\u0020default\u0020RDF\u0020class\u0020for\u0020imported\u0020collections.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setCollectionClass"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setCollectionClass"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetBinaryClass\u0028\u0029",
             "name": "setBinaryClass",
             "summary": "Sets\u0020default\u0020RDF\u0020class\u0020for\u0020imported\u0020binary\u0020resources.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setBinaryClass"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setBinaryClass"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetFilter\u0028\u0029",
             "name": "setFilter",
             "summary": "Sets\u0020file\u0020name\u0020filter\u0020for\u0020child\u0020resources.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setFilter"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setFilter"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetFlatStructure\u0028\u0029",
             "name": "setFlatStructure",
             "summary": "Sets\u0020if\u0020child\u0020resources\u0020be\u0020directly\u0020attached\u0020to\u0020the\u0020indexed\u0020RepoResource\n\u0028\u0060\u0024isFlat\u0060\u0020equals\u0020to\u0020\u0060true\u0060\u0029\u0020or\u0020a\u0020separate\u0020collection\u0020repository\u0020resource\nbe\u0020created\u0020for\u0020each\u0020subdirectory\u0020\u0028\u0060\u0024isFlat\u0060\u0020equals\u0020to\u0020\u0060false\u0060\u0029.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setFlatStructure"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setFlatStructure"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetUploadSizeLimit\u0028\u0029",
             "name": "setUploadSizeLimit",
             "summary": "Sets\u0020size\u0020treshold\u0020for\u0020uploading\u0020child\u0020resources\u0020as\u0020binary\u0020resources.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setUploadSizeLimit"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setUploadSizeLimit"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetDepth\u0028\u0029",
             "name": "setDepth",
             "summary": "Sets\u0020maximum\u0020indexing\u0020depth.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setDepth"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setDepth"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetIncludeEmptyDirs\u0028\u0029",
             "name": "setIncludeEmptyDirs",
             "summary": "Sets\u0020if\u0020Fedora\u0020resources\u0020should\u0020be\u0020created\u0020for\u0020empty\u0020directories.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setIncludeEmptyDirs"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setIncludeEmptyDirs"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetContainerDir\u0028\u0029",
             "name": "setContainerDir",
             "summary": "Sets\u0020up\u0020the\u0020ingestion\u0020container\u0020path.\u0020This\u0020path\u0020is\u0020replaced\u0020with\u0020the\n\u0024containerToUriPrefix\u0020to\u0020form\u0020a\u0020binary\u0020id.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setContainerDir"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setContainerDir"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetContainerToUriPrefix\u0028\u0029",
             "name": "setContainerToUriPrefix",
             "summary": "Sets\u0020up\u0020the\u0020namespace\u0020replaceing\u0020the\u0020\u0024containerDir\u0020to\u0020form\u0020a\u0020binary\u0020id.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setContainerToUriPrefix"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setContainerToUriPrefix"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AsetMetaLookup\u0028\u0029",
             "name": "setMetaLookup",
             "summary": "Sets\u0020a\u0020class\u0020providing\u0020metadata\u0020for\u0020indexed\u0020files.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setMetaLookup"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_setMetaLookup"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "Performs\u0020the\u0020indexing.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_index"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_index"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A__index\u0028\u0029",
             "name": "__index",
             "summary": "Performs\u0020the\u0020indexing.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method___index"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method___index"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AindexEntry\u0028\u0029",
             "name": "indexEntry",
             "summary": "Processes\u0020single\u0020directory\u0020entry",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_indexEntry"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_indexEntry"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AisSkippedExisting\u0028\u0029",
             "name": "isSkippedExisting",
             "summary": "Checks\u0020if\u0020a\u0020given\u0020file\u0020should\u0020be\u0020skipped\u0020because\u0020it\u0020already\u0020exists\u0020in\u0020the\nrepository\u0020while\u0020the\u0020Indexer\u0020skip\u0020mode\u0020is\u0020set\u0020to\u0020SKIP_EXIST\u0020or\u0020SKIP_BINARY_EXIST.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_isSkippedExisting"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_isSkippedExisting"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AisSkipped\u0028\u0029",
             "name": "isSkipped",
             "summary": "Checks\u0020if\u0020a\u0020given\u0020file\u0020system\u0020node\u0020should\u0020be\u0020skipped\u0020during\u0020import.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_isSkipped"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_isSkipped"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AhandleAutoCommit\u0028\u0029",
             "name": "handleAutoCommit",
             "summary": "Performs\u0020autocommit\u0020if\u0020needed",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_handleAutoCommit"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_handleAutoCommit"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AperformUpdate\u0028\u0029",
             "name": "performUpdate",
             "summary": "Performs\u0020file\u0020upload\u0020taking\u0020care\u0020of\u0020versioning.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_performUpdate"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_performUpdate"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AreadRepoConfig\u0028\u0029",
             "name": "readRepoConfig",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_readRepoConfig"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_readRepoConfig"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AgetFileHash\u0028\u0029",
             "name": "getFileHash",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_getFileHash"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#method_getFileHash"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AMATCH",
             "name": "MATCH",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_MATCH"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_MATCH"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003ASKIP",
             "name": "SKIP",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_SKIP"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_SKIP"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003ASKIP_NONE",
             "name": "SKIP_NONE",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_SKIP_NONE"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_SKIP_NONE"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003ASKIP_NOT_EXIST",
             "name": "SKIP_NOT_EXIST",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_SKIP_NOT_EXIST"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_SKIP_NOT_EXIST"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003ASKIP_EXIST",
             "name": "SKIP_EXIST",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_SKIP_EXIST"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_SKIP_EXIST"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003ASKIP_BINARY_EXIST",
             "name": "SKIP_BINARY_EXIST",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_SKIP_BINARY_EXIST"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_SKIP_BINARY_EXIST"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AVERSIONING_NONE",
             "name": "VERSIONING_NONE",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_VERSIONING_NONE"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_VERSIONING_NONE"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AVERSIONING_ALWAYS",
             "name": "VERSIONING_ALWAYS",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_VERSIONING_ALWAYS"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_VERSIONING_ALWAYS"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AVERSIONING_DIGEST",
             "name": "VERSIONING_DIGEST",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_VERSIONING_DIGEST"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_VERSIONING_DIGEST"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003AVERSIONING_DATE",
             "name": "VERSIONING_DATE",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_VERSIONING_DATE"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_VERSIONING_DATE"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003APID_KEEP",
             "name": "PID_KEEP",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_PID_KEEP"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_PID_KEEP"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003APID_PASS",
             "name": "PID_PASS",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_PID_PASS"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#constant_PID_PASS"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024pathEncoding",
             "name": "pathEncoding",
             "summary": "Detected\u0020operating\u0020system\u0020path\u0020enconding.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_pathEncoding"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_pathEncoding"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024debug",
             "name": "debug",
             "summary": "Turns\u0020debug\u0020messages\u0020on",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_debug"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_debug"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024parent",
             "name": "parent",
             "summary": "RepoResource\u0020which\u0020children\u0020are\u0020created\u0020by\u0020the\u0020Indexer",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_parent"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_parent"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024paths",
             "name": "paths",
             "summary": "File\u0020system\u0020paths\u0020where\u0020resource\u0020children\u0020are\u0020located",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_paths"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_paths"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024filter",
             "name": "filter",
             "summary": "Regular\u0020expression\u0020for\u0020matching\u0020child\u0020resource\u0020file\u0020names.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_filter"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_filter"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024filterNot",
             "name": "filterNot",
             "summary": "Regular\u0020expression\u0020for\u0020excluding\u0020child\u0020resource\u0020file\u0020names.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_filterNot"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_filterNot"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024flatStructure",
             "name": "flatStructure",
             "summary": "Should\u0020children\u0020be\u0020directly\u0020attached\u0020to\u0020the\u0020RepoResource\u0020or\u0020maybe\neach\u0020subdirectory\u0020should\u0020result\u0020in\u0020a\u0020separate\u0020collection\u0020resource\ncontaining\u0020its\u0020children.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_flatStructure"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_flatStructure"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024uploadSizeLimit",
             "name": "uploadSizeLimit",
             "summary": "Maximum\u0020size\u0020of\u0020a\u0020child\u0020resource\u0020\u0028in\u0020bytes\u0029\u0020resulting\u0020in\u0020the\u0020creation\nof\u0020binary\u0020resources.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_uploadSizeLimit"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_uploadSizeLimit"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024collectionClass",
             "name": "collectionClass",
             "summary": "URI\u0020of\u0020an\u0020RDF\u0020class\u0020assigned\u0020to\u0020indexed\u0020collections.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_collectionClass"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_collectionClass"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024binaryClass",
             "name": "binaryClass",
             "summary": "URI\u0020of\u0020an\u0020RDF\u0020class\u0020assigned\u0020to\u0020indexed\u0020binary\u0020resources.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_binaryClass"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_binaryClass"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024depth",
             "name": "depth",
             "summary": "How\u0020many\u0020subsequent\u0020subdirectories\u0020should\u0020be\u0020indexed.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_depth"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_depth"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024autoCommit",
             "name": "autoCommit",
             "summary": "Number\u0020of\u0020resource\u0020automatically\u0020triggering\u0020a\u0020commit\u0020\u00280\u0020\u002D\u0020no\u0020auto\u0020commit\u0029",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_autoCommit"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_autoCommit"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024containerDir",
             "name": "containerDir",
             "summary": "Base\u0020ingestion\u0020path\u0020to\u0020be\u0020substituted\u0020with\u0020the\u0020\u0024containerToUriPrefix\nto\u0020form\u0020a\u0020binary\u0020id.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_containerDir"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_containerDir"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024containerToUriPrefix",
             "name": "containerToUriPrefix",
             "summary": "Namespaces\u0020to\u0020substitute\u0020the\u0020\u0024containerDir\u0020in\u0020the\u0020ingested\u0020binary\u0020path\nto\u0020form\u0020a\u0020binary\u0020id.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_containerToUriPrefix"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_containerToUriPrefix"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024includeEmpty",
             "name": "includeEmpty",
             "summary": "Should\u0020resources\u0020be\u0020created\u0020for\u0020empty\u0020directories.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_includeEmpty"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_includeEmpty"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024skipMode",
             "name": "skipMode",
             "summary": "Should\u0020files\u0020\u0028not\u0029existing\u0020in\u0020the\u0020Fedora\u0020be\u0020skipped\u003F",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_skipMode"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_skipMode"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024versioningMode",
             "name": "versioningMode",
             "summary": "Should\u0020new\u0020versions\u0020of\u0020binary\u0020resources\u0020already\u0020existing\u0020in\u0020the\u0020Fedora\nbe\u0020created\u0020\u0028if\u0020not,\u0020an\u0020existing\u0020resource\u0020is\u0020simply\u0020overwritten\u0029.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_versioningMode"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_versioningMode"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024pidPass",
             "name": "pidPass",
             "summary": "Should\u0020PIDs\u0020\u0028epic\u0020handles\u0029\u0020be\u0020migrated\u0020to\u0020the\u0020new\u0020version\u0020of\u0020a\u0020resource\nduring\u0020versioning.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_pidPass"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_pidPass"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024metaLookup",
             "name": "metaLookup",
             "summary": "An\u0020object\u0020providing\u0020metadata\u0020when\u0020given\u0020a\u0020resource\u0020file\u0020path",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_metaLookup"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_metaLookup"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024metaLookupRequire",
             "name": "metaLookupRequire",
             "summary": "Should\u0020files\u0020without\u0020external\u0020metadata\u0020\u0028provided\u0020by\u0020the\u0020\u0060\u0024metaLookup\u0060\nobject\u0029\u0020be\u0020skipped.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_metaLookupRequire"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_metaLookupRequire"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "Repository\u0020connection",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_repo"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_repo"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024commitedRes",
             "name": "commitedRes",
             "summary": "Collection\u0020of\u0020resources\u0020commited\u0020during\u0020the\u0020ingestion.\u0020Used\u0020to\u0020handle\nerrors.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_commitedRes"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_commitedRes"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\Indexer\u003A\u003A\u0024indexedRes",
             "name": "indexedRes",
             "summary": "Collection\u0020of\u0020indexed\u0020resources",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_indexedRes"
+            "url": "classes/acdhOeaw-acdhRepoIngest-Indexer.html#property_indexedRes"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\IndexerException",
             "name": "IndexerException",
             "summary": "Exception\u0020used\u0020by\u0020the\u0020Indexer\u0020class,\u0020giving\u0020access\u0020to\u0020resources\u0020which\u0020were\ncommited\u0020when\u0020an\u0020error\u0020occured.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-IndexerException.html"
+            "url": "classes/acdhOeaw-acdhRepoIngest-IndexerException.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\IndexerException\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020the\u0020exception",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-IndexerException.html#method___construct"
+            "url": "classes/acdhOeaw-acdhRepoIngest-IndexerException.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\IndexerException\u003A\u003AgetCommitedResources\u0028\u0029",
             "name": "getCommitedResources",
             "summary": "Returns\u0020the\u0020collection\u0020of\u0020resources\u0020which\u0020were\u0020already\u0020processed\u0020when\nan\u0020error\u0020occured.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-IndexerException.html#method_getCommitedResources"
+            "url": "classes/acdhOeaw-acdhRepoIngest-IndexerException.html#method_getCommitedResources"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\IndexerException\u003A\u003A\u0024resources",
             "name": "resources",
             "summary": "A\u0020collection\u0020of\u0020already\u0020processed\u0020resources",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-IndexerException.html#property_resources"
+            "url": "classes/acdhOeaw-acdhRepoIngest-IndexerException.html#property_resources"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection",
             "name": "MetadataCollection",
             "summary": "Class\u0020for\u0020importing\u0020whole\u0020metadata\u0020graph\u0020into\u0020the\u0020repository.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AmakeAgent\u0028\u0029",
             "name": "makeAgent",
             "summary": "Makes\u0020given\u0020resource\u0020a\u0020proper\u0020agent",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_makeAgent"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_makeAgent"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020new\u0020metadata\u0020parser.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method___construct"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AsetResource\u0028\u0029",
             "name": "setResource",
             "summary": "Sets\u0020the\u0020repository\u0020resource\u0020being\u0020parent\u0020of\u0020all\u0020resources\u0020in\u0020the\ngraph\u0020imported\u0020by\u0020the\u0020import\u0028\u0029\u0020method.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setResource"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setResource"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AsetAddTitle\u0028\u0029",
             "name": "setAddTitle",
             "summary": "Sets\u0020if\u0020the\u0020title\u0020property\u0020should\u0020be\u0020automatically\u0020added\u0020for\u0020ingested\nresources\u0020which\u0020are\u0020missing\u0020it.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setAddTitle"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setAddTitle"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AsetAutoCommit\u0028\u0029",
             "name": "setAutoCommit",
             "summary": "Controls\u0020the\u0020automatic\u0020commit\u0020behaviour.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setAutoCommit"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_setAutoCommit"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003Apreprocess\u0028\u0029",
             "name": "preprocess",
             "summary": "Performs\u0020preprocessing\u0020\u002D\u0020removes\u0020literal\u0020IDs,\u0020promotes\u0020URIs\u0020to\u0020IDs,\u0020etc.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_preprocess"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_preprocess"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003Aimport\u0028\u0029",
             "name": "import",
             "summary": "Imports\u0020the\u0020whole\u0020graph\u0020by\u0020looping\u0020over\u0020all\u0020resources.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_import"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_import"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AfilterResources\u0028\u0029",
             "name": "filterResources",
             "summary": "Returns\u0020set\u0020of\u0020resources\u0020to\u0020be\u0020imported\u0020skipping\u0020all\u0020other.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_filterResources"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_filterResources"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AisIdElsewhere\u0028\u0029",
             "name": "isIdElsewhere",
             "summary": "Checks\u0020if\u0020a\u0020given\u0020resource\u0020is\u0020a\u0020schema\u003Aid\u0020of\u0020some\u0020other\u0020node\u0020in\nthe\u0020graph.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_isIdElsewhere"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_isIdElsewhere"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AfixReferences\u0028\u0029",
             "name": "fixReferences",
             "summary": "To\u0020avoid\u0020creation\u0020of\u0020duplicated\u0020resources\u0020it\u0020must\u0020be\u0020assured\u0020every\nresource\u0020is\u0020referenced\u0020acrossed\u0020the\u0020whole\u0020graph\u0020with\u0020only\u0020one\u0020URI",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_fixReferences"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_fixReferences"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AcontainsWrongRefs\u0028\u0029",
             "name": "containsWrongRefs",
             "summary": "Checks\u0020if\u0020a\u0020node\u0020contains\u0020wrong\u0020edges\u0020\u0028references\u0020to\u0020blank\u0020nodes\u0029.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_containsWrongRefs"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_containsWrongRefs"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003ApromoteBNodesToUris\u0028\u0029",
             "name": "promoteBNodesToUris",
             "summary": "Promotes\u0020BNodes\u0020to\u0020their\u0020first\u0020schema\u003Aid\u0020and\u0020fixes\u0020references\u0020to\u0020them.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_promoteBNodesToUris"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_promoteBNodesToUris"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003ApromoteUrisToIds\u0028\u0029",
             "name": "promoteUrisToIds",
             "summary": "Promotes\u0020subjects\u0020being\u0020fully\u0020qualified\u0020URLs\u0020to\u0020ids.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_promoteUrisToIds"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_promoteUrisToIds"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AsanitizeResource\u0028\u0029",
             "name": "sanitizeResource",
             "summary": "Cleans\u0020up\u0020resource\u0020metadata.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_sanitizeResource"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_sanitizeResource"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AremoveLiteralIds\u0028\u0029",
             "name": "removeLiteralIds",
             "summary": "Removes\u0020literal\u0020ids\u0020from\u0020the\u0020graph.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_removeLiteralIds"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_removeLiteralIds"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AhandleAutoCommit\u0028\u0029",
             "name": "handleAutoCommit",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_handleAutoCommit"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#method_handleAutoCommit"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003ASKIP",
             "name": "SKIP",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#constant_SKIP"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#constant_SKIP"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003ACREATE",
             "name": "CREATE",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#constant_CREATE"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#constant_CREATE"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AERRMODE_FAIL",
             "name": "ERRMODE_FAIL",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#constant_ERRMODE_FAIL"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#constant_ERRMODE_FAIL"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003AERRMODE_PASS",
             "name": "ERRMODE_PASS",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#constant_ERRMODE_PASS"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#constant_ERRMODE_PASS"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A\u0024debug",
             "name": "debug",
             "summary": "Turns\u0020debug\u0020messages\u0020on",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_debug"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_debug"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "Repository\u0020connection\u0020object",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_repo"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_repo"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A\u0024resource",
             "name": "resource",
             "summary": "Parent\u0020resource\u0020for\u0020all\u0020imported\u0020graph\u0020nodes",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_resource"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_resource"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A\u0024addTitle",
             "name": "addTitle",
             "summary": "Should\u0020the\u0020title\u0020property\u0020be\u0020added\u0020automatically\u0020for\u0020ingested\u0020resources\nmissing\u0020it.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_addTitle"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_addTitle"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A\u0024autoCommit",
             "name": "autoCommit",
             "summary": "Number\u0020of\u0020resource\u0020automatically\u0020triggering\u0020a\u0020commit\u0020\u00280\u0020\u002D\u0020no\u0020auto\u0020commit\u0029",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_autoCommit"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_autoCommit"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A\u0024autoCommitCounter",
             "name": "autoCommitCounter",
             "summary": "Used\u0020to\u0020determine\u0020when\u0020the\u0020autocommit\u0020should\u0020tak\u0020place",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_autoCommitCounter"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_autoCommitCounter"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\MetadataCollection\u003A\u003A\u0024preprocessed",
             "name": "preprocessed",
             "summary": "Is\u0020the\u0020metadata\u0020graph\u0020preprocessed\u0020already\u003F",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_preprocessed"
+            "url": "classes/acdhOeaw-acdhRepoIngest-MetadataCollection.html#property_preprocessed"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupConstant",
             "name": "MetaLookupConstant",
             "summary": "Simply\u0020adds\u0020same\u0020fixed\u0020set\u0020of\u0020metadata\u0020properties\u0020to\u0020every\u0020file.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupConstant.html"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupConstant.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupConstant\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupConstant.html#method___construct"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupConstant.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupConstant\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
             "summary": "Searches\u0020for\u0020metadata\u0020of\u0020a\u0020given\u0020file.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupConstant.html#method_getMetadata"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupConstant.html#method_getMetadata"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupConstant\u003A\u003A\u0024metadata",
             "name": "metadata",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupConstant.html#property_metadata"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupConstant.html#property_metadata"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupException",
             "name": "MetaLookupException",
             "summary": "Exception\u0020thrown\u0020when\u0020a\u0020resource\u0020metadata\u0020were\u0020not\u0020found\u0020in\u0020the\u0020external\nsource.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupException.html"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupException.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupFile",
             "name": "MetaLookupFile",
             "summary": "Implements\u0020metadata\u0020lookup\u0020by\u0020searching\u0020in\u0020a\u0020given\u0020metadata\u0020locations\u0020for\na\u0020file\u0020with\u0020an\u0020original\u0020file\u0020name\u0020with\u0020a\u0020given\u0020extension\u0020appended.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupFile\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020new\u0020MetaLookupFile\u0020instance.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html#method___construct"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupFile\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
             "summary": "Searches\u0020for\u0020metadata\u0020of\u0020a\u0020given\u0020file.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html#method_getMetadata"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html#method_getMetadata"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupFile\u003A\u003A\u0024debug",
             "name": "debug",
             "summary": "Debug\u0020flag\u0020\u002D\u0020setting\u0020it\u0020to\u0020true\u0020causes\u0020loggin\u0020messages\u0020to\u0020be\u0020displayed.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html#property_debug"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html#property_debug"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupFile\u003A\u003A\u0024locations",
             "name": "locations",
             "summary": "Array\u0020of\u0020possible\u0020metadata\u0020locations\u0020\u0028relative\u0020and\/or\u0020absolute\u0029",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html#property_locations"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html#property_locations"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupFile\u003A\u003A\u0024extension",
             "name": "extension",
             "summary": "Suffix\u0020added\u0020to\u0020a\u0020file\u0020name\u0020to\u0020form\u0020a\u0020metadata\u0020file\u0020name.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html#property_extension"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html#property_extension"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupFile\u003A\u003A\u0024format",
             "name": "format",
             "summary": "Metadata\u0020file\u0020format",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html#property_format"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupFile.html#property_format"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupGraph",
             "name": "MetaLookupGraph",
             "summary": "Searches\u0020for\u0020file\u0020metadata\u0020inside\u0020an\u0020RDF\u0020graph.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupGraph.html"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupGraph.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupGraph\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020MetaLookupGraph\u0020from\u0020a\u0020given\u0020EasyRdf\\Graph",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupGraph.html#method___construct"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupGraph.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupGraph\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
             "summary": "Searches\u0020for\u0020metadata\u0020of\u0020a\u0020given\u0020file.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupGraph.html#method_getMetadata"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupGraph.html#method_getMetadata"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupGraph\u003A\u003A\u0024debug",
             "name": "debug",
             "summary": "Debug\u0020flag\u0020\u002D\u0020setting\u0020it\u0020to\u0020true\u0020causes\u0020loggin\u0020messages\u0020to\u0020be\u0020displayed.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupGraph.html#property_debug"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupGraph.html#property_debug"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupGraph\u003A\u003A\u0024graph",
             "name": "graph",
             "summary": "Graph\u0020with\u0020all\u0020metadata",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupGraph.html#property_graph"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupGraph.html#property_graph"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupGraph\u003A\u003A\u0024idProp",
             "name": "idProp",
             "summary": "",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupGraph.html#property_idProp"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupGraph.html#property_idProp"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupInterface",
             "name": "MetaLookupInterface",
             "summary": "It\u0020is\u0020a\u0020common\u0020problem\u0020to\u0020couple\u0020binary\u0020data\u0020with\u0020their\u0020metadata.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupInterface.html"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupInterface.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup\\MetaLookupInterface\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
             "summary": "Returns\u0020metadata\u0020coupled\u0020with\u0020a\u0020file.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupInterface.html#method_getMetadata"
+            "url": "classes/acdhOeaw-acdhRepoIngest-metaLookup-MetaLookupInterface.html#method_getMetadata"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File",
             "name": "File",
             "summary": "Description\u0020of\u0020File",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020an\u0020object\u0020representing\u0020a\u0020file\u0020\u0028or\u0020a\u0020directory\u0029\u0020in\u0020a\u0020filesystem.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html#method___construct"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
             "summary": "Creates\u0020RDF\u0020metadata\u0020for\u0020a\u0020file.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html#method_getMetadata"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html#method_getMetadata"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File\u003A\u003AsetMetaLookup\u0028\u0029",
             "name": "setMetaLookup",
             "summary": "Sets\u0020a\u0020metadata\u0020lookup\u0020object\u0020to\u0020be\u0020used\u0020for\u0020searching\u0020for\u0020file\u0027s\nmetadata\u0020which\u0020can\u0020not\u0020be\u0020automatically\u0020derived\u0020from\u0020the\u0020file\u0020itself.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html#method_setMetaLookup"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html#method_setMetaLookup"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File\u003A\u003AgetMime\u0028\u0029",
             "name": "getMime",
             "summary": "Returns\u0020file\u0027s\u0020mime\u0020type",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html#method_getMime"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html#method_getMime"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File\u003A\u003AgetBinaryData\u0028\u0029",
             "name": "getBinaryData",
             "summary": "Returns\u0020file\u0020path\u0020\u0028cause\u0020path\u0020is\u0020supported\u0020by\u0020the\u0020\u0060Fedora\u002D\u003Ecreate\u0028\u0029\u0060\u0029.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html#method_getBinaryData"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html#method_getBinaryData"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File\u003A\u003AmergeMetadata\u0028\u0029",
             "name": "mergeMetadata",
             "summary": "Merges\u0020metadata\u0020coming\u0020from\u0020the\u0020Fedora\u0020and\u0020generated\u0020by\u0020the\u0020class.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html#method_mergeMetadata"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html#method_mergeMetadata"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File\u003A\u003A\u0024path",
             "name": "path",
             "summary": "File\u0020path",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html#property_path"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html#property_path"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File\u003A\u003A\u0024metaLookup",
             "name": "metaLookup",
             "summary": "Metadata\u0020lookup\u0020object\u0020to\u0020be\u0020used\u0020for\u0020metadata\u0020resoultion",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html#property_metaLookup"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html#property_metaLookup"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File\u003A\u003A\u0024metaLookupRequire",
             "name": "metaLookupRequire",
             "summary": "should\u0020metadata\u0020operations\u0020fail\u0020when\u0020no\u0020external\u0020metadata\u0020can\u0020be\u0020found",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html#property_metaLookupRequire"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html#property_metaLookupRequire"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File\u003A\u003A\u0024location",
             "name": "location",
             "summary": "RDF\u0020location\u0020triple\u0020value\u0020\u0028binary\u0020location\u0020relative\u0020to\u0020the\u0020container\u0029",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html#property_location"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html#property_location"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File\u003A\u003A\u0024class",
             "name": "class",
             "summary": "RDF\u0020class\u0020to\u0020be\u0020set\u0020as\u0020a\u0020this\u0020file\u0027s\u0020type.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html#property_class"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html#property_class"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\File\u003A\u003A\u0024parent",
             "name": "parent",
             "summary": "URI\u0020of\u0020the\u0020resource\u0020which\u0020should\u0020be\u0020set\u0020as\u0020this\u0020file\u0027s\u0020parent\n\u0028cfg\u003A\u003AfedoraRelProp\u0020is\u0020used\u0029.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-File.html#property_parent"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-File.html#property_parent"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject",
             "name": "SchemaObject",
             "summary": "Basic\u0020class\u0020for\u0020representing\u0020real\u002Dworld\u0020entities\u0020to\u0020be\u0020imported\u0020into\nthe\u0020repository.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020an\u0020object\u0020representing\u0020a\u0020real\u002Dworld\u0020entity.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method___construct"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
             "summary": "Creates\u0020RDF\u0020metadata\u0020from\u0020the\u0020real\u002Dworld\u0020entity\u0020stored\u0020in\u0020this\u0020object.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getMetadata"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getMetadata"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003AgetResource\u0028\u0029",
             "name": "getResource",
             "summary": "Returns\u0020repository\u0020resource\u0020representing\u0020given\u0020real\u002Dworld\u0020entity.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getResource"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getResource"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003AgetId\u0028\u0029",
             "name": "getId",
             "summary": "Returns\u0020primary\u0020id\u0020of\u0020the\u0020real\u002Dworld\u0020entity\u0020stored\u0020in\u0020this\u0020object\n\u0028as\u0020it\u0020was\u0020set\u0020up\u0020in\u0020the\u0020object\u0020contructor\u0029.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getId"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getId"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003AgetIds\u0028\u0029",
             "name": "getIds",
             "summary": "Returns\u0020all\u0020known\u0020ids",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getIds"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getIds"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003AupdateRms\u0028\u0029",
             "name": "updateRms",
             "summary": "Updates\u0020repository\u0020resource\u0020representing\u0020a\u0020real\u002Dworld\u0020entity\u0020stored\u0020in\nthis\u0020object.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_updateRms"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_updateRms"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003AgetCreated\u0028\u0029",
             "name": "getCreated",
             "summary": "Informs\u0020about\u0020the\u0020corresponding\u0020repository\u0020resource\u0020state\u0020uppon\u0020last\u0020call\nto\u0020the\u0020\u0060updateRms\u0028\u0029\u0060\u0020method\u003A\n\u002D\u0020null\u0020\u002D\u0020the\u0020updateRms\u0028\u0029\u0020was\u0020not\u0020called\u0020yet\n\u002D\u0020true\u0020\u002D\u0020repository\u0020resource\u0020was\u0020created\u0020by\u0020last\u0020call\u0020to\u0020the\u0020updateRms\u0028\u0029\n\u002D\u0020false\u0020\u002D\u0020repository\u0020resource\u0020already\u0020existed\u0020uppoin\u0020last\u0020call\u0020to\u0020the\n\u0020\u0020updateRms\u0028\u0029",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getCreated"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getCreated"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003AsetMetadata\u0028\u0029",
             "name": "setMetadata",
             "summary": "Sets\u0020an\u0020external\u0020metadata\u0020to\u0020be\u0020appended\u0020to\u0020automatically\u0020generated\u0020ones.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_setMetadata"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_setMetadata"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003AcreateNewVersion\u0028\u0029",
             "name": "createNewVersion",
             "summary": "Creates\u0020a\u0020new\u0020version\u0020of\u0020the\u0020resource.\u0020The\u0020new\u0020version\u0020inherits\u0020all\u0020IDs\u0020but\nthe\u0020UUID\u0020and\u0020epic\u0020PIDs.\u0020The\u0020old\u0020version\u0020looses\u0020all\u0020IDs\u0020but\u0020the\u0020UUID\u0020and\nspic\u0020PIDs.\u0020It\u0020also\u0020looses\u0020all\u0020schema\u003A\u003Aparent\u0020property\u0020connections\u0020with\u0020collections.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_createNewVersion"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_createNewVersion"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003AfindResource\u0028\u0029",
             "name": "findResource",
             "summary": "Tries\u0020to\u0020find\u0020a\u0020repository\u0020resource\u0020representing\u0020a\u0020given\u0020object.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_findResource"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_findResource"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003AcreateResource\u0028\u0029",
             "name": "createResource",
             "summary": "Creates\u0020a\u0020repository\u0020resource",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_createResource"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_createResource"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003AgetBinaryData\u0028\u0029",
             "name": "getBinaryData",
             "summary": "Provides\u0020entity\u0020binary\u0020data.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getBinaryData"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getBinaryData"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003AmergeMetadata\u0028\u0029",
             "name": "mergeMetadata",
             "summary": "Merges\u0020metadata\u0020coming\u0020from\u0020the\u0020repository\u0020and\u0020generated\u0020by\u0020the\u0020class.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_mergeMetadata"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_mergeMetadata"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003A\u0024debug",
             "name": "debug",
             "summary": "Debug\u0020mode\u0020switch.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_debug"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_debug"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003A\u0024res",
             "name": "res",
             "summary": "Repository\u0020resource\u0020representing\u0020given\u0020entity.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_res"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_res"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Entity\u0020id.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_id"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_id"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003A\u0024metadata",
             "name": "metadata",
             "summary": "External\u0020metadata\u0020to\u0020be\u0020merged\u0020with\u0020automatically\u0020generated\u0020one.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_metadata"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_metadata"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003A\u0024metadataPreserve",
             "name": "metadataPreserve",
             "summary": "List\u0020of\u0020automaticaly\u0020generated\u0020metadata\u0020properties\u0020to\u0020be\u0020preserved\u0020while\nmerging\u0020with\u0020external\u0020metadata.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_metadataPreserve"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_metadataPreserve"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003A\u0024created",
             "name": "created",
             "summary": "Allows\u0020to\u0020keep\u0020track\u0020of\u0020the\u0020corresponding\u0020repository\u0020resource\u0020state\u003A\n\u002D\u0020null\u0020\u002D\u0020unknown\n\u002D\u0020true\u0020\u002D\u0020recent\u0020call\u0020to\u0020updateRms\u0028\u0029\u0020created\u0020the\u0020repository\u0020resource\n\u002D\u0020false\u0020\u002D\u0020repository\u0020resource\u0020already\u0020existed\u0020uppon\u0020last\u0020updateRms\u0028\u0029\u0020call",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_created"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_created"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema\\SchemaObject\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "repository\u0020connection\u0020object.",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_repo"
+            "url": "classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_repo"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\util\\UUID",
             "name": "UUID",
             "summary": "Generates\u0020UUIDs\n\u0028see\u0020https\u003A\/\/en.wikipedia.org\/wiki\/Universally_unique_identifier\u0029",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-util-UUID.html"
+            "url": "classes/acdhOeaw-acdhRepoIngest-util-UUID.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\util\\UUID\u003A\u003Av4\u0028\u0029",
             "name": "v4",
             "summary": "Generates\u0020a\u0020v4\u0020\u0028random\u0029\u0020UUID",
-            "url": "../classes/acdhOeaw-acdhRepoIngest-util-UUID.html#method_v4"
+            "url": "classes/acdhOeaw-acdhRepoIngest-util-UUID.html#method_v4"
         },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
-            "url": "../namespaces/default.html"
+            "url": "namespaces/default.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest",
             "name": "acdhRepoIngest",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-acdhrepoingest.html"
+            "url": "namespaces/acdhoeaw-acdhrepoingest.html"
         },                {
             "fqsen": "\\acdhOeaw",
             "name": "acdhOeaw",
             "summary": "",
-            "url": "../namespaces/acdhoeaw.html"
+            "url": "namespaces/acdhoeaw.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\metaLookup",
             "name": "metaLookup",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-acdhrepoingest-metalookup.html"
+            "url": "namespaces/acdhoeaw-acdhrepoingest-metalookup.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\schema",
             "name": "schema",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-acdhrepoingest-schema.html"
+            "url": "namespaces/acdhoeaw-acdhrepoingest-schema.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoIngest\\util",
             "name": "util",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-acdhrepoingest-util.html"
+            "url": "namespaces/acdhoeaw-acdhrepoingest-util.html"
         }            ]
 );

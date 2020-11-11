@@ -3,642 +3,868 @@
 <head>
     <meta charset="utf-8">
     <title>Documentation</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/template.css">
-    <link rel="icon" href="../images/favicon.ico"/>
-        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
-    <script src="../js/search.js"></script>
-    <script defer src="../js/searchIndex.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
     </head>
-<body>
-<header class="phpdocumentor-top-header"></header>
-<header class="phpdocumentor-header">
-    <section class="phpdocumentor-section">
-        <h1 class="phpdocumentor-title">Documentation</h1>
-    </section>
-</header>
-<main class="phpdocumentor">
-    <div class="phpdocumentor-section">
-        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
     <section data-search-form class="phpdocumentor-search">
-        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
-        <label class="phpdocumentor-label">
-            <span class="visually-hidden">Search for</span>
-            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-        </label>
-    </section>
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                                <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/acdhoeaw-acdhrepoingest.html"><abbr title="\acdhOeaw\acdhRepoIngest">acdhRepoIngest</abbr></a></li>
+                                    </ul>
+                        </section>
 
     
-    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
-            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
-                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h3>
-            <ul class="phpdocumentor-list">
-                                    <li><a href="../namespaces/acdhoeaw-acdhrepoingest.html"><abbr title="\acdhOeaw\acdhRepoIngest">acdhRepoIngest</abbr></a></li>
-                            </ul>
-            
-    
-    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
-        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
 </aside>
 
-        <div class="nine phpdocumentor-columns phpdocumentor-content">
-            <ul class="phpdocumentor-breadcrumbs">
-    <li><a href="../index.html">Home</a></li>
-                        <li><a href="../namespaces/acdhoeaw.html">acdhOeaw</a></li>
-                    <li><a href="../namespaces/acdhoeaw-acdhrepoingest.html">acdhRepoIngest</a></li>
-                    <li><a href="../namespaces/acdhoeaw-acdhrepoingest-schema.html">schema</a></li>
-            </ul>
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-acdhrepoingest.html">acdhRepoIngest</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-acdhrepoingest-schema.html">schema</a></li>
+    </ul>
 
-    <article class="phpdocumentor-element phpdocumentor-class">
+    <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-            SchemaObject
-                                                        </h2>
+    SchemaObject
+
+    
+    
+    
+    </h2>
+
         <aside class="phpdocumentor-element-found-in">
-            <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-            :
-            <span class="phpdocumentor-element-found-in__line">43</span>
-        </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+</aside>
 
-        <p class="phpdocumentor-class__summary">Basic class for representing real-world entities to be imported into
+            <p class="phpdocumentor-summary">Basic class for representing real-world entities to be imported into
 the repository.</p>
-        <section class="phpdocumentor-class__description"></section>
 
-        <h3>Table of Contents</h3>
-        <table class="phpdocumentor-table_of_contents">
-                                        <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_debug">$debug</a></th>
-                    <td class="phpdocumentor-cell">Debug mode switch.</td>
-                    <td class="phpdocumentor-cell">bool</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_res">$res</a></th>
-                    <td class="phpdocumentor-cell">Repository resource representing given entity.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_id">$id</a></th>
-                    <td class="phpdocumentor-cell">Entity id.</td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_metadata">$metadata</a></th>
-                    <td class="phpdocumentor-cell">External metadata to be merged with automatically generated one.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\EasyRdf\Resource">Resource</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_metadataPreserve">$metadataPreserve</a></th>
-                    <td class="phpdocumentor-cell">List of automaticaly generated metadata properties to be preserved while
-merging with external metadata.</td>
-                    <td class="phpdocumentor-cell">string[]</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_created">$created</a></th>
-                    <td class="phpdocumentor-cell">Allows to keep track of the corresponding repository resource state:
+    <section class="phpdocumentor-description"></section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>zozlak</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+                <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_debug">$debug</a>
+    <span>
+                &nbsp;: bool            </span>
+</dt>
+<dd>Debug mode switch.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_created">$created</a>
+    <span>
+                &nbsp;: bool            </span>
+</dt>
+<dd>Allows to keep track of the corresponding repository resource state:
 - null - unknown
 - true - recent call to updateRms() created the repository resource
-- false - repository resource already existed uppon last updateRms() call</td>
-                    <td class="phpdocumentor-cell">bool</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_repo">$repo</a></th>
-                    <td class="phpdocumentor-cell">repository connection object.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></td>
-                </tr>
-                                                                <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method___construct">__construct()</a></th>
-                    <td class="phpdocumentor-cell">Creates an object representing a real-world entity.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getMetadata">getMetadata()</a></th>
-                    <td class="phpdocumentor-cell">Creates RDF metadata from the real-world entity stored in this object.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\EasyRdf\Resource">Resource</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getResource">getResource()</a></th>
-                    <td class="phpdocumentor-cell">Returns repository resource representing given real-world entity.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getId">getId()</a></th>
-                    <td class="phpdocumentor-cell">Returns primary id of the real-world entity stored in this object
-(as it was set up in the object contructor).</td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getIds">getIds()</a></th>
-                    <td class="phpdocumentor-cell">Returns all known ids</td>
-                    <td class="phpdocumentor-cell">array</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_updateRms">updateRms()</a></th>
-                    <td class="phpdocumentor-cell">Updates repository resource representing a real-world entity stored in
-this object.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getCreated">getCreated()</a></th>
-                    <td class="phpdocumentor-cell">Informs about the corresponding repository resource state uppon last call
+- false - repository resource already existed uppon last updateRms() call</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_repo">$repo</a>
+    <span>
+                &nbsp;: <abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr>            </span>
+</dt>
+<dd>repository connection object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_id">$id</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>Entity id.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_metadata">$metadata</a>
+    <span>
+                &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>            </span>
+</dt>
+<dd>External metadata to be merged with automatically generated one.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_metadataPreserve">$metadataPreserve</a>
+    <span>
+                &nbsp;: array&lt;string|int, string&gt;            </span>
+</dt>
+<dd>List of automaticaly generated metadata properties to be preserved while
+merging with external metadata.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_res">$res</a>
+    <span>
+                &nbsp;: <abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr>            </span>
+</dt>
+<dd>Repository resource representing given entity.</dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Creates an object representing a real-world entity.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_createNewVersion">createNewVersion()</a>
+    <span>
+                        &nbsp;: <abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr>    </span>
+</dt>
+<dd>Creates a new version of the resource. The new version inherits all IDs but
+the UUID and epic PIDs. The old version looses all IDs but the UUID and
+spic PIDs. It also looses all schema::parent property connections with collections.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getCreated">getCreated()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Informs about the corresponding repository resource state uppon last call
 to the `updateRms()` method:
 - null - the updateRms() was not called yet
 - true - repository resource was created by last call to the updateRms()
 - false - repository resource already existed uppoin last call to the
-  updateRms()</td>
-                    <td class="phpdocumentor-cell">bool</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_setMetadata">setMetadata()</a></th>
-                    <td class="phpdocumentor-cell">Sets an external metadata to be appended to automatically generated ones.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_createNewVersion">createNewVersion()</a></th>
-                    <td class="phpdocumentor-cell">Creates a new version of the resource. The new version inherits all IDs but
-the UUID and epic PIDs. The old version looses all IDs but the UUID and
-spic PIDs. It also looses all schema::parent property connections with collections.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_findResource">findResource()</a></th>
-                    <td class="phpdocumentor-cell">Tries to find a repository resource representing a given object.</td>
-                    <td class="phpdocumentor-cell">bool</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_createResource">createResource()</a></th>
-                    <td class="phpdocumentor-cell">Creates a repository resource</td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getBinaryData">getBinaryData()</a></th>
-                    <td class="phpdocumentor-cell">Provides entity binary data.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\acdhRepoIngest\schema\value">value</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_mergeMetadata">mergeMetadata()</a></th>
-                    <td class="phpdocumentor-cell">Merges metadata coming from the repository and generated by the class.</td>
-                    <td class="phpdocumentor-cell">resource</td>
-                </tr>
-                                            </table>
+  updateRms()</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getId">getId()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Returns primary id of the real-world entity stored in this object
+(as it was set up in the object contructor).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getIds">getIds()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Returns all known ids</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getMetadata">getMetadata()</a>
+    <span>
+                        &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>    </span>
+</dt>
+<dd>Creates RDF metadata from the real-world entity stored in this object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getResource">getResource()</a>
+    <span>
+                        &nbsp;: <abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr>    </span>
+</dt>
+<dd>Returns repository resource representing given real-world entity.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_setMetadata">setMetadata()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Sets an external metadata to be appended to automatically generated ones.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_updateRms">updateRms()</a>
+    <span>
+                        &nbsp;: <abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr>    </span>
+</dt>
+<dd>Updates repository resource representing a real-world entity stored in
+this object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_createResource">createResource()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Creates a repository resource</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_findResource">findResource()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Tries to find a repository resource representing a given object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getBinaryData">getBinaryData()</a>
+    <span>
+                        &nbsp;: <abbr title="\acdhOeaw\acdhRepoIngest\schema\value">value</abbr>    </span>
+</dt>
+<dd>Provides entity binary data.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_mergeMetadata">mergeMetadata()</a>
+    <span>
+                        &nbsp;: resource    </span>
+</dt>
+<dd>Merges metadata coming from the repository and generated by the class.</dd>
+
+        </dl>
+
+
 
         
-                    <section>
-                <h3 class="phpdocumentor-properties__header">Properties</h3>
-                                    <a id="property_debug"></a>
-<article
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-            phpdocumentor-property--static                    "
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
 >
-    <h4 class="phpdocumentor-property__name">$debug</h4>
+    <h4 class="phpdocumentor-element__name" id="property_debug">
+        $debug
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_debug" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">49</span>
-    </aside>
-            <p class="phpdocumentor-summary">Debug mode switch.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__type">bool</span>
-        <span class="phpdocumentor-signature__name">$debug</span>
-         = <span class="phpdocumentor-signature__default-value">false</span>    </code>
-    </article>
-                                    <a id="property_res"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Debug mode switch.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$debug</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$res</h4>
+    <h4 class="phpdocumentor-element__name" id="property_created">
+        $created
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_created" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">55</span>
-    </aside>
-            <p class="phpdocumentor-summary">Repository resource representing given entity.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span>
-        <span class="phpdocumentor-signature__name">$res</span>
-            </code>
-    </article>
-                                    <a id="property_id"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$id</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">61</span>
-    </aside>
-            <p class="phpdocumentor-summary">Entity id.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">string</span>
-        <span class="phpdocumentor-signature__name">$id</span>
-            </code>
-    </article>
-                                    <a id="property_metadata"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$metadata</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">67</span>
-    </aside>
-            <p class="phpdocumentor-summary">External metadata to be merged with automatically generated one.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-        <span class="phpdocumentor-signature__name">$metadata</span>
-            </code>
-    </article>
-                                    <a id="property_metadataPreserve"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$metadataPreserve</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">74</span>
-    </aside>
-            <p class="phpdocumentor-summary">List of automaticaly generated metadata properties to be preserved while
-merging with external metadata.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">string[]</span>
-        <span class="phpdocumentor-signature__name">$metadataPreserve</span>
-         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
-    </article>
-                                    <a id="property_created"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--protected
-                                "
->
-    <h4 class="phpdocumentor-property__name">$created</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">83</span>
-    </aside>
-            <p class="phpdocumentor-summary">Allows to keep track of the corresponding repository resource state:
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Allows to keep track of the corresponding repository resource state:
 - null - unknown
 - true - recent call to updateRms() created the repository resource
 - false - repository resource already existed uppon last updateRms() call</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__type">bool</span>
-        <span class="phpdocumentor-signature__name">$created</span>
-            </code>
-    </article>
-                                    <a id="property_repo"></a>
-<article
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$created</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--protected
-                                "
->
-    <h4 class="phpdocumentor-property__name">$repo</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">89</span>
-    </aside>
-            <p class="phpdocumentor-summary">repository connection object.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></span>
-        <span class="phpdocumentor-signature__name">$repo</span>
-            </code>
-    </article>
-                                                            </section>
-        
-                    <section>
-                <h3 class="phpdocumentor-methods__header">Methods</h3>
-                                    <a id="method___construct"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+            phpdocumentor-element
+            -property
+            -protected
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <h4 class="phpdocumentor-element__name" id="property_repo">
+        $repo
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_repo" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">97</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">89</span>
+</aside>
+
+        <p class="phpdocumentor-summary">repository connection object.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></span>
+    <span class="phpdocumentor-signature__name">$repo</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_id">
+        $id
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_id" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Entity id.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$id</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_metadata">
+        $metadata
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_metadata" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+</aside>
+
+        <p class="phpdocumentor-summary">External metadata to be merged with automatically generated one.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+    <span class="phpdocumentor-signature__name">$metadata</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_metadataPreserve">
+        $metadataPreserve
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_metadataPreserve" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+</aside>
+
+        <p class="phpdocumentor-summary">List of automaticaly generated metadata properties to be preserved while
+merging with external metadata.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$metadataPreserve</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_res">
+        $res
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#property_res" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Repository resource representing given entity.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span>
+    <span class="phpdocumentor-signature__name">$res</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">97</span>
+</aside>
+
         <p class="phpdocumentor-summary">Creates an object representing a real-world entity.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">__construct</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$repo</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$id</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$repo</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>repository connection object</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>entity identifier (derived class-specific)</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$repo</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>repository connection object</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$id</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>entity identifier (derived class-specific)</p></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
-</article>
-                                    <a id="method_getMetadata"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                        phpdocumentor-element--abstract                                "
->
-    <h4 class="phpdocumentor-method__name">getMetadata()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">105</span>
-    </aside>
-        <p class="phpdocumentor-summary">Creates RDF metadata from the real-world entity stored in this object.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__abstract">abstract</span>                        <span class="phpdocumentor-signature__name">getMetadata</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-    </code>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
 
     
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-            
 </article>
-                                    <a id="method_getResource"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">getResource()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_createNewVersion">
+        createNewVersion()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_createNewVersion" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">118</span>
-    </aside>
-        <p class="phpdocumentor-summary">Returns repository resource representing given real-world entity.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getResource</span>(
-                    <span class="phpdocumentor-signature__argument">
-            [                <span class="phpdocumentor-signature__argument__name">$create</span> :
-                <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$uploadBinary</span> :
-                <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">236</span>
+</aside>
 
-        <section class="phpdocumentor-description"><p>If it does not exist, it can be created.</p></section>
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$create</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>should repository resource be created if it does not
-exist?</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$uploadBinary</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>should binary data of the real-world entity
-be uploaded uppon repository resource creation?</p></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span>
-            
-</article>
-                                    <a id="method_getId"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">getId()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">137</span>
-    </aside>
-        <p class="phpdocumentor-summary">Returns primary id of the real-world entity stored in this object
-(as it was set up in the object contructor).</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getId</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">string</span>
-    </code>
+        <p class="phpdocumentor-summary">Creates a new version of the resource. The new version inherits all IDs but
+the UUID and epic PIDs. The old version looses all IDs but the UUID and
+spic PIDs. It also looses all schema::parent property connections with collections.</p>
 
-        <section class="phpdocumentor-description"><p>Please do not confuse this id with the random internal ACDH repo id.</p></section>
-    
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            
-</article>
-                                    <a id="method_getIds"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">getIds()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">146</span>
-    </aside>
-        <p class="phpdocumentor-summary">Returns all known ids</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getIds</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">array</span>
-    </code>
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">createNewVersion</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uploadBinary</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pidPass</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span></code>
+
+        <section class="phpdocumentor-description"><p>The old and the new resource are linked with <code class="prettyprint">schema.isNewVersionOf</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$uploadBinary</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>should binary data of the real-world entity
+be uploaded uppon repository resource creation?</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pidPass</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>should PIDs (epic handles) be migrated to the new
+version (<code class="prettyprint">true</code>) or kept by the old one (<code class="prettyprint">false</code>)</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array</span>
-                    &mdash; <span class="phpdocumentor-description"><p>list of all ids</p></span>
-            
-</article>
-                                    <a id="method_updateRms"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">updateRms()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">166</span>
-    </aside>
-        <p class="phpdocumentor-summary">Updates repository resource representing a real-world entity stored in
-this object.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">updateRms</span>(
-                    <span class="phpdocumentor-signature__argument">
-            [                <span class="phpdocumentor-signature__argument__name">$create</span> :
-                <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$uploadBinary</span> :
-                <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span>
-    </code>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>old version resource</p>
+</section>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$create</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>should repository resource be created if it does not
-exist?</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$uploadBinary</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>should binary data of the real-world entity
-be uploaded uppon repository resource creation?</p></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span>
-            
 </article>
-                                    <a id="method_getCreated"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">getCreated()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_getCreated">
+        getCreated()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getCreated" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">198</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">198</span>
+</aside>
+
         <p class="phpdocumentor-summary">Informs about the corresponding repository resource state uppon last call
 to the `updateRms()` method:
 - null - the updateRms() was not called yet
 - true - repository resource was created by last call to the updateRms()
 - false - repository resource already existed uppoin last call to the
   updateRms()</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getCreated</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">bool</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getCreated</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
 
     
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-            
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
 </article>
-                                    <a id="method_setMetadata"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">setMetadata()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_getId">
+        getId()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getId" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">215</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">137</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns primary id of the real-world entity stored in this object
+(as it was set up in the object contructor).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>Please do not confuse this id with the random internal ACDH repo id.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getIds">
+        getIds()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getIds" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">146</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns all known ids</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getIds</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>list of all ids</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                        -abstract                                "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMetadata">
+        getMetadata()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">105</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Creates RDF metadata from the real-world entity stored in this object.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getResource">
+        getResource()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getResource" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">118</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns repository resource representing given real-world entity.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$create</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uploadBinary</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span></code>
+
+        <section class="phpdocumentor-description"><p>If it does not exist, it can be created.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$create</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>should repository resource be created if it does not
+exist?</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$uploadBinary</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>should binary data of the real-world entity
+be uploaded uppon repository resource creation?</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setMetadata">
+        setMetadata()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_setMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">215</span>
+</aside>
+
         <p class="phpdocumentor-summary">Sets an external metadata to be appended to automatically generated ones.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">setMetadata</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type">resource</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$preserve</span> :
-                <span class="phpdocumentor-signature__argument__return-type">array</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$preserve</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>If a given metatada property exists both in automatically generated and
 provided metadata, then the final result depends on the $preserve parameter:</p>
@@ -647,272 +873,322 @@ provided metadata, then the final result depends on the $preserve parameter:</p>
 generated and provided values will be kept</li>
 <li>if not, only values from provided metadata will be kept and automatically
 generated ones will be skipped</li>
-</ul></section>
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">resource</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>external metadata</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$preserve</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">[]</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>list of metadata properties to be kept - see above</p></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
-</article>
-                                    <a id="method_createNewVersion"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">createNewVersion()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">236</span>
-    </aside>
-        <p class="phpdocumentor-summary">Creates a new version of the resource. The new version inherits all IDs but
-the UUID and epic PIDs. The old version looses all IDs but the UUID and
-spic PIDs. It also looses all schema::parent property connections with collections.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">createNewVersion</span>(
-                    <span class="phpdocumentor-signature__argument">
-            [                <span class="phpdocumentor-signature__argument__name">$uploadBinary</span> :
-                <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$pidPass</span> :
-                <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span>
-    </code>
+</ul>
+</section>
 
-        <section class="phpdocumentor-description"><p>The old and the new resource are linked with <code class="prettyprint">schema.isNewVersionOf</code></p></section>
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$uploadBinary</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>should binary data of the real-world entity
-be uploaded uppon repository resource creation?</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$pidPass</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">false</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>should PIDs (epic handles) be migrated to the new
-version (<code class="prettyprint">true</code>) or kept by the old one (<code class="prettyprint">false</code>)</p></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span>
-                    &mdash; <span class="phpdocumentor-description"><p>old version resource</p></span>
-            
-</article>
-                                    <a id="method_findResource"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--protected
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">findResource()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">295</span>
-    </aside>
-        <p class="phpdocumentor-summary">Tries to find a repository resource representing a given object.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">protected</span>
-                                <span class="phpdocumentor-signature__name">findResource</span>(
-                    <span class="phpdocumentor-signature__argument">
-            [                <span class="phpdocumentor-signature__argument__name">$create</span> :
-                <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$uploadBinary</span> :
-                <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">bool</span>
-    </code>
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>external metadata</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$preserve</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>list of metadata properties to be kept - see above</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$create</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>should repository resource be created if it was not
-found?</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$uploadBinary</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">true</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>should binary data of the real-world entity
-be uploaded uppon repository resource creation?</p></section></dd>
-                    </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-                    &mdash; <span class="phpdocumentor-description"><p>if a repository resource was found</p></span>
-            
 </article>
-                                    <a id="method_createResource"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--protected
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">createResource()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_updateRms">
+        updateRms()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_updateRms" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">324</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">166</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Updates repository resource representing a real-world entity stored in
+this object.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">updateRms</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$create</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uploadBinary</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$create</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>should repository resource be created if it does not
+exist?</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$uploadBinary</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>should binary data of the real-world entity
+be uploaded uppon repository resource creation?</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\RepoResource">RepoResource</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createResource">
+        createResource()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_createResource" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">324</span>
+</aside>
+
         <p class="phpdocumentor-summary">Creates a repository resource</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">protected</span>
-                                <span class="phpdocumentor-signature__name">createResource</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type">resource</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$uploadBinary</span> :
-                <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">createResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uploadBinary</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$uploadBinary</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">resource</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$uploadBinary</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_getBinaryData"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--protected
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">getBinaryData()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_findResource">
+        findResource()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_findResource" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">334</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">295</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Tries to find a repository resource representing a given object.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">findResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$create</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uploadBinary</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$create</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>should repository resource be created if it was not
+found?</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$uploadBinary</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>should binary data of the real-world entity
+be uploaded uppon repository resource creation?</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>if a repository resource was found</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getBinaryData">
+        getBinaryData()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_getBinaryData" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">334</span>
+</aside>
+
         <p class="phpdocumentor-summary">Provides entity binary data.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">protected</span>
-                                <span class="phpdocumentor-signature__name">getBinaryData</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoIngest\schema\value">value</abbr></span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">getBinaryData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoIngest\schema\value">value</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
 
     
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoIngest\schema\value">value</abbr></span>
-                    &mdash; <span class="phpdocumentor-description"><p>accepted as the \acdhOeaw\acdhRepoLib\Repo::attachData() $body parameter</p></span>
-            
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoIngest\schema\value">value</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>accepted as the \acdhOeaw\acdhRepoLib\Repo::attachData() $body parameter</p>
+</section>
+
+    
 </article>
-                                    <a id="method_mergeMetadata"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--protected
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">mergeMetadata()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_mergeMetadata">
+        mergeMetadata()
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#method_mergeMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="../files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">344</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php"><a href="files/src-acdhoeaw-acdhrepoingest-schema-schemaobject.html"><abbr title="src/acdhOeaw/acdhRepoIngest/schema/SchemaObject.php">SchemaObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">344</span>
+</aside>
+
         <p class="phpdocumentor-summary">Merges metadata coming from the repository and generated by the class.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">protected</span>
-                                <span class="phpdocumentor-signature__name">mergeMetadata</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$current</span> :
-                <span class="phpdocumentor-signature__argument__return-type">resource</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$new</span> :
-                <span class="phpdocumentor-signature__argument__return-type">resource</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">resource</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">mergeMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$current</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$new</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$current</span>
+                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>current repository resource metadata</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$new</span>
+                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>metadata generated by the class</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$current</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">resource</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>current repository resource metadata</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$new</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">resource</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>metadata generated by the class</p></section></dd>
-                    </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">resource</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>final metadata</p>
+</section>
+
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">resource</span>
-                    &mdash; <span class="phpdocumentor-description"><p>final metadata</p></span>
-            
 </article>
-                                                            </section>
-            </article>
-            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+            </section>
 
-                <h2>Search results</h2>
-                <ul class="phpdocumentor-search-results__entries">
-
-                </ul>
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
             </div>
         </div>
-    </div>
-</main>
+        <a href="classes/acdhOeaw-acdhRepoIngest-schema-SchemaObject.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
 </body>
 </html>
