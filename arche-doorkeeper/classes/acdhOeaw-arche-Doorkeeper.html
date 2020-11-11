@@ -3,451 +3,442 @@
 <head>
     <meta charset="utf-8">
     <title>Documentation</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/template.css">
-    <link rel="icon" href="../images/favicon.ico"/>
-        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
-    <script src="../js/search.js"></script>
-    <script defer src="../js/searchIndex.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
     </head>
-<body>
-<header class="phpdocumentor-top-header"></header>
-<header class="phpdocumentor-header">
-    <section class="phpdocumentor-section">
-        <h1 class="phpdocumentor-title">Documentation</h1>
-    </section>
-</header>
-<main class="phpdocumentor">
-    <div class="phpdocumentor-section">
-        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
     <section data-search-form class="phpdocumentor-search">
-        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
-        <label class="phpdocumentor-label">
-            <span class="visually-hidden">Search for</span>
-            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-        </label>
-    </section>
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                                <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/acdhoeaw-arche.html"><abbr title="\acdhOeaw\arche">arche</abbr></a></li>
+                                    </ul>
+                        </section>
 
     
-    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
-            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
-                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h3>
-            <ul class="phpdocumentor-list">
-                                    <li><a href="../namespaces/acdhoeaw-arche.html"><abbr title="\acdhOeaw\arche">arche</abbr></a></li>
-                            </ul>
-            
-    
-    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
-        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
 </aside>
 
-        <div class="nine phpdocumentor-columns phpdocumentor-content">
-            <ul class="phpdocumentor-breadcrumbs">
-    <li><a href="../index.html">Home</a></li>
-                        <li><a href="../namespaces/acdhoeaw.html">acdhOeaw</a></li>
-                    <li><a href="../namespaces/acdhoeaw-arche.html">arche</a></li>
-            </ul>
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-arche.html">arche</a></li>
+    </ul>
 
-    <article class="phpdocumentor-element phpdocumentor-class">
+    <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-            Doorkeeper
-                                                        </h2>
+    Doorkeeper
+
+    
+    
+    
+    </h2>
+
         <aside class="phpdocumentor-element-found-in">
-            <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-            :
-            <span class="phpdocumentor-element-found-in__line">50</span>
-        </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+</aside>
 
-        <p class="phpdocumentor-class__summary">Description of Doorkeeper</p>
-        <section class="phpdocumentor-class__description"></section>
+            <p class="phpdocumentor-summary">Description of Doorkeeper</p>
 
-        <h3>Table of Contents</h3>
-        <table class="phpdocumentor-table_of_contents">
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#constant_NON_NEGATIVE_NUMBERS">NON_NEGATIVE_NUMBERS</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">[\zozlak\RdfConstants::XSD_NON_NEGATIVE_INTEGER, \zozlak\RdfConstants::XSD_UNSIGNED_LONG, \zozlak\RdfConstants::XSD_UNSIGNED_INT, \zozlak\RdfConstants::XSD_UNSIGNED_SHORT, \zozlak\RdfConstants::XSD_UNSIGNED_BYTE]</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#constant_LITERAL_TYPES">LITERAL_TYPES</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">[\zozlak\RdfConstants::XSD_ANY_URI, \zozlak\RdfConstants::XSD_DATE, \zozlak\RdfConstants::XSD_DATE_TIME, \zozlak\RdfConstants::XSD_DECIMAL, \zozlak\RdfConstants::XSD_FLOAT, \zozlak\RdfConstants::XSD_DOUBLE, \zozlak\RdfConstants::XSD_INTEGER, \zozlak\RdfConstants::XSD_NEGATIVE_INTEGER, \zozlak\RdfConstants::XSD_NON_NEGATIVE_INTEGER, \zozlak\RdfConstants::XSD_NON_POSITIVE_INTEGER, \zozlak\RdfConstants::XSD_POSITIVE_INTEGER, \zozlak\RdfConstants::XSD_LONG, \zozlak\RdfConstants::XSD_INT, \zozlak\RdfConstants::XSD_SHORT, \zozlak\RdfConstants::XSD_BYTE, \zozlak\RdfConstants::XSD_UNSIGNED_LONG, \zozlak\RdfConstants::XSD_UNSIGNED_INT, \zozlak\RdfConstants::XSD_UNSIGNED_SHORT, \zozlak\RdfConstants::XSD_UNSIGNED_BYTE, \zozlak\RdfConstants::XSD_BOOLEAN]</td>
-                </tr>
-                                        <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#property_ontology">$ontology</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\arche\Ontology">Ontology</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#property_uriNorm">$uriNorm</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\UriNormalizer">UriNormalizer</abbr></td>
-                </tr>
-                                                                <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_onResEdit">onResEdit()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><abbr title="\EasyRdf\Resource">Resource</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_onTxCommit">onTxCommit()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_maintainPid">maintainPid()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_maintainAccessRights">maintainAccessRights()</a></th>
-                    <td class="phpdocumentor-cell">Access rights should be maintained according to the
-`cfg.schema.accessRestriction` value:</td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_maintainPropertyRange">maintainPropertyRange()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_maintainDefaultValues">maintainDefaultValues()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_normalizeIds">normalizeIds()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_checkLanguage">checkLanguage()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_checkPropertyTypes">checkPropertyTypes()</a></th>
-                    <td class="phpdocumentor-cell">Checks property types (datatype/object).</td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_checkCardinalities">checkCardinalities()</a></th>
-                    <td class="phpdocumentor-cell">Checks property cardinalities according to the ontology.</td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_checkIdCount">checkIdCount()</a></th>
-                    <td class="phpdocumentor-cell">Every resource must have at least one repository ID and one
-non-repository ID.</td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_checkTitleProp">checkTitleProp()</a></th>
-                    <td class="phpdocumentor-cell">Every resource must have a title property (cfg.schema.label).</td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollections">updateCollections()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollectionSize">updateCollectionSize()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollectionAggregates">updateCollectionAggregates()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_loadOntology">loadOntology()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_toString">toString()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">array</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-Doorkeeper.html#method_castLiteral">castLiteral()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><abbr title="\EasyRdf\Literal">Literal</abbr></td>
-                </tr>
-                                            </table>
+    <section class="phpdocumentor-description"></section>
 
-                    <section>
-                <h3 class="phpdocumentor-constants__header">Constants</h3>
-                                    <a id="constant_NON_NEGATIVE_NUMBERS"></a>
-<article
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>zozlak</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#constant_LITERAL_TYPES">LITERAL_TYPES</a>
+    <span>
+        &nbsp;= [zozlakRdfConstants::XSD_ANY_URI, zozlakRdfConstants::XSD_DATE, zozlakRdfConstants::XSD_DATE_TIME, zozlakRdfConstants::XSD_DECIMAL, zozlakRdfConstants::XSD_FLOAT, zozlakRdfConstants::XSD_DOUBLE, zozlakRdfConstants::XSD_INTEGER, zozlakRdfConstants::XSD_NEGATIVE_INTEGER, zozlakRdfConstants::XSD_NON_NEGATIVE_INTEGER, zozlakRdfConstants::XSD_NON_POSITIVE_INTEGER, zozlakRdfConstants::XSD_POSITIVE_INTEGER, zozlakRdfConstants::XSD_LONG, zozlakRdfConstants::XSD_INT, zozlakRdfConstants::XSD_SHORT, zozlakRdfConstants::XSD_BYTE, zozlakRdfConstants::XSD_UNSIGNED_LONG, zozlakRdfConstants::XSD_UNSIGNED_INT, zozlakRdfConstants::XSD_UNSIGNED_SHORT, zozlakRdfConstants::XSD_UNSIGNED_BYTE, zozlakRdfConstants::XSD_BOOLEAN]                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#constant_NON_NEGATIVE_NUMBERS">NON_NEGATIVE_NUMBERS</a>
+    <span>
+        &nbsp;= [zozlakRdfConstants::XSD_NON_NEGATIVE_INTEGER, zozlakRdfConstants::XSD_UNSIGNED_LONG, zozlakRdfConstants::XSD_UNSIGNED_INT, zozlakRdfConstants::XSD_UNSIGNED_SHORT, zozlakRdfConstants::XSD_UNSIGNED_BYTE]                    </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#property_ontology">$ontology</a>
+    <span>
+                &nbsp;: <abbr title="\acdhOeaw\arche\Ontology">Ontology</abbr>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#property_uriNorm">$uriNorm</a>
+    <span>
+                &nbsp;: <abbr title="\acdhOeaw\UriNormalizer">UriNormalizer</abbr>            </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_maintainAccessRights">maintainAccessRights()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Access rights should be maintained according to the
+`cfg.schema.accessRestriction` value:</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_onResEdit">onResEdit()</a>
+    <span>
+                        &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_onTxCommit">onTxCommit()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_castLiteral">castLiteral()</a>
+    <span>
+                        &nbsp;: <abbr title="\EasyRdf\Literal">Literal</abbr>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_checkCardinalities">checkCardinalities()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Checks property cardinalities according to the ontology.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_checkIdCount">checkIdCount()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Every resource must have at least one repository ID and one
+non-repository ID.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_checkLanguage">checkLanguage()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_checkPropertyTypes">checkPropertyTypes()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Checks property types (datatype/object).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_checkTitleProp">checkTitleProp()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Every resource must have a title property (cfg.schema.label).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_loadOntology">loadOntology()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_maintainDefaultValues">maintainDefaultValues()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_maintainPid">maintainPid()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_maintainPropertyRange">maintainPropertyRange()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_normalizeIds">normalizeIds()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_toString">toString()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollectionAggregates">updateCollectionAggregates()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollections">updateCollections()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollectionSize">updateCollectionSize()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+        </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/acdhOeaw-arche-Doorkeeper.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_LITERAL_TYPES">
+        LITERAL_TYPES
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#constant_LITERAL_TYPES" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">LITERAL_TYPES</span>
+    = <span class="phpdocumentor-signature__default-value">[zozlakRdfConstants::XSD_ANY_URI, zozlakRdfConstants::XSD_DATE, zozlakRdfConstants::XSD_DATE_TIME, zozlakRdfConstants::XSD_DECIMAL, zozlakRdfConstants::XSD_FLOAT, zozlakRdfConstants::XSD_DOUBLE, zozlakRdfConstants::XSD_INTEGER, zozlakRdfConstants::XSD_NEGATIVE_INTEGER, zozlakRdfConstants::XSD_NON_NEGATIVE_INTEGER, zozlakRdfConstants::XSD_NON_POSITIVE_INTEGER, zozlakRdfConstants::XSD_POSITIVE_INTEGER, zozlakRdfConstants::XSD_LONG, zozlakRdfConstants::XSD_INT, zozlakRdfConstants::XSD_SHORT, zozlakRdfConstants::XSD_BYTE, zozlakRdfConstants::XSD_UNSIGNED_LONG, zozlakRdfConstants::XSD_UNSIGNED_INT, zozlakRdfConstants::XSD_UNSIGNED_SHORT, zozlakRdfConstants::XSD_UNSIGNED_BYTE, zozlakRdfConstants::XSD_BOOLEAN]</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NON_NEGATIVE_NUMBERS">
+        NON_NEGATIVE_NUMBERS
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#constant_NON_NEGATIVE_NUMBERS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NON_NEGATIVE_NUMBERS</span>
+    = <span class="phpdocumentor-signature__default-value">[zozlakRdfConstants::XSD_NON_NEGATIVE_INTEGER, zozlakRdfConstants::XSD_UNSIGNED_LONG, zozlakRdfConstants::XSD_UNSIGNED_INT, zozlakRdfConstants::XSD_UNSIGNED_SHORT, zozlakRdfConstants::XSD_UNSIGNED_BYTE]</span>
+</code>
+
+
+    
+    
+
+</article>
+            </section>
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/acdhOeaw-arche-Doorkeeper.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
         class="
             phpdocumentor-element
-            phpdocumentor-constant
-            phpdocumentor-constant--
-                    "
+            -property
+            -private
+            -static                                            "
 >
-    <h4 class="phpdocumentor-constant__name">NON_NEGATIVE_NUMBERS</h4>
+    <h4 class="phpdocumentor-element__name" id="property_ontology">
+        $ontology
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#property_ontology" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">52</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility"></span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-        <span class="phpdocumentor-signature__name">$NON_NEGATIVE_NUMBERS</span>
-        = <span class="phpdocumentor-signature__default-value">[\zozlak\RdfConstants::XSD_NON_NEGATIVE_INTEGER, \zozlak\RdfConstants::XSD_UNSIGNED_LONG, \zozlak\RdfConstants::XSD_UNSIGNED_INT, \zozlak\RdfConstants::XSD_UNSIGNED_SHORT, \zozlak\RdfConstants::XSD_UNSIGNED_BYTE]</span>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\arche\Ontology">Ontology</abbr></span>
+    <span class="phpdocumentor-signature__name">$ontology</span>
     </code>
-    </article>
-                                    <a id="constant_LITERAL_TYPES"></a>
-<article
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
             phpdocumentor-element
-            phpdocumentor-constant
-            phpdocumentor-constant--
-                    "
+            -property
+            -private
+            -static                                            "
 >
-    <h4 class="phpdocumentor-constant__name">LITERAL_TYPES</h4>
+    <h4 class="phpdocumentor-element__name" id="property_uriNorm">
+        $uriNorm
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#property_uriNorm" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">54</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility"></span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-        <span class="phpdocumentor-signature__name">$LITERAL_TYPES</span>
-        = <span class="phpdocumentor-signature__default-value">[\zozlak\RdfConstants::XSD_ANY_URI, \zozlak\RdfConstants::XSD_DATE, \zozlak\RdfConstants::XSD_DATE_TIME, \zozlak\RdfConstants::XSD_DECIMAL, \zozlak\RdfConstants::XSD_FLOAT, \zozlak\RdfConstants::XSD_DOUBLE, \zozlak\RdfConstants::XSD_INTEGER, \zozlak\RdfConstants::XSD_NEGATIVE_INTEGER, \zozlak\RdfConstants::XSD_NON_NEGATIVE_INTEGER, \zozlak\RdfConstants::XSD_NON_POSITIVE_INTEGER, \zozlak\RdfConstants::XSD_POSITIVE_INTEGER, \zozlak\RdfConstants::XSD_LONG, \zozlak\RdfConstants::XSD_INT, \zozlak\RdfConstants::XSD_SHORT, \zozlak\RdfConstants::XSD_BYTE, \zozlak\RdfConstants::XSD_UNSIGNED_LONG, \zozlak\RdfConstants::XSD_UNSIGNED_INT, \zozlak\RdfConstants::XSD_UNSIGNED_SHORT, \zozlak\RdfConstants::XSD_UNSIGNED_BYTE, \zozlak\RdfConstants::XSD_BOOLEAN]</span>
-    </code>
-    </article>
-                                            </section>
-        
-                    <section>
-                <h3 class="phpdocumentor-properties__header">Properties</h3>
-                                    <a id="property_ontology"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-            phpdocumentor-property--static                    "
->
-    <h4 class="phpdocumentor-property__name">$ontology</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">65</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\arche\Ontology">Ontology</abbr></span>
-        <span class="phpdocumentor-signature__name">$ontology</span>
-            </code>
-    </article>
-                                    <a id="property_uriNorm"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-            phpdocumentor-property--static                    "
->
-    <h4 class="phpdocumentor-property__name">$uriNorm</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">71</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\UriNormalizer">UriNormalizer</abbr></span>
-        <span class="phpdocumentor-signature__name">$uriNorm</span>
-            </code>
-    </article>
-                                                            </section>
-        
-                    <section>
-                <h3 class="phpdocumentor-methods__header">Methods</h3>
-                                    <a id="method_onResEdit"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                    phpdocumentor-element--static                    "
->
-    <h4 class="phpdocumentor-method__name">onResEdit()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">73</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">onResEdit</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$id</span> :
-                <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$path</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">71</span>
+</aside>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$id</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$path</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-            
-</article>
-                                    <a id="method_onTxCommit"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                    phpdocumentor-element--static                    "
->
-    <h4 class="phpdocumentor-method__name">onTxCommit()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">97</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">onTxCommit</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$method</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$txId</span> :
-                <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$resourceIds</span> :
-                <span class="phpdocumentor-signature__argument__return-type">array</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\UriNormalizer">UriNormalizer</abbr></span>
+    <span class="phpdocumentor-signature__name">$uriNorm</span>
     </code>
 
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$method</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$txId</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$resourceIds</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-    
-</article>
-                                    <a id="method_maintainPid"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
->
-    <h4 class="phpdocumentor-method__name">maintainPid()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">109</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">maintainPid</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+        <section class="phpdocumentor-description"></section>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-    
+
 </article>
-                                    <a id="method_maintainAccessRights"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                    phpdocumentor-element--static                    "
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/acdhOeaw-arche-Doorkeeper.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-method__name">maintainAccessRights()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_maintainAccessRights">
+        maintainAccessRights()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_maintainAccessRights" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">172</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">172</span>
+</aside>
+
         <p class="phpdocumentor-summary">Access rights should be maintained according to the
 `cfg.schema.accessRestriction` value:</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">maintainAccessRights</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">maintainAccessRights</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"><ul>
 <li>in all cases write access should be revoked from the public and academic</li>
@@ -456,647 +447,917 @@ non-repository ID.</td>
 be granted and public read access should be revoked</li>
 <li>when <code class="prettyprint">restricted</code> read rights should be revoked from public and
 <code class="prettyprint">cfg.doorkeeper.roleAcademic</code> and granted to users listed
-in <code class="prettyprint">cfg.schema.accessRole</code></li>
-</ul></section>
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>repository resource's metadata</p></section></dd>
-                    </dl>
-    
-        
-    
-</article>
-                                    <a id="method_maintainPropertyRange"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
->
-    <h4 class="phpdocumentor-method__name">maintainPropertyRange()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">202</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">maintainPropertyRange</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+in <code class="prettyprint">cfg.schema.accessRole</code>
+</li>
+</ul>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>repository resource's metadata</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-    
-</article>
-                                    <a id="method_maintainDefaultValues"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
->
-    <h4 class="phpdocumentor-method__name">maintainDefaultValues()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">238</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">maintainDefaultValues</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-    
 </article>
-                                    <a id="method_normalizeIds"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-method__name">normalizeIds()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_onResEdit">
+        onResEdit()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_onResEdit" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">261</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">normalizeIds</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+</aside>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-    
-</article>
-                                    <a id="method_checkLanguage"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
->
-    <h4 class="phpdocumentor-method__name">checkLanguage()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">278</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">checkLanguage</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">onResEdit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span></code>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-    
-</article>
-                                    <a id="method_checkPropertyTypes"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
->
-    <h4 class="phpdocumentor-method__name">checkPropertyTypes()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">301</span>
-    </aside>
-        <p class="phpdocumentor-summary">Checks property types (datatype/object).</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">checkPropertyTypes</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
 
-        <section class="phpdocumentor-description"><p>As the property type doesn't depend on the class context, the check can
-and should be done for all metadata properties.</p></section>
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_checkCardinalities"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-method__name">checkCardinalities()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_onTxCommit">
+        onTxCommit()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_onTxCommit" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">321</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">97</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">onTxCommit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$txId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resourceIds</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$method</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$txId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resourceIds</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_castLiteral">
+        castLiteral()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_castLiteral" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">724</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">castLiteral</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Literal">Literal</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$l</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$range</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Literal">Literal</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$l</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Literal">Literal</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$range</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Literal">Literal</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_checkCardinalities">
+        checkCardinalities()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_checkCardinalities" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">321</span>
+</aside>
+
         <p class="phpdocumentor-summary">Checks property cardinalities according to the ontology.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">checkCardinalities</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">checkCardinalities</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-DoorkeeperException.html"><abbr title="\acdhOeaw\arche\DoorkeeperException">DoorkeeperException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_checkIdCount"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-method__name">checkIdCount()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_checkIdCount">
+        checkIdCount()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_checkIdCount" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">368</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">368</span>
+</aside>
+
         <p class="phpdocumentor-summary">Every resource must have at least one repository ID and one
 non-repository ID.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">checkIdCount</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">checkIdCount</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"><p>The non-repository ID is obligatory because repository IDs are sequential
 and don't have any meaning. Therefore it is very unlikely anyone knows
 them and uses them in the resources' metadata which causes a serious risk
 of mismatch on the next import.</p>
 <p>Moreover resources representing ontology can have only one non-repository
-ID (so they must always have exactly two).</p></section>
+ID (so they must always have exactly two).</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-DoorkeeperException.html"><abbr title="\acdhOeaw\arche\DoorkeeperException">DoorkeeperException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_checkTitleProp"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-method__name">checkTitleProp()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_checkLanguage">
+        checkLanguage()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_checkLanguage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">402</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">278</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">checkLanguage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_checkPropertyTypes">
+        checkPropertyTypes()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_checkPropertyTypes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">301</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Checks property types (datatype/object).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">checkPropertyTypes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"><p>As the property type doesn't depend on the class context, the check can
+and should be done for all metadata properties.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-DoorkeeperException.html"><abbr title="\acdhOeaw\arche\DoorkeeperException">DoorkeeperException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_checkTitleProp">
+        checkTitleProp()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_checkTitleProp" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">402</span>
+</aside>
+
         <p class="phpdocumentor-summary">Every resource must have a title property (cfg.schema.label).</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">checkTitleProp</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$meta</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">checkTitleProp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$meta</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-                <h5 class="phpdocumentor-tag-list__heading">Tags</h5>
-        <dl class="phpdocumentor-tag-list">
-                                                <dt class="phpdocumentor-tag-list__entry">
-                        <span class="phpdocumentor-tag__name">throws</span>
-                    </dt>
-                    <dd class="phpdocumentor-tag-list__definition"><section class="phpdocumentor-description"></section></dd>
-                                    </dl>
-    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-DoorkeeperException.html"><abbr title="\acdhOeaw\arche\DoorkeeperException">DoorkeeperException</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_updateCollections"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-method__name">updateCollections()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_loadOntology">
+        loadOntology()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_loadOntology" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">462</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">updateCollections</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$pdo</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$txId</span> :
-                <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$resourceIds</span> :
-                <span class="phpdocumentor-signature__argument__return-type">array</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">707</span>
+</aside>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$pdo</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$txId</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$resourceIds</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">loadOntology</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
     
-        
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_updateCollectionSize"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-method__name">updateCollectionSize()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_maintainDefaultValues">
+        maintainDefaultValues()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_maintainDefaultValues" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">550</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">updateCollectionSize</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$pdo</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$prolongQuery</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$txId</span> :
-                <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">238</span>
+</aside>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$pdo</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$prolongQuery</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$txId</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">maintainDefaultValues</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
     
-        
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_updateCollectionAggregates"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-method__name">updateCollectionAggregates()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_maintainPid">
+        maintainPid()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_maintainPid" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">609</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">updateCollectionAggregates</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$pdo</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$prolongQuery</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$txId</span> :
-                <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">109</span>
+</aside>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$pdo</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$prolongQuery</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$txId</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">maintainPid</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
     
-        
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_loadOntology"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-method__name">loadOntology()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_maintainPropertyRange">
+        maintainPropertyRange()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_maintainPropertyRange" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">707</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">loadOntology</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">202</span>
+</aside>
 
     
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">maintainPropertyRange</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
     
-        
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_toString"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-method__name">toString()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_normalizeIds">
+        normalizeIds()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_normalizeIds" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">718</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">toString</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$a</span> :
-                <span class="phpdocumentor-signature__argument__return-type">array</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">array</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">261</span>
+</aside>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$a</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">normalizeIds</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array</span>
-            
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
 </article>
-                                    <a id="method_castLiteral"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                    phpdocumentor-element--static                    "
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-method__name">castLiteral()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_toString">
+        toString()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_toString" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="../files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">724</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                        <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">castLiteral</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$l</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Literal">Literal</abbr></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$range</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Literal">Literal</abbr></span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">718</span>
+</aside>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$l</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Literal">Literal</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$range</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">toString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Literal">Literal</abbr></span>
-            
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$a</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
 </article>
-                                                            </section>
-            </article>
-            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_updateCollectionAggregates">
+        updateCollectionAggregates()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollectionAggregates" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">609</span>
+</aside>
 
-                <h2>Search results</h2>
-                <ul class="phpdocumentor-search-results__entries">
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">updateCollectionAggregates</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pdo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prolongQuery</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$txId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-                </ul>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pdo</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$prolongQuery</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$txId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_updateCollections">
+        updateCollections()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollections" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">462</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">updateCollections</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pdo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$txId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resourceIds</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pdo</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$txId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resourceIds</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_updateCollectionSize">
+        updateCollectionSize()
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollectionSize" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/Doorkeeper.php"><a href="files/src-acdhoeaw-arche-doorkeeper.html"><abbr title="src/acdhOeaw/arche/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">550</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">updateCollectionSize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pdo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prolongQuery</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$txId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pdo</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$prolongQuery</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$txId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+            </section>
+
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
             </div>
         </div>
-    </div>
-</main>
+        <a href="classes/acdhOeaw-arche-Doorkeeper.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
 </body>
 </html>
