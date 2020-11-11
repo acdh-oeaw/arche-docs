@@ -4,316 +4,316 @@ Search.appendIndex(
             "fqsen": "\\acdhOeaw\\arche\\BaseDesc",
             "name": "BaseDesc",
             "summary": "Description\u0020of\u0020BaseDesc",
-            "url": "../classes/acdhOeaw-arche-BaseDesc.html"
+            "url": "classes/acdhOeaw-arche-BaseDesc.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-BaseDesc.html#method___construct"
+            "url": "classes/acdhOeaw-arche-BaseDesc.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003AgetLabel\u0028\u0029",
             "name": "getLabel",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-BaseDesc.html#method_getLabel"
+            "url": "classes/acdhOeaw-arche-BaseDesc.html#method_getLabel"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003AgetComment\u0028\u0029",
             "name": "getComment",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-BaseDesc.html#method_getComment"
+            "url": "classes/acdhOeaw-arche-BaseDesc.html#method_getComment"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003AgetPropInLang\u0028\u0029",
             "name": "getPropInLang",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-BaseDesc.html#method_getPropInLang"
+            "url": "classes/acdhOeaw-arche-BaseDesc.html#method_getPropInLang"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Internal\u0020id\u0020of\u0020a\u0020corresponding\u0020repository\u0020resource",
-            "url": "../classes/acdhOeaw-arche-BaseDesc.html#property_id"
+            "url": "classes/acdhOeaw-arche-BaseDesc.html#property_id"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003A\u0024uri",
             "name": "uri",
             "summary": "The\u0020ontology\u0020entity\u0020URI\u0020within\u0020the\u0020ontology\u0020namespace",
-            "url": "../classes/acdhOeaw-arche-BaseDesc.html#property_uri"
+            "url": "classes/acdhOeaw-arche-BaseDesc.html#property_uri"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003A\u0024label",
             "name": "label",
             "summary": "Associative\u0020array\u0020of\u0020label\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
-            "url": "../classes/acdhOeaw-arche-BaseDesc.html#property_label"
+            "url": "classes/acdhOeaw-arche-BaseDesc.html#property_label"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\BaseDesc\u003A\u003A\u0024comment",
             "name": "comment",
             "summary": "Associative\u0020array\u0020of\u0020rdfs\u003Acomment\u0020values\u0020\u0028langauge\u0020as\u0020a\u0020key\u0029",
-            "url": "../classes/acdhOeaw-arche-BaseDesc.html#property_comment"
+            "url": "classes/acdhOeaw-arche-BaseDesc.html#property_comment"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc",
             "name": "ClassDesc",
             "summary": "A\u0020container\u0020for\u0020and\u0020RDF\u0020class\u0020description",
-            "url": "../classes/acdhOeaw-arche-ClassDesc.html"
+            "url": "classes/acdhOeaw-arche-ClassDesc.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003AgetProperties\u0028\u0029",
             "name": "getProperties",
             "summary": "Returns\u0020distinct\u0020set\u0020of\u0020class\u0020properties",
-            "url": "../classes/acdhOeaw-arche-ClassDesc.html#method_getProperties"
+            "url": "classes/acdhOeaw-arche-ClassDesc.html#method_getProperties"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024class",
             "name": "class",
             "summary": "Class\u0020URIs",
-            "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_class"
+            "url": "classes/acdhOeaw-arche-ClassDesc.html#property_class"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024classes",
             "name": "classes",
             "summary": "Array\u0020of\u0020classes\u0020this\u0020class\u0020inherits\u0020from\u0020\u0028including\u0020the\u0020class\u0020URI\u0020itself\u0029",
-            "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_classes"
+            "url": "classes/acdhOeaw-arche-ClassDesc.html#property_classes"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\ClassDesc\u003A\u003A\u0024properties",
             "name": "properties",
             "summary": "Associative\u0020array\u0020of\u0020class\u0020properties\u0020\u0028property\u0020URIs\u0020as\u0020keys,\u0020if\na\u0020property\u0020has\u0020many\u0020URIs,\u0020it\u0020will\u0020exist\u0020under\u0020all\u0020of\u0020them\u0020\u002D\u0020use\u0020the\n\u0060getProperties\u0028\u0029\u0060\u0020method\u0020to\u0020get\u0020a\u0020distinct\u0020list\u0020of\u0020properties\u0029.",
-            "url": "../classes/acdhOeaw-arche-ClassDesc.html#property_properties"
+            "url": "classes/acdhOeaw-arche-ClassDesc.html#property_properties"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology",
             "name": "Ontology",
             "summary": "Provides\u0020an\u0020API\u0020for\u0020the\u0020ARCHE\u0020oontology.",
-            "url": "../classes/acdhOeaw-arche-Ontology.html"
+            "url": "classes/acdhOeaw-arche-Ontology.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#method___construct"
+            "url": "classes/acdhOeaw-arche-Ontology.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AisA\u0028\u0029",
             "name": "isA",
             "summary": "Checks\u0020if\u0020a\u0020given\u0020RDF\u0020resource\u0020is\u0020of\u0020a\u0020given\u0020class\u0020taking\u0020into\u0020account\nontology\u0020class\u0020inheritance.",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#method_isA"
+            "url": "classes/acdhOeaw-arche-Ontology.html#method_isA"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AgetClass\u0028\u0029",
             "name": "getClass",
             "summary": "Returns\u0020class\u0020description.",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#method_getClass"
+            "url": "classes/acdhOeaw-arche-Ontology.html#method_getClass"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AgetProperty\u0028\u0029",
             "name": "getProperty",
             "summary": "Returns\u0020a\u0020given\u0020property\u0020description\u0020for\u0020a\u0020given\u0020set\u0020of\u0020RDF\u0020classes\u0020or\nan\u0020RDF\u0020resource\u0020\u0028in\u0020the\u0020latter\u0020case\u0020classes\u0020list\u0020is\u0020extracted\u0020from\u0020the\nresource\u0029.",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#method_getProperty"
+            "url": "classes/acdhOeaw-arche-Ontology.html#method_getProperty"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AgetVocabularyValues\u0028\u0029",
             "name": "getVocabularyValues",
             "summary": "Fetches\u0020an\u0020array\u0020of\u0020SkosConceptDesc\u0020objects\u0020desribing\u0020allowed\u0020vocabulary\nvalues.",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#method_getVocabularyValues"
+            "url": "classes/acdhOeaw-arche-Ontology.html#method_getVocabularyValues"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AloadClasses\u0028\u0029",
             "name": "loadClasses",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#method_loadClasses"
+            "url": "classes/acdhOeaw-arche-Ontology.html#method_loadClasses"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AloadProperties\u0028\u0029",
             "name": "loadProperties",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#method_loadProperties"
+            "url": "classes/acdhOeaw-arche-Ontology.html#method_loadProperties"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003AloadRestrictions\u0028\u0029",
             "name": "loadRestrictions",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#method_loadRestrictions"
+            "url": "classes/acdhOeaw-arche-Ontology.html#method_loadRestrictions"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003Apreprocess\u0028\u0029",
             "name": "preprocess",
             "summary": "Combines\u0020class,\u0020property\u0020and\u0020restriction\u0020information",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#method_preprocess"
+            "url": "classes/acdhOeaw-arche-Ontology.html#method_preprocess"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A\u0024pdo",
             "name": "pdo",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#property_pdo"
+            "url": "classes/acdhOeaw-arche-Ontology.html#property_pdo"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A\u0024schema",
             "name": "schema",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#property_schema"
+            "url": "classes/acdhOeaw-arche-Ontology.html#property_schema"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A\u0024classes",
             "name": "classes",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#property_classes"
+            "url": "classes/acdhOeaw-arche-Ontology.html#property_classes"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A\u0024classesRev",
             "name": "classesRev",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#property_classesRev"
+            "url": "classes/acdhOeaw-arche-Ontology.html#property_classesRev"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A\u0024properties",
             "name": "properties",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#property_properties"
+            "url": "classes/acdhOeaw-arche-Ontology.html#property_properties"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A\u0024distinctProperties",
             "name": "distinctProperties",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#property_distinctProperties"
+            "url": "classes/acdhOeaw-arche-Ontology.html#property_distinctProperties"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Ontology\u003A\u003A\u0024restrictions",
             "name": "restrictions",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-Ontology.html#property_restrictions"
+            "url": "classes/acdhOeaw-arche-Ontology.html#property_restrictions"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc",
             "name": "PropertyDesc",
             "summary": "A\u0020container\u0020for\u0020an\u0020RDF\u0020property\u0020description",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003AsetOntology\u0028\u0029",
             "name": "setOntology",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#method_setOntology"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#method_setOntology"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A__get\u0028\u0029",
             "name": "__get",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#method___get"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#method___get"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003AgetVocabsValues\u0028\u0029",
             "name": "getVocabsValues",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#method_getVocabsValues"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#method_getVocabsValues"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024property",
             "name": "property",
             "summary": "Property\u0020URIs",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_property"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_property"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024type",
             "name": "type",
             "summary": "Property\u0020type\u0020URI\u0020\u0028owl\u003ADatatypeProperty\u0020or\u0020owl\u003AObjectProperty\u0029",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_type"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_type"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024domain",
             "name": "domain",
             "summary": "Property\u0020domain\u0020URI",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_domain"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_domain"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024properties",
             "name": "properties",
             "summary": "Property\u0020URIs\u0020of\u0020all\u0020properties\u0020this\u0020one\u0020inhertis\u0020from\u0020\u0028includint\u0020itself\u0029",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_properties"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_properties"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024range",
             "name": "range",
             "summary": "Property\u0020range\u0020URI",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_range"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_range"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024min",
             "name": "min",
             "summary": "Minimum\u0020count",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_min"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_min"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024max",
             "name": "max",
             "summary": "Maximum\u0020count",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_max"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_max"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024recommendedClass",
             "name": "recommendedClass",
             "summary": "If\u0020a\u0020class\u0020is\u0020among\u0020acdh\u003ArecommendedClass\u0020for\u0020this\u0020property.",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_recommendedClass"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_recommendedClass"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024automatedFill",
             "name": "automatedFill",
             "summary": "achd\u003AautomatedFill\u0020annotation\u0020property\u0020value",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_automatedFill"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_automatedFill"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024defaultValue",
             "name": "defaultValue",
             "summary": "acdh\u003AdefaultValue\u0020annotation\u0020property\u0020value",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_defaultValue"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_defaultValue"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024langTag",
             "name": "langTag",
             "summary": "acdh\u003AlangTag\u0020annotation\u0020property\u0020value",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_langTag"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_langTag"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024ordering",
             "name": "ordering",
             "summary": "achd\u003Aordering\u0020annotation\u0020property\u0020value",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_ordering"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_ordering"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024vocabs",
             "name": "vocabs",
             "summary": "acdh\u003Avocabs\u0020annotation\u0020property\u0020value",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_vocabs"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_vocabs"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024vocabsValues",
             "name": "vocabsValues",
             "summary": "Array\u0020of\u0020vocabulary\u0020values\u0020fetched\u0020from\u0020vocabulary\u0020pointed\u0020by\u0020acdh\u003Avocabs\nannotation\u0020property",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_vocabsValues"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_vocabsValues"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\PropertyDesc\u003A\u003A\u0024ontologyObj",
             "name": "ontologyObj",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-PropertyDesc.html#property_ontologyObj"
+            "url": "classes/acdhOeaw-arche-PropertyDesc.html#property_ontologyObj"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\RestrictionDesc",
             "name": "RestrictionDesc",
             "summary": "A\u0020container\u0020for\u0020an\u0020OWL\u0020restriction\u0020description",
-            "url": "../classes/acdhOeaw-arche-RestrictionDesc.html"
+            "url": "classes/acdhOeaw-arche-RestrictionDesc.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\RestrictionDesc\u003A\u003A\u0024class",
             "name": "class",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-RestrictionDesc.html#property_class"
+            "url": "classes/acdhOeaw-arche-RestrictionDesc.html#property_class"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\RestrictionDesc\u003A\u003A\u0024onProperty",
             "name": "onProperty",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-RestrictionDesc.html#property_onProperty"
+            "url": "classes/acdhOeaw-arche-RestrictionDesc.html#property_onProperty"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\RestrictionDesc\u003A\u003A\u0024min",
             "name": "min",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-RestrictionDesc.html#property_min"
+            "url": "classes/acdhOeaw-arche-RestrictionDesc.html#property_min"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\RestrictionDesc\u003A\u003A\u0024max",
             "name": "max",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-RestrictionDesc.html#property_max"
+            "url": "classes/acdhOeaw-arche-RestrictionDesc.html#property_max"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc",
             "name": "SkosConceptDesc",
             "summary": "Container\u0020class\u0020for\u0020a\u0020skos\u003AConcept",
-            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html"
+            "url": "classes/acdhOeaw-arche-SkosConceptDesc.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Internal\u0020id\u0020of\u0020a\u0020corresponding\u0020repository\u0020resource",
-            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_id"
+            "url": "classes/acdhOeaw-arche-SkosConceptDesc.html#property_id"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024concept",
             "name": "concept",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_concept"
+            "url": "classes/acdhOeaw-arche-SkosConceptDesc.html#property_concept"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024broader",
             "name": "broader",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_broader"
+            "url": "classes/acdhOeaw-arche-SkosConceptDesc.html#property_broader"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\SkosConceptDesc\u003A\u003A\u0024narrower",
             "name": "narrower",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-SkosConceptDesc.html#property_narrower"
+            "url": "classes/acdhOeaw-arche-SkosConceptDesc.html#property_narrower"
         },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
-            "url": "../namespaces/default.html"
+            "url": "namespaces/default.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche",
             "name": "arche",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-arche.html"
+            "url": "namespaces/acdhoeaw-arche.html"
         },                {
             "fqsen": "\\acdhOeaw",
             "name": "acdhOeaw",
             "summary": "",
-            "url": "../namespaces/acdhoeaw.html"
+            "url": "namespaces/acdhoeaw.html"
         }            ]
 );

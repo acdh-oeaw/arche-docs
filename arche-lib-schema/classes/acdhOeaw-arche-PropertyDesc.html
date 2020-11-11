@@ -3,935 +3,1302 @@
 <head>
     <meta charset="utf-8">
     <title>Documentation</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/template.css">
-    <link rel="icon" href="../images/favicon.ico"/>
-        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
-    <script src="../js/search.js"></script>
-    <script defer src="../js/searchIndex.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
     </head>
-<body>
-<header class="phpdocumentor-top-header"></header>
-<header class="phpdocumentor-header">
-    <section class="phpdocumentor-section">
-        <h1 class="phpdocumentor-title">Documentation</h1>
-    </section>
-</header>
-<main class="phpdocumentor">
-    <div class="phpdocumentor-section">
-        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
     <section data-search-form class="phpdocumentor-search">
-        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
-        <label class="phpdocumentor-label">
-            <span class="visually-hidden">Search for</span>
-            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-        </label>
-    </section>
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                                <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/acdhoeaw-arche.html"><abbr title="\acdhOeaw\arche">arche</abbr></a></li>
+                                    </ul>
+                        </section>
 
     
-    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
-            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
-                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h3>
-            <ul class="phpdocumentor-list">
-                                    <li><a href="../namespaces/acdhoeaw-arche.html"><abbr title="\acdhOeaw\arche">arche</abbr></a></li>
-                            </ul>
-            
-    
-    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
-        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
 </aside>
 
-        <div class="nine phpdocumentor-columns phpdocumentor-content">
-            <ul class="phpdocumentor-breadcrumbs">
-    <li><a href="../index.html">Home</a></li>
-                        <li><a href="../namespaces/acdhoeaw.html">acdhOeaw</a></li>
-                    <li><a href="../namespaces/acdhoeaw-arche.html">arche</a></li>
-            </ul>
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-arche.html">arche</a></li>
+    </ul>
 
-    <article class="phpdocumentor-element phpdocumentor-class">
+    <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-            PropertyDesc
-                            <span class="phpdocumentor-class__extends">
-                    extends <a href="../classes/acdhOeaw-arche-BaseDesc.html"><abbr title="\acdhOeaw\arche\BaseDesc">BaseDesc</abbr></a>
-                </span>
-                                                        </h2>
+    PropertyDesc
+
+        <span class="phpdocumentor-element__extends">
+        extends <a href="classes/acdhOeaw-arche-BaseDesc.html"><abbr title="\acdhOeaw\arche\BaseDesc">BaseDesc</abbr></a>
+    </span>
+    
+    
+    
+    </h2>
+
         <aside class="phpdocumentor-element-found-in">
-            <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-            :
-            <span class="phpdocumentor-element-found-in__line">34</span>
-        </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+</aside>
 
-        <p class="phpdocumentor-class__summary">A container for an RDF property description</p>
-        <section class="phpdocumentor-class__description"></section>
+            <p class="phpdocumentor-summary">A container for an RDF property description</p>
 
-        <h3>Table of Contents</h3>
-        <table class="phpdocumentor-table_of_contents">
-                                        <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_property">$property</a></th>
-                    <td class="phpdocumentor-cell">Property URIs</td>
-                    <td class="phpdocumentor-cell">string[]</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_type">$type</a></th>
-                    <td class="phpdocumentor-cell">Property type URI (owl:DatatypeProperty or owl:ObjectProperty)</td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_domain">$domain</a></th>
-                    <td class="phpdocumentor-cell">Property domain URI</td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_properties">$properties</a></th>
-                    <td class="phpdocumentor-cell">Property URIs of all properties this one inhertis from (includint itself)</td>
-                    <td class="phpdocumentor-cell">string[]</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_range">$range</a></th>
-                    <td class="phpdocumentor-cell">Property range URI</td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_min">$min</a></th>
-                    <td class="phpdocumentor-cell">Minimum count</td>
-                    <td class="phpdocumentor-cell">int</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_max">$max</a></th>
-                    <td class="phpdocumentor-cell">Maximum count</td>
-                    <td class="phpdocumentor-cell">int</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_recommendedClass">$recommendedClass</a></th>
-                    <td class="phpdocumentor-cell">If a class is among acdh:recommendedClass for this property.</td>
-                    <td class="phpdocumentor-cell">bool</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_automatedFill">$automatedFill</a></th>
-                    <td class="phpdocumentor-cell">achd:automatedFill annotation property value</td>
-                    <td class="phpdocumentor-cell">bool</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_defaultValue">$defaultValue</a></th>
-                    <td class="phpdocumentor-cell">acdh:defaultValue annotation property value</td>
-                    <td class="phpdocumentor-cell">bool</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_langTag">$langTag</a></th>
-                    <td class="phpdocumentor-cell">acdh:langTag annotation property value</td>
-                    <td class="phpdocumentor-cell">bool</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_ordering">$ordering</a></th>
-                    <td class="phpdocumentor-cell">achd:ordering annotation property value</td>
-                    <td class="phpdocumentor-cell">int</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_vocabs">$vocabs</a></th>
-                    <td class="phpdocumentor-cell">acdh:vocabs annotation property value</td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_vocabsValues">$vocabsValues</a></th>
-                    <td class="phpdocumentor-cell">Array of vocabulary values fetched from vocabulary pointed by acdh:vocabs
-annotation property</td>
-                    <td class="phpdocumentor-cell">\acdhOeaw\arche\SkosConceptDesc[]</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#property_ontologyObj">$ontologyObj</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-arche-Ontology.html"><abbr title="\acdhOeaw\arche\Ontology">Ontology</abbr></a></td>
-                </tr>
-                                                    <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-BaseDesc.html#property_id">$id</a></th>
-                    <td class="phpdocumentor-cell">Internal id of a corresponding repository resource</td>
-                    <td class="phpdocumentor-cell">int</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-BaseDesc.html#property_uri">$uri</a></th>
-                    <td class="phpdocumentor-cell">The ontology entity URI within the ontology namespace</td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-BaseDesc.html#property_label">$label</a></th>
-                    <td class="phpdocumentor-cell">Associative array of label values (langauge as a key)</td>
-                    <td class="phpdocumentor-cell">string[]</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-BaseDesc.html#property_comment">$comment</a></th>
-                    <td class="phpdocumentor-cell">Associative array of rdfs:comment values (langauge as a key)</td>
-                    <td class="phpdocumentor-cell">string[]</td>
-                </tr>
-                                        <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#method_setOntology">setOntology()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#method___get">__get()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-PropertyDesc.html#method_getVocabsValues">getVocabsValues()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">array</td>
-                </tr>
-                                                    <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-BaseDesc.html#method___construct">__construct()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-BaseDesc.html#method_getLabel">getLabel()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-BaseDesc.html#method_getComment">getComment()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-arche-BaseDesc.html#method_getPropInLang">getPropInLang()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">string</td>
-                </tr>
-                    </table>
+    <section class="phpdocumentor-description"></section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>zozlak</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+                <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_automatedFill">$automatedFill</a>
+    <span>
+                &nbsp;: bool            </span>
+</dt>
+<dd>achd:automatedFill annotation property value</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-BaseDesc.html#property_comment">$comment</a>
+    <span>
+                &nbsp;: array&lt;string|int, string&gt;            </span>
+</dt>
+<dd>Associative array of rdfs:comment values (langauge as a key)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_defaultValue">$defaultValue</a>
+    <span>
+                &nbsp;: bool            </span>
+</dt>
+<dd>acdh:defaultValue annotation property value</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_domain">$domain</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>Property domain URI</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-BaseDesc.html#property_id">$id</a>
+    <span>
+                &nbsp;: int            </span>
+</dt>
+<dd>Internal id of a corresponding repository resource</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-BaseDesc.html#property_label">$label</a>
+    <span>
+                &nbsp;: array&lt;string|int, string&gt;            </span>
+</dt>
+<dd>Associative array of label values (langauge as a key)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_langTag">$langTag</a>
+    <span>
+                &nbsp;: bool            </span>
+</dt>
+<dd>acdh:langTag annotation property value</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_max">$max</a>
+    <span>
+                &nbsp;: int            </span>
+</dt>
+<dd>Maximum count</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_min">$min</a>
+    <span>
+                &nbsp;: int            </span>
+</dt>
+<dd>Minimum count</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_ordering">$ordering</a>
+    <span>
+                &nbsp;: int            </span>
+</dt>
+<dd>achd:ordering annotation property value</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_properties">$properties</a>
+    <span>
+                &nbsp;: array&lt;string|int, string&gt;            </span>
+</dt>
+<dd>Property URIs of all properties this one inhertis from (includint itself)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_property">$property</a>
+    <span>
+                &nbsp;: array&lt;string|int, string&gt;            </span>
+</dt>
+<dd>Property URIs</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_range">$range</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>Property range URI</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_recommendedClass">$recommendedClass</a>
+    <span>
+                &nbsp;: bool            </span>
+</dt>
+<dd>If a class is among acdh:recommendedClass for this property.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_type">$type</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>Property type URI (owl:DatatypeProperty or owl:ObjectProperty)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-BaseDesc.html#property_uri">$uri</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>The ontology entity URI within the ontology namespace</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_vocabs">$vocabs</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>acdh:vocabs annotation property value</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_ontologyObj">$ontologyObj</a>
+    <span>
+                &nbsp;: <a href="classes/acdhOeaw-arche-Ontology.html"><abbr title="\acdhOeaw\arche\Ontology">Ontology</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_vocabsValues">$vocabsValues</a>
+    <span>
+                &nbsp;: array&lt;string|int, <a href="classes/acdhOeaw-arche-SkosConceptDesc.html"><abbr title="\acdhOeaw\arche\SkosConceptDesc">SkosConceptDesc</abbr></a>&gt;            </span>
+</dt>
+<dd>Array of vocabulary values fetched from vocabulary pointed by acdh:vocabs
+annotation property</dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-BaseDesc.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#method___get">__get()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-BaseDesc.html#method_getComment">getComment()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-BaseDesc.html#method_getLabel">getLabel()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#method_getVocabsValues">getVocabsValues()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-PropertyDesc.html#method_setOntology">setOntology()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-BaseDesc.html#method_getPropInLang">getPropInLang()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+        </dl>
+
+
 
         
-                    <section>
-                <h3 class="phpdocumentor-properties__header">Properties</h3>
-                                    <a id="property_property"></a>
-<article
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/acdhOeaw-arche-PropertyDesc.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$property</h4>
+    <h4 class="phpdocumentor-element__name" id="property_automatedFill">
+        $automatedFill
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_automatedFill" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">41</span>
-    </aside>
-            <p class="phpdocumentor-summary">Property URIs</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">string[]</span>
-        <span class="phpdocumentor-signature__name">$property</span>
-         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
-    </article>
-                                    <a id="property_type"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">95</span>
+</aside>
+
+        <p class="phpdocumentor-summary">achd:automatedFill annotation property value</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$automatedFill</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$type</h4>
+    <h4 class="phpdocumentor-element__name" id="property_comment">
+        $comment
+        <a href="classes/acdhOeaw-arche-BaseDesc.html#property_comment" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">48</span>
-    </aside>
-            <p class="phpdocumentor-summary">Property type URI (owl:DatatypeProperty or owl:ObjectProperty)</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">string</span>
-        <span class="phpdocumentor-signature__name">$type</span>
-            </code>
-    </article>
-                                    <a id="property_domain"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Associative array of rdfs:comment values (langauge as a key)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$comment</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$domain</h4>
+    <h4 class="phpdocumentor-element__name" id="property_defaultValue">
+        $defaultValue
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_defaultValue" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">55</span>
-    </aside>
-            <p class="phpdocumentor-summary">Property domain URI</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">string</span>
-        <span class="phpdocumentor-signature__name">$domain</span>
-         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
-    </article>
-                                    <a id="property_properties"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">101</span>
+</aside>
+
+        <p class="phpdocumentor-summary">acdh:defaultValue annotation property value</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$defaultValue</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$properties</h4>
+    <h4 class="phpdocumentor-element__name" id="property_domain">
+        $domain
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_domain" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">62</span>
-    </aside>
-            <p class="phpdocumentor-summary">Property URIs of all properties this one inhertis from (includint itself)</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">string[]</span>
-        <span class="phpdocumentor-signature__name">$properties</span>
-         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
-    </article>
-                                    <a id="property_range"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Property domain URI</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$domain</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$range</h4>
+    <h4 class="phpdocumentor-element__name" id="property_id">
+        $id
+        <a href="classes/acdhOeaw-arche-BaseDesc.html#property_id" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">69</span>
-    </aside>
-            <p class="phpdocumentor-summary">Property range URI</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">string</span>
-        <span class="phpdocumentor-signature__name">$range</span>
-         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
-    </article>
-                                    <a id="property_min"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Internal id of a corresponding repository resource</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$id</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$min</h4>
+    <h4 class="phpdocumentor-element__name" id="property_label">
+        $label
+        <a href="classes/acdhOeaw-arche-BaseDesc.html#property_label" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">76</span>
-    </aside>
-            <p class="phpdocumentor-summary">Minimum count</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">int</span>
-        <span class="phpdocumentor-signature__name">$min</span>
-            </code>
-    </article>
-                                    <a id="property_max"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Associative array of label values (langauge as a key)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$label</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$max</h4>
+    <h4 class="phpdocumentor-element__name" id="property_langTag">
+        $langTag
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_langTag" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">83</span>
-    </aside>
-            <p class="phpdocumentor-summary">Maximum count</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">int</span>
-        <span class="phpdocumentor-signature__name">$max</span>
-            </code>
-    </article>
-                                    <a id="property_recommendedClass"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">107</span>
+</aside>
+
+        <p class="phpdocumentor-summary">acdh:langTag annotation property value</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$langTag</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$recommendedClass</h4>
+    <h4 class="phpdocumentor-element__name" id="property_max">
+        $max
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_max" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">89</span>
-    </aside>
-            <p class="phpdocumentor-summary">If a class is among acdh:recommendedClass for this property.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">bool</span>
-        <span class="phpdocumentor-signature__name">$recommendedClass</span>
-         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
-    </article>
-                                    <a id="property_automatedFill"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Maximum count</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$max</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$automatedFill</h4>
+    <h4 class="phpdocumentor-element__name" id="property_min">
+        $min
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_min" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">95</span>
-    </aside>
-            <p class="phpdocumentor-summary">achd:automatedFill annotation property value</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">bool</span>
-        <span class="phpdocumentor-signature__name">$automatedFill</span>
-         = <span class="phpdocumentor-signature__default-value">false</span>    </code>
-    </article>
-                                    <a id="property_defaultValue"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">76</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Minimum count</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$min</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$defaultValue</h4>
+    <h4 class="phpdocumentor-element__name" id="property_ordering">
+        $ordering
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_ordering" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">101</span>
-    </aside>
-            <p class="phpdocumentor-summary">acdh:defaultValue annotation property value</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">bool</span>
-        <span class="phpdocumentor-signature__name">$defaultValue</span>
-            </code>
-    </article>
-                                    <a id="property_langTag"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">113</span>
+</aside>
+
+        <p class="phpdocumentor-summary">achd:ordering annotation property value</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$ordering</span>
+     = <span class="phpdocumentor-signature__default-value">99999</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$langTag</h4>
+    <h4 class="phpdocumentor-element__name" id="property_properties">
+        $properties
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_properties" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">107</span>
-    </aside>
-            <p class="phpdocumentor-summary">acdh:langTag annotation property value</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">bool</span>
-        <span class="phpdocumentor-signature__name">$langTag</span>
-         = <span class="phpdocumentor-signature__default-value">false</span>    </code>
-    </article>
-                                    <a id="property_ordering"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Property URIs of all properties this one inhertis from (includint itself)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$properties</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$ordering</h4>
+    <h4 class="phpdocumentor-element__name" id="property_property">
+        $property
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_property" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">113</span>
-    </aside>
-            <p class="phpdocumentor-summary">achd:ordering annotation property value</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">int</span>
-        <span class="phpdocumentor-signature__name">$ordering</span>
-         = <span class="phpdocumentor-signature__default-value">99999</span>    </code>
-    </article>
-                                    <a id="property_vocabs"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Property URIs</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$property</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$vocabs</h4>
+    <h4 class="phpdocumentor-element__name" id="property_range">
+        $range
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_range" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">119</span>
-    </aside>
-            <p class="phpdocumentor-summary">acdh:vocabs annotation property value</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">string</span>
-        <span class="phpdocumentor-signature__name">$vocabs</span>
-            </code>
-    </article>
-                                    <a id="property_vocabsValues"></a>
-<article
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">69</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Property range URI</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$range</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-property__name">$vocabsValues</h4>
+    <h4 class="phpdocumentor-element__name" id="property_recommendedClass">
+        $recommendedClass
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_recommendedClass" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">126</span>
-    </aside>
-            <p class="phpdocumentor-summary">Array of vocabulary values fetched from vocabulary pointed by acdh:vocabs
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">89</span>
+</aside>
+
+        <p class="phpdocumentor-summary">If a class is among acdh:recommendedClass for this property.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$recommendedClass</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_type">
+        $type
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_type" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">48</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Property type URI (owl:DatatypeProperty or owl:ObjectProperty)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$type</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_uri">
+        $uri
+        <a href="classes/acdhOeaw-arche-BaseDesc.html#property_uri" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">48</span>
+</aside>
+
+        <p class="phpdocumentor-summary">The ontology entity URI within the ontology namespace</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$uri</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_vocabs">
+        $vocabs
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_vocabs" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">119</span>
+</aside>
+
+        <p class="phpdocumentor-summary">acdh:vocabs annotation property value</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$vocabs</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_ontologyObj">
+        $ontologyObj
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_ontologyObj" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">132</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-Ontology.html"><abbr title="\acdhOeaw\arche\Ontology">Ontology</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$ontologyObj</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_vocabsValues">
+        $vocabsValues
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#property_vocabsValues" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">126</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Array of vocabulary values fetched from vocabulary pointed by acdh:vocabs
 annotation property</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">\acdhOeaw\arche\SkosConceptDesc[]</span>
-        <span class="phpdocumentor-signature__name">$vocabsValues</span>
-            </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/acdhOeaw-arche-SkosConceptDesc.html"><abbr title="\acdhOeaw\arche\SkosConceptDesc">SkosConceptDesc</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__name">$vocabsValues</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/acdhOeaw-arche-PropertyDesc.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/acdhOeaw-arche-BaseDesc.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$d</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ids</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nmsp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$d</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$ids</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$nmsp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___get">
+        __get()
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#method___get" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">138</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getComment">
+        getComment()
+        <a href="classes/acdhOeaw-arche-BaseDesc.html#method_getComment" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">116</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getComment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fallbackLang</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$fallbackLang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getLabel">
+        getLabel()
+        <a href="classes/acdhOeaw-arche-BaseDesc.html#method_getLabel" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">112</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getLabel</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fallbackLang</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$fallbackLang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getVocabsValues">
+        getVocabsValues()
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#method_getVocabsValues" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">145</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getVocabsValues</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setOntology">
+        setOntology()
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#method_setOntology" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">134</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setOntology</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-Ontology.html"><abbr title="\acdhOeaw\arche\Ontology">Ontology</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ontology</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$ontology</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-Ontology.html"><abbr title="\acdhOeaw\arche\Ontology">Ontology</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPropInLang">
+        getPropInLang()
+        <a href="classes/acdhOeaw-arche-BaseDesc.html#method_getPropInLang" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">120</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getPropInLang</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fallbackLang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$property</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$fallbackLang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+            </section>
+
     </article>
-                                    <a id="property_ontologyObj"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$ontologyObj</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">132</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><a href="../classes/acdhOeaw-arche-Ontology.html"><abbr title="\acdhOeaw\arche\Ontology">Ontology</abbr></a></span>
-        <span class="phpdocumentor-signature__name">$ontologyObj</span>
-            </code>
-    </article>
-                                                                    <a id="property_id"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
->
-    <h4 class="phpdocumentor-property__name">$id</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="../files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">41</span>
-    </aside>
-            <p class="phpdocumentor-summary">Internal id of a corresponding repository resource</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">int</span>
-        <span class="phpdocumentor-signature__name">$id</span>
-            </code>
-    </article>
-                                    <a id="property_uri"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
->
-    <h4 class="phpdocumentor-property__name">$uri</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="../files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">48</span>
-    </aside>
-            <p class="phpdocumentor-summary">The ontology entity URI within the ontology namespace</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">string</span>
-        <span class="phpdocumentor-signature__name">$uri</span>
-            </code>
-    </article>
-                                    <a id="property_label"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
->
-    <h4 class="phpdocumentor-property__name">$label</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="../files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">55</span>
-    </aside>
-            <p class="phpdocumentor-summary">Associative array of label values (langauge as a key)</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">string[]</span>
-        <span class="phpdocumentor-signature__name">$label</span>
-         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
-    </article>
-                                    <a id="property_comment"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--public
-                                "
->
-    <h4 class="phpdocumentor-property__name">$comment</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="../files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">62</span>
-    </aside>
-            <p class="phpdocumentor-summary">Associative array of rdfs:comment values (langauge as a key)</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__type">string[]</span>
-        <span class="phpdocumentor-signature__name">$comment</span>
-         = <span class="phpdocumentor-signature__default-value">[]</span>    </code>
-    </article>
-                            </section>
-        
-                    <section>
-                <h3 class="phpdocumentor-methods__header">Methods</h3>
-                                    <a id="method_setOntology"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">setOntology()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">134</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">setOntology</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$ontology</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-arche-Ontology.html"><abbr title="\acdhOeaw\arche\Ontology">Ontology</abbr></a></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
-
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$ontology</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-arche-Ontology.html"><abbr title="\acdhOeaw\arche\Ontology">Ontology</abbr></a></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
-</article>
-                                    <a id="method___get"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">__get()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">138</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">__get</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$name</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
-
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$name</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
-</article>
-                                    <a id="method_getVocabsValues"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">getVocabsValues()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/PropertyDesc.php"><a href="../files/src-acdhoeaw-arche-propertydesc.html"><abbr title="src/acdhOeaw/arche/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">145</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getVocabsValues</span>(
-                    <span class="phpdocumentor-signature__argument">
-            [                <span class="phpdocumentor-signature__argument__name">$lang</span> :
-                <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">array</span>
-    </code>
-
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$lang</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array</span>
-            
-</article>
-                                                                    <a id="method___construct"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">__construct()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="../files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">70</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">__construct</span>(
-                    <span class="phpdocumentor-signature__argument">
-            [                <span class="phpdocumentor-signature__argument__name">$d</span> :
-                <span class="phpdocumentor-signature__argument__return-type">object</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$ids</span> :
-                <span class="phpdocumentor-signature__argument__return-type">array</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span> ]            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$nmsp</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
-
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$d</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">object</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$ids</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">array</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">[]</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$nmsp</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">null</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
-</article>
-                                    <a id="method_getLabel"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">getLabel()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="../files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">112</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getLabel</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$lang</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$fallbackLang</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">string</span>
-    </code>
-
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$lang</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$fallbackLang</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            
-</article>
-                                    <a id="method_getComment"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">getComment()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="../files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">116</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getComment</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$lang</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            [,                 <span class="phpdocumentor-signature__argument__name">$fallbackLang</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">string</span>
-    </code>
-
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$lang</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$fallbackLang</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            
-</article>
-                                    <a id="method_getPropInLang"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">getPropInLang()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/BaseDesc.php"><a href="../files/src-acdhoeaw-arche-basedesc.html"><abbr title="src/acdhOeaw/arche/BaseDesc.php">BaseDesc.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">120</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                                <span class="phpdocumentor-signature__name">getPropInLang</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$property</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$lang</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$fallbackLang</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">string</span>
-    </code>
-
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$property</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$lang</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$fallbackLang</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            
-</article>
-                            </section>
-            </article>
-            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
-
-                <h2>Search results</h2>
-                <ul class="phpdocumentor-search-results__entries">
-
-                </ul>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
             </div>
         </div>
-    </div>
-</main>
+        <a href="classes/acdhOeaw-arche-PropertyDesc.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
 </body>
 </html>
