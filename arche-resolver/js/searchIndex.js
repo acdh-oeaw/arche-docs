@@ -4,131 +4,131 @@ Search.appendIndex(
             "fqsen": "\\acdhOeaw\\arche\\resolver\\AccessRightsException",
             "name": "AccessRightsException",
             "summary": "Description\u0020of\u0020AccessRightsException",
-            "url": "../classes/acdhOeaw-arche-resolver-AccessRightsException.html"
+            "url": "classes/acdhOeaw-arche-resolver-AccessRightsException.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\AccessRightsException\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-resolver-AccessRightsException.html#method___construct"
+            "url": "classes/acdhOeaw-arche-resolver-AccessRightsException.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Proxy",
             "name": "Proxy",
             "summary": "Simple\u0020reverse\u0020proxy\u0020implementation\u0020for\u0020dissemination\u0020services.",
-            "url": "../classes/acdhOeaw-arche-resolver-Proxy.html"
+            "url": "classes/acdhOeaw-arche-resolver-Proxy.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Proxy\u003A\u003AgetForwardHeaders\u0028\u0029",
             "name": "getForwardHeaders",
             "summary": "Returns\u0020all\u0020valid\u0020headers\u0020comming\u0020from\u0020the\u0020client\u0020request.",
-            "url": "../classes/acdhOeaw-arche-resolver-Proxy.html#method_getForwardHeaders"
+            "url": "classes/acdhOeaw-arche-resolver-Proxy.html#method_getForwardHeaders"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Proxy\u003A\u003Aproxy\u0028\u0029",
             "name": "proxy",
             "summary": "Does\u0020the\u0020job\u003A",
-            "url": "../classes/acdhOeaw-arche-resolver-Proxy.html#method_proxy"
+            "url": "classes/acdhOeaw-arche-resolver-Proxy.html#method_proxy"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Proxy\u003A\u003AhandleResponseHeaders\u0028\u0029",
             "name": "handleResponseHeaders",
             "summary": "Handles\u0020response\u0020headers.",
-            "url": "../classes/acdhOeaw-arche-resolver-Proxy.html#method_handleResponseHeaders"
+            "url": "classes/acdhOeaw-arche-resolver-Proxy.html#method_handleResponseHeaders"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Proxy\u003A\u003AsendRequest\u0028\u0029",
             "name": "sendRequest",
             "summary": "Sends\u0020a\u0020given\u0020request",
-            "url": "../classes/acdhOeaw-arche-resolver-Proxy.html#method_sendRequest"
+            "url": "classes/acdhOeaw-arche-resolver-Proxy.html#method_sendRequest"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Proxy\u003A\u003A\u0024skipResponseHeaders",
             "name": "skipResponseHeaders",
             "summary": "Response\u0020headers\u0020not\u0020to\u0020be\u0020forwarded\u0020to\u0020the\u0020client.",
-            "url": "../classes/acdhOeaw-arche-resolver-Proxy.html#property_skipResponseHeaders"
+            "url": "classes/acdhOeaw-arche-resolver-Proxy.html#property_skipResponseHeaders"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Proxy\u003A\u003A\u0024skipForwardHeaders",
             "name": "skipForwardHeaders",
             "summary": "Client\u0020request\u0020headers\u0020not\u0020to\u0020be\u0020forwarded\u0020to\u0020the\u0020diss\u0020service.",
-            "url": "../classes/acdhOeaw-arche-resolver-Proxy.html#property_skipForwardHeaders"
+            "url": "classes/acdhOeaw-arche-resolver-Proxy.html#property_skipForwardHeaders"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver",
             "name": "Resolver",
             "summary": "Resolves\u0020an\u0020URI\u0020being\u0020defined\u0020as\u0020an\u0020identifier\u0020of\u0020a\u0020repository\u0020object\u0020to\nthe\u0020proper\u0020dissemination\u0020method.",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html#method___construct"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003Aresolve\u0028\u0029",
             "name": "resolve",
             "summary": "Performs\u0020the\u0020resolution",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html#method_resolve"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#method_resolve"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003AgetResourceId\u0028\u0029",
             "name": "getResourceId",
             "summary": "Returns\u0020id\u0020of\u0020a\u0020resource\u0020to\u0020be\u0020resolved\u0020\u0028based\u0020on\u0020the\u0020HTTP\u0020request\u0029.",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html#method_getResourceId"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#method_getResourceId"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003AfindResource\u0028\u0029",
             "name": "findResource",
             "summary": "Finds\u0020a\u0020repository\u0020resource\u0020which\u0020corresponds\u0020to\u0020a\u0020given\u0020URI",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html#method_findResource"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#method_findResource"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003AsanitizeAcceptHeader\u0028\u0029",
             "name": "sanitizeAcceptHeader",
             "summary": "Sanitizes\u0020requested\u0020output\u0020format\u0020by\u0020applying\u0020following\u0020rules\u003A\n\u002D\u0020\u0060format\u0060\u0020request\u0020query\u0020parameter\u0020overwrites\u0020whole\u0020HTTP\u0020Accept\u0020header\n\u002D\u0020the\u0020wildcard\u0020is\u0020turned\u0020into\u0020the\u0020default\u0020dissemination\u0020service",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html#method_sanitizeAcceptHeader"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#method_sanitizeAcceptHeader"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003AcheckFastTrack\u0028\u0029",
             "name": "checkFastTrack",
             "summary": "Checks\u0020a\u0020fast\u0020resolution\u0020track\u0020\u0022match\u0020on\u0020mime\u0020and\u0020appent\u0020a\u0020suffix\u0020to\u0020the\u0020resource\u0020URL\u0022.",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html#method_checkFastTrack"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#method_checkFastTrack"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003AfindDissService\u0028\u0029",
             "name": "findDissService",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html#method_findDissService"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#method_findDissService"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003AcheckAccessRights\u0028\u0029",
             "name": "checkAccessRights",
             "summary": "Checks\u0020if\u0020a\u0020client\u0020is\u0020able\u0020to\u0020access\u0020a\u0020given\u0020URI.",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html#method_checkAccessRights"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#method_checkAccessRights"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003Aredirect\u0028\u0029",
             "name": "redirect",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html#method_redirect"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#method_redirect"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003A\u0024debug",
             "name": "debug",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html#property_debug"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#property_debug"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html#property_config"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#property_config"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003A\u0024log",
             "name": "log",
             "summary": "",
-            "url": "../classes/acdhOeaw-arche-resolver-Resolver.html#property_log"
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#property_log"
         },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
-            "url": "../namespaces/default.html"
+            "url": "namespaces/default.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver",
             "name": "resolver",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-arche-resolver.html"
+            "url": "namespaces/acdhoeaw-arche-resolver.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche",
             "name": "arche",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-arche.html"
+            "url": "namespaces/acdhoeaw-arche.html"
         },                {
             "fqsen": "\\acdhOeaw",
             "name": "acdhOeaw",
             "summary": "",
-            "url": "../namespaces/acdhoeaw.html"
+            "url": "namespaces/acdhoeaw.html"
         }            ]
 );
