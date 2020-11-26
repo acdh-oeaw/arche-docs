@@ -2186,10 +2186,45 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#property_mdStub"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheHelperTest",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\ArcheHelperTest",
             "name": "ArcheHelperTest",
-            "summary": "Description\u0020of\u0020ArcheHelperTest",
-            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheHelperTest.html"
+            "summary": "Tests\u0020ArcheHelper",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-ArcheHelperTest.html"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\ArcheHelperTest\u003A\u003AsetUp\u0028\u0029",
+            "name": "setUp",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-ArcheHelperTest.html#method_setUp"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\ArcheHelperTest\u003A\u003AsetUpBeforeClass\u0028\u0029",
+            "name": "setUpBeforeClass",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-ArcheHelperTest.html#method_setUpBeforeClass"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\ArcheHelperTest\u003A\u003AinitAbstract\u0028\u0029",
+            "name": "initAbstract",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-ArcheHelperTest.html#method_initAbstract"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\ArcheHelperTest\u003A\u003AtestCreateShortCut\u0028\u0029",
+            "name": "testCreateShortCut",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-ArcheHelperTest.html#method_testCreateShortCut"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\ArcheHelperTest\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-ArcheHelperTest.html#property_config"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\ArcheHelperTest\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-ArcheHelperTest.html#property_repo"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\ArcheHelperTest\u003A\u003A\u0024absObj",
+            "name": "absObj",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-ArcheHelperTest.html#property_absObj"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest",
             "name": "GeneralFunctionsTest",
@@ -2276,15 +2311,15 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_setUp"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AinitObject\u0028\u0029",
-            "name": "initObject",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestInitObject\u0028\u0029",
+            "name": "testInitObject",
             "summary": "",
-            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_initObject"
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testInitObject"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AinitEmptyObject\u0028\u0029",
-            "name": "initEmptyObject",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestInitEmptyObject\u0028\u0029",
+            "name": "testInitEmptyObject",
             "summary": "",
-            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_initEmptyObject"
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testInitEmptyObject"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetTitle\u0028\u0029",
             "name": "testGetTitle",
@@ -2346,10 +2381,20 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetRepoUrl"
         },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetRepoGuiUrl\u0028\u0029",
+            "name": "testGetRepoGuiUrl",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetRepoGuiUrl"
+        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestCopyResourceLink\u0028\u0029",
             "name": "testCopyResourceLink",
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testCopyResourceLink"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestGetTitleImage\u0028\u0029",
+            "name": "testGetTitleImage",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#method_testGetTitleImage"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest\u003A\u003AtestIsTitleImage\u0028\u0029",
             "name": "testIsTitleImage",
@@ -2410,6 +2455,16 @@ Search.appendIndex(
             "name": "resourceData",
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#property_resourceData"
+        },                {
+            "fqsen": "\\PHPUnitUtil",
+            "name": "PHPUnitUtil",
+            "summary": "Description\u0020of\u0020PHPUnitUtil",
+            "url": "../classes/PHPUnitUtil.html"
+        },                {
+            "fqsen": "\\PHPUnitUtil\u003A\u003AcallMethod\u0028\u0029",
+            "name": "callMethod",
+            "summary": "",
+            "url": "../classes/PHPUnitUtil.html#method_callMethod"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ArcheTwigDateExtension",
             "name": "ArcheTwigDateExtension",
@@ -2505,6 +2560,11 @@ Search.appendIndex(
             "name": "Tests",
             "summary": "",
             "url": "../namespaces/drupal-tests.html"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper",
+            "name": "Helper",
+            "summary": "",
+            "url": "../namespaces/drupal-tests-acdh-repo-gui-unit-helper.html"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object",
             "name": "Object",
