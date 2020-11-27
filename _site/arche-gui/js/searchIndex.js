@@ -291,11 +291,6 @@ Search.appendIndex(
             "summary": "Set\u0020up\u0020tooltip\u0020data",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_setToolTip"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AsetCiteData\u0028\u0029",
-            "name": "setCiteData",
-            "summary": "Set\u0020up\u0020cite\u0020data",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_setCiteData"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AgenerateObjDataForDissService\u0028\u0029",
             "name": "generateObjDataForDissService",
             "summary": "Generate\u0020the\u0020basic\u0020metadata\u0020for\u0020the\u0020root\u0020resource\/collection\u0020in\u0020the\u0020dissemination\u0020services\u0020view",
@@ -340,16 +335,6 @@ Search.appendIndex(
             "name": "generalFunctions",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#property_generalFunctions"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003A\u0024citeAcdhTypes",
-            "name": "citeAcdhTypes",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#property_citeAcdhTypes"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003A\u0024citeAcdhParentTypes",
-            "name": "citeAcdhParentTypes",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#property_citeAcdhParentTypes"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController",
             "name": "DisseminationServicesController",
@@ -731,11 +716,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#property_properties"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003A\u0024siteLang",
-            "name": "siteLang",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#property_siteLang"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003A\u0024requiredClasses",
             "name": "requiredClasses",
             "summary": "",
@@ -861,60 +841,10 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-ChildApiHelper.html#property_childViewObjectArray"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ChildApiHelper\u003A\u003A\u0024siteLang",
-            "name": "siteLang",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-ChildApiHelper.html#property_siteLang"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ChildApiHelper\u003A\u003A\u0024data",
             "name": "data",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-ChildApiHelper.html#property_data"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper",
-            "name": "CiteHelper",
-            "summary": "https\u003A\/\/redmine.acdh.oeaw.ac.at\/issues\/11771\u0020\u002D\u0020CITE\u0020Widget",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method___construct"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003AgetCiteWidgetData\u0028\u0029",
-            "name": "getCiteWidgetData",
-            "summary": "Get\u0020the\u0020property\u0020data\u0020from\u0020the\u0020object\u0020as\u0020a\u0020string",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_getCiteWidgetData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003AremoveDuplication\u0028\u0029",
-            "name": "removeDuplication",
-            "summary": "Remove\u0020the\u0020duplications",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_removeDuplication"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003AcreateCiteWidgetCollectionProject\u0028\u0029",
-            "name": "createCiteWidgetCollectionProject",
-            "summary": "Create\u0020the\u0020Collection\u0020\/\u0020project\u0020Cite\u0020widget\nEXAMPLE\u003A\nYoshida\u0020Sayuri,\u0020Klaus\u0020Bieber,\u0020Gertrude\u0020Bieber.\u0020The\u0020postcard\u0020collections\u0020of\u0020Friedrich\u0020Julius\u0020Bieber.",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_createCiteWidgetCollectionProject"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003AcreateCiteWidgetResourceMetadata\u0028\u0029",
-            "name": "createCiteWidgetResourceMetadata",
-            "summary": "Create\u0020the\u0020Resource\u0020\/\u0020Metadata\u0020Cite\u0020widget",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#method_createCiteWidgetResourceMetadata"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003A\u0024cite",
-            "name": "cite",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#property_cite"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#property_repo"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\CiteHelper\u003A\u003A\u0024obj",
-            "name": "obj",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-CiteHelper.html#property_obj"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DetailViewHelper",
             "name": "DetailViewHelper",
@@ -935,11 +865,6 @@ Search.appendIndex(
             "name": "detailViewObjectArray",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-DetailViewHelper.html#property_detailViewObjectArray"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DetailViewHelper\u003A\u003A\u0024siteLang",
-            "name": "siteLang",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-DetailViewHelper.html#property_siteLang"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper",
             "name": "DisseminationServicesHelper",
@@ -1266,11 +1191,6 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#property_result"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003A\u0024siteLang",
-            "name": "siteLang",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#property_siteLang"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003A\u0024actors_involved",
             "name": "actors_involved",
             "summary": "",
@@ -1345,11 +1265,6 @@ Search.appendIndex(
             "name": "rootViewObjectArray",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#property_rootViewObjectArray"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003A\u0024siteLang",
-            "name": "siteLang",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#property_siteLang"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper",
             "name": "SearchViewHelper",
@@ -1941,6 +1856,101 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_namespace"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject",
+            "name": "CiteObject",
+            "summary": "Description\u0020of\u0020CiteObject",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AsetResObj\u0028\u0029",
+            "name": "setResObj",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method_setResObj"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AgetCite\u0028\u0029",
+            "name": "getCite",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method_getCite"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AcreateCiteObject\u0028\u0029",
+            "name": "createCiteObject",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method_createCiteObject"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AcheckAcdhType\u0028\u0029",
+            "name": "checkAcdhType",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method_checkAcdhType"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AcheckAcdhParentType\u0028\u0029",
+            "name": "checkAcdhParentType",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method_checkAcdhParentType"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AcreateCiteWidgetByParent\u0028\u0029",
+            "name": "createCiteWidgetByParent",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method_createCiteWidgetByParent"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AcreateCiteWidgetCollectionProject\u0028\u0029",
+            "name": "createCiteWidgetCollectionProject",
+            "summary": "Create\u0020the\u0020Collection\u0020\/\u0020project\u0020Cite\u0020widget\nEXAMPLE\u003A\nYoshida\u0020Sayuri,\u0020Klaus\u0020Bieber,\u0020Gertrude\u0020Bieber.\u0020The\u0020postcard\u0020collections\u0020of\u0020Friedrich\u0020Julius\u0020Bieber.",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method_createCiteWidgetCollectionProject"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AgetViewData\u0028\u0029",
+            "name": "getViewData",
+            "summary": "get\u0020the\u0020views\u0020data",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method_getViewData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AgetCiteWidgetData\u0028\u0029",
+            "name": "getCiteWidgetData",
+            "summary": "Get\u0020the\u0020property\u0020data\u0020from\u0020the\u0020object\u0020as\u0020a\u0020string",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method_getCiteWidgetData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AremoveDuplication\u0028\u0029",
+            "name": "removeDuplication",
+            "summary": "Remove\u0020the\u0020duplications",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method_removeDuplication"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003A\u0024citeAcdhTypes",
+            "name": "citeAcdhTypes",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#property_citeAcdhTypes"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003A\u0024citeAcdhParentTypes",
+            "name": "citeAcdhParentTypes",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#property_citeAcdhParentTypes"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003A\u0024resObj",
+            "name": "resObj",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#property_resObj"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003A\u0024parent",
+            "name": "parent",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#property_parent"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003A\u0024cite",
+            "name": "cite",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#property_cite"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003A\u0024siteLang",
+            "name": "siteLang",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#property_siteLang"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003A\u0024repodb",
+            "name": "repodb",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#property_repodb"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject",
             "name": "ResourceObject",
             "summary": "",
@@ -2476,6 +2486,96 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/PHPUnitUtil.html#method_callMethod"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait",
+            "name": "ArcheUtilTrait",
+            "summary": "Description\u0020of\u0020ArcheHelper",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AcreateShortcut\u0028\u0029",
+            "name": "createShortcut",
+            "summary": "Create\u0020shortcut\u0020from\u0020the\u0020property\u0020for\u0020the\u0020gui",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_createShortcut"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AmakeInsideUri\u0028\u0029",
+            "name": "makeInsideUri",
+            "summary": "Create\u0020gui\u0020inside\u0020uri\u0020from\u0020the\u0020identifier",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_makeInsideUri"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AsetLanguage\u0028\u0029",
+            "name": "setLanguage",
+            "summary": "Set\u0020the\u0020language\u0020tag\u0020for\u0020the\u0020object",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_setLanguage"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AsetUpRepoIdForExternalType\u0028\u0029",
+            "name": "setUpRepoIdForExternalType",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_setUpRepoIdForExternalType"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AsetTitle\u0028\u0029",
+            "name": "setTitle",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_setTitle"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AsetAcdhId\u0028\u0029",
+            "name": "setAcdhId",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_setAcdhId"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AsetUri\u0028\u0029",
+            "name": "setUri",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_setUri"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AextendActualObj\u0028\u0029",
+            "name": "extendActualObj",
+            "summary": "Extend\u0020the\u0020actual\u0020object\u0020with\u0020the\u0020shortcuts",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_extendActualObj"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AsetIDTypeAcdhId\u0028\u0029",
+            "name": "setIDTypeAcdhId",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_setIDTypeAcdhId"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AsetIDTypeRepoId\u0028\u0029",
+            "name": "setIDTypeRepoId",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_setIDTypeRepoId"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AsetIDTypeUri\u0028\u0029",
+            "name": "setIDTypeUri",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_setIDTypeUri"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003A\u0024generalFunctions",
+            "name": "generalFunctions",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#property_generalFunctions"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#property_config"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#property_repo"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003A\u0024siteLang",
+            "name": "siteLang",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#property_siteLang"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003A\u0024prefixesToChange",
+            "name": "prefixesToChange",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#property_prefixesToChange"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ArcheTwigDateExtension",
             "name": "ArcheTwigDateExtension",
             "summary": "",
@@ -2580,6 +2680,11 @@ Search.appendIndex(
             "name": "Object",
             "summary": "",
             "url": "../namespaces/drupal-tests-acdh-repo-gui-unit-object.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits",
+            "name": "Traits",
+            "summary": "",
+            "url": "../namespaces/drupal-acdh-repo-gui-traits.html"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension",
             "name": "TwigExtension",
