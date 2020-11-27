@@ -2211,6 +2211,16 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-ArcheHelperTest.html#method_testCreateShortCut"
         },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\ArcheHelperTest\u003A\u003AtestEmptyLanguage\u0028\u0029",
+            "name": "testEmptyLanguage",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-ArcheHelperTest.html#method_testEmptyLanguage"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\ArcheHelperTest\u003A\u003AtestObjLanguage\u0028\u0029",
+            "name": "testObjLanguage",
+            "summary": "",
+            "url": "../classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-ArcheHelperTest.html#method_testObjLanguage"
+        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\ArcheHelperTest\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
