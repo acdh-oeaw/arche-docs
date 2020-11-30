@@ -1861,11 +1861,6 @@ Search.appendIndex(
             "summary": "Description\u0020of\u0020CiteObject",
             "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method___construct"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AsetResObj\u0028\u0029",
             "name": "setResObj",
             "summary": "",
@@ -1945,11 +1940,6 @@ Search.appendIndex(
             "name": "siteLang",
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#property_siteLang"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003A\u0024repodb",
-            "name": "repodb",
-            "summary": "",
-            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#property_repodb"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject",
             "name": "ResourceObject",
