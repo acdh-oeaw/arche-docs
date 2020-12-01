@@ -210,7 +210,9 @@ the proper dissemination method.</p>
 </dt>
 <dd>Sanitizes requested output format by applying following rules:
 - `format` request query parameter overwrites whole HTTP Accept header
-- the wildcard is turned into the default dissemination service</dd>
+- the wildcard is turned into the default dissemination service
+- for a CMDI requests format mappings defined in cfg.resolver.cmdi.formatMappings
+  are applied</dd>
 
         </dl>
 
@@ -410,7 +412,7 @@ the proper dissemination method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/resolver/Resolver.php"><a href="files/src-acdhoeaw-arche-resolver-resolver.html"><abbr title="src/acdhOeaw/arche/resolver/Resolver.php">Resolver.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">278</span>
+    <span class="phpdocumentor-element-found-in__line">298</span>
 </aside>
 
         <p class="phpdocumentor-summary">Checks if a client is able to access a given URI.</p>
@@ -480,7 +482,7 @@ the proper dissemination method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/resolver/Resolver.php"><a href="files/src-acdhoeaw-arche-resolver-resolver.html"><abbr title="src/acdhOeaw/arche/resolver/Resolver.php">Resolver.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">218</span>
+    <span class="phpdocumentor-element-found-in__line">238</span>
 </aside>
 
         <p class="phpdocumentor-summary">Checks a fast resolution track &quot;match on mime and appent a suffix to the resource URL&quot;.</p>
@@ -527,7 +529,7 @@ the proper dissemination method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/resolver/Resolver.php"><a href="files/src-acdhoeaw-arche-resolver-resolver.html"><abbr title="src/acdhOeaw/arche/resolver/Resolver.php">Resolver.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">247</span>
+    <span class="phpdocumentor-element-found-in__line">267</span>
 </aside>
 
     
@@ -571,7 +573,7 @@ the proper dissemination method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/resolver/Resolver.php"><a href="files/src-acdhoeaw-arche-resolver-resolver.html"><abbr title="src/acdhOeaw/arche/resolver/Resolver.php">Resolver.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 </aside>
 
         <p class="phpdocumentor-summary">Finds a repository resource which corresponds to a given URI</p>
@@ -632,7 +634,7 @@ the proper dissemination method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/resolver/Resolver.php"><a href="files/src-acdhoeaw-arche-resolver-resolver.html"><abbr title="src/acdhOeaw/arche/resolver/Resolver.php">Resolver.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 </aside>
 
         <p class="phpdocumentor-summary">Returns id of a resource to be resolved (based on the HTTP request).</p>
@@ -666,7 +668,7 @@ the proper dissemination method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/resolver/Resolver.php"><a href="files/src-acdhoeaw-arche-resolver-resolver.html"><abbr title="src/acdhOeaw/arche/resolver/Resolver.php">Resolver.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">306</span>
+    <span class="phpdocumentor-element-found-in__line">326</span>
 </aside>
 
     
@@ -708,20 +710,34 @@ the proper dissemination method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/resolver/Resolver.php"><a href="files/src-acdhoeaw-arche-resolver-resolver.html"><abbr title="src/acdhOeaw/arche/resolver/Resolver.php">Resolver.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">195</span>
+    <span class="phpdocumentor-element-found-in__line">201</span>
 </aside>
 
         <p class="phpdocumentor-summary">Sanitizes requested output format by applying following rules:
 - `format` request query parameter overwrites whole HTTP Accept header
-- the wildcard is turned into the default dissemination service</p>
+- the wildcard is turned into the default dissemination service
+- for a CMDI requests format mappings defined in cfg.resolver.cmdi.formatMappings
+  are applied</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">sanitizeAcceptHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">sanitizeAcceptHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isCmdi</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$isCmdi</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>is CMDI id requested?</p>
+</section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>

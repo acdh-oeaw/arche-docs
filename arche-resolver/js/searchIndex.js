@@ -73,7 +73,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003AsanitizeAcceptHeader\u0028\u0029",
             "name": "sanitizeAcceptHeader",
-            "summary": "Sanitizes\u0020requested\u0020output\u0020format\u0020by\u0020applying\u0020following\u0020rules\u003A\n\u002D\u0020\u0060format\u0060\u0020request\u0020query\u0020parameter\u0020overwrites\u0020whole\u0020HTTP\u0020Accept\u0020header\n\u002D\u0020the\u0020wildcard\u0020is\u0020turned\u0020into\u0020the\u0020default\u0020dissemination\u0020service",
+            "summary": "Sanitizes\u0020requested\u0020output\u0020format\u0020by\u0020applying\u0020following\u0020rules\u003A\n\u002D\u0020\u0060format\u0060\u0020request\u0020query\u0020parameter\u0020overwrites\u0020whole\u0020HTTP\u0020Accept\u0020header\n\u002D\u0020the\u0020wildcard\u0020is\u0020turned\u0020into\u0020the\u0020default\u0020dissemination\u0020service\n\u002D\u0020for\u0020a\u0020CMDI\u0020requests\u0020format\u0020mappings\u0020defined\u0020in\u0020cfg.resolver.cmdi.formatMappings\n\u0020\u0020are\u0020applied",
             "url": "classes/acdhOeaw-arche-resolver-Resolver.html#method_sanitizeAcceptHeader"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003AcheckFastTrack\u0028\u0029",
