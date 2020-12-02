@@ -193,7 +193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\disserv\\dissemination\\ServiceTrait\u003A\u003AgetResNmspId\u0028\u0029",
             "name": "getResNmspId",
-            "summary": "Fetches\u0020a\u0020resource\u0020id\u0020in\u0020a\u0020given\u0020namespace",
+            "summary": "Fetches\u0020a\u0020resource\u0020id\u0020in\u0020a\u0020given\u0020namespace.",
             "url": "classes/acdhOeaw-arche-disserv-dissemination-ServiceTrait.html#method_getResNmspId"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\disserv\\dissemination\\ServiceTrait\u003A\u003AgetParameters\u0028\u0029",
