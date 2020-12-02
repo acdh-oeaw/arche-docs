@@ -236,7 +236,7 @@
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd>Fetches a resource id in a given namespace</dd>
+<dd>Fetches a resource id in a given namespace.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-disserv-dissemination-ServiceTrait.html#method_getUrlParameters">getUrlParameters()</a>
@@ -347,7 +347,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/disserv/RepoResourceTrait.php"><a href="files/src-acdhoeaw-arche-disserv-reporesourcetrait.html"><abbr title="src/acdhOeaw/arche/disserv/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 </aside>
 
         <p class="phpdocumentor-summary">Returns list of dissemination services available for a resource.</p>
@@ -575,7 +575,7 @@ for a given resource</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/disserv/dissemination/ServiceTrait.php"><a href="files/src-acdhoeaw-arche-disserv-dissemination-servicetrait.html"><abbr title="src/acdhOeaw/arche/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">389</span>
+    <span class="phpdocumentor-element-found-in__line">406</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get the parameters</p>
@@ -811,16 +811,17 @@ for a given resource</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/arche/disserv/dissemination/ServiceTrait.php"><a href="files/src-acdhoeaw-arche-disserv-dissemination-servicetrait.html"><abbr title="src/acdhOeaw/arche/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">370</span>
+    <span class="phpdocumentor-element-found-in__line">372</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Fetches a resource id in a given namespace</p>
+        <p class="phpdocumentor-summary">Fetches a resource id in a given namespace.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">getResNmspId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$namespace</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>If namespaces overlap, tries to to avoid id in the overlapping ones.</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
