@@ -1871,6 +1871,11 @@ Search.appendIndex(
             "summary": "",
             "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method_getCite"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AcheckSiteLang\u0028\u0029",
+            "name": "checkSiteLang",
+            "summary": "",
+            "url": "../classes/Drupal-acdh-repo-gui-Object-CiteObject.html#method_checkSiteLang"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\CiteObject\u003A\u003AcreateCiteObject\u0028\u0029",
             "name": "createCiteObject",
             "summary": "",
