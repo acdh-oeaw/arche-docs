@@ -66,6 +66,11 @@ Search.appendIndex(
             "summary": "Every\u0020resource\u0020must\u0020have\u0020a\u0020title\u0020property\u0020\u0028cfg.schema.label\u0029.",
             "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkTitleProp"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckUnknownProperties\u0028\u0029",
+            "name": "checkUnknownProperties",
+            "summary": "If\u0020a\u0020property\u0020is\u0020in\u0020the\u0020ontology\u0020namespace\u0020it\u0020has\u0020to\u0020be\u0020part\u0020of\u0020the\u0020ontology.",
+            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkUnknownProperties"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AupdateCollections\u0028\u0029",
             "name": "updateCollections",
             "summary": "",
