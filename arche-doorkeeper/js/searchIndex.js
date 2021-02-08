@@ -21,6 +21,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_maintainPid"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AmaintainCmdiPid\u0028\u0029",
+            "name": "maintainCmdiPid",
+            "summary": "CMDI\u0020records\u0020must\u0020have\u0020their\u0020very\u0020own\u0020PIDs\u0020but\u0020this\u0020requires\u0020special\u0020handling\nas\u0020in\u0020ARCHE\u0020CMDI\u0020is\u0020just\u0020a\u0020metadata\u0020serialization\u0020format\u0020and\u0020not\u0020a\u0020separate\nrepository\u0020resource.",
+            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_maintainCmdiPid"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AmaintainAccessRights\u0028\u0029",
             "name": "maintainAccessRights",
             "summary": "Access\u0020rights\u0020should\u0020be\u0020maintained\u0020according\u0020to\u0020the\n\u0060cfg.schema.accessRestriction\u0060\u0020value\u003A",
