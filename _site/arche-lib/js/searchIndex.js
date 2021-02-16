@@ -546,6 +546,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver",
+            "name": "RepoResourceResolver",
+            "summary": "Returns\u0020repository\u0020resource\u0020object\u0020having\u0020a\u0020given\u0020id.",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Sets\u0020up\u0020the\u0020resolver.\u0020If\u0020\u0060\u0024config\u002D\u003EdbConnStr\u0060\u0020exists,\u0020the\u0020repository\nconnection\u0020is\u0020set\u0020up\u0020with\u0020using\u0020the\u0020\u0060acdhOeaw\\acdhRepoLib\\RepoDb\u0060\u0020class,\notherwise\u0020the\u0020\u0060acdhOeaw\\acdhRepoLib\\Repo\u0060\u0020class\u0020is\u0020used.",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_resolve"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003AhandleException\u0028\u0029",
+            "name": "handleException",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_handleException"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_config"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_repo"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait",
             "name": "RepoResourceTrait",
             "summary": "A\u0020common\u0020boilet\u0020plate\u0020code\u0020to\u0020be\u0020reused\u0020by\u0020all\u0020RepoResourceInterface\nimplementations.",
