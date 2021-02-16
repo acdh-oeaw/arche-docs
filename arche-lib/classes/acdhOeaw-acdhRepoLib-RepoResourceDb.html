@@ -815,7 +815,7 @@ metadata.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResourceDb.php"><a href="files/src-acdhoeaw-acdhrepolib-reporesourcedb.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResourceDb.php">RepoResourceDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 </aside>
 
         <p class="phpdocumentor-summary">Loads current metadata from the repository.</p>
@@ -846,9 +846,11 @@ or e.g. reset them back to their current state in the repository)</p>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>scope of the metadata returned by the repository:
 <code class="prettyprint">RepoResourceInterface::META_RESOURCE</code> - only given resource metadata,
-<code class="prettyprint">RepoResourceInterface::META_NEIGHBORS</code> - metadata of a given resource and all the resources pointed by its metadata,
-<code class="prettyprint">RepoResourceInterface::META_RELATIVES</code> - metadata of a given resource and all resources recursively pointed to a given metadata property
-(see the <code class="prettyprint">$parentProperty</code> parameter), both directly and in a reverse order (reverse in RDF terms)</p>
+<code class="prettyprint">RepoResourceInterface::META_NEIGHBORS</code> - metadata of a given resource, all the resources pointed by its metadata and all its children
+(resource pointing to a given resource with the <code class="prettyprint">$parentProperty</code> property),
+<code class="prettyprint">RepoResourceInterface::META_RELATIVES</code> - metadata of a given resource and all resources recursively pointing to a given metadata property
+(see the <code class="prettyprint">$parentProperty</code> parameter) in both directions (both &quot;parents&quot; and &quot;children&quot;)
+<code class="prettyprint">RepoResourceInterface::META_PARENTS</code> - like META_RELATIVES but only parents are returned</p>
 </section>
 
             </dd>
