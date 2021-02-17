@@ -556,6 +556,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_IDS",
+            "name": "META_IDS",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_IDS"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver",
             "name": "RepoResourceResolver",
             "summary": "Returns\u0020repository\u0020resource\u0020object\u0020having\u0020a\u0020given\u0020id.",
