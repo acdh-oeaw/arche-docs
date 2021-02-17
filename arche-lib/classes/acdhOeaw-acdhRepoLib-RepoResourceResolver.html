@@ -133,6 +133,13 @@ based on the provided configutation.</p>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_log">$log</a>
+    <span>
+                &nbsp;: <abbr title="\zozlak\logging\Log">Log</abbr>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_repo">$repo</a>
     <span>
                 &nbsp;: <a href="classes/acdhOeaw-acdhRepoLib-RepoInterface.html"><abbr title="\acdhOeaw\acdhRepoLib\RepoInterface">RepoInterface</abbr></a>            </span>
@@ -144,9 +151,7 @@ based on the provided configutation.</p>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
-<dd>Sets up the resolver. If `$config-&gt;dbConnStr` exists, the repository
-connection is set up with using the `acdhOeaw\acdhRepoLib\RepoDb` class,
-otherwise the `acdhOeaw\acdhRepoLib\Repo` class is used.</dd>
+<dd>Sets up the resolver.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_handleException">handleException()</a>
@@ -160,7 +165,14 @@ otherwise the `acdhOeaw\acdhRepoLib\Repo` class is used.</dd>
     <span>
                         &nbsp;: <abbr title="\acdhOeaw\acdhRepoLib\type">type</abbr>    </span>
 </dt>
-<dd></dd>
+<dd>Resolves a given resource URI according to the resolver settings.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_resolveUrl">resolveUrl()</a>
+    <span>
+                        &nbsp;: <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html"><abbr title="\acdhOeaw\acdhRepoLib\RepoResourceInterface">RepoResourceInterface</abbr></a>    </span>
+</dt>
+<dd>Resolves a given URL in a zero-configuration mode.</dd>
 
         </dl>
 
@@ -198,6 +210,37 @@ otherwise the `acdhOeaw\acdhRepoLib\Repo` class is used.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">object</span>
     <span class="phpdocumentor-signature__name">$config</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_log">
+        $log
+        <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_log" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResourceResolver.php"><a href="files/src-acdhoeaw-acdhrepolib-reporesourceresolver.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResourceResolver.php">RepoResourceResolver.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\zozlak\logging\Log">Log</abbr></span>
+    <span class="phpdocumentor-signature__name">$log</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -256,30 +299,41 @@ otherwise the `acdhOeaw\acdhRepoLib\Repo` class is used.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResourceResolver.php"><a href="files/src-acdhoeaw-acdhrepolib-reporesourceresolver.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResourceResolver.php">RepoResourceResolver.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Sets up the resolver. If `$config-&gt;dbConnStr` exists, the repository
-connection is set up with using the `acdhOeaw\acdhRepoLib\RepoDb` class,
-otherwise the `acdhOeaw\acdhRepoLib\Repo` class is used.</p>
+        <p class="phpdocumentor-summary">Sets up the resolver.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\zozlak\logging\Log">Log</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$log</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\zozlak\logging\Log">Log</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$log</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"><p><code class="prettyprint">$config</code> must contain a minimum repository description including
-<code class="prettyprint">$.rest.urlBase</code>, <code class="prettyprint">$.rest.pathBase</code>, <code class="prettyprint">$.rest.headers</code>, <code class="prettyprint">$.schema.id</code>,
-<code class="prettyprint">$.schema.parent</code>, <code class="prettyprint">$.schema.label</code> and <code class="prettyprint">$.schema.searchMatch</code>.</p>
-<p>In case of REST API (<code class="prettyprint">acdhOeaw\acdhRepoLib\Repo</code>) connection, it might be
-useful to also provide credentials with <code class="prettyprint">$.auth.httpBasic.user</code> and
-<code class="prettyprint">$.auth.httpBasic.password</code>.</p>
+        <section class="phpdocumentor-description"><p>May work in three modes:</p>
+<ul>
+<li>zero-config mode (when <code class="prettyprint">$config</code> is null). In this mode resolution is
+done by just trying to resolve the URL. It's the slowest mode but
+requires no configutation at all.
+This mode is always available as a fallback resolution method for the
+resolve() method and explicitely as the resolveUrl() method.</li>
+<li>REST API mode (when <code class="prettyprint">$config</code> is provided but doesn't contain <code class="prettyprint">$config-&gt;dbConnStr</code>)
+This mode is faster but works only against a single repository.</li>
+<li>direct database access mode (when <code class="prettyprint">$config</code> is provided but doesn't contains
+<code class="prettyprint">$config-&gt;dbConnStr</code>). This is definitely the fastest mode but works
+only against a single repository and requires direct database access.</li>
+</ul>
+<p>If modes other than zero-config one are used, the <code class="prettyprint">$config</code> parameter has to
+contain a minimum repository description including <code class="prettyprint">$config-&gt;rest-&gt;urlBase</code>,
+<code class="prettyprint">$config-&gt;rest-&gt;pathBase</code>, <code class="prettyprint">$config-&gt;rest-&gt;headers</code>, <code class="prettyprint">$config-&gt;schema-&gt;id</code>,
+<code class="prettyprint">$config-&gt;schema-&gt;parent</code>, <code class="prettyprint">$config-&gt;schema-&gt;label</code> and <code class="prettyprint">$config-&gt;schema-&gt;searchMatch</code>.</p>
+<p>In case of REST API mode credentials can be provided with
+<code class="prettyprint">$config-&gt;auth-&gt;httpBasic-&gt;user</code> and <code class="prettyprint">$config-&gt;auth-&gt;httpBasic-&gt;password</code>.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$config</span>
-                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -287,7 +341,7 @@ useful to also provide credentials with <code class="prettyprint">$.auth.httpBas
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$log</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\zozlak\logging\Log">Log</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\zozlak\logging\Log">Log</abbr>|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -317,7 +371,7 @@ useful to also provide credentials with <code class="prettyprint">$.auth.httpBas
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResourceResolver.php"><a href="files/src-acdhoeaw-acdhrepolib-reporesourceresolver.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResourceResolver.php">RepoResourceResolver.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">168</span>
 </aside>
 
     
@@ -366,13 +420,14 @@ useful to also provide credentials with <code class="prettyprint">$.auth.httpBas
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResourceResolver.php"><a href="files/src-acdhoeaw-acdhrepolib-reporesourceresolver.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResourceResolver.php">RepoResourceResolver.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Resolves a given resource URI according to the resolver settings.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">resolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\type">type</abbr></span></code>
+                <span class="phpdocumentor-signature__name">resolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fallback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\type">type</abbr></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -386,6 +441,17 @@ useful to also provide credentials with <code class="prettyprint">$.auth.httpBas
                     <section class="phpdocumentor-description"></section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$fallback</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Should fallback zero-config mode be used when
+a resource is not found? (valid only for non-zero-config modes - see the
+constructor descrription)</p>
+</section>
+
+            </dd>
             </dl>
 
     
@@ -395,6 +461,15 @@ useful to also provide credentials with <code class="prettyprint">$.auth.httpBas
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\acdhRepoLib\__construct()">__construct()</abbr></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
@@ -407,6 +482,51 @@ useful to also provide credentials with <code class="prettyprint">$.auth.httpBas
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoLib\type">type</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_resolveUrl">
+        resolveUrl()
+        <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_resolveUrl" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepoLib/RepoResourceResolver.php"><a href="files/src-acdhoeaw-acdhrepolib-reporesourceresolver.html"><abbr title="src/acdhOeaw/acdhRepoLib/RepoResourceResolver.php">RepoResourceResolver.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">156</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Resolves a given URL in a zero-configuration mode.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">resolveUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html"><abbr title="\acdhOeaw\acdhRepoLib\RepoResourceInterface">RepoResourceInterface</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$url</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html"><abbr title="\acdhOeaw\acdhRepoLib\RepoResourceInterface">RepoResourceInterface</abbr></a></span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
