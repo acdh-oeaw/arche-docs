@@ -136,6 +136,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_factoryInteractive"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003AfactoryFromUrl\u0028\u0029",
+            "name": "factoryFromUrl",
+            "summary": "Creates\u0020a\u0020Repo\u0020instance\u0020from\u0020any\u0020URL\u0020resolving\u0020to\u0020a\u0020repository\u0020resource.",
+            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_factoryFromUrl"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020an\u0020repository\u0020connection\u0020object.",
@@ -558,13 +563,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Sets\u0020up\u0020the\u0020resolver.\u0020If\u0020\u0060\u0024config\u002D\u003EdbConnStr\u0060\u0020exists,\u0020the\u0020repository\nconnection\u0020is\u0020set\u0020up\u0020with\u0020using\u0020the\u0020\u0060acdhOeaw\\acdhRepoLib\\RepoDb\u0060\u0020class,\notherwise\u0020the\u0020\u0060acdhOeaw\\acdhRepoLib\\Repo\u0060\u0020class\u0020is\u0020used.",
+            "summary": "Sets\u0020up\u0020the\u0020resolver.",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003Aresolve\u0028\u0029",
             "name": "resolve",
-            "summary": "",
+            "summary": "Resolves\u0020a\u0020given\u0020resource\u0020URI\u0020according\u0020to\u0020the\u0020resolver\u0020settings.",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_resolve"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003AresolveUrl\u0028\u0029",
+            "name": "resolveUrl",
+            "summary": "Resolves\u0020a\u0020given\u0020URL\u0020in\u0020a\u0020zero\u002Dconfiguration\u0020mode.",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_resolveUrl"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003AhandleException\u0028\u0029",
             "name": "handleException",
@@ -580,6 +590,11 @@ Search.appendIndex(
             "name": "repo",
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_repo"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_log"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait",
             "name": "RepoResourceTrait",
