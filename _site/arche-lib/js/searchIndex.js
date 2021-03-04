@@ -466,6 +466,11 @@ Search.appendIndex(
             "summary": "Loads\u0020current\u0020metadata\u0020from\u0020the\u0020repository.",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceDb.html#method_loadMetadata"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceDb\u003A\u003AgetMetadataQuery\u0028\u0029",
+            "name": "getMetadataQuery",
+            "summary": "Returns\u0020a\u0020QueryPart\u0020object\u0020with\u0020an\u0020SQL\u0020query\u0020loading\u0020resource\u0027s\u0020metadata\nin\u0020a\u0020given\u0020mode.",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceDb.html#method_getMetadataQuery"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceDb\u003A\u003A\u0024id",
             "name": "id",
             "summary": "",
