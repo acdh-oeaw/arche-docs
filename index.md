@@ -19,4 +19,4 @@ Documentation automatically generated from the source code comments:
 
 Guides:
 
-* [Metadata API performance]({aux/metadata_api_performance.html)
+* [Metadata API performance](aux/metadata_api_performance.html)
