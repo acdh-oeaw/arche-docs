@@ -1,10 +1,36 @@
 name: jekyll build
-on : push
+on:
+  push: ~
+  schedule:
+  - cron: '0 4 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: development docs
+      run: |
+        mkdir tmp && cd tmp
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-biblatex
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-core
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-dashboard
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-doorkeeper
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-gui
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-fcs
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-lib
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-lib-disserv
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-lib-ingest
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-lib-schema
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-oaipmh
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-resolver
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-schema-ingest
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-thumbnails
+        mkdir devdocs
+        docker run --rm -v $(pwd):/data phpdoc/phpdoc:3 -d arche-biblatex/src -d arche-core/src -d arche-dashboard/src -d arche-doorkeeper/src -d arche-gui/src -d arche-fcs/src -d arche-lib/src -d arche-lib-disserv/src -d arche-lib-ingest/src -d arche-lib-schema/src -d arche-oaipmh/src -d arche-resolver/src -d arche-schema-ingest/src -d arche-thumbnails/src -t devdocs
+        cd ..
+        rm -fR devdocs
+        cp -fR tmp/devdocs .
+        rm -fR tmp
     - uses: docker://faph/action-jekyll:1.5
     - name: commit and push
       run: |
