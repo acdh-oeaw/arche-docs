@@ -43,7 +43,7 @@ d %>%
 
 As we can see:
 
-* The most performant format is `application/n-triples`. Since ARCHE 1.10.0 it has a constant memory footprint, therefore there is no risk of out of memory error on the server side. On the test machine it was able to serialize up to around 0.5M triples within PHP's standard 30s script execution time limit.
+* The most performant format is `application/n-triples`. Since ARCHE 1.10.0 it has a constant memory footprint, therefore there is no risk of out of memory error on the server side. On the test machine it was able to serialize more than 2M triples within PHP's standard 30s script execution time limit.
 * The second most performant format is `text/turtle`. It takes roughly twice as much time to generate a `text/turtle` response than `application/n-triples` one (as of ARCHE 1.10) but it's worth noticing it has much higher server side memory footprint (here up to around 100MB @ 150k triples).
 * `application/ld+json` is significantly slower (more than twice comparing to `text/turtle` and more than four times comparing to `application/n-triples`) and has much bigger server-side memory footprint (almost 350MB @ 150k triples comparing to around 100MB for `text/turtle` and 2MB of `application/n-triples`). As there are `application/n-triples` parsers for JS, in large triples count scenarios it's more performant and safe (no risk of out of memory and minimal risk of execution timeout) to use `application/n-triples` as the data interchange format and the parser on the client side.
 * `rdf+xml` is definitely the worse format as the serialization time grows exponentially with the number of triples. Please just avoid it.
