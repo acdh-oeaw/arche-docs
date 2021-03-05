@@ -30,7 +30,7 @@ jobs:
         cd ..
         rm -fR devdocs
         cp -fR tmp/devdocs .
-        rm -fR tmp
+        sudo rm -fR tmp
     - uses: docker://faph/action-jekyll:1.5
     - name: commit and push
       run: |
