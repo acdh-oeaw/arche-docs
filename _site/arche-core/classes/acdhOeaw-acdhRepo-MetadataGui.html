@@ -92,10 +92,10 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 </aside>
 
-            <p class="phpdocumentor-summary">Provides simple HTML serialization of a resource metadata</p>
+            <p class="phpdocumentor-summary">Provides simple HTML serialization of a metadata triples set</p>
 
     <section class="phpdocumentor-description"></section>
 
@@ -128,6 +128,13 @@
 
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_CHILD_PROP">CHILD_PROP</a>
+    <span>
+        &nbsp;= &#039;Child resources&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_TMPL">TMPL</a>
     <span>
         &nbsp;= &lt;&lt;&lt;TMPL
@@ -147,16 +154,37 @@
         &lt;/style&gt;
     &lt;/head&gt;
     &lt;body&gt;
-
+        &lt;h1&gt;%s&lt;/h1&gt;
 TMPL
                     </span>
 </dt>
 <dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#property_graph">$graph</a>
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_TYPE_ID">TYPE_ID</a>
     <span>
-                &nbsp;: <abbr title="\EasyRdf\Graph">Graph</abbr>            </span>
+        &nbsp;= &#039;ID&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_TYPE_REL">TYPE_REL</a>
+    <span>
+        &nbsp;= &#039;REL&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_TYPE_URI">TYPE_URI</a>
+    <span>
+        &nbsp;= &#039;URI&#039;                    </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#property_data">$data</a>
+    <span>
+                &nbsp;: array&lt;string, object&gt;            </span>
 </dt>
 <dd></dd>
 
@@ -168,9 +196,23 @@ TMPL
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#property_properties">$properties</a>
+    <span>
+                &nbsp;: array&lt;string, string&gt;            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#property_res">$res</a>
     <span>
-                &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>            </span>
+                &nbsp;: int            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#property_titles">$titles</a>
+    <span>
+                &nbsp;: array&lt;string, string&gt;            </span>
 </dt>
 <dd></dd>
 
@@ -182,9 +224,9 @@ TMPL
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#method___toString">__toString()</a>
+    <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#method_output">output()</a>
     <span>
-                        &nbsp;: string    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
@@ -202,6 +244,13 @@ TMPL
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#method_outputProperty">outputProperty()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
         </dl>
 
 
@@ -213,6 +262,31 @@ TMPL
             <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHILD_PROP">
+        CHILD_PROP
+        <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_CHILD_PROP" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHILD_PROP</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Child resources&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_TMPL">
         TMPL
         <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_TMPL" class="headerlink"><i class="fas fa-link"></i></a>
@@ -221,7 +295,7 @@ TMPL
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 </aside>
 
     
@@ -246,9 +320,84 @@ TMPL
         &lt;/style&gt;
     &lt;/head&gt;
     &lt;body&gt;
-
+        &lt;h1&gt;%s&lt;/h1&gt;
 TMPL
 </span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TYPE_ID">
+        TYPE_ID
+        <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_TYPE_ID" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TYPE_ID</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;ID&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TYPE_REL">
+        TYPE_REL
+        <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_TYPE_REL" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TYPE_REL</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;REL&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TYPE_URI">
+        TYPE_URI
+        <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_TYPE_URI" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TYPE_URI</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;URI&#039;</span>
 </code>
 
 
@@ -271,23 +420,23 @@ TMPL
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_graph">
-        $graph
-        <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#property_graph" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_data">
+        $data
+        <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#property_data" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
-    <span class="phpdocumentor-signature__name">$graph</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, object&gt;</span>
+    <span class="phpdocumentor-signature__name">$data</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -311,7 +460,7 @@ TMPL
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 </aside>
 
     
@@ -319,6 +468,37 @@ TMPL
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
     <span class="phpdocumentor-signature__name">$nmsp</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_properties">
+        $properties
+        <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#property_properties" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">86</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$properties</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -342,14 +522,45 @@ TMPL
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+        <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$res</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_titles">
+        $titles
+        <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#property_titles" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$titles</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -377,28 +588,35 @@ TMPL
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Graph">Graph</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$graph</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$preferredLang</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$graph</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+                <span class="phpdocumentor-signature__argument__name">$query</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$resource</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$resId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$preferredLang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -419,27 +637,27 @@ TMPL
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___toString">
-        __toString()
-        <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_output">
+        output()
+        <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#method_output" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">output</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -458,13 +676,13 @@ TMPL
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">216</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">formatObject</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$o</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">formatObject</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$o</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baseUrl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -472,6 +690,13 @@ TMPL
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$o</span>
                 : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$baseUrl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -500,13 +725,13 @@ TMPL
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">formatResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">formatResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tryTitles</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -518,12 +743,75 @@ TMPL
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$tryTitles</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_outputProperty">
+        outputProperty()
+        <a href="classes/acdhOeaw-acdhRepo-MetadataGui.html#method_outputProperty" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/MetadataGui.php"><a href="files/src-acdhoeaw-acdhrepo-metadatagui.html"><abbr title="src/acdhOeaw/acdhRepo/MetadataGui.php">MetadataGui.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">207</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">outputProperty</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$p</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baseUrl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$values</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$p</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$baseUrl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
