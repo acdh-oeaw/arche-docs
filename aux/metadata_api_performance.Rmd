@@ -15,12 +15,15 @@ If you just want to know the best solutions:
 
 # Test results
 
-A few tests were performed on a i7-6700HQ (4c/8t@2.6GHz) with a 4x16GB@2133MHz RAM and a 2xSATA SSD in RAID-0.
+A few tests were performed on ACDH's ARCHE production instance.
 The repository contained 85k resources and 2.6M triples.
 
+Results for `application/rdf+xml` and `application/ld+json` are the same for ARCHE 1.9 and 1.10.
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.width=8}
+# time curl 'https://arche.acdh.oeaw.ac.at/api/46266/metadata?readMode=neighbors&parentProperty=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23isPartOf&format=text/turtle' > /dev/null
 library(magrittr)
-d = readr::read_csv2('~/Pobrane/stats.csv') %>%
+d = readr::read_csv2('metadata_api_performance.csv') %>%
   dplyr::mutate(
     "ARCHE version" = dplyr::if_else(serializer == 'easyrdf', '1.9', '1.10'),
     scenario = paste(format, serializer)
