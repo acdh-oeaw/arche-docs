@@ -136,6 +136,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_factoryInteractive"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003AfactoryFromUrl\u0028\u0029",
+            "name": "factoryFromUrl",
+            "summary": "Creates\u0020a\u0020Repo\u0020instance\u0020from\u0020any\u0020URL\u0020resolving\u0020to\u0020a\u0020repository\u0020resource.",
+            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_factoryFromUrl"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020an\u0020repository\u0020connection\u0020object.",
@@ -461,6 +466,11 @@ Search.appendIndex(
             "summary": "Loads\u0020current\u0020metadata\u0020from\u0020the\u0020repository.",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceDb.html#method_loadMetadata"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceDb\u003A\u003AgetMetadataQuery\u0028\u0029",
+            "name": "getMetadataQuery",
+            "summary": "Returns\u0020a\u0020QueryPart\u0020object\u0020with\u0020an\u0020SQL\u0020query\u0020loading\u0020resource\u0027s\u0020metadata\nin\u0020a\u0020given\u0020mode.",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceDb.html#method_getMetadataQuery"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceDb\u003A\u003A\u0024id",
             "name": "id",
             "summary": "",
@@ -545,6 +555,56 @@ Search.appendIndex(
             "name": "META_RELATIVES",
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_PARENTS",
+            "name": "META_PARENTS",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_IDS",
+            "name": "META_IDS",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_IDS"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver",
+            "name": "RepoResourceResolver",
+            "summary": "Returns\u0020repository\u0020resource\u0020object\u0020having\u0020a\u0020given\u0020id.",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Sets\u0020up\u0020the\u0020resolver.",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "Resolves\u0020a\u0020given\u0020resource\u0020URI\u0020according\u0020to\u0020the\u0020resolver\u0020settings.",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_resolve"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003AresolveUrl\u0028\u0029",
+            "name": "resolveUrl",
+            "summary": "Resolves\u0020a\u0020given\u0020URL\u0020in\u0020a\u0020zero\u002Dconfiguration\u0020mode.",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_resolveUrl"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003AhandleException\u0028\u0029",
+            "name": "handleException",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_handleException"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_config"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_repo"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_log"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait",
             "name": "RepoResourceTrait",

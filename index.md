@@ -17,3 +17,6 @@ Documentation automatically generated from the source code comments:
 * [arche-resolver](arche-resolver/) - resolver for the ARCHE (a service providing redirection to correct dissemination services based on a repository resource URI and a requested resource representation format)
 * [arche-gui](arche-gui/) - Drupal 8 GUI for ARCHE
 
+Guides:
+
+* [Metadata API performance]({aux/metadata_api_performance.html)

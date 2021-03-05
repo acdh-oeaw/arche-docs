@@ -616,6 +616,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-RestController.html#method_getHttpHeaderName"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\RestController\u003A\u003AgetRequestParameter\u0028\u0029",
+            "name": "getRequestParameter",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-RestController.html#method_getRequestParameter"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\RestController\u003A\u003AID_CREATE",
             "name": "ID_CREATE",
             "summary": "",
@@ -635,6 +640,11 @@ Search.appendIndex(
             "name": "CORS_ORIGIN",
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-RestController.html#constant_CORS_ORIGIN"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\RestController\u003A\u003A\u0024requestParam",
+            "name": "requestParam",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-RestController.html#property_requestParam"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\RestController\u003A\u003A\u0024outputFormats",
             "name": "outputFormats",
