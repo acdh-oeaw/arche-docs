@@ -276,6 +276,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-Metadata.html#method_getAcceptedFormats"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\Metadata\u003A\u003AnegotiateFormat\u0028\u0029",
+            "name": "negotiateFormat",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-Metadata.html#method_negotiateFormat"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\Metadata\u003A\u003AoutputHeaders\u0028\u0029",
+            "name": "outputHeaders",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-Metadata.html#method_outputHeaders"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\Metadata\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
@@ -331,20 +341,10 @@ Search.appendIndex(
             "summary": "Updates\u0020system\u002Dmanaged\u0020metadata,\u0020e.g.\u0020who\u0020and\u0020when\u0020lastly\u0020modified\u0020a\u0020resource",
             "url": "classes/acdhOeaw-acdhRepo-Metadata.html#method_manageSystemMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepo\\Metadata\u003A\u003AoutputHeaders\u0028\u0029",
-            "name": "outputHeaders",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepo-Metadata.html#method_outputHeaders"
-        },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\Metadata\u003A\u003AoutputRdf\u0028\u0029",
             "name": "outputRdf",
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-Metadata.html#method_outputRdf"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepo\\Metadata\u003A\u003AnegotiateFormat\u0028\u0029",
-            "name": "negotiateFormat",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepo-Metadata.html#method_negotiateFormat"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\Metadata\u003A\u003AautoAddId\u0028\u0029",
             "name": "autoAddId",
@@ -398,7 +398,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui",
             "name": "MetadataGui",
-            "summary": "Provides\u0020simple\u0020HTML\u0020serialization\u0020of\u0020a\u0020resource\u0020metadata",
+            "summary": "Provides\u0020simple\u0020HTML\u0020serialization\u0020of\u0020a\u0020metadata\u0020triples\u0020set",
             "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003A__construct\u0028\u0029",
@@ -406,10 +406,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003Aoutput\u0028\u0029",
+            "name": "output",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#method___toString"
+            "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#method_output"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003AoutputProperty\u0028\u0029",
+            "name": "outputProperty",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#method_outputProperty"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003AformatObject\u0028\u0029",
             "name": "formatObject",
@@ -421,15 +426,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#method_formatResource"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003ACHILD_PROP",
+            "name": "CHILD_PROP",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_CHILD_PROP"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003ATYPE_ID",
+            "name": "TYPE_ID",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_TYPE_ID"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003ATYPE_REL",
+            "name": "TYPE_REL",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_TYPE_REL"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003ATYPE_URI",
+            "name": "TYPE_URI",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_TYPE_URI"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003ATMPL",
             "name": "TMPL",
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#constant_TMPL"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003A\u0024graph",
-            "name": "graph",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#property_graph"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003A\u0024res",
             "name": "res",
@@ -440,6 +460,111 @@ Search.appendIndex(
             "name": "nmsp",
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#property_nmsp"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003A\u0024titles",
+            "name": "titles",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#property_titles"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003A\u0024properties",
+            "name": "properties",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#property_properties"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataGui\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataGui.html#property_data"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly",
+            "name": "MetadataReadOnly",
+            "summary": "Specialized\u0020version\u0020of\u0020the\u0020Metadata\u0020class.",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003AescapeLiteral\u0028\u0029",
+            "name": "escapeLiteral",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#method_escapeLiteral"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003AescapeIri\u0028\u0029",
+            "name": "escapeIri",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#method_escapeIri"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003AgetUri\u0028\u0029",
+            "name": "getUri",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#method_getUri"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003AloadFromDb\u0028\u0029",
+            "name": "loadFromDb",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#method_loadFromDb"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003AloadFromPdoStatement\u0028\u0029",
+            "name": "loadFromPdoStatement",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#method_loadFromPdoStatement"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003AoutputRdf\u0028\u0029",
+            "name": "outputRdf",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#method_outputRdf"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003AserializeEasyRdf\u0028\u0029",
+            "name": "serializeEasyRdf",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#method_serializeEasyRdf"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003AserializeHardf\u0028\u0029",
+            "name": "serializeHardf",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#method_serializeHardf"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003AserializeNTriples\u0028\u0029",
+            "name": "serializeNTriples",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#method_serializeNTriples"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003AaddPrefixes\u0028\u0029",
+            "name": "addPrefixes",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#method_addPrefixes"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003ApreparePropObj\u0028\u0029",
+            "name": "preparePropObj",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#method_preparePropObj"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003A\u0024iriEscapeMap",
+            "name": "iriEscapeMap",
+            "summary": "Characters\u0020forbidden\u0020in\u0020n\u002Dtriples\u0020literals\u0020according\u0020to\nhttps\u003A\/\/www.w3.org\/TR\/n\u002Dtriples\/\u0023grammar\u002Dproduction\u002DIRIREF",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#property_iriEscapeMap"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003A\u0024literalEscapeMap",
+            "name": "literalEscapeMap",
+            "summary": "Characters\u0020forbidden\u0020in\u0020n\u002Dtriples\u0020literals\u0020according\u0020to\nhttps\u003A\/\/www.w3.org\/TR\/n\u002Dtriples\/\u0023grammar\u002Dproduction\u002DSTRING_LITERAL_QUOTE",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#property_literalEscapeMap"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#property_id"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#property_repo"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\MetadataReadOnly\u003A\u003A\u0024pdoStmnt",
+            "name": "pdoStmnt",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-MetadataReadOnly.html#property_pdoStmnt"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\NoBinaryException",
             "name": "NoBinaryException",
