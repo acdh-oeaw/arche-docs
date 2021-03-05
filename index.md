@@ -16,3 +16,6 @@ Documentation automatically generated from the source code comments:
 * [arche-oaipmh](arche-oaipmh/) - OAI-PMH service for the ARCHE
 * [arche-resolver](arche-resolver/) - resolver for the ARCHE (a service providing redirection to correct dissemination services based on a repository resource URI and a requested resource representation format)
 
+Guides:
+
+* [Metadata API performance]({aux/metadata_api_performance.html)
