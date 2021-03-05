@@ -4,1006 +4,991 @@ Search.appendIndex(
             "fqsen": "\\acdhOeaw\\oai\\Cache",
             "name": "Cache",
             "summary": "Implements\u0020simple\u0020caching",
-            "url": "../classes/acdhOeaw-oai-Cache.html"
+            "url": "classes/acdhOeaw-oai-Cache.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Cache\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-Cache.html#method___construct"
+            "url": "classes/acdhOeaw-oai-Cache.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Cache\u003A\u003Acheck\u0028\u0029",
             "name": "check",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-Cache.html#method_check"
+            "url": "classes/acdhOeaw-oai-Cache.html#method_check"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Cache\u003A\u003Aput\u0028\u0029",
             "name": "put",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-Cache.html#method_put"
+            "url": "classes/acdhOeaw-oai-Cache.html#method_put"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Cache\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-Cache.html#method_get"
+            "url": "classes/acdhOeaw-oai-Cache.html#method_get"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Cache\u003A\u003AgetPath\u0028\u0029",
             "name": "getPath",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-Cache.html#method_getPath"
+            "url": "classes/acdhOeaw-oai-Cache.html#method_getPath"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Cache\u003A\u003A\u0024cacheDir",
             "name": "cacheDir",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-Cache.html#property_cacheDir"
+            "url": "classes/acdhOeaw-oai-Cache.html#property_cacheDir"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\HeaderData",
             "name": "HeaderData",
             "summary": "Container\u0020for\u0020data\u0020required\u0020to\u0020generate\u0020OAI\u002DPMH\u0020resource\u0027s\u0020header.",
-            "url": "../classes/acdhOeaw-oai-data-HeaderData.html"
+            "url": "classes/acdhOeaw-oai-data-HeaderData.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\HeaderData\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020HeaderData\u0020object\u0020optionally\u0020copying\u0020data\u0020from\u0020a\u0020provided\u0020object.",
-            "url": "../classes/acdhOeaw-oai-data-HeaderData.html#method___construct"
+            "url": "classes/acdhOeaw-oai-data-HeaderData.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\HeaderData\u003A\u003A\u0024repoid",
             "name": "repoid",
             "summary": "Resource\u0027s\u0020internal\u0020repository\u0020identifier",
-            "url": "../classes/acdhOeaw-oai-data-HeaderData.html#property_repoid"
+            "url": "classes/acdhOeaw-oai-data-HeaderData.html#property_repoid"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\HeaderData\u003A\u003A\u0024id",
             "name": "id",
             "summary": "Resource\u0027s\u0020OAI\u002DPMH\u0020id",
-            "url": "../classes/acdhOeaw-oai-data-HeaderData.html#property_id"
+            "url": "classes/acdhOeaw-oai-data-HeaderData.html#property_id"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\HeaderData\u003A\u003A\u0024date",
             "name": "date",
             "summary": "Resource\u0027s\u0020last\u0020modification\u0020date",
-            "url": "../classes/acdhOeaw-oai-data-HeaderData.html#property_date"
+            "url": "classes/acdhOeaw-oai-data-HeaderData.html#property_date"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\HeaderData\u003A\u003A\u0024deleted",
             "name": "deleted",
             "summary": "If\u0020the\u0020resource\u0020is\u0020deleted",
-            "url": "../classes/acdhOeaw-oai-data-HeaderData.html#property_deleted"
+            "url": "classes/acdhOeaw-oai-data-HeaderData.html#property_deleted"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\HeaderData\u003A\u003A\u0024sets",
             "name": "sets",
             "summary": "List\u0020of\u0020\u003CsetSpec\u003E\u0020values\u0020denoting\u0020sets\u0020a\u0020resource\u0020belongs\u0020to",
-            "url": "../classes/acdhOeaw-oai-data-HeaderData.html#property_sets"
+            "url": "classes/acdhOeaw-oai-data-HeaderData.html#property_sets"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\MetadataFormat",
             "name": "MetadataFormat",
             "summary": "Container\u0020for\u0020OAI\u002DPMH\u0020metada\u0020format\u0020data",
-            "url": "../classes/acdhOeaw-oai-data-MetadataFormat.html"
+            "url": "classes/acdhOeaw-oai-data-MetadataFormat.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\MetadataFormat\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020metadata\u0020format\u0020descriptor",
-            "url": "../classes/acdhOeaw-oai-data-MetadataFormat.html#method___construct"
+            "url": "classes/acdhOeaw-oai-data-MetadataFormat.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\MetadataFormat\u003A\u003A\u0024metadataPrefix",
             "name": "metadataPrefix",
             "summary": "OAI\u002DPMH\u0020metadataPrefix",
-            "url": "../classes/acdhOeaw-oai-data-MetadataFormat.html#property_metadataPrefix"
+            "url": "classes/acdhOeaw-oai-data-MetadataFormat.html#property_metadataPrefix"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\MetadataFormat\u003A\u003A\u0024schema",
             "name": "schema",
             "summary": "OAI\u002DPMH\u0020metadata\u0020schema",
-            "url": "../classes/acdhOeaw-oai-data-MetadataFormat.html#property_schema"
+            "url": "classes/acdhOeaw-oai-data-MetadataFormat.html#property_schema"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\MetadataFormat\u003A\u003A\u0024metadataNamespace",
             "name": "metadataNamespace",
             "summary": "OAI\u002DPMH\u0020metadataNamespace",
-            "url": "../classes/acdhOeaw-oai-data-MetadataFormat.html#property_metadataNamespace"
+            "url": "classes/acdhOeaw-oai-data-MetadataFormat.html#property_metadataNamespace"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\RepositoryInfo",
             "name": "RepositoryInfo",
             "summary": "Container\u0020for\u0020OAI\u002DPMH\u0020repository\u0020information",
-            "url": "../classes/acdhOeaw-oai-data-RepositoryInfo.html"
+            "url": "classes/acdhOeaw-oai-data-RepositoryInfo.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\RepositoryInfo\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020RepositoryInfo\u0020object\u0020setting\u0020up\u0020provided\u0020property\u0020values.",
-            "url": "../classes/acdhOeaw-oai-data-RepositoryInfo.html#method___construct"
+            "url": "classes/acdhOeaw-oai-data-RepositoryInfo.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\RepositoryInfo\u003A\u003A\u0024repositoryName",
             "name": "repositoryName",
             "summary": "Repository\u0020name\u0020to\u0020be\u0020reported",
-            "url": "../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_repositoryName"
+            "url": "classes/acdhOeaw-oai-data-RepositoryInfo.html#property_repositoryName"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\RepositoryInfo\u003A\u003A\u0024baseURL",
             "name": "baseURL",
             "summary": "OAI\u002DPMH\u0020service\u0020location",
-            "url": "../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_baseURL"
+            "url": "classes/acdhOeaw-oai-data-RepositoryInfo.html#property_baseURL"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\RepositoryInfo\u003A\u003A\u0024protocolVersion",
             "name": "protocolVersion",
             "summary": "OAI\u002DPMH\u0020protocol\u0020version.",
-            "url": "../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_protocolVersion"
+            "url": "classes/acdhOeaw-oai-data-RepositoryInfo.html#property_protocolVersion"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\RepositoryInfo\u003A\u003A\u0024adminEmail",
             "name": "adminEmail",
             "summary": "List\u0020of\u0020repository\u0020admin\u0020emails",
-            "url": "../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_adminEmail"
+            "url": "classes/acdhOeaw-oai-data-RepositoryInfo.html#property_adminEmail"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\RepositoryInfo\u003A\u003A\u0024earliestDatestamp",
             "name": "earliestDatestamp",
             "summary": "Earliest\u0020date\u0020which\u0020can\u0020be\u0020reported.",
-            "url": "../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_earliestDatestamp"
+            "url": "classes/acdhOeaw-oai-data-RepositoryInfo.html#property_earliestDatestamp"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\RepositoryInfo\u003A\u003A\u0024deletedRecord",
             "name": "deletedRecord",
             "summary": "If\u0020repository\u0020supports\u0020information\u0020on\u0020deleted\u0020records\u0020\u0028no\u0020by\u0020default\u0029.",
-            "url": "../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_deletedRecord"
+            "url": "classes/acdhOeaw-oai-data-RepositoryInfo.html#property_deletedRecord"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\RepositoryInfo\u003A\u003A\u0024granularity",
             "name": "granularity",
             "summary": "Date\u0020granularity\u0020\u0028defaults\u0020to\u0020Fedora\u0020dates\u0020granularity\u0029",
-            "url": "../classes/acdhOeaw-oai-data-RepositoryInfo.html#property_granularity"
+            "url": "classes/acdhOeaw-oai-data-RepositoryInfo.html#property_granularity"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\Resource",
             "name": "Resource",
             "summary": "Description\u0020of\u0020Resource",
-            "url": "../classes/acdhOeaw-oai-data-Resource.html"
+            "url": "classes/acdhOeaw-oai-data-Resource.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\SetInfo",
             "name": "SetInfo",
             "summary": "Simple\u0020container\u0020for\u0020OAI\u002DPMH\u0020set\u0020data\n\u0028https\u003A\/\/www.openarchives.org\/OAI\/openarchivesprotocol.html\u0023Set\u0029",
-            "url": "../classes/acdhOeaw-oai-data-SetInfo.html"
+            "url": "classes/acdhOeaw-oai-data-SetInfo.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\SetInfo\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020set\u0020descriptor\u0020object\u0020by\u0020copying\u0020provided\u0020values.",
-            "url": "../classes/acdhOeaw-oai-data-SetInfo.html#method___construct"
+            "url": "classes/acdhOeaw-oai-data-SetInfo.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\SetInfo\u003A\u003A\u0024spec",
             "name": "spec",
             "summary": "Set\u0020spec\u0020\u002D\u0020see\u0020the\u0020OAI\u002DPMH\u0020documentation",
-            "url": "../classes/acdhOeaw-oai-data-SetInfo.html#property_spec"
+            "url": "classes/acdhOeaw-oai-data-SetInfo.html#property_spec"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\SetInfo\u003A\u003A\u0024name",
             "name": "name",
             "summary": "Set\u0020name\u0020\u002D\u0020see\u0020the\u0020OAI\u002DPMH\u0020documentation",
-            "url": "../classes/acdhOeaw-oai-data-SetInfo.html#property_name"
+            "url": "classes/acdhOeaw-oai-data-SetInfo.html#property_name"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data\\SetInfo\u003A\u003A\u0024description",
             "name": "description",
             "summary": "Set\u0020metadata\u0020to\u0020be\u0020put\u0020inside\u0020a\u0020\u003CsetDescription\u003E",
-            "url": "../classes/acdhOeaw-oai-data-SetInfo.html#property_description"
+            "url": "classes/acdhOeaw-oai-data-SetInfo.html#property_description"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\DeletedInterface",
             "name": "DeletedInterface",
             "summary": "Interface\u0020for\u0020OAI\u002DPMH\u0020deleted\u0020records\u0020implementations.",
-            "url": "../classes/acdhOeaw-oai-deleted-DeletedInterface.html"
+            "url": "classes/acdhOeaw-oai-deleted-DeletedInterface.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\DeletedInterface\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-deleted-DeletedInterface.html#method___construct"
+            "url": "classes/acdhOeaw-oai-deleted-DeletedInterface.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\DeletedInterface\u003A\u003AgetDeletedRecord\u0028\u0029",
             "name": "getDeletedRecord",
             "summary": "Returns\u0020the\u0020OAI\u002DPMH\u0020\u0060identify\u0060\u0020response\u0027s\u0020\u0060deletedRecord\u0060\u0020value.",
-            "url": "../classes/acdhOeaw-oai-deleted-DeletedInterface.html#method_getDeletedRecord"
+            "url": "classes/acdhOeaw-oai-deleted-DeletedInterface.html#method_getDeletedRecord"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\DeletedInterface\u003A\u003AgetDeletedData\u0028\u0029",
             "name": "getDeletedData",
             "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020two\u0020columns\u003A",
-            "url": "../classes/acdhOeaw-oai-deleted-DeletedInterface.html#method_getDeletedData"
+            "url": "classes/acdhOeaw-oai-deleted-DeletedInterface.html#method_getDeletedData"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\No",
             "name": "No",
             "summary": "Implementation\u0020of\u0020the\u0020\u0060acdhOeaw\\oai\\deleted\\DeletedInterface\u0060\nfor\u0020repositories\u0020not\u0020providing\u0020data\u0020on\u0020deleted\u0020resources.",
-            "url": "../classes/acdhOeaw-oai-deleted-No.html"
+            "url": "classes/acdhOeaw-oai-deleted-No.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\No\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-deleted-No.html#method___construct"
+            "url": "classes/acdhOeaw-oai-deleted-No.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\No\u003A\u003AgetDeletedRecord\u0028\u0029",
             "name": "getDeletedRecord",
             "summary": "Returns\u0020the\u0020OAI\u002DPMH\u0020\u0060identify\u0060\u0020response\u0027s\u0020\u0060deletedRecord\u0060\u0020value.",
-            "url": "../classes/acdhOeaw-oai-deleted-No.html#method_getDeletedRecord"
+            "url": "classes/acdhOeaw-oai-deleted-No.html#method_getDeletedRecord"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\No\u003A\u003AgetDeletedData\u0028\u0029",
             "name": "getDeletedData",
             "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020two\u0020columns\u003A",
-            "url": "../classes/acdhOeaw-oai-deleted-No.html#method_getDeletedData"
+            "url": "classes/acdhOeaw-oai-deleted-No.html#method_getDeletedData"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\RdfProperty",
             "name": "RdfProperty",
             "summary": "Implementation\u0020of\u0020the\u0020\u0060acdhOeaw\\oai\\deleted\\DeletedInterface\u0060\u0020deriving\ninformation\u0020on\u0020a\u0020resource\u0020deletion\u0020from\u0020existence\u0020of\u0020a\u0020given\u0020RDF\u0020triple\nin\u0020the\u0020resource\u0020metadata.",
-            "url": "../classes/acdhOeaw-oai-deleted-RdfProperty.html"
+            "url": "classes/acdhOeaw-oai-deleted-RdfProperty.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\RdfProperty\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-deleted-RdfProperty.html#method___construct"
+            "url": "classes/acdhOeaw-oai-deleted-RdfProperty.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\RdfProperty\u003A\u003AgetDeletedRecord\u0028\u0029",
             "name": "getDeletedRecord",
             "summary": "Returns\u0020the\u0020OAI\u002DPMH\u0020\u0060identify\u0060\u0020response\u0027s\u0020\u0060deletedRecord\u0060\u0020value.",
-            "url": "../classes/acdhOeaw-oai-deleted-RdfProperty.html#method_getDeletedRecord"
+            "url": "classes/acdhOeaw-oai-deleted-RdfProperty.html#method_getDeletedRecord"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\RdfProperty\u003A\u003AgetDeletedData\u0028\u0029",
             "name": "getDeletedData",
             "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020two\u0020columns\u003A",
-            "url": "../classes/acdhOeaw-oai-deleted-RdfProperty.html#method_getDeletedData"
+            "url": "classes/acdhOeaw-oai-deleted-RdfProperty.html#method_getDeletedData"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\RdfProperty\u003A\u003A\u0024config",
             "name": "config",
             "summary": "Configuration\u0020object",
-            "url": "../classes/acdhOeaw-oai-deleted-RdfProperty.html#property_config"
+            "url": "classes/acdhOeaw-oai-deleted-RdfProperty.html#property_config"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\Tombstone",
             "name": "Tombstone",
             "summary": "Description\u0020of\u0020Tombstone",
-            "url": "../classes/acdhOeaw-oai-deleted-Tombstone.html"
+            "url": "classes/acdhOeaw-oai-deleted-Tombstone.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\Tombstone\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-deleted-Tombstone.html#method___construct"
+            "url": "classes/acdhOeaw-oai-deleted-Tombstone.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\Tombstone\u003A\u003AgetDeletedRecord\u0028\u0029",
             "name": "getDeletedRecord",
             "summary": "Returns\u0020the\u0020OAI\u002DPMH\u0020\u0060identify\u0060\u0020response\u0027s\u0020\u0060deletedRecord\u0060\u0020value.",
-            "url": "../classes/acdhOeaw-oai-deleted-Tombstone.html#method_getDeletedRecord"
+            "url": "classes/acdhOeaw-oai-deleted-Tombstone.html#method_getDeletedRecord"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\Tombstone\u003A\u003AgetDeletedData\u0028\u0029",
             "name": "getDeletedData",
             "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020two\u0020columns\u003A",
-            "url": "../classes/acdhOeaw-oai-deleted-Tombstone.html#method_getDeletedData"
+            "url": "classes/acdhOeaw-oai-deleted-Tombstone.html#method_getDeletedData"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted\\Tombstone\u003A\u003A\u0024config",
             "name": "config",
             "summary": "Configuration\u0020object",
-            "url": "../classes/acdhOeaw-oai-deleted-Tombstone.html#property_config"
+            "url": "classes/acdhOeaw-oai-deleted-Tombstone.html#property_config"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata",
             "name": "AcdhDcMetadata",
             "summary": "Creates\u0020OAI\u002DPMH\u0020\u0026lt\u003Bmetadata\u0026gt\u003B\u0020element\u0020in\u0020Dublin\u0020Core\u0020format\u0020from\na\u0020FedoraResource\u0020RDF\u0020metadata.",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata\u003A\u003Ainit\u0028\u0029",
             "name": "init",
             "summary": "Fetches\u0020mappings\u0020from\u0020the\u0020triplestore",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#method_init"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#method_init"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020metadata\u0020object\u0020for\u0020a\u0020given\u0020repository\u0020resource.",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#method___construct"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata\u003A\u003AgetXml\u0028\u0029",
             "name": "getXml",
             "summary": "Creates\u0020resource\u0027s\u0020XML\u0020metadata",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#method_getXml"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#method_getXml"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata\u003A\u003AextendSearchFilterQuery\u0028\u0029",
             "name": "extendSearchFilterQuery",
             "summary": "This\u0020implementation\u0020has\u0020no\u0020need\u0020to\u0020extend\u0020the\u0020search\u0020query.",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#method_extendSearchFilterQuery"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#method_extendSearchFilterQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata\u003A\u003AextendSearchDataQuery\u0028\u0029",
             "name": "extendSearchDataQuery",
             "summary": "This\u0020implementation\u0020has\u0020no\u0020need\u0020to\u0020extend\u0020the\u0020search\u0020query.",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#method_extendSearchDataQuery"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#method_extendSearchDataQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata\u003A\u003AMODE_URL",
             "name": "MODE_URL",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#constant_MODE_URL"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#constant_MODE_URL"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata\u003A\u003AMODE_TITLE",
             "name": "MODE_TITLE",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#constant_MODE_TITLE"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#constant_MODE_TITLE"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata\u003A\u003AMODE_BOTH",
             "name": "MODE_BOTH",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#constant_MODE_BOTH"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#constant_MODE_BOTH"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata\u003A\u003A\u0024dcNmsp",
             "name": "dcNmsp",
             "summary": "Dublin\u0020Core\u0020namespace",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#property_dcNmsp"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#property_dcNmsp"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata\u003A\u003A\u0024mappings",
             "name": "mappings",
             "summary": "Stores\u0020metadata\u0020property\u0020to\u0020Dublic\u0020Core\u0020property\u0020mappings",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#property_mappings"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#property_mappings"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata\u003A\u003A\u0024res",
             "name": "res",
             "summary": "Repository\u0020resource\u0020object",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#property_res"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#property_res"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\AcdhDcMetadata\u003A\u003A\u0024format",
             "name": "format",
             "summary": "Metadata\u0020format\u0020descriptor",
-            "url": "../classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#property_format"
+            "url": "classes/acdhOeaw-oai-metadata-AcdhDcMetadata.html#property_format"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\CmdiMetadata",
             "name": "CmdiMetadata",
             "summary": "Specialization\u0020of\u0020ResMetadata\u0020class\u0020checking\u0020if\u0020the\u0020CMDI\u0020schema\u0020matches\nmetadata\u0020format\u0020requested\u0020by\u0020the\u0020user.",
-            "url": "../classes/acdhOeaw-oai-metadata-CmdiMetadata.html"
+            "url": "classes/acdhOeaw-oai-metadata-CmdiMetadata.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\CmdiMetadata\u003A\u003AextendSearchFilterQuery\u0028\u0029",
             "name": "extendSearchFilterQuery",
             "summary": "Returns\u0020a\u0020SPARQL\u0020search\u0020query\u0020part\u003A\n\u002D\u0020fetching\u0020additional\u0020data\u0020required\u0020by\u0020the\u0020\u0060__construct\u0028\u0029\u0060\u0020method\u0020\u0028implemented\u0020in\u0020parent\u0020class\u0029\n\u002D\u0020assuring\u0020that\u0020the\u0020linked\u0020CMDI\u0020resource\u0020has\u0020the\u0020right\u0020schema",
-            "url": "../classes/acdhOeaw-oai-metadata-CmdiMetadata.html#method_extendSearchFilterQuery"
+            "url": "classes/acdhOeaw-oai-metadata-CmdiMetadata.html#method_extendSearchFilterQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\CmdiMetadata\u003A\u003AextendSearchDataQuery\u0028\u0029",
             "name": "extendSearchDataQuery",
             "summary": "This\u0020implementation\u0020has\u0020no\u0020fetch\u0020additional\u0020data\u0020trough\u0020the\u0020search\u0020query.",
-            "url": "../classes/acdhOeaw-oai-metadata-CmdiMetadata.html#method_extendSearchDataQuery"
+            "url": "classes/acdhOeaw-oai-metadata-CmdiMetadata.html#method_extendSearchDataQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\DcMetadata",
             "name": "DcMetadata",
             "summary": "Creates\u0020OAI\u002DPMH\u0020\u0026lt\u003Bmetadata\u0026gt\u003B\u0020element\u0020in\u0020Dublin\u0020Core\u0020format\u0020from\na\u0020FedoraResource\u0020RDF\u0020metadata.",
-            "url": "../classes/acdhOeaw-oai-metadata-DcMetadata.html"
+            "url": "classes/acdhOeaw-oai-metadata-DcMetadata.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\DcMetadata\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020metadata\u0020object\u0020for\u0020a\u0020given\u0020repository\u0020resource.",
-            "url": "../classes/acdhOeaw-oai-metadata-DcMetadata.html#method___construct"
+            "url": "classes/acdhOeaw-oai-metadata-DcMetadata.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\DcMetadata\u003A\u003AgetXml\u0028\u0029",
             "name": "getXml",
             "summary": "Creates\u0020resource\u0027s\u0020XML\u0020metadata",
-            "url": "../classes/acdhOeaw-oai-metadata-DcMetadata.html#method_getXml"
+            "url": "classes/acdhOeaw-oai-metadata-DcMetadata.html#method_getXml"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\DcMetadata\u003A\u003AextendSearchFilterQuery\u0028\u0029",
             "name": "extendSearchFilterQuery",
             "summary": "This\u0020implementation\u0020has\u0020no\u0020need\u0020to\u0020extend\u0020the\u0020search\u0020query.",
-            "url": "../classes/acdhOeaw-oai-metadata-DcMetadata.html#method_extendSearchFilterQuery"
+            "url": "classes/acdhOeaw-oai-metadata-DcMetadata.html#method_extendSearchFilterQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\DcMetadata\u003A\u003AextendSearchDataQuery\u0028\u0029",
             "name": "extendSearchDataQuery",
             "summary": "This\u0020implementation\u0020has\u0020no\u0020need\u0020to\u0020extend\u0020the\u0020search\u0020query.",
-            "url": "../classes/acdhOeaw-oai-metadata-DcMetadata.html#method_extendSearchDataQuery"
+            "url": "classes/acdhOeaw-oai-metadata-DcMetadata.html#method_extendSearchDataQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\DcMetadata\u003A\u003A\u0024properties",
             "name": "properties",
             "summary": "Dublin\u0020Core\u0020and\u0020Dublin\u0020Core\u0020Terms\u0020property\u0020list",
-            "url": "../classes/acdhOeaw-oai-metadata-DcMetadata.html#property_properties"
+            "url": "classes/acdhOeaw-oai-metadata-DcMetadata.html#property_properties"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\DcMetadata\u003A\u003A\u0024dcNmsp",
             "name": "dcNmsp",
             "summary": "Dublin\u0020Core\u0020namespace",
-            "url": "../classes/acdhOeaw-oai-metadata-DcMetadata.html#property_dcNmsp"
+            "url": "classes/acdhOeaw-oai-metadata-DcMetadata.html#property_dcNmsp"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\DcMetadata\u003A\u003A\u0024dctNmsp",
             "name": "dctNmsp",
             "summary": "Dublin\u0020Core\u0020Terms\u0020namespace",
-            "url": "../classes/acdhOeaw-oai-metadata-DcMetadata.html#property_dctNmsp"
+            "url": "classes/acdhOeaw-oai-metadata-DcMetadata.html#property_dctNmsp"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\DcMetadata\u003A\u003A\u0024res",
             "name": "res",
             "summary": "Repository\u0020resource\u0020object",
-            "url": "../classes/acdhOeaw-oai-metadata-DcMetadata.html#property_res"
+            "url": "classes/acdhOeaw-oai-metadata-DcMetadata.html#property_res"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata",
             "name": "LiveCmdiMetadata",
             "summary": "Creates\u0020\u0026lt\u003Bmetadata\u0026gt\u003B\u0020element\u0020by\u0020filling\u0020in\u0020an\u0020XML\u0020template\u0020with\u0020values\nread\u0020from\u0020the\u0020repository\u0020resource\u0027s\u0020metadata.",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020metadata\u0020object\u0020for\u0020a\u0020given\u0020repository\u0020resource.",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method___construct"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003AgetXml\u0028\u0029",
             "name": "getXml",
             "summary": "Creates\u0020resource\u0027s\u0020XML\u0020metadata",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_getXml"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_getXml"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003AextendSearchFilterQuery\u0028\u0029",
             "name": "extendSearchFilterQuery",
             "summary": "Applies\u0020metadata\u0020format\u0020restrictions.",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_extendSearchFilterQuery"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_extendSearchFilterQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003AextendSearchDataQuery\u0028\u0029",
             "name": "extendSearchDataQuery",
             "summary": "Allows\u0020to\u0020extend\u0020a\u0020search\u0020query\u0020with\u0020additional\u0020clauses\u0020specific\u0020to\u0020the\ngiven\u0020metadata\u0020source.",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_extendSearchDataQuery"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_extendSearchDataQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003AprocessElement\u0028\u0029",
             "name": "processElement",
             "summary": "Recursively\u0020processes\u0020all\u0020XML\u0020elements",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_processElement"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_processElement"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003AinsertValue\u0028\u0029",
             "name": "insertValue",
             "summary": "Injects\u0020metadata\u0020values\u0020into\u0020a\u0020given\u0020DOM\u0020element\u0020of\u0020the\u0020CMDI\u0020template.",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_insertValue"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_insertValue"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003AparseVal\u0028\u0029",
             "name": "parseVal",
             "summary": "Parses\u0020the\u0020\u0060val\u0060\u0020attribute\u0020into\u0020three\u0020components\u0020and\u0020returns\u0020them\u0020as\nan\u0020array.",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_parseVal"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_parseVal"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003AinsertCmdiComponents\u0028\u0029",
             "name": "insertCmdiComponents",
             "summary": "Inserts\u0020a\u0020value\u0020by\u0020injecting\u0020an\u0020external\u0020CMDI\u0020template.",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_insertCmdiComponents"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_insertCmdiComponents"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003AinsertMetaValues\u0028\u0029",
             "name": "insertMetaValues",
             "summary": "Inserts\u0020a\u0020value\u0020from\u0020metadata.",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_insertMetaValues"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_insertMetaValues"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003AcollectMetaValue\u0028\u0029",
             "name": "collectMetaValue",
             "summary": "Extracts\u0020metadata\u0020value\u0020from\u0020a\u0020given\u0020EasyRdf\u0020node",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_collectMetaValue"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_collectMetaValue"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003AreplacePropNmsp\u0028\u0029",
             "name": "replacePropNmsp",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_replacePropNmsp"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_replacePropNmsp"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003AgetResourcesByPath\u0028\u0029",
             "name": "getResourcesByPath",
             "summary": "Prepares\u0020fake\u0020resource\u0020metadata\u0020allowing\u0020to\u0020resolve\u0020inverse\u0020and\/or\nrecursively\u0020targetted\u0020resources.",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_getResourcesByPath"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#method_getResourcesByPath"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003AFAKE_ROOT_TAG",
             "name": "FAKE_ROOT_TAG",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#constant_FAKE_ROOT_TAG"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#constant_FAKE_ROOT_TAG"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003A\u0024mapper",
             "name": "mapper",
             "summary": "Value\u0020mapping\u0020cache",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#property_mapper"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#property_mapper"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003A\u0024res",
             "name": "res",
             "summary": "Repository\u0020resource\u0020object",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#property_res"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#property_res"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003A\u0024format",
             "name": "format",
             "summary": "Metadata\u0020format\u0020descriptor",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#property_format"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#property_format"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\LiveCmdiMetadata\u003A\u003A\u0024template",
             "name": "template",
             "summary": "Path\u0020to\u0020the\u0020XML\u0020template\u0020file",
-            "url": "../classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#property_template"
+            "url": "classes/acdhOeaw-oai-metadata-LiveCmdiMetadata.html#property_template"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\MetadataInterface",
             "name": "MetadataInterface",
             "summary": "Interface\u0020for\u0020different\u0020metadata\u0020providers.",
-            "url": "../classes/acdhOeaw-oai-metadata-MetadataInterface.html"
+            "url": "classes/acdhOeaw-oai-metadata-MetadataInterface.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\MetadataInterface\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020metadata\u0020object\u0020for\u0020a\u0020given\u0020repository\u0020resource.",
-            "url": "../classes/acdhOeaw-oai-metadata-MetadataInterface.html#method___construct"
+            "url": "classes/acdhOeaw-oai-metadata-MetadataInterface.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\MetadataInterface\u003A\u003AgetXml\u0028\u0029",
             "name": "getXml",
             "summary": "Returns\u0020resource\u0027s\u0020XML\u0020metadata",
-            "url": "../classes/acdhOeaw-oai-metadata-MetadataInterface.html#method_getXml"
+            "url": "classes/acdhOeaw-oai-metadata-MetadataInterface.html#method_getXml"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\MetadataInterface\u003A\u003AextendSearchDataQuery\u0028\u0029",
             "name": "extendSearchDataQuery",
             "summary": "Allows\u0020to\u0020extend\u0020a\u0020search\u0020query\u0020with\u0020additional\u0020clauses\u0020specific\u0020to\u0020the\ngiven\u0020metadata\u0020source.",
-            "url": "../classes/acdhOeaw-oai-metadata-MetadataInterface.html#method_extendSearchDataQuery"
+            "url": "classes/acdhOeaw-oai-metadata-MetadataInterface.html#method_extendSearchDataQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\MetadataInterface\u003A\u003AextendSearchFilterQuery\u0028\u0029",
             "name": "extendSearchFilterQuery",
             "summary": "Allows\u0020to\u0020extend\u0020a\u0020search\u0020query\u0020with\u0020additional\u0020clauses\u0020specific\u0020to\u0020the\ngiven\u0020metadata\u0020source.",
-            "url": "../classes/acdhOeaw-oai-metadata-MetadataInterface.html#method_extendSearchFilterQuery"
+            "url": "classes/acdhOeaw-oai-metadata-MetadataInterface.html#method_extendSearchFilterQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\RdfXml",
             "name": "RdfXml",
             "summary": "Creates\u0020OAI\u002DPMH\u0020\u0026lt\u003Bmetadata\u0026gt\u003B\u0020element\u0020in\u0020as\u0020an\u0020RDF\u002DXML\u0020serialization\u0020of\na\u0020FedoraResource\u0020RDF\u0020metadata.",
-            "url": "../classes/acdhOeaw-oai-metadata-RdfXml.html"
+            "url": "classes/acdhOeaw-oai-metadata-RdfXml.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\RdfXml\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020metadata\u0020object\u0020for\u0020a\u0020given\u0020repository\u0020resource.",
-            "url": "../classes/acdhOeaw-oai-metadata-RdfXml.html#method___construct"
+            "url": "classes/acdhOeaw-oai-metadata-RdfXml.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\RdfXml\u003A\u003AgetXml\u0028\u0029",
             "name": "getXml",
             "summary": "Creates\u0020resource\u0027s\u0020XML\u0020metadata",
-            "url": "../classes/acdhOeaw-oai-metadata-RdfXml.html#method_getXml"
+            "url": "classes/acdhOeaw-oai-metadata-RdfXml.html#method_getXml"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\RdfXml\u003A\u003AextendSearchFilterQuery\u0028\u0029",
             "name": "extendSearchFilterQuery",
             "summary": "This\u0020implementation\u0020has\u0020no\u0020need\u0020to\u0020extend\u0020the\u0020search\u0020query.",
-            "url": "../classes/acdhOeaw-oai-metadata-RdfXml.html#method_extendSearchFilterQuery"
+            "url": "classes/acdhOeaw-oai-metadata-RdfXml.html#method_extendSearchFilterQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\RdfXml\u003A\u003AextendSearchDataQuery\u0028\u0029",
             "name": "extendSearchDataQuery",
             "summary": "This\u0020implementation\u0020has\u0020no\u0020need\u0020to\u0020extend\u0020the\u0020search\u0020query.",
-            "url": "../classes/acdhOeaw-oai-metadata-RdfXml.html#method_extendSearchDataQuery"
+            "url": "classes/acdhOeaw-oai-metadata-RdfXml.html#method_extendSearchDataQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\RdfXml\u003A\u003A\u0024res",
             "name": "res",
             "summary": "Repository\u0020resource\u0020object",
-            "url": "../classes/acdhOeaw-oai-metadata-RdfXml.html#property_res"
+            "url": "classes/acdhOeaw-oai-metadata-RdfXml.html#property_res"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ResMetadata",
             "name": "ResMetadata",
             "summary": "Creates\u0020\u0026lt\u003Bmetadata\u0026gt\u003B\u0020element\u0020by\u0020simply\u0020taking\u0020binary\u0020content\u0020of\u0020another\nrepository\u0020resource.",
-            "url": "../classes/acdhOeaw-oai-metadata-ResMetadata.html"
+            "url": "classes/acdhOeaw-oai-metadata-ResMetadata.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ResMetadata\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020metadata\u0020object\u0020for\u0020a\u0020given\u0020repository\u0020resource.",
-            "url": "../classes/acdhOeaw-oai-metadata-ResMetadata.html#method___construct"
+            "url": "classes/acdhOeaw-oai-metadata-ResMetadata.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ResMetadata\u003A\u003AgetXml\u0028\u0029",
             "name": "getXml",
             "summary": "Creates\u0020resource\u0027s\u0020XML\u0020metadata",
-            "url": "../classes/acdhOeaw-oai-metadata-ResMetadata.html#method_getXml"
+            "url": "classes/acdhOeaw-oai-metadata-ResMetadata.html#method_getXml"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ResMetadata\u003A\u003AextendSearchFilterQuery\u0028\u0029",
             "name": "extendSearchFilterQuery",
             "summary": "Extends\u0020the\u0020search\u0020query\u0020\u002D\u0020only\u0020resources\u0020having\u0020a\u0020resource\u002Dmetadata\u0020are\nmatched.",
-            "url": "../classes/acdhOeaw-oai-metadata-ResMetadata.html#method_extendSearchFilterQuery"
+            "url": "classes/acdhOeaw-oai-metadata-ResMetadata.html#method_extendSearchFilterQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ResMetadata\u003A\u003AextendSearchDataQuery\u0028\u0029",
             "name": "extendSearchDataQuery",
             "summary": "This\u0020implementation\u0020has\u0020no\u0020fetch\u0020additional\u0020data\u0020trough\u0020the\u0020search\u0020query.",
-            "url": "../classes/acdhOeaw-oai-metadata-ResMetadata.html#method_extendSearchDataQuery"
+            "url": "classes/acdhOeaw-oai-metadata-ResMetadata.html#method_extendSearchDataQuery"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ResMetadata\u003A\u003A\u0024res",
             "name": "res",
             "summary": "Repository\u0020resource\u0020object",
-            "url": "../classes/acdhOeaw-oai-metadata-ResMetadata.html#property_res"
+            "url": "classes/acdhOeaw-oai-metadata-ResMetadata.html#property_res"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ResMetadata\u003A\u003A\u0024format",
             "name": "format",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-metadata-ResMetadata.html#property_format"
+            "url": "classes/acdhOeaw-oai-metadata-ResMetadata.html#property_format"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ValueMapper",
             "name": "ValueMapper",
             "summary": "Provides\u0020vocabulary\u0020mappings.\u0020Assumes\u0020a\u0020value\u0020is\u0020an\u0020URL\u0020which\u0020can\u0020be\u0020resolved\nto\u0020the\u0020RDF\u0020.\u0020Then\u0020extracts\u0020given\u0020property\u0020values\u0020from\u0020the\u0020RDF.",
-            "url": "../classes/acdhOeaw-oai-metadata-ValueMapper.html"
+            "url": "classes/acdhOeaw-oai-metadata-ValueMapper.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ValueMapper\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-metadata-ValueMapper.html#method___construct"
+            "url": "classes/acdhOeaw-oai-metadata-ValueMapper.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ValueMapper\u003A\u003AgetMapping\u0028\u0029",
             "name": "getMapping",
             "summary": "Returns\u0020mapped\u0020values.",
-            "url": "../classes/acdhOeaw-oai-metadata-ValueMapper.html#method_getMapping"
+            "url": "classes/acdhOeaw-oai-metadata-ValueMapper.html#method_getMapping"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ValueMapper\u003A\u003Afetch\u0028\u0029",
             "name": "fetch",
             "summary": "Fetches\u0020mappings\u0020from\u0020the\u0020value\u0020URL\u0020into\u0020the\u0020cache.",
-            "url": "../classes/acdhOeaw-oai-metadata-ValueMapper.html#method_fetch"
+            "url": "classes/acdhOeaw-oai-metadata-ValueMapper.html#method_fetch"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ValueMapper\u003A\u003A\u0024client",
             "name": "client",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-metadata-ValueMapper.html#property_client"
+            "url": "classes/acdhOeaw-oai-metadata-ValueMapper.html#property_client"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ValueMapper\u003A\u003A\u0024cache",
             "name": "cache",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-metadata-ValueMapper.html#property_cache"
+            "url": "classes/acdhOeaw-oai-metadata-ValueMapper.html#property_cache"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata\\ValueMapper\u003A\u003A\u0024failed",
             "name": "failed",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-metadata-ValueMapper.html#property_failed"
+            "url": "classes/acdhOeaw-oai-metadata-ValueMapper.html#property_failed"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai",
             "name": "Oai",
             "summary": "Implements\u0020controller\u0020for\u0020the\u0020OAI\u002DPMH\u0020service\u003A\n\u002D\u0020checks\u0020OAI\u002DPMH\u0020requests\u0020correctness,\n\u002D\u0020handles\u0020OAI\u002DPMH\u0020\u0060identify\u0060\u0020and\u0020\u0060ListMetadataFormats\u0060\u0020commands\n\u002D\u0020delegates\u0020OAI\u002DPMH\u0020\u0060GetRecord\u0060,\u0020\u0060ListIdentifiers\u0060\u0020and\u0020\u0060ListRecords\u0060\u0020commands\n\u0020\u0020to\u0020a\u0020chosen\u0020class\u0020implementing\u0020the\u0020\u0060acdhOeaw\\oai\\search\\SearchInterface\u0060\n\u002D\u0020delegates\u0020OAI\u002DPMH\u0020\u0060ListSets\u0060\u0020command\u0020to\u0020a\u0020chosen\u0020class\u0020extending\u0020the\n\u0020\u0020\u0060acdhOeaw\\oai\\set\\SetInterface\u0060\u0020class.",
-            "url": "../classes/acdhOeaw-oai-Oai.html"
+            "url": "classes/acdhOeaw-oai-Oai.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Initialized\u0020the\u0020OAI\u002DPMH\u0020server\u0020object.",
-            "url": "../classes/acdhOeaw-oai-Oai.html#method___construct"
+            "url": "classes/acdhOeaw-oai-Oai.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003AhandleRequest\u0028\u0029",
             "name": "handleRequest",
             "summary": "Handles\u0020OAI\u002DPMH\u0020request.",
-            "url": "../classes/acdhOeaw-oai-Oai.html#method_handleRequest"
+            "url": "classes/acdhOeaw-oai-Oai.html#method_handleRequest"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003AoaiIdentify\u0028\u0029",
             "name": "oaiIdentify",
             "summary": "Implements\u0020the\u0020Identify\u0020OAI\u002DPMH\u0020verb",
-            "url": "../classes/acdhOeaw-oai-Oai.html#method_oaiIdentify"
+            "url": "classes/acdhOeaw-oai-Oai.html#method_oaiIdentify"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003AoaiListMetadataFormats\u0028\u0029",
             "name": "oaiListMetadataFormats",
             "summary": "Implements\u0020the\u0020ListMetadataFormats\u0020OAI\u002DPMH\u0020verb",
-            "url": "../classes/acdhOeaw-oai-Oai.html#method_oaiListMetadataFormats"
+            "url": "classes/acdhOeaw-oai-Oai.html#method_oaiListMetadataFormats"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003AoaiListRecords\u0028\u0029",
             "name": "oaiListRecords",
             "summary": "Implements\u0020the\u0020ListIdentifiers,\u0020ListRecords\u0020and\u0020GetRecord\u0020OAI\u002DPMH\u0020verbs",
-            "url": "../classes/acdhOeaw-oai-Oai.html#method_oaiListRecords"
+            "url": "classes/acdhOeaw-oai-Oai.html#method_oaiListRecords"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003AoaiListRecordRaw\u0028\u0029",
             "name": "oaiListRecordRaw",
             "summary": "Returns\u0020a\u0020single\u0020metadata\u0020record\u0020without\u0020any\u0020OAI\u0020structures",
-            "url": "../classes/acdhOeaw-oai-Oai.html#method_oaiListRecordRaw"
+            "url": "classes/acdhOeaw-oai-Oai.html#method_oaiListRecordRaw"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003AoaiListSets\u0028\u0029",
             "name": "oaiListSets",
             "summary": "Implements\u0020the\u0020ListSets\u0020OAI\u002DPMH\u0020verb.",
-            "url": "../classes/acdhOeaw-oai-Oai.html#method_oaiListSets"
+            "url": "classes/acdhOeaw-oai-Oai.html#method_oaiListSets"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003AcreateHeader\u0028\u0029",
             "name": "createHeader",
             "summary": "Creates\u0020a\u0020resource\u0027s\u0020\u003Cheader\u003E\u0020element\u0020as\u0020defined\u0020by\u0020OAI\u002DPMH\u0020standard.",
-            "url": "../classes/acdhOeaw-oai-Oai.html#method_createHeader"
+            "url": "classes/acdhOeaw-oai-Oai.html#method_createHeader"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003AcreateElement\u0028\u0029",
             "name": "createElement",
             "summary": "Returns\u0020a\u0020PHP\u0020reresentation\u0020of\u0020an\u0020XML\u0020node.",
-            "url": "../classes/acdhOeaw-oai-Oai.html#method_createElement"
+            "url": "classes/acdhOeaw-oai-Oai.html#method_createElement"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003AcheckRequestParam\u0028\u0029",
             "name": "checkRequestParam",
             "summary": "Validates\u0020request\u0020parameters.",
-            "url": "../classes/acdhOeaw-oai-Oai.html#method_checkRequestParam"
+            "url": "classes/acdhOeaw-oai-Oai.html#method_checkRequestParam"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003AgetParam\u0028\u0029",
             "name": "getParam",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-Oai.html#method_getParam"
+            "url": "classes/acdhOeaw-oai-Oai.html#method_getParam"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A\u0024respBegin",
             "name": "respBegin",
             "summary": "OAI\u002DPMH\u0020response\u0020beginning\u0020template",
-            "url": "../classes/acdhOeaw-oai-Oai.html#property_respBegin"
+            "url": "classes/acdhOeaw-oai-Oai.html#property_respBegin"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A\u0024respEnd",
             "name": "respEnd",
             "summary": "OAI\u002DPMH\u0020response\u0020ending\u0020template",
-            "url": "../classes/acdhOeaw-oai-Oai.html#property_respEnd"
+            "url": "classes/acdhOeaw-oai-Oai.html#property_respEnd"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A\u0024dateRegExp",
             "name": "dateRegExp",
             "summary": "OAI\u002DPMH\u0020date\u0020format\u0020regexp",
-            "url": "../classes/acdhOeaw-oai-Oai.html#property_dateRegExp"
+            "url": "classes/acdhOeaw-oai-Oai.html#property_dateRegExp"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A\u0024config",
             "name": "config",
             "summary": "Configuration\u0020options",
-            "url": "../classes/acdhOeaw-oai-Oai.html#property_config"
+            "url": "classes/acdhOeaw-oai-Oai.html#property_config"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A\u0024pdo",
             "name": "pdo",
             "summary": "Repository\u0020database\u0020connection\u0020object",
-            "url": "../classes/acdhOeaw-oai-Oai.html#property_pdo"
+            "url": "classes/acdhOeaw-oai-Oai.html#property_pdo"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A\u0024response",
             "name": "response",
             "summary": "XML\u0020object\u0020used\u0020to\u0020serialize\u0020OAI\u002DPMH\u0020response\u0020parts",
-            "url": "../classes/acdhOeaw-oai-Oai.html#property_response"
+            "url": "classes/acdhOeaw-oai-Oai.html#property_response"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A\u0024info",
             "name": "info",
             "summary": "Repository\u0020info\u0020object\u0020used\u0020to\u0020serve\u0020OAI\u002DPMH\u0020\u0060Identify\u0060\u0020requests",
-            "url": "../classes/acdhOeaw-oai-Oai.html#property_info"
+            "url": "classes/acdhOeaw-oai-Oai.html#property_info"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A\u0024metadataFormats",
             "name": "metadataFormats",
             "summary": "List\u0020of\u0020metadata\u0020descriptors",
-            "url": "../classes/acdhOeaw-oai-Oai.html#property_metadataFormats"
+            "url": "classes/acdhOeaw-oai-Oai.html#property_metadataFormats"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A\u0024sets",
             "name": "sets",
             "summary": "Object\u0020handling\u0020sets",
-            "url": "../classes/acdhOeaw-oai-Oai.html#property_sets"
+            "url": "classes/acdhOeaw-oai-Oai.html#property_sets"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A\u0024deleted",
             "name": "deleted",
             "summary": "Object\u0020handling\u0020deleted\u0020resources\u0020information",
-            "url": "../classes/acdhOeaw-oai-Oai.html#property_deleted"
+            "url": "classes/acdhOeaw-oai-Oai.html#property_deleted"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A\u0024cache",
             "name": "cache",
             "summary": "Cache\u0020object",
-            "url": "../classes/acdhOeaw-oai-Oai.html#property_cache"
+            "url": "classes/acdhOeaw-oai-Oai.html#property_cache"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\Oai\u003A\u003A\u0024log",
             "name": "log",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-Oai.html#property_log"
+            "url": "classes/acdhOeaw-oai-Oai.html#property_log"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\OaiException",
             "name": "OaiException",
             "summary": "Simple\u0020specialized\u0020exception\u0020class\u0020to\u0020easy\u0020distinguish\u0020between\u0020OAI\u002DPMH\u0020and\ninternal\u0020exceptions.",
-            "url": "../classes/acdhOeaw-oai-OaiException.html"
+            "url": "classes/acdhOeaw-oai-OaiException.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch",
             "name": "BaseSearch",
             "summary": "Implements\u0020basic\u0020OAI\u002DPMH\u0020search.\u0020It\u0020is\u0020assumed\u0020that\u0020all\u0020OAI\u002DPMH\u0020search\nfacets\u0020\u0028id,\u0020date,\u0020set\u0029\u0020and\u0020data\u0020required\u0020to\u0020create\u0020\u003Cheader\u003E\u0020nodes\u0020\u0028again\u0020id,\ndate,\u0020set\u0029\u0020are\u0020accessible\u0020as\u0020repository\u0020resource\u0027s\u0020metadata\u0020RDF\u0020properties.",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020search\u0020engine\u0020object.",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#method___construct"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003Afind\u0028\u0029",
             "name": "find",
             "summary": "Performs\u0020search\u0020using\u0020given\u0020filter\u0020values.",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#method_find"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#method_find"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003AgetCount\u0028\u0029",
             "name": "getCount",
             "summary": "Returns\u0020number\u0020of\u0020resources\u0020matching\u0020last\u0020search\u0020\u0028last\u0020call\u0020of\u0020the\n\u0060find\u0028\u0029\u0060\u0020method\u0029.",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#method_getCount"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#method_getCount"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003AgetHeader\u0028\u0029",
             "name": "getHeader",
             "summary": "Provides\u0020the\u0020\u0060HeaderData\u0060\u0020object\u0020for\u0020a\u0020given\u0020search\u0020result.",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#method_getHeader"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#method_getHeader"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
             "summary": "Provides\u0020the\u0020\u0060MetadataInterface\u0060\u0020object\u0020for\u0020a\u0020given\u0020search\u0020result.",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#method_getMetadata"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#method_getMetadata"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003AgetIdFilter\u0028\u0029",
             "name": "getIdFilter",
             "summary": "Creates\u0020SPARQL\u0020query\u0020clause\u0020implementing\u0020the\u0020id\u0020filter.",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#method_getIdFilter"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#method_getIdFilter"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003AgetDateFilter\u0028\u0029",
             "name": "getDateFilter",
             "summary": "Creates\u0020SPARQL\u0020clauses\u0020implementing\u0020the\u0020date\u0020filter.",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#method_getDateFilter"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#method_getDateFilter"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003AgetSetFilter\u0028\u0029",
             "name": "getSetFilter",
             "summary": "Creates\u0020SPARQL\u0020clause\u0020implementing\u0020the\u0020set\u0020filter.",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#method_getSetFilter"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#method_getSetFilter"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003AsetLogger\u0028\u0029",
             "name": "setLogger",
             "summary": "Sets\u0020a\u0020logger\u0020for\u0020the\u0020search\u0020object",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#method_setLogger"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#method_setLogger"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003A\u0024format",
             "name": "format",
             "summary": "Metadata\u0020format\u0020descriptor.",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#property_format"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#property_format"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003A\u0024sets",
             "name": "sets",
             "summary": "Object\u0020handling\u0020sets",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#property_sets"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#property_sets"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003A\u0024deleted",
             "name": "deleted",
             "summary": "Object\u0020handling\u0020deleted\u0020resources\u0020information",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#property_deleted"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#property_deleted"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003A\u0024config",
             "name": "config",
             "summary": "Configuration\u0020object",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#property_config"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#property_config"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003A\u0024pdo",
             "name": "pdo",
             "summary": "Repistory\u0020database\u0020connection\u0020object",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#property_pdo"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#property_pdo"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "High\u002Dlevel\u0020repository\u0020API\u0020handle\u0020object",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#property_repo"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#property_repo"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\BaseSearch\u003A\u003A\u0024records",
             "name": "records",
             "summary": "Last\u0020search\u0020results",
-            "url": "../classes/acdhOeaw-oai-search-BaseSearch.html#property_records"
+            "url": "classes/acdhOeaw-oai-search-BaseSearch.html#property_records"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\SearchInterface",
             "name": "SearchInterface",
             "summary": "Interface\u0020for\u0020classes\u0020implementing\u0020OAI\u002DPMH\u0020resources\u0020search.",
-            "url": "../classes/acdhOeaw-oai-search-SearchInterface.html"
+            "url": "classes/acdhOeaw-oai-search-SearchInterface.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\SearchInterface\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020search\u0020engine\u0020object.",
-            "url": "../classes/acdhOeaw-oai-search-SearchInterface.html#method___construct"
+            "url": "classes/acdhOeaw-oai-search-SearchInterface.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\SearchInterface\u003A\u003Afind\u0028\u0029",
             "name": "find",
             "summary": "Performs\u0020search\u0020using\u0020given\u0020filter\u0020values.",
-            "url": "../classes/acdhOeaw-oai-search-SearchInterface.html#method_find"
+            "url": "classes/acdhOeaw-oai-search-SearchInterface.html#method_find"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\SearchInterface\u003A\u003AgetCount\u0028\u0029",
             "name": "getCount",
             "summary": "Returns\u0020number\u0020of\u0020resources\u0020matching\u0020last\u0020search\u0020\u0028last\u0020call\u0020of\u0020the\n\u0060find\u0028\u0029\u0060\u0020method\u0029.",
-            "url": "../classes/acdhOeaw-oai-search-SearchInterface.html#method_getCount"
+            "url": "classes/acdhOeaw-oai-search-SearchInterface.html#method_getCount"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\SearchInterface\u003A\u003AgetHeader\u0028\u0029",
             "name": "getHeader",
             "summary": "Provides\u0020the\u0020\u0060HeaderData\u0060\u0020object\u0020for\u0020a\u0020given\u0020search\u0020result.",
-            "url": "../classes/acdhOeaw-oai-search-SearchInterface.html#method_getHeader"
+            "url": "classes/acdhOeaw-oai-search-SearchInterface.html#method_getHeader"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\SearchInterface\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
             "summary": "Provides\u0020the\u0020\u0060MetadataInterface\u0060\u0020object\u0020for\u0020a\u0020given\u0020search\u0020result.",
-            "url": "../classes/acdhOeaw-oai-search-SearchInterface.html#method_getMetadata"
+            "url": "classes/acdhOeaw-oai-search-SearchInterface.html#method_getMetadata"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search\\SearchInterface\u003A\u003AsetLogger\u0028\u0029",
             "name": "setLogger",
             "summary": "Sets\u0020a\u0020logger\u0020for\u0020the\u0020search\u0020object",
-            "url": "../classes/acdhOeaw-oai-search-SearchInterface.html#method_setLogger"
-        },                {
-            "fqsen": "\\acdhOeaw\\oai\\set\\Acdh",
-            "name": "Acdh",
-            "summary": "Implements\u0020sets\u0020by\u0020simply\u0020taking\u0020the\u0020\u0026llt\u003BsetSpec\u0026gt\u003B\u0020from\u0020a\u0020given\u0020resource\u0027s\nmetadataRDF\u0020property.",
-            "url": "../classes/acdhOeaw-oai-set-Acdh.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\oai\\set\\Acdh\u003A\u003AgetSetFilter\u0028\u0029",
-            "name": "getSetFilter",
-            "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020an\u0020\u0060id\u0060\u0020column\u0020providing\nrepository\u0020resource\u0020ids\u0020belonging\u0020to\u0020a\u0020given\u0020set.",
-            "url": "../classes/acdhOeaw-oai-set-Acdh.html#method_getSetFilter"
-        },                {
-            "fqsen": "\\acdhOeaw\\oai\\set\\Acdh\u003A\u003AgetSetData\u0028\u0029",
-            "name": "getSetData",
-            "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020two\u0020columns\u003A",
-            "url": "../classes/acdhOeaw-oai-set-Acdh.html#method_getSetData"
+            "url": "classes/acdhOeaw-oai-search-SearchInterface.html#method_setLogger"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Complex",
             "name": "Complex",
             "summary": "Provides\u0020full\u0020sets\u0020support.",
-            "url": "../classes/acdhOeaw-oai-set-Complex.html"
+            "url": "classes/acdhOeaw-oai-set-Complex.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Complex\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-set-Complex.html#method___construct"
+            "url": "classes/acdhOeaw-oai-set-Complex.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Complex\u003A\u003AgetSetFilter\u0028\u0029",
             "name": "getSetFilter",
             "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020an\u0020\u0060id\u0060\u0020column\u0020providing\nrepository\u0020resource\u0020ids\u0020belonging\u0020to\u0020a\u0020given\u0020set.",
-            "url": "../classes/acdhOeaw-oai-set-Complex.html#method_getSetFilter"
+            "url": "classes/acdhOeaw-oai-set-Complex.html#method_getSetFilter"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Complex\u003A\u003AgetSetData\u0028\u0029",
             "name": "getSetData",
             "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020two\u0020columns\u003A",
-            "url": "../classes/acdhOeaw-oai-set-Complex.html#method_getSetData"
+            "url": "classes/acdhOeaw-oai-set-Complex.html#method_getSetData"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Complex\u003A\u003AlistSets\u0028\u0029",
             "name": "listSets",
             "summary": "Handles\u0020the\u0020\u0060ListSets\u0060\u0020OAI\u002DPMH\u0020request.",
-            "url": "../classes/acdhOeaw-oai-set-Complex.html#method_listSets"
+            "url": "classes/acdhOeaw-oai-set-Complex.html#method_listSets"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Complex\u003A\u003A\u0024config",
             "name": "config",
             "summary": "Configuration\u0020object",
-            "url": "../classes/acdhOeaw-oai-set-Complex.html#property_config"
+            "url": "classes/acdhOeaw-oai-set-Complex.html#property_config"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\NoSets",
             "name": "NoSets",
             "summary": "Implements\u0020proper\u0020reporting\u0020of\u0020repository\u0020without\u0020sets.",
-            "url": "../classes/acdhOeaw-oai-set-NoSets.html"
+            "url": "classes/acdhOeaw-oai-set-NoSets.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\NoSets\u003A\u003AgetSetFilter\u0028\u0029",
             "name": "getSetFilter",
             "summary": "Reports\u0020no\u0020support\u0020for\u0020sets",
-            "url": "../classes/acdhOeaw-oai-set-NoSets.html#method_getSetFilter"
+            "url": "classes/acdhOeaw-oai-set-NoSets.html#method_getSetFilter"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\NoSets\u003A\u003AgetSetData\u0028\u0029",
             "name": "getSetData",
             "summary": "Returns\u0020empty\u0020set\u0020name",
-            "url": "../classes/acdhOeaw-oai-set-NoSets.html#method_getSetData"
+            "url": "classes/acdhOeaw-oai-set-NoSets.html#method_getSetData"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\NoSets\u003A\u003AlistSets\u0028\u0029",
             "name": "listSets",
             "summary": "Reports\u0020no\u0020support\u0020for\u0020sets",
-            "url": "../classes/acdhOeaw-oai-set-NoSets.html#method_listSets"
+            "url": "classes/acdhOeaw-oai-set-NoSets.html#method_listSets"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\SetInterface",
             "name": "SetInterface",
             "summary": "Interface\u0020for\u0020OAI\u002DPMH\u0020sets\u0020implementations.",
-            "url": "../classes/acdhOeaw-oai-set-SetInterface.html"
+            "url": "classes/acdhOeaw-oai-set-SetInterface.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\SetInterface\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-set-SetInterface.html#method___construct"
+            "url": "classes/acdhOeaw-oai-set-SetInterface.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\SetInterface\u003A\u003AgetSetFilter\u0028\u0029",
             "name": "getSetFilter",
             "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020an\u0020\u0060id\u0060\u0020column\u0020providing\nrepository\u0020resource\u0020ids\u0020belonging\u0020to\u0020a\u0020given\u0020set.",
-            "url": "../classes/acdhOeaw-oai-set-SetInterface.html#method_getSetFilter"
+            "url": "classes/acdhOeaw-oai-set-SetInterface.html#method_getSetFilter"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\SetInterface\u003A\u003AgetSetData\u0028\u0029",
             "name": "getSetData",
             "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020two\u0020columns\u003A",
-            "url": "../classes/acdhOeaw-oai-set-SetInterface.html#method_getSetData"
+            "url": "classes/acdhOeaw-oai-set-SetInterface.html#method_getSetData"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\SetInterface\u003A\u003AlistSets\u0028\u0029",
             "name": "listSets",
             "summary": "Handles\u0020the\u0020\u0060ListSets\u0060\u0020OAI\u002DPMH\u0020request.",
-            "url": "../classes/acdhOeaw-oai-set-SetInterface.html#method_listSets"
+            "url": "classes/acdhOeaw-oai-set-SetInterface.html#method_listSets"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Simple",
             "name": "Simple",
             "summary": "Provides\u0020very\u0020simple\u0020and\u0020straightforward\u0020implementation\u0020of\u0020sets.",
-            "url": "../classes/acdhOeaw-oai-set-Simple.html"
+            "url": "classes/acdhOeaw-oai-set-Simple.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Simple\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "../classes/acdhOeaw-oai-set-Simple.html#method___construct"
+            "url": "classes/acdhOeaw-oai-set-Simple.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Simple\u003A\u003AgetSetFilter\u0028\u0029",
             "name": "getSetFilter",
             "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020an\u0020\u0060id\u0060\u0020column\u0020providing\nrepository\u0020resource\u0020ids\u0020belonging\u0020to\u0020a\u0020given\u0020set.",
-            "url": "../classes/acdhOeaw-oai-set-Simple.html#method_getSetFilter"
+            "url": "classes/acdhOeaw-oai-set-Simple.html#method_getSetFilter"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Simple\u003A\u003AgetSetData\u0028\u0029",
             "name": "getSetData",
             "summary": "Returns\u0020an\u0020SQL\u0020query\u0020returning\u0020a\u0020table\u0020with\u0020two\u0020columns\u003A",
-            "url": "../classes/acdhOeaw-oai-set-Simple.html#method_getSetData"
+            "url": "classes/acdhOeaw-oai-set-Simple.html#method_getSetData"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Simple\u003A\u003AlistSets\u0028\u0029",
             "name": "listSets",
             "summary": "Handles\u0020the\u0020\u0060ListSets\u0060\u0020OAI\u002DPMH\u0020request.",
-            "url": "../classes/acdhOeaw-oai-set-Simple.html#method_listSets"
+            "url": "classes/acdhOeaw-oai-set-Simple.html#method_listSets"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set\\Simple\u003A\u003A\u0024config",
             "name": "config",
             "summary": "Configuration\u0020object",
-            "url": "../classes/acdhOeaw-oai-set-Simple.html#property_config"
+            "url": "classes/acdhOeaw-oai-set-Simple.html#property_config"
         },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
-            "url": "../namespaces/default.html"
+            "url": "namespaces/default.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai",
             "name": "oai",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-oai.html"
+            "url": "namespaces/acdhoeaw-oai.html"
         },                {
             "fqsen": "\\acdhOeaw",
             "name": "acdhOeaw",
             "summary": "",
-            "url": "../namespaces/acdhoeaw.html"
+            "url": "namespaces/acdhoeaw.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\data",
             "name": "data",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-oai-data.html"
+            "url": "namespaces/acdhoeaw-oai-data.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\deleted",
             "name": "deleted",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-oai-deleted.html"
+            "url": "namespaces/acdhoeaw-oai-deleted.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\metadata",
             "name": "metadata",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-oai-metadata.html"
+            "url": "namespaces/acdhoeaw-oai-metadata.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\search",
             "name": "search",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-oai-search.html"
+            "url": "namespaces/acdhoeaw-oai-search.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai\\set",
             "name": "set",
             "summary": "",
-            "url": "../namespaces/acdhoeaw-oai-set.html"
+            "url": "namespaces/acdhoeaw-oai-set.html"
         }            ]
 );

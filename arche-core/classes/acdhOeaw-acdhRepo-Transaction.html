@@ -3,804 +3,1107 @@
 <head>
     <meta charset="utf-8">
     <title>Documentation</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/template.css">
-    <link rel="icon" href="../images/favicon.ico"/>
-        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
-    <script src="../js/search.js"></script>
-    <script defer src="../js/searchIndex.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
     </head>
-<body>
-<header class="phpdocumentor-top-header"></header>
-<header class="phpdocumentor-header">
-    <section class="phpdocumentor-section">
-        <h1 class="phpdocumentor-title">Documentation</h1>
-    </section>
-</header>
-<main class="phpdocumentor">
-    <div class="phpdocumentor-section">
-        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
     <section data-search-form class="phpdocumentor-search">
-        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
-        <label class="phpdocumentor-label">
-            <span class="visually-hidden">Search for</span>
-            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-        </label>
-    </section>
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+        
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                                <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/acdhoeaw-acdhrepo.html"><abbr title="\acdhOeaw\acdhRepo">acdhRepo</abbr></a></li>
+                                    </ul>
+                        </section>
 
     
-    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
-            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
-                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h3>
-            <ul class="phpdocumentor-list">
-                                    <li><a href="../namespaces/acdhoeaw-acdhrepo.html"><abbr title="\acdhOeaw\acdhRepo">acdhRepo</abbr></a></li>
-                            </ul>
-            
-    
-    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
-        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
 </aside>
 
-        <div class="nine phpdocumentor-columns phpdocumentor-content">
-            <ul class="phpdocumentor-breadcrumbs">
-    <li><a href="../index.html">Home</a></li>
-                        <li><a href="../namespaces/acdhoeaw.html">acdhOeaw</a></li>
-                    <li><a href="../namespaces/acdhoeaw-acdhrepo.html">acdhRepo</a></li>
-            </ul>
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-acdhrepo.html">acdhRepo</a></li>
+    </ul>
 
-    <article class="phpdocumentor-element phpdocumentor-class">
+    <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-            Transaction
-                                                        </h2>
+    Transaction
+
+    
+    
+    
+    </h2>
+
         <aside class="phpdocumentor-element-found-in">
-            <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-            :
-            <span class="phpdocumentor-element-found-in__line">40</span>
-        </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+</aside>
 
-        <p class="phpdocumentor-class__summary">Description of Transaction</p>
-        <section class="phpdocumentor-class__description"></section>
+            <p class="phpdocumentor-summary">Description of Transaction</p>
 
-        <h3>Table of Contents</h3>
-        <table class="phpdocumentor-table_of_contents">
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#constant_STATE_ACTIVE">STATE_ACTIVE</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">&#039;active&#039;</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#constant_STATE_COMMIT">STATE_COMMIT</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">&#039;commit&#039;</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#constant_STATE_ROLLBACK">STATE_ROLLBACK</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">&#039;rollback&#039;</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#constant_PG_FOREIGN_KEY_VIOLATION">PG_FOREIGN_KEY_VIOLATION</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">23503</td>
-                </tr>
-                                        <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#property_id">$id</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#property_startedAt">$startedAt</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#property_lastRequest">$lastRequest</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#property_state">$state</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#property_snapshot">$snapshot</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><a href=""><abbr title=""></abbr></a></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#property_pdo">$pdo</a></th>
-                    <td class="phpdocumentor-cell">Database connection.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\PDO">PDO</abbr></td>
-                </tr>
-                                                                <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method___construct">__construct()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_prolongAndRelease">prolongAndRelease()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_getId">getId()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">int|null</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_getState">getState()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">string|null</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_options">options()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_head">head()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_get">get()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_delete">delete()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_put">put()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_post">post()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_getPreTransactionDbHandle">getPreTransactionDbHandle()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell"><abbr title="\PDO">PDO</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_lockAndFetchData">lockAndFetchData()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_wait">wait()</a></th>
-                    <td class="phpdocumentor-cell">Actively waits until the transaction controller daemon rollbacks/commits the transaction</td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-acdhRepo-Transaction.html#method_getResourceList">getResourceList()</a></th>
-                    <td class="phpdocumentor-cell"></td>
-                    <td class="phpdocumentor-cell">array</td>
-                </tr>
-                                            </table>
+    <section class="phpdocumentor-description"></section>
 
-                    <section>
-                <h3 class="phpdocumentor-constants__header">Constants</h3>
-                                    <a id="constant_STATE_ACTIVE"></a>
-<article
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>zozlak</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#constant_PG_FOREIGN_KEY_VIOLATION">PG_FOREIGN_KEY_VIOLATION</a>
+    <span>
+        &nbsp;= 23503                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#constant_STATE_ACTIVE">STATE_ACTIVE</a>
+    <span>
+        &nbsp;= &#039;active&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#constant_STATE_COMMIT">STATE_COMMIT</a>
+    <span>
+        &nbsp;= &#039;commit&#039;                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#constant_STATE_ROLLBACK">STATE_ROLLBACK</a>
+    <span>
+        &nbsp;= &#039;rollback&#039;                    </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#property_id">$id</a>
+    <span>
+                &nbsp;: int            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#property_lastRequest">$lastRequest</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#property_pdo">$pdo</a>
+    <span>
+                &nbsp;: <abbr title="\PDO">PDO</abbr>            </span>
+</dt>
+<dd>Database connection.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#property_snapshot">$snapshot</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#property_startedAt">$startedAt</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#property_state">$state</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_delete">delete()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_get">get()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_getId">getId()</a>
+    <span>
+                        &nbsp;: int|null    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_getPreTransactionDbHandle">getPreTransactionDbHandle()</a>
+    <span>
+                        &nbsp;: <abbr title="\PDO">PDO</abbr>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_getState">getState()</a>
+    <span>
+                        &nbsp;: string|null    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_head">head()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_options">options()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_post">post()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_prolongAndRelease">prolongAndRelease()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_put">put()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_getResourceList">getResourceList()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, int&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_lockAndFetchData">lockAndFetchData()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_wait">wait()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Actively waits until the transaction controller daemon rollbacks/commits the transaction</dd>
+
+        </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/acdhOeaw-acdhRepo-Transaction.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PG_FOREIGN_KEY_VIOLATION">
+        PG_FOREIGN_KEY_VIOLATION
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#constant_PG_FOREIGN_KEY_VIOLATION" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PG_FOREIGN_KEY_VIOLATION</span>
+    = <span class="phpdocumentor-signature__default-value">23503</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_STATE_ACTIVE">
+        STATE_ACTIVE
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#constant_STATE_ACTIVE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">STATE_ACTIVE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;active&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_STATE_COMMIT">
+        STATE_COMMIT
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#constant_STATE_COMMIT" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">STATE_COMMIT</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;commit&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_STATE_ROLLBACK">
+        STATE_ROLLBACK
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#constant_STATE_ROLLBACK" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">STATE_ROLLBACK</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;rollback&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+            </section>
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/acdhOeaw-acdhRepo-Transaction.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
         class="
             phpdocumentor-element
-            phpdocumentor-constant
-            phpdocumentor-constant--
-                    "
+            -property
+            -private
+                                                        "
 >
-    <h4 class="phpdocumentor-constant__name">STATE_ACTIVE</h4>
+    <h4 class="phpdocumentor-element__name" id="property_id">
+        $id
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#property_id" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">42</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility"></span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-        <span class="phpdocumentor-signature__name">$STATE_ACTIVE</span>
-        = <span class="phpdocumentor-signature__default-value">&#039;active&#039;</span>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$id</span>
     </code>
-    </article>
-                                    <a id="constant_STATE_COMMIT"></a>
-<article
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
             phpdocumentor-element
-            phpdocumentor-constant
-            phpdocumentor-constant--
-                    "
+            -property
+            -private
+                                                        "
 >
-    <h4 class="phpdocumentor-constant__name">STATE_COMMIT</h4>
+    <h4 class="phpdocumentor-element__name" id="property_lastRequest">
+        $lastRequest
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#property_lastRequest" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">43</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility"></span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-        <span class="phpdocumentor-signature__name">$STATE_COMMIT</span>
-        = <span class="phpdocumentor-signature__default-value">&#039;commit&#039;</span>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$lastRequest</span>
     </code>
-    </article>
-                                    <a id="constant_STATE_ROLLBACK"></a>
-<article
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
         class="
             phpdocumentor-element
-            phpdocumentor-constant
-            phpdocumentor-constant--
-                    "
+            -property
+            -private
+                                                        "
 >
-    <h4 class="phpdocumentor-constant__name">STATE_ROLLBACK</h4>
+    <h4 class="phpdocumentor-element__name" id="property_pdo">
+        $pdo
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#property_pdo" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">44</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility"></span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-        <span class="phpdocumentor-signature__name">$STATE_ROLLBACK</span>
-        = <span class="phpdocumentor-signature__default-value">&#039;rollback&#039;</span>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">82</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Database connection.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\PDO">PDO</abbr></span>
+    <span class="phpdocumentor-signature__name">$pdo</span>
     </code>
-    </article>
-                                    <a id="constant_PG_FOREIGN_KEY_VIOLATION"></a>
-<article
+
+        <section class="phpdocumentor-description"><p>A separate is required so it can commit changes independently from the main connection.</p>
+</section>
+
+    
+
+</article>
+                    <article
         class="
             phpdocumentor-element
-            phpdocumentor-constant
-            phpdocumentor-constant--
-                    "
->
-    <h4 class="phpdocumentor-constant__name">PG_FOREIGN_KEY_VIOLATION</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">45</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility"></span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-        <span class="phpdocumentor-signature__name">$PG_FOREIGN_KEY_VIOLATION</span>
-        = <span class="phpdocumentor-signature__default-value">23503</span>
-    </code>
-    </article>
-                                            </section>
-        
-                    <section>
-                <h3 class="phpdocumentor-properties__header">Properties</h3>
-                                    <a id="property_id"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$id</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">47</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">mixed</span>
-        <span class="phpdocumentor-signature__name">$id</span>
-            </code>
-    </article>
-                                    <a id="property_startedAt"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$startedAt</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">48</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">mixed</span>
-        <span class="phpdocumentor-signature__name">$startedAt</span>
-            </code>
-    </article>
-                                    <a id="property_lastRequest"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$lastRequest</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">49</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">mixed</span>
-        <span class="phpdocumentor-signature__name">$lastRequest</span>
-            </code>
-    </article>
-                                    <a id="property_state"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$state</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">50</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">mixed</span>
-        <span class="phpdocumentor-signature__name">$state</span>
-            </code>
-    </article>
-                                    <a id="property_snapshot"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$snapshot</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">51</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">mixed</span>
-        <span class="phpdocumentor-signature__name">$snapshot</span>
-            </code>
-    </article>
-                                    <a id="property_pdo"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$pdo</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">58</span>
-    </aside>
-            <p class="phpdocumentor-summary">Database connection.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><abbr title="\PDO">PDO</abbr></span>
-        <span class="phpdocumentor-signature__name">$pdo</span>
-            </code>
-        <section class="phpdocumentor-description">A separate is required so it can commit changes independently from the main connection.</section>
-    </article>
-                                                            </section>
-        
-                    <section>
-                <h3 class="phpdocumentor-methods__header">Methods</h3>
-                                    <a id="method___construct"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+            -property
+            -private
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <h4 class="phpdocumentor-element__name" id="property_snapshot">
+        $snapshot
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#property_snapshot" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">60</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">__construct</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$snapshot</span>
     </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_startedAt">
+        $startedAt
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#property_startedAt" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$startedAt</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_state">
+        $state
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#property_state" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">69</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$state</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/acdhOeaw-acdhRepo-Transaction.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
 </article>
-                                    <a id="method_prolongAndRelease"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">prolongAndRelease()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_delete">
+        delete()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">71</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">prolongAndRelease</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">138</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">delete</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
     
-        
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_getId"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">getId()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_get">
+        get()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">83</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getId</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">int|null</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">128</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int|null</span>
-            
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
 </article>
-                                    <a id="method_getState"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">getState()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_getId">
+        getId()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_getId" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">87</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getState</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">string|null</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">107</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
     
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string|null</span>
-            
-</article>
-                                    <a id="method_options"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">options()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">91</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">options</span>(
-                    <span class="phpdocumentor-signature__argument">
-            [                <span class="phpdocumentor-signature__argument__name">$code</span> :
-                <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">204</span> ]            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int|null</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$code</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                     = <span class="phpdocumentor-signature__argument__default-value">204</span>                </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
 </article>
-                                    <a id="method_head"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">head()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_getPreTransactionDbHandle">
+        getPreTransactionDbHandle()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_getPreTransactionDbHandle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">96</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">head</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">202</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getPreTransactionDbHandle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\PDO">PDO</abbr></span></code>
 
     
     
-        
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\PDO">PDO</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_get"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">get()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_getState">
+        getState()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_getState" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">104</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">get</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">111</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getState</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
     
     
-        
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_delete"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">delete()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_head">
+        head()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_head" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">114</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">delete</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">120</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">head</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
     
-        
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_put"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">put()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_options">
+        options()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_options" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">131</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">put</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">115</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">options</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$code</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">204</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$code</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">204</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_post">
+        post()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_post" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">188</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">post</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
     
-        
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_post"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">post()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_prolongAndRelease">
+        prolongAndRelease()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_prolongAndRelease" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">164</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">post</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">95</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">prolongAndRelease</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
     
-        
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_getPreTransactionDbHandle"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">getPreTransactionDbHandle()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_put">
+        put()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_put" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">178</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getPreTransactionDbHandle</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\PDO">PDO</abbr></span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">155</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">put</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\PDO">PDO</abbr></span>
-            
-</article>
-                                    <a id="method_lockAndFetchData"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">lockAndFetchData()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">187</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                                <span class="phpdocumentor-signature__name">lockAndFetchData</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$id</span> :
-                <span class="phpdocumentor-signature__argument__return-type">int|null</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$id</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
-    
 </article>
-                                    <a id="method_wait"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">wait()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_getResourceList">
+        getResourceList()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_getResourceList" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">214</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">256</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getResourceList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, int&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, int&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_lockAndFetchData">
+        lockAndFetchData()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_lockAndFetchData" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">211</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">lockAndFetchData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_wait">
+        wait()
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#method_wait" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">238</span>
+</aside>
+
         <p class="phpdocumentor-summary">Actively waits until the transaction controller daemon rollbacks/commits the transaction</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                                <span class="phpdocumentor-signature__name">wait</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">wait</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
 
     
     
-        
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                    <a id="method_getResourceList"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">getResourceList()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/acdhRepo/Transaction.php"><a href="../files/src-acdhoeaw-acdhrepo-transaction.html"><abbr title="src/acdhOeaw/acdhRepo/Transaction.php">Transaction.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">228</span>
-    </aside>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                                <span class="phpdocumentor-signature__name">getResourceList</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">array</span>
-    </code>
+            </section>
 
-    
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array</span>
-            
-</article>
-                                                            </section>
-            </article>
-            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
-
-                <h2>Search results</h2>
-                <ul class="phpdocumentor-search-results__entries">
-
-                </ul>
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
             </div>
         </div>
-    </div>
-</main>
+        <a href="classes/acdhOeaw-acdhRepo-Transaction.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
 </body>
 </html>

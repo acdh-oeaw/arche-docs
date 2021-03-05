@@ -3,747 +3,999 @@
 <head>
     <meta charset="utf-8">
     <title>Documentation</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/template.css">
-    <link rel="icon" href="../images/favicon.ico"/>
-        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.6/fuse.min.js"></script>
-    <script src="../js/search.js"></script>
-    <script defer src="../js/searchIndex.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
     </head>
-<body>
-<header class="phpdocumentor-top-header"></header>
-<header class="phpdocumentor-header">
-    <section class="phpdocumentor-section">
-        <h1 class="phpdocumentor-title">Documentation</h1>
-    </section>
-</header>
-<main class="phpdocumentor">
-    <div class="phpdocumentor-section">
-        <aside class="three phpdocumentor-columns phpdocumentor-sidebar">
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
     <section data-search-form class="phpdocumentor-search">
-        <h1 class="phpdocumentor-sidebar__category-header">Search</h1>
-        <label class="phpdocumentor-label">
-            <span class="visually-hidden">Search for</span>
-            <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
-        </label>
-    </section>
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                                <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/acdhoeaw-oai.html"><abbr title="\acdhOeaw\oai">oai</abbr></a></li>
+                                    </ul>
+                        </section>
 
     
-    <h1 class="phpdocumentor-sidebar__category-header">Namespaces</h1>
-            <h2 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/default.html"><abbr title="\">Global</abbr></a></h2>
-                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="../namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h3>
-            <ul class="phpdocumentor-list">
-                                    <li><a href="../namespaces/acdhoeaw-oai.html"><abbr title="\acdhOeaw\oai">oai</abbr></a></li>
-                            </ul>
-            
-    
-    <h1 class="phpdocumentor-sidebar__category-header">Reports</h1>
-        <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/deprecated.html">Deprecated</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/errors.html">Errors</a></h2>
-    <h2 class="phpdocumentor-sidebar__root-package"><a href="../reports/markers.html">Markers</a></h2>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
 </aside>
 
-        <div class="nine phpdocumentor-columns phpdocumentor-content">
-            <ul class="phpdocumentor-breadcrumbs">
-    <li><a href="../index.html">Home</a></li>
-                        <li><a href="../namespaces/acdhoeaw.html">acdhOeaw</a></li>
-                    <li><a href="../namespaces/acdhoeaw-oai.html">oai</a></li>
-                    <li><a href="../namespaces/acdhoeaw-oai-search.html">search</a></li>
-            </ul>
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-oai.html">oai</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-oai-search.html">search</a></li>
+    </ul>
 
-    <article class="phpdocumentor-element phpdocumentor-class">
+    <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-            BaseSearch
-                                                    <span class="phpdocumentor-class__implements">
-                    implements
-                                            <a href="../classes/acdhOeaw-oai-search-SearchInterface.html"><abbr title="\acdhOeaw\oai\search\SearchInterface">SearchInterface</abbr></a>                                    </span>
-                                </h2>
-        <aside class="phpdocumentor-element-found-in">
-            <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-            :
-            <span class="phpdocumentor-element-found-in__line">55</span>
-        </aside>
+    BaseSearch
 
-        <p class="phpdocumentor-class__summary">Implements basic OAI-PMH search. It is assumed that all OAI-PMH search
+    
+    
+            <span class="phpdocumentor-element__implements">
+            implements
+                            <a href="classes/acdhOeaw-oai-search-SearchInterface.html"><abbr title="\acdhOeaw\oai\search\SearchInterface">SearchInterface</abbr></a>                    </span>
+    
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+</aside>
+
+            <p class="phpdocumentor-summary">Implements basic OAI-PMH search. It is assumed that all OAI-PMH search
 facets (id, date, set) and data required to create &lt;header&gt; nodes (again id,
 date, set) are accessible as repository resource&#039;s metadata RDF properties.</p>
-        <section class="phpdocumentor-class__description"><p>Mappings between OAI-PMH terms (id, date, set) and RDF properties is provided
+
+    <section class="phpdocumentor-description"><p>Mappings between OAI-PMH terms (id, date, set) and RDF properties is provided
 by the statically initialized <code class="prettyprint">acdhOeaw\util\RepoConfig</code> class.</p>
 <p>Includes <code class="prettyprint">metadataClass::extendSearchQuery()</code> SPARQL query part in the
 performed search (where <code class="prettyprint">metadataClass</code> is read from the metadata format
-descriptor).</p></section>
+descriptor).</p>
+</section>
 
-        <h3>Table of Contents</h3>
-        <table class="phpdocumentor-table_of_contents">
-                                        <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#property_format">$format</a></th>
-                    <td class="phpdocumentor-cell">Metadata format descriptor.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\oai\MetadataFormat">MetadataFormat</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#property_sets">$sets</a></th>
-                    <td class="phpdocumentor-cell">Object handling sets</td>
-                    <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-oai-set-SetInterface.html"><abbr title="\acdhOeaw\oai\set\SetInterface">SetInterface</abbr></a></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#property_deleted">$deleted</a></th>
-                    <td class="phpdocumentor-cell">Object handling deleted resources information</td>
-                    <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-oai-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\oai\deleted\DeletedInterface">DeletedInterface</abbr></a></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#property_config">$config</a></th>
-                    <td class="phpdocumentor-cell">Configuration object</td>
-                    <td class="phpdocumentor-cell">object</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#property_pdo">$pdo</a></th>
-                    <td class="phpdocumentor-cell">Repistory database connection object</td>
-                    <td class="phpdocumentor-cell"><abbr title="\PDO">PDO</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#property_repo">$repo</a></th>
-                    <td class="phpdocumentor-cell">High-level repository API handle object</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\acdhRepoLib\RepoDb">RepoDb</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#property_records">$records</a></th>
-                    <td class="phpdocumentor-cell">Last search results</td>
-                    <td class="phpdocumentor-cell">\acdhOeaw\oai\data\HeaderData[]</td>
-                </tr>
-                                                                <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#method___construct">__construct()</a></th>
-                    <td class="phpdocumentor-cell">Creates a search engine object.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#method_find">find()</a></th>
-                    <td class="phpdocumentor-cell">Performs search using given filter values.</td>
-                    <td class="phpdocumentor-cell">mixed</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#method_getCount">getCount()</a></th>
-                    <td class="phpdocumentor-cell">Returns number of resources matching last search (last call of the
-`find()` method).</td>
-                    <td class="phpdocumentor-cell">int</td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#method_getHeader">getHeader()</a></th>
-                    <td class="phpdocumentor-cell">Provides the `HeaderData` object for a given search result.</td>
-                    <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-oai-data-HeaderData.html"><abbr title="\acdhOeaw\oai\data\HeaderData">HeaderData</abbr></a></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#method_getMetadata">getMetadata()</a></th>
-                    <td class="phpdocumentor-cell">Provides the `MetadataInterface` object for a given search result.</td>
-                    <td class="phpdocumentor-cell"><a href="../classes/acdhOeaw-oai-metadata-MetadataInterface.html"><abbr title="\acdhOeaw\oai\metadata\MetadataInterface">MetadataInterface</abbr></a></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#method_getIdFilter">getIdFilter()</a></th>
-                    <td class="phpdocumentor-cell">Creates SPARQL query clause implementing the id filter.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#method_getDateFilter">getDateFilter()</a></th>
-                    <td class="phpdocumentor-cell">Creates SPARQL clauses implementing the date filter.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#method_getSetFilter">getSetFilter()</a></th>
-                    <td class="phpdocumentor-cell">Creates SPARQL clause implementing the set filter.</td>
-                    <td class="phpdocumentor-cell"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></td>
-                </tr>
-                            <tr>
-                    <th class="phpdocumentor-heading"><a href="../classes/acdhOeaw-oai-search-BaseSearch.html#method_setLogger">setLogger()</a></th>
-                    <td class="phpdocumentor-cell">Sets a logger for the search object</td>
-                    <td class="phpdocumentor-cell">void</td>
-                </tr>
-                                            </table>
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>zozlak</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+
+
+
+<h3 id="interfaces_class_traits">
+    Interfaces, Classes and Traits
+    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/acdhOeaw-oai-search-SearchInterface.html"><abbr title="\acdhOeaw\oai\search\SearchInterface">SearchInterface</abbr></a></dt>
+        <dd>Interface for classes implementing OAI-PMH resources search.</dd>
+    
+    
+    </dl>
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+                <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_config">$config</a>
+    <span>
+                &nbsp;: object            </span>
+</dt>
+<dd>Configuration object</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_deleted">$deleted</a>
+    <span>
+                &nbsp;: <a href="classes/acdhOeaw-oai-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\oai\deleted\DeletedInterface">DeletedInterface</abbr></a>            </span>
+</dt>
+<dd>Object handling deleted resources information</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_format">$format</a>
+    <span>
+                &nbsp;: <abbr title="\acdhOeaw\oai\MetadataFormat">MetadataFormat</abbr>            </span>
+</dt>
+<dd>Metadata format descriptor.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_pdo">$pdo</a>
+    <span>
+                &nbsp;: <abbr title="\PDO">PDO</abbr>            </span>
+</dt>
+<dd>Repistory database connection object</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_records">$records</a>
+    <span>
+                &nbsp;: array&lt;string|int, <a href="classes/acdhOeaw-oai-data-HeaderData.html"><abbr title="\acdhOeaw\oai\data\HeaderData">HeaderData</abbr></a>&gt;            </span>
+</dt>
+<dd>Last search results</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_repo">$repo</a>
+    <span>
+                &nbsp;: <abbr title="\acdhOeaw\acdhRepoLib\RepoDb">RepoDb</abbr>            </span>
+</dt>
+<dd>High-level repository API handle object</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_sets">$sets</a>
+    <span>
+                &nbsp;: <a href="classes/acdhOeaw-oai-set-SetInterface.html"><abbr title="\acdhOeaw\oai\set\SetInterface">SetInterface</abbr></a>            </span>
+</dt>
+<dd>Object handling sets</dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Creates a search engine object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_find">find()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Performs search using given filter values.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_getCount">getCount()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Returns number of resources matching last search (last call of the
+`find()` method).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_getHeader">getHeader()</a>
+    <span>
+                        &nbsp;: <a href="classes/acdhOeaw-oai-data-HeaderData.html"><abbr title="\acdhOeaw\oai\data\HeaderData">HeaderData</abbr></a>    </span>
+</dt>
+<dd>Provides the `HeaderData` object for a given search result.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_getMetadata">getMetadata()</a>
+    <span>
+                        &nbsp;: <a href="classes/acdhOeaw-oai-metadata-MetadataInterface.html"><abbr title="\acdhOeaw\oai\metadata\MetadataInterface">MetadataInterface</abbr></a>    </span>
+</dt>
+<dd>Provides the `MetadataInterface` object for a given search result.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_setLogger">setLogger()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Sets a logger for the search object</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_getDateFilter">getDateFilter()</a>
+    <span>
+                        &nbsp;: <abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr>    </span>
+</dt>
+<dd>Creates SPARQL clauses implementing the date filter.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_getIdFilter">getIdFilter()</a>
+    <span>
+                        &nbsp;: <abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr>    </span>
+</dt>
+<dd>Creates SPARQL query clause implementing the id filter.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_getSetFilter">getSetFilter()</a>
+    <span>
+                        &nbsp;: <abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr>    </span>
+</dt>
+<dd>Creates SPARQL clause implementing the set filter.</dd>
+
+        </dl>
+
+
 
         
-                    <section>
-                <h3 class="phpdocumentor-properties__header">Properties</h3>
-                                    <a id="property_format"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$format</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">61</span>
-    </aside>
-            <p class="phpdocumentor-summary">Metadata format descriptor.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\oai\MetadataFormat">MetadataFormat</abbr></span>
-        <span class="phpdocumentor-signature__name">$format</span>
-            </code>
-    </article>
-                                    <a id="property_sets"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$sets</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">67</span>
-    </aside>
-            <p class="phpdocumentor-summary">Object handling sets</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><a href="../classes/acdhOeaw-oai-set-SetInterface.html"><abbr title="\acdhOeaw\oai\set\SetInterface">SetInterface</abbr></a></span>
-        <span class="phpdocumentor-signature__name">$sets</span>
-            </code>
-    </article>
-                                    <a id="property_deleted"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$deleted</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">73</span>
-    </aside>
-            <p class="phpdocumentor-summary">Object handling deleted resources information</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><a href="../classes/acdhOeaw-oai-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\oai\deleted\DeletedInterface">DeletedInterface</abbr></a></span>
-        <span class="phpdocumentor-signature__name">$deleted</span>
-            </code>
-    </article>
-                                    <a id="property_config"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$config</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">79</span>
-    </aside>
-            <p class="phpdocumentor-summary">Configuration object</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">object</span>
-        <span class="phpdocumentor-signature__name">$config</span>
-            </code>
-    </article>
-                                    <a id="property_pdo"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$pdo</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">85</span>
-    </aside>
-            <p class="phpdocumentor-summary">Repistory database connection object</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><abbr title="\PDO">PDO</abbr></span>
-        <span class="phpdocumentor-signature__name">$pdo</span>
-            </code>
-    </article>
-                                    <a id="property_repo"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$repo</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">91</span>
-    </aside>
-            <p class="phpdocumentor-summary">High-level repository API handle object</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\acdhRepoLib\RepoDb">RepoDb</abbr></span>
-        <span class="phpdocumentor-signature__name">$repo</span>
-            </code>
-    </article>
-                                    <a id="property_records"></a>
-<article
-        class="
-            phpdocumentor-property
-            phpdocumentor-property--private
-                                "
->
-    <h4 class="phpdocumentor-property__name">$records</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">97</span>
-    </aside>
-            <p class="phpdocumentor-summary">Last search results</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__type">\acdhOeaw\oai\data\HeaderData[]</span>
-        <span class="phpdocumentor-signature__name">$records</span>
-            </code>
-    </article>
-                                                            </section>
+
         
-                    <section>
-                <h3 class="phpdocumentor-methods__header">Methods</h3>
-                                    <a id="method___construct"></a>
-<article
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/acdhOeaw-oai-search-BaseSearch.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
         class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+            phpdocumentor-element
+            -property
+            -private
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">__construct()</h4>
+    <h4 class="phpdocumentor-element__name" id="property_config">
+        $config
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_config" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">106</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Configuration object</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">object</span>
+    <span class="phpdocumentor-signature__name">$config</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_deleted">
+        $deleted
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_deleted" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Object handling deleted resources information</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-oai-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\oai\deleted\DeletedInterface">DeletedInterface</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$deleted</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_format">
+        $format
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_format" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Metadata format descriptor.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\oai\MetadataFormat">MetadataFormat</abbr></span>
+    <span class="phpdocumentor-signature__name">$format</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_pdo">
+        $pdo
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_pdo" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">85</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Repistory database connection object</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\PDO">PDO</abbr></span>
+    <span class="phpdocumentor-signature__name">$pdo</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_records">
+        $records
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_records" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">97</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Last search results</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/acdhOeaw-oai-data-HeaderData.html"><abbr title="\acdhOeaw\oai\data\HeaderData">HeaderData</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__name">$records</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_repo">
+        $repo
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_repo" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">91</span>
+</aside>
+
+        <p class="phpdocumentor-summary">High-level repository API handle object</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\acdhRepoLib\RepoDb">RepoDb</abbr></span>
+    <span class="phpdocumentor-signature__name">$repo</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_sets">
+        $sets
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#property_sets" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Object handling sets</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-oai-set-SetInterface.html"><abbr title="\acdhOeaw\oai\set\SetInterface">SetInterface</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$sets</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/acdhOeaw-oai-search-BaseSearch.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+</aside>
+
         <p class="phpdocumentor-summary">Creates a search engine object.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">__construct</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$format</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$sets</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-oai-set-SetInterface.html"><abbr title="\acdhOeaw\oai\set\SetInterface">SetInterface</abbr></a></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$deleted</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-oai-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\oai\deleted\DeletedInterface">DeletedInterface</abbr></a></span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$config</span> :
-                <span class="phpdocumentor-signature__argument__return-type">object</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$pdo</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-oai-set-SetInterface.html"><abbr title="\acdhOeaw\oai\set\SetInterface">SetInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sets</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-oai-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\oai\deleted\DeletedInterface">DeletedInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$deleted</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pdo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$format</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>metadata format descriptor</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$sets</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-oai-set-SetInterface.html"><abbr title="\acdhOeaw\oai\set\SetInterface">SetInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$deleted</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-oai-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\oai\deleted\DeletedInterface">DeletedInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>configuration object</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pdo</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>repository database connection object</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$format</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-oai-data-MetadataFormat.html"><abbr title="\acdhOeaw\oai\data\MetadataFormat">MetadataFormat</abbr></a></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>metadata format descriptor</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$sets</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-oai-set-SetInterface.html"><abbr title="\acdhOeaw\oai\set\SetInterface">SetInterface</abbr></a></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$deleted</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><a href="../classes/acdhOeaw-oai-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\oai\deleted\DeletedInterface">DeletedInterface</abbr></a></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$config</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">object</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>configuration object</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$pdo</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>repository database connection object</p></section></dd>
-                    </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
 </article>
-                                    <a id="method_find"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">find()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_find">
+        find()
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_find" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">131</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">131</span>
+</aside>
+
         <p class="phpdocumentor-summary">Performs search using given filter values.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">find</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$id</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$from</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$until</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$set</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">mixed</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">find</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$until</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$set</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>id filter value</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$from</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>date from filter value</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$until</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>date to filter value</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$set</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>set filter value</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$id</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>id filter value</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$from</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>date from filter value</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$until</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>date to filter value</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$set</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>set filter value</p></section></dd>
-                    </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-            
 </article>
-                                    <a id="method_getCount"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">getCount()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_getCount">
+        getCount()
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_getCount" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">188</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">188</span>
+</aside>
+
         <p class="phpdocumentor-summary">Returns number of resources matching last search (last call of the
 `find()` method).</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getCount</span>(
-                )
-        : <span class="phpdocumentor-signature__response_type">int</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getCount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
 
     
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int</span>
-            
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
 </article>
-                                    <a id="method_getHeader"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">getHeader()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_getHeader">
+        getHeader()
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_getHeader" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">197</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">197</span>
+</aside>
+
         <p class="phpdocumentor-summary">Provides the `HeaderData` object for a given search result.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getHeader</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$pos</span> :
-                <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type"><a href="../classes/acdhOeaw-oai-data-HeaderData.html"><abbr title="\acdhOeaw\oai\data\HeaderData">HeaderData</abbr></a></span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pos</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-oai-data-HeaderData.html"><abbr title="\acdhOeaw\oai\data\HeaderData">HeaderData</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pos</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>seach result resource index</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$pos</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>seach result resource index</p></section></dd>
-                    </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-oai-data-HeaderData.html"><abbr title="\acdhOeaw\oai\data\HeaderData">HeaderData</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="../classes/acdhOeaw-oai-data-HeaderData.html"><abbr title="\acdhOeaw\oai\data\HeaderData">HeaderData</abbr></a></span>
-            
 </article>
-                                    <a id="method_getMetadata"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">getMetadata()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_getMetadata">
+        getMetadata()
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_getMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">206</span>
-    </aside>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">206</span>
+</aside>
+
         <p class="phpdocumentor-summary">Provides the `MetadataInterface` object for a given search result.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">getMetadata</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$pos</span> :
-                <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type"><a href="../classes/acdhOeaw-oai-metadata-MetadataInterface.html"><abbr title="\acdhOeaw\oai\metadata\MetadataInterface">MetadataInterface</abbr></a></span>
-    </code>
 
-        <section class="phpdocumentor-description"><p>The exact class of the returned object is defined by the <code class="prettyprint">class</code> field
-of the metadata descriptor (see the <code class="prettyprint">$format</code> parameter of the
-constructor method).</p></section>
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$pos</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>seach result resource index</p></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="../classes/acdhOeaw-oai-metadata-MetadataInterface.html"><abbr title="\acdhOeaw\oai\metadata\MetadataInterface">MetadataInterface</abbr></a></span>
-            
-</article>
-                                    <a id="method_getIdFilter"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">getIdFilter()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">217</span>
-    </aside>
-        <p class="phpdocumentor-summary">Creates SPARQL query clause implementing the id filter.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                                <span class="phpdocumentor-signature__name">getIdFilter</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$id</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
-    </code>
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pos</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-oai-metadata-MetadataInterface.html"><abbr title="\acdhOeaw\oai\metadata\MetadataInterface">MetadataInterface</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pos</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>seach result resource index</p>
+</section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$id</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>id filter value</p></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
-            
-</article>
-                                    <a id="method_getDateFilter"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">getDateFilter()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">232</span>
-    </aside>
-        <p class="phpdocumentor-summary">Creates SPARQL clauses implementing the date filter.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                                <span class="phpdocumentor-signature__name">getDateFilter</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$from</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                    <span class="phpdocumentor-signature__argument">
-            ,                 <span class="phpdocumentor-signature__argument__name">$until</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
-    </code>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-oai-metadata-MetadataInterface.html"><abbr title="\acdhOeaw\oai\metadata\MetadataInterface">MetadataInterface</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$from</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>date from filter value</p></section></dd>
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$until</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>date to filter value</p></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
-            
 </article>
-                                    <a id="method_getSetFilter"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--private
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-method__name">getSetFilter()</h4>
+    <h4 class="phpdocumentor-element__name" id="method_setLogger">
+        setLogger()
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_setLogger" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
     <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">254</span>
-    </aside>
-        <p class="phpdocumentor-summary">Creates SPARQL clause implementing the set filter.</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">private</span>
-                                <span class="phpdocumentor-signature__name">getSetFilter</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$set</span> :
-                <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
-    </code>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">268</span>
+</aside>
 
-    
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$set</span>
-                    : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"><p>set filter value</p></section></dd>
-                    </dl>
-    
-        
-            <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
-            
-</article>
-                                    <a id="method_setLogger"></a>
-<article
-        class="
-            phpdocumentor-method
-            phpdocumentor-method--public
-                                                        "
->
-    <h4 class="phpdocumentor-method__name">setLogger()</h4>
-    <aside class="phpdocumentor-element-found-in">
-        <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="../files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-        :
-        <span class="phpdocumentor-element-found-in__line">268</span>
-    </aside>
         <p class="phpdocumentor-summary">Sets a logger for the search object</p>
-        <code class="phpdocumentor-signature phpdocumentor-code ">
-        <span class="phpdocumentor-signature__visibility">public</span>
-                                <span class="phpdocumentor-signature__name">setLogger</span>(
-                    <span class="phpdocumentor-signature__argument">
-                            <span class="phpdocumentor-signature__argument__name">$log</span> :
-                <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\AbstractLogger">AbstractLogger</abbr></span>
-                            </span>
-                )
-        : <span class="phpdocumentor-signature__response_type">void</span>
-    </code>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setLogger</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\AbstractLogger">AbstractLogger</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$log</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$log</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\AbstractLogger">AbstractLogger</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
 
     
-            <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-        <dl class="phpdocumentor-argument-list">
-                            <dt class="phpdocumentor-argument-list__entry">
-                    <span class="phpdocumentor-signature__argument__name">$log</span>
-                    : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\AbstractLogger">AbstractLogger</abbr></span>
-                                    </dt>
-                <dd class="phpdocumentor-argument-list__definition"><section class="phpdocumentor-description"></section></dd>
-                    </dl>
-    
-        
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
     
 </article>
-                                                            </section>
-            </article>
-            <div data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDateFilter">
+        getDateFilter()
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_getDateFilter" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">232</span>
+</aside>
 
-                <h2>Search results</h2>
-                <ul class="phpdocumentor-search-results__entries">
+        <p class="phpdocumentor-summary">Creates SPARQL clauses implementing the date filter.</p>
 
-                </ul>
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getDateFilter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$until</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$from</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>date from filter value</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$until</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>date to filter value</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getIdFilter">
+        getIdFilter()
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_getIdFilter" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">217</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Creates SPARQL query clause implementing the id filter.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getIdFilter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>id filter value</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getSetFilter">
+        getSetFilter()
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#method_getSetFilter" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/acdhOeaw/oai/search/BaseSearch.php"><a href="files/src-acdhoeaw-oai-search-basesearch.html"><abbr title="src/acdhOeaw/oai/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">254</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Creates SPARQL clause implementing the set filter.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getSetFilter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$set</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$set</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>set filter value</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\oai\QueryPart">QueryPart</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+            </section>
+
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
             </div>
         </div>
-    </div>
-</main>
+        <a href="classes/acdhOeaw-oai-search-BaseSearch.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
 </body>
 </html>
