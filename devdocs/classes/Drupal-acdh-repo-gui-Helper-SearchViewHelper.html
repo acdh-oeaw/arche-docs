@@ -156,6 +156,13 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#property_objLang">$objLang</a>
+    <span>
+                &nbsp;: mixed            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#property_searchObj">$searchObj</a>
     <span>
                 &nbsp;: mixed            </span>
@@ -203,6 +210,20 @@
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>We need to format the root results for the gui</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_formatResultV2">formatResultV2()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_setupLang">setupLang()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>get the language for the result object</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_setUpMetadata">setUpMetadata()</a>
@@ -290,6 +311,36 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_objLang">
+        $objLang
+        <a href="classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#property_objLang" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/SearchViewHelper.php"><a href="files/arche-gui-src-helper-searchviewhelper.html"><abbr title="arche-gui/src/Helper/SearchViewHelper.php">SearchViewHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$objLang</span>
+     = <span class="phpdocumentor-signature__default-value">&quot;en&quot;</span></code>
+
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_searchObj">
         $searchObj
         <a href="classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#property_searchObj" class="headerlink"><i class="fas fa-link"></i></a>
@@ -363,7 +414,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/SearchViewHelper.php"><a href="files/arche-gui-src-helper-searchviewhelper.html"><abbr title="arche-gui/src/Helper/SearchViewHelper.php">SearchViewHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">166</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create object from the search values</p>
@@ -408,13 +459,13 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/SearchViewHelper.php"><a href="files/arche-gui-src-helper-searchviewhelper.html"><abbr title="arche-gui/src/Helper/SearchViewHelper.php">SearchViewHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">createView</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">createView</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -423,6 +474,13 @@
                 <span class="phpdocumentor-signature__argument__name">$data</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$version</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -450,7 +508,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/SearchViewHelper.php"><a href="files/arche-gui-src-helper-searchviewhelper.html"><abbr title="arche-gui/src/Helper/SearchViewHelper.php">SearchViewHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 </aside>
 
         <p class="phpdocumentor-summary">Fill the search object with the search metadata</p>
@@ -484,7 +542,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/SearchViewHelper.php"><a href="files/arche-gui-src-helper-searchviewhelper.html"><abbr title="arche-gui/src/Helper/SearchViewHelper.php">SearchViewHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create the root object for gui</p>
@@ -553,7 +611,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/SearchViewHelper.php"><a href="files/arche-gui-src-helper-searchviewhelper.html"><abbr title="arche-gui/src/Helper/SearchViewHelper.php">SearchViewHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 </aside>
 
         <p class="phpdocumentor-summary">We need to format the root results for the gui</p>
@@ -590,6 +648,93 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_formatResultV2">
+        formatResultV2()
+        <a href="classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_formatResultV2" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/SearchViewHelper.php"><a href="files/arche-gui-src-helper-searchviewhelper.html"><abbr title="arche-gui/src/Helper/SearchViewHelper.php">SearchViewHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">214</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">formatResultV2</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setupLang">
+        setupLang()
+        <a href="classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_setupLang" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/SearchViewHelper.php"><a href="files/arche-gui-src-helper-searchviewhelper.html"><abbr title="arche-gui/src/Helper/SearchViewHelper.php">SearchViewHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">345</span>
+</aside>
+
+        <p class="phpdocumentor-summary">get the language for the result object</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">setupLang</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$v</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$v</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setUpMetadata">
         setUpMetadata()
         <a href="classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_setUpMetadata" class="headerlink"><i class="fas fa-link"></i></a>
@@ -597,7 +742,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/SearchViewHelper.php"><a href="files/arche-gui-src-helper-searchviewhelper.html"><abbr title="arche-gui/src/Helper/SearchViewHelper.php">SearchViewHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 </aside>
 
         <p class="phpdocumentor-summary">the search object creation steps</p>

@@ -3143,7 +3143,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003AgenerateView\u0028\u0029",
             "name": "generateView",
-            "summary": "Create\u0020the\u0020search\u0020view\u0020content",
+            "summary": "Full\u0020text\u0020search\u0020version\u00202",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_generateView"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003Afulltext_search\u0028\u0029",
@@ -3961,6 +3961,16 @@ Search.appendIndex(
             "summary": "Fill\u0020the\u0020search\u0020object\u0020with\u0020the\u0020search\u0020metadata",
             "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_explodeSearchString"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AformatResultV2\u0028\u0029",
+            "name": "formatResultV2",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_formatResultV2"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AsetupLang\u0028\u0029",
+            "name": "setupLang",
+            "summary": "get\u0020the\u0020language\u0020for\u0020the\u0020result\u0020object",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_setupLang"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003A\u0024searchViewObjectArray",
             "name": "searchViewObjectArray",
             "summary": "",
@@ -3980,6 +3990,11 @@ Search.appendIndex(
             "name": "data",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#property_data"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003A\u0024objLang",
+            "name": "objLang",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#property_objLang"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel",
             "name": "ArcheApiModel",
@@ -4378,7 +4393,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AgetViewData\u0028\u0029",
             "name": "getViewData",
-            "summary": "get\u0020the\u0020search\u0020view\u0020data",
+            "summary": "get\u0020the\u0020views\u0020data",
             "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_getViewData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AformatYearsFilter_V2\u0028\u0029",
@@ -5140,6 +5155,41 @@ Search.appendIndex(
             "name": "extendDateFormat",
             "summary": "change\u0020the\u0020datefomat\u0020to\u0020work\u0020with\u0020strftime",
             "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_extendDateFormat"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ComposerTwigExtension",
+            "name": "ComposerTwigExtension",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ComposerTwigExtension.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ComposerTwigExtension\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "\u007B\u0040inheritdoc\u007D\nThis\u0020function\u0020must\u0020return\u0020the\u0020name\u0020of\u0020the\u0020extension.\u0020It\u0020must\u0020be\u0020unique.",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ComposerTwigExtension.html#method_getName"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ComposerTwigExtension\u003A\u003AgetFunctions\u0028\u0029",
+            "name": "getFunctions",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ComposerTwigExtension.html#method_getFunctions"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ComposerTwigExtension\u003A\u003Aget_acdh_composer_versions\u0028\u0029",
+            "name": "get_acdh_composer_versions",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ComposerTwigExtension.html#method_get_acdh_composer_versions"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ComposerTwigExtension\u003A\u003AprocessGuiComposerFile\u0028\u0029",
+            "name": "processGuiComposerFile",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ComposerTwigExtension.html#method_processGuiComposerFile"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ComposerTwigExtension\u003A\u003AprocessCoreComposerFile\u0028\u0029",
+            "name": "processCoreComposerFile",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ComposerTwigExtension.html#method_processCoreComposerFile"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ComposerTwigExtension\u003A\u003AgetComposerFile\u0028\u0029",
+            "name": "getComposerFile",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ComposerTwigExtension.html#method_getComposerFile"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\AuthInterface",
             "name": "AuthInterface",
