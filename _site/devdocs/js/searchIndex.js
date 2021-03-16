@@ -5181,11 +5181,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ComposerTwigExtension.html#method_processGuiComposerFile"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ComposerTwigExtension\u003A\u003AprocessCoreComposerFile\u0028\u0029",
-            "name": "processCoreComposerFile",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ComposerTwigExtension.html#method_processCoreComposerFile"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ComposerTwigExtension\u003A\u003AgetComposerFile\u0028\u0029",
             "name": "getComposerFile",
             "summary": "",
