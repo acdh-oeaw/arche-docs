@@ -3006,6 +3006,11 @@ Search.appendIndex(
             "summary": "This\u0020generates\u0020the\u0020jstree\u0020data\u0020for\u0020the\u0020collection\u0020download\u0020view",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_get_collection_data"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Aget_collection_data_lazy\u0028\u0029",
+            "name": "get_collection_data_lazy",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_get_collection_data_lazy"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_dl_collection_view\u0028\u0029",
             "name": "repo_dl_collection_view",
             "summary": "The\u0020collection\u0020view\u0020GUI\u0020view\u0020with\u0020the\u0020metadata\u0020and\u0020the\u0020js\u0020treeview",
@@ -3556,6 +3561,11 @@ Search.appendIndex(
             "summary": "3d\u0020dissemination\u0020service\u0020function",
             "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_threeDDissService"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AformatCollectionLazyDataStructure\u0028\u0029",
+            "name": "formatCollectionLazyDataStructure",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_formatCollectionLazyDataStructure"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcreateCollection\u0028\u0029",
             "name": "createCollection",
             "summary": "function\u0020for\u0020the\u0020collection\u0020data\u0020steps",
@@ -3593,12 +3603,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcreateFileNameForCollectionDownload\u0028\u0029",
             "name": "createFileNameForCollectionDownload",
-            "summary": "",
+            "summary": "Remove\u0020the\u0020white\u0020spaces\u0020from\u0020the\u0020filename",
             "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_createFileNameForCollectionDownload"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcreateCollectionDir\u0028\u0029",
             "name": "createCollectionDir",
-            "summary": "",
+            "summary": "Create\u0020the\u0020directory\u0020for\u0020the\u0020collection",
             "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_createCollectionDir"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcollectionDownloadFiles\u0028\u0029",
@@ -4270,6 +4280,11 @@ Search.appendIndex(
             "name": "getCollectionData",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-DisseminationServicesModel.html#method_getCollectionData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\DisseminationServicesModel\u003A\u003AgetCollectionDataLazy\u0028\u0029",
+            "name": "getCollectionDataLazy",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-DisseminationServicesModel.html#method_getCollectionDataLazy"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\DisseminationServicesModel\u003A\u003A\u0024repodb",
             "name": "repodb",
