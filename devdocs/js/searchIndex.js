@@ -216,10 +216,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-BinaryPayload.html#method_upload"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepo\\BinaryPayload\u003A\u003AoutputHeaders\u0028\u0029",
-            "name": "outputHeaders",
+            "fqsen": "\\acdhOeaw\\acdhRepo\\BinaryPayload\u003A\u003AgetHeaders\u0028\u0029",
+            "name": "getHeaders",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepo-BinaryPayload.html#method_outputHeaders"
+            "url": "classes/acdhOeaw-acdhRepo-BinaryPayload.html#method_getHeaders"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\BinaryPayload\u003A\u003AgetRequestMetadata\u0028\u0029",
             "name": "getRequestMetadata",
