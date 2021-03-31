@@ -266,11 +266,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-BinaryPayload.html#method_toBytes"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepo\\BinaryPayload\u003A\u003AFTS_PROPERTY",
-            "name": "FTS_PROPERTY",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepo-BinaryPayload.html#constant_FTS_PROPERTY"
-        },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\BinaryPayload\u003A\u003A\u0024id",
             "name": "id",
             "summary": "",
@@ -2015,11 +2010,6 @@ Search.appendIndex(
             "name": "POLICY_DATA_VIEW_REQUEST",
             "summary": "",
             "url": "classes/acdhOeaw-arche-fcs-Endpoint.html#constant_POLICY_DATA_VIEW_REQUEST"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\fcs\\Endpoint\u003A\u003AFTS_PROPERTY_BINARY",
-            "name": "FTS_PROPERTY_BINARY",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-fcs-Endpoint.html#constant_FTS_PROPERTY_BINARY"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\fcs\\Endpoint\u003A\u003AFTS_HIT_DELIMITER",
             "name": "FTS_HIT_DELIMITER",
@@ -6040,6 +6030,11 @@ Search.appendIndex(
             "name": "getFormData",
             "summary": "Returns\u0020the\u0020search\u0020term\u0020formatted\u0020as\u0020an\u0020HTTP\u0020query\u0020string.",
             "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#method_getFormData"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003APROPERTY_BINARY",
+            "name": "PROPERTY_BINARY",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_PROPERTY_BINARY"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003ADATETIME_REGEX",
             "name": "DATETIME_REGEX",
