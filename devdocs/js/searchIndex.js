@@ -3726,6 +3726,16 @@ Search.appendIndex(
             "summary": "Format\u0020the\u0020metadata\u0020gui\u0020result\u0020for\u0020the\u0020json\u0020output",
             "url": "classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_formatMetadataGuiView"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AcheckPropertyValue\u0028\u0029",
+            "name": "checkPropertyValue",
+            "summary": "Check\u0020the\u0020property\u0020value",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_checkPropertyValue"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AcreateCardinalityFieldsDefaultValue\u0028\u0029",
+            "name": "createCardinalityFieldsDefaultValue",
+            "summary": "Set\u0020up\u0020the\u0020default\u0020values\u0020for\u0020the\u0020cardinalities",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createCardinalityFieldsDefaultValue"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AreorderPropertiesByOrderValue\u0028\u0029",
             "name": "reorderPropertiesByOrderValue",
             "summary": "Reorder\u0020the\u0020elements\u0020based\u0020on\u0020the\u0020ordering\u0020value",
