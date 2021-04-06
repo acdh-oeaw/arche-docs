@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Dissemination services | ARCHE documentation</title>
+<title>Introduction | ARCHE documentation</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Dissemination services" />
+<meta property="og:title" content="Introduction" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Documentation for the ARCHE repository solution." />
 <meta property="og:description" content="Documentation for the ARCHE repository solution." />
@@ -13,7 +13,7 @@
 <meta property="og:url" content="/arche-docs/aux/dissemination_services.html" />
 <meta property="og:site_name" content="ARCHE documentation" />
 <script type="application/ld+json">
-{"description":"Documentation for the ARCHE repository solution.","@type":"WebPage","headline":"Dissemination services","url":"/arche-docs/aux/dissemination_services.html","@context":"https://schema.org"}</script>
+{"description":"Documentation for the ARCHE repository solution.","@type":"WebPage","headline":"Introduction","url":"/arche-docs/aux/dissemination_services.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/arche-docs/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/arche-docs/feed.xml" title="ARCHE documentation" /></head>
 <body><header class="site-header" role="banner">
@@ -28,7 +28,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/arche-docs/aux/metadata_api_performance.Rmd">Metadata API performance</a><a class="page-link" href="/arche-docs/aux/dissemination_services.html">Dissemination services</a></div>
+        <div class="trigger"><a class="page-link" href="/arche-docs/aux/metadata_api_performance.Rmd">Metadata API performance</a><a class="page-link" href="/arche-docs/aux/dissemination_services.html">Introduction</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -36,13 +36,11 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Dissemination services</h1>
+    <h1 class="post-title">Introduction</h1>
   </header>
 
   <div class="post-content">
-    <h1 id="dissemination-services">Dissemination services</h1>
-
-<h2 id="introduction">Introduction</h2>
+    <h1 id="introduction">Introduction</h1>
 
 <p>The way data are stored in arche is quite often not suitable for direct use, especially by humans. Who wants to browse trough metadata in raw RDF? Or view a book as a raw TEI-XML?</p>
 
@@ -51,7 +49,7 @@
 <p>It’s worth noting that in most cases it’s not feasible to avoid dissemination services by putting resources being already in dissemnation-friendly formats into the arche.
 First, there are typically plenty of dissemination formats we want to offer and this would bring a lot of data duplication and all problems connected with the data duplication (most importantly issues with keeping copies in sync and data volume issues). Second, this would make long term maintenance troublesome as once we want to adjust a given dissemination format we need to reprocess all repository resources (in technical terms we would say it breaks the separation between data and presentation).</p>
 
-<h2 id="definitions">Definitions</h2>
+<h1 id="definitions">Definitions</h1>
 
 <p>In the spoken language a <em>dissemination service</em> has two meanings which are used interchangeable:</p>
 
@@ -67,7 +65,7 @@ This is the technically correct meaning.
 To avoid confusion this is called a <em>mapping</em> below.</li>
 </ol>
 
-<h2 id="architecture">Architecture</h2>
+<h1 id="architecture">Architecture</h1>
 
 <ul>
   <li><em>Dissemination services</em> just work on their own.\
@@ -85,14 +83,14 @@ The only requirement is it must be possible to describe them using the <em>mappi
 <p>It’s worth noting that the <a href="https://github.com/acdh-oeaw/arche-core">arche-core</a> is not aware of <em>dissemination services</em>.
 The whole <em>dissemination service</em> logic is provided by higher layers of the arche software stack: arche-lib-disserv and arche-resolver.</p>
 
-<h2 id="dissemination-service">Dissemination service</h2>
+<h1 id="dissemination-service">Dissemination service</h1>
 
 <p>Dissemination service in arche is any web service able to consume data stored in arche.</p>
 
 <p>It can be hosted anywhere. It doesn’t matter if it can deal only with arche resources or also with other data.
 It just has to be reachable using an HTTP GET request and it must be able to fetch an arche resource on its own (e.g. from an URL passed to it as a part of the GET request).</p>
 
-<h2 id="mappings-data-model">Mappings data model</h2>
+<h1 id="mappings-data-model">Mappings data model</h1>
 
 <p><em>(Dissemination service) mappings</em> is a set of rules for:</p>
 
@@ -113,7 +111,27 @@ In examples below a <code class="language-plaintext highlighter-rouge">cfg.schem
 <p>An extensive example of the mappings can be found <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/initScripts/dissServices.ttl">here</a>
 with RDF property mappings being defined <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/schema.yaml">here</a>.</p>
 
-<h3 id="matching-resources-with-dissemination-services">Matching resources with dissemination services</h3>
+<h2 id="fundamental-dissemination-service-metadata">Fundamental dissemination service metadata</h2>
+
+<p>Each <em>dissemination service</em> has to:</p>
+
+<ul>
+  <li>Be of class <code class="language-plaintext highlighter-rouge">cfg.schema.dissServ.class</code>.</li>
+  <li>Have a uqnique identifier (as every arche resource).</li>
+  <li>Has <code class="language-plaintext highlighter-rouge">cfg.schema.dissServ.location</code> and <code class="language-plaintext highlighter-rouge">cfg.schema.dissServ.returnFormat</code> RDF properties
+(see <em>Dissemination service request URL generation</em> and <em>Choosing dissemination service matching user’s request the best</em> chapters below).</li>
+</ul>
+
+<p>A minimal <em>dissemination service</em> description could look as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;https://myDissServ/URI&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; cfg.schema.dissServ.class ;
+                         cfg.schema.dissServ.location                      "https://service.location/template?resURL={RES_URI}" ;
+                         cfg.schema.dissServ.returnFormat                  "text/html" .
+</code></pre></div></div>
+
+<p>Please read further for more details.</p>
+
+<h2 id="matching-resources-with-dissemination-services">Matching resources with dissemination services</h2>
 
 <p>Matching is done based on matching rules:</p>
 
@@ -132,11 +150,17 @@ For an arche resource to match a given <em>dissemination service</em>:
       <li>And if there is at least one <em>optional</em> mapping rule, the resource has to match at least one <em>optional</em> mapping rule.</li>
     </ul>
   </li>
-  <li>Every rule points to the dissemination service with the <code class="language-plaintext highlighter-rouge">cfg.schema.dissServ.parent</code> RDF property.</li>
 </ul>
 
 <p>The matching rules system is a compromise between flexibility and complexity.
 While it allows to handle most common scenarios, it can’t express complex rules (e.g. with multiple indpendent alternatives like <code class="language-plaintext highlighter-rouge">(A or B) and (C or D)</code>).</p>
+
+<p>Despite that there are two purely-technical requirements for rules:</p>
+
+<ul>
+  <li>Every rule points to the dissemination service resource with the <code class="language-plaintext highlighter-rouge">cfg.schema.dissServ.parent</code> RDF property.</li>
+  <li>Every rule is identified by its URI (there are no particular requirements here, it just has to be unique).</li>
+</ul>
 
 <p>Examples:</p>
 
@@ -154,7 +178,7 @@ While it allows to handle most common scenarios, it can’t express complex rule
                  cfg.schema.dissServ.matchRequired "true"^^&lt;http://www.w3.org/2001/XMLSchema#boolean&gt; .
 </code></pre></div>    </div>
   </li>
-  <li>Set of mapping rules matching any of a given set of values (here a mime type suggesting an image):
+  <li>Set of mapping rules matching any of a given set of values (here something like “any image”):
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;mappingRuleURI1&gt; cfg.schema.dissServ.parent        &lt;https://myDissServ/URI&gt; ;
                   cfg.schema.dissServ.matchProperty "https://property/storing/mimeType" ;
                   cfg.schema.dissServ.matchValue    "image/tiff" ;
@@ -186,15 +210,137 @@ While it allows to handle most common scenarios, it can’t express complex rule
   </li>
 </ul>
 
-<h3 id="dissemination-service-request-url-generation">Dissemination service request URL generation</h3>
+<h2 id="dissemination-service-request-url-generation">Dissemination service request URL generation</h2>
 
-<p>The second part of</p>
+<p>Once we know a given <em>dissemination service</em> is valid for a given repository resource, we need to be able to generate an HTTP GET request which triggering the dissemination.</p>
 
-<h2 id="using-arche-lib-disserv">Using arche-lib-disserv</h2>
+<p>The URL is generated by substituting a template with values coming from arche resource’s metadata.</p>
 
-<h3 id="dissemination-services-matching-a-given-arche-resource">Dissemination services matching a given arche resource</h3>
+<p>Every <em>dissemination service</em> defines its own URL template.</p>
 
-<h3 id="arche-resources-matching-a-given-dissemination-service">Arche resources matching a given dissemination service</h3>
+<p>The URL template may contain a two kinds of placeholders:</p>
+
+<ul>
+  <li>Predefined parameters:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">{RES_URI}</code> - the full URL of the resource, e.g. https://arche.acdh.oeaw.ac.at/api/109787.</li>
+      <li><code class="language-plaintext highlighter-rouge">{RES_ID}</code> - the internal numeric identifier of the resource (the number at the end of its URL), e.g. <code class="language-plaintext highlighter-rouge">109787</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">{nmsp_ID}</code> - a resource’s identifier in the <code class="language-plaintext highlighter-rouge">nmsp</code> namespace.\
+The namespace has to be defined in the configuration file under <code class="language-plaintext highlighter-rouge">schema.namespaces.{nmsp}</code>. 
+See e.g. <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/schema.yaml">here</a>.</li>
+    </ul>
+  </li>
+  <li>Parameters defined by you - see the chapter below.</li>
+</ul>
+
+<p>Every parameter value can be transformed using a set of predefined functions:</p>
+
+<ul>
+  <li>Available functions are:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">add(name,value)</code> - treats a value as an URL and appends a given URL query parameter value to it
+(if a given query parameter exists, the URL will contain two parameters with the same name)</li>
+      <li><code class="language-plaintext highlighter-rouge">base64</code> - base64 encodes the value</li>
+      <li><code class="language-plaintext highlighter-rouge">rawurlencode</code> - URL encodes the value (transforming spaces into <code class="language-plaintext highlighter-rouge">%20</code>)</li>
+      <li><code class="language-plaintext highlighter-rouge">removeprotocol</code> - removes a leading <code class="language-plaintext highlighter-rouge">http://</code> or <code class="language-plaintext highlighter-rouge">https://</code> from the value</li>
+      <li><code class="language-plaintext highlighter-rouge">set</code> - treats a value as an URL and and appends a given URL query parameter value to it 
+(if a given query parameter exists, it’s overwritten with a new value)</li>
+      <li><code class="language-plaintext highlighter-rouge">substr(start,length)</code> - returns a given value substring</li>
+      <li><code class="language-plaintext highlighter-rouge">part(...parts)</code> - treats a value as an URL and extracts given URL part(s) from it
+        <ul>
+          <li>parts can be <code class="language-plaintext highlighter-rouge">scheme</code>, <code class="language-plaintext highlighter-rouge">host</code>, <code class="language-plaintext highlighter-rouge">port</code>, <code class="language-plaintext highlighter-rouge">user</code>, <code class="language-plaintext highlighter-rouge">pass</code>, <code class="language-plaintext highlighter-rouge">path</code>, <code class="language-plaintext highlighter-rouge">query</code> and <code class="language-plaintext highlighter-rouge">fragment</code></li>
+          <li>the general URL is of a form <code class="language-plaintext highlighter-rouge">scheme://user:pass@host:port/path?query#fragment</code> but not all URL have all parts</li>
+          <li>part-specific prefixes/suffixes are kept, e.g. ``uriPart(scheme)<code class="language-plaintext highlighter-rouge"> applied to </code>https://arche.acdh.oeaw.ac.at<code class="language-plaintext highlighter-rouge"> gives </code>https://<code class="language-plaintext highlighter-rouge"> (and not just </code>https`)</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">url</code> - URL encodes the value (transforming spaces into <code class="language-plaintext highlighter-rouge">+</code>)</li>
+    </ul>
+  </li>
+  <li>Transformations are applied using the <code class="language-plaintext highlighter-rouge">|</code> operator and can be stacked,
+e.g. <code class="language-plaintext highlighter-rouge">{RES_URI|part(query)|url}</code> first extracts the query part from the resource URI and than URL encodes it.</li>
+</ul>
+
+<p>A few examples of <em>dissemination service</em> URL templates:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">{RES_URI|part(scheme,host)}/browser/oeaw_detail/{RES_ID}</code>
+Take resource’s URL scheme and host, append fixed <code class="language-plaintext highlighter-rouge">/browser/oeaw_detail/</code> URL path to it and append resource’s internal numeric id at the end.</li>
+  <li><code class="language-plaintext highlighter-rouge">https://arche-thumbnails.acdh.oeaw.ac.at/{id_ID|part(host,path,query)}?width={WIDTH}&amp;height={HEIGHT}</code>
+Extract host, path and query parts from resource’s identifier in the <code class="language-plaintext highlighter-rouge">id</code> namespace (however the namespace is defined in the config) and append it to https://arche-thumbnails.acdh.oeaw.ac.at/.
+Finally ad <code class="language-plaintext highlighter-rouge">WIDTH</code> and <code class="language-plaintext highlighter-rouge">HEIGHT</code> user defined parameters (see below) as URL query parameters.</li>
+  <li><code class="language-plaintext highlighter-rouge">https://arche-biblatex.acdh.oeaw.ac.at/?lang={LANG}&amp;id={id_ID|url}</code>
+Call https://arche-biblatex.acdh.oeaw.ac.at/?lang=LANG&amp;id=ID<code class="language-plaintext highlighter-rouge"> with 
+the the </code>id<code class="language-plaintext highlighter-rouge"> query parameter substituted with URL-encoded arche resource identifier in the </code>id<code class="language-plaintext highlighter-rouge"> namespace (however the namespace is defined in the config)
+and the </code>lang<code class="language-plaintext highlighter-rouge"> query parameter taken from the a user-defined </code>{LANG}` parameter (see below).</li>
+</ul>
+
+<p>For an extensive example please take a look <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/initScripts/dissServices.ttl">here</a>.</p>
+
+<h3 id="user-defined-parameters">User-defined parameters</h3>
+
+<p>You can define your own URL template parameters which will be substituted based either on the arche resource’s metadata values or values provided to the resolver.</p>
+
+<p>Each user-defined parameter:</p>
+
+<ul>
+  <li>Has a name determining it’s placeholder (<code class="language-plaintext highlighter-rouge">cfg.schema.label</code>).</li>
+  <li>Has a default value to be used when a given arche resource doesn’t have a given metadata property (<code class="language-plaintext highlighter-rouge">cfg.schema.dissServ.parameterDefaultValue</code>).</li>
+  <li>Must be of a <code class="language-plaintext highlighter-rouge">cfg.schema.dissService.parameterClass</code> RDF class.</li>
+  <li>Must point to its dissemination service with the <code class="language-plaintext highlighter-rouge">cfg.schema.dissServ.parent</code> RDF property.</li>
+  <li>As every arche resource must have an unique identifier.</li>
+  <li>Has an optional metadata property which will be used to fetch its value from arche resource’s metadata (<code class="language-plaintext highlighter-rouge">cfg.schema.dissServ.parameterRdfProperty</code>).
+    <ul>
+      <li>If a resource has many values of a given property, just a first encountered value is used.</li>
+      <li>The property URL is provided as an RDF literal (see the example below).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>An example RDF definition of a parameter can look as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;parameter&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; cfg.schema.dissServ.parameterClass ;
+            cfg.schema.dissServ.parent                        &lt;https://myDissServ/URI&gt; ;
+            cfg.schema.label                                  "XSL"@en ;
+            cfg.schema.dissServ.parameterDefaultValue         "https://tei4arche.acdh-dev.oeaw.ac.at/xsl/test.xsl
+            cfg.schema.dissServ.parameterRdfProperty          "https://vocabs.acdh.oeaw.ac.at/schema#hasCustomXsl" .
+</code></pre></div></div>
+
+<p>The corresponding <em>dissemination service</em> URL template placeholder is <code class="language-plaintext highlighter-rouge">{XSL}</code>.</p>
+
+<h2 id="choosing-dissemination-service-matching-users-request-the-best">Choosing dissemination service matching user’s request the best</h2>
+
+<h1 id="using-arche-lib-disserv">Using arche-lib-disserv</h1>
+
+<h2 id="dissemination-services-matching-a-given-arche-resource">Dissemination services matching a given arche resource</h2>
+
+<p>Knowing the resource URL:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$resUrl = 'https://arche.acdh.oeaw.ac.at/api/108253';
+$repo   = acdhOeaw\acdhRepoLib\Repo::factoryFromUrl($resUrl);
+$res    = new acdhOeaw\arche\disserv\RepoResource($resUrl, $repo);
+$availableDissServ = $res-&gt;getDissServices();
+foreach ($availableDissServ as $dissService) {
+    print_r($dissService-&gt;getRequest($res));
+}
+</code></pre></div></div>
+
+<p>Using search:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file_put_contents('config.yaml', 'https://arche.acdh.oeaw.ac.at/api/describe');
+$repo       = new acdhOeaw\acdhRepoLib\Repo::factory('config.yaml');
+$term       = new acdhOeaw\acdhRepoLib\SearchTerm('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'https://vocabs.acdh.oeaw.ac.at/schema#TopCollection');
+$cfg        = new acdhOeaw\acdhRepoLib\SearchConfig();
+$cfg-&gt;class = '\acdhOeaw\arche\disserv\RepoResource';
+$resources  = $repo-&gt;getResourcesBySearchTerms([$term], $cfg);
+foreach ($resources as $res) {
+    echo "----------\n" . $res-&gt;getUri() . "\n";
+    foreach ($res-&gt;getDissServices() as $$dissService) {
+        print_r($dissService-&gt;getRequest($res));
+    }
+}
+</code></pre></div></div>
+
+<h2 id="arche-resources-matching-a-given-dissemination-service">Arche resources matching a given dissemination service</h2>
 
 
   </div>
