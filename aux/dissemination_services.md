@@ -38,6 +38,15 @@ Dissemination service in arche is any web service able to consume data stored in
 It can be hosted anywhere. It doesn't matter if it can deal only with arche resources or also with other data.
 It just has to be reachable using an HTTP GET request and it must be able to fetch an arche resource on its own (e.g. from an URL passed to it as a part of the GET request).
 
+## Limitations
+
+A *dissemination service* must be able to fetch the arche resource on its own based on the data passed to it by a GET request. It means:
+
+* There is no suport for dissemination services expecting disseminated service binary payload to be passed directly to them (e.g. as a POST request body).\
+  If you want to handle such dissemination services, you need to set up a simple reverse proxy in front of them which will fetch arche resource's binary content and push it to the dissemination service.
+* If access to the disseminated resource requires authentication, the dissemination service must be able to perform it on its own.
+  Also this limitation can be overcome by setting up a reverse proxy performing the authentication (and, if needed, helping the dissemination service to bypass arche's authentication).
+
 # Mappings data model
 
 *(Dissemination service) mappings* is a set of rules for:
@@ -65,7 +74,7 @@ Each *dissemination service* has to:
 * Be of class `cfg.schema.dissServ.class`.
 * Have a uqnique identifier (as every arche resource).
 * Has `cfg.schema.dissServ.location` and `cfg.schema.dissServ.returnFormat` RDF properties
-  (see *Dissemination service request URL generation* and *Choosing dissemination service matching user's request the best* chapters below).
+  (see *Dissemination service request URL generation* and *Choosing dissemination service best matching user's request* chapters below).
 
 A minimal *dissemination service* description could look as follows:
 
@@ -222,9 +231,66 @@ An example RDF definition of a parameter can look as follows:
 
 The corresponding *dissemination service* URL template placeholder is `{XSL}`.
 
-## Choosing dissemination service matching user's request the best
+## Choosing dissemination service best matching user's request
 
+So far we know how to describe which dissemination services match which arche resources and how the HTTP GET request disseminating a given resource with a given service is created 
+but it doesn't tell us how a dissemination resource is matched with a user's request.
 
+Here the `cfg.schema.dissServ.returnFormat` dissemination's service property plays the key role.
+
+While making a request to the resolver, user can specify a preffered output format.
+This can be done either explicitely (by including the `format=desiredFormat` query parameter in the URL or `Accept: desiredFormat` HTTP header)
+or implicitely (e.g. a web browsers always add the `Accept: text/html` HTTP header without asking user about it).
+
+Knowing the output format desired by the user the resolver checks if there is a dissemination service
+mathing the requested arche resource with a desired value of the `cfg.schema.dissServ.returnFormat` RDF property.
+
+* If there is such a service, it's used for the dissemination.
+* If there is no such service, a default dissemination service is used (typically the repository browser GUI).
+
+Things get a little complicated where there are many dissemination services able to provide the requested output format.
+This is particularly common situation when the client requests the `text/html` output format.
+In such a case the so called quality value is taken into account. 
+
+Dissemination service's `cfg.schema.dissServ.returnFormat` property value may contain not only the output format name but also a quality value.
+Quality value syntax and semantics follows the one of the HTTP Accept header (see [here](https://developer.mozilla.org/en-US/docs/Glossary/Quality_values))
+including the default value of 1.0.
+
+Out of dissemination services providing the requested output format the one with the highest quality value is chosen
+and if many dissemination services have the same highest quality value, just the first encountered is used.
+
+E.g. when a user requests `text/xml,text/html;q=0.9` and there are following dissemination services matching the requested resource:
+
+```
+<service1> cfg.schema.dissServ.returnFormat "text/html;q=0.1" .
+<service2> cfg.schema.dissServ.returnFormat "text/html" .
+<service3> cfg.schema.dissServ.returnFormat "text/html" .
+```
+
+then:
+
+* Output in `text/html` is provided as there is no matching dissemination service offering `text/xml` output format.
+* Out of three available dissemination services either `<service2>` or `<service3>` is used (whichever is spotted first) as they share the same highest quality value of 1.0
+  (as it's not explicitely specified, the default value of 1.0 is used).
+  `<service1>` isn't used as it has lower quality value.
+
+It's worth noting that:
+
+* A single dissemination service may provide many `cfg.schema.dissServ.returnFormat` values.
+* If dissemination service's `cfg.schema.dissServ.returnFormat` value isn't unique, it's always worth to add the (lower than 1.0) quality value.
+  Otherwise such a service will always take a precedense over other services providing the same output format (as the default quality value is 1.0).
+* While it's semantically nice to assing `cfg.schema.dissServ.returnFormat` values being MIME types it starts to be troublesome 
+  when there are many dissemination services returning the same MIME type (like `text/html`).
+  In such a case it might be better and more intuitive for the users to assign non-MIME but unique values 
+  (it would make it easier for the users to predict which dissemination service will be used).
+    * A hybrid approach is also possible when we assign one `cfg.schema.dissServ.returnFormat` value being a MIME type (with carefully chosen quality value)
+      and second `cfg.schema.dissServ.returnFormat` value being a non-MIME unique dissemination service name, e.g.
+      ```
+      <service> cfg.schema.dissServ.returnFormat "text/html;q=0.1" ,
+                                                 "iiifviewer" .
+      ```
+    * If you want to assign a `cfg.schema.dissServ.returnFormat` value which is already used by other dissemination service and have no idea what should be the proper quality value,
+      don't assign the duplicated `cfg.schema.dissServ.returnFormat` value at all and consult someone more skilled.
 
 # Using arche-lib-disserv
 
@@ -232,32 +298,50 @@ The corresponding *dissemination service* URL template placeholder is `{XSL}`.
 
 Knowing the resource URL:
 
-```
+```php
+include 'vendor/autoload.php';
 $resUrl = 'https://arche.acdh.oeaw.ac.at/api/108253';
 $repo   = acdhOeaw\acdhRepoLib\Repo::factoryFromUrl($resUrl);
 $res    = new acdhOeaw\arche\disserv\RepoResource($resUrl, $repo);
 $availableDissServ = $res->getDissServices();
-foreach ($availableDissServ as $dissService) {
-    print_r($dissService->getRequest($res));
+foreach ($availableDissServ as $retType => $dissService) {
+    echo "$retType: " . $dissService->getRequest($res)->getUri() . "\n";
 }
 ```
 
 Using search:
 
-```
-file_put_contents('config.yaml', 'https://arche.acdh.oeaw.ac.at/api/describe');
-$repo       = new acdhOeaw\acdhRepoLib\Repo::factory('config.yaml');
+```php
+include 'vendor/autoload.php';
+file_put_contents('config.yaml', file_get_contents('https://arche.acdh.oeaw.ac.at/api/describe'));
+$repo       = acdhOeaw\acdhRepoLib\Repo::factory('config.yaml');
 $term       = new acdhOeaw\acdhRepoLib\SearchTerm('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'https://vocabs.acdh.oeaw.ac.at/schema#TopCollection');
 $cfg        = new acdhOeaw\acdhRepoLib\SearchConfig();
 $cfg->class = '\acdhOeaw\arche\disserv\RepoResource';
 $resources  = $repo->getResourcesBySearchTerms([$term], $cfg);
 foreach ($resources as $res) {
     echo "----------\n" . $res->getUri() . "\n";
-    foreach ($res->getDissServices() as $$dissService) {
-        print_r($dissService->getRequest($res));
+    foreach ($res->getDissServices() as $retType => $dissService) {
+        echo "$retType: " . $dissService->getRequest($res)->getUri() . "\n";
     }
 }
 ```
 
 ## Arche resources matching a given dissemination service
+
+```php
+include 'vendor/autoload.php';
+file_put_contents('config.yaml', file_get_contents('https://arche.acdh.oeaw.ac.at/api/describe'));
+$repo         = acdhOeaw\acdhRepoLib\Repo::factory('config.yaml');
+$term         = new acdhOeaw\acdhRepoLib\SearchTerm('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'https://vocabs.acdh.oeaw.ac.at/schema#DisseminationService');
+$cfg          = new acdhOeaw\acdhRepoLib\SearchConfig();
+$cfg->class   = '\acdhOeaw\arche\disserv\dissemination\Service';
+$dissServices = $repo->getResourcesBySearchTerms([$term], $cfg);
+$dissServ     = $dissServices[0];
+print_r($dissServ->getFormats());
+// get up to 5 resources matching the given dissemination service
+foreach($dissServ->getMatchingResources(5) as $res) {
+    echo $res->getUri() . ": " . $dissServ->getRequest($res)->getUri() . "\n";
+}
+```
 
