@@ -2661,25 +2661,10 @@ Search.appendIndex(
             "summary": "Displaying\u0020the\u0020federated\u0020login\u0020with\u0020shibboleth",
             "url": "classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#method_shibboleth_login"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#property_config"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#property_repo"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003A\u0024rootViewController",
             "name": "rootViewController",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#property_rootViewController"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\AcdhRepoGuiController\u003A\u003A\u0024siteLang",
-            "name": "siteLang",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#property_siteLang"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController",
             "name": "ArcheApiController",
@@ -2776,36 +2761,6 @@ Search.appendIndex(
             "summary": "Create\u0020root\u0020table\u0020clone\u0020based\u0020on\u0020the\u0020actual\u0020ontology",
             "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getRootTable"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#property_config"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#property_repo"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024repodb",
-            "name": "repodb",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#property_repodb"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024siteLang",
-            "name": "siteLang",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#property_siteLang"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024helper",
-            "name": "helper",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#property_helper"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024model",
-            "name": "model",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#property_model"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024modelData",
             "name": "modelData",
             "summary": "",
@@ -2815,6 +2770,46 @@ Search.appendIndex(
             "name": "result",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#property_result"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheBaseController",
+            "name": "ArcheBaseController",
+            "summary": "Description\u0020of\u0020ArcheBaseController",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheBaseController.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheBaseController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheBaseController.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheBaseController\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheBaseController.html#property_config"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheBaseController\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheBaseController.html#property_repo"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheBaseController\u003A\u003A\u0024repodb",
+            "name": "repodb",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheBaseController.html#property_repodb"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheBaseController\u003A\u003A\u0024siteLang",
+            "name": "siteLang",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheBaseController.html#property_siteLang"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheBaseController\u003A\u003A\u0024helper",
+            "name": "helper",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheBaseController.html#property_helper"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheBaseController\u003A\u003A\u0024model",
+            "name": "model",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheBaseController.html#property_model"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController",
             "name": "ChildApiController",
@@ -2841,21 +2836,6 @@ Search.appendIndex(
             "summary": "create\u0020the\u0020identifiers",
             "url": "classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#method_setupIdentifier"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#property_config"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003A\u0024model",
-            "name": "model",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#property_model"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003A\u0024helper",
-            "name": "helper",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#property_helper"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003A\u0024data",
             "name": "data",
             "summary": "",
@@ -2870,11 +2850,6 @@ Search.appendIndex(
             "name": "pagingHelper",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#property_pagingHelper"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ChildApiController.html#property_repo"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ChildApiController\u003A\u003A\u0024repoid",
             "name": "repoid",
@@ -2935,21 +2910,6 @@ Search.appendIndex(
             "name": "getChildData",
             "summary": "Get\u0020the\u0020child\u0020view\u0020data",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_getChildData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#property_config"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003A\u0024model",
-            "name": "model",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#property_model"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003A\u0024helper",
-            "name": "helper",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#property_helper"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003A\u0024basicViewData",
             "name": "basicViewData",
@@ -3021,26 +2981,6 @@ Search.appendIndex(
             "summary": "Display\u0020the\u00203d\u0020object\u0020\u0028nxs,\u0020ply\u0029\u0020inside\u0020a\u0020js\u0020viewer",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_3d_viewer"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#property_config"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#property_repo"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003A\u0024model",
-            "name": "model",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#property_model"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003A\u0024helper",
-            "name": "helper",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#property_helper"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003A\u0024basicViewData",
             "name": "basicViewData",
             "summary": "",
@@ -3086,26 +3026,6 @@ Search.appendIndex(
             "summary": "Generate\u0020the\u0020data\u0020for\u0020the\u0020root\u0020views\u0020\u0028main\/front\u0020page\u0020left\u0020block\u0029",
             "url": "classes/Drupal-acdh-repo-gui-Controller-RootViewController.html#method_generateRootViewData"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\RootViewController\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-RootViewController.html#property_repo"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\RootViewController\u003A\u003A\u0024model",
-            "name": "model",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-RootViewController.html#property_model"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\RootViewController\u003A\u003A\u0024helper",
-            "name": "helper",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-RootViewController.html#property_helper"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\RootViewController\u003A\u003A\u0024siteLang",
-            "name": "siteLang",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-RootViewController.html#property_siteLang"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\RootViewController\u003A\u003A\u0024numberOfRoots",
             "name": "numberOfRoots",
             "summary": "",
@@ -3120,11 +3040,6 @@ Search.appendIndex(
             "name": "generalFunctions",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-RootViewController.html#property_generalFunctions"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\RootViewController\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-RootViewController.html#property_config"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController",
             "name": "SearchViewController",
@@ -3146,30 +3061,30 @@ Search.appendIndex(
             "summary": "New\u0020fulltext\u0020search\u0020with\u0020binary\u0020search",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_fulltext_search"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024repo",
-            "name": "repo",
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003Arest_search\u0028\u0029",
+            "name": "rest_search",
             "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_repo"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_config"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024model",
-            "name": "model",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_model"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024helper",
-            "name": "helper",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_helper"
+            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_rest_search"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024pagingHelper",
             "name": "pagingHelper",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_pagingHelper"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\VersionsController",
+            "name": "VersionsController",
+            "summary": "Description\u0020of\u0020VersionsController",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-VersionsController.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\VersionsController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-VersionsController.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\VersionsController\u003A\u003AgenerateView\u0028\u0029",
+            "name": "generateView",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-VersionsController.html#method_generateView"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\EventSubscriber\\AcdhRepoGuiConfigEventSubscriber",
             "name": "AcdhRepoGuiConfigEventSubscriber",
@@ -4091,6 +4006,11 @@ Search.appendIndex(
             "summary": "Generate\u0020the\u0020year\u0020box\u0020data",
             "url": "classes/Drupal-acdh-repo-gui-Model-BlocksModel.html#method_getYearsData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\BlocksModel\u003A\u003AgetVersionsData\u0028\u0029",
+            "name": "getVersionsData",
+            "summary": "Get\u0020the\u0020Versions\u0020block\u0020data",
+            "url": "classes/Drupal-acdh-repo-gui-Model-BlocksModel.html#method_getVersionsData"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\BlocksModel\u003A\u003A\u0024repodb",
             "name": "repodb",
             "summary": "",
@@ -4665,6 +4585,21 @@ Search.appendIndex(
             "name": "processInbound",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-PathProcessor-AcdhRepoGuiPathProcessor.html#method_processInbound"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\ArcheVersionsBlock",
+            "name": "ArcheVersionsBlock",
+            "summary": "Provides\u0020a\u0020\u0027Version\u0027\u0020block.",
+            "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-ArcheVersionsBlock.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\ArcheVersionsBlock\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "Search\u0020Sb\u0020block",
+            "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-ArcheVersionsBlock.html#method_build"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\ArcheVersionsBlock\u003A\u003AgetCacheMaxAge\u0028\u0029",
+            "name": "getCacheMaxAge",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-ArcheVersionsBlock.html#method_getCacheMaxAge"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\LangSwitcherBlock",
             "name": "LangSwitcherBlock",
