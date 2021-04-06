@@ -25,3 +25,4 @@ Documentation automatically generated from the source code comments:
 Guides:
 
 * [Metadata API performance](aux/metadata_api_performance.html)
+* [Dissemination services](aux/dissemination_services.html)
