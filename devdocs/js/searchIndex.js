@@ -2886,6 +2886,11 @@ Search.appendIndex(
             "summary": "the\u0020detail\u0020view",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_detailViewMainMethod"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AcheckVersions\u0028\u0029",
+            "name": "checkVersions",
+            "summary": "Check\u0020if\u0020the\u0020actual\u0020resource\u0020has\u0020a\u0020newer\u0020version",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_checkVersions"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AsetBreadcrumb\u0028\u0029",
             "name": "setBreadcrumb",
             "summary": "set\u0020up\u0020the\u0020breadcrumb\u0020data",
@@ -4600,6 +4605,16 @@ Search.appendIndex(
             "name": "getCacheMaxAge",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-ArcheVersionsBlock.html#method_getCacheMaxAge"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\ArcheVersionsBlock\u003A\u003AcheckActualID\u0028\u0029",
+            "name": "checkActualID",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-ArcheVersionsBlock.html#method_checkActualID"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\ArcheVersionsBlock\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-ArcheVersionsBlock.html#property_data"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\LangSwitcherBlock",
             "name": "LangSwitcherBlock",
