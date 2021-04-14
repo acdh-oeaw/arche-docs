@@ -4511,6 +4511,11 @@ Search.appendIndex(
             "summary": "get\u0020the\u0020title\u0020image\u0020url",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getTitleImage"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetTitleImageUrl\u0028\u0029",
+            "name": "getTitleImageUrl",
+            "summary": "Get\u0020the\u0020titleimage\u0020URL",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getTitleImageUrl"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AisTitleImage\u0028\u0029",
             "name": "isTitleImage",
             "summary": "Check\u0020if\u0020we\u0020have\u0020a\u0020titleimage\u0020id\u0020or\u0020not",
