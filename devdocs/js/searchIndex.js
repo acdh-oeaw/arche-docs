@@ -1806,6 +1806,11 @@ Search.appendIndex(
             "summary": "Checks\u0020property\u0020cardinalities\u0020according\u0020to\u0020the\u0020ontology.",
             "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkCardinalities"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckBiblatex\u0028\u0029",
+            "name": "checkBiblatex",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkBiblatex"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckIdCount\u0028\u0029",
             "name": "checkIdCount",
             "summary": "Every\u0020resource\u0020must\u0020have\u0020at\u0020least\u0020one\u0020repository\u0020ID\u0020and\u0020one\nnon\u002Drepository\u0020ID.",
@@ -1820,6 +1825,11 @@ Search.appendIndex(
             "name": "checkUnknownProperties",
             "summary": "If\u0020a\u0020property\u0020is\u0020in\u0020the\u0020ontology\u0020namespace\u0020it\u0020has\u0020to\u0020be\u0020part\u0020of\u0020the\u0020ontology.",
             "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkUnknownProperties"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckAutoCreatedResources\u0028\u0029",
+            "name": "checkAutoCreatedResources",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkAutoCreatedResources"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AupdateCollections\u0028\u0029",
             "name": "updateCollections",
