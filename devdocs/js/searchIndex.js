@@ -16,6 +16,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_getBibtex"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AapplyOverrides\u0028\u0029",
+            "name": "applyOverrides",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverrides"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AformatProperty\u0028\u0029",
             "name": "formatProperty",
             "summary": "",
