@@ -5396,6 +5396,11 @@ Search.appendIndex(
             "summary": "Prepares\u0020an\u0020SQL\u0020query\u0020adding\u0020a\u0020full\u0020text\u0020search\u0020query\u0020results\u0020as\nmetadata\u0020graph\u0020edges.",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getFtsQuery"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetOrderByQuery\u0028\u0029",
+            "name": "getOrderByQuery",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getOrderByQuery"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetPagingQuery\u0028\u0029",
             "name": "getPagingQuery",
             "summary": "",
@@ -5915,6 +5920,21 @@ Search.appendIndex(
             "name": "offset",
             "summary": "Offset\u0020of\u0020the\u0020first\u0020returned\u0020result.",
             "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_offset"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024count",
+            "name": "count",
+            "summary": "Total\u0020number\u0020of\u0020resources\u0020matching\u0020the\u0020search\u0020\u0028despite\u0020limit\/offset\u0029",
+            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_count"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024orderBy",
+            "name": "orderBy",
+            "summary": "List\u0020of\u0020metadata\u0020properties\u0020to\u0020order\u0020results\u0020by.",
+            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_orderBy"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024orderByLang",
+            "name": "orderByLang",
+            "summary": "If\u0020specified,\u0020only\u0020property\u0020values\u0020with\u0020a\u0020given\u0020language\u0020are\u0020taken\u0020into\naccount\u0020for\u0020ordering\u0020search\u0020matches.",
+            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_orderByLang"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024ftsQuery",
             "name": "ftsQuery",
