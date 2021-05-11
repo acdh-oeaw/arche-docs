@@ -3621,6 +3621,11 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020shibboleth\u0020user\u0020role",
             "url": "classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_createShobbolethGroup"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AgetRepoIdFromApiUrl\u0028\u0029",
+            "name": "getRepoIdFromApiUrl",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_getRepoIdFromApiUrl"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
