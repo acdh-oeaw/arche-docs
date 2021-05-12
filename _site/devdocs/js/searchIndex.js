@@ -171,6 +171,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-Auth.html#method_getUserRoles"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\Auth\u003A\u003A\u0024isAdmin",
+            "name": "isAdmin",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-Auth.html#property_isAdmin"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\Auth\u003A\u003ADEFAULT_ALLOW",
             "name": "DEFAULT_ALLOW",
             "summary": "",
@@ -195,11 +200,6 @@ Search.appendIndex(
             "name": "userRoles",
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-Auth.html#property_userRoles"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepo\\Auth\u003A\u003A\u0024isAdmin",
-            "name": "isAdmin",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepo-Auth.html#property_isAdmin"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\Auth\u003A\u003A\u0024isCreator",
             "name": "isCreator",
@@ -1185,6 +1185,51 @@ Search.appendIndex(
             "name": "child",
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-TransactionController.html#property_child"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi",
+            "name": "UserApi",
+            "summary": "Implements\u0020the\u0020REST\u0020API\u0020users\u0020management\u0020API",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Apost\u0028\u0029",
+            "name": "post",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_post"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_get"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Apatch\u0028\u0029",
+            "name": "patch",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_patch"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_delete"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Aoptions\u0028\u0029",
+            "name": "options",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_options"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003AcheckUserExists\u0028\u0029",
+            "name": "checkUserExists",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_checkUserExists"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003A\u0024db",
+            "name": "db",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#property_db"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController",
             "name": "DashboardController",
