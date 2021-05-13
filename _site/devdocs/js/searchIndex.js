@@ -171,6 +171,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-Auth.html#method_getUserRoles"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\Auth\u003A\u003A\u0024isAdmin",
+            "name": "isAdmin",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-Auth.html#property_isAdmin"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\Auth\u003A\u003ADEFAULT_ALLOW",
             "name": "DEFAULT_ALLOW",
             "summary": "",
@@ -195,11 +200,6 @@ Search.appendIndex(
             "name": "userRoles",
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-Auth.html#property_userRoles"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepo\\Auth\u003A\u003A\u0024isAdmin",
-            "name": "isAdmin",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepo-Auth.html#property_isAdmin"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\Auth\u003A\u003A\u0024isCreator",
             "name": "isCreator",
@@ -265,6 +265,11 @@ Search.appendIndex(
             "name": "updateFts",
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-BinaryPayload.html#method_updateFts"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\BinaryPayload\u003A\u003AupdateSpatialSearch\u0028\u0029",
+            "name": "updateSpatialSearch",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-BinaryPayload.html#method_updateSpatialSearch"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\BinaryPayload\u003A\u003AtoBytes\u0028\u0029",
             "name": "toBytes",
@@ -1185,6 +1190,51 @@ Search.appendIndex(
             "name": "child",
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-TransactionController.html#property_child"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi",
+            "name": "UserApi",
+            "summary": "Implements\u0020the\u0020REST\u0020API\u0020users\u0020management\u0020API",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Aput\u0028\u0029",
+            "name": "put",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_put"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_get"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Apatch\u0028\u0029",
+            "name": "patch",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_patch"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_delete"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Aoptions\u0028\u0029",
+            "name": "options",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_options"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003AcheckUserExists\u0028\u0029",
+            "name": "checkUserExists",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_checkUserExists"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003A\u0024db",
+            "name": "db",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#property_db"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController",
             "name": "DashboardController",
@@ -3621,6 +3671,11 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020shibboleth\u0020user\u0020role",
             "url": "classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_createShobbolethGroup"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AgetRepoIdFromApiUrl\u0028\u0029",
+            "name": "getRepoIdFromApiUrl",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_getRepoIdFromApiUrl"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
@@ -5396,6 +5451,11 @@ Search.appendIndex(
             "summary": "Prepares\u0020an\u0020SQL\u0020query\u0020adding\u0020a\u0020full\u0020text\u0020search\u0020query\u0020results\u0020as\nmetadata\u0020graph\u0020edges.",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getFtsQuery"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetOrderByQuery\u0028\u0029",
+            "name": "getOrderByQuery",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getOrderByQuery"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetPagingQuery\u0028\u0029",
             "name": "getPagingQuery",
             "summary": "",
@@ -5658,27 +5718,47 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_RESOURCE",
             "name": "META_RESOURCE",
-            "summary": "",
+            "summary": "Provide\u0020only\u0020given\u0020resource\u0027s\u0020metadata",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RESOURCE"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_NEIGHBORS",
             "name": "META_NEIGHBORS",
-            "summary": "",
+            "summary": "Include\u0020metadata\u0020of\u0020all\u0020resources\u0020a\u0020given\u0020one\u0020points\u0020to\u0020and\u0020all\u0020resources\nwhich\u0020point\u0020to\u0020it.\u0020If\u0020parentProperty\u0020is\u0020specified,\u0020only\u0020resources\npointing\u0020to\u0020a\u0020given\u0020one\u0020with\u0020a\u0020specified\u0020RDF\u0020predicate\u0020are\u0020included.",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_NEIGHBORS"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_RELATIVES",
             "name": "META_RELATIVES",
-            "summary": "",
+            "summary": "Include\u0020metadata\u0020of\u0020all\u0020resources\u0020which\u0020can\u0020be\u0020reached\u0020from\u0020a\u0020given\u0020one\nby\u0020following\u0020\u0028in\u0020both\u0020directions\u0029\u0020an\u0020RDF\u0020predicate\u0020specified\u0020by\u0020the\u0020parentProperty\nas\u0020well\u0020as\u0020all\u0020metadata\u0020of\u0020all\u0020resources\u0020a\u0020given\u0020resource\u0020points\u0020to.",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_RELATIVES_ONLY",
+            "name": "META_RELATIVES_ONLY",
+            "summary": "Include\u0020metadata\u0020of\u0020all\u0020resources\u0020which\u0020can\u0020be\u0020reached\u0020from\u0020a\u0020given\u0020one\nby\u0020following\u0020\u0028in\u0020both\u0020directions\u0029\u0020an\u0020RDF\u0020predicate\u0020specified\u0020by\u0020the\u0020parentProperty",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES_ONLY"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_RELATIVES_REVERSE",
+            "name": "META_RELATIVES_REVERSE",
+            "summary": "Include\u0020metadata\u0020of\u0020all\u0020resources\u0020which\u0020can\u0020be\u0020reached\u0020from\u0020a\u0020given\u0020one\nby\u0020following\u0020\u0028in\u0020both\u0020directions\u0029\u0020an\u0020RDF\u0020predicate\u0020specified\u0020by\u0020the\u0020parentProperty\nas\u0020well\u0020as\u0020all\u0020metadata\u0020of\u0020all\u0020resources\u0020a\u0020given\u0020resource\u0020points\u0020to\u0020and\nall\u0020resources\u0020pointing\u0020to\u0020a\u0020given\u0020one.",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES_REVERSE"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_PARENTS",
             "name": "META_PARENTS",
-            "summary": "",
+            "summary": "Like\u0020\u0060relatives\u0060\u0020but\u0020follows\u0020the\u0020parentProperty\u0020predicate\u0020only\u0020from\u0020subject\nto\u0020object.",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_PARENTS_ONLY",
+            "name": "META_PARENTS_ONLY",
+            "summary": "Like\u0020\u0060relativesOnly\u0060\u0020but\u0020follows\u0020the\u0020parentProperty\u0020predicate\u0020only\u0020from\nsubject\u0020to\u0020object.",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS_ONLY"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_PARENTS_REVERSE",
+            "name": "META_PARENTS_REVERSE",
+            "summary": "Like\u0020\u0060relativesReverse\u0060\u0020but\u0020follows\u0020the\u0020parentProperty\u0020predicate\u0020only\nfrom\u0020subject\u0020to\u0020object.",
+            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS_REVERSE"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_IDS",
             "name": "META_IDS",
-            "summary": "",
+            "summary": "Provide\u0020only\u0020a\u0020\u0060resourceUrl\u0020titleProperty\u0020title\u0060\u0020triple\u0020for\u0020a\u0020requested\nresource\/resources\u0020matching\u0020the\u0020search.",
             "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_IDS"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver",
@@ -5898,12 +5978,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024metadataMode",
             "name": "metadataMode",
-            "summary": "Controls\u0020how\u0020broad\u0020metadata\u0020should\u0020be\u0020returned\u0020for\u0020resources\u0020matching\u0020the\u0020search.",
+            "summary": "Controls\u0020amount\u0020of\u0020metadata\u0020included\u0020in\u0020the\u0020search\u0020results.",
             "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_metadataMode"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024metadataParentProperty",
             "name": "metadataParentProperty",
-            "summary": "See\u0020\u0060RepoResource\u003A\u003AloadMetadata\u0028\u0029\u0060\u0020method\u0020\u0060\u0024parentProperty\u0060\u0020parameter\u0020description.",
+            "summary": "RDF\u0020predicate\u0020used\u0020by\u0020some\u0020of\u0020metadataModes.",
             "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_metadataParentProperty"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024limit",
@@ -5915,6 +5995,21 @@ Search.appendIndex(
             "name": "offset",
             "summary": "Offset\u0020of\u0020the\u0020first\u0020returned\u0020result.",
             "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_offset"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024count",
+            "name": "count",
+            "summary": "Total\u0020number\u0020of\u0020resources\u0020matching\u0020the\u0020search\u0020\u0028despite\u0020limit\/offset\u0029",
+            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_count"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024orderBy",
+            "name": "orderBy",
+            "summary": "List\u0020of\u0020metadata\u0020properties\u0020to\u0020order\u0020results\u0020by.",
+            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_orderBy"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024orderByLang",
+            "name": "orderByLang",
+            "summary": "If\u0020specified,\u0020only\u0020property\u0020values\u0020with\u0020a\u0020given\u0020language\u0020are\u0020taken\u0020into\naccount\u0020for\u0020ordering\u0020search\u0020matches.",
+            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_orderByLang"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024ftsQuery",
             "name": "ftsQuery",
@@ -5991,6 +6086,11 @@ Search.appendIndex(
             "summary": "Returns\u0020an\u0020SQL\u0020query\u0020part\u0020returning\u0020ids\u0020of\u0020resources\u0020matching\u0020the\u0020search\u0020term.",
             "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#method_getSqlQuery"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003AgetSqlQueryOr\u0028\u0029",
+            "name": "getSqlQueryOr",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#method_getSqlQueryOr"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003AgetSqlQueryFts\u0028\u0029",
             "name": "getSqlQueryFts",
             "summary": "",
@@ -6050,6 +6150,11 @@ Search.appendIndex(
             "name": "TYPE_FTS",
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_TYPE_FTS"
+        },                {
+            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003AOPERATOR_IN",
+            "name": "OPERATOR_IN",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_OPERATOR_IN"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003ACOLUMN_STRING",
             "name": "COLUMN_STRING",

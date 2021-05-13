@@ -105,7 +105,6 @@
 </aside>
 
         
-    <section class="phpdocumentor-description"></section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -140,35 +139,75 @@
     <span>
         &nbsp;= &#039;ids&#039;                    </span>
 </dt>
-<dd></dd>
+<dd>Provide only a `resourceUrl titleProperty title` triple for a requested
+resource/resources matching the search.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_NEIGHBORS">META_NEIGHBORS</a>
     <span>
         &nbsp;= &#039;neighbors&#039;                    </span>
 </dt>
-<dd></dd>
+<dd>Include metadata of all resources a given one points to and all resources
+which point to it. If parentProperty is specified, only resources
+pointing to a given one with a specified RDF predicate are included.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS">META_PARENTS</a>
     <span>
         &nbsp;= &#039;parents&#039;                    </span>
 </dt>
-<dd></dd>
+<dd>Like `relatives` but follows the parentProperty predicate only from subject
+to object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS_ONLY">META_PARENTS_ONLY</a>
+    <span>
+        &nbsp;= &#039;parentsOnly&#039;                    </span>
+</dt>
+<dd>Like `relativesOnly` but follows the parentProperty predicate only from
+subject to object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS_REVERSE">META_PARENTS_REVERSE</a>
+    <span>
+        &nbsp;= &#039;parentsReverse&#039;                    </span>
+</dt>
+<dd>Like `relativesReverse` but follows the parentProperty predicate only
+from subject to object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES">META_RELATIVES</a>
     <span>
         &nbsp;= &#039;relatives&#039;                    </span>
 </dt>
-<dd></dd>
+<dd>Include metadata of all resources which can be reached from a given one
+by following (in both directions) an RDF predicate specified by the parentProperty
+as well as all metadata of all resources a given resource points to.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES_ONLY">META_RELATIVES_ONLY</a>
+    <span>
+        &nbsp;= &#039;relativesOnly&#039;                    </span>
+</dt>
+<dd>Include metadata of all resources which can be reached from a given one
+by following (in both directions) an RDF predicate specified by the parentProperty</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES_REVERSE">META_RELATIVES_REVERSE</a>
+    <span>
+        &nbsp;= &#039;relativesReverse&#039;                    </span>
+</dt>
+<dd>Include metadata of all resources which can be reached from a given one
+by following (in both directions) an RDF predicate specified by the parentProperty
+as well as all metadata of all resources a given resource points to and
+all resources pointing to a given one.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RESOURCE">META_RESOURCE</a>
     <span>
         &nbsp;= &#039;resource&#039;                    </span>
 </dt>
-<dd></dd>
+<dd>Provide only given resource&#039;s metadata</dd>
 
                     <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#method___construct">__construct()</a>
@@ -270,10 +309,12 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Provide only a `resourceUrl titleProperty title` triple for a requested
+resource/resources matching the search.</p>
+
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
@@ -283,6 +324,8 @@ $metadata object don&#039;t affect the resource metadata.</dd>
 
 
     
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -295,10 +338,13 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Include metadata of all resources a given one points to and all resources
+which point to it. If parentProperty is specified, only resources
+pointing to a given one with a specified RDF predicate are included.</p>
+
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
@@ -308,6 +354,8 @@ $metadata object don&#039;t affect the resource metadata.</dd>
 
 
     
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -320,10 +368,12 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Like `relatives` but follows the parentProperty predicate only from subject
+to object.</p>
+
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
@@ -333,6 +383,66 @@ $metadata object don&#039;t affect the resource metadata.</dd>
 
 
     
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_META_PARENTS_ONLY">
+        META_PARENTS_ONLY
+        <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS_ONLY" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Like `relativesOnly` but follows the parentProperty predicate only from
+subject to object.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">META_PARENTS_ONLY</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;parentsOnly&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_META_PARENTS_REVERSE">
+        META_PARENTS_REVERSE
+        <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS_REVERSE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">86</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Like `relativesReverse` but follows the parentProperty predicate only
+from subject to object.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">META_PARENTS_REVERSE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;parentsReverse&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -345,10 +455,13 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Include metadata of all resources which can be reached from a given one
+by following (in both directions) an RDF predicate specified by the parentProperty
+as well as all metadata of all resources a given resource points to.</p>
+
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
@@ -358,6 +471,68 @@ $metadata object don&#039;t affect the resource metadata.</dd>
 
 
     
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_META_RELATIVES_ONLY">
+        META_RELATIVES_ONLY
+        <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES_ONLY" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Include metadata of all resources which can be reached from a given one
+by following (in both directions) an RDF predicate specified by the parentProperty</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">META_RELATIVES_ONLY</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;relativesOnly&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_META_RELATIVES_REVERSE">
+        META_RELATIVES_REVERSE
+        <a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES_REVERSE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Include metadata of all resources which can be reached from a given one
+by following (in both directions) an RDF predicate specified by the parentProperty
+as well as all metadata of all resources a given resource points to and
+all resources pointing to a given one.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">META_RELATIVES_REVERSE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;relativesReverse&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -370,10 +545,11 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">Provide only given resource&#039;s metadata</p>
+
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__type">mixed</span>
@@ -383,6 +559,8 @@ $metadata object don&#039;t affect the resource metadata.</dd>
 
 
     
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -406,7 +584,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 </aside>
 
         <p class="phpdocumentor-summary">Creates an object representing a repository resource.</p>
@@ -415,8 +593,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-acdhRepoLib-RepoInterface.html"><abbr title="\acdhOeaw\acdhRepoLib\RepoInterface">RepoInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -444,8 +621,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -461,7 +637,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">214</span>
 </aside>
 
         <p class="phpdocumentor-summary">Returns all RDF types (classes) of a given repository resource.</p>
@@ -470,16 +646,14 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getClasses</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -495,7 +669,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 </aside>
 
         <p class="phpdocumentor-summary">Returns resource metadata.</p>
@@ -523,16 +697,14 @@ automatically affects the resource metadata.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                     <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\acdhRepoLib\getMetadata()">getMetadata()</abbr></span>
                                         
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -548,7 +720,7 @@ automatically affects the resource metadata.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 </aside>
 
         <p class="phpdocumentor-summary">Returns an array with all repository resource identifiers.</p>
@@ -557,16 +729,14 @@ automatically affects the resource metadata.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getIds</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -582,7 +752,7 @@ automatically affects the resource metadata.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 </aside>
 
         <p class="phpdocumentor-summary">Returns resource metadata.</p>
@@ -611,8 +781,7 @@ Use the setMetadata() method to write back the changes you made.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                     <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\acdhRepoLib\setMetadata()">setMetadata()</abbr></span>
                                         
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                             <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">see</span>
@@ -620,16 +789,14 @@ Use the setMetadata() method to write back the changes you made.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                     <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\acdhRepoLib\getGraph()">getGraph()</abbr></span>
                                         
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -645,7 +812,7 @@ Use the setMetadata() method to write back the changes you made.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 </aside>
 
         <p class="phpdocumentor-summary">Returns repository connection object associated with the given resource object.</p>
@@ -654,16 +821,14 @@ Use the setMetadata() method to write back the changes you made.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getRepo</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-acdhRepoLib-Repo.html"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-acdhRepoLib-Repo.html"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -679,7 +844,7 @@ Use the setMetadata() method to write back the changes you made.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 </aside>
 
         <p class="phpdocumentor-summary">Returns the repository resource URL.</p>
@@ -688,16 +853,14 @@ Use the setMetadata() method to write back the changes you made.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getUri</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -713,7 +876,7 @@ Use the setMetadata() method to write back the changes you made.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 </aside>
 
         <p class="phpdocumentor-summary">Naivly checks if the resource is of a given class.</p>
@@ -733,8 +896,7 @@ metadata.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\type">type</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -743,8 +905,7 @@ metadata.</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -760,7 +921,7 @@ metadata.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">135</span>
 </aside>
 
         <p class="phpdocumentor-summary">Loads current metadata from the repository.</p>
@@ -769,8 +930,7 @@ metadata.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">loadMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$force</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -789,11 +949,8 @@ or e.g. reset them back to their current state in the repository)</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>scope of the metadata returned by the repository:
-<code class="prettyprint">RepoResourceInterface::META_RESOURCE</code> - only given resource metadata,
-<code class="prettyprint">RepoResourceInterface::META_NEIGHBORS</code> - metadata of a given resource and all the resources pointed by its metadata,
-<code class="prettyprint">RepoResourceInterface::META_RELATIVES</code> - metadata of a given resource and all resources recursively pointed to a given metadata property
-(see the <code class="prettyprint">$parentProperty</code> parameter), both directly and in a reverse order (reverse in RDF terms)</p>
+                    <section class="phpdocumentor-description"><p>scope of the metadata returned by the repository -
+one of <code class="prettyprint">RepoResourceInterface::META_*</code> constants.</p>
 </section>
 
             </dd>
@@ -802,19 +959,33 @@ or e.g. reset them back to their current state in the repository)</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>RDF property name used to find related resources in the <code class="prettyprint">RepoResource::META_RELATIVES</code> mode</p>
+                    <section class="phpdocumentor-description"><p>RDF property name used to find related
+resources in some modes</p>
 </section>
 
             </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RESOURCE"><abbr title="\acdhOeaw\acdhRepoLib\RepoResourceInterface::META_RESOURCE">RepoResourceInterface::META_RESOURCE</abbr></a></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -830,7 +1001,7 @@ or e.g. reset them back to their current state in the repository)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 </aside>
 
         <p class="phpdocumentor-summary">Replaces resource metadata with a given RDF resource graph. A reference
@@ -852,8 +1023,7 @@ Use the updateMetadata() method to write them back.</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\EasyRdf\Resource">Resource</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -869,8 +1039,7 @@ Use the updateMetadata() method to write them back.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                     <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\acdhRepoLib\updateMetadata()">updateMetadata()</abbr></span>
                                         
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                             <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">see</span>
@@ -878,16 +1047,14 @@ Use the updateMetadata() method to write them back.</p>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                     <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\acdhRepoLib\setMetadata()">setMetadata()</abbr></span>
                                         
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -903,7 +1070,7 @@ Use the updateMetadata() method to write them back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php"><a href="files/arche-lib-src-acdhoeaw-acdhrepolib-reporesourceinterface.html"><abbr title="arche-lib/src/acdhOeaw/acdhRepoLib/RepoResourceInterface.php">RepoResourceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 </aside>
 
         <p class="phpdocumentor-summary">Replaces resource metadata with a given RDF resource graph. A deep copy
@@ -925,8 +1092,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\EasyRdf\Resource">Resource</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -942,8 +1108,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                     <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\acdhRepoLib\updateMetadata()">updateMetadata()</abbr></span>
                                         
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                             <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">see</span>
@@ -951,16 +1116,14 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                     <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\acdhRepoLib\setGraph()">setGraph()</abbr></span>
                                         
-                                                 <section class="phpdocumentor-description"></section>
-
+                                             
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
             </section>
