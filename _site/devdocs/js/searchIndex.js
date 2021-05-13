@@ -266,6 +266,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-BinaryPayload.html#method_updateFts"
         },                {
+            "fqsen": "\\acdhOeaw\\acdhRepo\\BinaryPayload\u003A\u003AupdateSpatialSearch\u0028\u0029",
+            "name": "updateSpatialSearch",
+            "summary": "",
+            "url": "classes/acdhOeaw-acdhRepo-BinaryPayload.html#method_updateSpatialSearch"
+        },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\BinaryPayload\u003A\u003AtoBytes\u0028\u0029",
             "name": "toBytes",
             "summary": "",
@@ -1196,10 +1201,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Apost\u0028\u0029",
-            "name": "post",
+            "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Aput\u0028\u0029",
+            "name": "put",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_post"
+            "url": "classes/acdhOeaw-acdhRepo-UserApi.html#method_put"
         },                {
             "fqsen": "\\acdhOeaw\\acdhRepo\\UserApi\u003A\u003Aget\u0028\u0029",
             "name": "get",
