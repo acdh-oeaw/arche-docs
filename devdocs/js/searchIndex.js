@@ -3206,11 +3206,6 @@ Search.appendIndex(
             "summary": "New\u0020fulltext\u0020search\u0020with\u0020binary\u0020search",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_fulltext_search"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003Arest_search\u0028\u0029",
-            "name": "rest_search",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_rest_search"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024pagingHelper",
             "name": "pagingHelper",
             "summary": "",
@@ -4420,11 +4415,6 @@ Search.appendIndex(
             "name": "setUpPayload",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_setUpPayload"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AgetViewData_V2\u0028\u0029",
-            "name": "getViewData_V2",
-            "summary": "Full\u0020content\u0020search",
-            "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_getViewData_V2"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AgetViewData\u0028\u0029",
             "name": "getViewData",
