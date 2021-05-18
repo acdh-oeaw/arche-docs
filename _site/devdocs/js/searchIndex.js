@@ -5236,1045 +5236,805 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ComposerTwigExtension.html#method_getComposerFile"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\AuthInterface",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\AuthInterface",
             "name": "AuthInterface",
             "summary": "Interface\u0020for\u0020metadata\u0020access\u0020authorization.",
-            "url": "classes/acdhOeaw-acdhRepoLib-AuthInterface.html"
+            "url": "classes/acdhOeaw-arche-lib-AuthInterface.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\AuthInterface\u003A\u003AgetMetadataAuthQuery\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\AuthInterface\u003A\u003AgetMetadataAuthQuery\u0028\u0029",
             "name": "getMetadataAuthQuery",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-AuthInterface.html#method_getMetadataAuthQuery"
+            "url": "classes/acdhOeaw-arche-lib-AuthInterface.html#method_getMetadataAuthQuery"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\BinaryPayload",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload",
             "name": "BinaryPayload",
             "summary": "Simple\u0020container\u0020for\u0020a\u0020request\u0020binary\u0020payload",
-            "url": "classes/acdhOeaw-acdhRepoLib-BinaryPayload.html"
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\BinaryPayload\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020binary\u0020payload\u0020object.",
-            "url": "classes/acdhOeaw-acdhRepoLib-BinaryPayload.html#method___construct"
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\BinaryPayload\u003A\u003A__destruct\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A__destruct\u0028\u0029",
             "name": "__destruct",
             "summary": "Makes\u0020sure\u0020all\u0020data\u0020streams\u0020are\u0020closed.",
-            "url": "classes/acdhOeaw-acdhRepoLib-BinaryPayload.html#method___destruct"
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#method___destruct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\BinaryPayload\u003A\u003AattachTo\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003AattachTo\u0028\u0029",
             "name": "attachTo",
             "summary": "Attaches\u0020the\u0020data\u0020to\u0020a\u0020given\u0020HTTP\u0020request.",
-            "url": "classes/acdhOeaw-acdhRepoLib-BinaryPayload.html#method_attachTo"
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#method_attachTo"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\BinaryPayload\u003A\u003AcreateFromData\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003AcreateFromData\u0028\u0029",
             "name": "createFromData",
             "summary": "Initializes\u0020the\u0020object\u0020from\u0020the\u0020data\u0020in\u0020string.",
-            "url": "classes/acdhOeaw-acdhRepoLib-BinaryPayload.html#method_createFromData"
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#method_createFromData"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\BinaryPayload\u003A\u003AcreateFromFile\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003AcreateFromFile\u0028\u0029",
             "name": "createFromFile",
             "summary": "Initializes\u0020the\u0020object\u0020from\u0020a\u0020file.",
-            "url": "classes/acdhOeaw-acdhRepoLib-BinaryPayload.html#method_createFromFile"
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#method_createFromFile"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\BinaryPayload\u003A\u003A\u0024data",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A\u0024data",
             "name": "data",
             "summary": "A\u0020stream\u0020object\u0020or\u0020the\u0020data\u0020as\u0020a\u0020string.",
-            "url": "classes/acdhOeaw-acdhRepoLib-BinaryPayload.html#property_data"
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#property_data"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\BinaryPayload\u003A\u003A\u0024fileName",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A\u0024fileName",
             "name": "fileName",
             "summary": "Name\u0020of\u0020the\u0020file\u0020data\u0020come\u0020from.",
-            "url": "classes/acdhOeaw-acdhRepoLib-BinaryPayload.html#property_fileName"
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#property_fileName"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\BinaryPayload\u003A\u003A\u0024mimeType",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A\u0024mimeType",
             "name": "mimeType",
             "summary": "Mime\u0020type\u0020of\u0020the\u0020data.",
-            "url": "classes/acdhOeaw-acdhRepoLib-BinaryPayload.html#property_mimeType"
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#property_mimeType"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\exception\\AmbiguousMatch",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Config",
+            "name": "Config",
+            "summary": "A\u0020container\u0020for\u0020the\u0020yaml\u0020configuration\u0020allowing\u0020to\u0020satisfy\u0020phpstan\u0020checks\nby\u0020mocking\u0020config\u0020properties\u0020hierarchy.",
+            "url": "classes/acdhOeaw-arche-lib-Config.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Config\u003A\u003AfromYaml\u0028\u0029",
+            "name": "fromYaml",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Config.html#method_fromYaml"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Config\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Config.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Config\u003A\u003A__get\u0028\u0029",
+            "name": "__get",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Config.html#method___get"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Config\u003A\u003AasObject\u0028\u0029",
+            "name": "asObject",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Config.html#method_asObject"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Config\u003A\u003AasArray\u0028\u0029",
+            "name": "asArray",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Config.html#method_asArray"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Config\u003A\u003AasYaml\u0028\u0029",
+            "name": "asYaml",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Config.html#method_asYaml"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Config\u003A\u003A\u0024cfg",
+            "name": "cfg",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Config.html#property_cfg"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\AmbiguousMatch",
             "name": "AmbiguousMatch",
             "summary": "Description\u0020of\u0020AmbiguousMatch",
-            "url": "classes/acdhOeaw-acdhRepoLib-exception-AmbiguousMatch.html"
+            "url": "classes/acdhOeaw-arche-lib-exception-AmbiguousMatch.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\exception\\AmbiguousMatch\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\AmbiguousMatch\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-exception-AmbiguousMatch.html#method___construct"
+            "url": "classes/acdhOeaw-arche-lib-exception-AmbiguousMatch.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\exception\\Deleted",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\Deleted",
             "name": "Deleted",
             "summary": "Description\u0020of\u0020Deleted",
-            "url": "classes/acdhOeaw-acdhRepoLib-exception-Deleted.html"
+            "url": "classes/acdhOeaw-arche-lib-exception-Deleted.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\exception\\Deleted\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\Deleted\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-exception-Deleted.html#method___construct"
+            "url": "classes/acdhOeaw-arche-lib-exception-Deleted.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\exception\\NotFound",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\NotFound",
             "name": "NotFound",
             "summary": "Description\u0020of\u0020NotFound",
-            "url": "classes/acdhOeaw-acdhRepoLib-exception-NotFound.html"
+            "url": "classes/acdhOeaw-arche-lib-exception-NotFound.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\exception\\NotFound\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\NotFound\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-exception-NotFound.html#method___construct"
+            "url": "classes/acdhOeaw-arche-lib-exception-NotFound.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\exception\\RepoLibException",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\RepoLibException",
             "name": "RepoLibException",
             "summary": "Description\u0020of\u0020RepoLibException",
-            "url": "classes/acdhOeaw-acdhRepoLib-exception-RepoLibException.html"
+            "url": "classes/acdhOeaw-arche-lib-exception-RepoLibException.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\QueryPart",
-            "name": "QueryPart",
-            "summary": "Simple\u0020container\u0020for\u0020an\u0020SQL\u0020query\u0020and\u0020its\u0020parameters",
-            "url": "classes/acdhOeaw-acdhRepoLib-QueryPart.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\QueryPart\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-QueryPart.html#method___construct"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\QueryPart\u003A\u003Ajoin\u0028\u0029",
-            "name": "join",
-            "summary": "Pastes\u0020the\u0020join\u0020code\u0020and\u0020the\u0020query\u0020if\u0020the\u0020query\u0020is\u0020not\u0020empty.",
-            "url": "classes/acdhOeaw-acdhRepoLib-QueryPart.html#method_join"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\QueryPart\u003A\u003A\u0024n",
-            "name": "n",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-QueryPart.html#property_n"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\QueryPart\u003A\u003A\u0024query",
-            "name": "query",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-QueryPart.html#property_query"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\QueryPart\u003A\u003A\u0024param",
-            "name": "param",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-QueryPart.html#property_param"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo",
-            "name": "Repo",
-            "summary": "A\u0020repository\u0020connection\u0020class.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003Afactory\u0028\u0029",
-            "name": "factory",
-            "summary": "Creates\u0020a\u0020repository\u0020object\u0020instance\u0020from\u0020a\u0020given\u0020configuration\u0020file.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_factory"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003AfactoryInteractive\u0028\u0029",
-            "name": "factoryInteractive",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_factoryInteractive"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003AfactoryFromUrl\u0028\u0029",
-            "name": "factoryFromUrl",
-            "summary": "Creates\u0020a\u0020Repo\u0020instance\u0020from\u0020any\u0020URL\u0020resolving\u0020to\u0020a\u0020repository\u0020resource.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_factoryFromUrl"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Creates\u0020an\u0020repository\u0020connection\u0020object.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method___construct"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003AcreateResource\u0028\u0029",
-            "name": "createResource",
-            "summary": "Creates\u0020a\u0020repository\u0020resource.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_createResource"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003AsendRequest\u0028\u0029",
-            "name": "sendRequest",
-            "summary": "Sends\u0020an\u0020HTTP\u0020request\u0020to\u0020the\u0020repository.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_sendRequest"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003AgetResourceByIds\u0028\u0029",
-            "name": "getResourceByIds",
-            "summary": "Tries\u0020to\u0020find\u0020a\u0020single\u0020repository\u0020resource\u0020matching\u0020provided\u0020identifiers.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_getResourceByIds"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003AgetResourcesBySqlQuery\u0028\u0029",
-            "name": "getResourcesBySqlQuery",
-            "summary": "Performs\u0020a\u0020search",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_getResourcesBySqlQuery"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003AgetResourcesBySearchTerms\u0028\u0029",
-            "name": "getResourcesBySearchTerms",
-            "summary": "Returns\u0020repository\u0020resources\u0020matching\u0020all\u0020provided\u0020search\u0020terms.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_getResourcesBySearchTerms"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003Abegin\u0028\u0029",
-            "name": "begin",
-            "summary": "Begins\u0020a\u0020transaction.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_begin"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003Arollback\u0028\u0029",
-            "name": "rollback",
-            "summary": "Rolls\u0020back\u0020the\u0020current\u0020transaction\u0020\u0028started\u0020with\u0020\u0060begin\u0028\u0029\u0060\u0029.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_rollback"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003Acommit\u0028\u0029",
-            "name": "commit",
-            "summary": "Commits\u0020the\u0020current\u0020transaction\u0020\u0028started\u0020with\u0020\u0060begin\u0028\u0029\u0060\u0029.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_commit"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003Aprolong\u0028\u0029",
-            "name": "prolong",
-            "summary": "Prolongs\u0020the\u0020current\u0020transaction\u0020\u0028started\u0020with\u0020\u0060begin\u0028\u0029\u0060\u0029.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_prolong"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003AinTransaction\u0028\u0029",
-            "name": "inTransaction",
-            "summary": "Checks\u0020if\u0020there\u0020is\u0020an\u0020active\u0020transaction.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_inTransaction"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003AparseSearchResponse\u0028\u0029",
-            "name": "parseSearchResponse",
-            "summary": "Parses\u0020search\u0020request\u0020response\u0020into\u0020an\u0020array\u0020of\u0020\u0060RepoResource\u0060\u0020objects.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#method_parseSearchResponse"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003A\u0024resourceClass",
-            "name": "resourceClass",
-            "summary": "A\u0020class\u0020used\u0020to\u0020instantiate\u0020objects\u0020representing\u0020repository\u0020resources.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#property_resourceClass"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003A\u0024client",
-            "name": "client",
-            "summary": "The\u0020Guzzle\u0020client\u0020object\u0020used\u0020to\u0020send\u0020HTTP\u0020requests",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#property_client"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Repo\u003A\u003A\u0024txId",
-            "name": "txId",
-            "summary": "Current\u0020transaction\u0020id",
-            "url": "classes/acdhOeaw-acdhRepoLib-Repo.html#property_txId"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb",
-            "name": "RepoDb",
-            "summary": "Provides\u0020a\u0020read\u0020only\u0020access\u0020to\u0020the\u0020repository\u0020on\u0020the\u0020relational\u0020database\u0020level.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003Afactory\u0028\u0029",
-            "name": "factory",
-            "summary": "Creates\u0020a\u0020repository\u0020object\u0020instance\u0020from\u0020a\u0020given\u0020configuration\u0020file.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_factory"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method___construct"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetResourceByIds\u0028\u0029",
-            "name": "getResourceByIds",
-            "summary": "Tries\u0020to\u0020find\u0020a\u0020single\u0020repository\u0020resource\u0020matching\u0020provided\u0020identifiers.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getResourceByIds"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetResourcesBySearchTerms\u0028\u0029",
-            "name": "getResourcesBySearchTerms",
-            "summary": "Returns\u0020repository\u0020resources\u0020matching\u0020all\u0020provided\u0020search\u0020terms.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getResourcesBySearchTerms"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetResourcesBySqlQuery\u0028\u0029",
-            "name": "getResourcesBySqlQuery",
-            "summary": "Performs\u0020a\u0020search",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getResourcesBySqlQuery"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetGraphBySearchTerms\u0028\u0029",
-            "name": "getGraphBySearchTerms",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getGraphBySearchTerms"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetGraphBySqlQuery\u0028\u0029",
-            "name": "getGraphBySqlQuery",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getGraphBySqlQuery"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetPdoStatementBySearchTerms\u0028\u0029",
-            "name": "getPdoStatementBySearchTerms",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getPdoStatementBySearchTerms"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetPdoStatementBySqlQuery\u0028\u0029",
-            "name": "getPdoStatementBySqlQuery",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getPdoStatementBySqlQuery"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003ArunQuery\u0028\u0029",
-            "name": "runQuery",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_runQuery"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetMetadataAuthQuery\u0028\u0029",
-            "name": "getMetadataAuthQuery",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getMetadataAuthQuery"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetFtsQuery\u0028\u0029",
-            "name": "getFtsQuery",
-            "summary": "Prepares\u0020an\u0020SQL\u0020query\u0020adding\u0020a\u0020full\u0020text\u0020search\u0020query\u0020results\u0020as\nmetadata\u0020graph\u0020edges.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getFtsQuery"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetOrderByQuery\u0028\u0029",
-            "name": "getOrderByQuery",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getOrderByQuery"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AgetPagingQuery\u0028\u0029",
-            "name": "getPagingQuery",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_getPagingQuery"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AparsePdoStatement\u0028\u0029",
-            "name": "parsePdoStatement",
-            "summary": "Parses\u0020SQL\u0020query\u0020results\u0020containing\u0020resources\u0020metadata\u0020into\u0020an\u0020RDF\u0020graph.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_parsePdoStatement"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AparseSearchGraph\u0028\u0029",
-            "name": "parseSearchGraph",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_parseSearchGraph"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003AlogQuery\u0028\u0029",
-            "name": "logQuery",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#method_logQuery"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003A\u0024resourceClass",
-            "name": "resourceClass",
-            "summary": "A\u0020class\u0020used\u0020to\u0020instantiate\u0020objects\u0020representing\u0020repository\u0020resources.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#property_resourceClass"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003A\u0024highlightParam",
-            "name": "highlightParam",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#property_highlightParam"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003A\u0024pdo",
-            "name": "pdo",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#property_pdo"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003A\u0024nonRelationProperties",
-            "name": "nonRelationProperties",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#property_nonRelationProperties"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoDb\u003A\u003A\u0024auth",
-            "name": "auth",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoDb.html#property_auth"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoInterface",
-            "name": "RepoInterface",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoInterface.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoInterface\u003A\u003AgetBaseUrl\u0028\u0029",
-            "name": "getBaseUrl",
-            "summary": "Returns\u0020the\u0020repository\u0020REST\u0020API\u0020base\u0020URL.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoInterface.html#method_getBaseUrl"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoInterface\u003A\u003AgetSchema\u0028\u0029",
-            "name": "getSchema",
-            "summary": "Returns\u0020the\u0020\u0060Schema\u0060\u0020object\u0020defining\u0020repository\u0020entities\u0020to\u0020RDF\u0020property\u0020mappings.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoInterface.html#method_getSchema"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoInterface\u003A\u003AgetResourceById\u0028\u0029",
-            "name": "getResourceById",
-            "summary": "Tries\u0020to\u0020find\u0020a\u0020repository\u0020resource\u0020with\u0020a\u0020given\u0020id.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoInterface.html#method_getResourceById"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoInterface\u003A\u003AgetResourceByIds\u0028\u0029",
-            "name": "getResourceByIds",
-            "summary": "Tries\u0020to\u0020find\u0020a\u0020single\u0020repository\u0020resource\u0020matching\u0020provided\u0020identifiers.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoInterface.html#method_getResourceByIds"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoInterface\u003A\u003AgetResourcesBySqlQuery\u0028\u0029",
-            "name": "getResourcesBySqlQuery",
-            "summary": "Performs\u0020a\u0020search",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoInterface.html#method_getResourcesBySqlQuery"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoInterface\u003A\u003AgetResourcesBySearchTerms\u0028\u0029",
-            "name": "getResourcesBySearchTerms",
-            "summary": "Returns\u0020repository\u0020resources\u0020matching\u0020all\u0020provided\u0020search\u0020terms.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoInterface.html#method_getResourcesBySearchTerms"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource",
             "name": "RepoResource",
             "summary": "Description\u0020of\u0020RepoResource",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003Afactory\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003Afactory\u0028\u0029",
             "name": "factory",
             "summary": "Creates\u0020a\u0020repository\u0020resource\u0020object\u0020from\u0020the\u0020PSR\u002D7\u0020response\u0020object\nreturning\u0020the\u0020metadata.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#method_factory"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_factory"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020an\u0020object\u0020representing\u0020a\u0020repository\u0020resource.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#method___construct"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003AgetContent\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AgetContent\u0028\u0029",
             "name": "getContent",
             "summary": "Returns\u0020repository\u0020resource\u0020binary\u0020content.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#method_getContent"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_getContent"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003AupdateContent\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AupdateContent\u0028\u0029",
             "name": "updateContent",
             "summary": "Updates\u0020repository\u0020resource\u0020binary\u0020content\u0020with\u0020a\u0020given\u0020payload.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#method_updateContent"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_updateContent"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003AhasBinaryContent\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AhasBinaryContent\u0028\u0029",
             "name": "hasBinaryContent",
             "summary": "Checks\u0020if\u0020the\u0020resource\u0020has\u0020the\u0020binary\u0020content.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#method_hasBinaryContent"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_hasBinaryContent"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003AupdateMetadata\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AupdateMetadata\u0028\u0029",
             "name": "updateMetadata",
             "summary": "Saves\u0020the\u0020object\u0020metadata\u0020to\u0020the\u0020repository.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#method_updateMetadata"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_updateMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003Adelete\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
             "summary": "Deletes\u0020the\u0020repository\u0020resource.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#method_delete"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_delete"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003AdeleteRecursively\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AdeleteRecursively\u0028\u0029",
             "name": "deleteRecursively",
             "summary": "Deletes\u0020the\u0020repository\u0020resource\u0020as\u0020well\u0020as\u0020all\u0020the\u0020resources\u0020pointing\u0020to\nit\u0020with\u0020a\u0020given\u0020metadata\u0020property.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#method_deleteRecursively"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_deleteRecursively"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003AloadMetadata\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AloadMetadata\u0028\u0029",
             "name": "loadMetadata",
             "summary": "Loads\u0020current\u0020metadata\u0020from\u0020the\u0020repository.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#method_loadMetadata"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_loadMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003AparseMetadata\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AparseMetadata\u0028\u0029",
             "name": "parseMetadata",
             "summary": "Parses\u0020metadata\u0020fetched\u0020from\u0020the\u0020repository.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#method_parseMetadata"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_parseMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003AgetId\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AgetId\u0028\u0029",
             "name": "getId",
             "summary": "Returns\u0020an\u0020internal\u0020repository\u0020resource\u0020identifier.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#method_getId"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_getId"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003AUPDATE_ADD",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AUPDATE_ADD",
             "name": "UPDATE_ADD",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#constant_UPDATE_ADD"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#constant_UPDATE_ADD"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003AUPDATE_OVERWRITE",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AUPDATE_OVERWRITE",
             "name": "UPDATE_OVERWRITE",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#constant_UPDATE_OVERWRITE"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#constant_UPDATE_OVERWRITE"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003AUPDATE_MERGE",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AUPDATE_MERGE",
             "name": "UPDATE_MERGE",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#constant_UPDATE_MERGE"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#constant_UPDATE_MERGE"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003ADELETE_STEP",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003ADELETE_STEP",
             "name": "DELETE_STEP",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#constant_DELETE_STEP"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#constant_DELETE_STEP"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003A\u0024repo",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#property_repo"
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#property_repo"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResource\u003A\u003A\u0024url",
-            "name": "url",
-            "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResource.html#property_url"
-        },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceDb",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceDb",
             "name": "RepoResourceDb",
             "summary": "Provides\u0020a\u0020read\u002Donly\u0020access\u0020to\u0020the\u0020repository\u0020resource\u0027s\u0020metadata.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceDb.html"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceDb.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceDb\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceDb\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020an\u0020object\u0020representing\u0020a\u0020repository\u0020resource.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceDb.html#method___construct"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceDb.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceDb\u003A\u003AloadMetadata\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceDb\u003A\u003AloadMetadata\u0028\u0029",
             "name": "loadMetadata",
             "summary": "Loads\u0020current\u0020metadata\u0020from\u0020the\u0020repository.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceDb.html#method_loadMetadata"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceDb.html#method_loadMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceDb\u003A\u003AgetMetadataQuery\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceDb\u003A\u003AgetMetadataQuery\u0028\u0029",
             "name": "getMetadataQuery",
             "summary": "Returns\u0020a\u0020QueryPart\u0020object\u0020with\u0020an\u0020SQL\u0020query\u0020loading\u0020resource\u0027s\u0020metadata\nin\u0020a\u0020given\u0020mode.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceDb.html#method_getMetadataQuery"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceDb.html#method_getMetadataQuery"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceDb\u003A\u003A\u0024id",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceDb\u003A\u003A\u0024id",
             "name": "id",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceDb.html#property_id"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceDb.html#property_id"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceDb\u003A\u003A\u0024repo",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceDb\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceDb.html#property_repo"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceDb.html#property_repo"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface",
             "name": "RepoResourceInterface",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020an\u0020object\u0020representing\u0020a\u0020repository\u0020resource.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#method___construct"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AgetUri\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AgetUri\u0028\u0029",
             "name": "getUri",
             "summary": "Returns\u0020the\u0020repository\u0020resource\u0020URL.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#method_getUri"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_getUri"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AgetRepo\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AgetRepo\u0028\u0029",
             "name": "getRepo",
             "summary": "Returns\u0020repository\u0020connection\u0020object\u0020associated\u0020with\u0020the\u0020given\u0020resource\u0020object.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#method_getRepo"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_getRepo"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AgetIds\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AgetIds\u0028\u0029",
             "name": "getIds",
             "summary": "Returns\u0020an\u0020array\u0020with\u0020all\u0020repository\u0020resource\u0020identifiers.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#method_getIds"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_getIds"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AloadMetadata\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AloadMetadata\u0028\u0029",
             "name": "loadMetadata",
             "summary": "Loads\u0020current\u0020metadata\u0020from\u0020the\u0020repository.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#method_loadMetadata"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_loadMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AgetGraph\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AgetGraph\u0028\u0029",
             "name": "getGraph",
             "summary": "Returns\u0020resource\u0020metadata.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#method_getGraph"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_getGraph"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AgetMetadata\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
             "summary": "Returns\u0020resource\u0020metadata.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#method_getMetadata"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_getMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AsetGraph\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AsetGraph\u0028\u0029",
             "name": "setGraph",
             "summary": "Replaces\u0020resource\u0020metadata\u0020with\u0020a\u0020given\u0020RDF\u0020resource\u0020graph.\u0020A\u0020reference\nto\u0020the\u0020provided\u0020metadata\u0020is\u0020stored\u0020meaning\u0020future\u0020modifications\u0020of\u0020the\n\u0024metadata\u0020object\u0020automatically\u0020affect\u0020the\u0020resource\u0020metadata.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#method_setGraph"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_setGraph"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AsetMetadata\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AsetMetadata\u0028\u0029",
             "name": "setMetadata",
             "summary": "Replaces\u0020resource\u0020metadata\u0020with\u0020a\u0020given\u0020RDF\u0020resource\u0020graph.\u0020A\u0020deep\u0020copy\nof\u0020the\u0020provided\u0020metadata\u0020is\u0020stored\u0020meaning\u0020future\u0020modifications\u0020of\u0020the\n\u0024metadata\u0020object\u0020don\u0027t\u0020affect\u0020the\u0020resource\u0020metadata.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#method_setMetadata"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_setMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AisA\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AisA\u0028\u0029",
             "name": "isA",
             "summary": "Naivly\u0020checks\u0020if\u0020the\u0020resource\u0020is\u0020of\u0020a\u0020given\u0020class.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#method_isA"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_isA"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AgetClasses\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AgetClasses\u0028\u0029",
             "name": "getClasses",
             "summary": "Returns\u0020all\u0020RDF\u0020types\u0020\u0028classes\u0029\u0020of\u0020a\u0020given\u0020repository\u0020resource.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#method_getClasses"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_getClasses"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_RESOURCE",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AMETA_RESOURCE",
             "name": "META_RESOURCE",
             "summary": "Provide\u0020only\u0020given\u0020resource\u0027s\u0020metadata",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RESOURCE"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#constant_META_RESOURCE"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_NEIGHBORS",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AMETA_NEIGHBORS",
             "name": "META_NEIGHBORS",
             "summary": "Include\u0020metadata\u0020of\u0020all\u0020resources\u0020a\u0020given\u0020one\u0020points\u0020to\u0020and\u0020all\u0020resources\nwhich\u0020point\u0020to\u0020it.\u0020If\u0020parentProperty\u0020is\u0020specified,\u0020only\u0020resources\npointing\u0020to\u0020a\u0020given\u0020one\u0020with\u0020a\u0020specified\u0020RDF\u0020predicate\u0020are\u0020included.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_NEIGHBORS"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#constant_META_NEIGHBORS"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_RELATIVES",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AMETA_RELATIVES",
             "name": "META_RELATIVES",
             "summary": "Include\u0020metadata\u0020of\u0020all\u0020resources\u0020which\u0020can\u0020be\u0020reached\u0020from\u0020a\u0020given\u0020one\nby\u0020following\u0020\u0028in\u0020both\u0020directions\u0029\u0020an\u0020RDF\u0020predicate\u0020specified\u0020by\u0020the\u0020parentProperty\nas\u0020well\u0020as\u0020all\u0020metadata\u0020of\u0020all\u0020resources\u0020a\u0020given\u0020resource\u0020points\u0020to.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#constant_META_RELATIVES"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_RELATIVES_ONLY",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AMETA_RELATIVES_ONLY",
             "name": "META_RELATIVES_ONLY",
             "summary": "Include\u0020metadata\u0020of\u0020all\u0020resources\u0020which\u0020can\u0020be\u0020reached\u0020from\u0020a\u0020given\u0020one\nby\u0020following\u0020\u0028in\u0020both\u0020directions\u0029\u0020an\u0020RDF\u0020predicate\u0020specified\u0020by\u0020the\u0020parentProperty",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES_ONLY"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#constant_META_RELATIVES_ONLY"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_RELATIVES_REVERSE",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AMETA_RELATIVES_REVERSE",
             "name": "META_RELATIVES_REVERSE",
             "summary": "Include\u0020metadata\u0020of\u0020all\u0020resources\u0020which\u0020can\u0020be\u0020reached\u0020from\u0020a\u0020given\u0020one\nby\u0020following\u0020\u0028in\u0020both\u0020directions\u0029\u0020an\u0020RDF\u0020predicate\u0020specified\u0020by\u0020the\u0020parentProperty\nas\u0020well\u0020as\u0020all\u0020metadata\u0020of\u0020all\u0020resources\u0020a\u0020given\u0020resource\u0020points\u0020to\u0020and\nall\u0020resources\u0020pointing\u0020to\u0020a\u0020given\u0020one.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_RELATIVES_REVERSE"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#constant_META_RELATIVES_REVERSE"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_PARENTS",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AMETA_PARENTS",
             "name": "META_PARENTS",
             "summary": "Like\u0020\u0060relatives\u0060\u0020but\u0020follows\u0020the\u0020parentProperty\u0020predicate\u0020only\u0020from\u0020subject\nto\u0020object.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#constant_META_PARENTS"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_PARENTS_ONLY",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AMETA_PARENTS_ONLY",
             "name": "META_PARENTS_ONLY",
             "summary": "Like\u0020\u0060relativesOnly\u0060\u0020but\u0020follows\u0020the\u0020parentProperty\u0020predicate\u0020only\u0020from\nsubject\u0020to\u0020object.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS_ONLY"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#constant_META_PARENTS_ONLY"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_PARENTS_REVERSE",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AMETA_PARENTS_REVERSE",
             "name": "META_PARENTS_REVERSE",
             "summary": "Like\u0020\u0060relativesReverse\u0060\u0020but\u0020follows\u0020the\u0020parentProperty\u0020predicate\u0020only\nfrom\u0020subject\u0020to\u0020object.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_PARENTS_REVERSE"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#constant_META_PARENTS_REVERSE"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceInterface\u003A\u003AMETA_IDS",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AMETA_IDS",
             "name": "META_IDS",
             "summary": "Provide\u0020only\u0020a\u0020\u0060resourceUrl\u0020titleProperty\u0020title\u0060\u0020triple\u0020for\u0020a\u0020requested\nresource\/resources\u0020matching\u0020the\u0020search.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceInterface.html#constant_META_IDS"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#constant_META_IDS"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceResolver",
             "name": "RepoResourceResolver",
             "summary": "Returns\u0020repository\u0020resource\u0020object\u0020having\u0020a\u0020given\u0020id.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceResolver.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceResolver\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Sets\u0020up\u0020the\u0020resolver.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method___construct"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceResolver.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003Aresolve\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceResolver\u003A\u003Aresolve\u0028\u0029",
             "name": "resolve",
             "summary": "Resolves\u0020a\u0020given\u0020resource\u0020URI\u0020according\u0020to\u0020the\u0020resolver\u0020settings.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_resolve"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceResolver.html#method_resolve"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003AresolveUrl\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceResolver\u003A\u003AresolveUrl\u0028\u0029",
             "name": "resolveUrl",
             "summary": "Resolves\u0020a\u0020given\u0020URL\u0020in\u0020a\u0020zero\u002Dconfiguration\u0020mode.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_resolveUrl"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceResolver.html#method_resolveUrl"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003AhandleException\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceResolver\u003A\u003AhandleException\u0028\u0029",
             "name": "handleException",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#method_handleException"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceResolver.html#method_handleException"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A\u0024config",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceResolver\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_config"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceResolver.html#property_config"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A\u0024repo",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceResolver\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_repo"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceResolver.html#property_repo"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceResolver\u003A\u003A\u0024log",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceResolver\u003A\u003A\u0024log",
             "name": "log",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceResolver.html#property_log"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceResolver.html#property_log"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait",
             "name": "RepoResourceTrait",
             "summary": "A\u0020common\u0020boilet\u0020plate\u0020code\u0020to\u0020be\u0020reused\u0020by\u0020all\u0020RepoResourceInterface\nimplementations.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003AgetUri\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003AgetUri\u0028\u0029",
             "name": "getUri",
             "summary": "Returns\u0020the\u0020repository\u0020resource\u0020URL.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#method_getUri"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getUri"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003AgetRepo\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003AgetRepo\u0028\u0029",
             "name": "getRepo",
             "summary": "Returns\u0020repository\u0020connection\u0020object\u0020associated\u0020with\u0020the\u0020given\u0020resource\u0020object.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#method_getRepo"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getRepo"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003AgetIds\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003AgetIds\u0028\u0029",
             "name": "getIds",
             "summary": "Returns\u0020an\u0020array\u0020with\u0020all\u0020repository\u0020resource\u0020identifiers.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#method_getIds"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getIds"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003AgetClasses\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003AgetClasses\u0028\u0029",
             "name": "getClasses",
             "summary": "Returns\u0020all\u0020RDF\u0020types\u0020\u0028classes\u0029\u0020of\u0020a\u0020given\u0020repository\u0020resource.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#method_getClasses"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getClasses"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003AgetMetadata\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003AgetMetadata\u0028\u0029",
             "name": "getMetadata",
             "summary": "Returns\u0020resource\u0020metadata.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#method_getMetadata"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003AgetGraph\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003AgetGraph\u0028\u0029",
             "name": "getGraph",
             "summary": "Returns\u0020resource\u0020metadata.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#method_getGraph"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getGraph"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003AsetMetadata\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003AsetMetadata\u0028\u0029",
             "name": "setMetadata",
             "summary": "Replaces\u0020resource\u0020metadata\u0020with\u0020a\u0020given\u0020RDF\u0020resource\u0020graph.\u0020A\u0020deep\u0020copy\nof\u0020the\u0020provided\u0020metadata\u0020is\u0020stored\u0020meaning\u0020future\u0020modifications\u0020of\u0020the\n\u0024metadata\u0020object\u0020don\u0027t\u0020affect\u0020the\u0020resource\u0020metadata.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#method_setMetadata"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_setMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003AsetGraph\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003AsetGraph\u0028\u0029",
             "name": "setGraph",
             "summary": "Replaces\u0020resource\u0020metadata\u0020with\u0020a\u0020given\u0020RDF\u0020resource\u0020graph.\u0020A\u0020reference\nto\u0020the\u0020provided\u0020metadata\u0020is\u0020stored\u0020meaning\u0020future\u0020modifications\u0020of\u0020the\n\u0024metadata\u0020object\u0020automatically\u0020affect\u0020the\u0020resource\u0020metadata.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#method_setGraph"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_setGraph"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003AisA\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003AisA\u0028\u0029",
             "name": "isA",
             "summary": "Naivly\u0020checks\u0020if\u0020the\u0020resource\u0020is\u0020of\u0020a\u0020given\u0020class.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#method_isA"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_isA"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003AloadMetadata\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003AloadMetadata\u0028\u0029",
             "name": "loadMetadata",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#method_loadMetadata"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_loadMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003A\u0024metadata",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003A\u0024metadata",
             "name": "metadata",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#property_metadata"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_metadata"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003A\u0024metaSynced",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003A\u0024metaSynced",
             "name": "metaSynced",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#property_metaSynced"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_metaSynced"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003A\u0024repo",
-            "name": "repo",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003A\u0024repoInt",
+            "name": "repoInt",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#property_repo"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_repoInt"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoResourceTrait\u003A\u003A\u0024url",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceTrait\u003A\u003A\u0024url",
             "name": "url",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoResourceTrait.html#property_url"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_url"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoTrait",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait",
             "name": "RepoTrait",
             "summary": "A\u0020common\u0020\u0028mostly\u0020boiler\u0020plate\u0029\u0020code\u0020for\u0020classes\u0020implementing\u0020the\u0020RepoInterface.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoTrait.html"
+            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoTrait\u003A\u003AgetBaseUrl\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003AgetBaseUrl\u0028\u0029",
             "name": "getBaseUrl",
             "summary": "Returns\u0020the\u0020repository\u0020REST\u0020API\u0020base\u0020URL.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoTrait.html#method_getBaseUrl"
+            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#method_getBaseUrl"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoTrait\u003A\u003AgetSchema\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003AgetSchema\u0028\u0029",
             "name": "getSchema",
             "summary": "Returns\u0020the\u0020\u0060Schema\u0060\u0020object\u0020defining\u0020repository\u0020entities\u0020to\u0020RDF\u0020property\u0020mappings.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoTrait.html#method_getSchema"
+            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#method_getSchema"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoTrait\u003A\u003AgetHeaderName\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003AgetHeaderName\u0028\u0029",
             "name": "getHeaderName",
             "summary": "Returns\u0020an\u0020HTTP\u0020header\u0020name\u0020to\u0020be\u0020used\u0020to\u0020pass\u0020a\u0020given\u0020information\u0020in\u0020the\u0020repository\u0020request.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoTrait.html#method_getHeaderName"
+            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#method_getHeaderName"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoTrait\u003A\u003AgetResourceById\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003AgetResourceById\u0028\u0029",
             "name": "getResourceById",
             "summary": "Tries\u0020to\u0020find\u0020a\u0020repository\u0020resource\u0020with\u0020a\u0020given\u0020id.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoTrait.html#method_getResourceById"
+            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#method_getResourceById"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoTrait\u003A\u003AsetQueryLog\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003AsetQueryLog\u0028\u0029",
             "name": "setQueryLog",
             "summary": "Sets\u0020a\u0020search\u0020queries\u0020logger",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoTrait.html#method_setQueryLog"
+            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#method_setQueryLog"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoTrait\u003A\u003A\u0024baseUrl",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003A\u0024baseUrl",
             "name": "baseUrl",
             "summary": "Repository\u0020REST\u0020API\u0020base\u0020URL",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoTrait.html#property_baseUrl"
+            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#property_baseUrl"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoTrait\u003A\u003A\u0024headers",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003A\u0024headers",
             "name": "headers",
             "summary": "An\u0020object\u0020providing\u0020mappings\u0020of\u0020repository\u0020REST\u0020API\u0020parameters\u0020to\u0020HTTP\u0020headers\u0020used\u0020by\u0020a\u0020given\u0020repository\u0020instance.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoTrait.html#property_headers"
+            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#property_headers"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoTrait\u003A\u003A\u0024schema",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003A\u0024schema",
             "name": "schema",
             "summary": "An\u0020object\u0020providing\u0020mappings\u0020of\u0020repository\u0020concepts\u0020to\u0020RDF\u0020properties\u0020used\u0020to\u0020denote\u0020them\u0020by\u0020a\u0020given\u0020repository\u0020instance.",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoTrait.html#property_schema"
+            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#property_schema"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\RepoTrait\u003A\u003A\u0024queryLog",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003A\u0024queryLog",
             "name": "queryLog",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-RepoTrait.html#property_queryLog"
+            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#property_queryLog"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Schema",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Schema",
             "name": "Schema",
             "summary": "A\u0020container\u0020for\u0020configuration\u0020properties.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Schema.html"
+            "url": "classes/acdhOeaw-arche-lib-Schema.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Schema\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Schema\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020the\u0020Schema\u0020object.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Schema.html#method___construct"
+            "url": "classes/acdhOeaw-arche-lib-Schema.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Schema\u003A\u003A__get\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Schema\u003A\u003A__get\u0028\u0029",
             "name": "__get",
             "summary": "Magic\u0020method\u0020implementing\u0020accessing\u0020properties.",
-            "url": "classes/acdhOeaw-acdhRepoLib-Schema.html#method___get"
+            "url": "classes/acdhOeaw-arche-lib-Schema.html#method___get"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\Schema\u003A\u003A\u0024schema",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Schema\u003A\u003A\u0024schema",
             "name": "schema",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-Schema.html#property_schema"
+            "url": "classes/acdhOeaw-arche-lib-Schema.html#property_schema"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig",
             "name": "SearchConfig",
             "summary": "Stores\u0020the\u0020repository\u0020search\u0020configuration,\u0020e.g.\u0020full\u0020text\u0020search\u0020options\u0020and\u0020pagination\u0020options.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003Afactory\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003Afactory\u0028\u0029",
             "name": "factory",
             "summary": "Creates\u0020an\u0020instance\u0020of\u0020the\u0020SearchConfig\u0020class\u0020form\u0020the\u0020POST\u0020data.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#method_factory"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_factory"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003AtoArray\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AtoArray\u0028\u0029",
             "name": "toArray",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#method_toArray"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_toArray"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003AgetHeaders\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AgetHeaders\u0028\u0029",
             "name": "getHeaders",
             "summary": "Returns\u0020HTTP\u0020request\u0020headers\u0020setting\u0020metadata\u0020read\u0020mode\u0020and\u0020metadata\u0020parent\u0020property\naccording\u0020to\u0020the\u0020search\u0020config\u0020settings.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#method_getHeaders"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_getHeaders"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003AtoQuery\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AtoQuery\u0028\u0029",
             "name": "toQuery",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#method_toQuery"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_toQuery"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003AFTS_BINARY",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AFTS_BINARY",
             "name": "FTS_BINARY",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#constant_FTS_BINARY"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#constant_FTS_BINARY"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024metadataMode",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024metadataMode",
             "name": "metadataMode",
             "summary": "Controls\u0020amount\u0020of\u0020metadata\u0020included\u0020in\u0020the\u0020search\u0020results.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_metadataMode"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_metadataMode"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024metadataParentProperty",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024metadataParentProperty",
             "name": "metadataParentProperty",
             "summary": "RDF\u0020predicate\u0020used\u0020by\u0020some\u0020of\u0020metadataModes.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_metadataParentProperty"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_metadataParentProperty"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024limit",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024limit",
             "name": "limit",
             "summary": "Maximum\u0020number\u0020of\u0020returned\u0020resources\u0020\u0028only\u0020resources\u0020matched\u0020by\u0020the\u0020search\nare\u0020counted\u0020\u002D\u0020see\u0020\u0060\u0024metadataMode\u0060\u0029.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_limit"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_limit"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024offset",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024offset",
             "name": "offset",
             "summary": "Offset\u0020of\u0020the\u0020first\u0020returned\u0020result.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_offset"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_offset"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024count",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024count",
             "name": "count",
             "summary": "Total\u0020number\u0020of\u0020resources\u0020matching\u0020the\u0020search\u0020\u0028despite\u0020limit\/offset\u0029",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_count"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_count"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024orderBy",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024orderBy",
             "name": "orderBy",
             "summary": "List\u0020of\u0020metadata\u0020properties\u0020to\u0020order\u0020results\u0020by.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_orderBy"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_orderBy"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024orderByLang",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024orderByLang",
             "name": "orderByLang",
             "summary": "If\u0020specified,\u0020only\u0020property\u0020values\u0020with\u0020a\u0020given\u0020language\u0020are\u0020taken\u0020into\naccount\u0020for\u0020ordering\u0020search\u0020matches.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_orderByLang"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_orderByLang"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024ftsQuery",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsQuery",
             "name": "ftsQuery",
             "summary": "A\u0020full\u0020text\u0020search\u0020query\u0020used\u0020for\u0020search\u0020results\u0020highlighting.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_ftsQuery"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsQuery"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024ftsProperty",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsProperty",
             "name": "ftsProperty",
             "summary": "Data\u0020to\u0020be\u0020used\u0020for\u0020full\u0020text\u0020search\u0020results\u0020highlighting.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_ftsProperty"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsProperty"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024ftsStartSel",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsStartSel",
             "name": "ftsStartSel",
             "summary": "Full\u0020text\u0020search\u0020highlighting\u0020options\u0020see\u0020\u002D\u0020https\u003A\/\/www.postgresql.org\/docs\/current\/textsearch\u002Dcontrols.html\u0023TEXTSEARCH\u002DHEADLINE",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_ftsStartSel"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsStartSel"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024ftsStopSel",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsStopSel",
             "name": "ftsStopSel",
             "summary": "Full\u0020text\u0020search\u0020highlighting\u0020options\u0020see\u0020\u002D\u0020https\u003A\/\/www.postgresql.org\/docs\/current\/textsearch\u002Dcontrols.html\u0023TEXTSEARCH\u002DHEADLINE",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_ftsStopSel"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsStopSel"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024ftsMaxWords",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsMaxWords",
             "name": "ftsMaxWords",
             "summary": "Full\u0020text\u0020search\u0020highlighting\u0020options\u0020see\u0020\u002D\u0020https\u003A\/\/www.postgresql.org\/docs\/current\/textsearch\u002Dcontrols.html\u0023TEXTSEARCH\u002DHEADLINE",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_ftsMaxWords"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsMaxWords"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024ftsMinWords",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsMinWords",
             "name": "ftsMinWords",
             "summary": "Full\u0020text\u0020search\u0020highlighting\u0020options\u0020see\u0020\u002D\u0020https\u003A\/\/www.postgresql.org\/docs\/current\/textsearch\u002Dcontrols.html\u0023TEXTSEARCH\u002DHEADLINE",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_ftsMinWords"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsMinWords"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024ftsShortWord",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsShortWord",
             "name": "ftsShortWord",
             "summary": "Full\u0020text\u0020search\u0020highlighting\u0020options\u0020see\u0020\u002D\u0020https\u003A\/\/www.postgresql.org\/docs\/current\/textsearch\u002Dcontrols.html\u0023TEXTSEARCH\u002DHEADLINE",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_ftsShortWord"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsShortWord"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024ftsHighlightAll",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsHighlightAll",
             "name": "ftsHighlightAll",
             "summary": "Full\u0020text\u0020search\u0020highlighting\u0020options\u0020see\u0020\u002D\u0020https\u003A\/\/www.postgresql.org\/docs\/current\/textsearch\u002Dcontrols.html\u0023TEXTSEARCH\u002DHEADLINE",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_ftsHighlightAll"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsHighlightAll"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024ftsMaxFragments",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsMaxFragments",
             "name": "ftsMaxFragments",
             "summary": "Full\u0020text\u0020search\u0020highlighting\u0020options\u0020see\u0020\u002D\u0020https\u003A\/\/www.postgresql.org\/docs\/current\/textsearch\u002Dcontrols.html\u0023TEXTSEARCH\u002DHEADLINE",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_ftsMaxFragments"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsMaxFragments"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024ftsFragmentDelimiter",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsFragmentDelimiter",
             "name": "ftsFragmentDelimiter",
             "summary": "Full\u0020text\u0020search\u0020highlighting\u0020options\u0020see\u0020\u002D\u0020https\u003A\/\/www.postgresql.org\/docs\/current\/textsearch\u002Dcontrols.html\u0023TEXTSEARCH\u002DHEADLINE",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_ftsFragmentDelimiter"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsFragmentDelimiter"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchConfig\u003A\u003A\u0024class",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024class",
             "name": "class",
             "summary": "An\u0020optional\u0020class\u0020of\u0020the\u0020for\u0020the\u0020objects\u0020returned\u0020as\u0020the\u0020search\u0020results\n\u0020\u0020\u0028to\u0020be\u0020used\u0020by\u0020extension\u0020libraries\u0029.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchConfig.html#property_class"
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_class"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm",
             "name": "SearchTerm",
             "summary": "Describes\u0020a\u0020single\u0020search\u0020condition.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003Afactory\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003Afactory\u0028\u0029",
             "name": "factory",
             "summary": "Creates\u0020an\u0020instance\u0020of\u0020the\u0020SearchTerm\u0020class\u0020from\u0020a\u0020given\u0020\u0024_POST\u0020vars\u0020set",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#method_factory"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#method_factory"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020search\u0020term\u0020object.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#method___construct"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003AgetSqlQuery\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AgetSqlQuery\u0028\u0029",
             "name": "getSqlQuery",
             "summary": "Returns\u0020an\u0020SQL\u0020query\u0020part\u0020returning\u0020ids\u0020of\u0020resources\u0020matching\u0020the\u0020search\u0020term.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#method_getSqlQuery"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#method_getSqlQuery"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003AgetSqlQueryOr\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AgetSqlQueryOr\u0028\u0029",
             "name": "getSqlQueryOr",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#method_getSqlQueryOr"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#method_getSqlQueryOr"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003AgetSqlQueryFts\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AgetSqlQueryFts\u0028\u0029",
             "name": "getSqlQueryFts",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#method_getSqlQueryFts"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#method_getSqlQueryFts"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003AgetSqlQueryUri\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AgetSqlQueryUri\u0028\u0029",
             "name": "getSqlQueryUri",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#method_getSqlQueryUri"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#method_getSqlQueryUri"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003AgetSqlQuerySpatial\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AgetSqlQuerySpatial\u0028\u0029",
             "name": "getSqlQuerySpatial",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#method_getSqlQuerySpatial"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#method_getSqlQuerySpatial"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003AgetSqlQueryMeta\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AgetSqlQueryMeta\u0028\u0029",
             "name": "getSqlQueryMeta",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#method_getSqlQueryMeta"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#method_getSqlQueryMeta"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003AgetFormData\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AgetFormData\u0028\u0029",
             "name": "getFormData",
             "summary": "Returns\u0020the\u0020search\u0020term\u0020formatted\u0020as\u0020an\u0020HTTP\u0020query\u0020string.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#method_getFormData"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#method_getFormData"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003APROPERTY_BINARY",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003APROPERTY_BINARY",
             "name": "PROPERTY_BINARY",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_PROPERTY_BINARY"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_PROPERTY_BINARY"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003ADATETIME_REGEX",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ADATETIME_REGEX",
             "name": "DATETIME_REGEX",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_DATETIME_REGEX"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_DATETIME_REGEX"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003ATYPE_NUMBER",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ATYPE_NUMBER",
             "name": "TYPE_NUMBER",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_TYPE_NUMBER"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_TYPE_NUMBER"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003ATYPE_DATE",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ATYPE_DATE",
             "name": "TYPE_DATE",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_TYPE_DATE"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_TYPE_DATE"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003ATYPE_DATETIME",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ATYPE_DATETIME",
             "name": "TYPE_DATETIME",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_TYPE_DATETIME"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_TYPE_DATETIME"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003ATYPE_STRING",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ATYPE_STRING",
             "name": "TYPE_STRING",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_TYPE_STRING"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_TYPE_STRING"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003ATYPE_RELATION",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ATYPE_RELATION",
             "name": "TYPE_RELATION",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_TYPE_RELATION"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_TYPE_RELATION"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003ATYPE_FTS",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ATYPE_FTS",
             "name": "TYPE_FTS",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_TYPE_FTS"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_TYPE_FTS"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003ATYPE_SPATIAL",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ATYPE_SPATIAL",
             "name": "TYPE_SPATIAL",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_TYPE_SPATIAL"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_TYPE_SPATIAL"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003AOPERATOR_IN",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AOPERATOR_IN",
             "name": "OPERATOR_IN",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_OPERATOR_IN"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_OPERATOR_IN"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003ACOLUMN_STRING",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ACOLUMN_STRING",
             "name": "COLUMN_STRING",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_COLUMN_STRING"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_COLUMN_STRING"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003ASTRING_MAX_LENGTH",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ASTRING_MAX_LENGTH",
             "name": "STRING_MAX_LENGTH",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#constant_STRING_MAX_LENGTH"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_STRING_MAX_LENGTH"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003A\u0024operators",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003A\u0024operators",
             "name": "operators",
             "summary": "List\u0020of\u0020operators\u0020and\u0020data\u0020types\u0020they\u0020enforce",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#property_operators"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#property_operators"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003A\u0024typesToColumns",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003A\u0024typesToColumns",
             "name": "typesToColumns",
             "summary": "",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#property_typesToColumns"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#property_typesToColumns"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003A\u0024property",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003A\u0024property",
             "name": "property",
             "summary": "Property\u0020to\u0020be\u0020matched\u0020by\u0020the\u0020RDF\u0020triple.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#property_property"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#property_property"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003A\u0024operator",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003A\u0024operator",
             "name": "operator",
             "summary": "Operator\u0020to\u0020be\u0020used\u0020for\u0020the\u0020RDF\u0020triple\u0020value\u0020comparison.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#property_operator"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#property_operator"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003A\u0024value",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003A\u0024value",
             "name": "value",
             "summary": "Value\u0020to\u0020be\u0020matched\u0020by\u0020the\u0020RDF\u0020triple\u0020\u0028with\u0020a\u0020given\u0020operator\u0029",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#property_value"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#property_value"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003A\u0024type",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003A\u0024type",
             "name": "type",
             "summary": "Data\u0020type\u0020to\u0020be\u0020matched\u0020by\u0020the\u0020RDF\u0020triple.",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#property_type"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#property_type"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\SearchTerm\u003A\u003A\u0024language",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003A\u0024language",
             "name": "language",
             "summary": "Language\u0020to\u0020be\u0020matched\u0020by\u0020the\u0020RDF\u0020triple",
-            "url": "classes/acdhOeaw-acdhRepoLib-SearchTerm.html#property_language"
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#property_language"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\disserv\\dissemination\\Format",
             "name": "Format",
@@ -9491,15 +9251,15 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/drupal-acdh-repo-gui-twigextension.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib",
-            "name": "acdhRepoLib",
+            "fqsen": "\\acdhOeaw\\arche\\lib",
+            "name": "lib",
             "summary": "",
-            "url": "namespaces/acdhoeaw-acdhrepolib.html"
+            "url": "namespaces/acdhoeaw-arche-lib.html"
         },                {
-            "fqsen": "\\acdhOeaw\\acdhRepoLib\\exception",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception",
             "name": "exception",
             "summary": "",
-            "url": "namespaces/acdhoeaw-acdhrepolib-exception.html"
+            "url": "namespaces/acdhoeaw-arche-lib-exception.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\disserv\\dissemination",
             "name": "dissemination",
@@ -9540,11 +9300,6 @@ Search.appendIndex(
             "name": "schema",
             "summary": "",
             "url": "namespaces/acdhoeaw-arche-lib-schema.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib",
-            "name": "lib",
-            "summary": "",
-            "url": "namespaces/acdhoeaw-arche-lib.html"
         },                {
             "fqsen": "\\acdhOeaw\\oai",
             "name": "oai",
