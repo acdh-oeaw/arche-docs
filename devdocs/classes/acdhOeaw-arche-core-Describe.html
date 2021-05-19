@@ -89,12 +89,11 @@
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-arche.html">arche</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-arche-core.html">core</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-arche-core-handler.html">handler</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    MetadataManager
+    Describe
 
     
     
@@ -102,12 +101,12 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/handler/MetadataManager.php"><a href="files/arche-core-src-acdhoeaw-arche-core-handler-metadatamanager.html"><abbr title="arche-core/src/acdhOeaw/arche/core/handler/MetadataManager.php">MetadataManager.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Describe.php"><a href="files/arche-core-src-acdhoeaw-arche-core-describe.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Describe.php">Describe.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">39</span>
 </aside>
 
-            <p class="phpdocumentor-summary">Description of MetadataManager</p>
+            <p class="phpdocumentor-summary">Handles the /desribe endpoint</p>
 
 
 
@@ -139,14 +138,21 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-core-handler-MetadataManager.html#method_manage">manage()</a>
+    <a href="classes/acdhOeaw-arche-core-Describe.html#method_get">get()</a>
     <span>
-                        &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-core-handler-MetadataManager.html#method_addMetaValue">addMetaValue()</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-core-Describe.html#method_head">head()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-core-Describe.html#method_options">options()</a>
     <span>
                         &nbsp;: void    </span>
 </dt>
@@ -163,63 +169,36 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/acdhOeaw-arche-core-handler-MetadataManager.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/acdhOeaw-arche-core-Describe.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_manage">
-        manage()
-        <a href="classes/acdhOeaw-arche-core-handler-MetadataManager.html#method_manage" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_get">
+        get()
+        <a href="classes/acdhOeaw-arche-core-Describe.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/handler/MetadataManager.php"><a href="files/arche-core-src-acdhoeaw-arche-core-handler-metadatamanager.html"><abbr title="arche-core/src/acdhOeaw/arche/core/handler/MetadataManager.php">MetadataManager.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Describe.php"><a href="files/arche-core-src-acdhoeaw-arche-core-describe.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Describe.php">Describe.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">manage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span></code>
+                <span class="phpdocumentor-signature__name">get</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$meta</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$path</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
+    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -227,48 +206,64 @@
                     <article
         class="phpdocumentor-element
             -method
-            -private
-                                    -static                    "
+            -public
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_addMetaValue">
-        addMetaValue()
-        <a href="classes/acdhOeaw-arche-core-handler-MetadataManager.html#method_addMetaValue" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_head">
+        head()
+        <a href="classes/acdhOeaw-arche-core-Describe.html#method_head" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/handler/MetadataManager.php"><a href="files/arche-core-src-acdhoeaw-arche-core-handler-metadatamanager.html"><abbr title="arche-core/src/acdhOeaw/arche/core/handler/MetadataManager.php">MetadataManager.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Describe.php"><a href="files/arche-core-src-acdhoeaw-arche-core-describe.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Describe.php">Describe.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">addMetaValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$p</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-core-util-Triple.html"><abbr title="\acdhOeaw\arche\core\util\Triple">Triple</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$v</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">head</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_options">
+        options()
+        <a href="classes/acdhOeaw-arche-core-Describe.html#method_options" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Describe.php"><a href="files/arche-core-src-acdhoeaw-arche-core-describe.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Describe.php">Describe.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">72</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">options</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$code</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">200</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$meta</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$p</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$v</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-core-util-Triple.html"><abbr title="\acdhOeaw\arche\core\util\Triple">Triple</abbr></a></span>
-                            </dt>
+                <span class="phpdocumentor-signature__argument__name">$code</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">200</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -299,7 +294,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/acdhOeaw-arche-core-handler-MetadataManager.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/acdhOeaw-arche-core-Describe.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

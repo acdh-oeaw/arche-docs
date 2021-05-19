@@ -291,6 +291,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#property_size"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Describe",
+            "name": "Describe",
+            "summary": "Handles\u0020the\u0020\/desribe\u0020endpoint",
+            "url": "classes/acdhOeaw-arche-core-Describe.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Describe\u003A\u003Ahead\u0028\u0029",
+            "name": "head",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Describe.html#method_head"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Describe\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Describe.html#method_get"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Describe\u003A\u003Aoptions\u0028\u0029",
+            "name": "options",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Describe.html#method_options"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\handler\\MetadataManager",
             "name": "MetadataManager",
             "summary": "Description\u0020of\u0020MetadataManager",
@@ -1310,6 +1330,46 @@ Search.appendIndex(
             "name": "isInputBinary",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-util-SpatialInterface.html#method_isInputBinary"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\Triple",
+            "name": "Triple",
+            "summary": "Description\u0020of\u0020Triple",
+            "url": "classes/acdhOeaw-arche-core-util-Triple.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\Triple\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-Triple.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\Triple\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-Triple.html#property_id"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\Triple\u003A\u003A\u0024property",
+            "name": "property",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-Triple.html#property_property"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\Triple\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-Triple.html#property_type"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\Triple\u003A\u003A\u0024value",
+            "name": "value",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-Triple.html#property_value"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\Triple\u003A\u003A\u0024lang",
+            "name": "lang",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-Triple.html#property_lang"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\Triple\u003A\u003A\u0024uri",
+            "name": "uri",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-Triple.html#property_uri"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController",
             "name": "DashboardController",
@@ -5310,6 +5370,11 @@ Search.appendIndex(
             "name": "__get",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-Config.html#method___get"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Config\u003A\u003A__isset\u0028\u0029",
+            "name": "__isset",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Config.html#method___isset"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Config\u003A\u003AasObject\u0028\u0029",
             "name": "asObject",
