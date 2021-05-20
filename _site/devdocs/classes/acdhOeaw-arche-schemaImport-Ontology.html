@@ -55,18 +55,18 @@
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                 <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/drupal.html"><abbr title="\Drupal">Drupal</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/drupal-arche-dashboard.html"><abbr title="\Drupal\arche_dashboard">arche_dashboard</abbr></a></li>
-                                            <li><a href="namespaces/drupal-acdh-repo-gui.html"><abbr title="\Drupal\acdh_repo_gui">acdh_repo_gui</abbr></a></li>
-                                            <li><a href="namespaces/drupal-tests.html"><abbr title="\Drupal\Tests">Tests</abbr></a></li>
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h4>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h4>
                 <ul class="phpdocumentor-list">
                                             <li><a href="namespaces/acdhoeaw-arche.html"><abbr title="\acdhOeaw\arche">arche</abbr></a></li>
                                             <li><a href="namespaces/acdhoeaw-cql.html"><abbr title="\acdhOeaw\cql">cql</abbr></a></li>
                                             <li><a href="namespaces/acdhoeaw-acdhrepoingest.html"><abbr title="\acdhOeaw\acdhRepoIngest">acdhRepoIngest</abbr></a></li>
                                             <li><a href="namespaces/acdhoeaw-oai.html"><abbr title="\acdhOeaw\oai">oai</abbr></a></li>
+                                    </ul>
+                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/drupal.html"><abbr title="\Drupal">Drupal</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/drupal-arche-dashboard.html"><abbr title="\Drupal\arche_dashboard">arche_dashboard</abbr></a></li>
+                                            <li><a href="namespaces/drupal-acdh-repo-gui.html"><abbr title="\Drupal\acdh_repo_gui">acdh_repo_gui</abbr></a></li>
+                                            <li><a href="namespaces/drupal-tests.html"><abbr title="\Drupal\Tests">Tests</abbr></a></li>
                                     </ul>
                         </section>
 
@@ -103,7 +103,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 </aside>
 
             <p class="phpdocumentor-summary">Description of Ontology</p>
@@ -140,9 +140,9 @@
                 <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-schemaImport-Ontology.html#property_collections">$collections</a>
     <span>
-                &nbsp;: mixed            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
-<dd></dd>
+<dd>restrictions go first as checkRestriction() can affect the whole graph</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-schemaImport-Ontology.html#property_ontology">$ontology</a>
@@ -154,7 +154,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-schemaImport-Ontology.html#property_schema">$schema</a>
     <span>
-                &nbsp;: <abbr title="\object">object</abbr>            </span>
+                &nbsp;: object            </span>
 </dt>
 <dd></dd>
 
@@ -210,7 +210,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-schemaImport-Ontology.html#method_sanitizeOwlObject">sanitizeOwlObject()</a>
     <span>
-                        &nbsp;: string    </span>
+                        &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>    </span>
 </dt>
 <dd>Prepares an RDF resource representing an OWL object
 (class/dataProperty/objectProperty/restriction) for repository import.</dd>
@@ -250,20 +250,19 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 </aside>
 
-    
+        <p class="phpdocumentor-summary">restrictions go first as checkRestriction() can affect the whole graph</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$collections</span>
      = <span class="phpdocumentor-signature__default-value">[zozlakRdfConstants::OWL_ANNOTATION_PROPERTY, zozlakRdfConstants::OWL_RESTRICTION, zozlakRdfConstants::OWL_CLASS, zozlakRdfConstants::OWL_OBJECT_PROPERTY, zozlakRdfConstants::OWL_DATATYPE_PROPERTY]</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -283,7 +282,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 </aside>
 
     
@@ -293,8 +292,10 @@
     <span class="phpdocumentor-signature__name">$ontology</span>
     </code>
 
-    
-    
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -314,18 +315,20 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\object">object</abbr></span>
+        <span class="phpdocumentor-signature__type">object</span>
     <span class="phpdocumentor-signature__name">$schema</span>
     </code>
 
-    
-    
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -349,7 +352,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 </aside>
 
     
@@ -390,7 +393,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 </aside>
 
     
@@ -431,20 +434,20 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">import</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$verbose</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">import</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$verbose</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$repo</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -479,20 +482,20 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">200</span>
+    <span class="phpdocumentor-element-found-in__line">194</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">importOwlFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$owlPath</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$verbose</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">importOwlFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$owlPath</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$verbose</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$repo</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -523,7 +526,7 @@
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\schemaImport\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
                                                             
                                              
                                     </dd>
@@ -548,20 +551,20 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">267</span>
+    <span class="phpdocumentor-element-found-in__line">261</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">importVocabularies</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$verbose</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$manageTransactions</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">importVocabularies</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$verbose</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$manageTransactions</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$repo</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -603,7 +606,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 </aside>
 
     
@@ -644,20 +647,20 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">loadRepo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">loadRepo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$repo</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -685,7 +688,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">334</span>
+    <span class="phpdocumentor-element-found-in__line">328</span>
 </aside>
 
         <p class="phpdocumentor-summary">Prepares an RDF resource representing an OWL object
@@ -693,7 +696,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">sanitizeOwlObject</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                <span class="phpdocumentor-signature__name">sanitizeOwlObject</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -731,7 +734,7 @@ resource should be created</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
             &mdash;
             <section class="phpdocumentor-description"><p>URL of a created/updated repository resource</p>
 </section>
@@ -751,27 +754,27 @@ resource should be created</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-ontology.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Ontology.php">Ontology.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">311</span>
+    <span class="phpdocumentor-element-found-in__line">305</span>
 </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">createCollection</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\arche\schemaImport\type">type</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">createCollection</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$repo</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\acdhRepoLib\Repo">Repo</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\acdhOeaw\arche\schemaImport\type">type</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 

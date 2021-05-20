@@ -55,18 +55,18 @@
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                 <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/drupal.html"><abbr title="\Drupal">Drupal</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/drupal-arche-dashboard.html"><abbr title="\Drupal\arche_dashboard">arche_dashboard</abbr></a></li>
-                                            <li><a href="namespaces/drupal-acdh-repo-gui.html"><abbr title="\Drupal\acdh_repo_gui">acdh_repo_gui</abbr></a></li>
-                                            <li><a href="namespaces/drupal-tests.html"><abbr title="\Drupal\Tests">Tests</abbr></a></li>
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h4>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h4>
                 <ul class="phpdocumentor-list">
                                             <li><a href="namespaces/acdhoeaw-arche.html"><abbr title="\acdhOeaw\arche">arche</abbr></a></li>
                                             <li><a href="namespaces/acdhoeaw-cql.html"><abbr title="\acdhOeaw\cql">cql</abbr></a></li>
                                             <li><a href="namespaces/acdhoeaw-acdhrepoingest.html"><abbr title="\acdhOeaw\acdhRepoIngest">acdhRepoIngest</abbr></a></li>
                                             <li><a href="namespaces/acdhoeaw-oai.html"><abbr title="\acdhOeaw\oai">oai</abbr></a></li>
+                                    </ul>
+                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/drupal.html"><abbr title="\Drupal">Drupal</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/drupal-arche-dashboard.html"><abbr title="\Drupal\arche_dashboard">arche_dashboard</abbr></a></li>
+                                            <li><a href="namespaces/drupal-acdh-repo-gui.html"><abbr title="\Drupal\acdh_repo_gui">acdh_repo_gui</abbr></a></li>
+                                            <li><a href="namespaces/drupal-tests.html"><abbr title="\Drupal\Tests">Tests</abbr></a></li>
                                     </ul>
                         </section>
 
@@ -158,14 +158,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_defaultValue">$defaultValue</a>
     <span>
-                &nbsp;: bool            </span>
+                &nbsp;: string            </span>
 </dt>
 <dd>acdh:defaultValue annotation property value</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_domain">$domain</a>
     <span>
-                &nbsp;: string            </span>
+                &nbsp;: array&lt;string|int, string&gt;            </span>
 </dt>
 <dd>Property domain URI</dd>
 
@@ -228,7 +228,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_range">$range</a>
     <span>
-                &nbsp;: string            </span>
+                &nbsp;: array&lt;string|int, string&gt;            </span>
 </dt>
 <dd>Property range URI</dd>
 
@@ -423,7 +423,7 @@ annotation property</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">bool</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$defaultValue</span>
     </code>
 
@@ -455,7 +455,7 @@ annotation property</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$domain</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -743,7 +743,7 @@ annotation property</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$range</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -780,7 +780,9 @@ annotation property</dd>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
-    
+        <section class="phpdocumentor-description"><p>| array<string></p>
+</section>
+
     
 
 </article>

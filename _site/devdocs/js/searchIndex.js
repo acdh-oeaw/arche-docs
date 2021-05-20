@@ -1936,150 +1936,150 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-dashboard-Traits-DisseminationServiceTrait.html#property_dissServices"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper",
             "name": "Doorkeeper",
             "summary": "Description\u0020of\u0020Doorkeeper",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AonResEdit\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AonResEdit\u0028\u0029",
             "name": "onResEdit",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_onResEdit"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_onResEdit"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AonTxCommit\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AonTxCommit\u0028\u0029",
             "name": "onTxCommit",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_onTxCommit"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_onTxCommit"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AmaintainPid\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AmaintainPid\u0028\u0029",
             "name": "maintainPid",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_maintainPid"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainPid"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AmaintainCmdiPid\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AmaintainCmdiPid\u0028\u0029",
             "name": "maintainCmdiPid",
             "summary": "CMDI\u0020records\u0020must\u0020have\u0020their\u0020very\u0020own\u0020PIDs\u0020but\u0020this\u0020requires\u0020special\u0020handling\nas\u0020in\u0020ARCHE\u0020CMDI\u0020is\u0020just\u0020a\u0020metadata\u0020serialization\u0020format\u0020and\u0020not\u0020a\u0020separate\nrepository\u0020resource.",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_maintainCmdiPid"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainCmdiPid"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AmaintainAccessRights\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AmaintainAccessRights\u0028\u0029",
             "name": "maintainAccessRights",
             "summary": "Access\u0020rights\u0020should\u0020be\u0020maintained\u0020according\u0020to\u0020the\n\u0060cfg.schema.accessRestriction\u0060\u0020value\u003A",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_maintainAccessRights"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainAccessRights"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AmaintainPropertyRange\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AmaintainPropertyRange\u0028\u0029",
             "name": "maintainPropertyRange",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_maintainPropertyRange"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainPropertyRange"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AmaintainDefaultValues\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AmaintainDefaultValues\u0028\u0029",
             "name": "maintainDefaultValues",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_maintainDefaultValues"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainDefaultValues"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AnormalizeIds\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AnormalizeIds\u0028\u0029",
             "name": "normalizeIds",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_normalizeIds"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_normalizeIds"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckLanguage\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AcheckLanguage\u0028\u0029",
             "name": "checkLanguage",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkLanguage"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkLanguage"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckPropertyTypes\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AcheckPropertyTypes\u0028\u0029",
             "name": "checkPropertyTypes",
             "summary": "Checks\u0020property\u0020types\u0020\u0028datatype\/object\u0029.",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkPropertyTypes"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkPropertyTypes"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckCardinalities\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AcheckCardinalities\u0028\u0029",
             "name": "checkCardinalities",
             "summary": "Checks\u0020property\u0020cardinalities\u0020according\u0020to\u0020the\u0020ontology.",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkCardinalities"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkCardinalities"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckBiblatex\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AcheckBiblatex\u0028\u0029",
             "name": "checkBiblatex",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkBiblatex"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkBiblatex"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckIdCount\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AcheckIdCount\u0028\u0029",
             "name": "checkIdCount",
             "summary": "Every\u0020resource\u0020must\u0020have\u0020at\u0020least\u0020one\u0020repository\u0020ID\u0020and\u0020one\nnon\u002Drepository\u0020ID.",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkIdCount"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkIdCount"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckTitleProp\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AcheckTitleProp\u0028\u0029",
             "name": "checkTitleProp",
             "summary": "Every\u0020resource\u0020must\u0020have\u0020a\u0020title\u0020property\u0020\u0028cfg.schema.label\u0029.",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkTitleProp"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkTitleProp"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckUnknownProperties\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AcheckUnknownProperties\u0028\u0029",
             "name": "checkUnknownProperties",
             "summary": "If\u0020a\u0020property\u0020is\u0020in\u0020the\u0020ontology\u0020namespace\u0020it\u0020has\u0020to\u0020be\u0020part\u0020of\u0020the\u0020ontology.",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkUnknownProperties"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkUnknownProperties"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcheckAutoCreatedResources\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AcheckAutoCreatedResources\u0028\u0029",
             "name": "checkAutoCreatedResources",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_checkAutoCreatedResources"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkAutoCreatedResources"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AupdateCollections\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AupdateCollections\u0028\u0029",
             "name": "updateCollections",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollections"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_updateCollections"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AupdateCollectionSize\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AupdateCollectionSize\u0028\u0029",
             "name": "updateCollectionSize",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollectionSize"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_updateCollectionSize"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AupdateCollectionAggregates\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AupdateCollectionAggregates\u0028\u0029",
             "name": "updateCollectionAggregates",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_updateCollectionAggregates"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_updateCollectionAggregates"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AloadOntology\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AloadOntology\u0028\u0029",
             "name": "loadOntology",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_loadOntology"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_loadOntology"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AtoString\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AtoString\u0028\u0029",
             "name": "toString",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_toString"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_toString"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003AcastLiteral\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AcastLiteral\u0028\u0029",
             "name": "castLiteral",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#method_castLiteral"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_castLiteral"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003ANON_NEGATIVE_NUMBERS",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003ANON_NEGATIVE_NUMBERS",
             "name": "NON_NEGATIVE_NUMBERS",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#constant_NON_NEGATIVE_NUMBERS"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#constant_NON_NEGATIVE_NUMBERS"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003ALITERAL_TYPES",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003ALITERAL_TYPES",
             "name": "LITERAL_TYPES",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#constant_LITERAL_TYPES"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#constant_LITERAL_TYPES"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003A\u0024ontology",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003A\u0024ontology",
             "name": "ontology",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#property_ontology"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#property_ontology"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\Doorkeeper\u003A\u003A\u0024uriNorm",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003A\u0024uriNorm",
             "name": "uriNorm",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-Doorkeeper.html#property_uriNorm"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#property_uriNorm"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\DoorkeeperException",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\DoorkeeperException",
             "name": "DoorkeeperException",
             "summary": "Description\u0020of\u0020DoorkeeperException",
-            "url": "classes/acdhOeaw-arche-DoorkeeperException.html"
+            "url": "classes/acdhOeaw-arche-doorkeeper-DoorkeeperException.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\DoorkeeperException\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\DoorkeeperException\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-DoorkeeperException.html#method___construct"
+            "url": "classes/acdhOeaw-arche-doorkeeper-DoorkeeperException.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\fcs\\ClarinException",
             "name": "ClarinException",
@@ -4745,6 +4745,16 @@ Search.appendIndex(
             "name": "getCopyResourceLink",
             "summary": "Select\u0020the\u0020identifier\u0020for\u0020the\u0020Copy\u0020resource\u0020link",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getCopyResourceLink"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetMultiPolygonForLeaflet\u0028\u0029",
+            "name": "getMultiPolygonForLeaflet",
+            "summary": "Create\u0020the\u0020JS\u0020string\u0020for\u0020the\u0020leaflet\u0020map\u0020MultiPolyLang",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getMultiPolygonForLeaflet"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetMultiPolygonFirstCoordinate\u0028\u0029",
+            "name": "getMultiPolygonFirstCoordinate",
+            "summary": "Get\u0020the\u0020first\u0020coordinate\u0020for\u0020the\u0020multipolygon\u0020leaflet\u0020map",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getMultiPolygonFirstCoordinate"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024config",
             "name": "config",
@@ -8688,7 +8698,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003A\u0024collections",
             "name": "collections",
-            "summary": "",
+            "summary": "restrictions\u0020go\u0020first\u0020as\u0020checkRestriction\u0028\u0029\u0020can\u0020affect\u0020the\u0020whole\u0020graph",
             "url": "classes/acdhOeaw-arche-schemaImport-Ontology.html#property_collections"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003A\u0024ontology",
@@ -9156,6 +9166,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/acdhoeaw-arche-biblatex.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche",
+            "name": "arche",
+            "summary": "",
+            "url": "namespaces/acdhoeaw-arche.html"
+        },                {
+            "fqsen": "\\acdhOeaw",
+            "name": "acdhOeaw",
+            "summary": "",
+            "url": "namespaces/acdhoeaw.html"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core",
             "name": "core",
             "summary": "",
@@ -9211,15 +9231,10 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/drupal-arche-dashboard-traits.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche",
-            "name": "arche",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper",
+            "name": "doorkeeper",
             "summary": "",
-            "url": "namespaces/acdhoeaw-arche.html"
-        },                {
-            "fqsen": "\\acdhOeaw",
-            "name": "acdhOeaw",
-            "summary": "",
-            "url": "namespaces/acdhoeaw.html"
+            "url": "namespaces/acdhoeaw-arche-doorkeeper.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\fcs",
             "name": "fcs",
