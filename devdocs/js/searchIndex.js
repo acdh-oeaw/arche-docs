@@ -5411,6 +5411,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-Config.html#method___get"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Config\u003A\u003A__set\u0028\u0029",
+            "name": "__set",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Config.html#method___set"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Config\u003A\u003A__isset\u0028\u0029",
             "name": "__isset",
             "summary": "",
