@@ -59,8 +59,6 @@
                 <ul class="phpdocumentor-list">
                                             <li><a href="namespaces/acdhoeaw-arche.html"><abbr title="\acdhOeaw\arche">arche</abbr></a></li>
                                             <li><a href="namespaces/acdhoeaw-cql.html"><abbr title="\acdhOeaw\cql">cql</abbr></a></li>
-                                            <li><a href="namespaces/acdhoeaw-acdhrepoingest.html"><abbr title="\acdhOeaw\acdhRepoIngest">acdhRepoIngest</abbr></a></li>
-                                            <li><a href="namespaces/acdhoeaw-oai.html"><abbr title="\acdhOeaw\oai">oai</abbr></a></li>
                                     </ul>
                             <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/drupal.html"><abbr title="\Drupal">Drupal</abbr></a></h4>
                 <ul class="phpdocumentor-list">
@@ -141,21 +139,21 @@ the proper dissemination method.</p>
                 <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-resolver-Resolver.html#property_debug">$debug</a>
     <span>
-                &nbsp;: mixed            </span>
+                &nbsp;: bool            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-resolver-Resolver.html#property_config">$config</a>
     <span>
-                &nbsp;: mixed            </span>
+                &nbsp;: object            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-resolver-Resolver.html#property_log">$log</a>
     <span>
-                &nbsp;: mixed            </span>
+                &nbsp;: <abbr title="\zozlak\logging\Log">Log</abbr>            </span>
 </dt>
 <dd></dd>
 
@@ -176,7 +174,7 @@ the proper dissemination method.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-resolver-Resolver.html#method_checkAccessRights">checkAccessRights()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd>Checks if a client is able to access a given URI.</dd>
 
@@ -190,14 +188,14 @@ the proper dissemination method.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-resolver-Resolver.html#method_findDissService">findDissService()</a>
     <span>
-                        &nbsp;: <a href="classes/acdhOeaw-arche-disserv-dissemination-ServiceInterface.html"><abbr title="\acdhOeaw\arche\disserv\dissemination\ServiceInterface">ServiceInterface</abbr></a>    </span>
+                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\dissemination\ServiceInterface">ServiceInterface</abbr></a>|null    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-resolver-Resolver.html#method_findResource">findResource()</a>
     <span>
-                        &nbsp;: <a href="classes/acdhOeaw-arche-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a>    </span>
+                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a>    </span>
 </dt>
 <dd>Finds a repository resource which corresponds to a given URI</dd>
 
@@ -260,7 +258,7 @@ the proper dissemination method.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$debug</span>
      = <span class="phpdocumentor-signature__default-value">false</span></code>
 
@@ -293,7 +291,7 @@ the proper dissemination method.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">object</span>
     <span class="phpdocumentor-signature__name">$config</span>
     </code>
 
@@ -326,7 +324,7 @@ the proper dissemination method.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\zozlak\logging\Log">Log</abbr></span>
     <span class="phpdocumentor-signature__name">$log</span>
     </code>
 
@@ -439,7 +437,7 @@ the proper dissemination method.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">checkAccessRights</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">checkAccessRights</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -480,7 +478,7 @@ the proper dissemination method.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -505,7 +503,7 @@ the proper dissemination method.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">checkFastTrack</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">checkFastTrack</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
         <section class="phpdocumentor-description"><p>The list of {mime type, URL suffix} pairs is read from the config.</p>
 </section>
@@ -514,7 +512,7 @@ the proper dissemination method.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$res</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>repository resource to be disseminated</p>
@@ -550,14 +548,14 @@ the proper dissemination method.</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">findDissService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-disserv-dissemination-ServiceInterface.html"><abbr title="\acdhOeaw\arche\disserv\dissemination\ServiceInterface">ServiceInterface</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">findDissService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\dissemination\ServiceInterface">ServiceInterface</abbr></a>|null</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$res</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -567,7 +565,7 @@ the proper dissemination method.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-disserv-dissemination-ServiceInterface.html"><abbr title="\acdhOeaw\arche\disserv\dissemination\ServiceInterface">ServiceInterface</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\dissemination\ServiceInterface">ServiceInterface</abbr></a>|null</span>
             &mdash;
         
     
@@ -592,7 +590,7 @@ the proper dissemination method.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">findResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">findResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -625,7 +623,7 @@ the proper dissemination method.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a></span>
             &mdash;
         
     

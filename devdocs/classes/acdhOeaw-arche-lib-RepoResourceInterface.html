@@ -59,8 +59,6 @@
                 <ul class="phpdocumentor-list">
                                             <li><a href="namespaces/acdhoeaw-arche.html"><abbr title="\acdhOeaw\arche">arche</abbr></a></li>
                                             <li><a href="namespaces/acdhoeaw-cql.html"><abbr title="\acdhOeaw\cql">cql</abbr></a></li>
-                                            <li><a href="namespaces/acdhoeaw-acdhrepoingest.html"><abbr title="\acdhOeaw\acdhRepoIngest">acdhRepoIngest</abbr></a></li>
-                                            <li><a href="namespaces/acdhoeaw-oai.html"><abbr title="\acdhOeaw\oai">oai</abbr></a></li>
                                     </ul>
                             <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/drupal.html"><abbr title="\Drupal">Drupal</abbr></a></h4>
                 <ul class="phpdocumentor-list">
@@ -224,7 +222,7 @@ all resources pointing to a given one.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_getGraph">getGraph()</a>
     <span>
-                        &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>    </span>
+                        &nbsp;: resource    </span>
 </dt>
 <dd>Returns resource metadata.</dd>
 
@@ -238,14 +236,14 @@ all resources pointing to a given one.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_getMetadata">getMetadata()</a>
     <span>
-                        &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>    </span>
+                        &nbsp;: resource    </span>
 </dt>
 <dd>Returns resource metadata.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_getRepo">getRepo()</a>
     <span>
-                        &nbsp;: <abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr>    </span>
+                        &nbsp;: <abbr title="\acdhOeaw\arche\lib\RepoInterface">RepoInterface</abbr>    </span>
 </dt>
 <dd>Returns repository connection object associated with the given resource object.</dd>
 
@@ -674,7 +672,7 @@ all resources pointing to a given one.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getGraph</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span></code>
+                <span class="phpdocumentor-signature__name">getGraph</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
 
         <section class="phpdocumentor-description"><p>Fetches them from the repository with the <code class="prettyprint">loadMetadata()</code> if they were
 not fetched already.</p>
@@ -700,7 +698,7 @@ automatically affects the resource metadata.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+    <span class="phpdocumentor-signature__response_type">resource</span>
             &mdash;
         
     
@@ -757,7 +755,7 @@ automatically affects the resource metadata.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span></code>
+                <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
 
         <section class="phpdocumentor-description"><p>Fetches them from the repository with the <code class="prettyprint">loadMetadata()</code> if they were
 not fetched already.</p>
@@ -792,7 +790,7 @@ Use the setMetadata() method to write back the changes you made.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+    <span class="phpdocumentor-signature__response_type">resource</span>
             &mdash;
         
     
@@ -817,14 +815,14 @@ Use the setMetadata() method to write back the changes you made.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getRepo</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></span></code>
+                <span class="phpdocumentor-signature__name">getRepo</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\arche\lib\RepoInterface">RepoInterface</abbr></span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\arche\lib\RepoInterface">RepoInterface</abbr></span>
             &mdash;
         
     
@@ -1008,7 +1006,7 @@ $metadata object automatically affect the resource metadata.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setGraph</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">setGraph</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"><p>New metadata are not automatically written back to the repository.
 Use the updateMetadata() method to write them back.</p>
@@ -1018,7 +1016,7 @@ Use the updateMetadata() method to write them back.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$resource</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1077,7 +1075,7 @@ $metadata object don&#039;t affect the resource metadata.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">setMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"><p>New metadata are not automatically written back to the repository.
 Use the <code class="prettyprint">updateMetadata()</code> method to write them back.</p>
@@ -1087,7 +1085,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$metadata</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
