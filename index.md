@@ -27,11 +27,11 @@ Documentation automatically generated from the source code comments:
 * [arche-fcs](devdocs/namespaces/acdhoeaw-arche-fcs.html) ![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-fcs?include_prereleases)
   ![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-fcs)  
   CLARIN FCS endpoint for ARCHE
-  ([github](https://github.com/acdh-oeaw/arche-gui))
+  ([github](https://github.com/acdh-oeaw/arche-fcs))
 * [arche-gui](devdocs/namespaces/drupal-acdh-repo-gui.html) ![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-gui?include_prereleases)
   ![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-gui)  
   Drupal 8 GUI for ARCHE
-  ([github](https://github.com/acdh-oeaw/arche-fcs))
+  ([github](https://github.com/acdh-oeaw/arche-gui))
 * [arche-lib](devdocs/namespaces/acdhoeaw-arche-lib.html) ![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-lib?include_prereleases)
   ![Build status](https://github.com/acdh-oeaw/arche-lib/workflows/phpunit/badge.svg?branch=master)
   ![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-lib)  
