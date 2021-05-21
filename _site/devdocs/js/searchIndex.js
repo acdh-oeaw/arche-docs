@@ -4176,6 +4176,16 @@ Search.appendIndex(
             "summary": "Set\u0020the\u0020sql\u0020execution\u0020max\u0020time",
             "url": "classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_setSqlTimeout"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003AsortAssociativeArrayByKey\u0028\u0029",
+            "name": "sortAssociativeArrayByKey",
+            "summary": "Reorder\u0020the\u0020Easyrdf\u0020result\u0020because\u0020the\u0020dataset\u0020is\u0020already\u0020filtered\u0020by\u0020the\u0020API\nBut\u0020the\u0020actual\u0020order\u0020is\u0020not\u0020possible\u0020from\u0020the\u0020easyrdf,\u0020so\u0020we\u0020have\u0020to\u0020sort\u0020is\nmanually.",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_sortAssociativeArrayByKey"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003AreOrderResult\u0028\u0029",
+            "name": "reOrderResult",
+            "summary": "Reorder\u0020the\u0020result\u0020because\u0020of\u0020the\u0020easyrdf",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_reOrderResult"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003AgetViewData\u0028\u0029",
             "name": "getViewData",
             "summary": "get\u0020the\u0020views\u0020data",
@@ -4185,6 +4195,31 @@ Search.appendIndex(
             "name": "repodb",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#property_repodb"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#property_config"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#property_repo"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003A\u0024limit",
+            "name": "limit",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#property_limit"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003A\u0024order",
+            "name": "order",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#property_order"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003A\u0024offset",
+            "name": "offset",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#property_offset"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\BlocksModel",
             "name": "BlocksModel",
