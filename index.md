@@ -9,7 +9,7 @@ Documentation automatically generated from the source code comments:
 
 * [arche-biblatex](devdocs/namespaces/acdhoeaw-arche-biblatex.html)
   ![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-biblatex?include_prereleases)
-  ![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-biblatex)  
+  [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-biblatex)](https://github.com/acdh-oeaw/arche-biblatex/issues)  
   dissemination service mapping ARCHE metadata to BibLaTeX
   ([github](https://github.com/acdh-oeaw/arche-biblatex))
 * [arche-core](devdocs/namespaces/acdhoeaw-arche-core.html)
