@@ -202,13 +202,6 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#property_result">$result</a>
-    <span>
-                &nbsp;: mixed            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#property_rootAcdhType">$rootAcdhType</a>
     <span>
                 &nbsp;: mixed            </span>
@@ -295,6 +288,13 @@ But the actual order is not possible from the easyrdf, so we have to sort is
 manually.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_checkChildProperties">checkChildProperties()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Check the root for the special properties</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_formatTypeFilter">formatTypeFilter()</a>
     <span>
                         &nbsp;: string    </span>
@@ -302,11 +302,67 @@ manually.</dd>
 <dd>Format the acdh type for the sql query as an array</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getChildTypes">getChildTypes()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getConceptTypes">getConceptTypes()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getInstituteTypes">getInstituteTypes()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getOrganisationTypes">getOrganisationTypes()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getPersonTypes">getPersonTypes()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getPlaceTypes">getPlaceTypes()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getProjectTypes">getProjectTypes()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getProperties">getProperties()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
 <dd>Get the root resource acdh type</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getPublicationTypes">getPublicationTypes()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_ordering">ordering()</a>
@@ -541,7 +597,7 @@ manually.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 </aside>
 
     
@@ -574,7 +630,7 @@ manually.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">16</span>
 </aside>
 
     
@@ -607,39 +663,6 @@ manually.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
-</aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$data</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_result">
-        $result
-        <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#property_result" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
-    :
     <span class="phpdocumentor-element-found-in__line">15</span>
 </aside>
 
@@ -647,7 +670,7 @@ manually.</dd>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$result</span>
+    <span class="phpdocumentor-signature__name">$data</span>
      = <span class="phpdocumentor-signature__default-value">array()</span></code>
 
         <section class="phpdocumentor-description"></section>
@@ -673,7 +696,7 @@ manually.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 </aside>
 
     
@@ -706,7 +729,7 @@ manually.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 </aside>
 
     
@@ -743,7 +766,7 @@ manually.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 </aside>
 
     
@@ -775,7 +798,7 @@ manually.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 </aside>
 
     
@@ -807,7 +830,7 @@ manually.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get the number of the child resources for the pagination</p>
@@ -849,7 +872,7 @@ manually.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">186</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get the properties for the sql search by the root resource acdh type</p>
@@ -892,7 +915,7 @@ manually.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get the actual page view data</p>
@@ -1163,6 +1186,48 @@ manually.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_checkChildProperties">
+        checkChildProperties()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_checkChildProperties" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">267</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Check the root for the special properties</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">checkChildProperties</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$class</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_formatTypeFilter">
         formatTypeFilter()
         <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_formatTypeFilter" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1170,7 +1235,7 @@ manually.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">249</span>
+    <span class="phpdocumentor-element-found-in__line">301</span>
 </aside>
 
         <p class="phpdocumentor-summary">Format the acdh type for the sql query as an array</p>
@@ -1195,6 +1260,230 @@ manually.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getChildTypes">
+        getChildTypes()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getChildTypes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getChildTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getConceptTypes">
+        getConceptTypes()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getConceptTypes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">59</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getConceptTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getInstituteTypes">
+        getInstituteTypes()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getInstituteTypes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getInstituteTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getOrganisationTypes">
+        getOrganisationTypes()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getOrganisationTypes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getOrganisationTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPersonTypes">
+        getPersonTypes()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getPersonTypes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getPersonTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPlaceTypes">
+        getPlaceTypes()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getPlaceTypes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getPlaceTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getProjectTypes">
+        getProjectTypes()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getProjectTypes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getProjectTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getProperties">
         getProperties()
         <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getProperties" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1202,7 +1491,7 @@ manually.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get the root resource acdh type</p>
@@ -1237,6 +1526,38 @@ manually.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getPublicationTypes">
+        getPublicationTypes()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getPublicationTypes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getPublicationTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_ordering">
         ordering()
         <a href="classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_ordering" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1244,7 +1565,7 @@ manually.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ChildApiModel.php"><a href="files/arche-gui-src-model-childapimodel.html"><abbr title="arche-gui/src/Model/ChildApiModel.php">ChildApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create the order values for the sql</p>

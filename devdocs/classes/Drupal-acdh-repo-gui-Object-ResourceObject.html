@@ -254,11 +254,18 @@
 <dd>Get resource inside uri</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getMapType">getMapType()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Get the WKT map type</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getMultiPolygonFirstCoordinate">getMultiPolygonFirstCoordinate()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
-<dd>Create the JS string for the leaflet map MultiPolyLang</dd>
+<dd>Create the JS string for the leaflet map MultiPolyLang from Multipolygon data</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getNonAcdhIdentifiers">getNonAcdhIdentifiers()</a>
@@ -273,6 +280,20 @@
                         &nbsp;: string    </span>
 </dt>
 <dd>PID</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getPolygonData">getPolygonData()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Add Multipolygon string for the polygon dataset, othwerwise the js plugin cant handle it</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getPolygonFirstCoordinate">getPolygonFirstCoordinate()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Create the JS string for the leaflet map MultiPolyLang from Polygon data</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getRdfTypes">getRdfTypes()</a>
@@ -343,6 +364,13 @@
                         &nbsp;: bool    </span>
 </dt>
 <dd>Check if we have a titleimage id or not</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_checkMultiPolygonMapString">checkMultiPolygonMapString()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Transform Multipolygon string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_setData">setData()</a>
@@ -1045,6 +1073,38 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getMapType">
+        getMapType()
+        <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getMapType" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Object/ResourceObject.php"><a href="files/arche-gui-src-object-resourceobject.html"><abbr title="arche-gui/src/Object/ResourceObject.php">ResourceObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">510</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get the WKT map type</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getMapType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getMultiPolygonFirstCoordinate">
         getMultiPolygonFirstCoordinate()
         <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getMultiPolygonFirstCoordinate" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1055,7 +1115,7 @@
     <span class="phpdocumentor-element-found-in__line">459</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Create the JS string for the leaflet map MultiPolyLang</p>
+        <p class="phpdocumentor-summary">Create the JS string for the leaflet map MultiPolyLang from Multipolygon data</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1124,6 +1184,70 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getPid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPolygonData">
+        getPolygonData()
+        <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getPolygonData" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Object/ResourceObject.php"><a href="files/arche-gui-src-object-resourceobject.html"><abbr title="arche-gui/src/Object/ResourceObject.php">ResourceObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">526</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Add Multipolygon string for the polygon dataset, othwerwise the js plugin cant handle it</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getPolygonData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPolygonFirstCoordinate">
+        getPolygonFirstCoordinate()
+        <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getPolygonFirstCoordinate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Object/ResourceObject.php"><a href="files/arche-gui-src-object-resourceobject.html"><abbr title="arche-gui/src/Object/ResourceObject.php">ResourceObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">474</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Create the JS string for the leaflet map MultiPolyLang from Polygon data</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getPolygonFirstCoordinate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
@@ -1472,6 +1596,38 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_checkMultiPolygonMapString">
+        checkMultiPolygonMapString()
+        <a href="classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_checkMultiPolygonMapString" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Object/ResourceObject.php"><a href="files/arche-gui-src-object-resourceobject.html"><abbr title="arche-gui/src/Object/ResourceObject.php">ResourceObject.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">496</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Transform Multipolygon string</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">checkMultiPolygonMapString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     

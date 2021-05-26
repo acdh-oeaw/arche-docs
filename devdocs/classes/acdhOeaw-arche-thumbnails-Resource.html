@@ -166,7 +166,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_handlers">$handlers</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;string|int, <a href="classes/acdhOeaw-arche-thumbnails-handler-HandlerInterface.html"><abbr title="\acdhOeaw\arche\thumbnails\handler\HandlerInterface">HandlerInterface</abbr></a>&gt;            </span>
 </dt>
 <dd></dd>
 
@@ -201,7 +201,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getCachedFiles">getCachedFiles()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string, array&lt;string|int, string&gt;&gt;    </span>
 </dt>
 <dd>List cached files for a given resource.</dd>
 
@@ -258,14 +258,14 @@ modification date, etc.)</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_maintainDb">maintainDb()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd>Assures database contains all the tables</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_maintainMetadataCache">maintainMetadataCache()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                        &nbsp;: void    </span>
 </dt>
 <dd>Fetches resource&#039;s metadata into $this-&gt;meta
 (from the database or, when needed, from the repository)</dd>
@@ -375,7 +375,7 @@ modification date, etc.)</dd>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/acdhOeaw-arche-thumbnails-handler-HandlerInterface.html"><abbr title="\acdhOeaw\arche\thumbnails\handler\HandlerInterface">HandlerInterface</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$handlers</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -552,7 +552,7 @@ modification date, etc.)</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getCachedFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getCachedFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string|int, string&gt;&gt;</span></code>
 
         <section class="phpdocumentor-description"><p>Returnes 2D array with first dimension indicating available widths and
 second dimension listing heights available for a given width. Both dimensions
@@ -575,7 +575,7 @@ are encoded as strings left-padded with zeros up to 5 digits length.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string|int, string&gt;&gt;</span>
             &mdash;
         
     
@@ -925,14 +925,14 @@ in original dimensions can be assumed to be always available.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">maintainDb</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">maintainDb</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -958,14 +958,14 @@ in original dimensions can be assumed to be always available.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">maintainMetadataCache</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">maintainMetadataCache</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     

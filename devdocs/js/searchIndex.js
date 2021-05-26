@@ -4266,6 +4266,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003AgetOrganisationTypes\u0028\u0029",
+            "name": "getOrganisationTypes",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getOrganisationTypes"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003AgetPublicationTypes\u0028\u0029",
+            "name": "getPublicationTypes",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getPublicationTypes"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003AgetPersonTypes\u0028\u0029",
+            "name": "getPersonTypes",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getPersonTypes"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003AgetProjectTypes\u0028\u0029",
+            "name": "getProjectTypes",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getProjectTypes"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003AgetConceptTypes\u0028\u0029",
+            "name": "getConceptTypes",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getConceptTypes"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003AgetInstituteTypes\u0028\u0029",
+            "name": "getInstituteTypes",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getInstituteTypes"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003AgetPlaceTypes\u0028\u0029",
+            "name": "getPlaceTypes",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getPlaceTypes"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003AgetChildTypes\u0028\u0029",
+            "name": "getChildTypes",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getChildTypes"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003AgetAcdhtype\u0028\u0029",
             "name": "getAcdhtype",
             "summary": "",
@@ -4296,6 +4336,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020properties\u0020for\u0020the\u0020sql\u0020search\u0020by\u0020the\u0020root\u0020resource\u0020acdh\u0020type",
             "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getPropertiesByClass"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003AcheckChildProperties\u0028\u0029",
+            "name": "checkChildProperties",
+            "summary": "Check\u0020the\u0020root\u0020for\u0020the\u0020special\u0020properties",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_checkChildProperties"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003AformatTypeFilter\u0028\u0029",
             "name": "formatTypeFilter",
             "summary": "Format\u0020the\u0020acdh\u0020type\u0020for\u0020the\u0020sql\u0020query\u0020as\u0020an\u0020array",
@@ -4305,11 +4350,6 @@ Search.appendIndex(
             "name": "repodb",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#property_repodb"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003A\u0024result",
-            "name": "result",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#property_result"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003A\u0024data",
             "name": "data",
@@ -4480,21 +4520,6 @@ Search.appendIndex(
             "name": "siteLang",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-RootViewModel.html#property_siteLang"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\RootViewModel\u003A\u003A\u0024limit",
-            "name": "limit",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-RootViewModel.html#property_limit"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\RootViewModel\u003A\u003A\u0024offset",
-            "name": "offset",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-RootViewModel.html#property_offset"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\RootViewModel\u003A\u003A\u0024order",
-            "name": "order",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-RootViewModel.html#property_order"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel",
             "name": "SearchViewModel",
@@ -4783,8 +4808,28 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetMultiPolygonFirstCoordinate\u0028\u0029",
             "name": "getMultiPolygonFirstCoordinate",
-            "summary": "Create\u0020the\u0020JS\u0020string\u0020for\u0020the\u0020leaflet\u0020map\u0020MultiPolyLang",
+            "summary": "Create\u0020the\u0020JS\u0020string\u0020for\u0020the\u0020leaflet\u0020map\u0020MultiPolyLang\u0020from\u0020Multipolygon\u0020data",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getMultiPolygonFirstCoordinate"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetPolygonFirstCoordinate\u0028\u0029",
+            "name": "getPolygonFirstCoordinate",
+            "summary": "Create\u0020the\u0020JS\u0020string\u0020for\u0020the\u0020leaflet\u0020map\u0020MultiPolyLang\u0020from\u0020Polygon\u0020data",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getPolygonFirstCoordinate"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AcheckMultiPolygonMapString\u0028\u0029",
+            "name": "checkMultiPolygonMapString",
+            "summary": "Transform\u0020Multipolygon\u0020string",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_checkMultiPolygonMapString"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetMapType\u0028\u0029",
+            "name": "getMapType",
+            "summary": "Get\u0020the\u0020WKT\u0020map\u0020type",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getMapType"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetPolygonData\u0028\u0029",
+            "name": "getPolygonData",
+            "summary": "Add\u0020Multipolygon\u0020string\u0020for\u0020the\u0020polygon\u0020dataset,\u0020othwerwise\u0020the\u0020js\u0020plugin\u0020cant\u0020handle\u0020it",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getPolygonData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024config",
             "name": "config",
