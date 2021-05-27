@@ -10,34 +10,12 @@ Documentation automatically generated from the source code comments:
 | library | links | description | status |
 |---------|-------|-------------|--------|
 | arche-biblatex | [docs](devdocs/namespaces/acdhoeaw-arche-biblatex.html)<br/>[github](https://github.com/acdh-oeaw/arche-biblatex) | dissemination service mapping ARCHE metadata to BibLaTeX | [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-biblatex?include_prereleases)](https://github.com/acdh-oeaw/arche-biblatex/releases) [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-biblatex/bug)](https://github.com/acdh-oeaw/arche-biblatex/issues) [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-biblatex/enhancement)](https://github.com/acdh-oeaw/arche-biblatex/issues) |
-
-
-* [arche-biblatex](devdocs/namespaces/acdhoeaw-arche-biblatex.html)
-  [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-biblatex?include_prereleases)](https://github.com/acdh-oeaw/arche-biblatex/releases)
-  [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-biblatex)](https://github.com/acdh-oeaw/arche-biblatex/issues)  
-  dissemination service mapping ARCHE metadata to BibLaTeX
-  ([github](https://github.com/acdh-oeaw/arche-biblatex))
-* [arche-core](devdocs/namespaces/acdhoeaw-arche-core.html)
-  [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-core?include_prereleases)](https://github.com/acdh-oeaw/arche-core/releases)
-  [![Build status](https://github.com/acdh-oeaw/arche-core/workflows/phpunit/badge.svg?branch=master)](https://github.com/acdh-oeaw/arche-core/actions)
-  [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-core)](https://github.com/acdh-oeaw/arche-core/issues)  
-  ARCHE core code ([github](https://github.com/acdh-oeaw/arche-core))
-* [arche-dashboard](devdocs/namespaces/drupal-arche-dashboard.html)
-  [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-dashboard?include_prereleases)](https://github.com/acdh-oeaw/arche-dashboard/releases)
-  [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-dashboard)](https://github.com/acdh-oeaw/arche-dashboard/issues)  
-  GUI providing ARCHE metadata statistics
-  ([github](https://github.com/acdh-oeaw/arche-dashboard))
-* [arche-doorkeeper](devdocs/namespaces/acdhoeaw-arche-doorkeeper.html)
-  [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-doorkeeper?include_prereleases)](https://github.com/acdh-oeaw/arche-doorkeeper/releases)
-  [![Build status](https://github.com/acdh-oeaw/arche-doorkeeper/workflows/phpunit/badge.svg?branch=master)](https://github.com/acdh-oeaw/arche-doorkeeper/actions)
-  [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-doorkeeper)](https://github.com/acdh-oeaw/arche-doorkeeper/issues)  
-  ACDH handlers plugged into the arche-core
-  ([github](https://github.com/acdh-oeaw/arche-doorkeeper))
-* [arche-fcs](devdocs/namespaces/acdhoeaw-arche-fcs.html)
-  [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-fcs?include_prereleases)](https://github.com/acdh-oeaw/arche-fcs/releases)
-  [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-fcs)](https://github.com/acdh-oeaw/arche-fcs/issues)  
-  CLARIN FCS endpoint for ARCHE
-  ([github](https://github.com/acdh-oeaw/arche-fcs))
+| arche-core | [docs](devdocs/namespaces/acdhoeaw-arche-core.html)<br/>[github](https://github.com/acdh-oeaw/arche-core) | ARCHE core code | [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-core?include_prereleases)](https://github.com/acdh-oeaw/arche-core/releases) [![Build status](https://github.com/acdh-oeaw/arche-core/workflows/phpunit/badge.svg?branch=master)](https://github.com/acdh-oeaw/arche-core/actions) [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-core)](https://github.com/acdh-oeaw/arche-core/issues) |
+| arche-dashboard | [docs](devdocs/namespaces/drupal-arche-dashboard.html)<br/>[github](https://github.com/acdh-oeaw/arche-dashboard) | GUI providing ARCHE metadata statistics | [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-dashboard?include_prereleases)](https://github.com/acdh-oeaw/arche-dashboard/releases) [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-dashboard)](https://github.com/acdh-oeaw/arche-dashboard/issues) |
+| arche-doorkeeper | [docs](devdocs/namespaces/acdhoeaw-arche-doorkeeper.html)<br/>[github](https://github.com/acdh-oeaw/arche-doorkeeper) | ACDH handlers plugged into the arche-core | [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-doorkeeper?include_prereleases)](https://github.com/acdh-oeaw/arche-doorkeeper/releases) [![Build status](https://github.com/acdh-oeaw/arche-doorkeeper/workflows/phpunit/badge.svg?branch=master)](https://github.com/acdh-oeaw/arche-doorkeeper/actions) [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-doorkeeper)](https://github.com/acdh-oeaw/arche-doorkeeper/issues) |
+| arche-fcs | [docs](devdocs/namespaces/acdhoeaw-arche-fcs.html)<br/>[github](https://github.com/acdh-oeaw/arche-fcs) | CLARIN FCS endpoint for ARCHE | [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-fcs?include_prereleases)](https://github.com/acdh-oeaw/arche-fcs/releases) [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-fcs)](https://github.com/acdh-oeaw/arche-fcs/issues) |
+  
+  
 * [arche-gui](devdocs/namespaces/drupal-acdh-repo-gui.html)
   [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-gui?include_prereleases)](https://github.com/acdh-oeaw/arche-gui/releases)
   [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-gui)](https://github.com/acdh-oeaw/arche-gui/issues)  
