@@ -8421,6 +8421,11 @@ Search.appendIndex(
             "summary": "Object\u0020handling\u0020deleted\u0020resources\u0020information",
             "url": "classes/acdhOeaw-arche-oaipmh-Oai.html#property_deleted"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\Oai\u003A\u003A\u0024search",
+            "name": "search",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-Oai.html#property_search"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\Oai\u003A\u003A\u0024cache",
             "name": "cache",
             "summary": "Cache\u0020object",
@@ -8485,6 +8490,11 @@ Search.appendIndex(
             "name": "setLogger",
             "summary": "Sets\u0020a\u0020logger\u0020for\u0020the\u0020search\u0020object",
             "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_setLogger"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AsetMetadataFormat\u0028\u0029",
+            "name": "setMetadataFormat",
+            "summary": "Sets\u0020metadata\u0020format\u0020configuration",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_setMetadataFormat"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003A\u0024format",
             "name": "format",
@@ -8555,6 +8565,11 @@ Search.appendIndex(
             "name": "setLogger",
             "summary": "Sets\u0020a\u0020logger\u0020for\u0020the\u0020search\u0020object",
             "url": "classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_setLogger"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\SearchInterface\u003A\u003AsetMetadataFormat\u0028\u0029",
+            "name": "setMetadataFormat",
+            "summary": "Sets\u0020metadata\u0020format\u0020configuration",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_setMetadataFormat"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\set\\Complex",
             "name": "Complex",

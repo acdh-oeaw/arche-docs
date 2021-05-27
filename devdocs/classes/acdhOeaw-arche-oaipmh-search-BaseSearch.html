@@ -175,7 +175,7 @@ descriptor).</p>
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_format">$format</a>
     <span>
-                &nbsp;: <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"><abbr title="\acdhOeaw\arche\oaipmh\data\MetadataFormat">MetadataFormat</abbr></a>            </span>
+                &nbsp;: <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"><abbr title="\acdhOeaw\arche\oaipmh\data\MetadataFormat">MetadataFormat</abbr></a>|null            </span>
 </dt>
 <dd>Metadata format descriptor.</dd>
 
@@ -189,7 +189,7 @@ descriptor).</p>
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_records">$records</a>
     <span>
-                &nbsp;: array&lt;string|int, <a href="classes/acdhOeaw-arche-oaipmh-data-HeaderData.html"><abbr title="\acdhOeaw\arche\oaipmh\data\HeaderData">HeaderData</abbr></a>&gt;            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Last search results</dd>
 
@@ -250,6 +250,13 @@ descriptor).</p>
 </dt>
 <dd>Sets a logger for the search object</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_setMetadataFormat">setMetadataFormat()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Sets metadata format configuration</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getDateFilter">getDateFilter()</a>
     <span>
@@ -299,7 +306,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 </aside>
 
         <p class="phpdocumentor-summary">Configuration object</p>
@@ -311,7 +318,8 @@ descriptor).</p>
     </code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -331,7 +339,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 </aside>
 
         <p class="phpdocumentor-summary">Object handling deleted resources information</p>
@@ -343,7 +351,8 @@ descriptor).</p>
     </code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -363,19 +372,20 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 </aside>
 
         <p class="phpdocumentor-summary">Metadata format descriptor.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"><abbr title="\acdhOeaw\arche\oaipmh\data\MetadataFormat">MetadataFormat</abbr></a></span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"><abbr title="\acdhOeaw\arche\oaipmh\data\MetadataFormat">MetadataFormat</abbr></a>|null</span>
     <span class="phpdocumentor-signature__name">$format</span>
     </code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -395,7 +405,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 </aside>
 
         <p class="phpdocumentor-summary">Repistory database connection object</p>
@@ -407,7 +417,8 @@ descriptor).</p>
     </code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -427,16 +438,16 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 </aside>
 
         <p class="phpdocumentor-summary">Last search results</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/acdhOeaw-arche-oaipmh-data-HeaderData.html"><abbr title="\acdhOeaw\arche\oaipmh\data\HeaderData">HeaderData</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$records</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -459,7 +470,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 </aside>
 
         <p class="phpdocumentor-summary">High-level repository API handle object</p>
@@ -471,7 +482,8 @@ descriptor).</p>
     </code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -491,7 +503,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 </aside>
 
         <p class="phpdocumentor-summary">Object handling sets</p>
@@ -503,7 +515,8 @@ descriptor).</p>
     </code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -527,27 +540,18 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 </aside>
 
         <p class="phpdocumentor-summary">Creates a search engine object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"><abbr title="\acdhOeaw\arche\oaipmh\data\MetadataFormat">MetadataFormat</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-set-SetInterface.html"><abbr title="\acdhOeaw\arche\oaipmh\set\SetInterface">SetInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sets</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\arche\oaipmh\deleted\DeletedInterface">DeletedInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$deleted</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pdo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-set-SetInterface.html"><abbr title="\acdhOeaw\arche\oaipmh\set\SetInterface">SetInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sets</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\arche\oaipmh\deleted\DeletedInterface">DeletedInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$deleted</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pdo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$format</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"><abbr title="\acdhOeaw\arche\oaipmh\data\MetadataFormat">MetadataFormat</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>metadata format descriptor</p>
-</section>
-
-            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$sets</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-set-SetInterface.html"><abbr title="\acdhOeaw\arche\oaipmh\set\SetInterface">SetInterface</abbr></a></span>
@@ -603,7 +607,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 </aside>
 
         <p class="phpdocumentor-summary">Performs search using given filter values.</p>
@@ -674,7 +678,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 </aside>
 
         <p class="phpdocumentor-summary">Returns number of resources matching last search (last call of the
@@ -707,7 +711,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 </aside>
 
         <p class="phpdocumentor-summary">Provides the `HeaderData` object for a given search result.</p>
@@ -751,7 +755,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">206</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 </aside>
 
         <p class="phpdocumentor-summary">Provides the `MetadataInterface` object for a given search result.</p>
@@ -795,7 +799,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">268</span>
+    <span class="phpdocumentor-element-found-in__line">261</span>
 </aside>
 
         <p class="phpdocumentor-summary">Sets a logger for the search object</p>
@@ -827,6 +831,50 @@ descriptor).</p>
                     <article
         class="phpdocumentor-element
             -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setMetadataFormat">
+        setMetadataFormat()
+        <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_setMetadataFormat" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">270</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Sets metadata format configuration</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setMetadataFormat</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"><abbr title="\acdhOeaw\arche\oaipmh\data\MetadataFormat">MetadataFormat</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$format</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"><abbr title="\acdhOeaw\arche\oaipmh\data\MetadataFormat">MetadataFormat</abbr></a>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>metadata format descriptor</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
             -private
                                                         "
 >
@@ -837,7 +885,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 </aside>
 
         <p class="phpdocumentor-summary">Creates SPARQL clauses implementing the date filter.</p>
@@ -890,7 +938,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">217</span>
+    <span class="phpdocumentor-element-found-in__line">210</span>
 </aside>
 
         <p class="phpdocumentor-summary">Creates SPARQL query clause implementing the id filter.</p>
@@ -934,7 +982,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">254</span>
+    <span class="phpdocumentor-element-found-in__line">247</span>
 </aside>
 
         <p class="phpdocumentor-summary">Creates SPARQL clause implementing the set filter.</p>
