@@ -5,9 +5,14 @@
 layout: home
 ---
 
-Documentation automatically generated from the source code comments:
+## Guides:
 
-| library | links | description | status |
+* [Metadata API performance](aux/metadata_api_performance.html)
+* [Dissemination services](aux/dissemination_services.html)
+
+## Components
+
+| library | links | description | status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---------|-------|-------------|--------|
 | arche-biblatex | [docs](devdocs/namespaces/acdhoeaw-arche-biblatex.html)<br/>[github](https://github.com/acdh-oeaw/arche-biblatex) | dissemination service mapping ARCHE metadata to BibLaTeX | [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-biblatex?include_prereleases)](https://github.com/acdh-oeaw/arche-biblatex/releases)<br/>[![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-biblatex/bug)](https://github.com/acdh-oeaw/arche-biblatex/issues)<br/>[![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-biblatex/enhancement)](https://github.com/acdh-oeaw/arche-biblatex/issues) |
 | arche-core | [docs](devdocs/namespaces/acdhoeaw-arche-core.html)<br/>[github](https://github.com/acdh-oeaw/arche-core) | ARCHE core code | [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-core?include_prereleases)](https://github.com/acdh-oeaw/arche-core/releases)<br/>[![Build status](https://github.com/acdh-oeaw/arche-core/workflows/phpunit/badge.svg?branch=master)](https://github.com/acdh-oeaw/arche-core/actions)<br/>[![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-core)](https://github.com/acdh-oeaw/arche-core/issues) |
@@ -24,7 +29,3 @@ Documentation automatically generated from the source code comments:
 | arche-schema-ingest | [docs](devdocs/namespaces/acdhoeaw-arche-schemaimport.html)<br/>[github](https://github.com/acdh-oeaw/arche-schema-ingest) | PHP library for ingesting ACDH ontology into the ARCHE | [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-schema-ingest?include_prereleases)](https://github.com/acdh-oeaw/arche-schema-ingest/releases)<br/>[![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-schema-ingest)](https://github.com/acdh-oeaw/arche-schema-ingest/issues) |
 | arche-thumbnails | [docs](devdocs/namespaces/acdhoeaw-arche-thumbnails.html)<br/>[github](https://github.com/acdh-oeaw/arche-thumbnails) | dissemination service generating ARCHE resources' thumbnails | [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-thumbnails?include_prereleases)](https://github.com/acdh-oeaw/arche-thumbnails/releases)<br/>[![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-thumbnails)](https://github.com/acdh-oeaw/arche-thumbnails/issues) |
 
-Guides:
-
-* [Metadata API performance](aux/metadata_api_performance.html)
-* [Dissemination services](aux/dissemination_services.html)
