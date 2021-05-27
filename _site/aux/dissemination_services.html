@@ -2,9 +2,9 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Dissemination services | ARCHE Suite documentation</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Dissemination services" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Documentation for the ARCHE repository solution." />
@@ -12,8 +12,10 @@
 <link rel="canonical" href="/arche-docs/aux/dissemination_services.html" />
 <meta property="og:url" content="/arche-docs/aux/dissemination_services.html" />
 <meta property="og:site_name" content="ARCHE Suite documentation" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Dissemination services" />
 <script type="application/ld+json">
-{"description":"Documentation for the ARCHE repository solution.","@type":"WebPage","headline":"Dissemination services","url":"/arche-docs/aux/dissemination_services.html","@context":"https://schema.org"}</script>
+{"description":"Documentation for the ARCHE repository solution.","url":"/arche-docs/aux/dissemination_services.html","@type":"WebPage","headline":"Dissemination services","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/arche-docs/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/arche-docs/feed.xml" title="ARCHE Suite documentation" /></head>
 <body><header class="site-header" role="banner">
@@ -28,7 +30,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/arche-docs/">Guides</a><a class="page-link" href="/arche-docs/aux/metadata_api_performance.Rmd">Metadata API performance</a><a class="page-link" href="/arche-docs/aux/dissemination_services.html">Dissemination services</a></div>
+        <div class="trigger"><a class="page-link" href="/arche-docs/">ARCHE Suite documentation</a><a class="page-link" href="/arche-docs/aux/metadata_api_performance.Rmd">Metadata API performance</a><a class="page-link" href="/arche-docs/aux/dissemination_services.html">Dissemination services</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -56,21 +58,21 @@ First, there are typically plenty of dissemination formats we want to offer and 
 <p>In the spoken language a <em>dissemination service</em> has two meanings which are used interchangeable:</p>
 
 <ol>
-  <li>The service providing the transformation.\
+  <li>The service providing the transformation.<br />
 This is the technically correct meaning.
     <ul>
       <li>It’s worth noting that from arche architecture point of view the repository browsing GUI or the OAI-PMH endpoint are also <em>dissemination services</em> in this meaning
 (the first one disseminates metadata as a webpage and the latter one transforms resource’s arche metadata into OAI-PMH metadata).</li>
     </ul>
   </li>
-  <li>A set of rules describing which dissemination services (in the 1st meaning) are availble for a given resource.\
+  <li>A set of rules describing which dissemination services (in the 1st meaning) are availble for a given resource.<br />
 To avoid confusion this is called a <em>mapping</em> below.</li>
 </ol>
 
 <h2 id="architecture">Architecture</h2>
 
 <ul>
-  <li><em>Dissemination services</em> just work on their own.\
+  <li><em>Dissemination services</em> just work on their own.<br />
 The only requirement is it must be possible to describe them using the <em>mapping</em> data model.</li>
   <li>The <a href="https://github.com/acdh-oeaw/arche-lib-disserv">arche-lib-disserv</a>:
     <ul>
@@ -97,7 +99,7 @@ It just has to be reachable using an HTTP GET request and it must be able to fet
 <p>A <em>dissemination service</em> must be able to fetch the arche resource on its own based on the data passed to it by a GET request. It means:</p>
 
 <ul>
-  <li>There is no suport for dissemination services expecting disseminated service binary payload to be passed directly to them (e.g. as a POST request body).\
+  <li>There is no suport for dissemination services expecting disseminated service binary payload to be passed directly to them (e.g. as a POST request body).<br />
 If you want to handle such dissemination services, you need to set up a simple reverse proxy in front of them which will fetch arche resource’s binary content and push it to the dissemination service.</li>
   <li>If access to the disseminated resource requires authentication, the dissemination service must be able to perform it on its own.
 Also this limitation can be overcome by setting up a reverse proxy performing the authentication (and, if needed, helping the dissemination service to bypass arche’s authentication).</li>
@@ -156,7 +158,7 @@ with RDF property mappings being defined <a href="https://github.com/acdh-oeaw/a
       <li>Both the property URI and the optional value should be provided as RDF literals (see examples below).</li>
     </ul>
   </li>
-  <li>Every rule can be <em>optional</em> or <em>required</em>.\
+  <li>Every rule can be <em>optional</em> or <em>required</em>.<br />
 For an arche resource to match a given <em>dissemination service</em>:
     <ul>
       <li>The resource has to match all <em>required</em> mapping rules.</li>
@@ -238,7 +240,7 @@ While it allows to handle most common scenarios, it can’t express complex rule
     <ul>
       <li><code class="language-plaintext highlighter-rouge">{RES_URI}</code> - the full URL of the resource, e.g. https://arche.acdh.oeaw.ac.at/api/109787.</li>
       <li><code class="language-plaintext highlighter-rouge">{RES_ID}</code> - the internal numeric identifier of the resource (the number at the end of its URL), e.g. <code class="language-plaintext highlighter-rouge">109787</code>.</li>
-      <li><code class="language-plaintext highlighter-rouge">{nmsp_ID}</code> - a resource’s identifier in the <code class="language-plaintext highlighter-rouge">nmsp</code> namespace.\
+      <li><code class="language-plaintext highlighter-rouge">{nmsp_ID}</code> - a resource’s identifier in the <code class="language-plaintext highlighter-rouge">nmsp</code> namespace.<br />
 The namespace has to be defined in the configuration file under <code class="language-plaintext highlighter-rouge">schema.namespaces.{nmsp}</code>. 
 See e.g. <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/schema.yaml">here</a>.</li>
     </ul>
@@ -397,11 +399,11 @@ don’t assign the duplicated <code class="language-plaintext highlighter-rouge"
 
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">include</span> <span class="s1">'vendor/autoload.php'</span><span class="p">;</span>
 <span class="nv">$resUrl</span> <span class="o">=</span> <span class="s1">'https://arche.acdh.oeaw.ac.at/api/108253'</span><span class="p">;</span>
-<span class="nv">$repo</span>   <span class="o">=</span> <span class="nx">acdhOeaw\arche\lib\Repo</span><span class="o">::</span><span class="na">factoryFromUrl</span><span class="p">(</span><span class="nv">$resUrl</span><span class="p">);</span>
-<span class="nv">$res</span>    <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\arche\lib\disserv\RepoResource</span><span class="p">(</span><span class="nv">$resUrl</span><span class="p">,</span> <span class="nv">$repo</span><span class="p">);</span>
-<span class="nv">$availableDissServ</span> <span class="o">=</span> <span class="nv">$res</span><span class="o">-&gt;</span><span class="na">getDissServices</span><span class="p">();</span>
+<span class="nv">$repo</span>   <span class="o">=</span> <span class="nc">acdhOeaw\arche\lib\Repo</span><span class="o">::</span><span class="nf">factoryFromUrl</span><span class="p">(</span><span class="nv">$resUrl</span><span class="p">);</span>
+<span class="nv">$res</span>    <span class="o">=</span> <span class="k">new</span> <span class="nc">acdhOeaw\arche\lib\disserv\RepoResource</span><span class="p">(</span><span class="nv">$resUrl</span><span class="p">,</span> <span class="nv">$repo</span><span class="p">);</span>
+<span class="nv">$availableDissServ</span> <span class="o">=</span> <span class="nv">$res</span><span class="o">-&gt;</span><span class="nf">getDissServices</span><span class="p">();</span>
 <span class="k">foreach</span> <span class="p">(</span><span class="nv">$availableDissServ</span> <span class="k">as</span> <span class="nv">$retType</span> <span class="o">=&gt;</span> <span class="nv">$dissService</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="s2">"</span><span class="nv">$retType</span><span class="s2">: "</span> <span class="o">.</span> <span class="nv">$dissService</span><span class="o">-&gt;</span><span class="na">getRequest</span><span class="p">(</span><span class="nv">$res</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getUri</span><span class="p">()</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">"</span><span class="nv">$retType</span><span class="s2">: "</span> <span class="mf">.</span> <span class="nv">$dissService</span><span class="o">-&gt;</span><span class="nf">getRequest</span><span class="p">(</span><span class="nv">$res</span><span class="p">)</span><span class="o">-&gt;</span><span class="nf">getUri</span><span class="p">()</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
@@ -409,15 +411,15 @@ don’t assign the duplicated <code class="language-plaintext highlighter-rouge"
 
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">include</span> <span class="s1">'vendor/autoload.php'</span><span class="p">;</span>
 <span class="nb">file_put_contents</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">,</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="s1">'https://arche.acdh.oeaw.ac.at/api/describe'</span><span class="p">));</span>
-<span class="nv">$repo</span>       <span class="o">=</span> <span class="nx">acdhOeaw\arche\lib\Repo</span><span class="o">::</span><span class="na">factory</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">);</span>
-<span class="nv">$term</span>       <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\arche\lib\SearchTerm</span><span class="p">(</span><span class="s1">'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'</span><span class="p">,</span> <span class="s1">'https://vocabs.acdh.oeaw.ac.at/schema#TopCollection'</span><span class="p">);</span>
-<span class="nv">$cfg</span>        <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\arche\lib\SearchConfig</span><span class="p">();</span>
-<span class="nv">$cfg</span><span class="o">-&gt;</span><span class="na">class</span> <span class="o">=</span> <span class="s1">'\acdhOeaw\arche\lib\disserv\RepoResource'</span><span class="p">;</span>
-<span class="nv">$resources</span>  <span class="o">=</span> <span class="nv">$repo</span><span class="o">-&gt;</span><span class="na">getResourcesBySearchTerms</span><span class="p">([</span><span class="nv">$term</span><span class="p">],</span> <span class="nv">$cfg</span><span class="p">);</span>
+<span class="nv">$repo</span>       <span class="o">=</span> <span class="nc">acdhOeaw\arche\lib\Repo</span><span class="o">::</span><span class="nf">factory</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">);</span>
+<span class="nv">$term</span>       <span class="o">=</span> <span class="k">new</span> <span class="nc">acdhOeaw\arche\lib\SearchTerm</span><span class="p">(</span><span class="s1">'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'</span><span class="p">,</span> <span class="s1">'https://vocabs.acdh.oeaw.ac.at/schema#TopCollection'</span><span class="p">);</span>
+<span class="nv">$cfg</span>        <span class="o">=</span> <span class="k">new</span> <span class="nc">acdhOeaw\arche\lib\SearchConfig</span><span class="p">();</span>
+<span class="nv">$cfg</span><span class="o">-&gt;</span><span class="n">class</span> <span class="o">=</span> <span class="s1">'\acdhOeaw\arche\lib\disserv\RepoResource'</span><span class="p">;</span>
+<span class="nv">$resources</span>  <span class="o">=</span> <span class="nv">$repo</span><span class="o">-&gt;</span><span class="nf">getResourcesBySearchTerms</span><span class="p">([</span><span class="nv">$term</span><span class="p">],</span> <span class="nv">$cfg</span><span class="p">);</span>
 <span class="k">foreach</span> <span class="p">(</span><span class="nv">$resources</span> <span class="k">as</span> <span class="nv">$res</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="s2">"----------</span><span class="se">\n</span><span class="s2">"</span> <span class="o">.</span> <span class="nv">$res</span><span class="o">-&gt;</span><span class="na">getUri</span><span class="p">()</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$res</span><span class="o">-&gt;</span><span class="na">getDissServices</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$retType</span> <span class="o">=&gt;</span> <span class="nv">$dissService</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"</span><span class="nv">$retType</span><span class="s2">: "</span> <span class="o">.</span> <span class="nv">$dissService</span><span class="o">-&gt;</span><span class="na">getRequest</span><span class="p">(</span><span class="nv">$res</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getUri</span><span class="p">()</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">"----------</span><span class="se">\n</span><span class="s2">"</span> <span class="mf">.</span> <span class="nv">$res</span><span class="o">-&gt;</span><span class="nf">getUri</span><span class="p">()</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$res</span><span class="o">-&gt;</span><span class="nf">getDissServices</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$retType</span> <span class="o">=&gt;</span> <span class="nv">$dissService</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"</span><span class="nv">$retType</span><span class="s2">: "</span> <span class="mf">.</span> <span class="nv">$dissService</span><span class="o">-&gt;</span><span class="nf">getRequest</span><span class="p">(</span><span class="nv">$res</span><span class="p">)</span><span class="o">-&gt;</span><span class="nf">getUri</span><span class="p">()</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
@@ -426,16 +428,16 @@ don’t assign the duplicated <code class="language-plaintext highlighter-rouge"
 
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">include</span> <span class="s1">'vendor/autoload.php'</span><span class="p">;</span>
 <span class="nb">file_put_contents</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">,</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="s1">'https://arche.acdh.oeaw.ac.at/api/describe'</span><span class="p">));</span>
-<span class="nv">$repo</span>         <span class="o">=</span> <span class="nx">acdhOeaw\arche\lib\Repo</span><span class="o">::</span><span class="na">factory</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">);</span>
-<span class="nv">$term</span>         <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\arche\lib\SearchTerm</span><span class="p">(</span><span class="s1">'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'</span><span class="p">,</span> <span class="s1">'https://vocabs.acdh.oeaw.ac.at/schema#DisseminationService'</span><span class="p">);</span>
-<span class="nv">$cfg</span>          <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\arche\lib\SearchConfig</span><span class="p">();</span>
-<span class="nv">$cfg</span><span class="o">-&gt;</span><span class="na">class</span>   <span class="o">=</span> <span class="s1">'\acdhOeaw\arche\lib\disserv\dissemination\Service'</span><span class="p">;</span>
-<span class="nv">$dissServices</span> <span class="o">=</span> <span class="nv">$repo</span><span class="o">-&gt;</span><span class="na">getResourcesBySearchTerms</span><span class="p">([</span><span class="nv">$term</span><span class="p">],</span> <span class="nv">$cfg</span><span class="p">);</span>
+<span class="nv">$repo</span>         <span class="o">=</span> <span class="nc">acdhOeaw\arche\lib\Repo</span><span class="o">::</span><span class="nf">factory</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">);</span>
+<span class="nv">$term</span>         <span class="o">=</span> <span class="k">new</span> <span class="nc">acdhOeaw\arche\lib\SearchTerm</span><span class="p">(</span><span class="s1">'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'</span><span class="p">,</span> <span class="s1">'https://vocabs.acdh.oeaw.ac.at/schema#DisseminationService'</span><span class="p">);</span>
+<span class="nv">$cfg</span>          <span class="o">=</span> <span class="k">new</span> <span class="nc">acdhOeaw\arche\lib\SearchConfig</span><span class="p">();</span>
+<span class="nv">$cfg</span><span class="o">-&gt;</span><span class="n">class</span>   <span class="o">=</span> <span class="s1">'\acdhOeaw\arche\lib\disserv\dissemination\Service'</span><span class="p">;</span>
+<span class="nv">$dissServices</span> <span class="o">=</span> <span class="nv">$repo</span><span class="o">-&gt;</span><span class="nf">getResourcesBySearchTerms</span><span class="p">([</span><span class="nv">$term</span><span class="p">],</span> <span class="nv">$cfg</span><span class="p">);</span>
 <span class="nv">$dissServ</span>     <span class="o">=</span> <span class="nv">$dissServices</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$dissServ</span><span class="o">-&gt;</span><span class="na">getFormats</span><span class="p">());</span>
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$dissServ</span><span class="o">-&gt;</span><span class="nf">getFormats</span><span class="p">());</span>
 <span class="c1">// get up to 5 resources matching the given dissemination service</span>
-<span class="k">foreach</span><span class="p">(</span><span class="nv">$dissServ</span><span class="o">-&gt;</span><span class="na">getMatchingResources</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="k">as</span> <span class="nv">$res</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="nv">$res</span><span class="o">-&gt;</span><span class="na">getUri</span><span class="p">()</span> <span class="o">.</span> <span class="s2">": "</span> <span class="o">.</span> <span class="nv">$dissServ</span><span class="o">-&gt;</span><span class="na">getRequest</span><span class="p">(</span><span class="nv">$res</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getUri</span><span class="p">()</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="k">foreach</span><span class="p">(</span><span class="nv">$dissServ</span><span class="o">-&gt;</span><span class="nf">getMatchingResources</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="k">as</span> <span class="nv">$res</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="nv">$res</span><span class="o">-&gt;</span><span class="nf">getUri</span><span class="p">()</span> <span class="mf">.</span> <span class="s2">": "</span> <span class="mf">.</span> <span class="nv">$dissServ</span><span class="o">-&gt;</span><span class="nf">getRequest</span><span class="p">(</span><span class="nv">$res</span><span class="p">)</span><span class="o">-&gt;</span><span class="nf">getUri</span><span class="p">()</span> <span class="mf">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
