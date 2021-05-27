@@ -40,6 +40,7 @@ jobs:
     #- uses: docker://faph/action-jekyll:1.5 # doesn't work with ruby 2.7
     - name: commit and push
       run: |
+        git config advice.addIgnoredFile false
         git config user.email "workflow@github.actions"
         git config user.name "Github Actions Workflow"
         git add *
