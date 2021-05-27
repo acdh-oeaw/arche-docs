@@ -7,9 +7,9 @@ layout: home
 
 Documentation automatically generated from the source code comments:
 
-| library |   | description | status |
-|---------|---|-------------|--------|
-| arche-biblatex | [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-biblatex?include_prereleases)](https://github.com/acdh-oeaw/arche-biblatex/releases) [docs](devdocs/namespaces/acdhoeaw-arche-biblatex.html) [github](https://github.com/acdh-oeaw/arche-biblatex) | dissemination service mapping ARCHE metadata to BibLaTeX | [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-biblatex/bug)](https://github.com/acdh-oeaw/arche-biblatex/issues) [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-biblatex/enhancement)](https://github.com/acdh-oeaw/arche-biblatex/issues) |
+| library | links | description | status |
+|---------|-------|-------------|--------|
+| arche-biblatex | [docs](devdocs/namespaces/acdhoeaw-arche-biblatex.html)<br/>[github](https://github.com/acdh-oeaw/arche-biblatex) | dissemination service mapping ARCHE metadata to BibLaTeX | [![Packagist Version](https://img.shields.io/packagist/v/acdh-oeaw/arche-biblatex?include_prereleases)](https://github.com/acdh-oeaw/arche-biblatex/releases) [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-biblatex/bug)](https://github.com/acdh-oeaw/arche-biblatex/issues) [![GitHub issues](https://img.shields.io/github/issues-raw/acdh-oeaw/arche-biblatex/enhancement)](https://github.com/acdh-oeaw/arche-biblatex/issues) |
 
 
 * [arche-biblatex](devdocs/namespaces/acdhoeaw-arche-biblatex.html)
