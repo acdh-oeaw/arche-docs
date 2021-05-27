@@ -31,7 +31,13 @@ jobs:
         rm -fR devdocs
         cp -fR tmp/devdocs .
         sudo rm -fR tmp
-    - uses: docker://faph/action-jekyll:1.5
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7
+    - uses: limjh16/jekyll-action-ts@v2
+      with:
+        enable_cache: true
+    #- uses: docker://faph/action-jekyll:1.5 # doesn't work with ruby 2.7
     - name: commit and push
       run: |
         git config user.email "workflow@github.actions"
