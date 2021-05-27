@@ -1,4 +1,6 @@
-# Introduction
+# Dissemination services
+
+## Introduction
 
 The way data are stored in arche is quite often not suitable for direct use, especially by humans. Who wants to browse trough metadata in raw RDF? Or view a book as a raw TEI-XML?
 
@@ -7,7 +9,7 @@ Dissemination services address this issue by providing transformations of arche 
 It's worth noting that in most cases it's not feasible to avoid dissemination services by putting resources being already in dissemnation-friendly formats into the arche.
 First, there are typically plenty of dissemination formats we want to offer and this would bring a lot of data duplication and all problems connected with the data duplication (most importantly issues with keeping copies in sync and data volume issues). Second, this would make long term maintenance troublesome as once we want to adjust a given dissemination format we need to reprocess all repository resources (in technical terms we would say it breaks the separation between data and presentation).
 
-# Definitions
+## Definitions
 
 In the spoken language a *dissemination service* has two meanings which are used interchangeable:
 
@@ -18,7 +20,7 @@ In the spoken language a *dissemination service* has two meanings which are used
 2. A set of rules describing which dissemination services (in the 1st meaning) are availble for a given resource.\
    To avoid confusion this is called a *mapping* below.
 
-# Architecture
+## Architecture
 
 * *Dissemination services* just work on their own.\
   The only requirement is it must be possible to describe them using the *mapping* data model.
@@ -31,14 +33,14 @@ In the spoken language a *dissemination service* has two meanings which are used
 It's worth noting that the [arche-core](https://github.com/acdh-oeaw/arche-core) is not aware of *dissemination services*.
 The whole *dissemination service* logic is provided by higher layers of the arche software stack: arche-lib-disserv and arche-resolver.
 
-# Dissemination service
+## Dissemination service
 
 Dissemination service in arche is any web service able to consume data stored in arche.
 
 It can be hosted anywhere. It doesn't matter if it can deal only with arche resources or also with other data.
 It just has to be reachable using an HTTP GET request and it must be able to fetch an arche resource on its own (e.g. from an URL passed to it as a part of the GET request).
 
-## Limitations
+### Limitations
 
 A *dissemination service* must be able to fetch the arche resource on its own based on the data passed to it by a GET request. It means:
 
@@ -47,7 +49,7 @@ A *dissemination service* must be able to fetch the arche resource on its own ba
 * If access to the disseminated resource requires authentication, the dissemination service must be able to perform it on its own.
   Also this limitation can be overcome by setting up a reverse proxy performing the authentication (and, if needed, helping the dissemination service to bypass arche's authentication).
 
-# Mappings data model
+## Mappings data model
 
 *(Dissemination service) mappings* is a set of rules for:
 
@@ -67,7 +69,7 @@ In examples below a `cfg.schema.dissServ.propertyCfgName` syntax will be used to
 An extensive example of the mappings can be found [here](https://github.com/acdh-oeaw/arche-docker-config/blob/arche/initScripts/dissServices.ttl)
 with RDF property mappings being defined [here](https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/schema.yaml).
 
-## Fundamental dissemination service metadata
+### Fundamental dissemination service metadata
 
 Each *dissemination service* has to:
 
@@ -86,7 +88,7 @@ A minimal *dissemination service* description could look as follows:
 
 Please read further for more details.
 
-## Matching resources with dissemination services
+### Matching resources with dissemination services
 
 Matching is done based on matching rules:
 
@@ -153,7 +155,7 @@ Examples:
                     cfg.schema.dissServ.matchRequired "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .  
   ```
 
-## Dissemination service request URL generation
+### Dissemination service request URL generation
 
 Once we know a given *dissemination service* is valid for a given repository resource, we need to be able to generate an HTTP GET request which triggering the dissemination.
 
@@ -204,7 +206,7 @@ A few examples of *dissemination service* URL templates:
 
 For an extensive example please take a look [here](https://github.com/acdh-oeaw/arche-docker-config/blob/arche/initScripts/dissServices.ttl).
 
-### User-defined parameters
+#### User-defined parameters
 
 You can define your own URL template parameters which will be substituted based either on the arche resource's metadata values or values provided to the resolver.
 
@@ -231,7 +233,7 @@ An example RDF definition of a parameter can look as follows:
 
 The corresponding *dissemination service* URL template placeholder is `{XSL}`.
 
-## Choosing dissemination service best matching user's request
+### Choosing dissemination service best matching user's request
 
 So far we know how to describe which dissemination services match which arche resources and how the HTTP GET request disseminating a given resource with a given service is created 
 but it doesn't tell us how a dissemination resource is matched with a user's request.
@@ -292,17 +294,17 @@ It's worth noting that:
     * If you want to assign a `cfg.schema.dissServ.returnFormat` value which is already used by other dissemination service and have no idea what should be the proper quality value,
       don't assign the duplicated `cfg.schema.dissServ.returnFormat` value at all and consult someone more skilled.
 
-# Using arche-lib-disserv
+## Using arche-lib-disserv
 
-## Dissemination services matching a given arche resource
+### Dissemination services matching a given arche resource
 
 Knowing the resource URL:
 
 ```php
 include 'vendor/autoload.php';
 $resUrl = 'https://arche.acdh.oeaw.ac.at/api/108253';
-$repo   = acdhOeaw\acdhRepoLib\Repo::factoryFromUrl($resUrl);
-$res    = new acdhOeaw\arche\disserv\RepoResource($resUrl, $repo);
+$repo   = acdhOeaw\arche\lib\Repo::factoryFromUrl($resUrl);
+$res    = new acdhOeaw\arche\lib\disserv\RepoResource($resUrl, $repo);
 $availableDissServ = $res->getDissServices();
 foreach ($availableDissServ as $retType => $dissService) {
     echo "$retType: " . $dissService->getRequest($res)->getUri() . "\n";
@@ -314,10 +316,10 @@ Using search:
 ```php
 include 'vendor/autoload.php';
 file_put_contents('config.yaml', file_get_contents('https://arche.acdh.oeaw.ac.at/api/describe'));
-$repo       = acdhOeaw\acdhRepoLib\Repo::factory('config.yaml');
-$term       = new acdhOeaw\acdhRepoLib\SearchTerm('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'https://vocabs.acdh.oeaw.ac.at/schema#TopCollection');
-$cfg        = new acdhOeaw\acdhRepoLib\SearchConfig();
-$cfg->class = '\acdhOeaw\arche\disserv\RepoResource';
+$repo       = acdhOeaw\arche\lib\Repo::factory('config.yaml');
+$term       = new acdhOeaw\arche\lib\SearchTerm('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'https://vocabs.acdh.oeaw.ac.at/schema#TopCollection');
+$cfg        = new acdhOeaw\arche\lib\SearchConfig();
+$cfg->class = '\acdhOeaw\arche\lib\disserv\RepoResource';
 $resources  = $repo->getResourcesBySearchTerms([$term], $cfg);
 foreach ($resources as $res) {
     echo "----------\n" . $res->getUri() . "\n";
@@ -327,15 +329,15 @@ foreach ($resources as $res) {
 }
 ```
 
-## Arche resources matching a given dissemination service
+### Arche resources matching a given dissemination service
 
 ```php
 include 'vendor/autoload.php';
 file_put_contents('config.yaml', file_get_contents('https://arche.acdh.oeaw.ac.at/api/describe'));
-$repo         = acdhOeaw\acdhRepoLib\Repo::factory('config.yaml');
-$term         = new acdhOeaw\acdhRepoLib\SearchTerm('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'https://vocabs.acdh.oeaw.ac.at/schema#DisseminationService');
-$cfg          = new acdhOeaw\acdhRepoLib\SearchConfig();
-$cfg->class   = '\acdhOeaw\arche\disserv\dissemination\Service';
+$repo         = acdhOeaw\arche\lib\Repo::factory('config.yaml');
+$term         = new acdhOeaw\arche\lib\SearchTerm('http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'https://vocabs.acdh.oeaw.ac.at/schema#DisseminationService');
+$cfg          = new acdhOeaw\arche\lib\SearchConfig();
+$cfg->class   = '\acdhOeaw\arche\lib\disserv\dissemination\Service';
 $dissServices = $repo->getResourcesBySearchTerms([$term], $cfg);
 $dissServ     = $dissServices[0];
 print_r($dissServ->getFormats());

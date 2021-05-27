@@ -3,22 +3,22 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Introduction | ARCHE documentation</title>
+<title>Dissemination services | ARCHE Suite documentation</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Introduction" />
+<meta property="og:title" content="Dissemination services" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Documentation for the ARCHE repository solution." />
 <meta property="og:description" content="Documentation for the ARCHE repository solution." />
 <link rel="canonical" href="/arche-docs/aux/dissemination_services.html" />
 <meta property="og:url" content="/arche-docs/aux/dissemination_services.html" />
-<meta property="og:site_name" content="ARCHE documentation" />
+<meta property="og:site_name" content="ARCHE Suite documentation" />
 <script type="application/ld+json">
-{"description":"Documentation for the ARCHE repository solution.","@type":"WebPage","headline":"Introduction","url":"/arche-docs/aux/dissemination_services.html","@context":"https://schema.org"}</script>
+{"description":"Documentation for the ARCHE repository solution.","@type":"WebPage","headline":"Dissemination services","url":"/arche-docs/aux/dissemination_services.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/arche-docs/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/arche-docs/feed.xml" title="ARCHE documentation" /></head>
+<link rel="stylesheet" href="/arche-docs/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/arche-docs/feed.xml" title="ARCHE Suite documentation" /></head>
 <body><header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/arche-docs/">ARCHE documentation</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/arche-docs/">ARCHE Suite documentation</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -28,7 +28,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/arche-docs/aux/metadata_api_performance.Rmd">Metadata API performance</a><a class="page-link" href="/arche-docs/aux/dissemination_services.html">Introduction</a></div>
+        <div class="trigger"><a class="page-link" href="/arche-docs/">Guides:</a><a class="page-link" href="/arche-docs/aux/metadata_api_performance.Rmd">Metadata API performance</a><a class="page-link" href="/arche-docs/aux/dissemination_services.html">Dissemination services</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -36,11 +36,13 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Introduction</h1>
+    <h1 class="post-title">Dissemination services</h1>
   </header>
 
   <div class="post-content">
-    <h1 id="introduction">Introduction</h1>
+    <h1 id="dissemination-services">Dissemination services</h1>
+
+<h2 id="introduction">Introduction</h2>
 
 <p>The way data are stored in arche is quite often not suitable for direct use, especially by humans. Who wants to browse trough metadata in raw RDF? Or view a book as a raw TEI-XML?</p>
 
@@ -49,7 +51,7 @@
 <p>It’s worth noting that in most cases it’s not feasible to avoid dissemination services by putting resources being already in dissemnation-friendly formats into the arche.
 First, there are typically plenty of dissemination formats we want to offer and this would bring a lot of data duplication and all problems connected with the data duplication (most importantly issues with keeping copies in sync and data volume issues). Second, this would make long term maintenance troublesome as once we want to adjust a given dissemination format we need to reprocess all repository resources (in technical terms we would say it breaks the separation between data and presentation).</p>
 
-<h1 id="definitions">Definitions</h1>
+<h2 id="definitions">Definitions</h2>
 
 <p>In the spoken language a <em>dissemination service</em> has two meanings which are used interchangeable:</p>
 
@@ -65,7 +67,7 @@ This is the technically correct meaning.
 To avoid confusion this is called a <em>mapping</em> below.</li>
 </ol>
 
-<h1 id="architecture">Architecture</h1>
+<h2 id="architecture">Architecture</h2>
 
 <ul>
   <li><em>Dissemination services</em> just work on their own.\
@@ -83,14 +85,14 @@ The only requirement is it must be possible to describe them using the <em>mappi
 <p>It’s worth noting that the <a href="https://github.com/acdh-oeaw/arche-core">arche-core</a> is not aware of <em>dissemination services</em>.
 The whole <em>dissemination service</em> logic is provided by higher layers of the arche software stack: arche-lib-disserv and arche-resolver.</p>
 
-<h1 id="dissemination-service">Dissemination service</h1>
+<h2 id="dissemination-service">Dissemination service</h2>
 
 <p>Dissemination service in arche is any web service able to consume data stored in arche.</p>
 
 <p>It can be hosted anywhere. It doesn’t matter if it can deal only with arche resources or also with other data.
 It just has to be reachable using an HTTP GET request and it must be able to fetch an arche resource on its own (e.g. from an URL passed to it as a part of the GET request).</p>
 
-<h2 id="limitations">Limitations</h2>
+<h3 id="limitations">Limitations</h3>
 
 <p>A <em>dissemination service</em> must be able to fetch the arche resource on its own based on the data passed to it by a GET request. It means:</p>
 
@@ -101,7 +103,7 @@ If you want to handle such dissemination services, you need to set up a simple r
 Also this limitation can be overcome by setting up a reverse proxy performing the authentication (and, if needed, helping the dissemination service to bypass arche’s authentication).</li>
 </ul>
 
-<h1 id="mappings-data-model">Mappings data model</h1>
+<h2 id="mappings-data-model">Mappings data model</h2>
 
 <p><em>(Dissemination service) mappings</em> is a set of rules for:</p>
 
@@ -122,7 +124,7 @@ In examples below a <code class="language-plaintext highlighter-rouge">cfg.schem
 <p>An extensive example of the mappings can be found <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/initScripts/dissServices.ttl">here</a>
 with RDF property mappings being defined <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/schema.yaml">here</a>.</p>
 
-<h2 id="fundamental-dissemination-service-metadata">Fundamental dissemination service metadata</h2>
+<h3 id="fundamental-dissemination-service-metadata">Fundamental dissemination service metadata</h3>
 
 <p>Each <em>dissemination service</em> has to:</p>
 
@@ -142,7 +144,7 @@ with RDF property mappings being defined <a href="https://github.com/acdh-oeaw/a
 
 <p>Please read further for more details.</p>
 
-<h2 id="matching-resources-with-dissemination-services">Matching resources with dissemination services</h2>
+<h3 id="matching-resources-with-dissemination-services">Matching resources with dissemination services</h3>
 
 <p>Matching is done based on matching rules:</p>
 
@@ -221,7 +223,7 @@ While it allows to handle most common scenarios, it can’t express complex rule
   </li>
 </ul>
 
-<h2 id="dissemination-service-request-url-generation">Dissemination service request URL generation</h2>
+<h3 id="dissemination-service-request-url-generation">Dissemination service request URL generation</h3>
 
 <p>Once we know a given <em>dissemination service</em> is valid for a given repository resource, we need to be able to generate an HTTP GET request which triggering the dissemination.</p>
 
@@ -287,7 +289,7 @@ and the </code>lang<code class="language-plaintext highlighter-rouge"> query par
 
 <p>For an extensive example please take a look <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/initScripts/dissServices.ttl">here</a>.</p>
 
-<h3 id="user-defined-parameters">User-defined parameters</h3>
+<h4 id="user-defined-parameters">User-defined parameters</h4>
 
 <p>You can define your own URL template parameters which will be substituted based either on the arche resource’s metadata values or values provided to the resolver.</p>
 
@@ -318,7 +320,7 @@ and the </code>lang<code class="language-plaintext highlighter-rouge"> query par
 
 <p>The corresponding <em>dissemination service</em> URL template placeholder is <code class="language-plaintext highlighter-rouge">{XSL}</code>.</p>
 
-<h2 id="choosing-dissemination-service-best-matching-users-request">Choosing dissemination service best matching user’s request</h2>
+<h3 id="choosing-dissemination-service-best-matching-users-request">Choosing dissemination service best matching user’s request</h3>
 
 <p>So far we know how to describe which dissemination services match which arche resources and how the HTTP GET request disseminating a given resource with a given service is created 
 but it doesn’t tell us how a dissemination resource is matched with a user’s request.</p>
@@ -387,16 +389,16 @@ don’t assign the duplicated <code class="language-plaintext highlighter-rouge"
   </li>
 </ul>
 
-<h1 id="using-arche-lib-disserv">Using arche-lib-disserv</h1>
+<h2 id="using-arche-lib-disserv">Using arche-lib-disserv</h2>
 
-<h2 id="dissemination-services-matching-a-given-arche-resource">Dissemination services matching a given arche resource</h2>
+<h3 id="dissemination-services-matching-a-given-arche-resource">Dissemination services matching a given arche resource</h3>
 
 <p>Knowing the resource URL:</p>
 
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">include</span> <span class="s1">'vendor/autoload.php'</span><span class="p">;</span>
 <span class="nv">$resUrl</span> <span class="o">=</span> <span class="s1">'https://arche.acdh.oeaw.ac.at/api/108253'</span><span class="p">;</span>
-<span class="nv">$repo</span>   <span class="o">=</span> <span class="nx">acdhOeaw\acdhRepoLib\Repo</span><span class="o">::</span><span class="na">factoryFromUrl</span><span class="p">(</span><span class="nv">$resUrl</span><span class="p">);</span>
-<span class="nv">$res</span>    <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\arche\disserv\RepoResource</span><span class="p">(</span><span class="nv">$resUrl</span><span class="p">,</span> <span class="nv">$repo</span><span class="p">);</span>
+<span class="nv">$repo</span>   <span class="o">=</span> <span class="nx">acdhOeaw\arche\lib\Repo</span><span class="o">::</span><span class="na">factoryFromUrl</span><span class="p">(</span><span class="nv">$resUrl</span><span class="p">);</span>
+<span class="nv">$res</span>    <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\arche\lib\disserv\RepoResource</span><span class="p">(</span><span class="nv">$resUrl</span><span class="p">,</span> <span class="nv">$repo</span><span class="p">);</span>
 <span class="nv">$availableDissServ</span> <span class="o">=</span> <span class="nv">$res</span><span class="o">-&gt;</span><span class="na">getDissServices</span><span class="p">();</span>
 <span class="k">foreach</span> <span class="p">(</span><span class="nv">$availableDissServ</span> <span class="k">as</span> <span class="nv">$retType</span> <span class="o">=&gt;</span> <span class="nv">$dissService</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">echo</span> <span class="s2">"</span><span class="nv">$retType</span><span class="s2">: "</span> <span class="o">.</span> <span class="nv">$dissService</span><span class="o">-&gt;</span><span class="na">getRequest</span><span class="p">(</span><span class="nv">$res</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">getUri</span><span class="p">()</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
@@ -407,10 +409,10 @@ don’t assign the duplicated <code class="language-plaintext highlighter-rouge"
 
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">include</span> <span class="s1">'vendor/autoload.php'</span><span class="p">;</span>
 <span class="nb">file_put_contents</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">,</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="s1">'https://arche.acdh.oeaw.ac.at/api/describe'</span><span class="p">));</span>
-<span class="nv">$repo</span>       <span class="o">=</span> <span class="nx">acdhOeaw\acdhRepoLib\Repo</span><span class="o">::</span><span class="na">factory</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">);</span>
-<span class="nv">$term</span>       <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\acdhRepoLib\SearchTerm</span><span class="p">(</span><span class="s1">'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'</span><span class="p">,</span> <span class="s1">'https://vocabs.acdh.oeaw.ac.at/schema#TopCollection'</span><span class="p">);</span>
-<span class="nv">$cfg</span>        <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\acdhRepoLib\SearchConfig</span><span class="p">();</span>
-<span class="nv">$cfg</span><span class="o">-&gt;</span><span class="na">class</span> <span class="o">=</span> <span class="s1">'\acdhOeaw\arche\disserv\RepoResource'</span><span class="p">;</span>
+<span class="nv">$repo</span>       <span class="o">=</span> <span class="nx">acdhOeaw\arche\lib\Repo</span><span class="o">::</span><span class="na">factory</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">);</span>
+<span class="nv">$term</span>       <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\arche\lib\SearchTerm</span><span class="p">(</span><span class="s1">'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'</span><span class="p">,</span> <span class="s1">'https://vocabs.acdh.oeaw.ac.at/schema#TopCollection'</span><span class="p">);</span>
+<span class="nv">$cfg</span>        <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\arche\lib\SearchConfig</span><span class="p">();</span>
+<span class="nv">$cfg</span><span class="o">-&gt;</span><span class="na">class</span> <span class="o">=</span> <span class="s1">'\acdhOeaw\arche\lib\disserv\RepoResource'</span><span class="p">;</span>
 <span class="nv">$resources</span>  <span class="o">=</span> <span class="nv">$repo</span><span class="o">-&gt;</span><span class="na">getResourcesBySearchTerms</span><span class="p">([</span><span class="nv">$term</span><span class="p">],</span> <span class="nv">$cfg</span><span class="p">);</span>
 <span class="k">foreach</span> <span class="p">(</span><span class="nv">$resources</span> <span class="k">as</span> <span class="nv">$res</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">echo</span> <span class="s2">"----------</span><span class="se">\n</span><span class="s2">"</span> <span class="o">.</span> <span class="nv">$res</span><span class="o">-&gt;</span><span class="na">getUri</span><span class="p">()</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
@@ -420,14 +422,14 @@ don’t assign the duplicated <code class="language-plaintext highlighter-rouge"
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h2 id="arche-resources-matching-a-given-dissemination-service">Arche resources matching a given dissemination service</h2>
+<h3 id="arche-resources-matching-a-given-dissemination-service">Arche resources matching a given dissemination service</h3>
 
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">include</span> <span class="s1">'vendor/autoload.php'</span><span class="p">;</span>
 <span class="nb">file_put_contents</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">,</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="s1">'https://arche.acdh.oeaw.ac.at/api/describe'</span><span class="p">));</span>
-<span class="nv">$repo</span>         <span class="o">=</span> <span class="nx">acdhOeaw\acdhRepoLib\Repo</span><span class="o">::</span><span class="na">factory</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">);</span>
-<span class="nv">$term</span>         <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\acdhRepoLib\SearchTerm</span><span class="p">(</span><span class="s1">'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'</span><span class="p">,</span> <span class="s1">'https://vocabs.acdh.oeaw.ac.at/schema#DisseminationService'</span><span class="p">);</span>
-<span class="nv">$cfg</span>          <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\acdhRepoLib\SearchConfig</span><span class="p">();</span>
-<span class="nv">$cfg</span><span class="o">-&gt;</span><span class="na">class</span>   <span class="o">=</span> <span class="s1">'\acdhOeaw\arche\disserv\dissemination\Service'</span><span class="p">;</span>
+<span class="nv">$repo</span>         <span class="o">=</span> <span class="nx">acdhOeaw\arche\lib\Repo</span><span class="o">::</span><span class="na">factory</span><span class="p">(</span><span class="s1">'config.yaml'</span><span class="p">);</span>
+<span class="nv">$term</span>         <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\arche\lib\SearchTerm</span><span class="p">(</span><span class="s1">'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'</span><span class="p">,</span> <span class="s1">'https://vocabs.acdh.oeaw.ac.at/schema#DisseminationService'</span><span class="p">);</span>
+<span class="nv">$cfg</span>          <span class="o">=</span> <span class="k">new</span> <span class="nx">acdhOeaw\arche\lib\SearchConfig</span><span class="p">();</span>
+<span class="nv">$cfg</span><span class="o">-&gt;</span><span class="na">class</span>   <span class="o">=</span> <span class="s1">'\acdhOeaw\arche\lib\disserv\dissemination\Service'</span><span class="p">;</span>
 <span class="nv">$dissServices</span> <span class="o">=</span> <span class="nv">$repo</span><span class="o">-&gt;</span><span class="na">getResourcesBySearchTerms</span><span class="p">([</span><span class="nv">$term</span><span class="p">],</span> <span class="nv">$cfg</span><span class="p">);</span>
 <span class="nv">$dissServ</span>     <span class="o">=</span> <span class="nv">$dissServices</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
 <span class="nb">print_r</span><span class="p">(</span><span class="nv">$dissServ</span><span class="o">-&gt;</span><span class="na">getFormats</span><span class="p">());</span>
@@ -448,12 +450,12 @@ don’t assign the duplicated <code class="language-plaintext highlighter-rouge"
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">ARCHE documentation</h2>
+    <h2 class="footer-heading">ARCHE Suite documentation</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">ARCHE documentation</li><li><a class="u-email" href="mailto:mateusz.zoltak@oeaw.ac.at">mateusz.zoltak@oeaw.ac.at</a></li></ul>
+          <li class="p-name">ARCHE Suite documentation</li><li><a class="u-email" href="mailto:mateusz.zoltak@oeaw.ac.at">mateusz.zoltak@oeaw.ac.at</a></li></ul>
       </div>
 
       <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/achd-oeaw"><svg class="svg-icon"><use xlink:href="/arche-docs/assets/minima-social-icons.svg#github"></use></svg> <span class="username">achd-oeaw</span></a></li></ul>
