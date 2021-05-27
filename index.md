@@ -5,14 +5,12 @@
 layout: page
 ---
 
-# ARCHE Suite documentation
-
-## Guides
+# Guides
 
 * [Metadata API performance](aux/metadata_api_performance.html)
 * [Dissemination services](aux/dissemination_services.html)
 
-## Components
+# Components
 
 | library | links | description | development status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---------|-------|-------------|--------|
