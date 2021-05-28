@@ -7846,6 +7846,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_idNmsp"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\MetadataFormat\u003A\u003A\u0024idProp",
+            "name": "idProp",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_idProp"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\MetadataFormat\u003A\u003A\u0024acdhNmsp",
             "name": "acdhNmsp",
             "summary": "",
@@ -8155,6 +8160,11 @@ Search.appendIndex(
             "name": "getResourcesByPath",
             "summary": "Prepares\u0020fake\u0020resource\u0020metadata\u0020allowing\u0020to\u0020resolve\u0020inverse\u0020and\/or\nrecursively\u0020targetted\u0020resources.",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_getResourcesByPath"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AgetResourceId\u0028\u0029",
+            "name": "getResourceId",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_getResourceId"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AFAKE_ROOT_TAG",
             "name": "FAKE_ROOT_TAG",
