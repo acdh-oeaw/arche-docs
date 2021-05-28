@@ -5,7 +5,6 @@
 layout: default
 ---
 
-
 # Guides
 
 * [Metadata API performance](aux/metadata_api_performance.html)
