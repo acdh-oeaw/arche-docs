@@ -4676,6 +4676,91 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_namespace"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject",
+            "name": "BreadcrumbObject",
+            "summary": "Description\u0020of\u0020BreadcrumbObject",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003AgetData\u0028\u0029",
+            "name": "getData",
+            "summary": "return\u0020with\u0020the\u0020breadcrumb\u0020result\u0020array",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#method_getData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "start\u0020the\u0020obj\u0020process",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#method_process"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003AgetMainresource\u0028\u0029",
+            "name": "getMainresource",
+            "summary": "Get\u0020the\u0020actual\u0020resource\u0020to\u0020we\u0020can\u0020start\u0020to\u0020discover\u0020the\u0020parents",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#method_getMainresource"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003AgetParent\u0028\u0029",
+            "name": "getParent",
+            "summary": "get\u0020the\u0020first\u0020parent\u0020for\u0020our\u0020actual\u0020resource",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#method_getParent"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003AgetParentId\u0028\u0029",
+            "name": "getParentId",
+            "summary": "Get\u0020the\u0020parent\u0020id\u0020based\u0020on\u0020the\u0020acdh\u003AhasIdentifier\u0020and\u0020the\u0020baseUrl",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#method_getParentId"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003AgetParentLabel\u0028\u0029",
+            "name": "getParentLabel",
+            "summary": "Get\u0020the\u0020parent\u0020title\u0020based\u0020on\u0020the\u0020acdh\u003AhasTitle\u0020and\u0020the\u0020site\u0020language",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#method_getParentLabel"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003AgetValueTitle\u0028\u0029",
+            "name": "getValueTitle",
+            "summary": "get\u0020the\u0020actual\u0020title\u0020value",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#method_getValueTitle"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003AgetParents\u0028\u0029",
+            "name": "getParents",
+            "summary": "Get\u0020all\u0020of\u0020the\u0020other\u0020parents\u0020with\u0020recursion",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#method_getParents"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003AsearchForParents\u0028\u0029",
+            "name": "searchForParents",
+            "summary": "Recursive\u0020search\u0020for\u0020the\u0020parents",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#method_searchForParents"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003A\u0024siteLang",
+            "name": "siteLang",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#property_siteLang"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#property_repo"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003A\u0024obj",
+            "name": "obj",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#property_obj"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003A\u0024result",
+            "name": "result",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#property_result"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#property_data"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadcrumbObject\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadcrumbObject.html#property_id"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject",
             "name": "ResourceObject",
             "summary": "",
@@ -4866,6 +4951,71 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#property_biblatexUrl"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject",
+            "name": "TooltipObject",
+            "summary": "Description\u0020of\u0020TooltipObject",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject\u003A\u003AgetData\u0028\u0029",
+            "name": "getData",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html#method_getData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject\u003A\u003AformatTooltip\u0028\u0029",
+            "name": "formatTooltip",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html#method_formatTooltip"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject\u003A\u003Aprocess\u0028\u0029",
+            "name": "process",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html#method_process"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject\u003A\u003AgetValueTitleByProperty\u0028\u0029",
+            "name": "getValueTitleByProperty",
+            "summary": "Tooltip\u0020get\u0020the\u0020values",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html#method_getValueTitleByProperty"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject\u003A\u003AgetToolTipAcdhIdentifier\u0028\u0029",
+            "name": "getToolTipAcdhIdentifier",
+            "summary": "Inside\u0020the\u0020tooltip\u0020data\u0020we\u0020can\u0020get\u0020the\u0020type\u0020from\u0020the\u0020acdh\u0020identifier\u0020property",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html#method_getToolTipAcdhIdentifier"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject\u003A\u003AgetValueTitle\u0028\u0029",
+            "name": "getValueTitle",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html#method_getValueTitle"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject\u003A\u003A\u0024siteLang",
+            "name": "siteLang",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html#property_siteLang"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html#property_repo"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject\u003A\u003A\u0024obj",
+            "name": "obj",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html#property_obj"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject\u003A\u003A\u0024result",
+            "name": "result",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html#property_result"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\TooltipObject\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-TooltipObject.html#property_data"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\PathProcessor\\AcdhRepoGuiPathProcessor",
             "name": "AcdhRepoGuiPathProcessor",
             "summary": "",
@@ -4930,6 +5080,46 @@ Search.appendIndex(
             "name": "build",
             "summary": "Left\u0020block\u0020build\u0020function",
             "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-StartPageLeftBlock.html#method_build"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest",
+            "name": "ArcheApiControllerTest",
+            "summary": "Tests\u0020ArcheApiController",
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003AsetUpBeforeClass\u0028\u0029",
+            "name": "setUpBeforeClass",
+            "summary": "",
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#method_setUpBeforeClass"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003Arepo_personsTest\u0028\u0029",
+            "name": "repo_personsTest",
+            "summary": "",
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#method_repo_personsTest"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#property_repo"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#property_config"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003A\u0024model",
+            "name": "model",
+            "summary": "",
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#property_model"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003A\u0024helper",
+            "name": "helper",
+            "summary": "",
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#property_helper"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003A\u0024repodb",
+            "name": "repodb",
+            "summary": "",
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#property_repodb"
         },                {
             "fqsen": "\\exampleData",
             "name": "exampleData",
@@ -5310,6 +5500,41 @@ Search.appendIndex(
             "name": "setIDTypeUri",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_setIDTypeUri"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AcreateResourceObject\u0028\u0029",
+            "name": "createResourceObject",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_createResourceObject"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AgetCount\u0028\u0029",
+            "name": "getCount",
+            "summary": "Get\u0020the\u0020count\u0020from\u0020the\u0020rest\u0020api\u0020result",
+            "url": "classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_getCount"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AprocessGraph\u0028\u0029",
+            "name": "processGraph",
+            "summary": "Process\u0020the\u0020easyrdf\u0020graph\u0020data\u0020and\u0020create\u0020ResourceObject\u0020arrays",
+            "url": "classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_processGraph"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AgetObjectValues\u0028\u0029",
+            "name": "getObjectValues",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_getObjectValues"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AgetLiteralValues\u0028\u0029",
+            "name": "getLiteralValues",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_getLiteralValues"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AgetUriValues\u0028\u0029",
+            "name": "getUriValues",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_getUriValues"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003AgetResourceRepoIdentifier\u0028\u0029",
+            "name": "getResourceRepoIdentifier",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Traits-ArcheUtilTrait.html#method_getResourceRepoIdentifier"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait\u003A\u003A\u0024generalFunctions",
             "name": "generalFunctions",
@@ -9485,6 +9710,11 @@ Search.appendIndex(
             "name": "Plugin",
             "summary": "",
             "url": "namespaces/drupal-acdh-repo-gui-plugin.html"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller",
+            "name": "Controller",
+            "summary": "",
+            "url": "namespaces/drupal-tests-acdh-repo-gui-unit-controller.html"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit",
             "name": "Unit",
