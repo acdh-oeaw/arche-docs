@@ -4931,46 +4931,6 @@ Search.appendIndex(
             "summary": "Left\u0020block\u0020build\u0020function",
             "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-StartPageLeftBlock.html#method_build"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest",
-            "name": "ArcheApiControllerTest",
-            "summary": "Tests\u0020ArcheApiController",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003AsetUpBeforeClass\u0028\u0029",
-            "name": "setUpBeforeClass",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#method_setUpBeforeClass"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003Arepo_personsTest\u0028\u0029",
-            "name": "repo_personsTest",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#method_repo_personsTest"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#property_repo"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#property_config"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003A\u0024model",
-            "name": "model",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#property_model"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003A\u0024helper",
-            "name": "helper",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#property_helper"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller\\ArcheApiControllerTest\u003A\u003A\u0024repodb",
-            "name": "repodb",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Controller-ArcheApiControllerTest.html#property_repodb"
-        },                {
             "fqsen": "\\exampleData",
             "name": "exampleData",
             "summary": "",
@@ -9560,11 +9520,6 @@ Search.appendIndex(
             "name": "Plugin",
             "summary": "",
             "url": "namespaces/drupal-acdh-repo-gui-plugin.html"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Controller",
-            "name": "Controller",
-            "summary": "",
-            "url": "namespaces/drupal-tests-acdh-repo-gui-unit-controller.html"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit",
             "name": "Unit",
