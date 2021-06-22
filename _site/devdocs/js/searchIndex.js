@@ -11,10 +11,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AgetBibtex\u0028\u0029",
-            "name": "getBibtex",
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AgetBiblatex\u0028\u0029",
+            "name": "getBiblatex",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_getBibtex"
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_getBiblatex"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AapplyOverrides\u0028\u0029",
             "name": "applyOverrides",
@@ -51,15 +51,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_formatPersons"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AgetTopCollection\u0028\u0029",
-            "name": "getTopCollection",
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AformatParent\u0028\u0029",
+            "name": "formatParent",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_getTopCollection"
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_formatParent"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AescapeBibtex\u0028\u0029",
-            "name": "escapeBibtex",
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AescapeBiblatex\u0028\u0029",
+            "name": "escapeBiblatex",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_escapeBibtex"
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_escapeBiblatex"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ATYPE_CONST",
             "name": "TYPE_CONST",
@@ -91,10 +91,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_URL"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ASRC_RESOURCE",
-            "name": "SRC_RESOURCE",
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ASRC_PARENT",
+            "name": "SRC_PARENT",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_SRC_RESOURCE"
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_SRC_PARENT"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ASRC_TOP_COLLECTION",
             "name": "SRC_TOP_COLLECTION",
