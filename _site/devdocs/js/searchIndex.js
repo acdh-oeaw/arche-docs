@@ -4831,6 +4831,11 @@ Search.appendIndex(
             "summary": "Add\u0020Multipolygon\u0020string\u0020for\u0020the\u0020polygon\u0020dataset,\u0020othwerwise\u0020the\u0020js\u0020plugin\u0020cant\u0020handle\u0020it",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getPolygonData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AisAudio\u0028\u0029",
+            "name": "isAudio",
+            "summary": "Check\u0020the\u0020resource\u0020has\u0020an\u0020audio,\u0020to\u0020display\u0020the\u0020audio\u0020player",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_isAudio"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
@@ -8426,6 +8431,11 @@ Search.appendIndex(
             "summary": "Inserts\u0020a\u0020value\u0020from\u0020metadata.",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_insertMetaValues"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AremoveTemplateAttributes\u0028\u0029",
+            "name": "removeTemplateAttributes",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_removeTemplateAttributes"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AcollectMetaValue\u0028\u0029",
             "name": "collectMetaValue",
             "summary": "Extracts\u0020metadata\u0020value\u0020from\u0020a\u0020given\u0020EasyRdf\u0020node",
@@ -8445,6 +8455,16 @@ Search.appendIndex(
             "name": "getResourceId",
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_getResourceId"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AinsertAttribute\u0028\u0029",
+            "name": "insertAttribute",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_insertAttribute"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AinsertContent\u0028\u0029",
+            "name": "insertContent",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_insertContent"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AFAKE_ROOT_TAG",
             "name": "FAKE_ROOT_TAG",
