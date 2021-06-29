@@ -3186,6 +3186,11 @@ Search.appendIndex(
             "summary": "Display\u0020the\u00203d\u0020object\u0020\u0028nxs,\u0020ply\u0029\u0020inside\u0020a\u0020js\u0020viewer",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_3d_viewer"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_pdf_viewer\u0028\u0029",
+            "name": "repo_pdf_viewer",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_pdf_viewer"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003A\u0024basicViewData",
             "name": "basicViewData",
             "summary": "",
@@ -4835,6 +4840,11 @@ Search.appendIndex(
             "name": "isAudio",
             "summary": "Check\u0020the\u0020resource\u0020has\u0020an\u0020audio,\u0020to\u0020display\u0020the\u0020audio\u0020player",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_isAudio"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AisPDF\u0028\u0029",
+            "name": "isPDF",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_isPDF"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024config",
             "name": "config",
