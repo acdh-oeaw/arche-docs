@@ -5446,6 +5446,11 @@ Search.appendIndex(
             "summary": "Simple\u0020container\u0020for\u0020a\u0020request\u0020binary\u0020payload",
             "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003AguzzleMimetype\u0028\u0029",
+            "name": "guzzleMimetype",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#method_guzzleMimetype"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020a\u0020binary\u0020payload\u0020object.",
@@ -5470,6 +5475,16 @@ Search.appendIndex(
             "name": "createFromFile",
             "summary": "Initializes\u0020the\u0020object\u0020from\u0020a\u0020file.",
             "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#method_createFromFile"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003AGUZZLE_PSR7_V1_MIME_FUNC",
+            "name": "GUZZLE_PSR7_V1_MIME_FUNC",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#constant_GUZZLE_PSR7_V1_MIME_FUNC"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003AGUZZLE_PSR7_V2_MIME_FUNC",
+            "name": "GUZZLE_PSR7_V2_MIME_FUNC",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#constant_GUZZLE_PSR7_V2_MIME_FUNC"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A\u0024data",
             "name": "data",
