@@ -7796,6 +7796,11 @@ Search.appendIndex(
             "summary": "Fetches\u0020an\u0020array\u0020of\u0020SkosConceptDesc\u0020objects\u0020desribing\u0020allowed\u0020vocabulary\nvalues.",
             "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_getVocabularyValues"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AcheckVocabularyValue\u0028\u0029",
+            "name": "checkVocabularyValue",
+            "summary": "Checks\u0020if\u0020a\u0020given\u0020value\u0020exists\u0020in\u0020a\u0020given\u0020vocabulary.",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_checkVocabularyValue"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadClasses\u0028\u0029",
             "name": "loadClasses",
             "summary": "",
@@ -7866,10 +7871,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method___get"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003AgetVocabsValues\u0028\u0029",
-            "name": "getVocabsValues",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003AgetVocabularyValues\u0028\u0029",
+            "name": "getVocabularyValues",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_getVocabsValues"
+            "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_getVocabularyValues"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003AcheckVocabularyValue\u0028\u0029",
+            "name": "checkVocabularyValue",
+            "summary": "Checks\u0020if\u0020a\u0020given\u0020value\u0020exists\u0020in\u0020a\u0020given\u0020vocabulary.",
+            "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_checkVocabularyValue"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003A\u0024property",
             "name": "property",

@@ -168,14 +168,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_defaultValue">$defaultValue</a>
     <span>
-                &nbsp;: string            </span>
+                &nbsp;: string|null            </span>
 </dt>
 <dd>acdh:defaultValue annotation property value</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_domain">$domain</a>
     <span>
-                &nbsp;: array&lt;string|int, string&gt;            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Property domain URI</dd>
 
@@ -203,14 +203,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_max">$max</a>
     <span>
-                &nbsp;: int            </span>
+                &nbsp;: int|null            </span>
 </dt>
 <dd>Maximum count</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_min">$min</a>
     <span>
-                &nbsp;: int            </span>
+                &nbsp;: int|null            </span>
 </dt>
 <dd>Minimum count</dd>
 
@@ -224,21 +224,21 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_properties">$properties</a>
     <span>
-                &nbsp;: array&lt;string|int, string&gt;            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Property URIs of all properties this one inhertis from (includint itself)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_property">$property</a>
     <span>
-                &nbsp;: array&lt;string|int, string&gt;            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Property URIs</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_range">$range</a>
     <span>
-                &nbsp;: array&lt;string|int, string&gt;            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Property range URI</dd>
 
@@ -280,7 +280,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_vocabsValues">$vocabsValues</a>
     <span>
-                &nbsp;: array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-schema-SkosConceptDesc.html"><abbr title="\acdhOeaw\arche\lib\schema\SkosConceptDesc">SkosConceptDesc</abbr></a>&gt;            </span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>Array of vocabulary values fetched from vocabulary pointed by acdh:vocabs
 annotation property</dd>
@@ -300,6 +300,13 @@ annotation property</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_checkVocabularyValue">checkVocabularyValue()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Checks if a given value exists in a given vocabulary.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-schema-BaseDesc.html#method_getComment">getComment()</a>
     <span>
                         &nbsp;: string    </span>
@@ -314,7 +321,7 @@ annotation property</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_getVocabsValues">getVocabsValues()</a>
+    <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_getVocabularyValues">getVocabularyValues()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
@@ -362,7 +369,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -375,7 +382,8 @@ annotation property</dd>
      = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -428,7 +436,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -436,12 +444,13 @@ annotation property</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$defaultValue</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -461,7 +470,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -469,7 +478,7 @@ annotation property</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$domain</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -560,7 +569,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -573,7 +582,8 @@ annotation property</dd>
      = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -593,7 +603,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -601,12 +611,13 @@ annotation property</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__type">int|null</span>
     <span class="phpdocumentor-signature__name">$max</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -626,7 +637,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -634,12 +645,13 @@ annotation property</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__type">int|null</span>
     <span class="phpdocumentor-signature__name">$min</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -659,7 +671,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -672,7 +684,8 @@ annotation property</dd>
      = <span class="phpdocumentor-signature__default-value">99999</span></code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -692,7 +705,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -700,7 +713,7 @@ annotation property</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$properties</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -733,7 +746,7 @@ annotation property</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$property</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -758,7 +771,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -766,7 +779,7 @@ annotation property</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$range</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -791,7 +804,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -826,7 +839,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -839,7 +852,8 @@ annotation property</dd>
     </code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -892,7 +906,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -902,10 +916,11 @@ annotation property</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$vocabs</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -925,7 +940,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -936,8 +951,10 @@ annotation property</dd>
     <span class="phpdocumentor-signature__name">$ontologyObj</span>
     </code>
 
-    
-    
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -957,7 +974,7 @@ annotation property</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -966,7 +983,7 @@ annotation property</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-schema-SkosConceptDesc.html"><abbr title="\acdhOeaw\arche\lib\schema\SkosConceptDesc">SkosConceptDesc</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$vocabsValues</span>
     </code>
 
@@ -1051,7 +1068,7 @@ annotation property</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -1078,6 +1095,51 @@ annotation property</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_checkVocabularyValue">
+        checkVocabularyValue()
+        <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_checkVocabularyValue" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">154</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Checks if a given value exists in a given vocabulary.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">checkVocabularyValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>Returns true if a property doesn't use a controlled vocabulary.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -1192,21 +1254,21 @@ annotation property</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getVocabsValues">
-        getVocabsValues()
-        <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_getVocabsValues" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getVocabularyValues">
+        getVocabularyValues()
+        <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_getVocabularyValues" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getVocabsValues</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getVocabularyValues</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;en&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1243,7 +1305,7 @@ annotation property</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php"><a href="files/arche-lib-schema-src-acdhoeaw-arche-lib-schema-propertydesc.html"><abbr title="arche-lib-schema/src/acdhOeaw/arche/lib/schema/PropertyDesc.php">PropertyDesc.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
