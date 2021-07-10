@@ -2961,6 +2961,11 @@ Search.appendIndex(
             "summary": "Create\u0020root\u0020table\u0020clone\u0020based\u0020on\u0020the\u0020actual\u0020ontology",
             "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getRootTable"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_vcr\u0028\u0029",
+            "name": "repo_vcr",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_vcr"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024modelData",
             "name": "modelData",
             "summary": "",
@@ -3188,7 +3193,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_pdf_viewer\u0028\u0029",
             "name": "repo_pdf_viewer",
-            "summary": "",
+            "summary": "Display\u0020PDF\u0020in\u0020viewer",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_pdf_viewer"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003A\u0024basicViewData",
@@ -4680,6 +4685,86 @@ Search.appendIndex(
             "name": "namespace",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_namespace"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject",
+            "name": "ClarinVCRObject",
+            "summary": "Description\u0020of\u0020ClarinVCRObject",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003AprocessUrls\u0028\u0029",
+            "name": "processUrls",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#method_processUrls"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003AcreateHeader\u0028\u0029",
+            "name": "createHeader",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#method_createHeader"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003AcreateFormParams\u0028\u0029",
+            "name": "createFormParams",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#method_createFormParams"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003AmakeTheApiCall\u0028\u0029",
+            "name": "makeTheApiCall",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#method_makeTheApiCall"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003AsetTheUrl\u0028\u0029",
+            "name": "setTheUrl",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#method_setTheUrl"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003AsetupTheClient\u0028\u0029",
+            "name": "setupTheClient",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#method_setupTheClient"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003AcheckHeaderRedirect\u0028\u0029",
+            "name": "checkHeaderRedirect",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#method_checkHeaderRedirect"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003A\u0024urls",
+            "name": "urls",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#property_urls"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#property_url"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003A\u0024clarinUrl",
+            "name": "clarinUrl",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#property_clarinUrl"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003A\u0024client",
+            "name": "client",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#property_client"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003A\u0024collectionName",
+            "name": "collectionName",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#property_collectionName"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003A\u0024header",
+            "name": "header",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#property_header"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject\u003A\u003A\u0024form_params",
+            "name": "form_params",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ClarinVCRObject.html#property_form_params"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject",
             "name": "ResourceObject",
