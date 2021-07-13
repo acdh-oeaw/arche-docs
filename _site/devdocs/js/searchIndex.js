@@ -3571,11 +3571,6 @@ Search.appendIndex(
             "summary": "Build\u0020up\u0020the\u0020necessary\u0020data\u0020for\u0020the\u0020detail\u0020view",
             "url": "classes/Drupal-acdh-repo-gui-Helper-DetailViewHelper.html#method_createView"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DetailViewHelper\u003A\u003AformatTooltip\u0028\u0029",
-            "name": "formatTooltip",
-            "summary": "Format\u0020the\u0020sql\u0020result\u0020for\u0020the\u0020gui",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-DetailViewHelper.html#method_formatTooltip"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DetailViewHelper\u003A\u003A\u0024detailViewObjectArray",
             "name": "detailViewObjectArray",
             "summary": "",
@@ -4965,6 +4960,36 @@ Search.appendIndex(
             "name": "biblatexUrl",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#property_biblatexUrl"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ToolTipObject",
+            "name": "ToolTipObject",
+            "summary": "Description\u0020of\u0020ToolTipObject",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ToolTipObject.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ToolTipObject\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ToolTipObject.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ToolTipObject\u003A\u003AformatTooltip\u0028\u0029",
+            "name": "formatTooltip",
+            "summary": "Format\u0020the\u0020sql\u0020result\u0020for\u0020the\u0020gui",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ToolTipObject.html#method_formatTooltip"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ToolTipObject\u003A\u003AgetData\u0028\u0029",
+            "name": "getData",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ToolTipObject.html#method_getData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ToolTipObject\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ToolTipObject.html#property_data"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ToolTipObject\u003A\u003A\u0024td",
+            "name": "td",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ToolTipObject.html#property_td"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\PathProcessor\\AcdhRepoGuiPathProcessor",
             "name": "AcdhRepoGuiPathProcessor",
