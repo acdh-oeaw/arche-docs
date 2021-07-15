@@ -4923,8 +4923,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AisPDF\u0028\u0029",
             "name": "isPDF",
-            "summary": "",
+            "summary": "Check\u0020if\u0020the\u0020resource\u0020is\u0020a\u0020pdf\u0020file",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_isPDF"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AisPublic\u0028\u0029",
+            "name": "isPublic",
+            "summary": "Check\u0020the\u0020resource\u0020is\u0020public\u0020or\u0020not",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_isPublic"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024config",
             "name": "config",
@@ -4960,6 +4965,16 @@ Search.appendIndex(
             "name": "biblatexUrl",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#property_biblatexUrl"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024audioCategories",
+            "name": "audioCategories",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#property_audioCategories"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024publicAccessValue",
+            "name": "publicAccessValue",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#property_publicAccessValue"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ToolTipObject",
             "name": "ToolTipObject",
@@ -7903,8 +7918,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AgetVocabularyValues\u0028\u0029",
             "name": "getVocabularyValues",
-            "summary": "Fetches\u0020an\u0020array\u0020of\u0020SkosConceptDesc\u0020objects\u0020desribing\u0020allowed\u0020vocabulary\nvalues.",
+            "summary": "Fetches\u0020an\u0020array\u0020of\u0020SkosConceptDesc\u0020objects\u0020desribing\u0020vocabulary\u0020values.",
             "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_getVocabularyValues"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AgetVocabularyValue\u0028\u0029",
+            "name": "getVocabularyValue",
+            "summary": "Fetches\u0020SkosConceptDesc\u0020object\u0020desribing\u0020a\u0020vocabulary\u0020value.",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_getVocabularyValue"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AcheckVocabularyValue\u0028\u0029",
             "name": "checkVocabularyValue",
@@ -7930,6 +7950,41 @@ Search.appendIndex(
             "name": "preprocess",
             "summary": "Combines\u0020class,\u0020property\u0020and\u0020restriction\u0020information",
             "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_preprocess"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AfetchVocabularyValues\u0028\u0029",
+            "name": "fetchVocabularyValues",
+            "summary": "Fetches\u0020information\u0020about\u0020SKOS\u0020concepts\u0020and\u0020formats\u0020them\u0020as\u0020SkosConceptDesc\nobjects.",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_fetchVocabularyValues"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AVOCABSVALUE_ID",
+            "name": "VOCABSVALUE_ID",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#constant_VOCABSVALUE_ID"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AVOCABSVALUE_NOTATION",
+            "name": "VOCABSVALUE_NOTATION",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#constant_VOCABSVALUE_NOTATION"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AVOCABSVALUE_PREFLABEL",
+            "name": "VOCABSVALUE_PREFLABEL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#constant_VOCABSVALUE_PREFLABEL"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AVOCABSVALUE_ALTLABEL",
+            "name": "VOCABSVALUE_ALTLABEL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#constant_VOCABSVALUE_ALTLABEL"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AVOCABSVALUE_ALL",
+            "name": "VOCABSVALUE_ALL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#constant_VOCABSVALUE_ALL"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003A\u0024vocabsValueProperties",
+            "name": "vocabsValueProperties",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#property_vocabsValueProperties"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003A\u0024pdo",
             "name": "pdo",
@@ -7983,8 +8038,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003AgetVocabularyValues\u0028\u0029",
             "name": "getVocabularyValues",
-            "summary": "",
+            "summary": "Returns\u0020a\u0020list\u0020of\u0020vocabulary\u0020values\u0020sorted\u0020according\u0020to\u0020the\u0020label\nproperty\u0020value\u0020in\u0020a\u0020given\u0020language.",
             "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_getVocabularyValues"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003AgetVocabularyValue\u0028\u0029",
+            "name": "getVocabularyValue",
+            "summary": "Fetches\u0020SkosConceptDesc\u0020object\u0020desribing\u0020a\u0020vocabulary\u0020value.",
+            "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_getVocabularyValue"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003AcheckVocabularyValue\u0028\u0029",
             "name": "checkVocabularyValue",
@@ -8056,10 +8116,10 @@ Search.appendIndex(
             "summary": "acdh\u003Avocabs\u0020annotation\u0020property\u0020value",
             "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_vocabs"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003A\u0024vocabsValues",
-            "name": "vocabsValues",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003A\u0024vocabularyValues",
+            "name": "vocabularyValues",
             "summary": "Array\u0020of\u0020vocabulary\u0020values\u0020fetched\u0020from\u0020vocabulary\u0020pointed\u0020by\u0020acdh\u003Avocabs\nannotation\u0020property",
-            "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_vocabsValues"
+            "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_vocabularyValues"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003A\u0024ontologyObj",
             "name": "ontologyObj",
@@ -8105,6 +8165,11 @@ Search.appendIndex(
             "name": "concept",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-schema-SkosConceptDesc.html#property_concept"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\SkosConceptDesc\u003A\u003A\u0024notation",
+            "name": "notation",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-SkosConceptDesc.html#property_notation"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\SkosConceptDesc\u003A\u003A\u0024broader",
             "name": "broader",
