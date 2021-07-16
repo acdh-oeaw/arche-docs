@@ -1971,6 +1971,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainPropertyRange"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AmaintainPropertyRangeVocabs\u0028\u0029",
+            "name": "maintainPropertyRangeVocabs",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainPropertyRangeVocabs"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AmaintainPropertyRangeLiteral\u0028\u0029",
+            "name": "maintainPropertyRangeLiteral",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainPropertyRangeLiteral"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AmaintainDefaultValues\u0028\u0029",
             "name": "maintainDefaultValues",
             "summary": "",
