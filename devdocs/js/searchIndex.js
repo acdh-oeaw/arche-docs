@@ -2971,11 +2971,6 @@ Search.appendIndex(
             "summary": "Create\u0020root\u0020table\u0020clone\u0020based\u0020on\u0020the\u0020actual\u0020ontology",
             "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getRootTable"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_vcr\u0028\u0029",
-            "name": "repo_vcr",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_vcr"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024modelData",
             "name": "modelData",
             "summary": "",
@@ -3421,6 +3416,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_yearsData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024categoryData",
+            "name": "categoryData",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_categoryData"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper",
             "name": "ArcheApiHelper",
             "summary": "Description\u0020of\u0020ArcheApiHelper",
@@ -3740,6 +3740,11 @@ Search.appendIndex(
             "name": "formatEntityTypes",
             "summary": "Format\u0020the\u0020search\u0020filter\u0020types\u0020for\u0020the\u0020GUI",
             "url": "classes/Drupal-acdh-repo-gui-Helper-FormHelper.html#method_formatEntityTypes"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\FormHelper\u003A\u003AformatCategoryTypes\u0028\u0029",
+            "name": "formatCategoryTypes",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-FormHelper.html#method_formatCategoryTypes"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\FormHelper\u003A\u003A\u0024schema",
             "name": "schema",
@@ -4266,10 +4271,20 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020Versions\u0020block\u0020data",
             "url": "classes/Drupal-acdh-repo-gui-Model-BlocksModel.html#method_getVersionsData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\BlocksModel\u003A\u003AgetCategoryData\u0028\u0029",
+            "name": "getCategoryData",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-BlocksModel.html#method_getCategoryData"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\BlocksModel\u003A\u003A\u0024repodb",
             "name": "repodb",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-BlocksModel.html#property_repodb"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\BlocksModel\u003A\u003A\u0024siteLang",
+            "name": "siteLang",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-BlocksModel.html#property_siteLang"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel",
             "name": "ChildApiModel",
