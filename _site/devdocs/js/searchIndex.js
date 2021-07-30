@@ -3618,7 +3618,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AformatCollectionLazyDataStructure\u0028\u0029",
             "name": "formatCollectionLazyDataStructure",
-            "summary": "",
+            "summary": "COllection\u0020lazydataStructure\u0020formatting\u0020to\u0020js",
             "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_formatCollectionLazyDataStructure"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcreateCollection\u0028\u0029",
@@ -3691,6 +3691,11 @@ Search.appendIndex(
             "summary": "Setup\u0020the\u0020collection\u0020directory\u0020for\u0020the\u0020downloads",
             "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_collectionCreateDlDirectory"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AsetTmpDir\u0028\u0029",
+            "name": "setTmpDir",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_setTmpDir"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003A\u0024data",
             "name": "data",
             "summary": "",
@@ -3725,6 +3730,11 @@ Search.appendIndex(
             "name": "additionalData",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#property_additionalData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003A\u0024tmpDir",
+            "name": "tmpDir",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#property_tmpDir"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\FormHelper",
             "name": "FormHelper",
@@ -5030,6 +5040,71 @@ Search.appendIndex(
             "name": "publicAccessValue",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#property_publicAccessValue"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject",
+            "name": "ThreeDObject",
+            "summary": "Description\u0020of\u0020ThreeDObject",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject\u003A\u003AsetTmpDir\u0028\u0029",
+            "name": "setTmpDir",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html#method_setTmpDir"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject\u003A\u003AdownloadFile\u0028\u0029",
+            "name": "downloadFile",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html#method_downloadFile"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject\u003A\u003AdoTheRequest\u0028\u0029",
+            "name": "doTheRequest",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html#method_doTheRequest"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject\u003A\u003AgetHeaderData\u0028\u0029",
+            "name": "getHeaderData",
+            "summary": "get\u0020the\u0020filename\u0020and\u0020extension",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html#method_getHeaderData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject\u003A\u003AcreateFileTmpDir\u0028\u0029",
+            "name": "createFileTmpDir",
+            "summary": "Create\u0020the\u0020file\u0020temp\u0020dir",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html#method_createFileTmpDir"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject\u003A\u003AwriteFileContent\u0028\u0029",
+            "name": "writeFileContent",
+            "summary": "Save\u0020the\u00203d\u0020file\u0020content",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html#method_writeFileContent"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject\u003A\u003AcheckTmpDirExists\u0028\u0029",
+            "name": "checkTmpDirExists",
+            "summary": "Create\u0020the\u0020main\u0020dir\u0020if\u0020not\u0020exists",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html#method_checkTmpDirExists"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject\u003A\u003A\u0024client",
+            "name": "client",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html#property_client"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject\u003A\u003A\u0024tmpDir",
+            "name": "tmpDir",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html#property_tmpDir"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject\u003A\u003A\u0024allowedExtension",
+            "name": "allowedExtension",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html#property_allowedExtension"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject\u003A\u003A\u0024result",
+            "name": "result",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ThreeDObject.html#property_result"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ToolTipObject",
             "name": "ToolTipObject",
