@@ -52,28 +52,43 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-        
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
-                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/acdhoeaw.html"><abbr title="\acdhOeaw">acdhOeaw</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/acdhoeaw-arche.html"><abbr title="\acdhOeaw\arche">arche</abbr></a></li>
-                                            <li><a href="namespaces/acdhoeaw-cql.html"><abbr title="\acdhOeaw\cql">cql</abbr></a></li>
-                                    </ul>
-                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/drupal.html"><abbr title="\Drupal">Drupal</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/drupal-arche-dashboard.html"><abbr title="\Drupal\arche_dashboard">arche_dashboard</abbr></a></li>
-                                            <li><a href="namespaces/drupal-acdh-repo-gui.html"><abbr title="\Drupal\acdh_repo_gui">acdh_repo_gui</abbr></a></li>
-                                            <li><a href="namespaces/drupal-tests.html"><abbr title="\Drupal\Tests">Tests</abbr></a></li>
-                                    </ul>
-                        </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/acdhoeaw-arche.html">arche</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/acdhoeaw-cql.html">cql</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Application.html"><abbr title="\Application">Application</abbr></a></h3>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/drupal.html">Drupal</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/drupal-arche-dashboard.html">arche_dashboard</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/drupal-acdh-repo-gui.html">acdh_repo_gui</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/drupal-tests.html">Tests</a>
+                
+            </li>
+            </ul>
+
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -115,6 +130,9 @@
             implements
                             <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\dissemination\ServiceInterface">ServiceInterface</abbr></a>                    </span>
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html"><abbr title="\acdhOeaw\arche\lib\disserv\dissemination\ServiceTrait">ServiceTrait</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
@@ -174,9 +192,51 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#property_loadParamFromMeta">$loadParamFromMeta</a>
+    <span>
+                &nbsp;: bool            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_metadata">$metadata</a>
+    <span>
+                &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>|null            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_metaSynced">$metaSynced</a>
+    <span>
+                &nbsp;: bool            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#property_param">$param</a>
+    <span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+<dd>Parameters list</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html#property_repo">$repo</a>
     <span>
                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-RepoDb.html"><abbr title="\acdhOeaw\arche\lib\RepoDb">RepoDb</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_repoInt">$repoInt</a>
+    <span>
+                &nbsp;: <a href="classes/acdhOeaw-arche-lib-RepoInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoInterface">RepoInterface</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_url">$url</a>
+    <span>
+                &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
@@ -188,6 +248,70 @@
 <dd>Creates an object representing a repository resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getClasses">getClasses()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, string&gt;    </span>
+</dt>
+<dd>Returns all RDF types (classes) of a given repository resource.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceTrait.html#method_getDissServices">getDissServices()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Returns list of dissemination services available for a resource.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getFormats">getFormats()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Returns all return formats provided by the dissemination service.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getGraph">getGraph()</a>
+    <span>
+                        &nbsp;: resource    </span>
+</dt>
+<dd>Returns resource metadata.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getIds">getIds()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, string&gt;    </span>
+</dt>
+<dd>Returns an array with all repository resource identifiers.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getLocation">getLocation()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Gets disseminations service&#039;s URL (before parameters subsitution)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getMatchingResources">getMatchingResources()</a>
+    <span>
+                        &nbsp;: <abbr title="\Generator">Generator</abbr>    </span>
+</dt>
+<dd>Returns repository resources which can be disseminated by a given service</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getMatchQuery">getMatchQuery()</a>
+    <span>
+                        &nbsp;: <abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr>    </span>
+</dt>
+<dd>Returns an SQL query matching dissemination services and resources
+(in any direction).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getMetadata">getMetadata()</a>
+    <span>
+                        &nbsp;: resource    </span>
+</dt>
+<dd>Returns resource metadata.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html#method_getMetadataQuery">getMetadataQuery()</a>
     <span>
                         &nbsp;: <abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr>    </span>
@@ -196,11 +320,78 @@
 in a given mode.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html#method_loadMetadata">loadMetadata()</a>
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getParameters">getParameters()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get the parameters</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getRepo">getRepo()</a>
+    <span>
+                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-RepoInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoInterface">RepoInterface</abbr></a>    </span>
+</dt>
+<dd>Returns repository connection object associated with the given resource object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getRequest">getRequest()</a>
+    <span>
+                        &nbsp;: <abbr title="\GuzzleHttp\Psr7\Request">Request</abbr>    </span>
+</dt>
+<dd>Returns PSR-7 HTTP request disseminating a given resource.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getRevProxy">getRevProxy()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Should the dissemination service request be reverse-proxied?</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getUri">getUri()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Returns the repository resource URL.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_isA">isA()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Naivly checks if the resource is of a given class.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_loadMetadata">loadMetadata()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_loadParametersFromMetadata">loadParametersFromMetadata()</a>
     <span>
                         &nbsp;: void    </span>
 </dt>
-<dd>Loads current metadata from the repository.</dd>
+<dd>Tells the service it can load information on service parameters from its metadata.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_setGraph">setGraph()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Replaces resource metadata with a given RDF resource graph. A reference
+to the provided metadata is stored meaning future modifications of the
+$metadata object automatically affect the resource metadata.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_setMetadata">setMetadata()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Replaces resource metadata with a given RDF resource graph. A deep copy
+of the provided metadata is stored meaning future modifications of the
+$metadata object don&#039;t affect the resource metadata.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceDb.html#method_getParameterClass">getParameterClass()</a>
@@ -210,9 +401,37 @@ in a given mode.</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceDb.html#method_getServiceClass">getServiceClass()</a>
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getParameterValues">getParameterValues()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Evaluates parameter values for a given resource.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getResNmspId">getResNmspId()</a>
     <span>
                         &nbsp;: string    </span>
+</dt>
+<dd>Fetches a resource id in a given namespace.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceTrait.html#method_getServiceClass">getServiceClass()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getUrlParameters">getUrlParameters()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Returns list of all parameters of a given dissemination service</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_loadParameters">loadParameters()</a>
+    <span>
+                        &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
@@ -269,6 +488,139 @@ in a given mode.</dd>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_loadParamFromMeta">
+        $loadParamFromMeta
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#property_loadParamFromMeta" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">185</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$loadParamFromMeta</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_metadata">
+        $metadata
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_metadata" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\EasyRdf\Resource">Resource</abbr>|null</span>
+    <span class="phpdocumentor-signature__name">$metadata</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_metaSynced">
+        $metaSynced
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_metaSynced" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$metaSynced</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_param">
+        $param
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#property_param" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">179</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Parameters list</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$param</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_repo">
         $repo
         <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html#property_repo" class="headerlink"><i class="fas fa-link"></i></a>
@@ -287,6 +639,74 @@ in a given mode.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-RepoDb.html"><abbr title="\acdhOeaw\arche\lib\RepoDb">RepoDb</abbr></a></span>
     <span class="phpdocumentor-signature__name">$repo</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_repoInt">
+        $repoInt
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_repoInt" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-RepoInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoInterface">RepoInterface</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$repoInt</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_url">
+        $url
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_url" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$url</span>
     </code>
 
         <section class="phpdocumentor-description"></section>
@@ -353,6 +773,423 @@ in a given mode.</dd>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getClasses">
+        getClasses()
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getClasses" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns all RDF types (classes) of a given repository resource.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getClasses</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDissServices">
+        getDissServices()
+        <a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceTrait.html#method_getDissServices" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/RepoResourceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-reporesourcetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns list of dissemination services available for a resource.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getDissServices</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getFormats">
+        getFormats()
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getFormats" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">194</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns all return formats provided by the dissemination service.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getFormats</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"><p>Technically return formats are nothing more then strings. There is no
+requirement forcing them to be mime types, etc.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getGraph">
+        getGraph()
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getGraph" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">126</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns resource metadata.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getGraph</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
+
+        <section class="phpdocumentor-description"><p>Fetches them from the repository with the <code class="prettyprint">loadMetadata()</code> if they were
+not fetched already.</p>
+<p>A reference to the metadata is returned meaning adjusting the returned object
+automatically affects the resource metadata.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\setGraph()">setGraph()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\getMetadata()">getMetadata()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">resource</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getIds">
+        getIds()
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getIds" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">69</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns an array with all repository resource identifiers.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getIds</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getLocation">
+        getLocation()
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getLocation" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">236</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Gets disseminations service&#039;s URL (before parameters subsitution)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getLocation</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMatchingResources">
+        getMatchingResources()
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getMatchingResources" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">260</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns repository resources which can be disseminated by a given service</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getMatchingResources</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$limit</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$offset</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMatchQuery">
+        getMatchQuery()
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getMatchQuery" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns an SQL query matching dissemination services and resources
+(in any direction).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getMatchQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>resource or dissemination service id</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$mode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>one of:</p>
+<ul>
+<li>ServiceInterface::QUERY_RES for querying resources for a given
+dissemination service</li>
+<li>ServiceInterface::QUERY_DISSERV for querying dissemination services
+for a given resource</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$schema</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>schema object providing RDF property mappings</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getMetadata">
+        getMetadata()
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">108</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns resource metadata.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
+
+        <section class="phpdocumentor-description"><p>Fetches them from the repository with the <code class="prettyprint">loadMetadata()</code> if they were
+not fetched already.</p>
+<p>A deep copy of metadata is returned meaning adjusting the returned object
+does not automatically affect the resource metadata.
+Use the setMetadata() method to write back the changes you made.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\setMetadata()">setMetadata()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\setGraph()">setGraph()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\getGraph()">getGraph()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">resource</span>
             &mdash;
         
     
@@ -439,52 +1276,98 @@ in a given mode.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_loadMetadata">
-        loadMetadata()
-        <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html#method_loadMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getParameters">
+        getParameters()
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getParameters" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcedb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceDb.php">RepoResourceDb.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">423</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Loads current metadata from the repository.</p>
+        <p class="phpdocumentor-summary">Get the parameters</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">loadMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$force</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">getParameters</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRepo">
+        getRepo()
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getRepo" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns repository connection object associated with the given resource object.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRepo</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoInterface">RepoInterface</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoInterface">RepoInterface</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRequest">
+        getRequest()
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getRequest" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">209</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns PSR-7 HTTP request disseminating a given resource.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$force</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$res</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a></span>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>enforce fetch from the repository
-(when you want to make sure metadata are in line with ones in the repository
-or e.g. reset them back to their current state in the repository)</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$mode</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>scope of the metadata returned by the repository - see the getMetadataQuery() method</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>RDF property name used to find related resources - see the getMetadataQuery() method</p>
+                    <section class="phpdocumentor-description"><p>repository resource to be disseminated</p>
 </section>
 
             </dd>
@@ -500,15 +1383,329 @@ or e.g. reset them back to their current state in the repository)</p>
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-lib-exception-RepoLibException.html"><abbr title="\acdhOeaw\arche\lib\exception\RepoLibException">RepoLibException</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\disserv\dissemination\RuntimeException">RuntimeException</abbr></span>
                                                             
                                              
                                     </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRevProxy">
+        getRevProxy()
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getRevProxy" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">247</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Should the dissemination service request be reverse-proxied?</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRevProxy</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>If it's not set in the metadata, false is assumed.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getUri">
+        getUri()
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getUri" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the repository resource URL.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getUri</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isA">
+        isA()
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_isA" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">175</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Naivly checks if the resource is of a given class.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">isA</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>Naivly means that a given rdfs:type triple must exist in the resource
+metadata.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$class</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                        -abstract                                "
+>
+    <h4 class="phpdocumentor-element__name" id="method_loadMetadata">
+        loadMetadata()
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_loadMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">179</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">loadMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_loadParametersFromMetadata">
+        loadParametersFromMetadata()
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_loadParametersFromMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">228</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Tells the service it can load information on service parameters from its metadata.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">loadParametersFromMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"><p>Information will be loaded in a lazy way (when it's needed).</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setGraph">
+        setGraph()
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_setGraph" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">161</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Replaces resource metadata with a given RDF resource graph. A reference
+to the provided metadata is stored meaning future modifications of the
+$metadata object automatically affect the resource metadata.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setGraph</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"><p>New metadata are not automatically written back to the repository.
+Use the updateMetadata() method to write them back.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resource</span>
+                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\getMetadataQuery">getMetadataQuery</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\updateMetadata()">updateMetadata()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\setMetadata()">setMetadata()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setMetadata">
+        setMetadata()
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_setMetadata" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">143</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Replaces resource metadata with a given RDF resource graph. A deep copy
+of the provided metadata is stored meaning future modifications of the
+$metadata object don&#039;t affect the resource metadata.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"><p>New metadata are not automatically written back to the repository.
+Use the <code class="prettyprint">updateMetadata()</code> method to write them back.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$metadata</span>
+                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\updateMetadata()">updateMetadata()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\setGraph()">setGraph()</abbr></span>
                                         
                                              
                                     </dd>
@@ -559,21 +1756,164 @@ or e.g. reset them back to their current state in the repository)</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getServiceClass">
-        getServiceClass()
-        <a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceDb.html#method_getServiceClass" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getParameterValues">
+        getParameterValues()
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getParameterValues" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/RepoResourceDb.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-reporesourcedb.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/RepoResourceDb.php">RepoResourceDb.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">300</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Evaluates parameter values for a given resource.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getParameterValues</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$param</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$param</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>list of parameters</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$res</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>repository resource to be disseminated</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\disserv\dissemination\RuntimeException">RuntimeException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>associative array with parameter values</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getResNmspId">
+        getResNmspId()
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getResNmspId" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">385</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Fetches a resource id in a given namespace.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getResNmspId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$namespace</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$force</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>If namespaces overlap, tries to to avoid id in the overlapping ones.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$res</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\disserv\RepoResourceInterface">RepoResourceInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$namespace</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$force</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-lib-exception-RepoLibException.html"><abbr title="\acdhOeaw\arche\lib\exception\RepoLibException">RepoLibException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                        -abstract                                "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getServiceClass">
+        getServiceClass()
+        <a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceTrait.html#method_getServiceClass" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/RepoResourceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-reporesourcetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">getServiceClass</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+    <span class="phpdocumentor-signature__abstract">abstract</span>            <span class="phpdocumentor-signature__name">getServiceClass</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -582,6 +1922,72 @@ or e.g. reset them back to their current state in the repository)</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getUrlParameters">
+        getUrlParameters()
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_getUrlParameters" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">286</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns list of all parameters of a given dissemination service</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getUrlParameters</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_loadParameters">
+        loadParameters()
+        <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#method_loadParameters" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-dissemination-servicetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/dissemination/ServiceTrait.php">ServiceTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">334</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">loadParameters</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
