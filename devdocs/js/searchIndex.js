@@ -8806,10 +8806,50 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_insertContent"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AgetRdfResource\u0028\u0029",
+            "name": "getRdfResource",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_getRdfResource"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AmaintainRdfCache\u0028\u0029",
+            "name": "maintainRdfCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_maintainRdfCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AgetXmlCacheId\u0028\u0029",
+            "name": "getXmlCacheId",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_getXmlCacheId"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AmaintainXmlCache\u0028\u0029",
+            "name": "maintainXmlCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_maintainXmlCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AshouldBeCached\u0028\u0029",
+            "name": "shouldBeCached",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_shouldBeCached"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AFAKE_ROOT_TAG",
             "name": "FAKE_ROOT_TAG",
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#constant_FAKE_ROOT_TAG"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AVALUEMAP_ALL",
+            "name": "VALUEMAP_ALL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#constant_VALUEMAP_ALL"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AVALUEMAP_FALLBACK",
+            "name": "VALUEMAP_FALLBACK",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#constant_VALUEMAP_FALLBACK"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AVALUEMAP_STRICT",
+            "name": "VALUEMAP_STRICT",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#constant_VALUEMAP_STRICT"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003A\u0024mapper",
             "name": "mapper",
@@ -8820,6 +8860,21 @@ Search.appendIndex(
             "name": "idSeq",
             "summary": "Sequence\u0020for\u0020id\u0020generation",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#property_idSeq"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003A\u0024xmlCache",
+            "name": "xmlCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#property_xmlCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003A\u0024rdfCache",
+            "name": "rdfCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#property_rdfCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003A\u0024cacheHits",
+            "name": "cacheHits",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#property_cacheHits"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003A\u0024res",
             "name": "res",
@@ -8835,6 +8890,11 @@ Search.appendIndex(
             "name": "template",
             "summary": "Path\u0020to\u0020the\u0020XML\u0020template\u0020file",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#property_template"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003A\u0024depth",
+            "name": "depth",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#property_depth"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\MetadataInterface",
             "name": "MetadataInterface",
@@ -9085,6 +9145,11 @@ Search.appendIndex(
             "name": "log",
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-Oai.html#property_log"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\Oai\u003A\u003A\u0024reqId",
+            "name": "reqId",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-Oai.html#property_reqId"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\OaiException",
             "name": "OaiException",
