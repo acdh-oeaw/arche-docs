@@ -8831,10 +8831,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_shouldBeCached"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AappendCacheStats\u0028\u0029",
+            "name": "appendCacheStats",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#method_appendCacheStats"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AFAKE_ROOT_TAG",
             "name": "FAKE_ROOT_TAG",
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#constant_FAKE_ROOT_TAG"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003ASTATS_TAG",
+            "name": "STATS_TAG",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#constant_STATS_TAG"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003AVALUEMAP_ALL",
             "name": "VALUEMAP_ALL",
