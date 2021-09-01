@@ -4521,6 +4521,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-GeneralFunctionsModel.html#property_sqlResult"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\OntologyTwigExtensionModel",
+            "name": "OntologyTwigExtensionModel",
+            "summary": "Description\u0020of\u0020OntologyTwigExtensionModel",
+            "url": "classes/Drupal-acdh-repo-gui-Model-OntologyTwigExtensionModel.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\OntologyTwigExtensionModel\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-OntologyTwigExtensionModel.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\OntologyTwigExtensionModel\u003A\u003AgetViewData\u0028\u0029",
+            "name": "getViewData",
+            "summary": "get\u0020the\u0020views\u0020data",
+            "url": "classes/Drupal-acdh-repo-gui-Model-OntologyTwigExtensionModel.html#method_getViewData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\OntologyTwigExtensionModel\u003A\u003AgetImportDate\u0028\u0029",
+            "name": "getImportDate",
+            "summary": "Get\u0020the\u0020latest\u0020owl\u0020file\u0020import\u0020from\u0020the\u0020DB",
+            "url": "classes/Drupal-acdh-repo-gui-Model-OntologyTwigExtensionModel.html#method_getImportDate"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\OntologyTwigExtensionModel\u003A\u003A\u0024repodb",
+            "name": "repodb",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-OntologyTwigExtensionModel.html#property_repodb"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\OntologyTwigExtensionModel\u003A\u003A\u0024siteLang",
+            "name": "siteLang",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-OntologyTwigExtensionModel.html#property_siteLang"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\OntologyTwigExtensionModel\u003A\u003A\u0024dbResult",
+            "name": "dbResult",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-OntologyTwigExtensionModel.html#property_dbResult"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\RootViewModel",
             "name": "RootViewModel",
             "summary": "Description\u0020of\u0020RootModel",
@@ -5685,6 +5720,41 @@ Search.appendIndex(
             "name": "getComposerFile",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ComposerTwigExtension.html#method_getComposerFile"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\OntologyTwigExtension",
+            "name": "OntologyTwigExtension",
+            "summary": "Description\u0020of\u0020OntologyTwigExtension",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-OntologyTwigExtension.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\OntologyTwigExtension\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "\u007B\u0040inheritdoc\u007D\nThis\u0020function\u0020must\u0020return\u0020the\u0020name\u0020of\u0020the\u0020extension.\u0020It\u0020must\u0020be\u0020unique.",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-OntologyTwigExtension.html#method_getName"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\OntologyTwigExtension\u003A\u003AgetFunctions\u0028\u0029",
+            "name": "getFunctions",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-OntologyTwigExtension.html#method_getFunctions"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\OntologyTwigExtension\u003A\u003Aget_acdh_ontology_import_date\u0028\u0029",
+            "name": "get_acdh_ontology_import_date",
+            "summary": "Get\u0020the\u0020latest\u0020owl\u0020file\u0020ingest\u0020date\u0020from\u0020the\u0020DB",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-OntologyTwigExtension.html#method_get_acdh_ontology_import_date"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\OntologyTwigExtension\u003A\u003AcreateModel\u0028\u0029",
+            "name": "createModel",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-OntologyTwigExtension.html#method_createModel"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\OntologyTwigExtension\u003A\u003A\u0024model",
+            "name": "model",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-OntologyTwigExtension.html#property_model"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\OntologyTwigExtension\u003A\u003A\u0024str",
+            "name": "str",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-OntologyTwigExtension.html#property_str"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\AuthInterface",
             "name": "AuthInterface",
