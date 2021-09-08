@@ -131,7 +131,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">183</span>
 
     </aside>
 
@@ -176,6 +176,10 @@ are processed.</li>
 <code class="prettyprint">valueMaps[mapName]</code> - value maps to be used with the <code class="prettyprint">valueMap</code> template attribute.
 Every map should be an object with source values being property names and target values
 being property values.</li>
+<li>
+<code class="prettyprint">timeout</code> - if the template generation takes longer than the given time (in seconds)
+emit bunch of whitespaces to inform the client something's going on and keep the
+connectio alive</li>
 <li>
 <code class="prettyprint">cache</code> - sets up LiveCmdiMetadata internal cache (separate from the global OAI-PMH cache).
 Just skip this configuration property to avoid using the internal cache.
@@ -462,6 +466,13 @@ anyway replaced by the component's root tag.</li>
 <dd>Path to the XML template file</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#property_timeout">$timeout</a>
+    <span>
+                &nbsp;: mixed            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#property_xmlCache">$xmlCache</a>
     <span>
                 &nbsp;: mixed            </span>
@@ -644,7 +655,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">182</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -673,7 +684,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -702,7 +713,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -731,7 +742,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
@@ -760,7 +771,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">186</span>
+    <span class="phpdocumentor-element-found-in__line">189</span>
 
     </aside>
 
@@ -804,7 +815,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">201</span>
+    <span class="phpdocumentor-element-found-in__line">204</span>
 
     </aside>
 
@@ -838,7 +849,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 
     </aside>
 
@@ -872,7 +883,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">213</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -905,7 +916,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">198</span>
+    <span class="phpdocumentor-element-found-in__line">201</span>
 
     </aside>
 
@@ -938,7 +949,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">192</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -971,7 +982,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">200</span>
+    <span class="phpdocumentor-element-found-in__line">203</span>
 
     </aside>
 
@@ -1005,7 +1016,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">211</span>
 
     </aside>
 
@@ -1038,7 +1049,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">219</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -1062,6 +1073,40 @@ an array.</dd>
             -private
             -static                                            "
 >
+    <h4 class="phpdocumentor-element__name" id="property_timeout">
+        $timeout
+        <a href="classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#property_timeout" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">205</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$timeout</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
+>
     <h4 class="phpdocumentor-element__name" id="property_xmlCache">
         $xmlCache
         <a href="classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#property_xmlCache" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1071,7 +1116,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">199</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
@@ -1109,7 +1154,7 @@ an array.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">231</span>
+    <span class="phpdocumentor-element-found-in__line">235</span>
 
     </aside>
 
@@ -1174,7 +1219,7 @@ describing this resource</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">329</span>
+    <span class="phpdocumentor-element-found-in__line">343</span>
 
     </aside>
 
@@ -1224,7 +1269,7 @@ is not enforced.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">318</span>
+    <span class="phpdocumentor-element-found-in__line">332</span>
 
     </aside>
 
@@ -1267,7 +1312,7 @@ is not enforced.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">273</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -1317,7 +1362,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">904</span>
+    <span class="phpdocumentor-element-found-in__line">918</span>
 
     </aside>
 
@@ -1361,7 +1406,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">704</span>
+    <span class="phpdocumentor-element-found-in__line">718</span>
 
     </aside>
 
@@ -1425,7 +1470,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">848</span>
+    <span class="phpdocumentor-element-found-in__line">862</span>
 
     </aside>
 
@@ -1469,7 +1514,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">789</span>
+    <span class="phpdocumentor-element-found-in__line">803</span>
 
     </aside>
 
@@ -1529,7 +1574,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">750</span>
+    <span class="phpdocumentor-element-found-in__line">764</span>
 
     </aside>
 
@@ -1587,7 +1632,7 @@ recursively targetted resources.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">864</span>
+    <span class="phpdocumentor-element-found-in__line">878</span>
 
     </aside>
 
@@ -1620,7 +1665,7 @@ recursively targetted resources.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">825</span>
+    <span class="phpdocumentor-element-found-in__line">839</span>
 
     </aside>
 
@@ -1680,7 +1725,7 @@ recursively targetted resources.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">486</span>
+    <span class="phpdocumentor-element-found-in__line">500</span>
 
     </aside>
 
@@ -1744,7 +1789,7 @@ recursively targetted resources.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">839</span>
+    <span class="phpdocumentor-element-found-in__line">853</span>
 
     </aside>
 
@@ -1804,7 +1849,7 @@ recursively targetted resources.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">564</span>
+    <span class="phpdocumentor-element-found-in__line">578</span>
 
     </aside>
 
@@ -1875,7 +1920,7 @@ recursively targetted resources.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">368</span>
+    <span class="phpdocumentor-element-found-in__line">382</span>
 
     </aside>
 
@@ -1922,7 +1967,7 @@ recursively targetted resources.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">858</span>
+    <span class="phpdocumentor-element-found-in__line">872</span>
 
     </aside>
 
@@ -1966,7 +2011,7 @@ recursively targetted resources.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">868</span>
+    <span class="phpdocumentor-element-found-in__line">882</span>
 
     </aside>
 
@@ -2010,7 +2055,7 @@ recursively targetted resources.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">443</span>
+    <span class="phpdocumentor-element-found-in__line">457</span>
 
     </aside>
 
@@ -2072,7 +2117,7 @@ to the current one (<code class="prettyprint">true</code>)</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">337</span>
+    <span class="phpdocumentor-element-found-in__line">351</span>
 
     </aside>
 
@@ -2117,7 +2162,7 @@ to the current one (<code class="prettyprint">true</code>)</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">682</span>
+    <span class="phpdocumentor-element-found-in__line">696</span>
 
     </aside>
 
@@ -2161,7 +2206,7 @@ to the current one (<code class="prettyprint">true</code>)</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">734</span>
+    <span class="phpdocumentor-element-found-in__line">748</span>
 
     </aside>
 
@@ -2203,7 +2248,7 @@ to the current one (<code class="prettyprint">true</code>)</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-livecmdimetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/LiveCmdiMetadata.php">LiveCmdiMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">885</span>
+    <span class="phpdocumentor-element-found-in__line">899</span>
 
     </aside>
 

@@ -3906,6 +3906,16 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020root\u0020table\u0020data",
             "url": "classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getRootTable"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AcreateRootTableHeader\u0028\u0029",
+            "name": "createRootTableHeader",
+            "summary": "The\u0020root\u0020table\u0020header\u0020html\u0020code",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTableHeader"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AcreateRootTableTd\u0028\u0029",
+            "name": "createRootTableTd",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTableTd"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AcreateRootTableHtml\u0028\u0029",
             "name": "createRootTableHtml",
             "summary": "Create\u0020the\u0020response\u0020html\u0020string",
@@ -3940,6 +3950,21 @@ Search.appendIndex(
             "name": "reorderRootTable",
             "summary": "Reorder\u0020the\u0020root\u0020table\u0020result",
             "url": "classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_reorderRootTable"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AgetOntologyObjData\u0028\u0029",
+            "name": "getOntologyObjData",
+            "summary": "Get\u0020the\u0020ontology\u0020property\u0020data\u0020based\u0020on\u0020the\u0020keys",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getOntologyObjData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AcreateRootTablePropertyTitle\u0028\u0029",
+            "name": "createRootTablePropertyTitle",
+            "summary": "Create\u0020the\u0020root\u0020table\u0020property\u0020title\u0020from\u0020the\u0020uri",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTablePropertyTitle"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003AcreateRootTablePropertyMinMax\u0028\u0029",
+            "name": "createRootTablePropertyMinMax",
+            "summary": "Create\u0020Min\u0020max\u0020values",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTablePropertyMinMax"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\MetadataGuiHelper\u003A\u003A\u0024data",
             "name": "data",
@@ -8955,6 +8980,11 @@ Search.appendIndex(
             "name": "cacheHits",
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#property_cacheHits"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003A\u0024timeout",
+            "name": "timeout",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html#property_timeout"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\LiveCmdiMetadata\u003A\u003A\u0024res",
             "name": "res",

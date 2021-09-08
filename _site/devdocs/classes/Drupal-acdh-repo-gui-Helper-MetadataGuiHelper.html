@@ -254,6 +254,13 @@
 <dd>Set up the default values for the cardinalities</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTableHeader">createRootTableHeader()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>The root table header html code</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTableHtml">createRootTableHtml()</a>
     <span>
                         &nbsp;: string    </span>
@@ -261,11 +268,39 @@
 <dd>Create the response html string</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTablePropertyMinMax">createRootTablePropertyMinMax()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Create Min max values</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTablePropertyTitle">createRootTablePropertyTitle()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Create the root table property title from the uri</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTableTd">createRootTableTd()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_formatMetadataGuiView">formatMetadataGuiView()</a>
     <span>
                         &nbsp;: mixed    </span>
 </dt>
 <dd>Format the metadata gui result for the json output</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getOntologyObjData">getOntologyObjData()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Get the ontology property data based on the keys</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getRtTypeDomain">getRtTypeDomain()</a>
@@ -889,6 +924,39 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_createRootTableHeader">
+        createRootTableHeader()
+        <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTableHeader" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/MetadataGuiHelper.php"><a href="files/arche-gui-src-helper-metadataguihelper.html"><abbr title="arche-gui/src/Helper/MetadataGuiHelper.php">MetadataGuiHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">342</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The root table header html code</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">createRootTableHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_createRootTableHtml">
         createRootTableHtml()
         <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTableHtml" class="headerlink"><i class="fas fa-link"></i></a>
@@ -896,7 +964,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/MetadataGuiHelper.php"><a href="files/arche-gui-src-helper-metadataguihelper.html"><abbr title="arche-gui/src/Helper/MetadataGuiHelper.php">MetadataGuiHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">342</span>
+    <span class="phpdocumentor-element-found-in__line">407</span>
 
     </aside>
 
@@ -908,6 +976,158 @@
 
     
     
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createRootTablePropertyMinMax">
+        createRootTablePropertyMinMax()
+        <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTablePropertyMinMax" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/MetadataGuiHelper.php"><a href="files/arche-gui-src-helper-metadataguihelper.html"><abbr title="arche-gui/src/Helper/MetadataGuiHelper.php">MetadataGuiHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">644</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create Min max values</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">createRootTablePropertyMinMax</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$v</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$kt</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$v</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$kt</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createRootTablePropertyTitle">
+        createRootTablePropertyTitle()
+        <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTablePropertyTitle" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/MetadataGuiHelper.php"><a href="files/arche-gui-src-helper-metadataguihelper.html"><abbr title="arche-gui/src/Helper/MetadataGuiHelper.php">MetadataGuiHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">628</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create the root table property title from the uri</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">createRootTablePropertyTitle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$v</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$kt</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$v</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$kt</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createRootTableTd">
+        createRootTableTd()
+        <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_createRootTableTd" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/MetadataGuiHelper.php"><a href="files/arche-gui-src-helper-metadataguihelper.html"><abbr title="arche-gui/src/Helper/MetadataGuiHelper.php">MetadataGuiHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">394</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">createRootTableTd</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -955,6 +1175,70 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getOntologyObjData">
+        getOntologyObjData()
+        <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getOntologyObjData" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/MetadataGuiHelper.php"><a href="files/arche-gui-src-helper-metadataguihelper.html"><abbr title="arche-gui/src/Helper/MetadataGuiHelper.php">MetadataGuiHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">614</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the ontology property data based on the keys</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getOntologyObjData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$v</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$kt</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dKey</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vKey</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$v</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$kt</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$dKey</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$vKey</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getRtTypeDomain">
         getRtTypeDomain()
         <a href="classes/Drupal-acdh-repo-gui-Helper-MetadataGuiHelper.html#method_getRtTypeDomain" class="headerlink"><i class="fas fa-link"></i></a>
@@ -962,7 +1246,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/MetadataGuiHelper.php"><a href="files/arche-gui-src-helper-metadataguihelper.html"><abbr title="arche-gui/src/Helper/MetadataGuiHelper.php">MetadataGuiHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">467</span>
+    <span class="phpdocumentor-element-found-in__line">471</span>
 
     </aside>
 
@@ -1005,7 +1289,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/MetadataGuiHelper.php"><a href="files/arche-gui-src-helper-metadataguihelper.html"><abbr title="arche-gui/src/Helper/MetadataGuiHelper.php">MetadataGuiHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">501</span>
+    <span class="phpdocumentor-element-found-in__line">505</span>
 
     </aside>
 
@@ -1048,7 +1332,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/MetadataGuiHelper.php"><a href="files/arche-gui-src-helper-metadataguihelper.html"><abbr title="arche-gui/src/Helper/MetadataGuiHelper.php">MetadataGuiHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">484</span>
+    <span class="phpdocumentor-element-found-in__line">488</span>
 
     </aside>
 
@@ -1091,7 +1375,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/MetadataGuiHelper.php"><a href="files/arche-gui-src-helper-metadataguihelper.html"><abbr title="arche-gui/src/Helper/MetadataGuiHelper.php">MetadataGuiHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">448</span>
+    <span class="phpdocumentor-element-found-in__line">452</span>
 
     </aside>
 
@@ -1310,7 +1594,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/MetadataGuiHelper.php"><a href="files/arche-gui-src-helper-metadataguihelper.html"><abbr title="arche-gui/src/Helper/MetadataGuiHelper.php">MetadataGuiHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">552</span>
+    <span class="phpdocumentor-element-found-in__line">556</span>
 
     </aside>
 
@@ -1353,7 +1637,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Helper/MetadataGuiHelper.php"><a href="files/arche-gui-src-helper-metadataguihelper.html"><abbr title="arche-gui/src/Helper/MetadataGuiHelper.php">MetadataGuiHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">527</span>
+    <span class="phpdocumentor-element-found-in__line">531</span>
 
     </aside>
 
