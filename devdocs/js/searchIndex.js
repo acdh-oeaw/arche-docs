@@ -2966,6 +2966,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020RelatedPublicationsResources\u0020list\u0020for\u0020the\u0020gui\u0020basic\u0020view",
             "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getRelatedPublicationsResources"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getRelatedPublicationsResourcesAjax\u0028\u0029",
+            "name": "repo_getRelatedPublicationsResourcesAjax",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getRelatedPublicationsResourcesAjax"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getRootTable\u0028\u0029",
             "name": "repo_getRootTable",
             "summary": "Create\u0020root\u0020table\u0020clone\u0020based\u0020on\u0020the\u0020actual\u0020ontology",
@@ -4193,8 +4198,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetRPR\u0028\u0029",
             "name": "getRPR",
-            "summary": "Check\u0020the\u0020repoid\u0020in\u0020the\u0020DB",
+            "summary": "Related\u0020Publications\u0020and\u0020resources\u0020table\u0020data",
             "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getRPR"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetRPRAjax\u0028\u0029",
+            "name": "getRPRAjax",
+            "summary": "Related\u0020Publications\u0020and\u0020resources\u0020table\u0020data\u0020\u002D\u0020Ajax\u0020version\u0020endpoint",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getRPRAjax"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AsetUpProperties\u0028\u0029",
+            "name": "setUpProperties",
+            "summary": "Setup\u0020the\u0020SQL\u0020properties",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_setUpProperties"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003A\u0024repodb",
             "name": "repodb",
@@ -4240,6 +4255,16 @@ Search.appendIndex(
             "name": "reOrderResult",
             "summary": "Reorder\u0020the\u0020result\u0020because\u0020of\u0020the\u0020easyrdf",
             "url": "classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_reOrderResult"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003Aordering\u0028\u0029",
+            "name": "ordering",
+            "summary": "Create\u0020the\u0020order\u0020values\u0020for\u0020the\u0020sql",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_ordering"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003AorderingByFields\u0028\u0029",
+            "name": "orderingByFields",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_orderingByFields"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel\u003A\u003AgetViewData\u0028\u0029",
             "name": "getViewData",
@@ -4380,11 +4405,6 @@ Search.appendIndex(
             "name": "getViewData",
             "summary": "Get\u0020the\u0020actual\u0020page\u0020view\u0020data",
             "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_getViewData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003Aordering\u0028\u0029",
-            "name": "ordering",
-            "summary": "Create\u0020the\u0020order\u0020values\u0020for\u0020the\u0020sql",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ChildApiModel.html#method_ordering"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ChildApiModel\u003A\u003AgetCount\u0028\u0029",
             "name": "getCount",

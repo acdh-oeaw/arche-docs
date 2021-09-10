@@ -243,6 +243,20 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_ordering">ordering()</a>
+    <span>
+                        &nbsp;: object    </span>
+</dt>
+<dd>Create the order values for the sql</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_orderingByFields">orderingByFields()</a>
+    <span>
+                        &nbsp;: object    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_reOrderResult">reOrderResult()</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
@@ -334,7 +348,21 @@ Inverse is where the value is not identifier, pid or ispartof</dd>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Check the repoid in the DB</dd>
+<dd>Related Publications and resources table data</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getRPRAjax">getRPRAjax()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Related Publications and resources table data - Ajax version endpoint</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_setUpProperties">setUpProperties()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Setup the SQL properties</dd>
 
         </dl>
 
@@ -759,6 +787,101 @@ Inverse is where the value is not identifier, pid or ispartof</dd>
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_ordering">
+        ordering()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_ordering" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheModel.php"><a href="files/arche-gui-src-model-archemodel.html"><abbr title="arche-gui/src/Model/ArcheModel.php">ArcheModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">131</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create the order values for the sql</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">ordering</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$orderby</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;titleasc&quot;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$orderby</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&quot;titleasc&quot;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">object</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_orderingByFields">
+        orderingByFields()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_orderingByFields" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheModel.php"><a href="files/arche-gui-src-model-archemodel.html"><abbr title="arche-gui/src/Model/ArcheModel.php">ArcheModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">160</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">orderingByFields</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$valuesAndFields</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$orderby</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;titleasc&quot;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$valuesAndFields</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$orderby</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&quot;titleasc&quot;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">object</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_reOrderResult">
         reOrderResult()
         <a href="classes/Drupal-acdh-repo-gui-Model-ArcheModel.html#method_reOrderResult" class="headerlink"><i class="fas fa-link"></i></a>
@@ -910,7 +1033,7 @@ manually.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheApiModel.php"><a href="files/arche-gui-src-model-archeapimodel.html"><abbr title="arche-gui/src/Model/ArcheApiModel.php">ArcheApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">309</span>
+    <span class="phpdocumentor-element-found-in__line">312</span>
 
     </aside>
 
@@ -943,7 +1066,7 @@ manually.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheApiModel.php"><a href="files/arche-gui-src-model-archeapimodel.html"><abbr title="arche-gui/src/Model/ArcheApiModel.php">ArcheApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -976,7 +1099,7 @@ manually.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheApiModel.php"><a href="files/arche-gui-src-model-archeapimodel.html"><abbr title="arche-gui/src/Model/ArcheApiModel.php">ArcheApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -1009,7 +1132,7 @@ manually.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheApiModel.php"><a href="files/arche-gui-src-model-archeapimodel.html"><abbr title="arche-gui/src/Model/ArcheApiModel.php">ArcheApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">348</span>
+    <span class="phpdocumentor-element-found-in__line">351</span>
 
     </aside>
 
@@ -1042,7 +1165,7 @@ manually.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheApiModel.php"><a href="files/arche-gui-src-model-archeapimodel.html"><abbr title="arche-gui/src/Model/ArcheApiModel.php">ArcheApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">284</span>
 
     </aside>
 
@@ -1076,7 +1199,7 @@ Inverse is where the value is not identifier, pid or ispartof</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheApiModel.php"><a href="files/arche-gui-src-model-archeapimodel.html"><abbr title="arche-gui/src/Model/ArcheApiModel.php">ArcheApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -1109,7 +1232,7 @@ Inverse is where the value is not identifier, pid or ispartof</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheApiModel.php"><a href="files/arche-gui-src-model-archeapimodel.html"><abbr title="arche-gui/src/Model/ArcheApiModel.php">ArcheApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -1142,7 +1265,7 @@ Inverse is where the value is not identifier, pid or ispartof</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheApiModel.php"><a href="files/arche-gui-src-model-archeapimodel.html"><abbr title="arche-gui/src/Model/ArcheApiModel.php">ArcheApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -1175,7 +1298,7 @@ Inverse is where the value is not identifier, pid or ispartof</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheApiModel.php"><a href="files/arche-gui-src-model-archeapimodel.html"><abbr title="arche-gui/src/Model/ArcheApiModel.php">ArcheApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">214</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -1208,11 +1331,11 @@ Inverse is where the value is not identifier, pid or ispartof</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheApiModel.php"><a href="files/arche-gui-src-model-archeapimodel.html"><abbr title="arche-gui/src/Model/ArcheApiModel.php">ArcheApiModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">379</span>
+    <span class="phpdocumentor-element-found-in__line">382</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Check the repoid in the DB</p>
+        <p class="phpdocumentor-summary">Related Publications and resources table data</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1224,6 +1347,82 @@ Inverse is where the value is not identifier, pid or ispartof</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRPRAjax">
+        getRPRAjax()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getRPRAjax" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheApiModel.php"><a href="files/arche-gui-src-model-archeapimodel.html"><abbr title="arche-gui/src/Model/ArcheApiModel.php">ArcheApiModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">412</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Related Publications and resources table data - Ajax version endpoint</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">getRPRAjax</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setUpProperties">
+        setUpProperties()
+        <a href="classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_setUpProperties" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/Model/ArcheApiModel.php"><a href="files/arche-gui-src-model-archeapimodel.html"><abbr title="arche-gui/src/Model/ArcheApiModel.php">ArcheApiModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">445</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Setup the SQL properties</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">setUpProperties</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Drupal\acdh_repo_gui\Model\type">type</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$properties</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$properties</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Drupal\acdh_repo_gui\Model\type">type</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
