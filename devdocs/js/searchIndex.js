@@ -3281,11 +3281,6 @@ Search.appendIndex(
             "summary": "Full\u0020text\u0020search\u0020version\u00202",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_generateView"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003Afulltext_search\u0028\u0029",
-            "name": "fulltext_search",
-            "summary": "New\u0020fulltext\u0020search\u0020with\u0020binary\u0020search",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_fulltext_search"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024pagingHelper",
             "name": "pagingHelper",
             "summary": "",
@@ -3758,8 +3753,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\FormHelper\u003A\u003AformatCategoryTypes\u0028\u0029",
             "name": "formatCategoryTypes",
-            "summary": "",
+            "summary": "Format\u0020the\u0020category\u0020data\u0020for\u0020the\u0020form\u0020checkboxes",
             "url": "classes/Drupal-acdh-repo-gui-Helper-FormHelper.html#method_formatCategoryTypes"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\FormHelper\u003A\u003AformatCategoryTitleForValue\u0028\u0029",
+            "name": "formatCategoryTitleForValue",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-FormHelper.html#method_formatCategoryTitleForValue"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\FormHelper\u003A\u003A\u0024schema",
             "name": "schema",
@@ -4090,6 +4090,16 @@ Search.appendIndex(
             "name": "explodeSearchString",
             "summary": "Fill\u0020the\u0020search\u0020object\u0020with\u0020the\u0020search\u0020metadata",
             "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_explodeSearchString"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AcheckSearchStringValues\u0028\u0029",
+            "name": "checkSearchStringValues",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_checkSearchStringValues"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AexplodeCategorySearchStrValues\u0028\u0029",
+            "name": "explodeCategorySearchStrValues",
+            "summary": "Explode\u0020the\u0020categories\u0020url\u0020string\u0020to\u0020get\u0020the\u0020ID",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_explodeCategorySearchStrValues"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AexplodeSearchStringValues\u0028\u0029",
             "name": "explodeSearchStringValues",
