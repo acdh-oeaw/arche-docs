@@ -3201,6 +3201,16 @@ Search.appendIndex(
             "summary": "Display\u0020the\u00203d\u0020object\u0020\u0028nxs,\u0020ply\u0029\u0020inside\u0020a\u0020js\u0020viewer",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_3d_viewer"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_3d_viewer_v2\u0028\u0029",
+            "name": "repo_3d_viewer_v2",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_3d_viewer_v2"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_3d_viewer_v3\u0028\u0029",
+            "name": "repo_3d_viewer_v3",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_3d_viewer_v3"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_pdf_viewer\u0028\u0029",
             "name": "repo_pdf_viewer",
             "summary": "Display\u0020PDF\u0020in\u0020viewer",
