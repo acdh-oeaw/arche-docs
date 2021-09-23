@@ -3291,6 +3291,11 @@ Search.appendIndex(
             "summary": "Full\u0020text\u0020search\u0020version\u00202",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_generateView"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003Asearch_vcr\u0028\u0029",
+            "name": "search_vcr",
+            "summary": "Get\u0020the\u0020json\u0020object\u0020with\u0020the\u0020search\u0020values\u0020for\u0020the\u0020VCR\u0020submit",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_search_vcr"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024pagingHelper",
             "name": "pagingHelper",
             "summary": "",
@@ -3850,6 +3855,11 @@ Search.appendIndex(
             "name": "getRepoIdFromApiUrl",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_getRepoIdFromApiUrl"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AinitClarinVcrUrl\u0028\u0029",
+            "name": "initClarinVcrUrl",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_initClarinVcrUrl"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003A\u0024config",
             "name": "config",
@@ -4675,6 +4685,11 @@ Search.appendIndex(
             "name": "setUpPayload",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_setUpPayload"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AgetVcr\u0028\u0029",
+            "name": "getVcr",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_getVcr"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AgetViewData\u0028\u0029",
             "name": "getViewData",
