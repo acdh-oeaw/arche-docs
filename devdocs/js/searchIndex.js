@@ -3566,10 +3566,20 @@ Search.appendIndex(
             "summary": "Child\u0020view\u0020create",
             "url": "classes/Drupal-acdh-repo-gui-Helper-ChildApiHelper.html#method_createView"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ChildApiHelper\u003A\u003AsetProperties\u0028\u0029",
+            "name": "setProperties",
+            "summary": "Set\u0020the\u0020properties\u0020what\u0020we\u0020want\u0020to\u0020process\u0020for\u0020the\u0020child\u0020object",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-ChildApiHelper.html#method_setProperties"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ChildApiHelper\u003A\u003AformatResultToGui\u0028\u0029",
             "name": "formatResultToGui",
             "summary": "We\u0020need\u0020to\u0020format\u0020the\u0020root\u0020results\u0020for\u0020the\u0020gui",
             "url": "classes/Drupal-acdh-repo-gui-Helper-ChildApiHelper.html#method_formatResultToGui"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ChildApiHelper\u003A\u003AfetchProperties\u0028\u0029",
+            "name": "fetchProperties",
+            "summary": "Fetch\u0020the\u0020property\u0020values\u0020and\u0020create\u0020the\u0020response\u0020object",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-ChildApiHelper.html#method_fetchProperties"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ChildApiHelper\u003A\u003AcreateObj\u0028\u0029",
             "name": "createObj",
@@ -3585,6 +3595,11 @@ Search.appendIndex(
             "name": "data",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Helper-ChildApiHelper.html#property_data"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ChildApiHelper\u003A\u003A\u0024properties",
+            "name": "properties",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-ChildApiHelper.html#property_properties"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DetailViewHelper",
             "name": "DetailViewHelper",
