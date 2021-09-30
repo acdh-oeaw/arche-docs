@@ -151,6 +151,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Auth.html#method_checkAccessRights"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Auth\u003A\u003AbatchCheckAccessRights\u0028\u0029",
+            "name": "batchCheckAccessRights",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Auth.html#method_batchCheckAccessRights"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Auth\u003A\u003AgetCreateRights\u0028\u0029",
             "name": "getCreateRights",
             "summary": "",
@@ -340,6 +345,11 @@ Search.appendIndex(
             "name": "__destruct",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-HandlersController.html#method___destruct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\HandlersController\u003A\u003AhasHandlers\u0028\u0029",
+            "name": "hasHandlers",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-HandlersController.html#method_hasHandlers"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\HandlersController\u003A\u003AhandleResource\u0028\u0029",
             "name": "handleResource",
@@ -761,10 +771,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Resource.html#method_patchMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\Resource\u003A\u003Amove\u0028\u0029",
-            "name": "move",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-core-Resource.html#method_move"
+            "fqsen": "\\acdhOeaw\\arche\\core\\Resource\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Merges\u0020the\u0020\u0024srcId\u0020resource\u0020into\u0020the\u0020current\u0020resource.",
+            "url": "classes/acdhOeaw-arche-core-Resource.html#method_merge"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Resource\u003A\u003Aoptions\u0028\u0029",
             "name": "options",
@@ -850,6 +860,26 @@ Search.appendIndex(
             "name": "createResource",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Resource.html#method_createResource"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Resource\u003A\u003AdeleteLockAll\u0028\u0029",
+            "name": "deleteLockAll",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Resource.html#method_deleteLockAll"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Resource\u003A\u003AdeleteCheckReferences\u0028\u0029",
+            "name": "deleteCheckReferences",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Resource.html#method_deleteCheckReferences"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Resource\u003A\u003AdeleteReferences\u0028\u0029",
+            "name": "deleteReferences",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Resource.html#method_deleteReferences"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Resource\u003A\u003AdeleteResources\u0028\u0029",
+            "name": "deleteResources",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Resource.html#method_deleteResources"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Resource\u003A\u003ASTATE_ACTIVE",
             "name": "STATE_ACTIVE",
@@ -3165,16 +3195,6 @@ Search.appendIndex(
             "name": "generateView",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_generateView"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_dl_collection_binaries\u0028\u0029",
-            "name": "repo_dl_collection_binaries",
-            "summary": "get\u0020the\u0020collection\u0020binaries",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_dl_collection_binaries"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_get_collection_data\u0028\u0029",
-            "name": "repo_get_collection_data",
-            "summary": "This\u0020generates\u0020the\u0020jstree\u0020data\u0020for\u0020the\u0020collection\u0020download\u0020view",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_get_collection_data"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Aget_collection_data_lazy\u0028\u0029",
             "name": "get_collection_data_lazy",
