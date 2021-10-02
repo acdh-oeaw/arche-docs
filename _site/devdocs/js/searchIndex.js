@@ -3196,6 +3196,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_generateView"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_dl_collection_binaries\u0028\u0029",
+            "name": "repo_dl_collection_binaries",
+            "summary": "get\u0020the\u0020collection\u0020binaries",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_dl_collection_binaries"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Aget_collection_data_lazy\u0028\u0029",
             "name": "get_collection_data_lazy",
             "summary": "",
