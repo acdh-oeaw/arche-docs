@@ -2921,36 +2921,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_createDbHelperObject"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_persons\u0028\u0029",
-            "name": "repo_persons",
-            "summary": "Get\u0020the\u0020Persons\u0020data\u0020for\u0020the\u0020Metadata\u0020Editor",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_persons"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_places\u0028\u0029",
-            "name": "repo_places",
-            "summary": "Get\u0020the\u0020Places\u0020data\u0020for\u0020the\u0020Metadata\u0020Editor",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_places"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_publications\u0028\u0029",
-            "name": "repo_publications",
-            "summary": "Get\u0020the\u0020publications\u0020data\u0020for\u0020the\u0020Metadata\u0020Editor",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_publications"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_concepts\u0028\u0029",
-            "name": "repo_concepts",
-            "summary": "Get\u0020the\u0020concepts\u0020data\u0020for\u0020the\u0020Metadata\u0020Editor",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_concepts"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_organisations\u0028\u0029",
-            "name": "repo_organisations",
-            "summary": "Get\u0020the\u0020organisations\u0020data\u0020for\u0020the\u0020Metadata\u0020Editor",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_organisations"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getData\u0028\u0029",
-            "name": "repo_getData",
-            "summary": "Get\u0020the\u0020user\u0020defined\u0020acdh\u0020type\u0020data\u0020for\u0020the\u0020Metadata\u0020Editor",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getData"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getMetadata\u0028\u0029",
             "name": "repo_getMetadata",
             "summary": "Get\u0020the\u0020ontology\u0020metadata",
@@ -2970,21 +2940,6 @@ Search.appendIndex(
             "name": "repo_getInverseData",
             "summary": "Get\u0020the\u0020actual\u0020resource\u0020inverse\u0020data\nWhere\u0020the\u0020id\u0020is\u0020available,\u0020but\u0020not\u0020identifier,\u0020pid\u0020or\u0020ispartof",
             "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getInverseData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_checkIdentifier\u0028\u0029",
-            "name": "repo_checkIdentifier",
-            "summary": "Check\u0020the\u0020repoid\u0020is\u0020already\u0020available\u0020in\u0020the\u0020system\u0020or\u0020not\n\u0024repoid\u0020\u003D\u0020number",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_checkIdentifier"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_gndPerson\u0028\u0029",
-            "name": "repo_gndPerson",
-            "summary": "The\u0020gnd\u0020file\u0020generation\u0020API\u0020endpoint",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_gndPerson"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getOntologyJSPluginData\u0028\u0029",
-            "name": "repo_getOntologyJSPluginData",
-            "summary": "Generate\u0020the\u0020counted\u0020Collections\u0020and\u0020binaries\u0020text\u0020for\u0020the\u0020gui",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getOntologyJSPluginData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getMembers\u0028\u0029",
             "name": "repo_getMembers",
@@ -3493,12 +3448,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AformatCollsBinsCount\u0028\u0029",
             "name": "formatCollsBinsCount",
-            "summary": "format\u0020the\u0020collections\u0020and\u0020binaries\u0020count\u0020response",
+            "summary": "\u003C\u003C\u003C\u003C\u003C\u003C\u003C\u0020HEAD\n\u003D\u003D\u003D\u003D\u003D\u003D\u003D\nformat\u0020the\u0020collections\u0020and\u0020binaries\u0020count\u0020response",
             "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatCollsBinsCount"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AformatMetadataView\u0028\u0029",
             "name": "formatMetadataView",
-            "summary": "Format\u0020the\u0020data\u0020for\u0020the\u0020metadata\u0020api\u0020request",
+            "summary": "\u003E\u003E\u003E\u003E\u003E\u003E\u003E\u0020f4521779b0ac51089439cf6dcf50beb9fc82087d\nFormat\u0020the\u0020data\u0020for\u0020the\u0020metadata\u0020api\u0020request",
             "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatMetadataView"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AcheckCardinality\u0028\u0029",
@@ -3510,21 +3465,6 @@ Search.appendIndex(
             "name": "creatMetadataObj",
             "summary": "Create\u0020properties\u0020obj\u0020with\u0020values\u0020from\u0020the\u0020metadata\u0020api\u0020request",
             "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_creatMetadataObj"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AformatView\u0028\u0029",
-            "name": "formatView",
-            "summary": "Format\u0020the\u0020basic\u0020APi\u0020views",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatView"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AformatCheckIdentifierData\u0028\u0029",
-            "name": "formatCheckIdentifierData",
-            "summary": "Format\u0020the\u0020checkIdentifier\u0020api\u0020call\u0020result",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatCheckIdentifierData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AcreateGNDFile\u0028\u0029",
-            "name": "createGNDFile",
-            "summary": "create\u0020the\u0020GNDfile\u0020for\u0020the\u0020GND\u0020API",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_createGNDFile"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003A\u0024data",
             "name": "data",
@@ -4231,11 +4171,6 @@ Search.appendIndex(
             "summary": "Generate\u0020the\u0020Members\u0020data\u0020for\u0020the\u0020root\u0020repoid",
             "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getMembers"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AcountCollectionsBinaries\u0028\u0029",
-            "name": "countCollectionsBinaries",
-            "summary": "Count\u0020the\u0020main\u0020collections\u0020and\u0020binary\u0020files\u0020for\u0020the\u0020ckeditor\u0020plugin\u0020api\u0020endpoint",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_countCollectionsBinaries"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetOntology\u0028\u0029",
             "name": "getOntology",
             "summary": "get\u0020the\u0020onotology\u0020data\u0020based\u0020on\u0020the\u0020acdh\u0020type",
@@ -4255,16 +4190,6 @@ Search.appendIndex(
             "name": "getInverseData",
             "summary": "get\u0020the\u0020resource\u0020inverse\u0020data\nInverse\u0020is\u0020where\u0020the\u0020value\u0020is\u0020not\u0020identifier,\u0020pid\u0020or\u0020ispartof",
             "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getInverseData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AcheckIdentifier\u0028\u0029",
-            "name": "checkIdentifier",
-            "summary": "Check\u0020the\u0020repoid\u0020in\u0020the\u0020DB",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_checkIdentifier"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetGNDPersonData\u0028\u0029",
-            "name": "getGNDPersonData",
-            "summary": "Generate\u0020GND\u0020person\u0020data",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getGNDPersonData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetRPR\u0028\u0029",
             "name": "getRPR",
