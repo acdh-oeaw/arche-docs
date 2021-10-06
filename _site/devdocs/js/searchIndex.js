@@ -2906,71 +2906,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-AcdhRepoGuiController.html#property_rootViewController"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController",
-            "name": "ArcheApiController",
-            "summary": "Description\u0020of\u0020ArcheApiController",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method___construct"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003AcreateDbHelperObject\u0028\u0029",
-            "name": "createDbHelperObject",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_createDbHelperObject"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getMetadata\u0028\u0029",
-            "name": "repo_getMetadata",
-            "summary": "Get\u0020the\u0020ontology\u0020metadata",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getMetadata"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_baseOntology\u0028\u0029",
-            "name": "repo_baseOntology",
-            "summary": "The\u0020pure\u0020basic\u0020ontology\u0020for\u0020checking",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_baseOntology"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getMetadataGui\u0028\u0029",
-            "name": "repo_getMetadataGui",
-            "summary": "Get\u0020the\u0020ontology\u0020metadata\u0020for\u0020the\u0020JS\u0020plugin\u0020table",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getMetadataGui"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getInverseData\u0028\u0029",
-            "name": "repo_getInverseData",
-            "summary": "Get\u0020the\u0020actual\u0020resource\u0020inverse\u0020data\nWhere\u0020the\u0020id\u0020is\u0020available,\u0020but\u0020not\u0020identifier,\u0020pid\u0020or\u0020ispartof",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getInverseData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getMembers\u0028\u0029",
-            "name": "repo_getMembers",
-            "summary": "Get\u0020the\u0020Members\u0020list\u0020for\u0020the\u0020gui\u0020Organisations\u0020Members\u0020function",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getMembers"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getRelatedPublicationsResources\u0028\u0029",
-            "name": "repo_getRelatedPublicationsResources",
-            "summary": "Get\u0020the\u0020RelatedPublicationsResources\u0020list\u0020for\u0020the\u0020gui\u0020basic\u0020view",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getRelatedPublicationsResources"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getRelatedPublicationsResourcesAjax\u0028\u0029",
-            "name": "repo_getRelatedPublicationsResourcesAjax",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getRelatedPublicationsResourcesAjax"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003Arepo_getRootTable\u0028\u0029",
-            "name": "repo_getRootTable",
-            "summary": "Create\u0020root\u0020table\u0020clone\u0020based\u0020on\u0020the\u0020actual\u0020ontology",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#method_repo_getRootTable"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024modelData",
-            "name": "modelData",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#property_modelData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheApiController\u003A\u003A\u0024result",
-            "name": "result",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-ArcheApiController.html#property_result"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\ArcheBaseController",
             "name": "ArcheBaseController",
             "summary": "Description\u0020of\u0020ArcheBaseController",
@@ -3150,16 +3085,6 @@ Search.appendIndex(
             "name": "generateView",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_generateView"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_dl_collection_binaries\u0028\u0029",
-            "name": "repo_dl_collection_binaries",
-            "summary": "get\u0020the\u0020collection\u0020binaries",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_dl_collection_binaries"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Aget_collection_data_lazy\u0028\u0029",
-            "name": "get_collection_data_lazy",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_get_collection_data_lazy"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_dl_collection_view\u0028\u0029",
             "name": "repo_dl_collection_view",
@@ -3416,81 +3341,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_categoryData"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper",
-            "name": "ArcheApiHelper",
-            "summary": "Description\u0020of\u0020ArcheApiHelper",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AcreateView\u0028\u0029",
-            "name": "createView",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_createView"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AformatInverseData\u0028\u0029",
-            "name": "formatInverseData",
-            "summary": "Create\u0020the\u0020inverse\u0020result\u0020for\u0020the\u0020datatable",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatInverseData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AformatMembersData\u0028\u0029",
-            "name": "formatMembersData",
-            "summary": "Format\u0020the\u0020sql\u0020result\u0020to\u0020the\u0020getMembers\u0020api\u0020endpoint",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatMembersData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AformatRPRData\u0028\u0029",
-            "name": "formatRPRData",
-            "summary": "Format\u0020the\u0020sql\u0020result\u0020to\u0020the\u0020Related\u0020Publications\u0020and\u0020Resources\u0020api\u0020endpoint",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatRPRData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AsetupMetadataType\u0028\u0029",
-            "name": "setupMetadataType",
-            "summary": "Create\u0020the\u0020reponse\u0020header",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_setupMetadataType"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AformatCollsBinsCount\u0028\u0029",
-            "name": "formatCollsBinsCount",
-            "summary": "\u003C\u003C\u003C\u003C\u003C\u003C\u003C\u0020HEAD\n\u003D\u003D\u003D\u003D\u003D\u003D\u003D\nformat\u0020the\u0020collections\u0020and\u0020binaries\u0020count\u0020response",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatCollsBinsCount"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AformatMetadataView\u0028\u0029",
-            "name": "formatMetadataView",
-            "summary": "\u003E\u003E\u003E\u003E\u003E\u003E\u003E\u0020f4521779b0ac51089439cf6dcf50beb9fc82087d\nFormat\u0020the\u0020data\u0020for\u0020the\u0020metadata\u0020api\u0020request",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_formatMetadataView"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AcheckCardinality\u0028\u0029",
-            "name": "checkCardinality",
-            "summary": "Check\u0020the\u0020property\u0020cardinalities",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_checkCardinality"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003AcreatMetadataObj\u0028\u0029",
-            "name": "creatMetadataObj",
-            "summary": "Create\u0020properties\u0020obj\u0020with\u0020values\u0020from\u0020the\u0020metadata\u0020api\u0020request",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#method_creatMetadataObj"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003A\u0024data",
-            "name": "data",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#property_data"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003A\u0024apiType",
-            "name": "apiType",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#property_apiType"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003A\u0024result",
-            "name": "result",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#property_result"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003A\u0024properties",
-            "name": "properties",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#property_properties"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheApiHelper\u003A\u003A\u0024requiredClasses",
-            "name": "requiredClasses",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-ArcheApiHelper.html#property_requiredClasses"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper",
             "name": "ArcheHelper",
             "summary": "Description\u0020of\u0020ArcheHelper\u0020Static\u0020Class",
@@ -3611,11 +3461,6 @@ Search.appendIndex(
             "summary": "3d\u0020dissemination\u0020service\u0020function",
             "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_threeDDissService"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AformatCollectionLazyDataStructure\u0028\u0029",
-            "name": "formatCollectionLazyDataStructure",
-            "summary": "COllection\u0020lazydataStructure\u0020formatting\u0020to\u0020js",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_formatCollectionLazyDataStructure"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcreateCollection\u0028\u0029",
             "name": "createCollection",
             "summary": "function\u0020for\u0020the\u0020collection\u0020data\u0020steps",
@@ -3635,56 +3480,6 @@ Search.appendIndex(
             "name": "convertToTreeById",
             "summary": "This\u0020func\u0020is\u0020generating\u0020a\u0020child\u0020based\u0020array\u0020from\u0020a\u0020single\u0020array\u0020by\u0020ID",
             "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_convertToTreeById"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AturtleDissService\u0028\u0029",
-            "name": "turtleDissService",
-            "summary": "Create\u0020turtle\u0020file\u0020from\u0020the\u0020resource",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_turtleDissService"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcollectionDownload\u0028\u0029",
-            "name": "collectionDownload",
-            "summary": "Generate\u0020tar\u0020file\u0020from\u0020the\u0020selected\u0020files",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_collectionDownload"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcreatePathForCollectionDownload\u0028\u0029",
-            "name": "createPathForCollectionDownload",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_createPathForCollectionDownload"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcreateFileNameForCollectionDownload\u0028\u0029",
-            "name": "createFileNameForCollectionDownload",
-            "summary": "Remove\u0020the\u0020white\u0020spaces\u0020from\u0020the\u0020filename",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_createFileNameForCollectionDownload"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcreateCollectionDir\u0028\u0029",
-            "name": "createCollectionDir",
-            "summary": "Create\u0020the\u0020directory\u0020for\u0020the\u0020collection",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_createCollectionDir"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcollectionDownloadFiles\u0028\u0029",
-            "name": "collectionDownloadFiles",
-            "summary": "Download\u0020the\u0020selected\u0020binaries",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_collectionDownloadFiles"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcollectionGetTurtle\u0028\u0029",
-            "name": "collectionGetTurtle",
-            "summary": "Get\u0020the\u0020turtle\u0020file\u0020and\u0020copy\u0020it\u0020to\u0020the\u0020collection\u0020download\u0020directory",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_collectionGetTurtle"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcollectionTarFiles\u0028\u0029",
-            "name": "collectionTarFiles",
-            "summary": "TAR\u0020the\u0020downloaded\u0020collection\u0020files",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_collectionTarFiles"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcollectionRemoveTempFiles\u0028\u0029",
-            "name": "collectionRemoveTempFiles",
-            "summary": "Remove\u0020the\u0020files\u0020from\u0020the\u0020collections\u0020directory",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_collectionRemoveTempFiles"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AcollectionCreateDlDirectory\u0028\u0029",
-            "name": "collectionCreateDlDirectory",
-            "summary": "Setup\u0020the\u0020collection\u0020directory\u0020for\u0020the\u0020downloads",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-DisseminationServicesHelper.html#method_collectionCreateDlDirectory"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\DisseminationServicesHelper\u003A\u003AsetTmpDir\u0028\u0029",
             "name": "setTmpDir",
@@ -3780,11 +3575,6 @@ Search.appendIndex(
             "name": "specialIdentifierToUUID",
             "summary": "This\u0020function\u0020is\u0020get\u0020the\u0020acdh\u0020identifier\u0020by\u0020the\u0020PID,\u0020because\u0020all\u0020of\u0020the\u0020functions\nare\u0020using\u0020the\u0020identifier\u0020and\u0020not\u0020the\u0020pid\u0020\u003A\u0029",
             "url": "classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_specialIdentifierToUUID"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AchangeCollDLScript\u0028\u0029",
-            "name": "changeCollDLScript",
-            "summary": "Extend\u0020the\u0020collection\u0020download\u0020python\u0020script\u0020with\u0020the\u0020url",
-            "url": "classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_changeCollDLScript"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AgetDissServices\u0028\u0029",
             "name": "getDissServices",
@@ -4146,76 +3936,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#property_objLang"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel",
-            "name": "ArcheApiModel",
-            "summary": "Description\u0020of\u0020DetailViewModel",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method___construct"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetViewData\u0028\u0029",
-            "name": "getViewData",
-            "summary": "Get\u0020the\u0020data\u0020for\u0020the\u0020left\u0020side\u0020boxes",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getViewData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetData\u0028\u0029",
-            "name": "getData",
-            "summary": "Generate\u0020the\u0020entity\u0020box\u0020data",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetMembers\u0028\u0029",
-            "name": "getMembers",
-            "summary": "Generate\u0020the\u0020Members\u0020data\u0020for\u0020the\u0020root\u0020repoid",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getMembers"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetOntology\u0028\u0029",
-            "name": "getOntology",
-            "summary": "get\u0020the\u0020onotology\u0020data\u0020based\u0020on\u0020the\u0020acdh\u0020type",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getOntology"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetOntologyGui\u0028\u0029",
-            "name": "getOntologyGui",
-            "summary": "get\u0020the\u0020onotology\u0020data\u0020for\u0020the\u0020js\u0020plugin",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getOntologyGui"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetRootTableOntology\u0028\u0029",
-            "name": "getRootTableOntology",
-            "summary": "Get\u0020ontology\u0020for\u0020the\u0020roottable",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getRootTableOntology"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetInverseData\u0028\u0029",
-            "name": "getInverseData",
-            "summary": "get\u0020the\u0020resource\u0020inverse\u0020data\nInverse\u0020is\u0020where\u0020the\u0020value\u0020is\u0020not\u0020identifier,\u0020pid\u0020or\u0020ispartof",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getInverseData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetRPR\u0028\u0029",
-            "name": "getRPR",
-            "summary": "Related\u0020Publications\u0020and\u0020resources\u0020table\u0020data",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getRPR"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AgetRPRAjax\u0028\u0029",
-            "name": "getRPRAjax",
-            "summary": "Related\u0020Publications\u0020and\u0020resources\u0020table\u0020data\u0020\u002D\u0020Ajax\u0020version\u0020endpoint",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_getRPRAjax"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003AsetUpProperties\u0028\u0029",
-            "name": "setUpProperties",
-            "summary": "Setup\u0020the\u0020SQL\u0020properties",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#method_setUpProperties"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003A\u0024repodb",
-            "name": "repodb",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#property_repodb"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheApiModel\u003A\u003A\u0024properties",
-            "name": "properties",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-ArcheApiModel.html#property_properties"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel",
             "name": "ArcheModel",
             "summary": "Description\u0020of\u0020ArcheModel",
@@ -4510,11 +4230,6 @@ Search.appendIndex(
             "name": "getCollectionData",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-DisseminationServicesModel.html#method_getCollectionData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\DisseminationServicesModel\u003A\u003AgetCollectionDataLazy\u0028\u0029",
-            "name": "getCollectionDataLazy",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-DisseminationServicesModel.html#method_getCollectionDataLazy"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\DisseminationServicesModel\u003A\u003A\u0024repodb",
             "name": "repodb",
