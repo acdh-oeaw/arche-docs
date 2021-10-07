@@ -3316,6 +3316,16 @@ Search.appendIndex(
             "summary": "this\u0020function\u0020creates\u0020the\u0020search\u0020input\u0020field",
             "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_createSearchInput"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AgetCacheLastModificationDate\u0028\u0029",
+            "name": "getCacheLastModificationDate",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_getCacheLastModificationDate"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AgetBoxData\u0028\u0029",
+            "name": "getBoxData",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_getBoxData"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024model",
             "name": "model",
             "summary": "",
@@ -3340,6 +3350,16 @@ Search.appendIndex(
             "name": "categoryData",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_categoryData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024lastModifyDateTime",
+            "name": "lastModifyDateTime",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_lastModifyDateTime"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024reCache",
+            "name": "reCache",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_reCache"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper",
             "name": "ArcheHelper",
@@ -3548,8 +3568,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\FormHelper\u003A\u003AformatCategoryTitleForValue\u0028\u0029",
             "name": "formatCategoryTitleForValue",
-            "summary": "",
+            "summary": "Transform\u0020the\u0020string\u0020to\u0020remove\u0020special\u0020chars",
             "url": "classes/Drupal-acdh-repo-gui-Helper-FormHelper.html#method_formatCategoryTitleForValue"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\FormHelper\u003A\u003AcheckCacheData\u0028\u0029",
+            "name": "checkCacheData",
+            "summary": "Do\u0020we\u0020have\u0020to\u0020recache\u0020the\u0020data\u003F\u0021",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-FormHelper.html#method_checkCacheData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\FormHelper\u003A\u003A\u0024schema",
             "name": "schema",
@@ -4050,6 +4075,11 @@ Search.appendIndex(
             "name": "getCategoryData",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-BlocksModel.html#method_getCategoryData"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\BlocksModel\u003A\u003AlastModificationDate\u0028\u0029",
+            "name": "lastModificationDate",
+            "summary": "Get\u0020the\u0020DB\u0020last\u0020modification\u0020date\u0020for\u0020the\u0020cache",
+            "url": "classes/Drupal-acdh-repo-gui-Model-BlocksModel.html#method_lastModificationDate"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\BlocksModel\u003A\u003A\u0024repodb",
             "name": "repodb",
@@ -4930,6 +4960,11 @@ Search.appendIndex(
             "name": "td",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Object-ToolTipObject.html#property_td"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ToolTipObject\u003A\u003A\u0024helper",
+            "name": "helper",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ToolTipObject.html#property_helper"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\PathProcessor\\AcdhRepoGuiPathProcessor",
             "name": "AcdhRepoGuiPathProcessor",
