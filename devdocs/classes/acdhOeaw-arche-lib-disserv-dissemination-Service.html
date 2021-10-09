@@ -276,14 +276,6 @@
 <dd>Deletes the repository resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_deleteRecursively">deleteRecursively()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Deletes the repository resource as well as all the resources pointing to
-it with a given metadata property.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_factory">factory()</a>
     <span>
                         &nbsp;: <a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>    </span>
@@ -426,6 +418,14 @@ returning the metadata.</dd>
 <dd>Tells the service it can load information on service parameters from its metadata.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_merge">merge()</a>
+    <span>
+                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>    </span>
+</dt>
+<dd>Merges the current resource with the given one. See the corresponding
+[REST endpoint description](https://app.swaggerhub.com/apis/zozlak/arche/3.0#/default/put_merge__srcResourceId___targetResourceId_)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_setGraph">setGraph()</a>
     <span>
                         &nbsp;: void    </span>
@@ -532,7 +532,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -561,7 +561,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -590,7 +590,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -619,7 +619,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -796,7 +796,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -902,7 +902,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -956,7 +956,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">165</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -964,7 +964,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tombstone</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$references</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tombstone</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$references</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$recursiveProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -988,70 +988,13 @@ from other resources?</p>
 </section>
 
             </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_deleteRecursively">
-        deleteRecursively()
-        <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_deleteRecursively" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">216</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Deletes the repository resource as well as all the resources pointing to
-it with a given metadata property.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">deleteRecursively</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tombstone</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$references</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"><p>The deletion is performed recursively.</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$property</span>
+                <span class="phpdocumentor-signature__argument__name">$recursiveProperty</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>property used for the recursive deletion</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$tombstone</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>should tombstones be removed for deleted resources?</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$references</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>should references to deleted resources be removed
-from other resources?</p>
+                    <section class="phpdocumentor-description"><p>is present, deletion continues recursively
+to all resources pointing to the deleted one with this RDF property</p>
 </section>
 
             </dd>
@@ -1078,7 +1021,7 @@ from other resources?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -1176,7 +1119,7 @@ from the response will be used)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -1788,7 +1731,7 @@ Use the setMetadata() method to write back the changes you made.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -1918,6 +1861,52 @@ metadata.</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_merge">
+        merge()
+        <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_merge" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">232</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Merges the current resource with the given one. See the corresponding
+[REST endpoint description](https://app.swaggerhub.com/apis/zozlak/arche/3.0#/default/put_merge__srcResourceId___targetResourceId_)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">merge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$targetResId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>If this action succeeds, resource's URI changes to the targetResource's one.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$targetResId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a></span>
             &mdash;
         
     
@@ -2075,7 +2064,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -2120,7 +2109,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -2181,7 +2170,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">262</span>
 
     </aside>
 
@@ -2489,7 +2478,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">249</span>
 
     </aside>
 

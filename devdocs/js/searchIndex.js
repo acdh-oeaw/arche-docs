@@ -5991,15 +5991,15 @@ Search.appendIndex(
             "summary": "Deletes\u0020the\u0020repository\u0020resource.",
             "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_delete"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AdeleteRecursively\u0028\u0029",
-            "name": "deleteRecursively",
-            "summary": "Deletes\u0020the\u0020repository\u0020resource\u0020as\u0020well\u0020as\u0020all\u0020the\u0020resources\u0020pointing\u0020to\nit\u0020with\u0020a\u0020given\u0020metadata\u0020property.",
-            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_deleteRecursively"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AloadMetadata\u0028\u0029",
             "name": "loadMetadata",
             "summary": "Loads\u0020current\u0020metadata\u0020from\u0020the\u0020repository.",
             "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_loadMetadata"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Merges\u0020the\u0020current\u0020resource\u0020with\u0020the\u0020given\u0020one.\u0020See\u0020the\u0020corresponding\n\u005BREST\u0020endpoint\u0020description\u005D\u0028https\u003A\/\/app.swaggerhub.com\/apis\/zozlak\/arche\/3.0\u0023\/default\/put_merge__srcResourceId___targetResourceId_\u0029",
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_merge"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AparseMetadata\u0028\u0029",
             "name": "parseMetadata",
