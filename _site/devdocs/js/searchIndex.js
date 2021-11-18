@@ -4221,6 +4221,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020detail\u0020view\u0020data\u0020from\u0020DB",
             "url": "classes/Drupal-acdh-repo-gui-Model-DetailViewModel.html#method_getViewData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\DetailViewModel\u003A\u003AgetViewDataLib\u0028\u0029",
+            "name": "getViewDataLib",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-DetailViewModel.html#method_getViewDataLib"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\DetailViewModel\u003A\u003AgetBreadCrumbData\u0028\u0029",
             "name": "getBreadCrumbData",
             "summary": "Get\u0020the\u0020breadcrumb\u0020data\u0020for\u0020the\u0020detail\u0020view",
@@ -6080,11 +6085,6 @@ Search.appendIndex(
             "name": "getOntology",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Model-Metadata-RootTableModel.html#method_getOntology"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Model\\Metadata\\RootTableModel\u003A\u003AgetOntologyDataByProperty\u0028\u0029",
-            "name": "getOntologyDataByProperty",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Model-Metadata-RootTableModel.html#method_getOntologyDataByProperty"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Model\\Ontology\\OntolgyJsModel",
             "name": "OntolgyJsModel",
