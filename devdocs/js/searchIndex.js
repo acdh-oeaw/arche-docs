@@ -4566,6 +4566,26 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020breadcrumb\u0020title",
             "url": "classes/Drupal-acdh-repo-gui-Object-BreadCrumbObject.html#method_createTitle"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadCrumbObject\u003A\u003AcheckMultipleBreadCrumb\u0028\u0029",
+            "name": "checkMultipleBreadCrumb",
+            "summary": "We\u0020can\u0020have\u0020resources\u0020with\u0020multiple\u0020parents",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadCrumbObject.html#method_checkMultipleBreadCrumb"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadCrumbObject\u003A\u003AcreateSingleBreadcrumb\u0028\u0029",
+            "name": "createSingleBreadcrumb",
+            "summary": "Single\u0020one\u0020parent\u0020breadcrumb",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadCrumbObject.html#method_createSingleBreadcrumb"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadCrumbObject\u003A\u003AcreateMultiBreadcrumb\u0028\u0029",
+            "name": "createMultiBreadcrumb",
+            "summary": "Create\u0020the\u0020string\u0020from\u0020the\u0020multiple\u0020breadcrumbs",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadCrumbObject.html#method_createMultiBreadcrumb"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadCrumbObject\u003A\u003AbuildTree\u0028\u0029",
+            "name": "buildTree",
+            "summary": "Recursive\u0020function\u0020to\u0020iterare\u0020trough\u0020the\u0020array\u0020to\u0020get\u0020the\u0020breadcrumb\u0020elements",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadCrumbObject.html#method_buildTree"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadCrumbObject\u003A\u003A\u0024data",
             "name": "data",
             "summary": "",
@@ -4575,6 +4595,16 @@ Search.appendIndex(
             "name": "length",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Object-BreadCrumbObject.html#property_length"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadCrumbObject\u003A\u003A\u0024str",
+            "name": "str",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadCrumbObject.html#property_str"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadCrumbObject\u003A\u003A\u0024i",
+            "name": "i",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadCrumbObject.html#property_i"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ClarinVCRObject",
             "name": "ClarinVCRObject",
