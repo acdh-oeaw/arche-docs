@@ -373,7 +373,7 @@ done by just trying to resolve the URL. It's the slowest mode but
 requires no configutation at all.
 This mode is always available as a fallback resolution method for the
 resolve() method and explicitely as the resolveUrl() method.</li>
-<li>REST API mode (when <code class="prettyprint">$config</code> is provided and contains <code class="prettyprint">$config-&gt;dbConnStr</code>)
+<li>REST API mode (when <code class="prettyprint">$config</code> is provided and misses <code class="prettyprint">$config-&gt;dbConnStr</code>)
 This mode is faster but works only against a single repository.</li>
 <li>direct database access mode (when <code class="prettyprint">$config</code> is provided and contains
 <code class="prettyprint">$config-&gt;dbConnStr</code>). This is definitely the fastest mode but works
