@@ -3091,11 +3091,6 @@ Search.appendIndex(
             "summary": "The\u0020collection\u0020view\u0020GUI\u0020view\u0020with\u0020the\u0020metadata\u0020and\u0020the\u0020js\u0020treeview",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_dl_collection_view"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_get_collection_dl_script\u0028\u0029",
-            "name": "repo_get_collection_dl_script",
-            "summary": "Download\u0020Whole\u0020Collection\u0020python\u0020script",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_get_collection_dl_script"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_iiif_viewer\u0028\u0029",
             "name": "repo_iiif_viewer",
             "summary": "Generate\u0020loris\u0020url\u0020based\u0020on\u0020the\u0020repoid\u0020and\u0020passing\u0020it\u0020back\u0020to\u0020the\u0020iiif\u0020template",
@@ -4585,6 +4580,11 @@ Search.appendIndex(
             "name": "buildTree",
             "summary": "Recursive\u0020function\u0020to\u0020iterare\u0020trough\u0020the\u0020array\u0020to\u0020get\u0020the\u0020breadcrumb\u0020elements",
             "url": "classes/Drupal-acdh-repo-gui-Object-BreadCrumbObject.html#method_buildTree"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadCrumbObject\u003A\u003AreOrderBreadCrumbByDate\u0028\u0029",
+            "name": "reOrderBreadCrumbByDate",
+            "summary": "We\u0020have\u0020to\u0020reorder\u0020the\u0020actual\u0020roots\u0020by\u0020the\u0020avilable\u0020date",
+            "url": "classes/Drupal-acdh-repo-gui-Object-BreadCrumbObject.html#method_reOrderBreadCrumbByDate"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\BreadCrumbObject\u003A\u003A\u0024data",
             "name": "data",
