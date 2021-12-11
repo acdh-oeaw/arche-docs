@@ -6773,7 +6773,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AfactoryInteractive\u0028\u0029",
             "name": "factoryInteractive",
-            "summary": "",
+            "summary": "Interactively\u0020creates\u0020a\u0020repository\u0020instance\u0020asking\u0020user\u0020for\u0020all\u0020required\u0020data.",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#method_factoryInteractive"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AfactoryFromUrl\u0028\u0029",
