@@ -32,7 +32,7 @@ jobs:
           sed -i -e 's/Generator<.*>/Generator/g' $i
         done
         mkdir devdocs
-        docker run --rm -v $(pwd):/data phpdoc/phpdoc:3.1 -d arche-biblatex/src -d arche-core/src -d arche-dashboard/src -d arche-doorkeeper/src -d arche-gui/src -d arche-gui-api/src -d arche-mde-api/src -d arche-fcs/src -d arche-lib/src -d arche-lib-disserv/src -d arche-lib-ingest/src -d arche-lib-schema/src -d arche-oaipmh/srci -d arche-ref-sources/src -d arche-resolver/src -d arche-schema-ingest/src -d arche-thumbnails/src -t devdocs
+        docker run --rm -v $(pwd):/data phpdoc/phpdoc:3.2 -d arche-biblatex/src -d arche-core/src -d arche-dashboard/src -d arche-doorkeeper/src -d arche-gui/src -d arche-gui-api/src -d arche-mde-api/src -d arche-fcs/src -d arche-lib/src -d arche-lib-disserv/src -d arche-lib-ingest/src -d arche-lib-schema/src -d arche-oaipmh/srci -d arche-ref-sources/src -d arche-resolver/src -d arche-schema-ingest/src -d arche-thumbnails/src -t devdocs
         cd ..
         rm -fR devdocs
         cp -fR tmp/devdocs .
