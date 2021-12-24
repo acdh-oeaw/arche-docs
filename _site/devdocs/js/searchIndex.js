@@ -5681,6 +5681,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-Collection-CollectionBinariesController.html#method_execute"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection\\CollectionBinariesController\u003A\u003AsetRepoid\u0028\u0029",
+            "name": "setRepoid",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-Collection-CollectionBinariesController.html#method_setRepoid"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection\\CollectionBinariesController\u003A\u003AcreateBinariesData\u0028\u0029",
+            "name": "createBinariesData",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-Collection-CollectionBinariesController.html#method_createBinariesData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection\\CollectionBinariesController\u003A\u003AsetUsername\u0028\u0029",
+            "name": "setUsername",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-Collection-CollectionBinariesController.html#method_setUsername"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection\\CollectionBinariesController\u003A\u003AsetPassword\u0028\u0029",
+            "name": "setPassword",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-Collection-CollectionBinariesController.html#method_setPassword"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection\\CollectionBinariesController\u003A\u003A\u0024repoid",
+            "name": "repoid",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-Collection-CollectionBinariesController.html#property_repoid"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection\\CollectionBinariesController\u003A\u003A\u0024username",
+            "name": "username",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-Collection-CollectionBinariesController.html#property_username"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection\\CollectionBinariesController\u003A\u003A\u0024password",
+            "name": "password",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-Collection-CollectionBinariesController.html#property_password"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection\\CollectionBinariesController\u003A\u003A\u0024binaries",
+            "name": "binaries",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-Collection-CollectionBinariesController.html#property_binaries"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection\\CollectionController",
             "name": "CollectionController",
             "summary": "Description\u0020of\u0020CollectionController",
@@ -5831,11 +5871,6 @@ Search.appendIndex(
             "summary": "\u0022optional\u0022\u0020means\u0020\u0022\u0024min\u0020empty\u0020or\u0020equal\u0020to\u00200\u0022\n\u0022mandatory\u0022\u0020is\u0020\u0022\u0024min\u0020greater\u0020than\u00200\u0020and\u0020\u0024recommended\u0020not\u0020equal\u0020true\u0022\n\u0022recommended\u0022\u0020is\u0020\u0022\u0024min\u0020greater\u0020than\u00200\u0020and\u0020\u0024recommended\u0020equal\u0020to\u0020true\u0022",
             "url": "classes/Drupal-arche-gui-api-Helper-Metadata-MetadataGuiHelper.html#method_metadataGuiCardinality"
         },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHelper\u003A\u003AmetadataGuiCardinalityByMartina\u0028\u0029",
-            "name": "metadataGuiCardinalityByMartina",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Helper-Metadata-MetadataGuiHelper.html#method_metadataGuiCardinalityByMartina"
-        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHelper\u003A\u003AgetRootTable\u0028\u0029",
             "name": "getRootTable",
             "summary": "Get\u0020the\u0020root\u0020table\u0020data",
@@ -5848,7 +5883,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHelper\u003A\u003AcreateRootTableTd\u0028\u0029",
             "name": "createRootTableTd",
-            "summary": "",
+            "summary": "Create\u0020the\u0020root\u0020table\u0020td\u0020values",
             "url": "classes/Drupal-arche-gui-api-Helper-Metadata-MetadataGuiHelper.html#method_createRootTableTd"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHelper\u003A\u003AcreateRootTableHtml\u0028\u0029",
