@@ -6398,13 +6398,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003AgetGNDIdentifier\u0028\u0029",
             "name": "getGNDIdentifier",
-            "summary": "",
+            "summary": "Get\u0020the\u0020GND\u0020identifier\u0020from\u0020the\u0020data\u0020array",
             "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_getGNDIdentifier"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003AgetRepoId\u0028\u0029",
             "name": "getRepoId",
-            "summary": "",
+            "summary": "Get\u0020the\u0020ARCHE\u0020GUI\u0020Detail\u0020view\u0020url",
             "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_getRepoId"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003AgetResourceUrl\u0028\u0029",
+            "name": "getResourceUrl",
+            "summary": "Return\u0020the\u0020id.acdh.oeaw.ac.at\/pid\/gui\u0020url",
+            "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_getResourceUrl"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003AfetchUrls\u0028\u0029",
+            "name": "fetchUrls",
+            "summary": "Collect\u0020the\u0020urls\u0020from\u0020the\u0020identifiers\u0020array",
+            "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_fetchUrls"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003A\u0024fileLocation",
             "name": "fileLocation",
