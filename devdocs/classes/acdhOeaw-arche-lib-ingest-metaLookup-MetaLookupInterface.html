@@ -181,7 +181,7 @@ binary file path.</p>
                         <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupInterface.html#method_getMetadata">getMetadata()</a>
     <span>
-                                &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>    </span>
+                                &nbsp;: resource    </span>
 </dt>
 <dd>Returns metadata coupled with a file.</dd>
 
@@ -217,7 +217,7 @@ binary file path.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$require</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span></code>
+                <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifiers</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$require</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -232,11 +232,12 @@ binary file path.</p>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$meta</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                <span class="phpdocumentor-signature__argument__name">$identifiers</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
+                    <section class="phpdocumentor-description"><p>identifiers (URIs) of the file</p>
+</section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
@@ -254,7 +255,7 @@ binary file path.</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+    <span class="phpdocumentor-signature__response_type">resource</span>
             &mdash;
             <section class="phpdocumentor-description"><p>fetched metadata</p>
 </section>

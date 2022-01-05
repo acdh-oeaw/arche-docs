@@ -151,7 +151,7 @@
 
     </aside>
 
-            <p class="phpdocumentor-summary">Simply adds same fixed set of metadata properties to every file.</p>
+            <p class="phpdocumentor-summary">Returns a fixed set of metadata properties to every file.</p>
 
     <section class="phpdocumentor-description"><p>Particularly useful for testing.</p>
 </section>
@@ -199,7 +199,7 @@
                     <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupConstant.html#property_metadata">$metadata</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>            </span>
 </dt>
 <dd></dd>
 
@@ -252,7 +252,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
     <span class="phpdocumentor-signature__name">$metadata</span>
     </code>
 
@@ -327,7 +327,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/metaLookup/MetaLookupConstant.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metalookup-metalookupconstant.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/metaLookup/MetaLookupConstant.php">MetaLookupConstant.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -335,7 +335,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$require</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span></code>
+                <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifiers</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$require</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -351,11 +351,12 @@ the interface, it is not used)</p>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$meta</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                <span class="phpdocumentor-signature__argument__name">$identifiers</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>file's metadata</p>
+                    <section class="phpdocumentor-description"><p>file's identifiers (URIs) - just for
+conformance with the interface, they are not used</p>
 </section>
 
             </dd>
@@ -365,7 +366,7 @@ the interface, it is not used)</p>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>should error be thrown when no metadata was found
-(not used, this class always return metadata)</p>
+(not used, this class always returns metadata)</p>
 </section>
 
             </dd>

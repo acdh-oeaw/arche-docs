@@ -211,10 +211,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Auth.html#property_isCreator"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BadRequestException",
+            "name": "BadRequestException",
+            "summary": "Description\u0020of\u0020RepoException",
+            "url": "classes/acdhOeaw-arche-core-BadRequestException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BadRequestException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BadRequestException.html#method___construct"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload",
             "name": "BinaryPayload",
             "summary": "Represents\u0020a\u0020request\u0020binary\u0020payload.",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003AgetStorageDir\u0028\u0029",
+            "name": "getStorageDir",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method_getStorageDir"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
@@ -256,11 +271,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method_getPath"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003AgetStorageDir\u0028\u0029",
-            "name": "getStorageDir",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method_getStorageDir"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003AgetRequestMetadataRaw\u0028\u0029",
             "name": "getRequestMetadataRaw",
             "summary": "",
@@ -296,6 +306,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#property_size"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\ConflictException",
+            "name": "ConflictException",
+            "summary": "Description\u0020of\u0020RepoException",
+            "url": "classes/acdhOeaw-arche-core-ConflictException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\ConflictException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-ConflictException.html#method___construct"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Describe",
             "name": "Describe",
             "summary": "Handles\u0020the\u0020\/desribe\u0020endpoint",
@@ -315,6 +335,16 @@ Search.appendIndex(
             "name": "options",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Describe.html#method_options"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\DuplicatedKeyException",
+            "name": "DuplicatedKeyException",
+            "summary": "Description\u0020of\u0020RepoException",
+            "url": "classes/acdhOeaw-arche-core-DuplicatedKeyException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\DuplicatedKeyException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-DuplicatedKeyException.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\handler\\MetadataManager",
             "name": "MetadataManager",
@@ -431,6 +461,16 @@ Search.appendIndex(
             "summary": "Manages\u0020resources\u0027s\u0020metadata\u0020\u0028loads\u0020from\u0020database\u0020or\u0020HTTP\u0020request,\u0020writes\u0020into\nthe\u0020database,\u0020serializes\u0020to\u0020RDF,\u0020etc.\u0029.",
             "url": "classes/acdhOeaw-arche-core-Metadata.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Metadata\u003A\u003ApropertyAsString\u0028\u0029",
+            "name": "propertyAsString",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Metadata.html#method_propertyAsString"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Metadata\u003A\u003AidAsUri\u0028\u0029",
+            "name": "idAsUri",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Metadata.html#method_idAsUri"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Metadata\u003A\u003AgetAcceptedFormats\u0028\u0029",
             "name": "getAcceptedFormats",
             "summary": "",
@@ -450,6 +490,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Metadata.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Metadata\u003A\u003AsetId\u0028\u0029",
+            "name": "setId",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Metadata.html#method_setId"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Metadata\u003A\u003AgetUri\u0028\u0029",
             "name": "getUri",
@@ -856,11 +901,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Resource.html#method_checkTransactionState"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\Resource\u003A\u003AcreateResource\u0028\u0029",
-            "name": "createResource",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-core-Resource.html#method_createResource"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Resource\u003A\u003AdeleteLockAll\u0028\u0029",
             "name": "deleteLockAll",
             "summary": "",
@@ -991,6 +1031,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-RestController.html#property_auth"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003A\u0024logId",
+            "name": "logId",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#property_logId"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003A\u0024handlersCtl",
             "name": "handlersCtl",
             "summary": "",
@@ -1031,10 +1076,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Transaction.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AprolongAndRelease\u0028\u0029",
-            "name": "prolongAndRelease",
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003Aprolong\u0028\u0029",
+            "name": "prolong",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_prolongAndRelease"
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_prolong"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AdeleteResource\u0028\u0029",
+            "name": "deleteResource",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_deleteResource"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AcreateResource\u0028\u0029",
+            "name": "createResource",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_createResource"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AlockResource\u0028\u0029",
+            "name": "lockResource",
+            "summary": "Locks\u0020a\u0020given\u0020resource\u0020with\u0020a\u0020given\u0020lock\u0020id\u0020and\u0020the\u0020current\u0020transaction\u0020id.",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_lockResource"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AunlockResources\u0028\u0029",
+            "name": "unlockResources",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_unlockResources"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AgetId\u0028\u0029",
             "name": "getId",
@@ -1081,20 +1146,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Transaction.html#method_getPreTransactionDbHandle"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AlockAndFetchData\u0028\u0029",
-            "name": "lockAndFetchData",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_lockAndFetchData"
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003Alock\u0028\u0029",
+            "name": "lock",
+            "summary": "Tries\u0020to\u0020lock\u0020the\u0020current\u0020transaction.",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_lock"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003Await\u0028\u0029",
-            "name": "wait",
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AfetchData\u0028\u0029",
+            "name": "fetchData",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_fetchData"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AreleaseAndWait\u0028\u0029",
+            "name": "releaseAndWait",
             "summary": "Actively\u0020waits\u0020until\u0020the\u0020transaction\u0020controller\u0020daemon\u0020rollbacks\/commits\u0020the\u0020transaction",
-            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_wait"
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_releaseAndWait"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AsetState\u0028\u0029",
+            "name": "setState",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_setState"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AgetResourceList\u0028\u0029",
             "name": "getResourceList",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Transaction.html#method_getResourceList"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AexecuteQuery\u0028\u0029",
+            "name": "executeQuery",
+            "summary": "Executes\u0020a\u0020given\u0020PDO\u0020statement\u0020trapping\u0020the\u0020lock\u0020timeout\u0020and\u0020foreign\u0020key\ndatabase\u0020exceptions\u0020and\u0020turning\u0020them\u0020it\u0020into\u0020the\u0020\u0060ConflictException\u0060.",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_executeQuery"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003ASTATE_NOTX",
+            "name": "STATE_NOTX",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_STATE_NOTX"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003ASTATE_ACTIVE",
             "name": "STATE_ACTIVE",
@@ -1111,10 +1196,50 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_STATE_ROLLBACK"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003ASTATE_LOCKED",
+            "name": "STATE_LOCKED",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_STATE_LOCKED"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003APG_FOREIGN_KEY_VIOLATION",
             "name": "PG_FOREIGN_KEY_VIOLATION",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_PG_FOREIGN_KEY_VIOLATION"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003APG_LOCK_FAILURE",
+            "name": "PG_LOCK_FAILURE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_PG_LOCK_FAILURE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003APG_DUPLICATE_KEY",
+            "name": "PG_DUPLICATE_KEY",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_PG_DUPLICATE_KEY"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003APG_WRONG_DATE_VALUE",
+            "name": "PG_WRONG_DATE_VALUE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_PG_WRONG_DATE_VALUE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003APG_WRONG_TEXT_VALUE",
+            "name": "PG_WRONG_TEXT_VALUE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_PG_WRONG_TEXT_VALUE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003APG_WRONG_BINARY_VALUE",
+            "name": "PG_WRONG_BINARY_VALUE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_PG_WRONG_BINARY_VALUE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003ALOCK_TIMEOUT_DEFAULT",
+            "name": "LOCK_TIMEOUT_DEFAULT",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_LOCK_TIMEOUT_DEFAULT"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003ASTMT_TIMEOUT_DEFAULT",
+            "name": "STMT_TIMEOUT_DEFAULT",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_STMT_TIMEOUT_DEFAULT"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003A\u0024id",
             "name": "id",
@@ -1140,6 +1265,11 @@ Search.appendIndex(
             "name": "snapshot",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Transaction.html#property_snapshot"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003A\u0024lockedResources",
+            "name": "lockedResources",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#property_lockedResources"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003A\u0024pdo",
             "name": "pdo",
@@ -1201,6 +1331,16 @@ Search.appendIndex(
             "summary": "Commits\u0020a\u0020transaction,\u0020e.g.\u0020saves\u0020metadata\u0020history\u0020changes.",
             "url": "classes/acdhOeaw-arche-core-TransactionController.html#method_commitTransaction"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\TransactionController\u003A\u003AmakeState\u0028\u0029",
+            "name": "makeState",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-TransactionController.html#method_makeState"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\TransactionController\u003A\u003AlogState\u0028\u0029",
+            "name": "logState",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-TransactionController.html#method_logState"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\TransactionController\u003A\u003ATYPE_UNIX",
             "name": "TYPE_UNIX",
             "summary": "",
@@ -1210,11 +1350,6 @@ Search.appendIndex(
             "name": "TYPE_INET",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-TransactionController.html#constant_TYPE_INET"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\TransactionController\u003A\u003ADBERROR_LOCK_NOT_AVAILABLE",
-            "name": "DBERROR_LOCK_NOT_AVAILABLE",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-core-TransactionController.html#constant_DBERROR_LOCK_NOT_AVAILABLE"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\TransactionController\u003A\u003A\u0024configFile",
             "name": "configFile",
@@ -2090,6 +2225,11 @@ Search.appendIndex(
             "name": "castLiteral",
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_castLiteral"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003ADB_LOCK_TIMEOUT",
+            "name": "DB_LOCK_TIMEOUT",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#constant_DB_LOCK_TIMEOUT"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003ANON_NEGATIVE_NUMBERS",
             "name": "NON_NEGATIVE_NUMBERS",
@@ -6663,7 +6803,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload",
             "name": "BinaryPayload",
-            "summary": "Simple\u0020container\u0020for\u0020a\u0020request\u0020binary\u0020payload",
+            "summary": "Simple\u0020container\u0020for\u0020a\u0020request\u0020binary\u0020payload.",
             "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003AguzzleMimetype\u0028\u0029",
@@ -6675,11 +6815,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "Creates\u0020a\u0020binary\u0020payload\u0020object.",
             "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#method___construct"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A__destruct\u0028\u0029",
-            "name": "__destruct",
-            "summary": "Makes\u0020sure\u0020all\u0020data\u0020streams\u0020are\u0020closed.",
-            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#method___destruct"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003AattachTo\u0028\u0029",
             "name": "attachTo",
@@ -6696,25 +6831,25 @@ Search.appendIndex(
             "summary": "Initializes\u0020the\u0020object\u0020from\u0020a\u0020file.",
             "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#method_createFromFile"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003AGUZZLE_PSR7_V1_MIME_FUNC",
-            "name": "GUZZLE_PSR7_V1_MIME_FUNC",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A\u0024guzzleVersion",
+            "name": "guzzleVersion",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#constant_GUZZLE_PSR7_V1_MIME_FUNC"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003AGUZZLE_PSR7_V2_MIME_FUNC",
-            "name": "GUZZLE_PSR7_V2_MIME_FUNC",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#constant_GUZZLE_PSR7_V2_MIME_FUNC"
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#property_guzzleVersion"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A\u0024data",
             "name": "data",
-            "summary": "A\u0020stream\u0020object\u0020or\u0020the\u0020data\u0020as\u0020a\u0020string.",
+            "summary": "Data\u0020as\u0020a\u0020string\u0020\u0028not\u0020set\u0020if\u0020data\u0020come\u0020from\u0020a\u0020file\u0029",
             "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#property_data"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A\u0024fileName",
-            "name": "fileName",
-            "summary": "Name\u0020of\u0020the\u0020file\u0020data\u0020come\u0020from.",
-            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#property_fileName"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A\u0024filename",
+            "name": "filename",
+            "summary": "File\u0020name\u0020\u0028real\u0020or\u0020provided\u0020by\u0020hand\u0029",
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#property_filename"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "Path\u0020to\u0020the\u0020data",
+            "url": "classes/acdhOeaw-arche-lib-BinaryPayload.html#property_path"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\BinaryPayload\u003A\u003A\u0024mimeType",
             "name": "mimeType",
@@ -6781,9 +6916,19 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-exception-AmbiguousMatch.html#method___construct"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\Conflict",
+            "name": "Conflict",
+            "summary": "Exception\u0020representing\u0020the\u0020HTTP\u0020409\u0020Conflict\u0020return\u0020code",
+            "url": "classes/acdhOeaw-arche-lib-exception-Conflict.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\Conflict\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-exception-Conflict.html#method___construct"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\Deleted",
             "name": "Deleted",
-            "summary": "Description\u0020of\u0020Deleted",
+            "summary": "Exception\u0020representing\u0020the\u0020HTTP\u0020410\u0020Gone\u0020return\u0020code",
             "url": "classes/acdhOeaw-arche-lib-exception-Deleted.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\Deleted\u003A\u003A__construct\u0028\u0029",
@@ -6793,7 +6938,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\NotFound",
             "name": "NotFound",
-            "summary": "Description\u0020of\u0020NotFound",
+            "summary": "Exception\u0020representing\u0020the\u0020HTTP\u0020404\u0020Not\u0020Found\u0020return\u0020code",
             "url": "classes/acdhOeaw-arche-lib-exception-NotFound.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\NotFound\u003A\u003A__construct\u0028\u0029",
@@ -6805,6 +6950,121 @@ Search.appendIndex(
             "name": "RepoLibException",
             "summary": "Description\u0020of\u0020RepoLibException",
             "url": "classes/acdhOeaw-arche-lib-exception-RepoLibException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\GeneratorPromise",
+            "name": "GeneratorPromise",
+            "summary": "Description\u0020of\u0020ResponsePromise",
+            "url": "classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\GeneratorPromise\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html#method_resolve"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\GeneratorPromise\u003A\u003Areject\u0028\u0029",
+            "name": "reject",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html#method_reject"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\GeneratorPromise\u003A\u003Await\u0028\u0029",
+            "name": "wait",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html#method_wait"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\GraphPromise",
+            "name": "GraphPromise",
+            "summary": "Description\u0020of\u0020GraphPromise",
+            "url": "classes/acdhOeaw-arche-lib-promise-GraphPromise.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\GraphPromise\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-GraphPromise.html#method_resolve"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\GraphPromise\u003A\u003Areject\u0028\u0029",
+            "name": "reject",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-GraphPromise.html#method_reject"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\GraphPromise\u003A\u003Await\u0028\u0029",
+            "name": "wait",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-GraphPromise.html#method_wait"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\PromiseTrait",
+            "name": "PromiseTrait",
+            "summary": "Description\u0020of\u0020PromiseTrait",
+            "url": "classes/acdhOeaw-arche-lib-promise-PromiseTrait.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\PromiseTrait\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-PromiseTrait.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\PromiseTrait\u003A\u003Acancel\u0028\u0029",
+            "name": "cancel",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-PromiseTrait.html#method_cancel"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\PromiseTrait\u003A\u003AgetState\u0028\u0029",
+            "name": "getState",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-PromiseTrait.html#method_getState"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\PromiseTrait\u003A\u003Aotherwise\u0028\u0029",
+            "name": "otherwise",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-PromiseTrait.html#method_otherwise"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\PromiseTrait\u003A\u003Athen\u0028\u0029",
+            "name": "then",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-PromiseTrait.html#method_then"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\PromiseTrait\u003A\u003A\u0024promise",
+            "name": "promise",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-PromiseTrait.html#property_promise"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\RepoResourcePromise",
+            "name": "RepoResourcePromise",
+            "summary": "Description\u0020of\u0020Psr7ResponsePromise",
+            "url": "classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\RepoResourcePromise\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html#method_resolve"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\RepoResourcePromise\u003A\u003Areject\u0028\u0029",
+            "name": "reject",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html#method_reject"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\RepoResourcePromise\u003A\u003Await\u0028\u0029",
+            "name": "wait",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html#method_wait"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\ResponsePromise",
+            "name": "ResponsePromise",
+            "summary": "Description\u0020of\u0020Psr7ResponsePromise",
+            "url": "classes/acdhOeaw-arche-lib-promise-ResponsePromise.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\ResponsePromise\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-ResponsePromise.html#method_resolve"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\ResponsePromise\u003A\u003Areject\u0028\u0029",
+            "name": "reject",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-ResponsePromise.html#method_reject"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\ResponsePromise\u003A\u003Await\u0028\u0029",
+            "name": "wait",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-promise-ResponsePromise.html#method_wait"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo",
             "name": "Repo",
@@ -6823,7 +7083,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AfactoryFromUrl\u0028\u0029",
             "name": "factoryFromUrl",
-            "summary": "Creates\u0020a\u0020Repo\u0020instance\u0020from\u0020any\u0020URL\u0020resolving\u0020to\u0020a\u0020repository\u0020resource.",
+            "summary": "Creates\u0020a\u0020Repo\u0020instance\u0020from\u0020any\u0020URL\u0020pointing\u0020\u0028also\u0020trough\u0020redirects\u0029\nto\u0020a\u0020valid\u0020REST\u0020API\u0020endpoint.",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#method_factoryFromUrl"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003A__construct\u0028\u0029",
@@ -6836,25 +7096,80 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020repository\u0020resource.",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#method_createResource"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AcreateResourceAsync\u0028\u0029",
+            "name": "createResourceAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020createResource\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_createResourceAsync"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AsendRequest\u0028\u0029",
             "name": "sendRequest",
             "summary": "Sends\u0020an\u0020HTTP\u0020request\u0020to\u0020the\u0020repository.",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#method_sendRequest"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AsendRequestAsync\u0028\u0029",
+            "name": "sendRequestAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020sendRequest\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_sendRequestAsync"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003Amap\u0028\u0029",
+            "name": "map",
+            "summary": "A\u0020wrapper\u0020function\u0020for\u0020parallel\u0020repository\u0020requests\u0020execution.",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_map"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetResourceByIds\u0028\u0029",
             "name": "getResourceByIds",
             "summary": "Tries\u0020to\u0020find\u0020a\u0020single\u0020repository\u0020resource\u0020matching\u0020provided\u0020identifiers.",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getResourceByIds"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetResourceByIdAsync\u0028\u0029",
+            "name": "getResourceByIdAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020getResourceByIds\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getResourceByIdAsync"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetResourceByIdsAsync\u0028\u0029",
+            "name": "getResourceByIdsAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020getResourceByIds\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getResourceByIdsAsync"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetResourcesBySqlQuery\u0028\u0029",
             "name": "getResourcesBySqlQuery",
             "summary": "Performs\u0020a\u0020search",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySqlQuery"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetResourcesBySqlQueryAsync\u0028\u0029",
+            "name": "getResourcesBySqlQueryAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020getResourcesBySqlQuery\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySqlQueryAsync"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetResourcesBySearchTerms\u0028\u0029",
             "name": "getResourcesBySearchTerms",
             "summary": "Returns\u0020repository\u0020resources\u0020matching\u0020all\u0020provided\u0020search\u0020terms.",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySearchTerms"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetResourcesBySearchTermsAsync\u0028\u0029",
+            "name": "getResourcesBySearchTermsAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020getResourcesBySearchTerms\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySearchTermsAsync"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetGraphBySqlQuery\u0028\u0029",
+            "name": "getGraphBySqlQuery",
+            "summary": "Asynchronous\u0020version\u0020of",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySqlQuery"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetGraphBySqlQueryAsync\u0028\u0029",
+            "name": "getGraphBySqlQueryAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020getGraphBySqlQuery\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySqlQueryAsync"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetGraphBySearchTerms\u0028\u0029",
+            "name": "getGraphBySearchTerms",
+            "summary": "Returns\u0020RDF\u0020metadata\u0020graph\u0020of\u0020the\u0020search\u0020results.",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySearchTerms"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetGraphBySearchTermsAsync\u0028\u0029",
+            "name": "getGraphBySearchTermsAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020getGraphBySearchTerms\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySearchTermsAsync"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003Abegin\u0028\u0029",
             "name": "begin",
@@ -6883,8 +7198,38 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AparseSearchResponse\u0028\u0029",
             "name": "parseSearchResponse",
-            "summary": "Parses\u0020search\u0020request\u0020response\u0020into\u0020an\u0020array\u0020of\u0020\u0060RepoResource\u0060\u0020objects.",
+            "summary": "Parses\u0020search\u0020request\u0020response\u0020into\u0020the\u0020EasyRdf\u0020Graph.",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#method_parseSearchResponse"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AextractResourcesFromGraph\u0028\u0029",
+            "name": "extractResourcesFromGraph",
+            "summary": "Extracts\u0020collection\u0020of\u0020RepoResource\u0020objects\u0020from\u0020the\u0020EasyRdf\u0020graph\u0020being\nparsed\u0020from\u0020a\u0020search\u0020response.",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_extractResourcesFromGraph"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AwithReadHeaders\u0028\u0029",
+            "name": "withReadHeaders",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_withReadHeaders"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AREJECT_SKIP",
+            "name": "REJECT_SKIP",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#constant_REJECT_SKIP"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AREJECT_FAIL",
+            "name": "REJECT_FAIL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#constant_REJECT_FAIL"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AREJECT_INCLUDE",
+            "name": "REJECT_INCLUDE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#constant_REJECT_INCLUDE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AARCHE_CORE_MIN_VERSION",
+            "name": "ARCHE_CORE_MIN_VERSION",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#constant_ARCHE_CORE_MIN_VERSION"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003A\u0024resourceClass",
             "name": "resourceClass",
@@ -6933,12 +7278,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003AgetGraphBySearchTerms\u0028\u0029",
             "name": "getGraphBySearchTerms",
-            "summary": "",
+            "summary": "Returns\u0020RDF\u0020metadata\u0020graph\u0020of\u0020the\u0020search\u0020results.",
             "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_getGraphBySearchTerms"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003AgetGraphBySqlQuery\u0028\u0029",
             "name": "getGraphBySqlQuery",
-            "summary": "",
+            "summary": "Returns\u0020RDF\u0020metadata\u0020graph\u0020of\u0020the\u0020search\u0020results.",
             "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_getGraphBySqlQuery"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003AgetPdoStatementBySearchTerms\u0028\u0029",
@@ -7043,13 +7388,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoInterface\u003A\u003AgetResourcesBySqlQuery\u0028\u0029",
             "name": "getResourcesBySqlQuery",
-            "summary": "Performs\u0020a\u0020search",
+            "summary": "Returns\u0020repository\u0020resources\u0020matching\u0020a\u0020given\u0020SQL\u0020search\u0020query.",
             "url": "classes/acdhOeaw-arche-lib-RepoInterface.html#method_getResourcesBySqlQuery"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoInterface\u003A\u003AgetResourcesBySearchTerms\u0028\u0029",
             "name": "getResourcesBySearchTerms",
             "summary": "Returns\u0020repository\u0020resources\u0020matching\u0020all\u0020provided\u0020search\u0020terms.",
             "url": "classes/acdhOeaw-arche-lib-RepoInterface.html#method_getResourcesBySearchTerms"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoInterface\u003A\u003AgetGraphBySqlQuery\u0028\u0029",
+            "name": "getGraphBySqlQuery",
+            "summary": "Returns\u0020RDF\u0020metadata\u0020graph\u0020of\u0020the\u0020search\u0020results.",
+            "url": "classes/acdhOeaw-arche-lib-RepoInterface.html#method_getGraphBySqlQuery"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoInterface\u003A\u003AgetGraphBySearchTerms\u0028\u0029",
+            "name": "getGraphBySearchTerms",
+            "summary": "Returns\u0020RDF\u0020metadata\u0020graph\u0020of\u0020the\u0020search\u0020results.",
+            "url": "classes/acdhOeaw-arche-lib-RepoInterface.html#method_getGraphBySearchTerms"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource",
             "name": "RepoResource",
@@ -7071,10 +7426,20 @@ Search.appendIndex(
             "summary": "Returns\u0020repository\u0020resource\u0020binary\u0020content.",
             "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_getContent"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AgetContentAsync\u0028\u0029",
+            "name": "getContentAsync",
+            "summary": "synchronous\u0020version\u0020of\u0020getContent\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_getContentAsync"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AupdateContent\u0028\u0029",
             "name": "updateContent",
             "summary": "Updates\u0020repository\u0020resource\u0020binary\u0020content\u0020with\u0020a\u0020given\u0020payload.",
             "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_updateContent"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AupdateContentAsync\u0028\u0029",
+            "name": "updateContentAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020updateContent\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_updateContentAsync"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AhasBinaryContent\u0028\u0029",
             "name": "hasBinaryContent",
@@ -7086,25 +7451,50 @@ Search.appendIndex(
             "summary": "Saves\u0020the\u0020object\u0020metadata\u0020to\u0020the\u0020repository.",
             "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_updateMetadata"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AupdateMetadataAsync\u0028\u0029",
+            "name": "updateMetadataAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020updateMetadata\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_updateMetadataAsync"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
             "summary": "Deletes\u0020the\u0020repository\u0020resource.",
             "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_delete"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AdeleteAsync\u0028\u0029",
+            "name": "deleteAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020delete\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_deleteAsync"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AloadMetadata\u0028\u0029",
             "name": "loadMetadata",
             "summary": "Loads\u0020current\u0020metadata\u0020from\u0020the\u0020repository.",
             "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_loadMetadata"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AloadMetadataAsync\u0028\u0029",
+            "name": "loadMetadataAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020loadMetadata\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_loadMetadataAsync"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003Amerge\u0028\u0029",
             "name": "merge",
             "summary": "Merges\u0020the\u0020current\u0020resource\u0020with\u0020the\u0020given\u0020one.\u0020See\u0020the\u0020corresponding\n\u005BREST\u0020endpoint\u0020description\u005D\u0028https\u003A\/\/app.swaggerhub.com\/apis\/zozlak\/arche\/3.0\u0023\/default\/put_merge__srcResourceId___targetResourceId_\u0029",
             "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_merge"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AmergeAsync\u0028\u0029",
+            "name": "mergeAsync",
+            "summary": "Asynchronous\u0020version\u0020of\u0020merge\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_mergeAsync"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AparseMetadata\u0028\u0029",
             "name": "parseMetadata",
             "summary": "Parses\u0020metadata\u0020fetched\u0020from\u0020the\u0020repository.",
             "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_parseMetadata"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AwithReadHeaders\u0028\u0029",
+            "name": "withReadHeaders",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-RepoResource.html#method_withReadHeaders"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResource\u003A\u003AgetId\u0028\u0029",
             "name": "getId",
@@ -7225,6 +7615,11 @@ Search.appendIndex(
             "name": "getClasses",
             "summary": "Returns\u0020all\u0020RDF\u0020types\u0020\u0028classes\u0029\u0020of\u0020a\u0020given\u0020repository\u0020resource.",
             "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#method_getClasses"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AMETA_NONE",
+            "name": "META_NONE",
+            "summary": "Provides\u0020no\u0020metadata.",
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceInterface.html#constant_META_NONE"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceInterface\u003A\u003AMETA_RESOURCE",
             "name": "META_RESOURCE",
@@ -8151,45 +8546,140 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-disserv-RepoResourceTrait.html#method_getServiceClass"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File",
+            "name": "File",
+            "summary": "Description\u0020of\u0020File",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003Aupload\u0028\u0029",
+            "name": "upload",
+            "summary": "Synchronous\u0020version\u0020of\u0020the\u0020\u0060uploadAsync\u0028\u0029\u0060.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_upload"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003AuploadAsync\u0028\u0029",
+            "name": "uploadAsync",
+            "summary": "Uploads\u0020the\u0020file\u0020into\u0020the\u0020repository.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_uploadAsync"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003AgetPath\u0028\u0029",
+            "name": "getPath",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_getPath"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003AversioningAsync\u0028\u0029",
+            "name": "versioningAsync",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_versioningAsync"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003AupdateAsync\u0028\u0029",
+            "name": "updateAsync",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_updateAsync"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003AcreateAsync\u0028\u0029",
+            "name": "createAsync",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_createAsync"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003AgetBinaryData\u0028\u0029",
+            "name": "getBinaryData",
+            "summary": "Returns\u0020acdhOeaw\\arche\\lib\\BinaryPayload\u0020object\u0020representing\u0020file\ncontents.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_getBinaryData"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003AgetHash\u0028\u0029",
+            "name": "getHash",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_getHash"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003AgetIds\u0028\u0029",
+            "name": "getIds",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_getIds"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003AwithinSizeLimit\u0028\u0029",
+            "name": "withinSizeLimit",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_withinSizeLimit"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003AassureLabel\u0028\u0029",
+            "name": "assureLabel",
+            "summary": "Makes\u0020sure\u0020metadata\u0020will\u0020contain\u0020a\u0020label\u0020but\u0020if\u0020remote\u0020metadata\u0020label\nexists,\u0020it\u0020won\u0027t\u0020be\u0020overwritten.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_assureLabel"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024info",
+            "name": "info",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_info"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024meta",
+            "name": "meta",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_meta"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_repo"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024n",
+            "name": "n",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_n"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024sizeLimit",
+            "name": "sizeLimit",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_sizeLimit"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024skipMode",
+            "name": "skipMode",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_skipMode"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024versioning",
+            "name": "versioning",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_versioning"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024pidPass",
+            "name": "pidPass",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_pidPass"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024meterId",
+            "name": "meterId",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_meterId"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024repoRes",
+            "name": "repoRes",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_repoRes"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer",
             "name": "Indexer",
             "summary": "Ingests\u0020files\u0020into\u0020the\u0020repository",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AgetRelPath\u0028\u0029",
-            "name": "getRelPath",
-            "summary": "Extracts\u0020relative\u0020path\u0020from\u0020a\u0020full\u0020path\u0020\u0028by\u0020skipping\u0020cfg\u003AcontainerDir\u0029",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_getRelPath"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AdetectPathEncoding\u0028\u0029",
-            "name": "detectPathEncoding",
-            "summary": "Tries\u0020to\u0020detect\u0020path\u0020encoding\u0020used\u0020in\u0020the\u0020operating\u0020system\u0020by\u0020looking\ninto\u0020locale\u0020settings.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_detectPathEncoding"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AsanitizePath\u0028\u0029",
-            "name": "sanitizePath",
-            "summary": "Sanitizes\u0020file\u0020path\u0020\u002D\u0020turns\u0020all\u0020\\\u0020into\u0020\/\u0020and\u0020assures\u0020it\u0020is\u0020UTF\u002D8\u0020encoded.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_sanitizePath"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003ApathToUtf8\u0028\u0029",
+            "name": "pathToUtf8",
+            "summary": "Tries\u0020to\u0020detect\u0020path\u0020encoding\u0020used\u0020in\u0020the\u0020operating\u0020system.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_pathToUtf8"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Creates\u0020the\u0020Indexer\u0020object.",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method___construct"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AsetRepo\u0028\u0029",
-            "name": "setRepo",
-            "summary": "Sets\u0020the\u0020repository\u0020connection\u0020object",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setRepo"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AsetParent\u0028\u0029",
             "name": "setParent",
-            "summary": "Sets\u0020the\u0020parent\u0020resource\u0020for\u0020the\u0020indexed\u0020files.",
+            "summary": "Sets\u0020the\u0020parent\u0020resource\u0020for\u0020the\u0020files\u0020in\u0020the\u0020\u0060\u0024directory\u0060\u0020\u0028constructor\nparameter\u0029\u0020directory.",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setParent"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AsetPaths\u0028\u0029",
-            "name": "setPaths",
-            "summary": "Overrides\u0020file\u0020system\u0020paths\u0020to\u0020look\u0020into\u0020for\u0020child\u0020resources.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setPaths"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AsetAutoCommit\u0028\u0029",
             "name": "setAutoCommit",
@@ -8198,7 +8688,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AsetSkip\u0028\u0029",
             "name": "setSkip",
-            "summary": "Defines\u0020if\u0020\u0028and\u0020how\u0029\u0020resources\u0020should\u0020be\u0020skipped\u0020from\u0020indexing\u0020based\u0020on\ntheir\u0020\u0028not\u0029existance\u0020in\u0020Fedora.",
+            "summary": "Defines\u0020if\u0020\u0028and\u0020how\u0029\u0020resources\u0020should\u0020be\u0020skipped\u0020from\u0020indexing\u0020based\u0020on\ntheir\u0020\u0028not\u0029existance\u0020in\u0020the\u0020repository.",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setSkip"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AsetVersioning\u0028\u0029",
@@ -8238,78 +8728,38 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AsetIncludeEmptyDirs\u0028\u0029",
             "name": "setIncludeEmptyDirs",
-            "summary": "Sets\u0020if\u0020Fedora\u0020resources\u0020should\u0020be\u0020created\u0020for\u0020empty\u0020directories.",
+            "summary": "Sets\u0020if\u0020repository\u0020resources\u0020should\u0020be\u0020created\u0020for\u0020empty\u0020directories.",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setIncludeEmptyDirs"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AsetContainerDir\u0028\u0029",
-            "name": "setContainerDir",
-            "summary": "Sets\u0020up\u0020the\u0020ingestion\u0020container\u0020path.\u0020This\u0020path\u0020is\u0020replaced\u0020with\u0020the\n\u0024containerToUriPrefix\u0020to\u0020form\u0020a\u0020binary\u0020id.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setContainerDir"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AsetContainerToUriPrefix\u0028\u0029",
-            "name": "setContainerToUriPrefix",
-            "summary": "Sets\u0020up\u0020the\u0020namespace\u0020replaceing\u0020the\u0020\u0024containerDir\u0020to\u0020form\u0020a\u0020binary\u0020id.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setContainerToUriPrefix"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AsetMetaLookup\u0028\u0029",
             "name": "setMetaLookup",
             "summary": "Sets\u0020a\u0020class\u0020providing\u0020metadata\u0020for\u0020indexed\u0020files.",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setMetaLookup"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003Aimport\u0028\u0029",
+            "name": "import",
             "summary": "Performs\u0020the\u0020indexing.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_index"
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_import"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A__index\u0028\u0029",
-            "name": "__index",
-            "summary": "Performs\u0020the\u0020indexing.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method___index"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AlistFiles\u0028\u0029",
+            "name": "listFiles",
+            "summary": "Gets\u0020the\u0020list\u0020of\u0020files\/dirs\u0020matching\u0020the\u0020filename\u0020filters\u0020and\u0020the\u0020depth\nlimit.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_listFiles"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AindexEntry\u0028\u0029",
-            "name": "indexEntry",
-            "summary": "Processes\u0020single\u0020directory\u0020entry",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_indexEntry"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AisSkippedExisting\u0028\u0029",
-            "name": "isSkippedExisting",
-            "summary": "Checks\u0020if\u0020a\u0020given\u0020file\u0020should\u0020be\u0020skipped\u0020because\u0020it\u0020already\u0020exists\u0020in\u0020the\nrepository\u0020while\u0020the\u0020Indexer\u0020skip\u0020mode\u0020is\u0020set\u0020to\u0020SKIP_EXIST\u0020or\u0020SKIP_BINARY_EXIST.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_isSkippedExisting"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AisSkipped\u0028\u0029",
-            "name": "isSkipped",
-            "summary": "Checks\u0020if\u0020a\u0020given\u0020file\u0020system\u0020node\u0020should\u0020be\u0020skipped\u0020during\u0020import.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_isSkipped"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AhandleAutoCommit\u0028\u0029",
-            "name": "handleAutoCommit",
-            "summary": "Performs\u0020autocommit\u0020if\u0020needed",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_handleAutoCommit"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AperformUpdate\u0028\u0029",
-            "name": "performUpdate",
-            "summary": "Performs\u0020file\u0020upload\u0020taking\u0020care\u0020of\u0020versioning.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_performUpdate"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AreadRepoConfig\u0028\u0029",
-            "name": "readRepoConfig",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AcreateFile\u0028\u0029",
+            "name": "createFile",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_readRepoConfig"
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_createFile"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AgetFileHash\u0028\u0029",
-            "name": "getFileHash",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AFILTER_MATCH",
+            "name": "FILTER_MATCH",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_getFileHash"
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_FILTER_MATCH"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AMATCH",
-            "name": "MATCH",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AFILTER_SKIP",
+            "name": "FILTER_SKIP",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_MATCH"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003ASKIP",
-            "name": "SKIP",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_SKIP"
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_FILTER_SKIP"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003ASKIP_NONE",
             "name": "SKIP_NONE",
@@ -8361,25 +8811,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_PID_PASS"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024pathEncoding",
-            "name": "pathEncoding",
-            "summary": "Detected\u0020operating\u0020system\u0020path\u0020enconding.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_pathEncoding"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AERRMODE_FAIL",
+            "name": "ERRMODE_FAIL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_FAIL"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AERRMODE_PASS",
+            "name": "ERRMODE_PASS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_PASS"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AERRMODE_INCLUDE",
+            "name": "ERRMODE_INCLUDE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_INCLUDE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AENC_UTF8",
+            "name": "ENC_UTF8",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ENC_UTF8"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024debug",
             "name": "debug",
             "summary": "Turns\u0020debug\u0020messages\u0020on",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_debug"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024pathEncoding",
+            "name": "pathEncoding",
+            "summary": "Detected\u0020operating\u0020system\u0020path\u0020enconding.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_pathEncoding"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024parent",
             "name": "parent",
             "summary": "RepoResource\u0020which\u0020children\u0020are\u0020created\u0020by\u0020the\u0020Indexer",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_parent"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024paths",
-            "name": "paths",
-            "summary": "File\u0020system\u0020paths\u0020where\u0020resource\u0020children\u0020are\u0020located",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_paths"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024filter",
             "name": "filter",
@@ -8421,15 +8886,20 @@ Search.appendIndex(
             "summary": "Number\u0020of\u0020resource\u0020automatically\u0020triggering\u0020a\u0020commit\u0020\u00280\u0020\u002D\u0020no\u0020auto\u0020commit\u0029",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_autoCommit"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024containerDir",
-            "name": "containerDir",
-            "summary": "Base\u0020ingestion\u0020path\u0020to\u0020be\u0020substituted\u0020with\u0020the\u0020\u0024containerToUriPrefix\nto\u0020form\u0020a\u0020binary\u0020id.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_containerDir"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024directory",
+            "name": "directory",
+            "summary": "Base\u0020ingestion\u0020path\u0020to\u0020be\u0020substituted\u0020with\u0020the\u0020\u0024idPrefix\nto\u0020form\u0020a\u0020binary\u0020id.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_directory"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024containerToUriPrefix",
-            "name": "containerToUriPrefix",
-            "summary": "Namespaces\u0020to\u0020substitute\u0020the\u0020\u0024containerDir\u0020in\u0020the\u0020ingested\u0020binary\u0020path\nto\u0020form\u0020a\u0020binary\u0020id.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_containerToUriPrefix"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024directoryLength",
+            "name": "directoryLength",
+            "summary": "Length\u0020in\u0020bytes\u0020of\u0020the\u0020sanitized\u0020version\u0020of\u0020the\u0020\u0024directory\u0020property",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_directoryLength"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024idPrefix",
+            "name": "idPrefix",
+            "summary": "Namespaces\u0020to\u0020substitute\u0020the\u0020\u0024directory\u0020in\u0020the\u0020ingested\u0020binary\u0020path\nto\u0020form\u0020a\u0020binary\u0020id.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_idPrefix"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024includeEmpty",
             "name": "includeEmpty",
@@ -8438,12 +8908,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024skipMode",
             "name": "skipMode",
-            "summary": "Should\u0020files\u0020\u0028not\u0029existing\u0020in\u0020the\u0020Fedora\u0020be\u0020skipped\u003F",
+            "summary": "Should\u0020files\u0020\u0028not\u0029existing\u0020in\u0020the\u0020repository\u0020be\u0020skipped\u003F",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_skipMode"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024versioningMode",
             "name": "versioningMode",
-            "summary": "Should\u0020new\u0020versions\u0020of\u0020binary\u0020resources\u0020already\u0020existing\u0020in\u0020the\u0020Fedora\nbe\u0020created\u0020\u0028if\u0020not,\u0020an\u0020existing\u0020resource\u0020is\u0020simply\u0020overwritten\u0029.",
+            "summary": "Should\u0020new\u0020versions\u0020of\u0020binary\u0020resources\u0020already\u0020existing\u0020in\u0020the\u0020repository\nbe\u0020created\u0020\u0028if\u0020not,\u0020an\u0020existing\u0020resource\u0020is\u0020simply\u0020overwritten\u0029.",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_versioningMode"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024pidPass",
@@ -8456,6 +8926,11 @@ Search.appendIndex(
             "summary": "An\u0020object\u0020providing\u0020metadata\u0020when\u0020given\u0020a\u0020resource\u0020file\u0020path",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_metaLookup"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024uriNorm",
+            "name": "uriNorm",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_uriNorm"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024metaLookupRequire",
             "name": "metaLookupRequire",
             "summary": "Should\u0020files\u0020without\u0020external\u0020metadata\u0020\u0028provided\u0020by\u0020the\u0020\u0060\u0024metaLookup\u0060\nobject\u0029\u0020be\u0020skipped.",
@@ -8466,15 +8941,10 @@ Search.appendIndex(
             "summary": "Repository\u0020connection",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_repo"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024commitedRes",
-            "name": "commitedRes",
-            "summary": "Collection\u0020of\u0020resources\u0020commited\u0020during\u0020the\u0020ingestion.\u0020Used\u0020to\u0020handle\nerrors.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_commitedRes"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024indexedRes",
-            "name": "indexedRes",
-            "summary": "Collection\u0020of\u0020indexed\u0020resources",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_indexedRes"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "Repository\u0020schema",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_schema"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\IndexerException",
             "name": "IndexerException",
@@ -8486,10 +8956,10 @@ Search.appendIndex(
             "summary": "Creates\u0020the\u0020exception",
             "url": "classes/acdhOeaw-arche-lib-ingest-IndexerException.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\IndexerException\u003A\u003AgetCommitedResources\u0028\u0029",
-            "name": "getCommitedResources",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\IndexerException\u003A\u003AgetProcessedResources\u0028\u0029",
+            "name": "getProcessedResources",
             "summary": "Returns\u0020the\u0020collection\u0020of\u0020resources\u0020which\u0020were\u0020already\u0020processed\u0020when\nan\u0020error\u0020occured.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-IndexerException.html#method_getCommitedResources"
+            "url": "classes/acdhOeaw-arche-lib-ingest-IndexerException.html#method_getProcessedResources"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\IndexerException\u003A\u003A\u0024resources",
             "name": "resources",
@@ -8576,11 +9046,6 @@ Search.appendIndex(
             "summary": "Removes\u0020literal\u0020ids\u0020from\u0020the\u0020graph.",
             "url": "classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#method_removeLiteralIds"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003AhandleAutoCommit\u0028\u0029",
-            "name": "handleAutoCommit",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#method_handleAutoCommit"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003ASKIP",
             "name": "SKIP",
             "summary": "",
@@ -8600,6 +9065,11 @@ Search.appendIndex(
             "name": "ERRMODE_PASS",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#constant_ERRMODE_PASS"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003AERRMODE_INCLUDE",
+            "name": "ERRMODE_INCLUDE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#constant_ERRMODE_INCLUDE"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003A\u0024debug",
             "name": "debug",
@@ -8626,11 +9096,6 @@ Search.appendIndex(
             "summary": "Number\u0020of\u0020resource\u0020automatically\u0020triggering\u0020a\u0020commit\u0020\u00280\u0020\u002D\u0020no\u0020auto\u0020commit\u0029",
             "url": "classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#property_autoCommit"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003A\u0024autoCommitCounter",
-            "name": "autoCommitCounter",
-            "summary": "Used\u0020to\u0020determine\u0020when\u0020the\u0020autocommit\u0020should\u0020tak\u0020place",
-            "url": "classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#property_autoCommitCounter"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003A\u0024preprocessed",
             "name": "preprocessed",
             "summary": "Is\u0020the\u0020metadata\u0020graph\u0020preprocessed\u0020already\u003F",
@@ -8638,7 +9103,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\metaLookup\\MetaLookupConstant",
             "name": "MetaLookupConstant",
-            "summary": "Simply\u0020adds\u0020same\u0020fixed\u0020set\u0020of\u0020metadata\u0020properties\u0020to\u0020every\u0020file.",
+            "summary": "Returns\u0020a\u0020fixed\u0020set\u0020of\u0020metadata\u0020properties\u0020to\u0020every\u0020file.",
             "url": "classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupConstant.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\metaLookup\\MetaLookupConstant\u003A\u003A__construct\u0028\u0029",
@@ -8736,175 +9201,35 @@ Search.appendIndex(
             "summary": "Returns\u0020metadata\u0020coupled\u0020with\u0020a\u0020file.",
             "url": "classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupInterface.html#method_getMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File",
-            "name": "File",
-            "summary": "Description\u0020of\u0020File",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkippedException",
+            "name": "SkippedException",
+            "summary": "Exception\u0020used\u0020to\u0020denoted\u0020a\u0020file\u0020has\u0020been\u0020skipped\u0020to\u0020to\u0020Indexer\u0020class\nskip\u0020rules.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-SkippedException.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Creates\u0020an\u0020object\u0020representing\u0020a\u0020file\u0020\u0028or\u0020a\u0020directory\u0029\u0020in\u0020a\u0020filesystem.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html#method___construct"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\ProgressMeter",
+            "name": "ProgressMeter",
+            "summary": "Helper\u0020class\u0020for\u0020displaying\u0020progress\u0020meter",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-ProgressMeter.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File\u003A\u003AgetMetadata\u0028\u0029",
-            "name": "getMetadata",
-            "summary": "Creates\u0020RDF\u0020metadata\u0020for\u0020a\u0020file.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html#method_getMetadata"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\ProgressMeter\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-ProgressMeter.html#method_init"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File\u003A\u003AsetMetaLookup\u0028\u0029",
-            "name": "setMetaLookup",
-            "summary": "Sets\u0020a\u0020metadata\u0020lookup\u0020object\u0020to\u0020be\u0020used\u0020for\u0020searching\u0020for\u0020file\u0027s\nmetadata\u0020which\u0020can\u0020not\u0020be\u0020automatically\u0020derived\u0020from\u0020the\u0020file\u0020itself.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html#method_setMetaLookup"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\ProgressMeter\u003A\u003Aincrement\u0028\u0029",
+            "name": "increment",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-ProgressMeter.html#method_increment"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File\u003A\u003AgetMime\u0028\u0029",
-            "name": "getMime",
-            "summary": "Returns\u0020file\u0027s\u0020mime\u0020type",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html#method_getMime"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\ProgressMeter\u003A\u003Aformat\u0028\u0029",
+            "name": "format",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-ProgressMeter.html#method_format"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File\u003A\u003AgetBinaryData\u0028\u0029",
-            "name": "getBinaryData",
-            "summary": "Returns\u0020file\u0020path\u0020\u0028cause\u0020path\u0020is\u0020supported\u0020by\u0020the\u0020\u0060Fedora\u002D\u003Ecreate\u0028\u0029\u0060\u0029.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html#method_getBinaryData"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File\u003A\u003AmergeMetadata\u0028\u0029",
-            "name": "mergeMetadata",
-            "summary": "Merges\u0020metadata\u0020coming\u0020from\u0020the\u0020Fedora\u0020and\u0020generated\u0020by\u0020the\u0020class.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html#method_mergeMetadata"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File\u003A\u003A\u0024path",
-            "name": "path",
-            "summary": "File\u0020path",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html#property_path"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File\u003A\u003A\u0024metaLookup",
-            "name": "metaLookup",
-            "summary": "Metadata\u0020lookup\u0020object\u0020to\u0020be\u0020used\u0020for\u0020metadata\u0020resoultion",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html#property_metaLookup"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File\u003A\u003A\u0024metaLookupRequire",
-            "name": "metaLookupRequire",
-            "summary": "should\u0020metadata\u0020operations\u0020fail\u0020when\u0020no\u0020external\u0020metadata\u0020can\u0020be\u0020found",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html#property_metaLookupRequire"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File\u003A\u003A\u0024location",
-            "name": "location",
-            "summary": "RDF\u0020location\u0020triple\u0020value\u0020\u0028binary\u0020location\u0020relative\u0020to\u0020the\u0020container\u0029",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html#property_location"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File\u003A\u003A\u0024class",
-            "name": "class",
-            "summary": "RDF\u0020class\u0020to\u0020be\u0020set\u0020as\u0020a\u0020this\u0020file\u0027s\u0020type.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html#property_class"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\File\u003A\u003A\u0024parent",
-            "name": "parent",
-            "summary": "URI\u0020of\u0020the\u0020resource\u0020which\u0020should\u0020be\u0020set\u0020as\u0020this\u0020file\u0027s\u0020parent\n\u0028cfg\u003A\u003AfedoraRelProp\u0020is\u0020used\u0029.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-File.html#property_parent"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject",
-            "name": "SchemaObject",
-            "summary": "Basic\u0020class\u0020for\u0020representing\u0020real\u002Dworld\u0020entities\u0020to\u0020be\u0020imported\u0020into\nthe\u0020repository.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Creates\u0020an\u0020object\u0020representing\u0020a\u0020real\u002Dworld\u0020entity.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method___construct"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003AgetMetadata\u0028\u0029",
-            "name": "getMetadata",
-            "summary": "Creates\u0020RDF\u0020metadata\u0020from\u0020the\u0020real\u002Dworld\u0020entity\u0020stored\u0020in\u0020this\u0020object.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method_getMetadata"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003AgetResource\u0028\u0029",
-            "name": "getResource",
-            "summary": "Returns\u0020repository\u0020resource\u0020representing\u0020given\u0020real\u002Dworld\u0020entity.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method_getResource"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003AgetId\u0028\u0029",
-            "name": "getId",
-            "summary": "Returns\u0020primary\u0020id\u0020of\u0020the\u0020real\u002Dworld\u0020entity\u0020stored\u0020in\u0020this\u0020object\n\u0028as\u0020it\u0020was\u0020set\u0020up\u0020in\u0020the\u0020object\u0020contructor\u0029.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method_getId"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003AgetIds\u0028\u0029",
-            "name": "getIds",
-            "summary": "Returns\u0020all\u0020known\u0020ids",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method_getIds"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003AupdateRms\u0028\u0029",
-            "name": "updateRms",
-            "summary": "Updates\u0020repository\u0020resource\u0020representing\u0020a\u0020real\u002Dworld\u0020entity\u0020stored\u0020in\nthis\u0020object.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method_updateRms"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003AgetCreated\u0028\u0029",
-            "name": "getCreated",
-            "summary": "Informs\u0020about\u0020the\u0020corresponding\u0020repository\u0020resource\u0020state\u0020uppon\u0020last\u0020call\nto\u0020the\u0020\u0060updateRms\u0028\u0029\u0060\u0020method\u003A\n\u002D\u0020null\u0020\u002D\u0020the\u0020updateRms\u0028\u0029\u0020was\u0020not\u0020called\u0020yet\n\u002D\u0020true\u0020\u002D\u0020repository\u0020resource\u0020was\u0020created\u0020by\u0020last\u0020call\u0020to\u0020the\u0020updateRms\u0028\u0029\n\u002D\u0020false\u0020\u002D\u0020repository\u0020resource\u0020already\u0020existed\u0020uppoin\u0020last\u0020call\u0020to\u0020the\n\u0020\u0020updateRms\u0028\u0029",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method_getCreated"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003AsetMetadata\u0028\u0029",
-            "name": "setMetadata",
-            "summary": "Sets\u0020an\u0020external\u0020metadata\u0020to\u0020be\u0020appended\u0020to\u0020automatically\u0020generated\u0020ones.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method_setMetadata"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003AcreateNewVersion\u0028\u0029",
-            "name": "createNewVersion",
-            "summary": "Creates\u0020a\u0020new\u0020version\u0020of\u0020the\u0020resource.\u0020The\u0020new\u0020version\u0020inherits\u0020all\u0020IDs\u0020but\nthe\u0020UUID\u0020and\u0020epic\u0020PIDs.\u0020The\u0020old\u0020version\u0020looses\u0020all\u0020IDs\u0020but\u0020the\u0020UUID\u0020and\nspic\u0020PIDs.\u0020It\u0020also\u0020looses\u0020all\u0020schema\u003A\u003Aparent\u0020property\u0020connections\u0020with\u0020collections.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method_createNewVersion"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003AfindResource\u0028\u0029",
-            "name": "findResource",
-            "summary": "Tries\u0020to\u0020find\u0020a\u0020repository\u0020resource\u0020representing\u0020a\u0020given\u0020object.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method_findResource"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003AcreateResource\u0028\u0029",
-            "name": "createResource",
-            "summary": "Creates\u0020a\u0020repository\u0020resource",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method_createResource"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003AgetBinaryData\u0028\u0029",
-            "name": "getBinaryData",
-            "summary": "Provides\u0020entity\u0020binary\u0020data.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method_getBinaryData"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003AmergeMetadata\u0028\u0029",
-            "name": "mergeMetadata",
-            "summary": "Merges\u0020metadata\u0020coming\u0020from\u0020the\u0020repository\u0020and\u0020generated\u0020by\u0020the\u0020class.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#method_mergeMetadata"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003A\u0024debug",
-            "name": "debug",
-            "summary": "Debug\u0020mode\u0020switch.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#property_debug"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003A\u0024res",
-            "name": "res",
-            "summary": "Repository\u0020resource\u0020representing\u0020given\u0020entity.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#property_res"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003A\u0024id",
-            "name": "id",
-            "summary": "Entity\u0020id.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#property_id"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003A\u0024metadata",
-            "name": "metadata",
-            "summary": "External\u0020metadata\u0020to\u0020be\u0020merged\u0020with\u0020automatically\u0020generated\u0020one.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#property_metadata"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003A\u0024metadataPreserve",
-            "name": "metadataPreserve",
-            "summary": "List\u0020of\u0020automaticaly\u0020generated\u0020metadata\u0020properties\u0020to\u0020be\u0020preserved\u0020while\nmerging\u0020with\u0020external\u0020metadata.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#property_metadataPreserve"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003A\u0024created",
-            "name": "created",
-            "summary": "Allows\u0020to\u0020keep\u0020track\u0020of\u0020the\u0020corresponding\u0020repository\u0020resource\u0020state\u003A\n\u002D\u0020null\u0020\u002D\u0020unknown\n\u002D\u0020true\u0020\u002D\u0020recent\u0020call\u0020to\u0020updateRms\u0028\u0029\u0020created\u0020the\u0020repository\u0020resource\n\u002D\u0020false\u0020\u002D\u0020repository\u0020resource\u0020already\u0020existed\u0020uppon\u0020last\u0020updateRms\u0028\u0029\u0020call",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#property_created"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema\\SchemaObject\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "repository\u0020connection\u0020object.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-schema-SchemaObject.html#property_repo"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\ProgressMeter\u003A\u003A\u0024counters",
+            "name": "counters",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-ProgressMeter.html#property_counters"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\UUID",
             "name": "UUID",
@@ -10191,6 +10516,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-resolver-Resolver.html#method_redirect"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003AlistDissServices\u0028\u0029",
+            "name": "listDissServices",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#method_listDissServices"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003AFORMAT_LIST_SERVICES",
+            "name": "FORMAT_LIST_SERVICES",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-resolver-Resolver.html#constant_FORMAT_LIST_SERVICES"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\resolver\\Resolver\u003A\u003A\u0024debug",
             "name": "debug",
             "summary": "",
@@ -11021,6 +11356,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/acdhoeaw-arche-lib-exception.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\promise",
+            "name": "promise",
+            "summary": "",
+            "url": "namespaces/acdhoeaw-arche-lib-promise.html"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination",
             "name": "dissemination",
             "summary": "",
@@ -11045,11 +11385,6 @@ Search.appendIndex(
             "name": "metaLookup",
             "summary": "",
             "url": "namespaces/acdhoeaw-arche-lib-ingest-metalookup.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\schema",
-            "name": "schema",
-            "summary": "",
-            "url": "namespaces/acdhoeaw-arche-lib-ingest-schema.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util",
             "name": "util",

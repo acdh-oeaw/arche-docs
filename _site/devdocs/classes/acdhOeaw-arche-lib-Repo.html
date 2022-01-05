@@ -148,7 +148,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -195,6 +195,34 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#constant_ARCHE_CORE_MIN_VERSION">ARCHE_CORE_MIN_VERSION</a>
+    <span>
+        &nbsp;= 3.2                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#constant_REJECT_FAIL">REJECT_FAIL</a>
+    <span>
+        &nbsp;= 2                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#constant_REJECT_INCLUDE">REJECT_INCLUDE</a>
+    <span>
+        &nbsp;= 3                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#constant_REJECT_SKIP">REJECT_SKIP</a>
+    <span>
+        &nbsp;= 1                            </span>
+</dt>
+<dd></dd>
+
                     <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-Repo.html#property_resourceClass">$resourceClass</a>
     <span>
@@ -273,6 +301,13 @@
 <dd>Creates a repository resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_createResourceAsync">createResourceAsync()</a>
+    <span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourcePromise">RepoResourcePromise</abbr></a>    </span>
+</dt>
+<dd>Asynchronous version of createResource()</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-Repo.html#method_factory">factory()</a>
     <span>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-Repo.html"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></a>    </span>
@@ -284,7 +319,8 @@
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>Creates a Repo instance from any URL resolving to a repository resource.</dd>
+<dd>Creates a Repo instance from any URL pointing (also trough redirects)
+to a valid REST API endpoint.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-Repo.html#method_factoryInteractive">factoryInteractive()</a>
@@ -301,6 +337,34 @@
 <dd>Returns the repository REST API base URL.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySearchTerms">getGraphBySearchTerms()</a>
+    <span>
+                                &nbsp;: <abbr title="\EasyRdf\Graph">Graph</abbr>    </span>
+</dt>
+<dd>Returns RDF metadata graph of the search results.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySearchTermsAsync">getGraphBySearchTermsAsync()</a>
+    <span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-GraphPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GraphPromise">GraphPromise</abbr></a>    </span>
+</dt>
+<dd>Asynchronous version of getGraphBySearchTerms()</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySqlQuery">getGraphBySqlQuery()</a>
+    <span>
+                                &nbsp;: <abbr title="\EasyRdf\Graph">Graph</abbr>    </span>
+</dt>
+<dd>Asynchronous version of</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySqlQueryAsync">getGraphBySqlQueryAsync()</a>
+    <span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-GraphPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GraphPromise">GraphPromise</abbr></a>    </span>
+</dt>
+<dd>Asynchronous version of getGraphBySqlQuery()</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_getHeaderName">getHeaderName()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -315,11 +379,25 @@
 <dd>Tries to find a repository resource with a given id.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourceByIdAsync">getResourceByIdAsync()</a>
+    <span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourcePromise">RepoResourcePromise</abbr></a>    </span>
+</dt>
+<dd>Asynchronous version of getResourceByIds()</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourceByIds">getResourceByIds()</a>
     <span>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>    </span>
 </dt>
 <dd>Tries to find a single repository resource matching provided identifiers.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourceByIdsAsync">getResourceByIdsAsync()</a>
+    <span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourcePromise">RepoResourcePromise</abbr></a>    </span>
+</dt>
+<dd>Asynchronous version of getResourceByIds()</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySearchTerms">getResourcesBySearchTerms()</a>
@@ -329,11 +407,25 @@
 <dd>Returns repository resources matching all provided search terms.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySearchTermsAsync">getResourcesBySearchTermsAsync()</a>
+    <span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GeneratorPromise">GeneratorPromise</abbr></a>    </span>
+</dt>
+<dd>Asynchronous version of getResourcesBySearchTerms()</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySqlQuery">getResourcesBySqlQuery()</a>
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>    </span>
 </dt>
 <dd>Performs a search</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySqlQueryAsync">getResourcesBySqlQueryAsync()</a>
+    <span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GeneratorPromise">GeneratorPromise</abbr></a>    </span>
+</dt>
+<dd>Asynchronous version of getResourcesBySqlQuery()</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_getSchema">getSchema()</a>
@@ -348,6 +440,13 @@
                                 &nbsp;: bool    </span>
 </dt>
 <dd>Checks if there is an active transaction.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_map">map()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>A wrapper function for parallel repository requests execution.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-Repo.html#method_prolong">prolong()</a>
@@ -371,6 +470,13 @@
 <dd>Sends an HTTP request to the repository.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_sendRequestAsync">sendRequestAsync()</a>
+    <span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-ResponsePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\ResponsePromise">ResponsePromise</abbr></a>    </span>
+</dt>
+<dd>Asynchronous version of sendRequest()</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_setQueryLog">setQueryLog()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -378,17 +484,154 @@
 <dd>Sets a search queries logger</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_parseSearchResponse">parseSearchResponse()</a>
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_extractResourcesFromGraph">extractResourcesFromGraph()</a>
     <span>
                                 &nbsp;: <abbr title="\Generator">Generator</abbr>    </span>
 </dt>
-<dd>Parses search request response into an array of `RepoResource` objects.</dd>
+<dd>Extracts collection of RepoResource objects from the EasyRdf graph being
+parsed from a search response.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_parseSearchResponse">parseSearchResponse()</a>
+    <span>
+                                &nbsp;: <abbr title="\EasyRdf\Graph">Graph</abbr>    </span>
+</dt>
+<dd>Parses search request response into the EasyRdf Graph.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_withReadHeaders">withReadHeaders()</a>
+    <span>
+                                &nbsp;: <abbr title="\GuzzleHttp\Psr7\Request">Request</abbr>    </span>
+</dt>
+<dd></dd>
 
         </dl>
 
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/acdhOeaw-arche-lib-Repo.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ARCHE_CORE_MIN_VERSION">
+        ARCHE_CORE_MIN_VERSION
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#constant_ARCHE_CORE_MIN_VERSION" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">ARCHE_CORE_MIN_VERSION</span>
+    = <span class="phpdocumentor-signature__default-value">3.2</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_REJECT_FAIL">
+        REJECT_FAIL
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#constant_REJECT_FAIL" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">59</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">REJECT_FAIL</span>
+    = <span class="phpdocumentor-signature__default-value">2</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_REJECT_INCLUDE">
+        REJECT_INCLUDE
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#constant_REJECT_INCLUDE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">REJECT_INCLUDE</span>
+    = <span class="phpdocumentor-signature__default-value">3</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_REJECT_SKIP">
+        REJECT_SKIP
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#constant_REJECT_SKIP" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">REJECT_SKIP</span>
+    = <span class="phpdocumentor-signature__default-value">1</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
@@ -412,7 +655,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -481,7 +724,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">206</span>
+    <span class="phpdocumentor-element-found-in__line">211</span>
 
     </aside>
 
@@ -616,7 +859,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">213</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -653,7 +896,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">227</span>
 
     </aside>
 
@@ -661,7 +904,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baseUrl</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$guzzleOptions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baseUrl</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$guzzleOptions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -672,26 +915,6 @@
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>repository REST API base URL</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$schema</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>mappings between repository
-concepts and RDF properties used to denote them by a given repository instance</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$headers</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>mappings between repository
-REST API parameters and HTTP headers used to pass them to a given repository instance</p>
 </section>
 
             </dd>
@@ -728,7 +951,7 @@ by all requests to the repository REST API (e.g. credentials)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">407</span>
+    <span class="phpdocumentor-element-found-in__line">630</span>
 
     </aside>
 
@@ -785,7 +1008,7 @@ by all requests to the repository REST API (e.g. credentials)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">440</span>
+    <span class="phpdocumentor-element-found-in__line">664</span>
 
     </aside>
 
@@ -842,7 +1065,7 @@ by all requests to the repository REST API (e.g. credentials)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">243</span>
+    <span class="phpdocumentor-element-found-in__line">262</span>
 
     </aside>
 
@@ -850,7 +1073,7 @@ by all requests to the repository REST API (e.g. credentials)</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">createResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-BinaryPayload.html"><abbr title="\acdhOeaw\arche\lib\BinaryPayload">BinaryPayload</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$payload</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">createResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-BinaryPayload.html"><abbr title="\acdhOeaw\arche\lib\BinaryPayload">BinaryPayload</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$payload</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">RepoResourceInterface::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -883,12 +1106,119 @@ by all requests to the repository REST API (e.g. credentials)</p>
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$readMode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">RepoResourceInterface::META_RESOURCE</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>scope of the metadata returned by the repository</p>
+<ul>
+<li>see the META_* constants defined by the RepoResourceInterface</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>RDF property to be used by the metadata
+read mode denoted by the $readMode parameter</p>
+</section>
+
+            </dd>
             </dl>
 
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createResourceAsync">
+        createResourceAsync()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_createResourceAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">281</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of createResource()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">createResourceAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-BinaryPayload.html"><abbr title="\acdhOeaw\arche\lib\BinaryPayload">BinaryPayload</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$payload</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">RepoResourceInterface::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourcePromise">RepoResourcePromise</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$metadata</span>
+                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$payload</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-BinaryPayload.html"><abbr title="\acdhOeaw\arche\lib\BinaryPayload">BinaryPayload</abbr></a></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$class</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$readMode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">RepoResourceInterface::META_RESOURCE</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\createResource()">createResource()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourcePromise">RepoResourcePromise</abbr></a></span>
             &mdash;
         
     
@@ -906,7 +1236,7 @@ by all requests to the repository REST API (e.g. credentials)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -953,17 +1283,19 @@ by all requests to the repository REST API (e.g. credentials)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Creates a Repo instance from any URL resolving to a repository resource.</p>
+        <p class="phpdocumentor-summary">Creates a Repo instance from any URL pointing (also trough redirects)
+to a valid REST API endpoint.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">factoryFromUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$guzzleOptions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$realUrl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metaReadModeHeader</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
-        <section class="phpdocumentor-description"><p>It's not very fast but requires a zero config.</p>
+        <section class="phpdocumentor-description"><p>It can be slow (especially when redirects are involved) but requires
+no config.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -998,8 +1330,8 @@ in this variable.</p>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>header used by the repository to denote
-the metadata read mode. Providing this parameter will make the resolution
-faster.</p>
+the metadata read mode. Providing this parameter will speed up the
+initialization if the $url points to a repository resource.</p>
 </section>
 
             </dd>
@@ -1026,7 +1358,7 @@ faster.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -1044,9 +1376,9 @@ faster.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>optional path to a directory containing a config.yaml file.
-The config.yaml file may provide a predefined list of repositories and/or ARCHE login
-formatted as follows:</p>
+                    <section class="phpdocumentor-description"><p>optional path to a config file.
+The config file may provide a predefined list of repositories and/or
+ARCHE login formatted as follows:</p>
 <pre class="prettyprint"><code class="prettyprint">repositories:
 - urlBase: http://arche.acdh.oeaw.ac.at
   pathBase: /api/
@@ -1116,6 +1448,248 @@ auth:
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getGraphBySearchTerms">
+        getGraphBySearchTerms()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySearchTerms" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">586</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns RDF metadata graph of the search results.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getGraphBySearchTerms</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$searchTerms</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getGraphBySearchTermsAsync">
+        getGraphBySearchTermsAsync()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySearchTermsAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">599</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of getGraphBySearchTerms()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getGraphBySearchTermsAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-GraphPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GraphPromise">GraphPromise</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$searchTerms</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\getGraphBySearchTerms()">getGraphBySearchTerms()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-GraphPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GraphPromise">GraphPromise</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getGraphBySqlQuery">
+        getGraphBySqlQuery()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySqlQuery" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">546</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getGraphBySqlQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$query</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parameters</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getGraphBySqlQueryAsync">
+        getGraphBySqlQueryAsync()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySqlQueryAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">560</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of getGraphBySqlQuery()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getGraphBySqlQueryAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-GraphPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GraphPromise">GraphPromise</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$query</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parameters</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\getGraphBySqlQuery()">getGraphBySqlQuery()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-GraphPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GraphPromise">GraphPromise</abbr></a></span>
             &mdash;
         
     
@@ -1224,6 +1798,70 @@ auth:
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getResourceByIdAsync">
+        getResourceByIdAsync()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourceByIdAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">431</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of getResourceByIds()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getResourceByIdAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourcePromise">RepoResourcePromise</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$class</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\getResourceByIds()">getResourceByIds()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourcePromise">RepoResourcePromise</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getResourceByIds">
         getResourceByIds()
         <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourceByIds" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1231,7 +1869,7 @@ auth:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">316</span>
+    <span class="phpdocumentor-element-found-in__line">419</span>
 
     </aside>
 
@@ -1306,6 +1944,70 @@ matching the search, an error is thrown.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getResourceByIdsAsync">
+        getResourceByIdsAsync()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourceByIdsAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">443</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of getResourceByIds()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getResourceByIdsAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ids</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourcePromise">RepoResourcePromise</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$ids</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$class</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\getResourceByIds()">getResourceByIds()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourcePromise">RepoResourcePromise</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getResourcesBySearchTerms">
         getResourcesBySearchTerms()
         <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySearchTerms" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1313,7 +2015,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">379</span>
+    <span class="phpdocumentor-element-found-in__line">516</span>
 
     </aside>
 
@@ -1356,6 +2058,70 @@ matching the search, an error is thrown.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getResourcesBySearchTermsAsync">
+        getResourcesBySearchTermsAsync()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySearchTermsAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">529</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of getResourcesBySearchTerms()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getResourcesBySearchTermsAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GeneratorPromise">GeneratorPromise</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$searchTerms</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\getResourcesBySearchTerms()">getResourcesBySearchTerms()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GeneratorPromise">GeneratorPromise</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getResourcesBySqlQuery">
         getResourcesBySqlQuery()
         <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySqlQuery" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1363,7 +2129,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">355</span>
+    <span class="phpdocumentor-element-found-in__line">485</span>
 
     </aside>
 
@@ -1403,6 +2169,77 @@ matching the search, an error is thrown.</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getResourcesBySqlQueryAsync">
+        getResourcesBySqlQueryAsync()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySqlQueryAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">499</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of getResourcesBySqlQuery()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getResourcesBySqlQueryAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GeneratorPromise">GeneratorPromise</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$query</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parameters</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\getResourcesBySqlQuery()">getResourcesBySqlQuery()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GeneratorPromise">GeneratorPromise</abbr></a></span>
             &mdash;
         
     
@@ -1453,7 +2290,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">475</span>
+    <span class="phpdocumentor-element-found-in__line">699</span>
 
     </aside>
 
@@ -1517,6 +2354,84 @@ matching the search, an error is thrown.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_map">
+        map()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_map" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">371</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A wrapper function for parallel repository requests execution.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">map</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">iteratable&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$iter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$func</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$concurrency</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rejectAction</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::REJECT_SKIP</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"><p>It calls $func for every element of $iter to generate a set of promises,
+executes all of them and returns their results.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$iter</span>
+                : <span class="phpdocumentor-signature__argument__return-type">iteratable&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>collection of values to iterate over.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$func</span>
+                : <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>function to apply to each $iter element with
+signature <code class="prettyprint">f(mixed $iterElement, Repo $thisRepoObject): GuzzleHttp\Promise\PromiseInterface</code>.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$concurrency</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>number of promises executed in parallel</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$rejectAction</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::REJECT_SKIP</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>what to do with rejected promises - one of
+Repo::REJECT_SKIP (skip the silently), Repo::REJECT_FAIL (throw an error)
+and Repo::REJECT_INCLUDE (include the rejection value in the results).</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_prolong">
         prolong()
         <a href="classes/acdhOeaw-arche-lib-Repo.html#method_prolong" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1524,7 +2439,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">458</span>
+    <span class="phpdocumentor-element-found-in__line">682</span>
 
     </aside>
 
@@ -1574,7 +2489,7 @@ repository</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">422</span>
+    <span class="phpdocumentor-element-found-in__line">646</span>
 
     </aside>
 
@@ -1631,7 +2546,7 @@ repository</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">324</span>
 
     </aside>
 
@@ -1702,6 +2617,63 @@ repository</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_sendRequestAsync">
+        sendRequestAsync()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_sendRequestAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">336</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of sendRequest()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">sendRequestAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-ResponsePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\ResponsePromise">ResponsePromise</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\sendRequest()">sendRequest()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-ResponsePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\ResponsePromise">ResponsePromise</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setQueryLog">
         setQueryLog()
         <a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_setQueryLog" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1745,6 +2717,61 @@ repository</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_extractResourcesFromGraph">
+        extractResourcesFromGraph()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_extractResourcesFromGraph" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">733</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Extracts collection of RepoResource objects from the EasyRdf graph being
+parsed from a search response.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">extractResourcesFromGraph</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Graph">Graph</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$graph</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$graph</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>graph returned by the parseSearchResponse() method</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>search configuration object</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_parseSearchResponse">
         parseSearchResponse()
         <a href="classes/acdhOeaw-arche-lib-Repo.html#method_parseSearchResponse" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1752,15 +2779,15 @@ repository</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">486</span>
+    <span class="phpdocumentor-element-found-in__line">710</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Parses search request response into an array of `RepoResource` objects.</p>
+        <p class="phpdocumentor-summary">Parses search request response into the EasyRdf Graph.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">parseSearchResponse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resp</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span></code>
+                <span class="phpdocumentor-signature__name">parseSearchResponse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resp</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1788,7 +2815,67 @@ repository</p>
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withReadHeaders">
+        withReadHeaders()
+        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_withReadHeaders" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">745</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">withReadHeaders</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$mode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span>
             &mdash;
         
     

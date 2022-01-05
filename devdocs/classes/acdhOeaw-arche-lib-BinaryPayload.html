@@ -142,11 +142,11 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Simple container for a request binary payload</p>
+            <p class="phpdocumentor-summary">Simple container for a request binary payload.</p>
 
 
 
@@ -177,40 +177,40 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#constant_GUZZLE_PSR7_V1_MIME_FUNC">GUZZLE_PSR7_V1_MIME_FUNC</a>
-    <span>
-        &nbsp;= &#039;\\GuzzleHttp\\Psr7\\mimetype_from_filename&#039;                            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#constant_GUZZLE_PSR7_V2_MIME_FUNC">GUZZLE_PSR7_V2_MIME_FUNC</a>
-    <span>
-        &nbsp;= &#039;\\GuzzleHttp\\Psr7\\MimeType::fromFilename&#039;                            </span>
-</dt>
-<dd></dd>
-
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
+                    <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#property_data">$data</a>
-    <span>
-                        &nbsp;: mixed            </span>
-</dt>
-<dd>A stream object or the data as a string.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#property_fileName">$fileName</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd>Name of the file data come from.</dd>
+<dd>Data as a string (not set if data come from a file)</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#property_filename">$filename</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>File name (real or provided by hand)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#property_guzzleVersion">$guzzleVersion</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#property_mimeType">$mimeType</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd>Mime type of the data.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#property_path">$path</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>Path to the data</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#method___construct">__construct()</a>
@@ -218,13 +218,6 @@
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Creates a binary payload object.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#method___destruct">__destruct()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Makes sure all data streams are closed.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#method_attachTo">attachTo()</a>
@@ -259,70 +252,6 @@
 
 
         
-    <section class="phpdocumentor-constants">
-        <h3 class="phpdocumentor-elements__header" id="constants">
-            Constants
-            <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
-        </h3>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_GUZZLE_PSR7_V1_MIME_FUNC">
-        GUZZLE_PSR7_V1_MIME_FUNC
-        <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#constant_GUZZLE_PSR7_V1_MIME_FUNC" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">39</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">GUZZLE_PSR7_V1_MIME_FUNC</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;\\GuzzleHttp\\Psr7\\mimetype_from_filename&#039;</span>
-</code>
-
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_GUZZLE_PSR7_V2_MIME_FUNC">
-        GUZZLE_PSR7_V2_MIME_FUNC
-        <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#constant_GUZZLE_PSR7_V2_MIME_FUNC" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">GUZZLE_PSR7_V2_MIME_FUNC</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;\\GuzzleHttp\\Psr7\\MimeType::fromFilename&#039;</span>
-</code>
-
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-            </section>
 
         
     <section class="phpdocumentor-properties">
@@ -334,7 +263,7 @@
         class="
             phpdocumentor-element
             -property
-            -public
+            -private
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_data">
@@ -346,20 +275,21 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">A stream object or the data as a string.</p>
+        <p class="phpdocumentor-summary">Data as a string (not set if data come from a file)</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$data</span>
     </code>
 
     
-    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -367,12 +297,12 @@
         class="
             phpdocumentor-element
             -property
-            -public
+            -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_fileName">
-        $fileName
-        <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#property_fileName" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_filename">
+        $filename
+        <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#property_filename" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -383,12 +313,12 @@
 
     </aside>
 
-        <p class="phpdocumentor-summary">Name of the file data come from.</p>
+        <p class="phpdocumentor-summary">File name (real or provided by hand)</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$fileName</span>
+    <span class="phpdocumentor-signature__name">$filename</span>
     </code>
 
     
@@ -400,7 +330,41 @@
         class="
             phpdocumentor-element
             -property
-            -public
+            -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_guzzleVersion">
+        $guzzleVersion
+        <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#property_guzzleVersion" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$guzzleVersion</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_mimeType">
@@ -412,20 +376,55 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Mime type of the data.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$mimeType</span>
     </code>
 
     
+        <section class="phpdocumentor-description"></section>
+
     
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_path">
+        $path
+        <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#property_path" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Path to the data</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$path</span>
+    </code>
+
+    
+        <section class="phpdocumentor-description"></section>
+
     
 
 </article>
@@ -449,7 +448,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -508,39 +507,6 @@ from the file name and/or data content</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___destruct">
-        __destruct()
-        <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#method___destruct" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">90</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Makes sure all data streams are closed.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__destruct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_attachTo">
         attachTo()
         <a href="classes/acdhOeaw-arche-lib-BinaryPayload.html#method_attachTo" class="headerlink"><i class="fas fa-link"></i></a>
@@ -548,7 +514,7 @@ from the file name and/or data content</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -593,7 +559,7 @@ from the file name and/or data content</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -637,7 +603,7 @@ from the file name and/or data content</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -645,7 +611,7 @@ from the file name and/or data content</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">createFromData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fileName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mimeType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">createFromData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mimeType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -660,7 +626,7 @@ from the file name and/or data content</p>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$fileName</span>
+                <span class="phpdocumentor-signature__argument__name">$filename</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -700,7 +666,7 @@ from the file name and/or data content</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-binarypayload.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -710,7 +676,9 @@ from the file name and/or data content</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">createFromFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mimeType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>Doesn't call fopen() to avoid problem with async requests.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">

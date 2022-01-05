@@ -143,7 +143,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -179,9 +179,44 @@
 
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_MATCH">MATCH</a>
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ENC_UTF8">ENC_UTF8</a>
+    <span>
+        &nbsp;= &#039;utf-8&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_FAIL">ERRMODE_FAIL</a>
+    <span>
+        &nbsp;= &#039;fail&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_INCLUDE">ERRMODE_INCLUDE</a>
+    <span>
+        &nbsp;= &#039;include&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_PASS">ERRMODE_PASS</a>
+    <span>
+        &nbsp;= &#039;pass&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_FILTER_MATCH">FILTER_MATCH</a>
     <span>
         &nbsp;= 1                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_FILTER_SKIP">FILTER_SKIP</a>
+    <span>
+        &nbsp;= 2                            </span>
 </dt>
 <dd></dd>
 
@@ -194,13 +229,6 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_PID_PASS">PID_PASS</a>
-    <span>
-        &nbsp;= 2                            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_SKIP">SKIP</a>
     <span>
         &nbsp;= 2                            </span>
 </dt>
@@ -291,35 +319,26 @@
 <dd>URI of an RDF class assigned to indexed collections.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_commitedRes">$commitedRes</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd>Collection of resources commited during the ingestion. Used to handle
-errors.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_containerDir">$containerDir</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
-<dd>Base ingestion path to be substituted with the $containerToUriPrefix
-to form a binary id.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_containerToUriPrefix">$containerToUriPrefix</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
-<dd>Namespaces to substitute the $containerDir in the ingested binary path
-to form a binary id.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_depth">$depth</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
 <dd>How many subsequent subdirectories should be indexed.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_directory">$directory</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>Base ingestion path to be substituted with the $idPrefix
+to form a binary id.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_directoryLength">$directoryLength</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+<dd>Length in bytes of the sanitized version of the $directory property</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_filter">$filter</a>
@@ -345,6 +364,14 @@ each subdirectory should result in a separate collection resource
 containing its children.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_idPrefix">$idPrefix</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+<dd>Namespaces to substitute the $directory in the ingested binary path
+to form a binary id.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_includeEmpty">$includeEmpty</a>
     <span>
                         &nbsp;: bool            </span>
@@ -352,16 +379,9 @@ containing its children.</dd>
 <dd>Should resources be created for empty directories.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_indexedRes">$indexedRes</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd>Collection of indexed resources</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_metaLookup">$metaLookup</a>
     <span>
-                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupInterface.html"><abbr title="\acdhOeaw\arche\lib\ingest\metaLookup\MetaLookupInterface">MetaLookupInterface</abbr></a>|null            </span>
+                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupInterface.html"><abbr title="\acdhOeaw\arche\lib\ingest\metaLookup\MetaLookupInterface">MetaLookupInterface</abbr></a>            </span>
 </dt>
 <dd>An object providing metadata when given a resource file path</dd>
 
@@ -383,16 +403,9 @@ object) be skipped.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_pathEncoding">$pathEncoding</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: string            </span>
 </dt>
 <dd>Detected operating system path enconding.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_paths">$paths</a>
-    <span>
-                        &nbsp;: array&lt;string|int, string&gt;            </span>
-</dt>
-<dd>File system paths where resource children are located</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_pidPass">$pidPass</a>
@@ -410,11 +423,18 @@ during versioning.</dd>
 <dd>Repository connection</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_schema">$schema</a>
+    <span>
+                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a>            </span>
+</dt>
+<dd>Repository schema</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_skipMode">$skipMode</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Should files (not)existing in the Fedora be skipped?</dd>
+<dd>Should files (not)existing in the repository be skipped?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_uploadSizeLimit">$uploadSizeLimit</a>
@@ -425,11 +445,18 @@ during versioning.</dd>
 of binary resources.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_uriNorm">$uriNorm</a>
+    <span>
+                        &nbsp;: <abbr title="\acdhOeaw\UriNormalizer">UriNormalizer</abbr>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_versioningMode">$versioningMode</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd>Should new versions of binary resources already existing in the Fedora
+<dd>Should new versions of binary resources already existing in the repository
 be created (if not, an existing resource is simply overwritten).</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -437,35 +464,14 @@ be created (if not, an existing resource is simply overwritten).</dd>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
+<dd>Creates the Indexer object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_getRelPath">getRelPath()</a>
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_import">import()</a>
     <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Extracts relative path from a full path (by skipping cfg:containerDir)</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_index">index()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\GuzzleHttp\Exception\ClientException&gt;    </span>
 </dt>
 <dd>Performs the indexing.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_performUpdate">performUpdate()</a>
-    <span>
-                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>    </span>
-</dt>
-<dd>Performs file upload taking care of versioning.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_sanitizePath">sanitizePath()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Sanitizes file path - turns all \ into / and assures it is UTF-8 encoded.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setAutoCommit">setAutoCommit()</a>
@@ -487,21 +493,6 @@ be created (if not, an existing resource is simply overwritten).</dd>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a>    </span>
 </dt>
 <dd>Sets default RDF class for imported collections.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setContainerDir">setContainerDir()</a>
-    <span>
-                                &nbsp;: <abbr title="\acdhOeaw\acdhRepoIngest\Indexer">Indexer</abbr>    </span>
-</dt>
-<dd>Sets up the ingestion container path. This path is replaced with the
-$containerToUriPrefix to form a binary id.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setContainerToUriPrefix">setContainerToUriPrefix()</a>
-    <span>
-                                &nbsp;: <abbr title="\acdhOeaw\acdhRepoIngest\Indexer">Indexer</abbr>    </span>
-</dt>
-<dd>Sets up the namespace replaceing the $containerDir to form a binary id.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setDepth">setDepth()</a>
@@ -531,7 +522,7 @@ be created for each subdirectory (`$isFlat` equals to `false`).</dd>
     <span>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a>    </span>
 </dt>
-<dd>Sets if Fedora resources should be created for empty directories.</dd>
+<dd>Sets if repository resources should be created for empty directories.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setMetaLookup">setMetaLookup()</a>
@@ -545,21 +536,8 @@ be created for each subdirectory (`$isFlat` equals to `false`).</dd>
     <span>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a>    </span>
 </dt>
-<dd>Sets the parent resource for the indexed files.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setPaths">setPaths()</a>
-    <span>
-                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a>    </span>
-</dt>
-<dd>Overrides file system paths to look into for child resources.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setRepo">setRepo()</a>
-    <span>
-                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a>    </span>
-</dt>
-<dd>Sets the repository connection object</dd>
+<dd>Sets the parent resource for the files in the `$directory` (constructor
+parameter) directory.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setSkip">setSkip()</a>
@@ -567,7 +545,7 @@ be created for each subdirectory (`$isFlat` equals to `false`).</dd>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a>    </span>
 </dt>
 <dd>Defines if (and how) resources should be skipped from indexing based on
-their (not)existance in Fedora.</dd>
+their (not)existance in the repository.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setUploadSizeLimit">setUploadSizeLimit()</a>
@@ -585,62 +563,26 @@ their (not)existance in Fedora.</dd>
 should be simply overwritten with a new binary payload.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method___index">__index()</a>
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_createFile">createFile()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-ingest-File.html"><abbr title="\acdhOeaw\arche\lib\ingest\File">File</abbr></a>    </span>
 </dt>
-<dd>Performs the indexing.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_detectPathEncoding">detectPathEncoding()</a>
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_listFiles">listFiles()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-ingest-File.html"><abbr title="\acdhOeaw\arche\lib\ingest\File">File</abbr></a>&gt;    </span>
 </dt>
-<dd>Tries to detect path encoding used in the operating system by looking
-into locale settings.</dd>
+<dd>Gets the list of files/dirs matching the filename filters and the depth
+limit.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_getFileHash">getFileHash()</a>
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_pathToUtf8">pathToUtf8()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_handleAutoCommit">handleAutoCommit()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>Performs autocommit if needed</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_indexEntry">indexEntry()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Processes single directory entry</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_isSkipped">isSkipped()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>Checks if a given file system node should be skipped during import.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_isSkippedExisting">isSkippedExisting()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>Checks if a given file should be skipped because it already exists in the
-repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_readRepoConfig">readRepoConfig()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd></dd>
+<dd>Tries to detect path encoding used in the operating system.</dd>
 
         </dl>
 
@@ -653,15 +595,15 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
             <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_MATCH">
-        MATCH
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_MATCH" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="constant_ENC_UTF8">
+        ENC_UTF8
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ENC_UTF8" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -669,8 +611,153 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">MATCH</span>
+    <span class="phpdocumentor-signature__name">ENC_UTF8</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;utf-8&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ERRMODE_FAIL">
+        ERRMODE_FAIL
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_FAIL" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">ERRMODE_FAIL</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;fail&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ERRMODE_INCLUDE">
+        ERRMODE_INCLUDE
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_INCLUDE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">69</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">ERRMODE_INCLUDE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;include&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ERRMODE_PASS">
+        ERRMODE_PASS
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_PASS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">ERRMODE_PASS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;pass&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_FILTER_MATCH">
+        FILTER_MATCH
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_FILTER_MATCH" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">FILTER_MATCH</span>
     = <span class="phpdocumentor-signature__default-value">1</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_FILTER_SKIP">
+        FILTER_SKIP
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_FILTER_SKIP" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">FILTER_SKIP</span>
+    = <span class="phpdocumentor-signature__default-value">2</span>
 </code>
 
 
@@ -690,7 +777,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -719,7 +806,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -740,35 +827,6 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_SKIP">
-        SKIP
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_SKIP" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">51</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">SKIP</span>
-    = <span class="phpdocumentor-signature__default-value">2</span>
-</code>
-
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_SKIP_BINARY_EXIST">
         SKIP_BINARY_EXIST
         <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_SKIP_BINARY_EXIST" class="headerlink"><i class="fas fa-link"></i></a>
@@ -777,7 +835,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -806,7 +864,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -835,7 +893,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -864,7 +922,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -893,7 +951,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -922,7 +980,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -951,7 +1009,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -980,7 +1038,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -1024,7 +1082,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">127</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -1058,7 +1116,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">193</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
@@ -1092,7 +1150,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
@@ -1126,7 +1184,7 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">178</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -1151,124 +1209,6 @@ repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_commitedRes">
-        $commitedRes
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_commitedRes" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">254</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Collection of resources commited during the ingestion. Used to handle
-errors.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$commitedRes</span>
-    </code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\ingest\index()">index()</abbr></span>
-                                        
-                                             
-                                    </dd>
-                        </dl>
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_containerDir">
-        $containerDir
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_containerDir" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">199</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Base ingestion path to be substituted with the $containerToUriPrefix
-to form a binary id.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$containerDir</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_containerToUriPrefix">
-        $containerToUriPrefix
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_containerToUriPrefix" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">205</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Namespaces to substitute the $containerDir in the ingested binary path
-to form a binary id.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$containerToUriPrefix</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="property_depth">
         $depth
         <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_depth" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1278,7 +1218,7 @@ to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -1288,11 +1228,79 @@ to form a binary id.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$depth</span>
-     = <span class="phpdocumentor-signature__default-value">1000</span></code>
+     = <span class="phpdocumentor-signature__default-value">\PHP_INT_MAX</span></code>
 
     
         <section class="phpdocumentor-description"></section>
 
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_directory">
+        $directory
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_directory" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">164</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Base ingestion path to be substituted with the $idPrefix
+to form a binary id.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$directory</span>
+    </code>
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_directoryLength">
+        $directoryLength
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_directoryLength" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">170</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Length in bytes of the sanitized version of the $directory property</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$directoryLength</span>
+    </code>
+
+    
+    
     
 
 </article>
@@ -1312,7 +1320,7 @@ to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -1322,7 +1330,7 @@ to form a binary id.</p>
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$filter</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;//&#039;</span></code>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
     
         <section class="phpdocumentor-description"></section>
@@ -1346,7 +1354,7 @@ to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -1380,7 +1388,7 @@ to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -1407,6 +1415,41 @@ containing its children.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_idPrefix">
+        $idPrefix
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_idPrefix" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">176</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Namespaces to substitute the $directory in the ingested binary path
+to form a binary id.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$idPrefix</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_includeEmpty">
         $includeEmpty
         <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_includeEmpty" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1416,7 +1459,7 @@ containing its children.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">183</span>
 
     </aside>
 
@@ -1443,53 +1486,6 @@ containing its children.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_indexedRes">
-        $indexedRes
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_indexedRes" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">261</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Collection of indexed resources</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$indexedRes</span>
-    </code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">see</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\ingest\index()">index()</abbr></span>
-                                        
-                                             
-                                    </dd>
-                        </dl>
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="property_metaLookup">
         $metaLookup
         <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_metaLookup" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1499,7 +1495,7 @@ containing its children.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">235</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
@@ -1507,9 +1503,9 @@ containing its children.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupInterface.html"><abbr title="\acdhOeaw\arche\lib\ingest\metaLookup\MetaLookupInterface">MetaLookupInterface</abbr></a>|null</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupInterface.html"><abbr title="\acdhOeaw\arche\lib\ingest\metaLookup\MetaLookupInterface">MetaLookupInterface</abbr></a></span>
     <span class="phpdocumentor-signature__name">$metaLookup</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+    </code>
 
     
         <section class="phpdocumentor-description"></section>
@@ -1533,7 +1529,7 @@ containing its children.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">241</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -1568,7 +1564,7 @@ object) be skipped.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -1602,7 +1598,7 @@ object) be skipped.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -1610,51 +1606,13 @@ object) be skipped.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$pathEncoding</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
     
         <section class="phpdocumentor-description"></section>
 
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_paths">
-        $paths
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_paths" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">145</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">File system paths where resource children are located</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
-    <span class="phpdocumentor-signature__name">$paths</span>
-     = <span class="phpdocumentor-signature__default-value">[&#039;&#039;]</span></code>
-
-        <section class="phpdocumentor-description"><p>It is a concatenation of the container root path coming from the
-class settings and the location path
-properties of the RepoResource set using the <code class="prettyprint">setParent()</code> method.</p>
-<p>They can be also set manually using the <code class="prettyprint">setPaths()</code> method</p>
-</section>
-
-    
     
 
 </article>
@@ -1674,7 +1632,7 @@ properties of the RepoResource set using the <code class="prettyprint">setParent
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">230</span>
+    <span class="phpdocumentor-element-found-in__line">201</span>
 
     </aside>
 
@@ -1709,7 +1667,7 @@ during versioning.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -1734,6 +1692,40 @@ during versioning.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_schema">
+        $schema
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_schema" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">228</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Repository schema</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$schema</span>
+    </code>
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_skipMode">
         $skipMode
         <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_skipMode" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1743,11 +1735,11 @@ during versioning.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">218</span>
+    <span class="phpdocumentor-element-found-in__line">189</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Should files (not)existing in the Fedora be skipped?</p>
+        <p class="phpdocumentor-summary">Should files (not)existing in the repository be skipped?</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1791,7 +1783,7 @@ during versioning.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -1804,13 +1796,45 @@ of binary resources.</p>
     <span class="phpdocumentor-signature__name">$uploadSizeLimit</span>
      = <span class="phpdocumentor-signature__default-value">-1</span></code>
 
-        <section class="phpdocumentor-description"><p>For child resources bigger then this limit an &quot;RDF only&quot; Fedora resources
-will be created.</p>
+        <section class="phpdocumentor-description"><p>For child resources bigger then this limit an &quot;RDF only&quot; repository
+resources will be created.</p>
 <p>Special value of -1 means &quot;import all no matter their size&quot;</p>
 </section>
 
         <section class="phpdocumentor-description"></section>
 
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_uriNorm">
+        $uriNorm
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_uriNorm" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">212</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\acdhOeaw\UriNormalizer">UriNormalizer</abbr></span>
+    <span class="phpdocumentor-signature__name">$uriNorm</span>
+    </code>
+
+    
+    
     
 
 </article>
@@ -1830,11 +1854,11 @@ will be created.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">224</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Should new versions of binary resources already existing in the Fedora
+        <p class="phpdocumentor-summary">Should new versions of binary resources already existing in the repository
 be created (if not, an existing resource is simply overwritten).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -1869,31 +1893,70 @@ be created (if not, an existing resource is simply overwritten).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">268</span>
+    <span class="phpdocumentor-element-found-in__line">255</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Creates the Indexer object.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$containerDir</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$containerToUriPrefix</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$directory</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idPrefix</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Repo.html"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>It's important to understand how the file/directory paths are mapped to
+repository resource identifiers:</p>
+<ul>
+<li>first the path is stripped from the <code class="prettyprint">$directory</code>
+</li>
+<li>the rest is URL-encoded but with '/' characters being preserved</li>
+<li>at the end the $idPrefix is prepended</li>
+</ul>
+<p>e.g. for a file <code class="prettyprint">/foo/foo bar/baz</code> with <code class="prettyprint">$directory</code> <code class="prettyprint">/foo/</code> and
+<code class="prettyprint">$idPrefix</code> <code class="prettyprint">https://id.nmsp/foobar/</code>, it will be done as follows:</p>
+<ul>
+<li>
+<code class="prettyprint">foo/foo bar/baz</code> =&gt; <code class="prettyprint">foo bar/baz</code>
+</li>
+<li>
+<code class="prettyprint">foo bar/baz</code> =&gt; <code class="prettyprint">foo%20bar/baz</code>
+</li>
+<li>
+<code class="prettyprint">foo%20bar/baz</code> =&gt; <code class="prettyprint">https://id.nmsp/foobar/foo%20bar/baz</code>
+</li>
+</ul>
+<p>It's worth mentioning (lack of) slashes at the end of <code class="prettyprint">$directory</code> and
+<code class="prettyprint">$idPrefix</code> doesn't matter (it's standardized internally).</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$containerDir</span>
+                <span class="phpdocumentor-signature__argument__name">$directory</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>path to be indexed.</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$containerToUriPrefix</span>
+                <span class="phpdocumentor-signature__argument__name">$idPrefix</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>prefix used to create repository
+resource identifiers from file/directory paths (see above).</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$repo</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Repo.html"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>repository connectiond object.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1909,66 +1972,16 @@ be created (if not, an existing resource is simply overwritten).</p>
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getRelPath">
-        getRelPath()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_getRelPath" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">73</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Extracts relative path from a full path (by skipping cfg:containerDir)</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getRelPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fullPath</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$containerDir</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$fullPath</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$containerDir</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_index">
-        index()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_index" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_import">
+        import()
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_import" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">543</span>
+    <span class="phpdocumentor-element-found-in__line">483</span>
 
     </aside>
 
@@ -1976,125 +1989,67 @@ be created (if not, an existing resource is simply overwritten).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">index</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">import</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::ERRMODE_FAIL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$concurrency</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\GuzzleHttp\Exception\ClientException&gt;</span></code>
 
     
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$errorMode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::ERRMODE_FAIL</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>what should happen if an error is encountered?
+One of:</p>
+<ul>
+<li>Indexer::ERRMODE_FAIL - the first encountered error throws
+an exception.</li>
+<li>Indexer::ERRMODE_PASS - the first encountered error turns
+off the autocommit but ingestion is continued. When all resources are
+processed and there was no errors, an array of RepoResource objects
+is returned. If there was an error, an exception is thrown.</li>
+<li>Indexer::ERRMODE_INCLUDE - the first encountered error
+turns off the autocommit but ingestion is continued. The returned
+array contains RepoResource objects for successful ingestions and
+Exception objects for failed ones.</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$concurrency</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">3</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>number of parallel requests to the repository
+allowed during the import</p>
+</section>
+
+            </dd>
+            </dl>
+
     
-    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-lib-ingest-IndexerException.html"><abbr title="\acdhOeaw\arche\lib\ingest\IndexerException">IndexerException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\GuzzleHttp\Exception\ClientException&gt;</span>
             &mdash;
             <section class="phpdocumentor-description"><p>a list RepoResource objects representing indexed resources</p>
 </section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_performUpdate">
-        performUpdate()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_performUpdate" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">727</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Performs file upload taking care of versioning.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">performUpdate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DirectoryIterator">DirectoryIterator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$iter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-ingest-schema-File.html"><abbr title="\acdhOeaw\arche\lib\ingest\schema\File">File</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$upload</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a></span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$iter</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DirectoryIterator">DirectoryIterator</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$file</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-ingest-schema-File.html"><abbr title="\acdhOeaw\arche\lib\ingest\schema\File">File</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$upload</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_sanitizePath">
-        sanitizePath()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_sanitizePath" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">113</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Sanitizes file path - turns all \ into / and assures it is UTF-8 encoded.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">sanitizePath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pathEncoding</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$path</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pathEncoding</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2110,7 +2065,7 @@ be created (if not, an existing resource is simply overwritten).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">350</span>
+    <span class="phpdocumentor-element-found-in__line">291</span>
 
     </aside>
 
@@ -2161,7 +2116,7 @@ don't want to do that for performance reasons).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">417</span>
+    <span class="phpdocumentor-element-found-in__line">364</span>
 
     </aside>
 
@@ -2207,7 +2162,7 @@ configuration property.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">404</span>
+    <span class="phpdocumentor-element-found-in__line">351</span>
 
     </aside>
 
@@ -2246,97 +2201,6 @@ configuration property.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setContainerDir">
-        setContainerDir()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setContainerDir" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">511</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Sets up the ingestion container path. This path is replaced with the
-$containerToUriPrefix to form a binary id.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setContainerDir</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$containerDir</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoIngest\Indexer">Indexer</abbr></span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$containerDir</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>container dir path</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoIngest\Indexer">Indexer</abbr></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setContainerToUriPrefix">
-        setContainerToUriPrefix()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setContainerToUriPrefix" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">521</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Sets up the namespace replaceing the $containerDir to form a binary id.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setContainerToUriPrefix</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoIngest\Indexer">Indexer</abbr></span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$prefix</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>namespace</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\acdhOeaw\acdhRepoIngest\Indexer">Indexer</abbr></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_setDepth">
         setDepth()
         <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setDepth" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2344,7 +2208,7 @@ $containerToUriPrefix to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">486</span>
+    <span class="phpdocumentor-element-found-in__line">433</span>
 
     </aside>
 
@@ -2362,7 +2226,7 @@ $containerToUriPrefix to form a binary id.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>maximum indexing depth (0 - only initial Resource dir, 1 - also its direct subdirectories, etc.)</p>
+                    <section class="phpdocumentor-description"><p>maximum indexing depth (0 - only initial resource dir, 1 - also its direct subdirectories, etc.)</p>
 </section>
 
             </dd>
@@ -2389,7 +2253,7 @@ $containerToUriPrefix to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">437</span>
+    <span class="phpdocumentor-element-found-in__line">384</span>
 
     </aside>
 
@@ -2397,7 +2261,7 @@ $containerToUriPrefix to form a binary id.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setFilter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::MATCH</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">setFilter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::FILTER_MATCH</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
 
         <section class="phpdocumentor-description"><p>You can choose if file names must match or must not match (skip) the
 filter using the $type parameter. You can set both match and skip
@@ -2420,7 +2284,7 @@ filters by calling setFilter() two times (once with
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">self::MATCH</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::FILTER_MATCH</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>decides if $filter is a match or skip filter (can be
 one of Indexer::MATCH and Indexer::SKIP)</p>
@@ -2450,7 +2314,7 @@ one of Indexer::MATCH and Indexer::SKIP)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">459</span>
+    <span class="phpdocumentor-element-found-in__line">406</span>
 
     </aside>
 
@@ -2495,19 +2359,17 @@ be created for each subdirectory (`$isFlat` equals to `false`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">500</span>
+    <span class="phpdocumentor-element-found-in__line">445</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Sets if Fedora resources should be created for empty directories.</p>
+        <p class="phpdocumentor-summary">Sets if repository resources should be created for empty directories.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setIncludeEmptyDirs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$include</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"><p>Note this setting is skipped when the <code class="prettyprint">$flatStructure</code> is set to <code class="prettyprint">true</code>.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2556,7 +2418,7 @@ be created for each subdirectory (`$isFlat` equals to `false`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">532</span>
+    <span class="phpdocumentor-element-found-in__line">456</span>
 
     </aside>
 
@@ -2564,14 +2426,14 @@ be created for each subdirectory (`$isFlat` equals to `false`).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setMetaLookup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupInterface.html"><abbr title="\acdhOeaw\arche\lib\ingest\metaLookup\MetaLookupInterface">MetaLookupInterface</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metaLookup</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$require</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">setMetaLookup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupInterface.html"><abbr title="\acdhOeaw\arche\lib\ingest\metaLookup\MetaLookupInterface">MetaLookupInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metaLookup</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$require</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$metaLookup</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupInterface.html"><abbr title="\acdhOeaw\arche\lib\ingest\metaLookup\MetaLookupInterface">MetaLookupInterface</abbr></a>|null</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupInterface.html"><abbr title="\acdhOeaw\arche\lib\ingest\metaLookup\MetaLookupInterface">MetaLookupInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2608,21 +2470,18 @@ be created for each subdirectory (`$isFlat` equals to `false`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">296</span>
+    <span class="phpdocumentor-element-found-in__line">274</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Sets the parent resource for the indexed files.</p>
+        <p class="phpdocumentor-summary">Sets the parent resource for the files in the `$directory` (constructor
+parameter) directory.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setParent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$strictLocations</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">setParent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"><p>Automatically sets ingestion paths based on the resource's
-cfg.schema.ingest.location RDF property values (only existing directories
-are set).</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2631,104 +2490,6 @@ are set).</p>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$strictLocations</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>should locations (parent resource path within
-a containerDir) be checked? (checked means at least one location must
-be present and all locations must exist on a local storage)</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setPaths">
-        setPaths()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setPaths" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">334</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Overrides file system paths to look into for child resources.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setPaths</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$paths</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$paths</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setRepo">
-        setRepo()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setRepo" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">278</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Sets the repository connection object</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setRepo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Repo.html"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$repo</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Repo.html"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
             </dd>
             </dl>
 
@@ -2753,12 +2514,12 @@ be present and all locations must exist on a local storage)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">364</span>
+    <span class="phpdocumentor-element-found-in__line">311</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Defines if (and how) resources should be skipped from indexing based on
-their (not)existance in Fedora.</p>
+their (not)existance in the repository.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -2772,9 +2533,17 @@ their (not)existance in Fedora.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>mode either Indexer::SKIP_NONE (default),
-Indexer::SKIP_NOT_EXIST, Indexer::SKIP_EXIST or
-Indexer::SKIP_BINARY_EXIST</p>
+                    <section class="phpdocumentor-description"><p>mode. One of:</p>
+<ul>
+<li>Indexer::SKIP_NONE (default) - import no matter if a corresponding
+repository resource exists or not,</li>
+<li>Indexer::SKIP_NOT_EXIST - import only if a corresponding repo
+resource doesn't exist at the beginning of the ingestion,</li>
+<li>Indexer::SKIP_EXIST - import only if a corresponding repo resource
+exists at the beginning of the ingestion,</li>
+<li>Indexer::SKIP_BINARY_EXIST - import if a corresponding repo resource
+doesn't exist or exists but contains no binary payload</li>
+</ul>
 </section>
 
             </dd>
@@ -2801,7 +2570,7 @@ Indexer::SKIP_BINARY_EXIST</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">475</span>
+    <span class="phpdocumentor-element-found-in__line">422</span>
 
     </aside>
 
@@ -2809,9 +2578,9 @@ Indexer::SKIP_BINARY_EXIST</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setUploadSizeLimit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">setUploadSizeLimit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"><p>For files bigger then this treshold a &quot;pure RDF&quot; Fedora resources will
+        <section class="phpdocumentor-description"><p>For files bigger then this treshold a &quot;pure RDF&quot; repository resources will
 be created containing full metadata but no binary content.</p>
 </section>
 
@@ -2819,7 +2588,7 @@ be created containing full metadata but no binary content.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$limit</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>maximum size in bytes; 0 will cause no files upload,
@@ -2851,7 +2620,7 @@ matter their size</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">385</span>
+    <span class="phpdocumentor-element-found-in__line">332</span>
 
     </aside>
 
@@ -2916,35 +2685,95 @@ version - either Indexer::MIGRATE_NO or Indexer::MIGRATE_YES</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___index">
-        __index()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method___index" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_createFile">
+        createFile()
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_createFile" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">557</span>
+    <span class="phpdocumentor-element-found-in__line">566</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Performs the indexing.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">__index</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">createFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\SplFileInfo">SplFileInfo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-File.html"><abbr title="\acdhOeaw\arche\lib\ingest\File">File</abbr></a></span></code>
 
-    
-    
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$file</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\SplFileInfo">SplFileInfo</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-File.html"><abbr title="\acdhOeaw\arche\lib\ingest\File">File</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"><p>a two-element array with first element containing a collection
-of indexed resources and a second one containing a collection of commited
-resources</p>
-</section>
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_listFiles">
+        listFiles()
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_listFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">538</span>
 
+    </aside>
+
+        <p class="phpdocumentor-summary">Gets the list of files/dirs matching the filename filters and the depth
+limit.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">listFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\SplFileInfo">SplFileInfo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dir</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-ingest-File.html"><abbr title="\acdhOeaw\arche\lib\ingest\File">File</abbr></a>&gt;</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$dir</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\SplFileInfo">SplFileInfo</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$level</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-ingest-File.html"><abbr title="\acdhOeaw\arche\lib\ingest\File">File</abbr></a>&gt;</span>
+            &mdash;
+        
     
 </article>
                     <article
@@ -2953,9 +2782,9 @@ resources</p>
             -private
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_detectPathEncoding">
-        detectPathEncoding()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_detectPathEncoding" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_pathToUtf8">
+        pathToUtf8()
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_pathToUtf8" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
@@ -2964,15 +2793,25 @@ resources</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Tries to detect path encoding used in the operating system by looking
-into locale settings.</p>
+        <p class="phpdocumentor-summary">Tries to detect path encoding used in the operating system.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">detectPathEncoding</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">pathToUtf8</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -2990,275 +2829,7 @@ into locale settings.</p>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getFileHash">
-        getFileHash()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_getFileHash" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">780</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">getFileHash</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hashName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$path</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$hashName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_handleAutoCommit">
-        handleAutoCommit()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_handleAutoCommit" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">707</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Performs autocommit if needed</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">handleAutoCommit</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>if autocommit was performed</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_indexEntry">
-        indexEntry()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_indexEntry" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">586</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Processes single directory entry</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">indexEntry</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DirectoryIterator">DirectoryIterator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$i</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$i</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DirectoryIterator">DirectoryIterator</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_isSkipped">
-        isSkipped()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_isSkipped" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">686</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Checks if a given file system node should be skipped during import.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">isSkipped</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DirectoryIterator">DirectoryIterator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$i</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$i</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DirectoryIterator">DirectoryIterator</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>file system node</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_isSkippedExisting">
-        isSkippedExisting()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_isSkippedExisting" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">662</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Checks if a given file should be skipped because it already exists in the
-repository while the Indexer skip mode is set to SKIP_EXIST or SKIP_BINARY_EXIST.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">isSkippedExisting</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-ingest-schema-File.html"><abbr title="\acdhOeaw\arche\lib\ingest\schema\File">File</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$file</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-ingest-schema-File.html"><abbr title="\acdhOeaw\arche\lib\ingest\schema\File">File</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>file to be checked</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupException.html"><abbr title="\acdhOeaw\arche\lib\ingest\metaLookup\MetaLookupException">MetaLookupException</abbr></a></span>
-                                                            
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_readRepoConfig">
-        readRepoConfig()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_readRepoConfig" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">773</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">readRepoConfig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     

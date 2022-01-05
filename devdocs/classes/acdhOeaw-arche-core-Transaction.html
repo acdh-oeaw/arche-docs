@@ -142,7 +142,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -178,9 +178,51 @@
 
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_LOCK_TIMEOUT_DEFAULT">LOCK_TIMEOUT_DEFAULT</a>
+    <span>
+        &nbsp;= 10000                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_PG_DUPLICATE_KEY">PG_DUPLICATE_KEY</a>
+    <span>
+        &nbsp;= &#039;23505&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_PG_FOREIGN_KEY_VIOLATION">PG_FOREIGN_KEY_VIOLATION</a>
     <span>
-        &nbsp;= 23503                            </span>
+        &nbsp;= &#039;23503&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_PG_LOCK_FAILURE">PG_LOCK_FAILURE</a>
+    <span>
+        &nbsp;= &#039;55P03&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_PG_WRONG_BINARY_VALUE">PG_WRONG_BINARY_VALUE</a>
+    <span>
+        &nbsp;= &#039;22P03&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_PG_WRONG_DATE_VALUE">PG_WRONG_DATE_VALUE</a>
+    <span>
+        &nbsp;= &#039;22007&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_PG_WRONG_TEXT_VALUE">PG_WRONG_TEXT_VALUE</a>
+    <span>
+        &nbsp;= &#039;22P02&#039;                            </span>
 </dt>
 <dd></dd>
 
@@ -199,9 +241,30 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_STATE_LOCKED">STATE_LOCKED</a>
+    <span>
+        &nbsp;= &#039;locked&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_STATE_NOTX">STATE_NOTX</a>
+    <span>
+        &nbsp;= &#039;notx&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_STATE_ROLLBACK">STATE_ROLLBACK</a>
     <span>
         &nbsp;= &#039;rollback&#039;                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_STMT_TIMEOUT_DEFAULT">STMT_TIMEOUT_DEFAULT</a>
+    <span>
+        &nbsp;= 60000                            </span>
 </dt>
 <dd></dd>
 
@@ -216,6 +279,13 @@
     <a href="classes/acdhOeaw-arche-core-Transaction.html#property_lastRequest">$lastRequest</a>
     <span>
                         &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#property_lockedResources">$lockedResources</a>
+    <span>
+                        &nbsp;: bool            </span>
 </dt>
 <dd></dd>
 
@@ -243,7 +313,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-core-Transaction.html#property_state">$state</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
@@ -255,7 +325,21 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_createResource">createResource()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-core-Transaction.html#method_delete">delete()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_deleteResource">deleteResource()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -297,6 +381,13 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_lockResource">lockResource()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+<dd>Locks a given resource with a given lock id and the current transaction id.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-core-Transaction.html#method_options">options()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -311,7 +402,7 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_prolongAndRelease">prolongAndRelease()</a>
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_prolong">prolong()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -319,6 +410,28 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-core-Transaction.html#method_put">put()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_unlockResources">unlockResources()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_executeQuery">executeQuery()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Executes a given PDO statement trapping the lock timeout and foreign key
+database exceptions and turning them it into the `ConflictException`.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_fetchData">fetchData()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -332,18 +445,25 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_lockAndFetchData">lockAndFetchData()</a>
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_lock">lock()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
+<dd>Tries to lock the current transaction.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_wait">wait()</a>
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_releaseAndWait">releaseAndWait()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Actively waits until the transaction controller daemon rollbacks/commits the transaction</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-core-Transaction.html#method_setState">setState()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
 
         </dl>
 
@@ -356,6 +476,64 @@
             <a href="classes/acdhOeaw-arche-core-Transaction.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_LOCK_TIMEOUT_DEFAULT">
+        LOCK_TIMEOUT_DEFAULT
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_LOCK_TIMEOUT_DEFAULT" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">LOCK_TIMEOUT_DEFAULT</span>
+    = <span class="phpdocumentor-signature__default-value">10000</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PG_DUPLICATE_KEY">
+        PG_DUPLICATE_KEY
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_PG_DUPLICATE_KEY" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">51</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PG_DUPLICATE_KEY</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;23505&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_PG_FOREIGN_KEY_VIOLATION">
         PG_FOREIGN_KEY_VIOLATION
         <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_PG_FOREIGN_KEY_VIOLATION" class="headerlink"><i class="fas fa-link"></i></a>
@@ -364,7 +542,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -373,7 +551,123 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">PG_FOREIGN_KEY_VIOLATION</span>
-    = <span class="phpdocumentor-signature__default-value">23503</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;23503&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PG_LOCK_FAILURE">
+        PG_LOCK_FAILURE
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_PG_LOCK_FAILURE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PG_LOCK_FAILURE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;55P03&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PG_WRONG_BINARY_VALUE">
+        PG_WRONG_BINARY_VALUE
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_PG_WRONG_BINARY_VALUE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PG_WRONG_BINARY_VALUE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;22P03&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PG_WRONG_DATE_VALUE">
+        PG_WRONG_DATE_VALUE
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_PG_WRONG_DATE_VALUE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PG_WRONG_DATE_VALUE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;22007&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PG_WRONG_TEXT_VALUE">
+        PG_WRONG_TEXT_VALUE
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_PG_WRONG_TEXT_VALUE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">53</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PG_WRONG_TEXT_VALUE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;22P02&#039;</span>
 </code>
 
 
@@ -393,7 +687,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -422,7 +716,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -443,9 +737,38 @@
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_STATE_ROLLBACK">
-        STATE_ROLLBACK
-        <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_STATE_ROLLBACK" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="constant_STATE_LOCKED">
+        STATE_LOCKED
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_STATE_LOCKED" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">48</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">STATE_LOCKED</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;locked&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_STATE_NOTX">
+        STATE_NOTX
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_STATE_NOTX" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -459,8 +782,66 @@
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">STATE_NOTX</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;notx&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_STATE_ROLLBACK">
+        STATE_ROLLBACK
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_STATE_ROLLBACK" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">STATE_ROLLBACK</span>
     = <span class="phpdocumentor-signature__default-value">&#039;rollback&#039;</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_STMT_TIMEOUT_DEFAULT">
+        STMT_TIMEOUT_DEFAULT
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#constant_STMT_TIMEOUT_DEFAULT" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">STMT_TIMEOUT_DEFAULT</span>
+    = <span class="phpdocumentor-signature__default-value">60000</span>
 </code>
 
 
@@ -495,7 +876,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -529,7 +910,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -554,6 +935,40 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_lockedResources">
+        $lockedResources
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#property_lockedResources" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$lockedResources</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_pdo">
         $pdo
         <a href="classes/acdhOeaw-arche-core-Transaction.html#property_pdo" class="headerlink"><i class="fas fa-link"></i></a>
@@ -563,7 +978,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -599,7 +1014,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -633,7 +1048,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -642,7 +1057,7 @@
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$startedAt</span>
-    </code>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -667,16 +1082,16 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$state</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+     = <span class="phpdocumentor-signature__default-value">self::STATE_NOTX</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -705,7 +1120,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -731,6 +1146,85 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_createResource">
+        createResource()
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_createResource" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">117</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">createResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lockId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ids</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lockId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$ids</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-core-DuplicatedKeyException.html"><abbr title="\acdhOeaw\arche\core\DuplicatedKeyException">DuplicatedKeyException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\PDOException">PDOException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_delete">
         delete()
         <a href="classes/acdhOeaw-arche-core-Transaction.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
@@ -738,7 +1232,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
@@ -764,6 +1258,50 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_deleteResource">
+        deleteResource()
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_deleteResource" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">100</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">deleteResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_get">
         get()
         <a href="classes/acdhOeaw-arche-core-Transaction.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
@@ -771,7 +1309,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">249</span>
 
     </aside>
 
@@ -804,7 +1342,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">228</span>
 
     </aside>
 
@@ -837,7 +1375,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">331</span>
 
     </aside>
 
@@ -870,7 +1408,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">232</span>
 
     </aside>
 
@@ -903,7 +1441,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">241</span>
 
     </aside>
 
@@ -929,6 +1467,94 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_lockResource">
+        lockResource()
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_lockResource" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">170</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Locks a given resource with a given lock id and the current transaction id.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">lockResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lockId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+        <section class="phpdocumentor-description"><ul>
+<li>First a database lock on the transaction is obtained with <code class="prettyprint">$this-&gt;lock(false)</code>.</li>
+<li>Then a database lock on the resource is obtained and the resource is
+marked as arche-locked by setting up <code class="prettyprint">transaction_id</code> and <code class="prettyprint">lock</code>
+column values</li>
+<li>Finally the database transaction is commited.</li>
+</ul>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lockId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-core-BadRequestException.html"><abbr title="\acdhOeaw\arche\core\BadRequestException">BadRequestException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-core-ConflictException.html"><abbr title="\acdhOeaw\arche\core\ConflictException">ConflictException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_options">
         options()
         <a href="classes/acdhOeaw-arche-core-Transaction.html#method_options" class="headerlink"><i class="fas fa-link"></i></a>
@@ -936,7 +1562,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -980,7 +1606,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">165</span>
+    <span class="phpdocumentor-element-found-in__line">307</span>
 
     </aside>
 
@@ -1006,21 +1632,21 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_prolongAndRelease">
-        prolongAndRelease()
-        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_prolongAndRelease" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_prolong">
+        prolong()
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_prolong" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">prolongAndRelease</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">prolong</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1046,7 +1672,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">279</span>
 
     </aside>
 
@@ -1054,6 +1680,170 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">put</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_unlockResources">
+        unlockResources()
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_unlockResources" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">211</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">unlockResources</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lockId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lockId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_executeQuery">
+        executeQuery()
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_executeQuery" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">467</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Executes a given PDO statement trapping the lock timeout and foreign key
+database exceptions and turning them it into the `ConflictException`.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">executeQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$param</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorMsg</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;Database lock timeout&quot;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logException</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$query</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$param</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$errorMsg</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&quot;Database lock timeout&quot;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$logException</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-core-ConflictException.html"><abbr title="\acdhOeaw\arche\core\ConflictException">ConflictException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\PDOException">PDOException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fetchData">
+        fetchData()
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_fetchData" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">393</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">fetchData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1079,7 +1869,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">233</span>
+    <span class="phpdocumentor-element-found-in__line">449</span>
 
     </aside>
 
@@ -1104,36 +1894,95 @@
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_lockAndFetchData">
-        lockAndFetchData()
-        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_lockAndFetchData" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_lock">
+        lock()
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_lock" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">353</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Tries to lock the current transaction.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">lockAndFetchData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">lock</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$checkResourceLocks</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
+        <section class="phpdocumentor-description"><p>Assures no other transaction PUT(commit)/DELETE(rollback) is executed
+in parallel. Will succeed only if there's no this transaction related
+resource operation being executed.</p>
+<p>Lock persists until $this-&gt;pdo-&gt;commit()/rollBack();</p>
+</section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
+                <span class="phpdocumentor-signature__argument__name">$checkResourceLocks</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-core-ConflictException.html"><abbr title="\acdhOeaw\arche\core\ConflictException">ConflictException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\PDOException">PDOException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_releaseAndWait">
+        releaseAndWait()
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_releaseAndWait" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">418</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Actively waits until the transaction controller daemon rollbacks/commits the transaction</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">releaseAndWait</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+    
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1148,25 +1997,36 @@
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_wait">
-        wait()
-        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_wait" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setState">
+        setState()
+        <a href="classes/acdhOeaw-arche-core-Transaction.html#method_setState" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/Transaction.php"><a href="files/arche-core-src-acdhoeaw-arche-core-transaction.html"><abbr title="arche-core/src/acdhOeaw/arche/core/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">215</span>
+    <span class="phpdocumentor-element-found-in__line">434</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Actively waits until the transaction controller daemon rollbacks/commits the transaction</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">wait</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">setState</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$state</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-    
-    
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$state</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>

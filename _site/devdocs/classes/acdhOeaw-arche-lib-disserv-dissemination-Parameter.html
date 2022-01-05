@@ -298,6 +298,13 @@
 <dd>Deletes the repository resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_deleteAsync">deleteAsync()</a>
+    <span>
+                                &nbsp;: <abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>    </span>
+</dt>
+<dd>Asynchronous version of delete()</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_factory">factory()</a>
     <span>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>    </span>
@@ -318,6 +325,13 @@ returning the metadata.</dd>
                                 &nbsp;: <abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>    </span>
 </dt>
 <dd>Returns repository resource binary content.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_getContentAsync">getContentAsync()</a>
+    <span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-ResponsePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\ResponsePromise">ResponsePromise</abbr></a>    </span>
+</dt>
+<dd>synchronous version of getContent()</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceTrait.html#method_getDissServices">getDissServices()</a>
@@ -397,12 +411,26 @@ returning the metadata.</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_loadMetadataAsync">loadMetadataAsync()</a>
+    <span>
+                                &nbsp;: <abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>|null    </span>
+</dt>
+<dd>Asynchronous version of loadMetadata()</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_merge">merge()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Merges the current resource with the given one. See the corresponding
 [REST endpoint description](https://app.swaggerhub.com/apis/zozlak/arche/3.0#/default/put_merge__srcResourceId___targetResourceId_)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_mergeAsync">mergeAsync()</a>
+    <span>
+                                &nbsp;: <abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>    </span>
+</dt>
+<dd>Asynchronous version of merge()</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-ParameterTrait.html#method_registerTransformation">registerTransformation()</a>
@@ -437,11 +465,25 @@ $metadata object don&#039;t affect the resource metadata.</dd>
 <dd>Updates repository resource binary content with a given payload.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_updateContentAsync">updateContentAsync()</a>
+    <span>
+                                &nbsp;: <abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>    </span>
+</dt>
+<dd>Asynchronous version of updateContent()</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_updateMetadata">updateMetadata()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Saves the object metadata to the repository.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_updateMetadataAsync">updateMetadataAsync()</a>
+    <span>
+                                &nbsp;: <abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>|null    </span>
+</dt>
+<dd>Asynchronous version of updateMetadata()</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_getId">getId()</a>
@@ -478,6 +520,13 @@ $metadata object don&#039;t affect the resource metadata.</dd>
 </dt>
 <dd>Parses metadata fetched from the repository.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_withReadHeaders">withReadHeaders()</a>
+    <span>
+                                &nbsp;: <abbr title="\GuzzleHttp\Psr7\Request">Request</abbr>    </span>
+</dt>
+<dd></dd>
+
         </dl>
 
 
@@ -497,7 +546,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -526,7 +575,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -555,7 +604,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -584,7 +633,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -762,7 +811,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -935,7 +984,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -1043,7 +1092,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">166</span>
+    <span class="phpdocumentor-element-found-in__line">222</span>
 
     </aside>
 
@@ -1099,6 +1148,77 @@ to all resources pointing to the deleted one with this RDF property</p>
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_deleteAsync">
+        deleteAsync()
+        <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_deleteAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">236</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of delete()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">deleteAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tombstone</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$references</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$recursiveProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$tombstone</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$references</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$recursiveProperty</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\delete()">delete()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_factory">
@@ -1108,7 +1228,7 @@ to all resources pointing to the deleted one with this RDF property</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -1206,7 +1326,7 @@ from the response will be used)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -1226,6 +1346,53 @@ from the response will be used)</p>
             <section class="phpdocumentor-description"><p>PSR-7 response containing resource's binary content</p>
 </section>
 
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getContentAsync">
+        getContentAsync()
+        <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_getContentAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">synchronous version of getContent()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getContentAsync</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-ResponsePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\ResponsePromise">ResponsePromise</abbr></a></span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\getContent()">getContent()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-ResponsePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\ResponsePromise">ResponsePromise</abbr></a></span>
+            &mdash;
+        
     
 </article>
                     <article
@@ -1622,7 +1789,7 @@ no value with a given prefix can be found</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
@@ -1727,6 +1894,77 @@ metadata.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_loadMetadataAsync">
+        loadMetadataAsync()
+        <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_loadMetadataAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">297</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of loadMetadata()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">loadMetadataAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$force</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>|null</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$force</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$mode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\loadMetadata()">loadMetadata()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_merge">
         merge()
         <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_merge" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1734,7 +1972,7 @@ metadata.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">325</span>
 
     </aside>
 
@@ -1743,7 +1981,7 @@ metadata.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">merge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$targetResId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">merge</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$targetResId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"><p>If this action succeeds, resource's URI changes to the targetResource's one.</p>
 </section>
@@ -1757,12 +1995,105 @@ metadata.</p>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$readMode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>scope of the metadata returned by the repository</p>
+<ul>
+<li>see the META_* constants defined by the RepoResourceInterface</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>RDF property to be used by the metadata
+read mode denoted by the $readMode parameter</p>
+</section>
+
+            </dd>
             </dl>
 
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_mergeAsync">
+        mergeAsync()
+        <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_mergeAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">340</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of merge()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">mergeAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$targetResId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$targetResId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$readMode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\merge()">merge()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></span>
             &mdash;
         
     
@@ -1965,7 +2296,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -1973,7 +2304,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">updateContent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-BinaryPayload.html"><abbr title="\acdhOeaw\arche\lib\BinaryPayload">BinaryPayload</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">updateContent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-BinaryPayload.html"><abbr title="\acdhOeaw\arche\lib\BinaryPayload">BinaryPayload</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1984,6 +2315,28 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>new content</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$readMode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>scope of the metadata returned by the repository</p>
+<ul>
+<li>see the META_* constants defined by the RepoResourceInterface</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>RDF property to be used by the metadata
+read mode denoted by the $readMode parameter</p>
 </section>
 
             </dd>
@@ -2003,6 +2356,77 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_updateContentAsync">
+        updateContentAsync()
+        <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_updateContentAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">140</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of updateContent()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">updateContentAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-BinaryPayload.html"><abbr title="\acdhOeaw\arche\lib\BinaryPayload">BinaryPayload</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$content</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-BinaryPayload.html"><abbr title="\acdhOeaw\arche\lib\BinaryPayload">BinaryPayload</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$readMode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\updateContent()">updateContent()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_updateMetadata">
         updateMetadata()
         <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_updateMetadata" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2010,7 +2434,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -2018,7 +2442,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">updateMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$updateMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::UPDATE_MERGE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">updateMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$updateMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::UPDATE_MERGE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"><p>Local metadata are automatically updated with the metadata resulting from the update.</p>
 </section>
@@ -2040,11 +2464,20 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>scope of the metadata returned by the repository:
-<code class="prettyprint">RepoResourceInterface::META_RESOURCE</code> - only given resource metadata,
-<code class="prettyprint">RepoResourceInterface::META_NEIGHBORS</code> - metadata of a given resource and all the resources pointed by its metadata,
-<code class="prettyprint">RepoResourceInterface::META_RELATIVES</code> - metadata of a given resource and all resources recursively pointed to a given metadata property
-(see the <code class="prettyprint">$parentProperty</code> parameter), both directly and in a reverse order (reverse in RDF terms)</p>
+                    <section class="phpdocumentor-description"><p>scope of the metadata returned by the repository</p>
+<ul>
+<li>see the META_* constants defined by the RepoResourceInterface</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>RDF property to be used by the metadata
+read mode denoted by the $readMode parameter</p>
 </section>
 
             </dd>
@@ -2054,6 +2487,77 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_updateMetadataAsync">
+        updateMetadataAsync()
+        <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_updateMetadataAsync" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">191</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Asynchronous version of updateMetadata()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">updateMetadataAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$updateMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::UPDATE_MERGE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>|null</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$updateMode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::UPDATE_MERGE</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$readMode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\arche\lib\updateMetadata()">updateMetadata()</abbr></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>|null</span>
             &mdash;
         
     
@@ -2071,7 +2575,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">262</span>
+    <span class="phpdocumentor-element-found-in__line">386</span>
 
     </aside>
 
@@ -2230,7 +2734,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">249</span>
+    <span class="phpdocumentor-element-found-in__line">363</span>
 
     </aside>
 
@@ -2258,6 +2762,66 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withReadHeaders">
+        withReadHeaders()
+        <a href="classes/acdhOeaw-arche-lib-RepoResource.html#method_withReadHeaders" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">373</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">withReadHeaders</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$mode</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span>
             &mdash;
         
     
