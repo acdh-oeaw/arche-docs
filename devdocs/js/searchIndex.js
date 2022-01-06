@@ -11081,6 +11081,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#property_realUrl"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003A\u0024class",
+            "name": "class",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#property_class"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
