@@ -8961,6 +8961,11 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020collection\u0020of\u0020resources\u0020which\u0020were\u0020already\u0020processed\u0020when\nan\u0020error\u0020occured.",
             "url": "classes/acdhOeaw-arche-lib-ingest-IndexerException.html#method_getProcessedResources"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\IndexerException\u003A\u003AERROR_DURING_IMPORT",
+            "name": "ERROR_DURING_IMPORT",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-IndexerException.html#constant_ERROR_DURING_IMPORT"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\IndexerException\u003A\u003A\u0024resources",
             "name": "resources",
             "summary": "A\u0020collection\u0020of\u0020already\u0020processed\u0020resources",
