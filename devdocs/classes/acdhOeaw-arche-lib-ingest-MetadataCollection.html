@@ -813,7 +813,7 @@ missing it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metadatacollection.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">210</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 
     </aside>
 
@@ -821,7 +821,7 @@ missing it.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">import</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$namespace</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$singleOutNmsp</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::ERRMODE_FAIL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$concurrency</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\GuzzleHttp\Exception\ClientException&gt;</span></code>
+                <span class="phpdocumentor-signature__name">import</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$namespace</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$singleOutNmsp</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::ERRMODE_FAIL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$concurrency</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$retriesOnConflict</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\GuzzleHttp\Exception\ClientException&gt;</span></code>
 
         <section class="phpdocumentor-description"><p>A repository resource is created for every node containing at least one
 identifer and:</p>
@@ -892,6 +892,16 @@ Exception objects for failed ones.</li>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>number of parallel requests to the repository
 allowed during the import</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$retriesOnConflict</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">3</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>how many ingestion attempts should be taken
+if the repository resource is locked by other request</p>
 </section>
 
             </dd>
@@ -1177,7 +1187,7 @@ graph imported by the import() method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metadatacollection.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">420</span>
+    <span class="phpdocumentor-element-found-in__line">438</span>
 
     </aside>
 
@@ -1220,7 +1230,7 @@ graph imported by the import() method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metadatacollection.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">317</span>
+    <span class="phpdocumentor-element-found-in__line">335</span>
 
     </aside>
 
@@ -1277,7 +1287,7 @@ MetadataCollection::CREATE)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metadatacollection.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">388</span>
+    <span class="phpdocumentor-element-found-in__line">406</span>
 
     </aside>
 
@@ -1314,7 +1324,7 @@ a convenient choice</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metadatacollection.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">363</span>
+    <span class="phpdocumentor-element-found-in__line">381</span>
 
     </aside>
 
@@ -1358,7 +1368,7 @@ the graph.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metadatacollection.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">435</span>
+    <span class="phpdocumentor-element-found-in__line">453</span>
 
     </aside>
 
@@ -1391,7 +1401,7 @@ the graph.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metadatacollection.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">468</span>
+    <span class="phpdocumentor-element-found-in__line">486</span>
 
     </aside>
 
@@ -1424,7 +1434,7 @@ the graph.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metadatacollection.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">524</span>
+    <span class="phpdocumentor-element-found-in__line">542</span>
 
     </aside>
 
@@ -1457,7 +1467,7 @@ the graph.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metadatacollection.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/MetadataCollection.php">MetadataCollection.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">486</span>
+    <span class="phpdocumentor-element-found-in__line">504</span>
 
     </aside>
 

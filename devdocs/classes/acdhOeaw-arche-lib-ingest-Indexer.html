@@ -1981,7 +1981,7 @@ resource identifiers from file/directory paths (see above).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">483</span>
+    <span class="phpdocumentor-element-found-in__line">485</span>
 
     </aside>
 
@@ -1989,7 +1989,7 @@ resource identifiers from file/directory paths (see above).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">import</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::ERRMODE_FAIL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$concurrency</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\GuzzleHttp\Exception\ClientException&gt;</span></code>
+                <span class="phpdocumentor-signature__name">import</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::ERRMODE_FAIL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$concurrency</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$retriesOnConflict</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\GuzzleHttp\Exception\ClientException&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2023,6 +2023,16 @@ Exception objects for failed ones.</li>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>number of parallel requests to the repository
 allowed during the import</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$retriesOnConflict</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">3</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>how many ingestion attempts should be taken
+if the repository resource is locked by other request</p>
 </section>
 
             </dd>
@@ -2692,7 +2702,7 @@ version - either Indexer::MIGRATE_NO or Indexer::MIGRATE_YES</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">566</span>
+    <span class="phpdocumentor-element-found-in__line">579</span>
 
     </aside>
 
@@ -2736,7 +2746,7 @@ version - either Indexer::MIGRATE_NO or Indexer::MIGRATE_YES</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">538</span>
+    <span class="phpdocumentor-element-found-in__line">551</span>
 
     </aside>
 

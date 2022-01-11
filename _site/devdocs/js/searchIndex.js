@@ -3441,6 +3441,36 @@ Search.appendIndex(
             "summary": "Form\u0020submit",
             "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_submitForm"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AgenerateMetaUrlString\u0028\u0029",
+            "name": "generateMetaUrlString",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_generateMetaUrlString"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AaddPayload\u0028\u0029",
+            "name": "addPayload",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_addPayload"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AaddSearchText\u0028\u0029",
+            "name": "addSearchText",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_addSearchText"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AaddSearchType\u0028\u0029",
+            "name": "addSearchType",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_addSearchType"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AaddSearchCategory\u0028\u0029",
+            "name": "addSearchCategory",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_addSearchCategory"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AaddSearchDate\u0028\u0029",
+            "name": "addSearchDate",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_addSearchDate"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AcreateBox\u0028\u0029",
             "name": "createBox",
             "summary": "Create\u0020the\u0020checkbox\u0020templates",
@@ -3495,6 +3525,11 @@ Search.appendIndex(
             "name": "reCache",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_reCache"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024searchStr",
+            "name": "searchStr",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_searchStr"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper",
             "name": "ArcheHelper",
@@ -4856,6 +4891,11 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020identifiers\u0020which\u0020are\u0020not\u0020acdh\u0020related",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getNonAcdhIdentifiers"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetNonAcdhApiIdentifiers\u0028\u0029",
+            "name": "getNonAcdhApiIdentifiers",
+            "summary": "Get\u0020all\u0020identifiers\u0020which\u0020are\u0020not\u0020acdh\u0020api\u0020related",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getNonAcdhApiIdentifiers"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetPid\u0028\u0029",
             "name": "getPid",
             "summary": "PID",
@@ -4943,7 +4983,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetCopyResourceLink\u0028\u0029",
             "name": "getCopyResourceLink",
-            "summary": "Select\u0020the\u0020identifier\u0020for\u0020the\u0020Copy\u0020resource\u0020link",
+            "summary": "Select\u0020the\u0020identifier\u0020for\u0020the\u0020Copy\u0020resource\u0020link\nOrder\u0020\u003A\u0020PID\u0020,\u0020ID.acdh.oeaw.ac.at,\u0020arche\u0020api\u0020id\nREDMINE\u0020ID\u003A\u0020\u002319888",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getCopyResourceLink"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetMultiPolygonFirstCoordinate\u0028\u0029",
@@ -4988,7 +5028,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetVCRData\u0028\u0029",
             "name": "getVCRData",
-            "summary": "Create\u0020the\u0020VCR\u0020data\u0020json\u0020string",
+            "summary": "Create\u0020the\u0020VCR\u0020data\u0020json\u0020string\nREDMINE\u0020ID\u003A\u0020\u002319076",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getVCRData"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AgetDataString\u0028\u0029",
@@ -8571,6 +8611,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_getPath"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003AgetUploadsCount\u0028\u0029",
+            "name": "getUploadsCount",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#method_getUploadsCount"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003AversioningAsync\u0028\u0029",
             "name": "versioningAsync",
             "summary": "",
@@ -8660,6 +8705,11 @@ Search.appendIndex(
             "name": "repoRes",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_repoRes"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024uploadsCount",
+            "name": "uploadsCount",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_uploadsCount"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer",
             "name": "Indexer",
@@ -8956,10 +9006,10 @@ Search.appendIndex(
             "summary": "Creates\u0020the\u0020exception",
             "url": "classes/acdhOeaw-arche-lib-ingest-IndexerException.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\IndexerException\u003A\u003AgetProcessedResources\u0028\u0029",
-            "name": "getProcessedResources",
-            "summary": "Returns\u0020the\u0020collection\u0020of\u0020resources\u0020which\u0020were\u0020already\u0020processed\u0020when\nan\u0020error\u0020occured.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-IndexerException.html#method_getProcessedResources"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\IndexerException\u003A\u003AgetCommitedResources\u0028\u0029",
+            "name": "getCommitedResources",
+            "summary": "Returns\u0020the\u0020collection\u0020of\u0020resources\u0020which\u0020were\u0020already\u0020commited\u0020when\nan\u0020error\u0020occured.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-IndexerException.html#method_getCommitedResources"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\IndexerException\u003A\u003AERROR_DURING_IMPORT",
             "name": "ERROR_DURING_IMPORT",
