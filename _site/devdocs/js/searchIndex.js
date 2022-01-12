@@ -3481,6 +3481,11 @@ Search.appendIndex(
             "summary": "this\u0020function\u0020creates\u0020the\u0020search\u0020input\u0020field",
             "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_createSearchInput"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AaddSubmitButton\u0028\u0029",
+            "name": "addSubmitButton",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_addSubmitButton"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AgetCacheLastModificationDate\u0028\u0029",
             "name": "getCacheLastModificationDate",
             "summary": "",
