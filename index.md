@@ -9,6 +9,7 @@ layout: default
 
 * [Metadata API performance](aux/metadata_api_performance.html)
 * [Dissemination services](aux/dissemination_services.html)
+* [Parallel ingestion](aux/parallel_ingestion.html)
 
 # Components
 

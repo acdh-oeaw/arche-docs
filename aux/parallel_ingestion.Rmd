@@ -1,0 +1,114 @@
+---
+title: "ARCHE Parallel Ingestion"
+output:
+  html_document: 
+    toc: yes
+---
+
+# Foreword
+
+Arche-core REST API supports both multiple parallel transactions (since the beginning) and multiple parallel requests within a single transaction (since version 3.2). While parallel ingestion can provide a great speedup there are some limitations and caveats which were discussed below.
+
+# Locks
+
+When there is more than one client trying to modify the same repository resource we must have a way to perform an arbitration between them.
+This is done by imposing the rule that whoever modifies a resource first acquires a lock on it and the lock prevents other clients from modifying this resource until the lock owner releases it. Any other request trying to modify a locked resource receives the `HTTP 409 Conflict` error response (with the response body containing more detailed description of the conflict).
+
+There are two kinds of lock in arche-core:
+
+* Transaction level locks. They prevent interference between different transactions.
+  Transaction level locks are released only at the transaction end.
+* Request level locks. They prevent interference between parallel requests within the same transaction. 
+  A request level lock is released at the end of a given request handling.
+
+It's woth noting that **just referring to an already existing repository resource doesn't acquire a lock on it**
+but **referring to a non-existing repository resource creates it and acquires a lock on it**.
+
+Let's consider three scenarios:
+
+1. Repository resources: `{none}`  
+   Ingested data:
+   ```
+   <newRes> <property> <oldRes> .
+   ```
+2. Repository resources: `<oldRes>`  
+   Ingested data:
+   ```
+   <newRes> <property> <oldRes> .
+   ```
+3. Repository resources: `<oldRes>`  
+   Ingested data:
+   ```
+   <newRes> <property> <oldRes> .
+   <oldRes> <otherProperty> "data" .
+   ```
+
+In the first case the transaction will acquire a lock both on `<newRes>` and `<oldRes>`.  
+In the second case only a lock on the `<newRes>` will be acquired.  
+In the third case locks on both `<newRes>` and `<oldRes>` will be acquired as both resources data will be modified.  
+   
+## Most common lock conflict scenario
+
+Unfortunately the fact that the arche-core supports parallel ingestions does not mean it can automagically protect one transaction from conflicting with the other by trying to modify the same repository resource.
+
+The risk of such conflicts is the highest for named entity resources as the same named entity is likely to exist in many different ingestions and is likely to be referred to from many resources.
+
+The best way to avoid the risk of lock conflicts on named entities is to only refer them with their identifiers (URIs) and manage their detailed metadata separately (with a separate ingestion). As only referring to a resource doesn't acquire a lock on it, there will be no conflict errors.
+
+This approach allows to solve another problem with named entities - overwritting of a named entity resource's curated data already existing in the repository with a dirty data coming from a new ingestion.
+
+## Corner cases
+
+As mentioned above just refering to a resource doesn't acquire a lock on it. This can lead to some corner cases. Let's consider a following sequence of events:
+
+* Initial repository state: `{no resources}`
+* Transaction 1 creates `<res1> <someProperty> "some value" .` and obtains a lock on `<res1>`
+* Transaction 2 creates `<res2> <otherProperty> <res1>`.  
+  As a result it obtains a lock on `<res2>` but there is no conflict with the transaction 1 as the `<res1>` was only referred to and already existed (the transaction isolation level in arche-core is *read uncommitted* so the `<res1>` was already visible to the transaction 2).
+* Transaction 1 rolls back.
+
+What should happen now? We have two possible base scenarios with many subsequent decisions to be made:
+
+1. Transaction 1 owns the `<res1>` and rolls back so the `<res1>` is removed.  
+   Notably it makes the transaction 2 invalid. We have basically two options:
+   a. Cause transaction 2 rollback.  
+      The problem here is it will be a very surprising and difficult to understand for the client performing this transaction.
+   b. Silently drop the problematic triple from `<res2>` metadata.  
+      It is even more problematic - we are silently modifying other transaction without any notification leading to the end repository state which is impossible to understand by the transaction 2 owner. A no-go.
+   c. Silently drop the `<res2>`.  
+      Also a no-go due to the same reason as b.
+2. Transaction 2 depends on the `<res1>` so it can not be removed by the transaction 1 rollback, so the `<res1>` is kept.  
+   Two questions arise in such scenario.
+   First, who should own a lock on the `<res1>` (or maybe it should not be locked).
+   Second, what set of metadata the `<res1>` should contain (should it contain data provided by the transaction 1 or should it be an id-only resource).
+   a. When it comes to locking it should probably be inherited by the transaction 2.
+      Otherwise rollback of both transactions would not get us back to the initial repository state which would be a serious ACID violation and therefore a no-go.
+   b. When it comes to metadata content it is more subtle.
+      Passing the lock on the `<res1>` to the transaction 2 and leaving it a metadata-only resource will not cause trouble in a plain arche-core
+      but it may cause data completeness checks performed by deployment-specific check plugins to fail.  
+      **As for arche-core 3.2 the decision was made to leave `<res1>` metadata as it was provided by the transaction 1** (just because it's the easiest scenario to implement) but this may change in the next major arche-core release.
+
+# Parallel ingestion within the same transaction
+
+Parallel ingestion within the same transaction is very attractive because it can provide a significant speedup.
+This is especially pronounced for the metadata ingestions, e.g. we measured from 4 to 8 times shorter ingestion times.
+
+Unfortunately parallel ingestion within the same transaction require special handling of corner cases which do not affect a single-request-at-once transactions
+
+The easiest way to avoid these problems is to use a higher-level ingestion interface which already takes care of them (like [arche-lib-ingest](https://github.com/acdh-oeaw/arche-lib-ingest))
+
+## Atomic create-or-update
+
+When we ingest data, we typically want to create a repository resources which do not exist yet and update already existing ones.
+An intuitive way of doing that could be:
+
+* Search for a resource
+* If it was found, update it
+* If it was not found, create it
+
+Unfortunately this approach works only if we have a guarantee that a resource can not be created in between of the search and update operations (a so-called atomicity guarantee).
+**The arche-core REST API does not provide us such a guarantee.**
+
+
+Finally it is worth noting that the problem described above is valid also for single-requests-at-once transactions as the *creation between a search and a create* may be also caused by another transaction. Anyway this scenario is pretty rare because the probability of creation/update of exactly same resource at exactly same time between multiple transactions is very low. If two transactions try to create/update the same resource a conflict is far more probable outcome (see the section on locks above).
+
