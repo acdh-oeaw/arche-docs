@@ -106,9 +106,25 @@ An intuitive way of doing that could be:
 * If it was found, update it
 * If it was not found, create it
 
-Unfortunately this approach works only if we have a guarantee that a resource can not be created in between of the search and update operations (a so-called atomicity guarantee).
+Unfortunately this approach works only if we are sure that a resource can not be created in between of the search and update operations (a so-called atomicity guarantee).
 **The arche-core REST API does not provide us such a guarantee.**
+It means it is possible that you will search for a resource, get no result, then try to create it and get the `HTTP 400 unique constraint violation` meaning a resource has been created by another parallel request in between of your search and create requests.
+As a consequence you must trap such an error and act accordingly - try to update the resources instead.
 
+Taking this into account **an optimal approach is to always try to create a resource and switch back to update once you get the `HTTP 400 unique constraint violation` response.** This way the create-or-update operation is always executed with 1 (create) or 2 (failed to create, then update) requests. In comparison the search-update-or-create approach with the creation failure handling requires from 2 (search and update, search and successful create) to 3 (search, failed to create, update) requests per resource.
+
+You may wonder how big is the risk of actually running into such conflicts.
+It depends on how dense is the ingested RDF metadata graph (how many edges it has), how many parallel requests are used and what is the ingestion order.
+From mathematical perspective trying to ingest any complete subgraph (complete without distinguishing between edge properties and directions) in parallel (even with two parallel requests) will lead to the *created in the meantime* conflict.
+For example assuming all resources you are ingesting have an RDF property denoting the same author, it is for sure you will run into at least one *created in the meantime* conflict. And if you have a graph of N resources where every resource points to the other (with any property), it is just impossible to ingest it in parallel.
+Summing up the risk of running into the *created in the meantime* conflict when using parallel requests is high and your code must be prepared for handling conflict errors, e.g. by trying to reingest the resource.
 
 Finally it is worth noting that the problem described above is valid also for single-requests-at-once transactions as the *creation between a search and a create* may be also caused by another transaction. Anyway this scenario is pretty rare because the probability of creation/update of exactly same resource at exactly same time between multiple transactions is very low. If two transactions try to create/update the same resource a conflict is far more probable outcome (see the section on locks above).
 
+## How many parallel requests make sense?
+
+TODO
+
+## arche-lib utils for parallel requests
+
+TODO

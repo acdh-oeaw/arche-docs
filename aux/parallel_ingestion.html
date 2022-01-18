@@ -175,7 +175,12 @@ pre code {
 <li><a href="#most-common-lock-conflict-scenario">Most common lock conflict scenario</a></li>
 <li><a href="#corner-cases">Corner cases</a></li>
 </ul></li>
-<li><a href="#speedup">Speedup</a></li>
+<li><a href="#parallel-ingestion-within-the-same-transaction">Parallel ingestion within the same transaction</a>
+<ul>
+<li><a href="#atomic-create-or-update">Atomic create-or-update</a></li>
+<li><a href="#how-many-parallel-requests-make-sense">How many parallel requests make sense?</a></li>
+<li><a href="#arche-lib-utils-for-parallel-requests">arche-lib utils for parallel requests</a></li>
+</ul></li>
 </ul>
 </div>
 
@@ -210,7 +215,8 @@ In the second case only a lock on the <code>&lt;newRes&gt;</code> will be acquir
 In the third case locks on both <code>&lt;newRes&gt;</code> and <code>&lt;oldRes&gt;</code> will be acquired as both resources data will be modified.</p>
 <div id="most-common-lock-conflict-scenario" class="section level2">
 <h2>Most common lock conflict scenario</h2>
-<p>Named entity resources are probably the most lock conflict-prone ones as the same named entities are likely to exist in many different ingestions and are likely to be referred to from many resources.</p>
+<p>Unfortunately the fact that the arche-core supports parallel ingestions does not mean it can automagically protect one transaction from conflicting with the other by trying to modify the same repository resource.</p>
+<p>The risk of such conflicts is the highest for named entity resources as the same named entity is likely to exist in many different ingestions and is likely to be referred to from many resources.</p>
 <p>The best way to avoid the risk of lock conflicts on named entities is to only refer them with their identifiers (URIs) and manage their detailed metadata separately (with a separate ingestion). As only referring to a resource doesn’t acquire a lock on it, there will be no conflict errors.</p>
 <p>This approach allows to solve another problem with named entities - overwritting of a named entity resource’s curated data already existing in the repository with a dirty data coming from a new ingestion.</p>
 </div>
@@ -246,8 +252,32 @@ Two questions arise in such scenario. First, who should own a lock on the <code>
 </ol>
 </div>
 </div>
-<div id="speedup" class="section level1">
-<h1>Speedup</h1>
+<div id="parallel-ingestion-within-the-same-transaction" class="section level1">
+<h1>Parallel ingestion within the same transaction</h1>
+<p>Parallel ingestion within the same transaction is very attractive because it can provide a significant speedup. This is especially pronounced for the metadata ingestions, e.g. we measured from 4 to 8 times shorter ingestion times.</p>
+<p>Unfortunately parallel ingestion within the same transaction require special handling of corner cases which do not affect a single-request-at-once transactions</p>
+<p>The easiest way to avoid these problems is to use a higher-level ingestion interface which already takes care of them (like <a href="https://github.com/acdh-oeaw/arche-lib-ingest">arche-lib-ingest</a>)</p>
+<div id="atomic-create-or-update" class="section level2">
+<h2>Atomic create-or-update</h2>
+<p>When we ingest data, we typically want to create a repository resources which do not exist yet and update already existing ones. An intuitive way of doing that could be:</p>
+<ul>
+<li>Search for a resource</li>
+<li>If it was found, update it</li>
+<li>If it was not found, create it</li>
+</ul>
+<p>Unfortunately this approach works only if we are sure that a resource can not be created in between of the search and update operations (a so-called atomicity guarantee). <strong>The arche-core REST API does not provide us such a guarantee.</strong> It means it is possible that you will search for a resource, get no result, then try to create it and get the <code>HTTP 400 unique constraint violation</code> meaning a resource has been created by another parallel request in between of your search and create requests. As a consequence you must trap such an error and act accordingly - try to update the resources instead.</p>
+<p>Taking this into account <strong>an optimal approach is to always try to create a resource and switch back to update once you get the <code>HTTP 400 unique constraint violation</code> response.</strong> This way the create-or-update operation is always executed with 1 (create) or 2 (failed to create, then update) requests. In comparison the search-update-or-create approach with the creation failure handling requires from 2 (search and update, search and successful create) to 3 (search, failed to create, update) requests per resource.</p>
+<p>You may wonder how big is the risk of actually running into such conflicts. It depends on how dense is the ingested RDF metadata graph (how many edges it has), how many parallel requests are used and what is the ingestion order. From mathematical perspective trying to ingest any complete subgraph (complete without distinguishing between edge properties and directions) in parallel (even with two parallel requests) will lead to the <em>created in the meantime</em> conflict. For example assuming all resources you are ingesting have an RDF property denoting the same author, it is for sure you will run into at least one <em>created in the meantime</em> conflict. And if you have a graph of N resources where every resource points to the other (with any property), it is just impossible to ingest it in parallel. Summing up the risk of running into the <em>created in the meantime</em> conflict when using parallel requests is high and your code must be prepared for handling conflict errors, e.g. by trying to reingest the resource.</p>
+<p>Finally it is worth noting that the problem described above is valid also for single-requests-at-once transactions as the <em>creation between a search and a create</em> may be also caused by another transaction. Anyway this scenario is pretty rare because the probability of creation/update of exactly same resource at exactly same time between multiple transactions is very low. If two transactions try to create/update the same resource a conflict is far more probable outcome (see the section on locks above).</p>
+</div>
+<div id="how-many-parallel-requests-make-sense" class="section level2">
+<h2>How many parallel requests make sense?</h2>
+<p>TODO</p>
+</div>
+<div id="arche-lib-utils-for-parallel-requests" class="section level2">
+<h2>arche-lib utils for parallel requests</h2>
+<p>TODO</p>
+</div>
 </div>
 
 
