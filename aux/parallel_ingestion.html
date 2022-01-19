@@ -170,9 +170,9 @@ pre code {
 <div id="TOC">
 <ul>
 <li><a href="#foreword">Foreword</a></li>
+<li><a href="#most-common-problem">Most common problem</a></li>
 <li><a href="#locks">Locks</a>
 <ul>
-<li><a href="#most-common-lock-conflict-scenario">Most common lock conflict scenario</a></li>
 <li><a href="#corner-cases">Corner cases</a></li>
 </ul></li>
 <li><a href="#parallel-ingestion-within-the-same-transaction">Parallel ingestion within the same transaction</a>
@@ -188,6 +188,14 @@ pre code {
 <div id="foreword" class="section level1">
 <h1>Foreword</h1>
 <p>Arche-core REST API supports both multiple parallel transactions (since the beginning) and multiple parallel requests within a single transaction (since version 3.2). While parallel ingestion can provide a great speedup there are some limitations and caveats which were discussed below.</p>
+</div>
+<div id="most-common-problem" class="section level1">
+<h1>Most common problem</h1>
+<p>Unfortunately the fact that the arche-core supports parallel ingestions does not mean it can automagically protect one transaction from conflicting with the other when both try to modify the same repository resource at the same time.</p>
+<p>The risk of such conflicts is the highest for named entity resources as the same named entity is likely to exist in many different ingestions and is likely to be referred to from many resources.</p>
+<p><strong>The best way to avoid the risk of lock conflicts on named entities is to only refer them with their identifiers (URIs) and manage their detailed metadata separately (with a separate ingestion).</strong> As only referring to a resource doesn’t acquire a lock on it, there will be no conflict errors (even if the referred resource doesn’t exist and the first transaction will obtain a lock due to its creation, all other won’t conflict with it because they won’t obtain a lock on the created resource).</p>
+<p>This approach allows to solve another problem with named entities - overwritting of a named entity resource’s curated data already existing in the repository with a dirty data coming from a new ingestion.</p>
+<p>Please read the next chapter For the detailed description of the locking system.</p>
 </div>
 <div id="locks" class="section level1">
 <h1>Locks</h1>
@@ -214,13 +222,6 @@ Ingested data:</p>
 <p>In the first case the transaction will acquire a lock both on <code>&lt;newRes&gt;</code> and <code>&lt;oldRes&gt;</code>.<br />
 In the second case only a lock on the <code>&lt;newRes&gt;</code> will be acquired.<br />
 In the third case locks on both <code>&lt;newRes&gt;</code> and <code>&lt;oldRes&gt;</code> will be acquired as both resources data will be modified.</p>
-<div id="most-common-lock-conflict-scenario" class="section level2">
-<h2>Most common lock conflict scenario</h2>
-<p>Unfortunately the fact that the arche-core supports parallel ingestions does not mean it can automagically protect one transaction from conflicting with the other by trying to modify the same repository resource.</p>
-<p>The risk of such conflicts is the highest for named entity resources as the same named entity is likely to exist in many different ingestions and is likely to be referred to from many resources.</p>
-<p>The best way to avoid the risk of lock conflicts on named entities is to only refer them with their identifiers (URIs) and manage their detailed metadata separately (with a separate ingestion). As only referring to a resource doesn’t acquire a lock on it, there will be no conflict errors.</p>
-<p>This approach allows to solve another problem with named entities - overwritting of a named entity resource’s curated data already existing in the repository with a dirty data coming from a new ingestion.</p>
-</div>
 <div id="corner-cases" class="section level2">
 <h2>Corner cases</h2>
 <p>As mentioned above just refering to a resource doesn’t acquire a lock on it. This can lead to some corner cases. Let’s consider a following sequence of events:</p>
