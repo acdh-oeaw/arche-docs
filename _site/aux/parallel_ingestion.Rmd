@@ -90,6 +90,12 @@ Unfortunately parallel ingestion within the same transaction require special han
 
 The easiest way to avoid these problems is to use a higher-level ingestion interface which already takes care of them (like [arche-lib-ingest](https://github.com/acdh-oeaw/arche-lib-ingest))
 
+## Speedup
+
+Tests on real world data gave us following results:
+
+TODO
+
 ## Atomic create-or-update
 
 When we ingest data, we typically want to create a repository resources which do not exist yet and update already existing ones.
@@ -116,8 +122,30 @@ Finally it is worth noting that the problem described above is valid also for si
 
 ## How many parallel requests make sense?
 
-TODO
+As a rule of thumb no more than 10 for metadata ingestion and no more than 3 for binary ingestion.
+
+The details are quite complex but let's try to dig a little into them.
+
+First, by ingesting in parallel we can only reduce an impact of a network latency and a delay introduced by a server-side processing.
+If the bottleneck is somewhere else, e.g. it's network's troughput, we won't benefit from the parallelization.
+This is exactly why the expected benefit for binary ingestion is much lower than for metadata one.
+
+Second problem is the synchronization overhead.
+The repository has to synchronize parallel requests using transaction and within-transaction locks and this process is non-parallel by its very nature.
+It means handling parallel requests adds some synchronization overhead.
+This overhead grows faster than the gain from the parallelization and at some point overweights it. If you push parallelization even further at some point it will become slower than sequential execution.
+
+It's worth noting that:
+
+* The more time-consuming the server-side processing is, the more space for parallelization.
+  E.g. if you don't run any pre-resource-modification plugins in your repository you will stop benefiting from the parallelization much earlier than if you run time-consuming plugins.
+  (it's simple - the bigger locks-unrelated overhead you have on the server side, the biggest is the performance gap to be filled up by the growing synchronization overhead)
+* To avoid "the locks spiral of death" (situation when locks are obtained slower than new lock request come leading to the whole database stall) arche-core acquires locks with a timeout.
+  When the timeout is reached, just an `HTTP 409 Conflict` is returned.
+  It means in practice you won't observe single request handling time growing infinitely once you increase number of parallel requests.
+  At some point you will just start getting (very quick) `HTTP 409 Conflict` responses which you must handle on your own (by basically reducing number of parallel requests and trying to send a request again).
+    * Depending on the underlying database speed it should be able to handle from few to few dozens locks per second. The default timeout is 1 second but it can be tuned by the repository admin (e.g. a fast database with 2 seconds timeout should be able to handle around 150 locks per second while a slow database with a 0.25 second timeout may have problems handling even two parallel requests at once).
 
 ## arche-lib utils for parallel requests
 
-TODO
+TODO - how to use [Repo::map()](https://acdh-oeaw.github.io/arche-docs/devdocs/classes/acdhOeaw-arche-lib-Repo.html#method_map)
