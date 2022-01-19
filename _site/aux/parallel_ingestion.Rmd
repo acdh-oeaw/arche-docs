@@ -2,6 +2,18 @@
 
 Arche-core REST API supports both multiple parallel transactions (since the beginning) and multiple parallel requests within a single transaction (since version 3.2). While parallel ingestion can provide a great speedup there are some limitations and caveats which were discussed below.
 
+# Most common problem
+
+Unfortunately the fact that the arche-core supports parallel ingestions does not mean it can automagically protect one transaction from conflicting with the other when both try to modify the same repository resource at the same time.
+
+The risk of such conflicts is the highest for named entity resources as the same named entity is likely to exist in many different ingestions and is likely to be referred to from many resources.
+
+**The best way to avoid the risk of lock conflicts on named entities is to only refer them with their identifiers (URIs) and manage their detailed metadata separately (with a separate ingestion).** As only referring to a resource doesn't acquire a lock on it, there will be no conflict errors (even if the referred resource doesn't exist and the first transaction will obtain a lock due to its creation, all other won't conflict with it because they won't obtain a lock on the created resource).
+
+This approach allows to solve another problem with named entities - overwritting of a named entity resource's curated data already existing in the repository with a dirty data coming from a new ingestion.
+
+Please read the next chapter For the detailed description of the locking system.
+
 # Locks
 
 When there is more than one client trying to modify the same repository resource we must have a way to perform an arbitration between them.
@@ -40,16 +52,6 @@ In the first case the transaction will acquire a lock both on `<newRes>` and `<o
 In the second case only a lock on the `<newRes>` will be acquired.  
 In the third case locks on both `<newRes>` and `<oldRes>` will be acquired as both resources data will be modified.  
    
-## Most common lock conflict scenario
-
-Unfortunately the fact that the arche-core supports parallel ingestions does not mean it can automagically protect one transaction from conflicting with the other by trying to modify the same repository resource.
-
-The risk of such conflicts is the highest for named entity resources as the same named entity is likely to exist in many different ingestions and is likely to be referred to from many resources.
-
-The best way to avoid the risk of lock conflicts on named entities is to only refer them with their identifiers (URIs) and manage their detailed metadata separately (with a separate ingestion). As only referring to a resource doesn't acquire a lock on it, there will be no conflict errors.
-
-This approach allows to solve another problem with named entities - overwritting of a named entity resource's curated data already existing in the repository with a dirty data coming from a new ingestion.
-
 ## Corner cases
 
 As mentioned above just refering to a resource doesn't acquire a lock on it. This can lead to some corner cases. Let's consider a following sequence of events:
