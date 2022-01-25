@@ -7856,6 +7856,11 @@ Search.appendIndex(
             "summary": "Sets\u0020a\u0020search\u0020queries\u0020logger",
             "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#method_setQueryLog"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003AsortMatchingResources\u0028\u0029",
+            "name": "sortMatchingResources",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#method_sortMatchingResources"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003A\u0024baseUrl",
             "name": "baseUrl",
             "summary": "Repository\u0020REST\u0020API\u0020base\u0020URL",
