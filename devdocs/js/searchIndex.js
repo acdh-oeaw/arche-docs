@@ -4026,14 +4026,34 @@ Search.appendIndex(
             "summary": "Description\u0020of\u0020RootViewHelper",
             "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003AsetProperties\u0028\u0029",
+            "name": "setProperties",
+            "summary": "The\u0020properties\u0020what\u0020we\u0020need\u0020for\u0020this\u0020view",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#method_setProperties"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003AfetchProperties\u0028\u0029",
+            "name": "fetchProperties",
+            "summary": "Fetch\u0020the\u0020property\u0020values\u0020and\u0020create\u0020the\u0020response\u0020object",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#method_fetchProperties"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003AcreateView\u0028\u0029",
             "name": "createView",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#method_createView"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003AsetLanguage\u0028\u0029",
+            "name": "setLanguage",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#method_setLanguage"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003AaddTopCollectionProperty\u0028\u0029",
+            "name": "addTopCollectionProperty",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#method_addTopCollectionProperty"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003AformatResultToGui\u0028\u0029",
             "name": "formatResultToGui",
-            "summary": "We\u0020need\u0020to\u0020format\u0020the\u0020root\u0020results\u0020for\u0020the\u0020gui",
+            "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#method_formatResultToGui"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003AcreateObj\u0028\u0029",
@@ -4041,10 +4061,40 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020root\u0020object\u0020for\u0020gui",
             "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#method_createObj"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003AcreateViewApi\u0028\u0029",
+            "name": "createViewApi",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#method_createViewApi"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003AformatValuesToObject\u0028\u0029",
+            "name": "formatValuesToObject",
+            "summary": "Format\u0020the\u0020Db\u0020result\u0020to\u0020\u0020ResourceObject\u0020values",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#method_formatValuesToObject"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003AsetViewProperties\u0028\u0029",
+            "name": "setViewProperties",
+            "summary": "Set\u0020the\u0020properties\u0020what\u0020we\u0020need\u0020for\u0020this\u0020view,\u0020we\u0020will\u0020fetch\u0020them\u0020from\u0020the\u0020results\u0020array",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#method_setViewProperties"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003A\u0024propData",
+            "name": "propData",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#property_propData"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003A\u0024rootViewObjectArray",
             "name": "rootViewObjectArray",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#property_rootViewObjectArray"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003A\u0024viewProperties",
+            "name": "viewProperties",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#property_viewProperties"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\RootViewHelper\u003A\u003A\u0024result",
+            "name": "result",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-RootViewHelper.html#property_result"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper",
             "name": "SearchViewHelper",
@@ -5250,6 +5300,16 @@ Search.appendIndex(
             "name": "build",
             "summary": "Left\u0020block\u0020build\u0020function",
             "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-StartPageLeftBlock.html#method_build"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\VcrSubmitBlock",
+            "name": "VcrSubmitBlock",
+            "summary": "Provides\u0020a\u0020\u0027VCR\u0027\u0020block.",
+            "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-VcrSubmitBlock.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\VcrSubmitBlock\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-VcrSubmitBlock.html#method_build"
         },                {
             "fqsen": "\\exampleData",
             "name": "exampleData",
