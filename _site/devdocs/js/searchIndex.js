@@ -3326,9 +3326,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003AgenerateView_old\u0028\u0029",
+            "name": "generateView_old",
+            "summary": "Full\u0020text\u0020search\u0020version\u00202",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_generateView_old"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003AgenerateView\u0028\u0029",
             "name": "generateView",
-            "summary": "Full\u0020text\u0020search\u0020version\u00202",
+            "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_generateView"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003Asearch_vcr\u0028\u0029",
@@ -3340,6 +3345,11 @@ Search.appendIndex(
             "name": "pagingHelper",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_pagingHelper"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024searchParams",
+            "name": "searchParams",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_searchParams"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\VersionsController",
             "name": "VersionsController",
@@ -4161,6 +4171,26 @@ Search.appendIndex(
             "summary": "get\u0020the\u0020language\u0020for\u0020the\u0020result\u0020object",
             "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_setupLang"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AparamsToSqlParams\u0028\u0029",
+            "name": "paramsToSqlParams",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_paramsToSqlParams"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AprocessMetaValues\u0028\u0029",
+            "name": "processMetaValues",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_processMetaValues"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AgetParams\u0028\u0029",
+            "name": "getParams",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_getParams"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AgetParamsWords\u0028\u0029",
+            "name": "getParamsWords",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_getParamsWords"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003A\u0024searchViewObjectArray",
             "name": "searchViewObjectArray",
             "summary": "",
@@ -4185,6 +4215,11 @@ Search.appendIndex(
             "name": "objLang",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#property_objLang"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003A\u0024searchParams",
+            "name": "searchParams",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#property_searchParams"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\ArcheModel",
             "name": "ArcheModel",
@@ -4636,20 +4671,15 @@ Search.appendIndex(
             "summary": "get\u0020the\u0020views\u0020data",
             "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_getViewData"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AformatYearsFilter_V2\u0028\u0029",
-            "name": "formatYearsFilter_V2",
-            "summary": "Change\u0020the\u0020years\u0020format\u0020for\u0020the\u0020sql\u0020query",
-            "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_formatYearsFilter_V2"
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AformatWordsFilter\u0028\u0029",
+            "name": "formatWordsFilter",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_formatWordsFilter"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AformatYearsFilter\u0028\u0029",
             "name": "formatYearsFilter",
-            "summary": "",
+            "summary": "Change\u0020the\u0020years\u0020format\u0020for\u0020the\u0020sql\u0020query",
             "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_formatYearsFilter"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AformatTypeFilter_V2\u0028\u0029",
-            "name": "formatTypeFilter_V2",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_formatTypeFilter_V2"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003AformatTypeFilter\u0028\u0029",
             "name": "formatTypeFilter",
@@ -4696,21 +4726,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#method_initPaging"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024repodb",
-            "name": "repodb",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_repodb"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_config"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_repo"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024repolibDB",
             "name": "repolibDB",
             "summary": "",
@@ -4731,15 +4746,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_searchCfg"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024metaObj",
-            "name": "metaObj",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_metaObj"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024log",
             "name": "log",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_log"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024sqlParams",
+            "name": "sqlParams",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Model-SearchViewModel.html#property_sqlParams"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\SearchViewModel\u003A\u003A\u0024limit",
             "name": "limit",
@@ -10965,6 +10980,26 @@ Search.appendIndex(
             "name": "createThumbnail",
             "summary": "Creates\u0020a\u0020thumbnail\u0020with\u0020given\u0020dimensions\u0020for\u0020a\u0020given\u0020resource",
             "url": "classes/acdhOeaw-arche-thumbnails-handler-Fallback.html#method_createThumbnail"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\handler\\Fallback\u003A\u003AcreateFromMap\u0028\u0029",
+            "name": "createFromMap",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-handler-Fallback.html#method_createFromMap"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\handler\\Fallback\u003A\u003AcreateFromTemplate\u0028\u0029",
+            "name": "createFromTemplate",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-handler-Fallback.html#method_createFromTemplate"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\handler\\Fallback\u003A\u003AfindFontSize\u0028\u0029",
+            "name": "findFontSize",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-handler-Fallback.html#method_findFontSize"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\handler\\Fallback\u003A\u003AcreateGeneric\u0028\u0029",
+            "name": "createGeneric",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-handler-Fallback.html#method_createGeneric"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\handler\\HandlerInterface",
             "name": "HandlerInterface",
