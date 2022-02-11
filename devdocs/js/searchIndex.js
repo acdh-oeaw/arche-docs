@@ -4191,6 +4191,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_getParamsWords"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AgetParamsType\u0028\u0029",
+            "name": "getParamsType",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_getParamsType"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AgetParamsCategory\u0028\u0029",
+            "name": "getParamsCategory",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_getParamsCategory"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003A\u0024searchViewObjectArray",
             "name": "searchViewObjectArray",
             "summary": "",
