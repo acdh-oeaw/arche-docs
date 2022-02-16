@@ -218,6 +218,13 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</dd>
 </dt>
 <dd></dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_stream">$stream</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+<dd></dd>
+
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method___construct">__construct()</a>
     <span>
@@ -236,6 +243,13 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</dd>
     <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_escapeLiteral">escapeLiteral()</a>
     <span>
                                 &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_generateOutput">generateOutput()</a>
+    <span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
@@ -261,7 +275,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_outputRdf">outputRdf()</a>
+    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_sendOutput">sendOutput()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -478,6 +492,38 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     
 
 </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_stream">
+        $stream
+        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_stream" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">144</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$stream</span>
+    </code>
+
+    
+    
+    
+
+</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -498,7 +544,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -623,6 +669,62 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_generateOutput">
+        generateOutput()
+        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_generateOutput" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">181</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">generateOutput</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$format</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-core-RepoException.html"><abbr title="\acdhOeaw\arche\core\RepoException">RepoException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getUri">
         getUri()
         <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_getUri" class="headerlink"><i class="fas fa-link"></i></a>
@@ -630,7 +732,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
@@ -663,7 +765,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -715,7 +817,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
 
     </aside>
 
@@ -760,35 +862,25 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_outputRdf">
-        outputRdf()
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_outputRdf" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_sendOutput">
+        sendOutput()
+        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_sendOutput" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">outputRdf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">sendOutput</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
 
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$format</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -810,7 +902,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">252</span>
+    <span class="phpdocumentor-element-found-in__line">282</span>
 
     </aside>
 
@@ -874,7 +966,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">270</span>
+    <span class="phpdocumentor-element-found-in__line">300</span>
 
     </aside>
 
@@ -937,7 +1029,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">192</span>
+    <span class="phpdocumentor-element-found-in__line">213</span>
 
     </aside>
 
@@ -946,8 +1038,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">serializeEasyRdf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -955,8 +1046,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -981,7 +1071,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -990,8 +1080,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">serializeHardf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -999,8 +1088,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1025,7 +1113,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">235</span>
+    <span class="phpdocumentor-element-found-in__line">265</span>
 
     </aside>
 
@@ -1034,8 +1122,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <span class="phpdocumentor-signature__visibility">private</span>
                 <span class="phpdocumentor-signature__name">serializeNTriples</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 

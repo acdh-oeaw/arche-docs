@@ -180,11 +180,32 @@
 <dd>Gets a unique identifier for this Twig extension.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_checkYearIsMoreThanFourDigit">checkYearIsMoreThanFourDigit()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_extendDateFormat">extendDateFormat()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>change the datefomat to work with strftime</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_notNormalDate">notNormalDate()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Return the befrore christ dates where we have 5 digit years numbers</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_returnFormattedDate">returnFormattedDate()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Return the normal 4 digit year dates</dd>
 
         </dl>
 
@@ -245,7 +266,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/TwigExtension/ArcheTwigDateExtension.php"><a href="files/arche-gui-src-twigextension-archetwigdateextension.html"><abbr title="arche-gui/src/TwigExtension/ArcheTwigDateExtension.php">ArcheTwigDateExtension.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -271,6 +292,50 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_checkYearIsMoreThanFourDigit">
+        checkYearIsMoreThanFourDigit()
+        <a href="classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_checkYearIsMoreThanFourDigit" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/TwigExtension/ArcheTwigDateExtension.php"><a href="files/arche-gui-src-twigextension-archetwigdateextension.html"><abbr title="arche-gui/src/TwigExtension/ArcheTwigDateExtension.php">ArcheTwigDateExtension.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">checkYearIsMoreThanFourDigit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_extendDateFormat">
         extendDateFormat()
         <a href="classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_extendDateFormat" class="headerlink"><i class="fas fa-link"></i></a>
@@ -278,7 +343,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/TwigExtension/ArcheTwigDateExtension.php"><a href="files/arche-gui-src-twigextension-archetwigdateextension.html"><abbr title="arche-gui/src/TwigExtension/ArcheTwigDateExtension.php">ArcheTwigDateExtension.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -298,6 +363,122 @@
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_notNormalDate">
+        notNormalDate()
+        <a href="classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_notNormalDate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/TwigExtension/ArcheTwigDateExtension.php"><a href="files/arche-gui-src-twigextension-archetwigdateextension.html"><abbr title="arche-gui/src/TwigExtension/ArcheTwigDateExtension.php">ArcheTwigDateExtension.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return the befrore christ dates where we have 5 digit years numbers</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">notNormalDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Drupal\acdh_repo_gui\TwigExtension\type">type</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dateformat</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Drupal\acdh_repo_gui\TwigExtension\type">type</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$dateformat</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_returnFormattedDate">
+        returnFormattedDate()
+        <a href="classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_returnFormattedDate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/TwigExtension/ArcheTwigDateExtension.php"><a href="files/arche-gui-src-twigextension-archetwigdateextension.html"><abbr title="arche-gui/src/TwigExtension/ArcheTwigDateExtension.php">ArcheTwigDateExtension.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return the normal 4 digit year dates</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">returnFormattedDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Drupal\acdh_repo_gui\TwigExtension\type">type</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dateformat</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Drupal\acdh_repo_gui\TwigExtension\type">type</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Drupal\acdh_repo_gui\TwigExtension\type">type</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$dateformat</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Drupal\acdh_repo_gui\TwigExtension\type">type</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Drupal\acdh_repo_gui\TwigExtension\type">type</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Drupal\acdh_repo_gui\TwigExtension\type">type</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
             </dd>
             </dl>
 

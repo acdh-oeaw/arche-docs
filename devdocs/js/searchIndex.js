@@ -481,11 +481,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Metadata.html#method_negotiateFormat"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\Metadata\u003A\u003AoutputHeaders\u0028\u0029",
-            "name": "outputHeaders",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-core-Metadata.html#method_outputHeaders"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Metadata\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
@@ -541,10 +536,10 @@ Search.appendIndex(
             "summary": "Updates\u0020system\u002Dmanaged\u0020metadata,\u0020e.g.\u0020who\u0020and\u0020when\u0020lastly\u0020modified\u0020a\u0020resource",
             "url": "classes/acdhOeaw-arche-core-Metadata.html#method_manageSystemMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\Metadata\u003A\u003AoutputRdf\u0028\u0029",
-            "name": "outputRdf",
+            "fqsen": "\\acdhOeaw\\arche\\core\\Metadata\u003A\u003AsetResponseBody\u0028\u0029",
+            "name": "setResponseBody",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-core-Metadata.html#method_outputRdf"
+            "url": "classes/acdhOeaw-arche-core-Metadata.html#method_setResponseBody"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Metadata\u003A\u003AautoAddId\u0028\u0029",
             "name": "autoAddId",
@@ -686,6 +681,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-MetadataGui.html#property_data"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataGui\u003A\u003A\u0024stream",
+            "name": "stream",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-MetadataGui.html#property_stream"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly",
             "name": "MetadataReadOnly",
             "summary": "Specialized\u0020version\u0020of\u0020the\u0020Metadata\u0020class.",
@@ -721,10 +721,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_loadFromPdoStatement"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AoutputRdf\u0028\u0029",
-            "name": "outputRdf",
+            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AsendOutput\u0028\u0029",
+            "name": "sendOutput",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_outputRdf"
+            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_sendOutput"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AgenerateOutput\u0028\u0029",
+            "name": "generateOutput",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_generateOutput"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AserializeEasyRdf\u0028\u0029",
             "name": "serializeEasyRdf",
@@ -775,6 +780,11 @@ Search.appendIndex(
             "name": "pdoStmnt",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_pdoStmnt"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003A\u0024stream",
+            "name": "stream",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_stream"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\NoBinaryException",
             "name": "NoBinaryException",
@@ -971,6 +981,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-RestController.html#method_getRequestParameter"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AsetOutput\u0028\u0029",
+            "name": "setOutput",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#method_setOutput"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AappendOutput\u0028\u0029",
+            "name": "appendOutput",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#method_appendOutput"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AsetHeader\u0028\u0029",
+            "name": "setHeader",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#method_setHeader"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AaddHeader\u0028\u0029",
+            "name": "addHeader",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#method_addHeader"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AsendOutput\u0028\u0029",
+            "name": "sendOutput",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#method_sendOutput"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AID_CREATE",
             "name": "ID_CREATE",
             "summary": "",
@@ -1035,6 +1070,16 @@ Search.appendIndex(
             "name": "logId",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-RestController.html#property_logId"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003A\u0024output",
+            "name": "output",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#property_output"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003A\u0024headers",
+            "name": "headers",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#property_headers"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003A\u0024handlersCtl",
             "name": "handlersCtl",
@@ -1430,6 +1475,26 @@ Search.appendIndex(
             "name": "db",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-UserApi.html#property_db"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\OutputFile",
+            "name": "OutputFile",
+            "summary": "Simple\u0020wrapper\u0020allowing\u0020to\u0020distinguish\u0020raw\u0020output\u0020string\u0020from\u0020a\u0020file",
+            "url": "classes/acdhOeaw-arche-core-util-OutputFile.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\OutputFile\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-OutputFile.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\OutputFile\u003A\u003AsendOutput\u0028\u0029",
+            "name": "sendOutput",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-OutputFile.html#method_sendOutput"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\OutputFile\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-OutputFile.html#property_path"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\util\\Spatial",
             "name": "Spatial",
@@ -5791,6 +5856,21 @@ Search.appendIndex(
             "summary": "change\u0020the\u0020datefomat\u0020to\u0020work\u0020with\u0020strftime",
             "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_extendDateFormat"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ArcheTwigDateExtension\u003A\u003AcheckYearIsMoreThanFourDigit\u0028\u0029",
+            "name": "checkYearIsMoreThanFourDigit",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_checkYearIsMoreThanFourDigit"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ArcheTwigDateExtension\u003A\u003AreturnFormattedDate\u0028\u0029",
+            "name": "returnFormattedDate",
+            "summary": "Return\u0020the\u0020normal\u00204\u0020digit\u0020year\u0020dates",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_returnFormattedDate"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ArcheTwigDateExtension\u003A\u003AnotNormalDate\u0028\u0029",
+            "name": "notNormalDate",
+            "summary": "Return\u0020the\u0020befrore\u0020christ\u0020dates\u0020where\u0020we\u0020have\u00205\u0020digit\u0020years\u0020numbers",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_notNormalDate"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ComposerTwigExtension",
             "name": "ComposerTwigExtension",
             "summary": "",
@@ -7065,6 +7145,16 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-exception-Deleted.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\ExceptionUtil",
+            "name": "ExceptionUtil",
+            "summary": "Utility\u0020class\u0020for\u0020unwrapping\u0020errors",
+            "url": "classes/acdhOeaw-arche-lib-exception-ExceptionUtil.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\ExceptionUtil\u003A\u003Aunwrap\u0028\u0029",
+            "name": "unwrap",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-exception-ExceptionUtil.html#method_unwrap"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\NotFound",
             "name": "NotFound",
