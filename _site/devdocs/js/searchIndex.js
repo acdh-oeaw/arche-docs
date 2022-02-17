@@ -61,6 +61,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_escapeBiblatex"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ANO_OVERRIDE",
+            "name": "NO_OVERRIDE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_NO_OVERRIDE"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ATYPE_CONST",
             "name": "TYPE_CONST",
             "summary": "",
@@ -3905,6 +3910,11 @@ Search.appendIndex(
             "name": "initClarinVcrUrl",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_initClarinVcrUrl"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003AreplaceIdString\u0028\u0029",
+            "name": "replaceIdString",
+            "summary": "Format\u0020the\u0020URL\u0020identifier\u0020to\u0020SQL\u0020QUERY\u0020acceptable\u0020format\u0020\u0028adding\u0020http\/https\u0029\nAnd\u0020if\u0020it\u0020is\u0020a\u0020special\u0020identifier\u0020then\u0020we\u0020query\u0020the\u0020acdh\u0020identifier",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-GeneralFunctions.html#method_replaceIdString"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\GeneralFunctions\u003A\u003A\u0024config",
             "name": "config",
