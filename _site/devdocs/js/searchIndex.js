@@ -3396,11 +3396,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method___construct"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003AgenerateView_old\u0028\u0029",
-            "name": "generateView_old",
-            "summary": "Full\u0020text\u0020search\u0020version\u00202",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_generateView_old"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003AgenerateView\u0028\u0029",
             "name": "generateView",
             "summary": "",
@@ -4250,6 +4245,16 @@ Search.appendIndex(
             "name": "paramsToSqlParams",
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_paramsToSqlParams"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AcheckSqlBasicParams\u0028\u0029",
+            "name": "checkSqlBasicParams",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_checkSqlBasicParams"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AsetBasicParamValue\u0028\u0029",
+            "name": "setBasicParamValue",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Helper-SearchViewHelper.html#method_setBasicParamValue"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\SearchViewHelper\u003A\u003AprocessMetaValues\u0028\u0029",
             "name": "processMetaValues",
