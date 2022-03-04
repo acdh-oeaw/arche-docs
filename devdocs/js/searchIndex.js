@@ -6186,6 +6186,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-RPRController.html#method_execute"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\VersionsController",
+            "name": "VersionsController",
+            "summary": "Description\u0020of\u0020VersionsController",
+            "url": "classes/Drupal-arche-gui-api-Controller-VersionsController.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\VersionsController\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-VersionsController.html#method_execute"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHelper",
             "name": "MetadataGuiHelper",
             "summary": "Description\u0020of\u0020MetadataGuiHelper",
@@ -7015,6 +7025,46 @@ Search.appendIndex(
             "name": "model",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Object-RPRObject.html#property_model"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\VersionsObject",
+            "name": "VersionsObject",
+            "summary": "Description\u0020of\u0020VersionsObject",
+            "url": "classes/Drupal-arche-gui-api-Object-VersionsObject.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\VersionsObject\u003A\u003AcreateModel\u0028\u0029",
+            "name": "createModel",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-VersionsObject.html#method_createModel"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\VersionsObject\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-VersionsObject.html#method_init"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\VersionsObject\u003A\u003AprocessData\u0028\u0029",
+            "name": "processData",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-VersionsObject.html#method_processData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\VersionsObject\u003A\u003AcreateTreeData\u0028\u0029",
+            "name": "createTreeData",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-VersionsObject.html#method_createTreeData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\VersionsObject\u003A\u003AgetDateFromDateTime\u0028\u0029",
+            "name": "getDateFromDateTime",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-VersionsObject.html#method_getDateFromDateTime"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\VersionsObject\u003A\u003AconvertToTreeById\u0028\u0029",
+            "name": "convertToTreeById",
+            "summary": "This\u0020func\u0020is\u0020generating\u0020a\u0020child\u0020based\u0020array\u0020from\u0020a\u0020single\u0020array\u0020by\u0020ID",
+            "url": "classes/Drupal-arche-gui-api-Object-VersionsObject.html#method_convertToTreeById"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\VersionsObject\u003A\u003A\u0024model",
+            "name": "model",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-VersionsObject.html#property_model"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\AuthInterface",
             "name": "AuthInterface",
