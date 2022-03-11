@@ -4416,6 +4416,11 @@ Search.appendIndex(
             "summary": "Generate\u0020the\u0020year\u0020box\u0020data",
             "url": "classes/Drupal-acdh-repo-gui-Model-BlocksModel.html#method_getYearsData"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\BlocksModel\u003A\u003AgetMainVersionResourceID\u0028\u0029",
+            "name": "getMainVersionResourceID",
+            "summary": "Get\u0020the\u0020newest\u0020version\u0020id,\u0020to\u0020we\u0020can\u0020fetch\u0020the\u0020whole\u0020tree",
+            "url": "classes/Drupal-acdh-repo-gui-Model-BlocksModel.html#method_getMainVersionResourceID"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Model\\BlocksModel\u003A\u003AgetVersionsData\u0028\u0029",
             "name": "getVersionsData",
             "summary": "Get\u0020the\u0020Versions\u0020block\u0020data",
@@ -6035,6 +6040,11 @@ Search.appendIndex(
             "name": "api_getMetadataGui",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_getMetadataGui"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_versions\u0028\u0029",
+            "name": "api_versions",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_versions"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection\\CollectionBinariesController",
             "name": "CollectionBinariesController",
