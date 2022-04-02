@@ -9388,7 +9388,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003A\u0024debug",
             "name": "debug",
-            "summary": "Turns\u0020debug\u0020messages\u0020on",
+            "summary": "Turns\u0020debug\u0020messages\u0020on.",
             "url": "classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#property_debug"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003A\u0024repo",
