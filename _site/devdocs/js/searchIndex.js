@@ -5491,11 +5491,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_initObject"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestDetailViewUrlDecodeEncode_Decode_Acdh\u0028\u0029",
-            "name": "testDetailViewUrlDecodeEncode_Decode_Acdh",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testDetailViewUrlDecodeEncode_Decode_Acdh"
-        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestDetailViewUrlDecodeEncode_Encode\u0028\u0029",
             "name": "testDetailViewUrlDecodeEncode_Encode",
             "summary": "",
