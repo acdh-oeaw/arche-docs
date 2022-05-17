@@ -1676,6 +1676,21 @@ Search.appendIndex(
             "summary": "The\u0020matching\u0020resource\u0020api\u0020call\u0020for\u0020the\u0020dissemination\u0020service\u0020detail\u0020datatable",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getDisseminationServiceMatchingResourcesApi"
         },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_detail_api\u0028\u0029",
+            "name": "dashboard_detail_api",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_detail_api"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgetValuesByProperty\u0028\u0029",
+            "name": "getValuesByProperty",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByProperty"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgetValuesByPropertyApi\u0028\u0029",
+            "name": "getValuesByPropertyApi",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByPropertyApi"
+        },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003A\u0024data",
             "name": "data",
             "summary": "",
@@ -1755,6 +1770,11 @@ Search.appendIndex(
             "name": "countAllMatchingResourcesForDisseminationService",
             "summary": "Count\u0020the\u0020selected\u0020dissemination\u0020service\u0020matching\u0020resources",
             "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_countAllMatchingResourcesForDisseminationService"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetValuesByPropertyApiData\u0028\u0029",
+            "name": "getValuesByPropertyApiData",
+            "summary": "Get\u0020the\u0020values\u0020by\u0020property\u0020data",
+            "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_getValuesByPropertyApiData"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AchangeBackDBConnection\u0028\u0029",
             "name": "changeBackDBConnection",
@@ -3310,16 +3330,6 @@ Search.appendIndex(
             "name": "repo_3d_viewer",
             "summary": "Display\u0020the\u00203d\u0020object\u0020\u0028nxs,\u0020ply\u0029\u0020inside\u0020a\u0020js\u0020viewer",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_3d_viewer"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_3d_viewer_v2\u0028\u0029",
-            "name": "repo_3d_viewer_v2",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_3d_viewer_v2"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_3d_viewer_v3\u0028\u0029",
-            "name": "repo_3d_viewer_v3",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DisseminationServicesController.html#method_repo_3d_viewer_v3"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DisseminationServicesController\u003A\u003Arepo_pdf_viewer\u0028\u0029",
             "name": "repo_pdf_viewer",
