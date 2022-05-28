@@ -10636,6 +10636,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorFile.html#property_count"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorFile\u003A\u003A\u0024normalizer",
+            "name": "normalizer",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorFile.html#property_normalizer"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorInterface",
             "name": "NamedEntityIteratorInterface",
             "summary": "",
