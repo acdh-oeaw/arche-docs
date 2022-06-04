@@ -10531,6 +10531,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityFile.html#property_iter"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityFile\u003A\u003A\u0024normalizer",
+            "name": "normalizer",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-NamedEntityFile.html#property_normalizer"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityInterface",
             "name": "NamedEntityInterface",
             "summary": "",
