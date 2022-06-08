@@ -3251,11 +3251,6 @@ Search.appendIndex(
             "summary": "the\u0020detail\u0020view",
             "url": "classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_detailViewMainMethod"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AcheckVersions\u0028\u0029",
-            "name": "checkVersions",
-            "summary": "Check\u0020if\u0020the\u0020actual\u0020resource\u0020has\u0020a\u0020newer\u0020version",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-DetailViewController.html#method_checkVersions"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\DetailViewController\u003A\u003AsetBreadcrumb\u0028\u0029",
             "name": "setBreadcrumb",
             "summary": "set\u0020up\u0020the\u0020breadcrumb\u0020data",
@@ -6051,6 +6046,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_versions"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_versions_list\u0028\u0029",
+            "name": "api_versions_list",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_versions_list"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection\\CollectionBinariesController",
             "name": "CollectionBinariesController",
             "summary": "Description\u0020of\u0020CollectionBinariesController",
@@ -6208,8 +6208,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\VersionsController\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
-            "summary": "",
+            "summary": "Create\u0020Object\u0020for\u0020the\u0020versions\u0020tree\u0020view",
             "url": "classes/Drupal-arche-gui-api-Controller-VersionsController.html#method_execute"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\VersionsController\u003A\u003AexecuteList\u0028\u0029",
+            "name": "executeList",
+            "summary": "Create\u0020the\u0020normal\u0020list\u0020view\u0020API\u0020for\u0020the\u0020versions",
+            "url": "classes/Drupal-arche-gui-api-Controller-VersionsController.html#method_executeList"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\VersionsController\u003A\u003AcheckVersions\u0028\u0029",
+            "name": "checkVersions",
+            "summary": "Check\u0020if\u0020the\u0020actual\u0020resource\u0020has\u0020a\u0020newer\u0020version",
+            "url": "classes/Drupal-arche-gui-api-Controller-VersionsController.html#method_checkVersions"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHelper",
             "name": "MetadataGuiHelper",
