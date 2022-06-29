@@ -5206,6 +5206,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020defined\u0020property\u0020String\u0020values",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_getDataString"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003AisContactDetails\u0028\u0029",
+            "name": "isContactDetails",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#method_isContactDetails"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
@@ -6043,13 +6048,28 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_versions\u0028\u0029",
             "name": "api_versions",
-            "summary": "",
+            "summary": "Fetch\u0020the\u0020versions\u0020data\u0020for\u0020the\u0020tree",
             "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_versions"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_versions_list\u0028\u0029",
             "name": "api_versions_list",
-            "summary": "",
+            "summary": "fetch\u0020the\u0020versions\u0020list",
             "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_versions_list"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_get_hasActor\u0028\u0029",
+            "name": "api_get_hasActor",
+            "summary": "Fetch\u0020the\u0020values\u0020for\u0020the\u0020person\u0020view,\u0020where\u0020the\u0020actual\u0020person\u0020is\u0020the\u0020hasActor",
+            "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_get_hasActor"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Child\\ChildController",
+            "name": "ChildController",
+            "summary": "Description\u0020of\u0020RPRController",
+            "url": "classes/Drupal-arche-gui-api-Controller-Child-ChildController.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Child\\ChildController\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-Child-ChildController.html#method_execute"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection\\CollectionBinariesController",
             "name": "CollectionBinariesController",
@@ -6441,6 +6461,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Model-ArcheApiModel.html#property_siteLang"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\Child\\ChildModel",
+            "name": "ChildModel",
+            "summary": "Description\u0020of\u0020RPRModel",
+            "url": "classes/Drupal-arche-gui-api-Model-Child-ChildModel.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\Child\\ChildModel\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Model-Child-ChildModel.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\Child\\ChildModel\u003A\u003AgetData\u0028\u0029",
+            "name": "getData",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Model-Child-ChildModel.html#method_getData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\Child\\ChildModel\u003A\u003AformatTypeFilter\u0028\u0029",
+            "name": "formatTypeFilter",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Model-Child-ChildModel.html#method_formatTypeFilter"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\Child\\ChildModel\u003A\u003A\u0024sqlTypes",
+            "name": "sqlTypes",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Model-Child-ChildModel.html#property_sqlTypes"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Model\\Collection\\CollectionBinariesModel",
             "name": "CollectionBinariesModel",
             "summary": "Description\u0020of\u0020CollectionBinariesModel",
@@ -6580,6 +6625,31 @@ Search.appendIndex(
             "name": "getData",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Model-RPRModel.html#method_getData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\Child\\ChildObject",
+            "name": "ChildObject",
+            "summary": "Description\u0020of\u0020RPRObject",
+            "url": "classes/Drupal-arche-gui-api-Object-Child-ChildObject.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\Child\\ChildObject\u003A\u003AcreateModel\u0028\u0029",
+            "name": "createModel",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-Child-ChildObject.html#method_createModel"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\Child\\ChildObject\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-Child-ChildObject.html#method_init"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\Child\\ChildObject\u003A\u003AprocessData\u0028\u0029",
+            "name": "processData",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-Child-ChildObject.html#method_processData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\Child\\ChildObject\u003A\u003A\u0024model",
+            "name": "model",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-Child-ChildObject.html#property_model"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\Collection\\CollectionBinariesObject",
             "name": "CollectionBinariesObject",
@@ -11631,6 +11701,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/drupal-arche-gui-api.html"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Child",
+            "name": "Child",
+            "summary": "",
+            "url": "namespaces/drupal-arche-gui-api-controller-child.html"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Collection",
             "name": "Collection",
             "summary": "",
@@ -11671,6 +11746,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/drupal-arche-gui-api-model.html"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\Child",
+            "name": "Child",
+            "summary": "",
+            "url": "namespaces/drupal-arche-gui-api-model-child.html"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Model\\Collection",
             "name": "Collection",
             "summary": "",
@@ -11685,6 +11765,11 @@ Search.appendIndex(
             "name": "Ontology",
             "summary": "",
             "url": "namespaces/drupal-arche-gui-api-model-ontology.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\Child",
+            "name": "Child",
+            "summary": "",
+            "url": "namespaces/drupal-arche-gui-api-object-child.html"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\Collection",
             "name": "Collection",
