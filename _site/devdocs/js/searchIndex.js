@@ -6051,6 +6051,11 @@ Search.appendIndex(
             "summary": "Fetch\u0020the\u0020versions\u0020data\u0020for\u0020the\u0020tree",
             "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_versions"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_versions_alert\u0028\u0029",
+            "name": "api_versions_alert",
+            "summary": "Fetch\u0020the\u0020newer\u0020verison\u0020for\u0020the\u0020alert\u0020div",
+            "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_versions_alert"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_versions_list\u0028\u0029",
             "name": "api_versions_list",
             "summary": "fetch\u0020the\u0020versions\u0020list",
@@ -6236,10 +6241,10 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020normal\u0020list\u0020view\u0020API\u0020for\u0020the\u0020versions",
             "url": "classes/Drupal-arche-gui-api-Controller-VersionsController.html#method_executeList"
         },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\VersionsController\u003A\u003AcheckVersions\u0028\u0029",
-            "name": "checkVersions",
-            "summary": "Check\u0020if\u0020the\u0020actual\u0020resource\u0020has\u0020a\u0020newer\u0020version",
-            "url": "classes/Drupal-arche-gui-api-Controller-VersionsController.html#method_checkVersions"
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\VersionsController\u003A\u003AgetAlertDiv\u0028\u0029",
+            "name": "getAlertDiv",
+            "summary": "Get\u0020the\u0020alert\u0020div\u0020Id\u0020for\u0020the\u0020gui\u0020detail\u0020page\u0020header",
+            "url": "classes/Drupal-arche-gui-api-Controller-VersionsController.html#method_getAlertDiv"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHelper",
             "name": "MetadataGuiHelper",
