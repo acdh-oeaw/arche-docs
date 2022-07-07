@@ -5441,110 +5441,70 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/exampleData.html#method_exampleResourceData"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest",
-            "name": "ArcheApiHelperTest",
-            "summary": "Tests\u0020ArcheApiHelper",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003AsetUpBeforeClass\u0028\u0029",
-            "name": "setUpBeforeClass",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#method_setUpBeforeClass"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003AsetUp\u0028\u0029",
-            "name": "setUp",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#method_setUp"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003AinitObject\u0028\u0029",
-            "name": "initObject",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#method_initObject"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#property_repo"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#property_config"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003A\u0024object",
-            "name": "object",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#property_object"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\ArcheApiHelperTest\u003A\u003A\u0024mdStub",
-            "name": "mdStub",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-ArcheApiHelperTest.html#property_mdStub"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest",
             "name": "GeneralFunctionsTest",
             "summary": "Tests\u0020GeneralFunctions",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AsetUpBeforeClass\u0028\u0029",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest\u003A\u003AsetUpBeforeClass\u0028\u0029",
             "name": "setUpBeforeClass",
             "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_setUpBeforeClass"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html#method_setUpBeforeClass"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AsetUp\u0028\u0029",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest\u003A\u003AsetUp\u0028\u0029",
             "name": "setUp",
             "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_setUp"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html#method_setUp"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AinitObject\u0028\u0029",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest\u003A\u003AinitObject\u0028\u0029",
             "name": "initObject",
             "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_initObject"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html#method_initObject"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestDetailViewUrlDecodeEncode_Encode\u0028\u0029",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest\u003A\u003AtestDetailViewUrlDecodeEncode_Encode\u0028\u0029",
             "name": "testDetailViewUrlDecodeEncode_Encode",
             "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testDetailViewUrlDecodeEncode_Encode"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html#method_testDetailViewUrlDecodeEncode_Encode"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AexampleUUIDData\u0028\u0029",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest\u003A\u003AexampleUUIDData\u0028\u0029",
             "name": "exampleUUIDData",
             "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_exampleUUIDData"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html#method_exampleUUIDData"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestSpecialIdentifierToUUID_ViewData\u0028\u0029",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest\u003A\u003AtestSpecialIdentifierToUUID_ViewData\u0028\u0029",
             "name": "testSpecialIdentifierToUUID_ViewData",
             "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testSpecialIdentifierToUUID_ViewData"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html#method_testSpecialIdentifierToUUID_ViewData"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003AtestSpecialIdentifierToUUID_UrlEncode\u0028\u0029",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest\u003A\u003AtestSpecialIdentifierToUUID_UrlEncode\u0028\u0029",
             "name": "testSpecialIdentifierToUUID_UrlEncode",
             "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#method_testSpecialIdentifierToUUID_UrlEncode"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html#method_testSpecialIdentifierToUUID_UrlEncode"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003A\u0024repo",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#property_repo"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html#property_repo"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003A\u0024config",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#property_config"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html#property_config"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003A\u0024object",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest\u003A\u003A\u0024object",
             "name": "object",
             "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#property_object"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html#property_object"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003A\u0024gfStub",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest\u003A\u003A\u0024gfStub",
             "name": "gfStub",
             "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#property_gfStub"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html#property_gfStub"
         },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\GeneralFunctionsTest\u003A\u003A\u0024gfService",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper\\GeneralFunctionsTest\u003A\u003A\u0024gfService",
             "name": "gfService",
             "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-GeneralFunctionsTest.html#property_gfService"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Helper-GeneralFunctionsTest.html#property_gfService"
         },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object\\ResourceObjectTest",
             "name": "ResourceObjectTest",
@@ -5706,45 +5666,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Object-ResourceObjectTest.html#property_resourceData"
         },                {
-            "fqsen": "\\PHPUnitUtil",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\PHPUnitUtil",
             "name": "PHPUnitUtil",
             "summary": "Description\u0020of\u0020PHPUnitUtil",
-            "url": "classes/PHPUnitUtil.html"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-PHPUnitUtil.html"
         },                {
-            "fqsen": "\\PHPUnitUtil\u003A\u003AcallMethod\u0028\u0029",
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\PHPUnitUtil\u003A\u003AcallMethod\u0028\u0029",
             "name": "callMethod",
             "summary": "",
-            "url": "classes/PHPUnitUtil.html#method_callMethod"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Traits\\ArcheUtilTraitTest",
-            "name": "ArcheUtilTraitTest",
-            "summary": "Tests\u0020ArcheUtilTrait",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Traits-ArcheUtilTraitTest.html"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Traits\\ArcheUtilTraitTest\u003A\u003AsetUp\u0028\u0029",
-            "name": "setUp",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Traits-ArcheUtilTraitTest.html#method_setUp"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Traits\\ArcheUtilTraitTest\u003A\u003AsetUpBeforeClass\u0028\u0029",
-            "name": "setUpBeforeClass",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Traits-ArcheUtilTraitTest.html#method_setUpBeforeClass"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Traits\\ArcheUtilTraitTest\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Traits-ArcheUtilTraitTest.html#property_config"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Traits\\ArcheUtilTraitTest\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Traits-ArcheUtilTraitTest.html#property_repo"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Traits\\ArcheUtilTraitTest\u003A\u003A\u0024absObj",
-            "name": "absObj",
-            "summary": "",
-            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-Traits-ArcheUtilTraitTest.html#property_absObj"
+            "url": "classes/Drupal-Tests-acdh-repo-gui-Unit-PHPUnitUtil.html#method_callMethod"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Traits\\ArcheUtilTrait",
             "name": "ArcheUtilTrait",
@@ -11661,6 +11591,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/drupal-acdh-repo-gui-plugin.html"
         },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Helper",
+            "name": "Helper",
+            "summary": "",
+            "url": "namespaces/drupal-tests-acdh-repo-gui-unit-helper.html"
+        },                {
+            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object",
+            "name": "Object",
+            "summary": "",
+            "url": "namespaces/drupal-tests-acdh-repo-gui-unit-object.html"
+        },                {
             "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit",
             "name": "Unit",
             "summary": "",
@@ -11675,16 +11615,6 @@ Search.appendIndex(
             "name": "Tests",
             "summary": "",
             "url": "namespaces/drupal-tests.html"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Object",
-            "name": "Object",
-            "summary": "",
-            "url": "namespaces/drupal-tests-acdh-repo-gui-unit-object.html"
-        },                {
-            "fqsen": "\\Drupal\\Tests\\acdh_repo_gui\\Unit\\Traits",
-            "name": "Traits",
-            "summary": "",
-            "url": "namespaces/drupal-tests-acdh-repo-gui-unit-traits.html"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Traits",
             "name": "Traits",
