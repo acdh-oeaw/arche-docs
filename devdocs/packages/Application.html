@@ -150,6 +150,14 @@
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupInterface.html"><abbr title="\acdhOeaw\arche\lib\ingest\metaLookup\MetaLookupInterface">MetaLookupInterface</abbr></a></dt>
         <dd>It is a common problem to couple binary data with their metadata.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/acdhOeaw-arche-oaipmh-deleted-DeletedInterface.html"><abbr title="\acdhOeaw\arche\oaipmh\deleted\DeletedInterface">DeletedInterface</abbr></a></dt>
+        <dd>Interface for OAI-PMH deleted records implementations.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/acdhOeaw-arche-oaipmh-metadata-MetadataInterface.html"><abbr title="\acdhOeaw\arche\oaipmh\metadata\MetadataInterface">MetadataInterface</abbr></a></dt>
+        <dd>Interface for different metadata providers.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html"><abbr title="\acdhOeaw\arche\oaipmh\search\SearchInterface">SearchInterface</abbr></a></dt>
+        <dd>Interface for classes implementing OAI-PMH resources search.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/acdhOeaw-arche-oaipmh-set-SetInterface.html"><abbr title="\acdhOeaw\arche\oaipmh\set\SetInterface">SetInterface</abbr></a></dt>
+        <dd>Interface for OAI-PMH sets implementations.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/acdhOeaw-arche-refSources-NamedEntityInterface.html"><abbr title="\acdhOeaw\arche\refSources\NamedEntityInterface">NamedEntityInterface</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/acdhOeaw-arche-refSources-NamedEntityIteratorInterface.html"><abbr title="\acdhOeaw\arche\refSources\NamedEntityIteratorInterface">NamedEntityIteratorInterface</abbr></a></dt>
@@ -595,6 +603,66 @@ API endpoint for METADATA Editor</dd>
         <dd>Description of PlacesObject</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Drupal-arche-mde-api-Object-Types-PublicationsObject.html"><abbr title="\Drupal\arche_mde_api\Object\Types\PublicationsObject">PublicationsObject</abbr></a></dt>
         <dd>Description of PublicationsObject</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-Cache.html"><abbr title="\acdhOeaw\arche\oaipmh\Cache">Cache</abbr></a></dt>
+        <dd>Implements simple caching</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-data-HeaderData.html"><abbr title="\acdhOeaw\arche\oaipmh\data\HeaderData">HeaderData</abbr></a></dt>
+        <dd>Container for data required to generate OAI-PMH resource&#039;s header.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"><abbr title="\acdhOeaw\arche\oaipmh\data\MetadataFormat">MetadataFormat</abbr></a></dt>
+        <dd>Container for OAI-PMH metada format data (both properties used by the OAI-PMH
+protocol and by this implementation).</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-data-RepositoryInfo.html"><abbr title="\acdhOeaw\arche\oaipmh\data\RepositoryInfo">RepositoryInfo</abbr></a></dt>
+        <dd>Container for OAI-PMH repository information</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-data-SetInfo.html"><abbr title="\acdhOeaw\arche\oaipmh\data\SetInfo">SetInfo</abbr></a></dt>
+        <dd>Simple container for OAI-PMH set data
+(https://www.openarchives.org/OAI/openarchivesprotocol.html#Set)</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-deleted-No.html"><abbr title="\acdhOeaw\arche\oaipmh\deleted\No">No</abbr></a></dt>
+        <dd>Implementation of the `acdhOeaw\arche\oaipmh\deleted\DeletedInterface`
+for repositories not providing data on deleted resources.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-deleted-RdfProperty.html"><abbr title="\acdhOeaw\arche\oaipmh\deleted\RdfProperty">RdfProperty</abbr></a></dt>
+        <dd>Implementation of the `acdhOeaw\arche\oaipmh\deleted\DeletedInterface` deriving
+information on a resource deletion from existence of a given RDF triple
+in the resource metadata.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-deleted-Tombstone.html"><abbr title="\acdhOeaw\arche\oaipmh\deleted\Tombstone">Tombstone</abbr></a></dt>
+        <dd>Description of Tombstone</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-metadata-CmdiMetadata.html"><abbr title="\acdhOeaw\arche\oaipmh\metadata\CmdiMetadata">CmdiMetadata</abbr></a></dt>
+        <dd>Specialization of ResMetadata class checking if the CMDI schema matches
+metadata format requested by the user.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-metadata-DcMetadata.html"><abbr title="\acdhOeaw\arche\oaipmh\metadata\DcMetadata">DcMetadata</abbr></a></dt>
+        <dd>Creates OAI-PMH &amp;lt;metadata&amp;gt; element in Dublin Core format from
+a FedoraResource RDF metadata.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html"><abbr title="\acdhOeaw\arche\oaipmh\metadata\LiveCmdiMetadata">LiveCmdiMetadata</abbr></a></dt>
+        <dd>Creates &lt;metadata&gt; element by filling in an XML template with values
+read from the repository resource&#039;s metadata.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-metadata-RdfXml.html"><abbr title="\acdhOeaw\arche\oaipmh\metadata\RdfXml">RdfXml</abbr></a></dt>
+        <dd>Creates OAI-PMH &amp;lt;metadata&amp;gt; element in as an RDF-XML serialization of
+a FedoraResource RDF metadata.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-metadata-ResMetadata.html"><abbr title="\acdhOeaw\arche\oaipmh\metadata\ResMetadata">ResMetadata</abbr></a></dt>
+        <dd>Creates &amp;lt;metadata&amp;gt; element by simply taking binary content of another
+repository resource.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-metadata-ValueMapper.html"><abbr title="\acdhOeaw\arche\oaipmh\metadata\ValueMapper">ValueMapper</abbr></a></dt>
+        <dd>Provides vocabulary mappings. Assumes a value is an URL which can be resolved
+to the RDF . Then extracts given property values from the RDF.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-Oai.html"><abbr title="\acdhOeaw\arche\oaipmh\Oai">Oai</abbr></a></dt>
+        <dd>Implements controller for the OAI-PMH service:
+- checks OAI-PMH requests correctness,
+- handles OAI-PMH `identify` and `ListMetadataFormats` commands
+- delegates OAI-PMH `GetRecord`, `ListIdentifiers` and `ListRecords` commands
+  to a chosen class implementing the `acdhOeaw\arche\oaipmh\search\SearchInterface`
+- delegates OAI-PMH `ListSets` command to a chosen class extending the
+  `acdhOeaw\arche\oaipmh\set\SetInterface` class.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-OaiException.html"><abbr title="\acdhOeaw\arche\oaipmh\OaiException">OaiException</abbr></a></dt>
+        <dd>Simple specialized exception class to easy distinguish between OAI-PMH and
+internal exceptions.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html"><abbr title="\acdhOeaw\arche\oaipmh\search\BaseSearch">BaseSearch</abbr></a></dt>
+        <dd>Implements basic OAI-PMH search. It is assumed that all OAI-PMH search
+facets (id, date, set) and data required to create &lt;header&gt; nodes (again id,
+date, set) are accessible as repository resource&#039;s metadata RDF properties.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-set-Complex.html"><abbr title="\acdhOeaw\arche\oaipmh\set\Complex">Complex</abbr></a></dt>
+        <dd>Provides full sets support.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-set-NoSets.html"><abbr title="\acdhOeaw\arche\oaipmh\set\NoSets">NoSets</abbr></a></dt>
+        <dd>Implements proper reporting of repository without sets.</dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-set-Simple.html"><abbr title="\acdhOeaw\arche\oaipmh\set\Simple">Simple</abbr></a></dt>
+        <dd>Provides very simple and straightforward implementation of sets.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-refSources-NamedEntityFile.html"><abbr title="\acdhOeaw\arche\refSources\NamedEntityFile">NamedEntityFile</abbr></a></dt>
         <dd>Description of RefResourceFile</dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-refSources-NamedEntityIteratorFile.html"><abbr title="\acdhOeaw\arche\refSources\NamedEntityIteratorFile">NamedEntityIteratorFile</abbr></a></dt>
