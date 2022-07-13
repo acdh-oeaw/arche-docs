@@ -146,7 +146,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -244,11 +244,39 @@ descriptor).</p>
 <dd>High-level repository API handle object</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_resumptionCount">$resumptionCount</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+<dd>Total number of resources of the original search read from the resumption dump file</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_resumptionCursor">$resumptionCursor</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+<dd>Value of the resumptionCursor attribute read from the resumption dump file</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_resumptionToken">$resumptionToken</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+<dd>Resumption token value used</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_sets">$sets</a>
     <span>
                         &nbsp;: <a href="classes/acdhOeaw-arche-oaipmh-set-SetInterface.html"><abbr title="\acdhOeaw\arche\oaipmh\set\SetInterface">SetInterface</abbr></a>            </span>
 </dt>
 <dd>Object handling sets</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_t0">$t0</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+<dd>Object creation timestamp. Used to determine resumption timeout.</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method___construct">__construct()</a>
@@ -256,6 +284,13 @@ descriptor).</p>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Creates a search engine object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_checkResumptionTimeout">checkResumptionTimeout()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Checks if the timeout for resumption token generation has been reached.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_find">find()</a>
@@ -287,6 +322,14 @@ descriptor).</p>
 <dd>Provides the `MetadataInterface` object for a given search result.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getResumptionToken">getResumptionToken()</a>
+    <span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-oaipmh-data-ResumptionTokenData.html"><abbr title="\acdhOeaw\arche\oaipmh\data\ResumptionTokenData">ResumptionTokenData</abbr></a>    </span>
+</dt>
+<dd>Saves the current search in a way it can be recreated from the
+resumption token and returns the resumption token data.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_setLogger">setLogger()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -299,6 +342,20 @@ descriptor).</p>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Sets metadata format configuration</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findQuery">findQuery()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findResumptionToken">findResumptionToken()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getDateFilter">getDateFilter()</a>
@@ -349,7 +406,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -383,7 +440,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -417,7 +474,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -451,7 +508,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -485,7 +542,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -518,7 +575,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -543,6 +600,105 @@ descriptor).</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_resumptionCount">
+        $resumptionCount
+        <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_resumptionCount" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">112</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Total number of resources of the original search read from the resumption dump file</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$resumptionCount</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_resumptionCursor">
+        $resumptionCursor
+        <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_resumptionCursor" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Value of the resumptionCursor attribute read from the resumption dump file</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$resumptionCursor</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_resumptionToken">
+        $resumptionToken
+        <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_resumptionToken" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">100</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Resumption token value used</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$resumptionToken</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_sets">
         $sets
         <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_sets" class="headerlink"><i class="fas fa-link"></i></a>
@@ -552,7 +708,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -567,6 +723,39 @@ descriptor).</p>
     
         <section class="phpdocumentor-description"></section>
 
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_t0">
+        $t0
+        <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_t0" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">118</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Object creation timestamp. Used to determine resumption timeout.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$t0</span>
+    </code>
+
+    
+    
     
 
 </article>
@@ -590,7 +779,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -651,6 +840,41 @@ descriptor).</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_checkResumptionTimeout">
+        checkResumptionTimeout()
+        <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_checkResumptionTimeout" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">185</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Checks if the timeout for resumption token generation has been reached.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">checkResumptionTimeout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>If it is reached, returns true.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_find">
         find()
         <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_find" class="headerlink"><i class="fas fa-link"></i></a>
@@ -658,7 +882,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
@@ -666,7 +890,7 @@ descriptor).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">find</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$until</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$set</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">find</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$until</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$set</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resumptionToken</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -707,6 +931,15 @@ descriptor).</p>
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resumptionToken</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>resumption token</p>
+</section>
+
+            </dd>
             </dl>
 
     
@@ -730,7 +963,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -764,7 +997,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -809,7 +1042,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">198</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
     </aside>
 
@@ -847,6 +1080,52 @@ descriptor).</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getResumptionToken">
+        getResumptionToken()
+        <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getResumptionToken" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">189</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Saves the current search in a way it can be recreated from the
+resumption token and returns the resumption token data.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getResumptionToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pos</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-oaipmh-data-ResumptionTokenData.html"><abbr title="\acdhOeaw\arche\oaipmh\data\ResumptionTokenData">ResumptionTokenData</abbr></a></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pos</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>index of last read resource</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-oaipmh-data-ResumptionTokenData.html"><abbr title="\acdhOeaw\arche\oaipmh\data\ResumptionTokenData">ResumptionTokenData</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setLogger">
         setLogger()
         <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_setLogger" class="headerlink"><i class="fas fa-link"></i></a>
@@ -854,7 +1133,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">260</span>
+    <span class="phpdocumentor-element-found-in__line">348</span>
 
     </aside>
 
@@ -897,7 +1176,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">357</span>
 
     </aside>
 
@@ -935,6 +1214,118 @@ descriptor).</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_findQuery">
+        findQuery()
+        <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findQuery" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">234</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">findQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$until</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$set</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$from</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$until</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$set</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_findResumptionToken">
+        findResumptionToken()
+        <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findResumptionToken" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">209</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">findResumptionToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$token</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getDateFilter">
         getDateFilter()
         <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getDateFilter" class="headerlink"><i class="fas fa-link"></i></a>
@@ -942,7 +1333,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">224</span>
+    <span class="phpdocumentor-element-found-in__line">312</span>
 
     </aside>
 
@@ -996,7 +1387,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">297</span>
 
     </aside>
 
@@ -1041,7 +1432,7 @@ descriptor).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">334</span>
 
     </aside>
 

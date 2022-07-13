@@ -10746,6 +10746,41 @@ Search.appendIndex(
             "summary": "Date\u0020granularity\u0020\u0028defaults\u0020to\u0020Fedora\u0020dates\u0020granularity\u0029",
             "url": "classes/acdhOeaw-arche-oaipmh-data-RepositoryInfo.html#property_granularity"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\ResumptionTokenData",
+            "name": "ResumptionTokenData",
+            "summary": "Description\u0020of\u0020ResumptionTokenData",
+            "url": "classes/acdhOeaw-arche-oaipmh-data-ResumptionTokenData.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\ResumptionTokenData\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-data-ResumptionTokenData.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\ResumptionTokenData\u003A\u003AasXml\u0028\u0029",
+            "name": "asXml",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-data-ResumptionTokenData.html#method_asXml"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\ResumptionTokenData\u003A\u003A\u0024token",
+            "name": "token",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-data-ResumptionTokenData.html#property_token"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\ResumptionTokenData\u003A\u003A\u0024expirationDate",
+            "name": "expirationDate",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-data-ResumptionTokenData.html#property_expirationDate"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\ResumptionTokenData\u003A\u003A\u0024completeListSize",
+            "name": "completeListSize",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-data-ResumptionTokenData.html#property_completeListSize"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\ResumptionTokenData\u003A\u003A\u0024cursor",
+            "name": "cursor",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-data-ResumptionTokenData.html#property_cursor"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\SetInfo",
             "name": "SetInfo",
             "summary": "Simple\u0020container\u0020for\u0020OAI\u002DPMH\u0020set\u0020data\n\u0028https\u003A\/\/www.openarchives.org\/OAI\/openarchivesprotocol.html\u0023Set\u0029",
@@ -11401,6 +11436,26 @@ Search.appendIndex(
             "summary": "Provides\u0020the\u0020\u0060MetadataInterface\u0060\u0020object\u0020for\u0020a\u0020given\u0020search\u0020result.",
             "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getMetadata"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AcheckResumptionTimeout\u0028\u0029",
+            "name": "checkResumptionTimeout",
+            "summary": "Checks\u0020if\u0020the\u0020timeout\u0020for\u0020resumption\u0020token\u0020generation\u0020has\u0020been\u0020reached.",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_checkResumptionTimeout"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AgetResumptionToken\u0028\u0029",
+            "name": "getResumptionToken",
+            "summary": "Saves\u0020the\u0020current\u0020search\u0020in\u0020a\u0020way\u0020it\u0020can\u0020be\u0020recreated\u0020from\u0020the\nresumption\u0020token\u0020and\u0020returns\u0020the\u0020resumption\u0020token\u0020data.",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getResumptionToken"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AfindResumptionToken\u0028\u0029",
+            "name": "findResumptionToken",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findResumptionToken"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AfindQuery\u0028\u0029",
+            "name": "findQuery",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findQuery"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AgetIdFilter\u0028\u0029",
             "name": "getIdFilter",
             "summary": "Creates\u0020SPARQL\u0020query\u0020clause\u0020implementing\u0020the\u0020id\u0020filter.",
@@ -11461,6 +11516,26 @@ Search.appendIndex(
             "summary": "Last\u0020search\u0020results",
             "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_records"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003A\u0024resumptionToken",
+            "name": "resumptionToken",
+            "summary": "Resumption\u0020token\u0020value\u0020used",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_resumptionToken"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003A\u0024resumptionCursor",
+            "name": "resumptionCursor",
+            "summary": "Value\u0020of\u0020the\u0020resumptionCursor\u0020attribute\u0020read\u0020from\u0020the\u0020resumption\u0020dump\u0020file",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_resumptionCursor"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003A\u0024resumptionCount",
+            "name": "resumptionCount",
+            "summary": "Total\u0020number\u0020of\u0020resources\u0020of\u0020the\u0020original\u0020search\u0020read\u0020from\u0020the\u0020resumption\u0020dump\u0020file",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_resumptionCount"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003A\u0024t0",
+            "name": "t0",
+            "summary": "Object\u0020creation\u0020timestamp.\u0020Used\u0020to\u0020determine\u0020resumption\u0020timeout.",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_t0"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\SearchInterface",
             "name": "SearchInterface",
             "summary": "Interface\u0020for\u0020classes\u0020implementing\u0020OAI\u002DPMH\u0020resources\u0020search.",
@@ -11500,6 +11575,16 @@ Search.appendIndex(
             "name": "setMetadataFormat",
             "summary": "Sets\u0020metadata\u0020format\u0020configuration",
             "url": "classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_setMetadataFormat"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\SearchInterface\u003A\u003AcheckResumptionTimeout\u0028\u0029",
+            "name": "checkResumptionTimeout",
+            "summary": "Checks\u0020if\u0020the\u0020timeout\u0020for\u0020resumption\u0020token\u0020generation\u0020has\u0020been\u0020reached.",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_checkResumptionTimeout"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\SearchInterface\u003A\u003AgetResumptionToken\u0028\u0029",
+            "name": "getResumptionToken",
+            "summary": "Saves\u0020the\u0020current\u0020search\u0020in\u0020a\u0020way\u0020it\u0020can\u0020be\u0020recreated\u0020from\u0020the\nresumption\u0020token\u0020and\u0020returns\u0020the\u0020resumption\u0020token\u0020data.",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_getResumptionToken"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\set\\Complex",
             "name": "Complex",
