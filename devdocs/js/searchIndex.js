@@ -7571,6 +7571,11 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020repository\u0020object\u0020instance\u0020from\u0020a\u0020given\u0020configuration\u0020file.",
             "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_factory"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003AparseMetadataReadMode\u0028\u0029",
+            "name": "parseMetadataReadMode",
+            "summary": "Helper\u0020for\u0020parsing\u0020the\u0020metadata\u0020read\u0020mode\u0020generic\u0020syntax.",
+            "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_parseMetadataReadMode"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
@@ -8350,6 +8355,11 @@ Search.appendIndex(
             "name": "DATETIME_REGEX",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_DATETIME_REGEX"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AURI_REGEX",
+            "name": "URI_REGEX",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_URI_REGEX"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ATYPE_NUMBER",
             "name": "TYPE_NUMBER",
