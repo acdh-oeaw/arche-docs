@@ -7571,11 +7571,6 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020repository\u0020object\u0020instance\u0020from\u0020a\u0020given\u0020configuration\u0020file.",
             "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_factory"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003AparseMetadataReadMode\u0028\u0029",
-            "name": "parseMetadataReadMode",
-            "summary": "Helper\u0020for\u0020parsing\u0020the\u0020metadata\u0020read\u0020mode\u0020generic\u0020syntax.",
-            "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_parseMetadataReadMode"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
@@ -7650,6 +7645,11 @@ Search.appendIndex(
             "name": "parseSearchGraph",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_parseSearchGraph"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003AparseMetadataReadMode\u0028\u0029",
+            "name": "parseMetadataReadMode",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_parseMetadataReadMode"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003AlogQuery\u0028\u0029",
             "name": "logQuery",
@@ -7861,10 +7861,10 @@ Search.appendIndex(
             "summary": "Loads\u0020current\u0020metadata\u0020from\u0020the\u0020repository.",
             "url": "classes/acdhOeaw-arche-lib-RepoResourceDb.html#method_loadMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceDb\u003A\u003AgetMetadataQuery\u0028\u0029",
-            "name": "getMetadataQuery",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceDb\u003A\u003AgetMetadataStatement\u0028\u0029",
+            "name": "getMetadataStatement",
             "summary": "Returns\u0020a\u0020QueryPart\u0020object\u0020with\u0020an\u0020SQL\u0020query\u0020loading\u0020resource\u0027s\u0020metadata\nin\u0020a\u0020given\u0020mode.",
-            "url": "classes/acdhOeaw-arche-lib-RepoResourceDb.html#method_getMetadataQuery"
+            "url": "classes/acdhOeaw-arche-lib-RepoResourceDb.html#method_getMetadataStatement"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoResourceDb\u003A\u003A\u0024id",
             "name": "id",
@@ -8183,7 +8183,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003Afactory\u0028\u0029",
             "name": "factory",
-            "summary": "Creates\u0020an\u0020instance\u0020of\u0020the\u0020SearchConfig\u0020class\u0020form\u0020the\u0020POST\u0020data.",
+            "summary": "Creates\u0020an\u0020instance\u0020of\u0020the\u0020SearchConfig\u0020class\u0020from\u0020the\u0020POST\u0020data\u0020or\ngiven\u0020array.",
             "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_factory"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AtoArray\u0028\u0029",
@@ -8241,6 +8241,16 @@ Search.appendIndex(
             "summary": "If\u0020specified,\u0020only\u0020property\u0020values\u0020with\u0020a\u0020given\u0020language\u0020are\u0020taken\u0020into\naccount\u0020for\u0020ordering\u0020search\u0020matches.",
             "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_orderByLang"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024resourceProperties",
+            "name": "resourceProperties",
+            "summary": "List\u0020of\u0020metadata\u0020properties\u0020to\u0020fetch\u0020for\u0020the\u0020resource.",
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_resourceProperties"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024relativesProperties",
+            "name": "relativesProperties",
+            "summary": "List\u0020of\u0020metadata\u0020properties\u0020to\u0020fetch\u0020for\u0020relative\u002Daccording\u002Dto\u002Dmetadata\u002Dread\u002Dmode\nresources.",
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_relativesProperties"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsQuery",
             "name": "ftsQuery",
             "summary": "A\u0020full\u0020text\u0020search\u0020query\u0020used\u0020for\u0020search\u0020results\u0020highlighting.",
@@ -8296,6 +8306,11 @@ Search.appendIndex(
             "summary": "An\u0020optional\u0020class\u0020of\u0020the\u0020for\u0020the\u0020objects\u0020returned\u0020as\u0020the\u0020search\u0020results\n\u0020\u0020\u0028to\u0020be\u0020used\u0020by\u0020extension\u0020libraries\u0029.",
             "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_class"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024skipArtificialProperties",
+            "name": "skipArtificialProperties",
+            "summary": "Should\u0020artificially\u0020generated\u0020search\u0020properties\u0020denoting\u0020search\u0020match,\nordering,\u0020FTS\u0020highlighting,\u0020etc.\u0020be\u0020skipped\u0020or\u0020included.",
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_skipArtificialProperties"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm",
             "name": "SearchTerm",
             "summary": "Describes\u0020a\u0020single\u0020search\u0020condition.",
@@ -8340,6 +8355,11 @@ Search.appendIndex(
             "name": "getSqlQueryMeta",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#method_getSqlQueryMeta"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AgetSqlQueryId\u0028\u0029",
+            "name": "getSqlQueryId",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#method_getSqlQueryId"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AgetFormData\u0028\u0029",
             "name": "getFormData",
@@ -8395,6 +8415,11 @@ Search.appendIndex(
             "name": "TYPE_SPATIAL",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_TYPE_SPATIAL"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ATYPE_ID",
+            "name": "TYPE_ID",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_TYPE_ID"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AOPERATOR_IN",
             "name": "OPERATOR_IN",

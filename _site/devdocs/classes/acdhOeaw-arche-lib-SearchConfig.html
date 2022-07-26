@@ -313,12 +313,36 @@ are counted - see `$metadataMode`).</dd>
 <dd>If specified, only property values with a given language are taken into
 account for ordering search matches.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_relativesProperties">$relativesProperties</a>
+    <span>
+                        &nbsp;: array&lt;string|int, string&gt;            </span>
+</dt>
+<dd>List of metadata properties to fetch for relative-according-to-metadata-read-mode
+resources.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_resourceProperties">$resourceProperties</a>
+    <span>
+                        &nbsp;: array&lt;string|int, string&gt;            </span>
+</dt>
+<dd>List of metadata properties to fetch for the resource.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_skipArtificialProperties">$skipArtificialProperties</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+<dd>Should artificially generated search properties denoting search match,
+ordering, FTS highlighting, etc. be skipped or included.</dd>
+
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_factory">factory()</a>
     <span>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>    </span>
 </dt>
-<dd>Creates an instance of the SearchConfig class form the POST data.</dd>
+<dd>Creates an instance of the SearchConfig class from the POST data or
+given array.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_getHeaders">getHeaders()</a>
@@ -411,7 +435,7 @@ according to the search config settings.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">198</span>
 
     </aside>
 
@@ -452,7 +476,7 @@ according to the search config settings.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -495,7 +519,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">165</span>
+    <span class="phpdocumentor-element-found-in__line">192</span>
 
     </aside>
 
@@ -535,7 +559,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
@@ -575,7 +599,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -615,7 +639,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
@@ -655,7 +679,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -695,7 +719,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -743,7 +767,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -789,7 +813,7 @@ and highlight results using the other).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -829,7 +853,7 @@ and highlight results using the other).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -869,7 +893,7 @@ and highlight results using the other).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -909,7 +933,7 @@ and highlight results using the other).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -950,7 +974,7 @@ are counted - see `$metadataMode`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -1000,7 +1024,7 @@ are counted - see `$metadataMode`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -1040,7 +1064,7 @@ are counted - see `$metadataMode`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -1082,7 +1106,7 @@ are counted - see `$metadataMode`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -1123,7 +1147,7 @@ are counted - see `$metadataMode`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -1135,6 +1159,131 @@ account for ordering search matches.</p>
         <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$orderByLang</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_relativesProperties">
+        $relativesProperties
+        <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_relativesProperties" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">131</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">List of metadata properties to fetch for relative-according-to-metadata-read-mode
+resources.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$relativesProperties</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"><p>If empty, all properties are fetched.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_resourceProperties">
+        $resourceProperties
+        <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_resourceProperties" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">121</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">List of metadata properties to fetch for the resource.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$resourceProperties</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"><p>If empty, all properties are fetched.</p>
+<p>Doesn't affect technical properties generated by the search.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_skipArtificialProperties">
+        $skipArtificialProperties
+        <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_skipArtificialProperties" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">204</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Should artificially generated search properties denoting search match,
+ordering, FTS highlighting, etc. be skipped or included.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$skipArtificialProperties</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
         <section class="phpdocumentor-description"></section>
@@ -1168,18 +1317,32 @@ account for ordering search matches.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Creates an instance of the SearchConfig class form the POST data.</p>
+        <p class="phpdocumentor-summary">Creates an instance of the SearchConfig class from the POST data or
+given array.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">factory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">factory</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$src</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a></span></code>
 
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$src</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, string&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>source array. If not provided, $_POST
+is used instead.</p>
+</section>
+
+            </dd>
+            </dl>
+
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -1207,7 +1370,7 @@ account for ordering search matches.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 
     </aside>
 
@@ -1257,7 +1420,7 @@ according to the search config settings.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">210</span>
 
     </aside>
 
@@ -1295,7 +1458,7 @@ according to the search config settings.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 
     </aside>
 

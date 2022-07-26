@@ -328,9 +328,9 @@
 <dd>Returns resource metadata.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html#method_getMetadataQuery">getMetadataQuery()</a>
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html#method_getMetadataStatement">getMetadataStatement()</a>
     <span>
-                                &nbsp;: <abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr>    </span>
+                                &nbsp;: <abbr title="\PDOStatement">PDOStatement</abbr>    </span>
 </dt>
 <dd>Returns a QueryPart object with an SQL query loading resource&#039;s metadata
 in a given mode.</dd>
@@ -479,7 +479,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcedb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceDb.php">RepoResourceDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -676,7 +676,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcedb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceDb.php">RepoResourceDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -800,7 +800,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcedb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceDb.php">RepoResourceDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -1312,14 +1312,14 @@ Use the setMetadata() method to write back the changes you made.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getMetadataQuery">
-        getMetadataQuery()
-        <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html#method_getMetadataQuery" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getMetadataStatement">
+        getMetadataStatement()
+        <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html#method_getMetadataStatement" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcedb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceDb.php">RepoResourceDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -1328,7 +1328,7 @@ in a given mode.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getMetadataQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">getMetadataStatement</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resourceProperties</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$relativesProperties</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\PDOStatement">PDOStatement</abbr></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1338,23 +1338,38 @@ in a given mode.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">self::META_RESOURCE</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>scope of the metadata returned by the repository:
-<code class="prettyprint">RepoResourceInterface::META_RESOURCE</code> - only given resource metadata,
-<code class="prettyprint">RepoResourceInterface::META_NEIGHBORS</code> - metadata of a given resource, all the resources pointed by its metadata and all its children
-(resource pointing to a given resource with the <code class="prettyprint">$parentProperty</code> property),
-<code class="prettyprint">RepoResourceInterface::META_RELATIVES</code> - metadata of a given resource and all resources recursively pointing to a given metadata property
-(see the <code class="prettyprint">$parentProperty</code> parameter) in both directions (both &quot;parents&quot; and &quot;children&quot;)
-<code class="prettyprint">RepoResourceInterface::META_PARENTS</code> - like META_RELATIVES but only parents are returned</p>
+                    <section class="phpdocumentor-description"><p>scope of the metadata returned by the repository - see the
+<code class="prettyprint">RepoDb()::getPdoStatementBySqlQuery()</code> method</p>
 </section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>RDF property name used to find related resources in the
-<code class="prettyprint">RepoResourceInterface::META_RELATIVES</code> and <code class="prettyprint">RepoResourceInterface::META_PARENTS</code> modes</p>
+                    <section class="phpdocumentor-description"><p>RDF property name used to find related resources</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resourceProperties</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>list of RDF properties to be includes
+for a resource (if the list is empty, all exsiting RDF properties are included)</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$relativesProperties</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>list of RDF properties to be includes
+for resources being relatives (if the list is empty, all exsiting RDF
+properties are included)</p>
 </section>
 
             </dd>
@@ -1366,18 +1381,10 @@ in a given mode.</p>
         <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-lib-exception-RepoLibException.html"><abbr title="\acdhOeaw\arche\lib\exception\RepoLibException">RepoLibException</abbr></a></span>
-                                                            
-                                             
-                                    </dd>
-                                            </dl>
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\PDOStatement">PDOStatement</abbr></span>
             &mdash;
         
     
