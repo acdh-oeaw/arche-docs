@@ -730,7 +730,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">181</span>
+    <span class="phpdocumentor-element-found-in__line">183</span>
 
     </aside>
 
@@ -832,7 +832,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">loadFromDb</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">loadFromDb</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resourceProperties</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$relativesProperties</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -847,9 +847,25 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$property</span>
+                <span class="phpdocumentor-signature__argument__name">$parentProperty</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resourceProperties</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$relativesProperties</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
 
@@ -883,7 +899,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -941,7 +957,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -980,7 +996,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">284</span>
 
     </aside>
 
@@ -1044,7 +1060,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">300</span>
+    <span class="phpdocumentor-element-found-in__line">302</span>
 
     </aside>
 
@@ -1113,7 +1129,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">213</span>
+    <span class="phpdocumentor-element-found-in__line">215</span>
 
     </aside>
 
@@ -1161,7 +1177,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 
     </aside>
 
@@ -1209,7 +1225,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">265</span>
+    <span class="phpdocumentor-element-found-in__line">267</span>
 
     </aside>
 
