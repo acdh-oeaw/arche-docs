@@ -311,11 +311,25 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-core-RestController.html#method_getHeader">getHeader()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-core-RestController.html#method_getHttpHeaderName">getHttpHeaderName()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-core-RestController.html#method_getRangeHeader">getRangeHeader()</a>
+    <span>
+                                &nbsp;: array&lt;int, array&lt;string, mixed&gt;&gt;|null    </span>
+</dt>
+<dd>Returns HTTP Range header parsed into array of requested ranges.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-core-RestController.html#method_getRequestParameter">getRequestParameter()</a>
@@ -1149,6 +1163,56 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getHeader">
+        getHeader()
+        <a href="classes/acdhOeaw-arche-core-RestController.html#method_getHeader" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/RestController.php"><a href="files/arche-core-src-acdhoeaw-arche-core-restcontroller.html"><abbr title="arche-core/src/acdhOeaw/arche/core/RestController.php">RestController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">333</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$header</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$header</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_getHttpHeaderName">
         getHttpHeaderName()
         <a href="classes/acdhOeaw-arche-core-RestController.html#method_getHttpHeaderName" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1189,6 +1253,59 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRangeHeader">
+        getRangeHeader()
+        <a href="classes/acdhOeaw-arche-core-RestController.html#method_getRangeHeader" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/RestController.php"><a href="files/arche-core-src-acdhoeaw-arche-core-restcontroller.html"><abbr title="arche-core/src/acdhOeaw/arche/core/RestController.php">RestController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">350</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns HTTP Range header parsed into array of requested ranges.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getRangeHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, array&lt;string, mixed&gt;&gt;|null</span></code>
+
+        <section class="phpdocumentor-description"><p>Throws HTTP 416 on basic Range header errors (unit other then &quot;bytes&quot;,
+negative position, end lower then start).</p>
+<p><strong>Important remark</strong> - if multiple ranges are requested, it clears the
+&quot;Content-Type&quot; and &quot;Content-Length&quot; headers so they aren't emitted before
+the <code class="prettyprint">self::$output-&gt;sendOutput()</code> is called.</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-core-RepoException.html"><abbr title="\acdhOeaw\arche\core\RepoException">RepoException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;int, array&lt;string, mixed&gt;&gt;|null</span>
             &mdash;
         
     
@@ -1467,7 +1584,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/RestController.php"><a href="files/arche-core-src-acdhoeaw-arche-core-restcontroller.html"><abbr title="arche-core/src/acdhOeaw/arche/core/RestController.php">RestController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">333</span>
+    <span class="phpdocumentor-element-found-in__line">378</span>
 
     </aside>
 

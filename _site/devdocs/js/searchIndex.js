@@ -1006,6 +1006,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-RestController.html#method_addHeader"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AgetHeader\u0028\u0029",
+            "name": "getHeader",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#method_getHeader"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AgetRangeHeader\u0028\u0029",
+            "name": "getRangeHeader",
+            "summary": "Returns\u0020HTTP\u0020Range\u0020header\u0020parsed\u0020into\u0020array\u0020of\u0020requested\u0020ranges.",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#method_getRangeHeader"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AsendOutput\u0028\u0029",
             "name": "sendOutput",
             "summary": "",
@@ -1483,7 +1493,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\util\\OutputFile",
             "name": "OutputFile",
-            "summary": "Simple\u0020wrapper\u0020allowing\u0020to\u0020distinguish\u0020raw\u0020output\u0020string\u0020from\u0020a\u0020file",
+            "summary": "Outputs\u0020a\u0020file\u0020to\u0020a\u0020client\u0020optionally\u0020honoring\u0020the\u0020requested\u0020ranges.",
             "url": "classes/acdhOeaw-arche-core-util-OutputFile.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\util\\OutputFile\u003A\u003A__construct\u0028\u0029",
@@ -1496,10 +1506,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-util-OutputFile.html#method_sendOutput"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\OutputFile\u003A\u003ACHUNK_SIZE",
+            "name": "CHUNK_SIZE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-OutputFile.html#constant_CHUNK_SIZE"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\util\\OutputFile\u003A\u003A\u0024path",
             "name": "path",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-util-OutputFile.html#property_path"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\OutputFile\u003A\u003A\u0024ranges",
+            "name": "ranges",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-OutputFile.html#property_ranges"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\OutputFile\u003A\u003A\u0024contentType",
+            "name": "contentType",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-OutputFile.html#property_contentType"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\util\\Spatial",
             "name": "Spatial",
