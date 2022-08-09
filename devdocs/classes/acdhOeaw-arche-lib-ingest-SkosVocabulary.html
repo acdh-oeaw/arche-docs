@@ -146,7 +146,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -340,6 +340,15 @@ missing it.</dd>
 <dd>Repository connection object</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_addParentProperty">$addParentProperty</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+<dd>Should skos:concept, skos:collection adn skos:orderedCollection resources
+be connected with the skos:schema repository resource with the repository&#039;s
+parent RDF property?</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_allowedNmsp">$allowedNmsp</a>
     <span>
                         &nbsp;: array&lt;string|int, string&gt;|null            </span>
@@ -469,6 +478,13 @@ with object within the current vocabulary</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_forceUpdate">forceUpdate()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_fromUrl">fromUrl()</a>
     <span>
                                 &nbsp;: self    </span>
@@ -485,9 +501,11 @@ with object within the current vocabulary</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_import">import()</a>
     <span>
-                                &nbsp;: array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\GuzzleHttp\Exception\ClientException&gt;    </span>
+                                &nbsp;: array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\acdhOeaw\arche\lib\ingest\ClientException&gt;    </span>
 </dt>
-<dd>Imports the whole graph by looping over all resources.</dd>
+<dd>Ingests the vocabulary and removes obsolete vocabulary entities (repository
+resources which were not a part of the ingestion but point to the schema
+repository resource with skos:inScheme or repoCfg:parent)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#method_makeAgent">makeAgent()</a>
@@ -502,6 +520,15 @@ with object within the current vocabulary</dd>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html"><abbr title="\acdhOeaw\arche\lib\ingest\MetadataCollection">MetadataCollection</abbr></a>    </span>
 </dt>
 <dd>Performs preprocessing - removes literal IDs, promotes URIs to IDs, etc.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setAddParentProperty">setAddParentProperty()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>When $add is set to true, all repository resources representing imported
+skos entities are linked with the skos:Schema repository resource with
+a repository&#039;s parent property.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#method_setAddTitle">setAddTitle()</a>
@@ -530,7 +557,9 @@ resources which are missing it.</dd>
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>When $enforce is set to true, all non-SKOS properties</dd>
+<dd>When $enforce is set to true, all RDF properties of skos entities but
+skos properties, repository id property and repository parent property
+are casted to literals.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setExactMatchMode">setExactMatchMode()</a>
@@ -574,6 +603,13 @@ entities should be derived from.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_assureLiterals">assureLiterals()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_assureParents">assureParents()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -640,7 +676,7 @@ the graph.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_processExactMatches">processExactMatches()</a>
     <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: array&lt;string|int, string&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -671,6 +707,13 @@ the graph.</dd>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Removes literal ids from the graph.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_removeObsolete">removeObsolete()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#method_sanitizeResource">sanitizeResource()</a>
@@ -838,7 +881,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -873,7 +916,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -908,7 +951,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -943,7 +986,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -978,7 +1021,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -1013,7 +1056,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -1048,7 +1091,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -1083,7 +1126,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -1118,7 +1161,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -1153,7 +1196,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -1223,7 +1266,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -1258,7 +1301,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -1293,7 +1336,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -1467,6 +1510,47 @@ missing it.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_addParentProperty">
+        $addParentProperty
+        <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_addParentProperty" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">157</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Should skos:concept, skos:collection adn skos:orderedCollection resources
+be connected with the skos:schema repository resource with the repository&#039;s
+parent RDF property?</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$addParentProperty</span>
+     = <span class="phpdocumentor-signature__default-value">true</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_allowedNmsp">
         $allowedNmsp
         <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_allowedNmsp" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1476,7 +1560,7 @@ missing it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -1554,7 +1638,7 @@ missing it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">149</span>
 
     </aside>
 
@@ -1565,7 +1649,7 @@ casted to literals?</p>
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$enforceLiterals</span>
-     = <span class="phpdocumentor-signature__default-value">false</span></code>
+     = <span class="phpdocumentor-signature__default-value">true</span></code>
 
     
         <section class="phpdocumentor-description"></section>
@@ -1595,7 +1679,7 @@ casted to literals?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -1635,7 +1719,7 @@ casted to literals?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -1675,7 +1759,7 @@ casted to literals?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -1715,7 +1799,7 @@ casted to literals?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -1755,7 +1839,7 @@ casted to literals?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -1835,7 +1919,7 @@ casted to literals?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -1876,7 +1960,7 @@ with object outside the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -1957,7 +2041,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -1997,7 +2081,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -2037,7 +2121,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -2076,7 +2160,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -2120,7 +2204,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -2191,7 +2275,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 
     </aside>
 
@@ -2221,6 +2305,45 @@ with object within the current vocabulary</p>
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_forceUpdate">
+        forceUpdate()
+        <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_forceUpdate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">224</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">forceUpdate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">self</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_fromUrl">
@@ -2230,7 +2353,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -2288,7 +2411,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">210</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -2334,33 +2457,19 @@ the repository but it requires updating</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">354</span>
+    <span class="phpdocumentor-element-found-in__line">404</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Imports the whole graph by looping over all resources.</p>
+        <p class="phpdocumentor-summary">Ingests the vocabulary and removes obsolete vocabulary entities (repository
+resources which were not a part of the ingestion but point to the schema
+repository resource with skos:inScheme or repoCfg:parent)</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">import</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$namespace</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$singleOutNmsp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::CREATE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::ERRMODE_FAIL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$concurrency</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$retriesOnConflict</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\GuzzleHttp\Exception\ClientException&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">import</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$namespace</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$singleOutNmsp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::CREATE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::ERRMODE_FAIL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$concurrency</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$retriesOnConflict</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">3</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\acdhOeaw\arche\lib\ingest\ClientException&gt;</span></code>
 
-        <section class="phpdocumentor-description"><p>A repository resource is created for every node containing at least one
-identifer and:</p>
-<ul>
-<li>with at least one outgoing edge (there's at least one triple having
-the node as a subject) of property other than identifier property</li>
-<li>or being within $namespace</li>
-<li>or when $singleOutNmsp equals to MetadataCollection::CREATE</li>
-</ul>
-<p>Resources without identifier property are skipped as we are unable
-to identify them on the next import (which would lead to duplication).</p>
-<p>Resource with a fully qualified URI is considered as having
-the identifier property value (its URI is promoted to it).</p>
-<p>Resources in the graph can denote relationships in any way but all
-object URIs already existing in the repository and all object URIs in the
-$namespace will be turned into ACDH ids.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2368,63 +2477,35 @@ $namespace will be turned into ACDH ids.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>repository resources will be created for all
-resources in this namespace</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$singleOutNmsp</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                  = <span class="phpdocumentor-signature__argument__default-value">self::CREATE</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>should repository resources be created
-representing URIs outside $namespace (MetadataCollection::SKIP or
-MetadataCollection::CREATE)</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$errorMode</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">self::ERRMODE_FAIL</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>what should happen if an error is encountered?
-One of:</p>
-<ul>
-<li>MetadataCollection::ERRMODE_FAIL - the first encountered error throws
-an exception.</li>
-<li>MetadataCollection::ERRMODE_PASS - the first encountered error turns
-off the autocommit but ingestion is continued. When all resources are
-processed and there was no errors, an array of RepoResource objects
-is returned. If there was an error, an exception is thrown.</li>
-<li>MetadataCollection::ERRMODE_INCLUDE - the first encountered error
-turns off the autocommit but ingestion is continued. The returned
-array contains RepoResource objects for successful ingestions and
-Exception objects for failed ones.</li>
-</ul>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$concurrency</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                  = <span class="phpdocumentor-signature__argument__default-value">3</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>number of parallel requests to the repository
-allowed during the import</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$retriesOnConflict</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                  = <span class="phpdocumentor-signature__argument__default-value">3</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>how many ingestion attempts should be taken
-if the repository resource is locked by other request</p>
-</section>
-
+                
             </dd>
             </dl>
 
@@ -2437,7 +2518,7 @@ if the repository resource is locked by other request</p>
                                 </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\GuzzleHttp\Exception\ClientException&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, \acdhOeaw\arche\lib\RepoResource|\acdhOeaw\arche\lib\ingest\ClientException&gt;</span>
             &mdash;
         
     
@@ -2504,7 +2585,7 @@ if the repository resource is locked by other request</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">322</span>
+    <span class="phpdocumentor-element-found-in__line">358</span>
 
     </aside>
 
@@ -2526,6 +2607,57 @@ if the repository resource is locked by other request</p>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html"><abbr title="\acdhOeaw\arche\lib\ingest\MetadataCollection">MetadataCollection</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setAddParentProperty">
+        setAddParentProperty()
+        <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setAddParentProperty" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">339</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">When $add is set to true, all repository resources representing imported
+skos entities are linked with the skos:Schema repository resource with
+a repository&#039;s parent property.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setAddParentProperty</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$add</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$add</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">self</span>
             &mdash;
         
     
@@ -2593,7 +2725,7 @@ resources which are missing it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">237</span>
 
     </aside>
 
@@ -2701,17 +2833,24 @@ don't want to do that for performance reasons).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">303</span>
+    <span class="phpdocumentor-element-found-in__line">326</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">When $enforce is set to true, all non-SKOS properties</p>
+        <p class="phpdocumentor-summary">When $enforce is set to true, all RDF properties of skos entities but
+skos properties, repository id property and repository parent property
+are casted to literals.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setEnforceLiterals</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$enforce</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>This allows to avoid creation of unnecessary repository resources but
+can lead to resulting data being incompatible with ontologies they were
+following (as datatype and object properties are mutually exclusive in
+owl) which may or might be a problem for you.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2750,7 +2889,7 @@ don't want to do that for performance reasons).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">243</span>
+    <span class="phpdocumentor-element-found-in__line">260</span>
 
     </aside>
 
@@ -2822,7 +2961,7 @@ follow SKOS as SKOS relations are OWL object properties)</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">292</span>
+    <span class="phpdocumentor-element-found-in__line">308</span>
 
     </aside>
 
@@ -2930,7 +3069,7 @@ graph imported by the import() method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">273</span>
+    <span class="phpdocumentor-element-found-in__line">290</span>
 
     </aside>
 
@@ -2939,7 +3078,7 @@ belongs or not belongs to a current vocabulary.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setSkosRelationsMode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inVocabulary</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$notInVocabulary</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collections</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">setSkosRelationsMode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inVocabulary</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$notInVocabulary</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
         <section class="phpdocumentor-description"><p>Both parameters can take following values:</p>
 <ul>
@@ -2970,14 +3109,6 @@ follow SKOS as SKOS relations are OWL object properties)</li>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$collections</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
             </dl>
 
     
@@ -3007,7 +3138,7 @@ follow SKOS as SKOS relations are OWL object properties)</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">317</span>
+    <span class="phpdocumentor-element-found-in__line">353</span>
 
     </aside>
 
@@ -3059,7 +3190,7 @@ entities should be derived from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">502</span>
+    <span class="phpdocumentor-element-found-in__line">561</span>
 
     </aside>
 
@@ -3100,6 +3231,56 @@ entities should be derived from.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_assureParents">
+        assureParents()
+        <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_assureParents" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">583</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">assureParents</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entities</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$entities</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_assureTitles">
         assureTitles()
         <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_assureTitles" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3107,7 +3288,7 @@ entities should be derived from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">441</span>
+    <span class="phpdocumentor-element-found-in__line">497</span>
 
     </aside>
 
@@ -3204,7 +3385,7 @@ entities should be derived from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">528</span>
+    <span class="phpdocumentor-element-found-in__line">599</span>
 
     </aside>
 
@@ -3252,7 +3433,7 @@ entities should be derived from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">474</span>
+    <span class="phpdocumentor-element-found-in__line">530</span>
 
     </aside>
 
@@ -3456,7 +3637,7 @@ the graph.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">558</span>
+    <span class="phpdocumentor-element-found-in__line">629</span>
 
     </aside>
 
@@ -3514,14 +3695,14 @@ the graph.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">411</span>
+    <span class="phpdocumentor-element-found-in__line">464</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">processExactMatches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entities</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">processExactMatches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entities</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3544,7 +3725,7 @@ the graph.</p>
                                 </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
             &mdash;
         
     
@@ -3562,7 +3743,7 @@ the graph.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">381</span>
+    <span class="phpdocumentor-element-found-in__line">434</span>
 
     </aside>
 
@@ -3700,6 +3881,54 @@ the graph.</p>
 
     
     
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_removeObsolete">
+        removeObsolete()
+        <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_removeObsolete" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">661</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">removeObsolete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$imported</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$imported</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags

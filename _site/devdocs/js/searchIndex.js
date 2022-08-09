@@ -9616,6 +9616,11 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020state\u0020of\u0020the\u0020vocabulary\u0020in\u0020the\u0020repository\u003A",
             "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_getState"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AforceUpdate\u0028\u0029",
+            "name": "forceUpdate",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_forceUpdate"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AsetAllowedNamespaces\u0028\u0029",
             "name": "setAllowedNamespaces",
             "summary": "Set\u0020RDF\u0020property\u0020filter\u0020for\u0020skos\u0020resources",
@@ -9638,8 +9643,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AsetEnforceLiterals\u0028\u0029",
             "name": "setEnforceLiterals",
-            "summary": "When\u0020\u0024enforce\u0020is\u0020set\u0020to\u0020true,\u0020all\u0020non\u002DSKOS\u0020properties",
+            "summary": "When\u0020\u0024enforce\u0020is\u0020set\u0020to\u0020true,\u0020all\u0020RDF\u0020properties\u0020of\u0020skos\u0020entities\u0020but\nskos\u0020properties,\u0020repository\u0020id\u0020property\u0020and\u0020repository\u0020parent\u0020property\nare\u0020casted\u0020to\u0020literals.",
             "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setEnforceLiterals"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AsetAddParentProperty\u0028\u0029",
+            "name": "setAddParentProperty",
+            "summary": "When\u0020\u0024add\u0020is\u0020set\u0020to\u0020true,\u0020all\u0020repository\u0020resources\u0020representing\u0020imported\nskos\u0020entities\u0020are\u0020linked\u0020with\u0020the\u0020skos\u003ASchema\u0020repository\u0020resource\u0020with\na\u0020repository\u0027s\u0020parent\u0020property.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setAddParentProperty"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AsetTitleProperties\u0028\u0029",
             "name": "setTitleProperties",
@@ -9653,7 +9663,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003Aimport\u0028\u0029",
             "name": "import",
-            "summary": "Imports\u0020the\u0020whole\u0020graph\u0020by\u0020looping\u0020over\u0020all\u0020resources.",
+            "summary": "Ingests\u0020the\u0020vocabulary\u0020and\u0020removes\u0020obsolete\u0020vocabulary\u0020entities\u0020\u0028repository\nresources\u0020which\u0020were\u0020not\u0020a\u0020part\u0020of\u0020the\u0020ingestion\u0020but\u0020point\u0020to\u0020the\u0020schema\nrepository\u0020resource\u0020with\u0020skos\u003AinScheme\u0020or\u0020repoCfg\u003Aparent\u0029",
             "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_import"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AprocessRelations\u0028\u0029",
@@ -9681,6 +9691,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_assureLiterals"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AassureParents\u0028\u0029",
+            "name": "assureParents",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_assureParents"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AdropNodes\u0028\u0029",
             "name": "dropNodes",
             "summary": "",
@@ -9690,6 +9705,11 @@ Search.appendIndex(
             "name": "mergeConcepts",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_mergeConcepts"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AremoveObsolete\u0028\u0029",
+            "name": "removeObsolete",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_removeObsolete"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003ANMSP_SKOS",
             "name": "NMSP_SKOS",
@@ -9815,6 +9835,11 @@ Search.appendIndex(
             "name": "enforceLiterals",
             "summary": "Should\u0020all\u0020properties\u0020other\u0020then\u0020id,\u0020rdf\u003Aclass,\u0020and\u0020skos\u0020relations\u0020be\ncasted\u0020to\u0020literals\u003F",
             "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_enforceLiterals"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003A\u0024addParentProperty",
+            "name": "addParentProperty",
+            "summary": "Should\u0020skos\u003Aconcept,\u0020skos\u003Acollection\u0020adn\u0020skos\u003AorderedCollection\u0020resources\nbe\u0020connected\u0020with\u0020the\u0020skos\u003Aschema\u0020repository\u0020resource\u0020with\u0020the\u0020repository\u0027s\nparent\u0020RDF\u0020property\u003F",
+            "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_addParentProperty"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003A\u0024titleProperties",
             "name": "titleProperties",
