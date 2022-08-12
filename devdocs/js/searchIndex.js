@@ -986,6 +986,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-RestController.html#method_getRequestParameter"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AgetRequestParameterAsArray\u0028\u0029",
+            "name": "getRequestParameterAsArray",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#method_getRequestParameterAsArray"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AsetOutput\u0028\u0029",
             "name": "setOutput",
             "summary": "",
