@@ -5841,6 +5841,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_checkYearIsMoreThanFourDigit"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ArcheTwigDateExtension\u003A\u003AcheckDateTimeValue\u0028\u0029",
+            "name": "checkDateTimeValue",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-TwigExtension-ArcheTwigDateExtension.html#method_checkDateTimeValue"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\TwigExtension\\ArcheTwigDateExtension\u003A\u003AreturnFormattedDate\u0028\u0029",
             "name": "returnFormattedDate",
             "summary": "Return\u0020the\u0020normal\u00204\u0020digit\u0020year\u0020dates",
