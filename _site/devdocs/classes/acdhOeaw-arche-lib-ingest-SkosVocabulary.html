@@ -146,7 +146,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -356,19 +356,18 @@ parent RDF property?</dd>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_allowedResourceNmsp">$allowedResourceNmsp</a>
+    <span>
+                        &nbsp;: array&lt;string|int, string&gt;|null            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#property_autoCommit">$autoCommit</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
 <dd>Number of resource automatically triggering a commit (0 - no auto commit)</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_enforceLiterals">$enforceLiterals</a>
-    <span>
-                        &nbsp;: bool            </span>
-</dt>
-<dd>Should all properties other then id, rdf:class, and skos relations be
-casted to literals?</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_exactMatchMode">$exactMatchMode</a>
@@ -543,7 +542,14 @@ resources which are missing it.</dd>
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>Set RDF property filter for skos resources</dd>
+<dd>Set RDF property filter for skos resources.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setAllowedResourceNamespaces">setAllowedResourceNamespaces()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Defines namespaces of RDF properties allowed to keep object values.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#method_setAutoCommit">setAutoCommit()</a>
@@ -551,15 +557,6 @@ resources which are missing it.</dd>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html"><abbr title="\acdhOeaw\arche\lib\ingest\MetadataCollection">MetadataCollection</abbr></a>    </span>
 </dt>
 <dd>Controls the automatic commit behaviour.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setEnforceLiterals">setEnforceLiterals()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>When $enforce is set to true, all RDF properties of skos entities but
-skos properties, repository id property and repository parent property
-are casted to literals.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setExactMatchMode">setExactMatchMode()</a>
@@ -881,7 +878,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -916,7 +913,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -951,7 +948,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -986,7 +983,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -1021,7 +1018,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -1056,7 +1053,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -1091,7 +1088,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -1126,7 +1123,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -1161,7 +1158,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -1196,7 +1193,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -1266,7 +1263,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -1301,7 +1298,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -1336,7 +1333,7 @@ the graph.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -1519,7 +1516,7 @@ missing it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">165</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
@@ -1560,7 +1557,7 @@ parent RDF property?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -1570,6 +1567,44 @@ parent RDF property?</p>
         <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;|null</span>
     <span class="phpdocumentor-signature__name">$allowedNmsp</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_allowedResourceNmsp">
+        $allowedResourceNmsp
+        <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_allowedResourceNmsp" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">132</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;|null</span>
+    <span class="phpdocumentor-signature__name">$allowedResourceNmsp</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -1629,47 +1664,6 @@ parent RDF property?</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_enforceLiterals">
-        $enforceLiterals
-        <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_enforceLiterals" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">157</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Should all properties other then id, rdf:class, and skos relations be
-casted to literals?</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$enforceLiterals</span>
-     = <span class="phpdocumentor-signature__default-value">true</span></code>
-
-    
-        <section class="phpdocumentor-description"></section>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="property_exactMatchMode">
         $exactMatchMode
         <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_exactMatchMode" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1679,7 +1673,7 @@ casted to literals?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -1719,7 +1713,7 @@ casted to literals?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -1759,7 +1753,7 @@ casted to literals?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -1799,7 +1793,7 @@ casted to literals?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -1839,7 +1833,7 @@ casted to literals?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">159</span>
 
     </aside>
 
@@ -1919,7 +1913,7 @@ casted to literals?</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
@@ -1960,7 +1954,7 @@ with object outside the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -2041,7 +2035,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -2079,7 +2073,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -2119,7 +2113,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -2158,7 +2152,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -2202,7 +2196,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">175</span>
 
     </aside>
 
@@ -2273,7 +2267,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">216</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -2312,7 +2306,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">233</span>
+    <span class="phpdocumentor-element-found-in__line">235</span>
 
     </aside>
 
@@ -2351,7 +2345,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -2409,7 +2403,7 @@ with object within the current vocabulary</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 
     </aside>
 
@@ -2455,7 +2449,7 @@ the repository but it requires updating</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">413</span>
+    <span class="phpdocumentor-element-found-in__line">422</span>
 
     </aside>
 
@@ -2583,7 +2577,7 @@ repository resource with skos:inScheme or repoCfg:parent)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">367</span>
+    <span class="phpdocumentor-element-found-in__line">376</span>
 
     </aside>
 
@@ -2622,7 +2616,7 @@ repository resource with skos:inScheme or repoCfg:parent)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">348</span>
+    <span class="phpdocumentor-element-found-in__line">357</span>
 
     </aside>
 
@@ -2723,17 +2717,19 @@ resources which are missing it.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">250</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Set RDF property filter for skos resources</p>
+        <p class="phpdocumentor-summary">Set RDF property filter for skos resources.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setAllowedNamespaces</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nmsp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>Repository id and label properties are always allowed.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2742,6 +2738,67 @@ resources which are missing it.</p>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>null allows all properties</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">self</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setAllowedResourceNamespaces">
+        setAllowedResourceNamespaces()
+        <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setAllowedResourceNamespaces" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">273</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Defines namespaces of RDF properties allowed to keep object values.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setAllowedResourceNamespaces</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowed</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+        <section class="phpdocumentor-description"><p>SKOS properties, id, parent and rdf:type RDF properties are always allowed
+to have object values.</p>
+<p>Object values of other properties of SKOS entities will be turned into
+literals of type xsd:anyURI.</p>
+<p>Such an approach prevents creation of unnecessary repository resources but
+can lead to resulting data being incompatible with ontologies they were
+following (as datatype and object properties are mutually exclusive in
+owl) which may or might be a problem for you.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$allowed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>List of allowed namespaces. When null,
+all object values are kept.</p>
 </section>
 
             </dd>
@@ -2824,62 +2881,6 @@ don't want to do that for performance reasons).</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setEnforceLiterals">
-        setEnforceLiterals()
-        <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setEnforceLiterals" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">335</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">When $enforce is set to true, all RDF properties of skos entities but
-skos properties, repository id property and repository parent property
-are casted to literals.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setEnforceLiterals</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$enforce</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-        <section class="phpdocumentor-description"><p>This allows to avoid creation of unnecessary repository resources but
-can lead to resulting data being incompatible with ontologies they were
-following (as datatype and object properties are mutually exclusive in
-owl) which may or might be a problem for you.</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$enforce</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_setExactMatchMode">
         setExactMatchMode()
         <a href="classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setExactMatchMode" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2887,7 +2888,7 @@ owl) which may or might be a problem for you.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">296</span>
 
     </aside>
 
@@ -2959,7 +2960,7 @@ follow SKOS as SKOS relations are OWL object properties)</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">317</span>
+    <span class="phpdocumentor-element-found-in__line">344</span>
 
     </aside>
 
@@ -3067,7 +3068,7 @@ graph imported by the import() method.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">299</span>
+    <span class="phpdocumentor-element-found-in__line">326</span>
 
     </aside>
 
@@ -3136,7 +3137,7 @@ follow SKOS as SKOS relations are OWL object properties)</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">362</span>
+    <span class="phpdocumentor-element-found-in__line">371</span>
 
     </aside>
 
@@ -3188,7 +3189,7 @@ entities should be derived from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">571</span>
+    <span class="phpdocumentor-element-found-in__line">581</span>
 
     </aside>
 
@@ -3236,7 +3237,7 @@ entities should be derived from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">598</span>
+    <span class="phpdocumentor-element-found-in__line">610</span>
 
     </aside>
 
@@ -3284,7 +3285,7 @@ entities should be derived from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">507</span>
+    <span class="phpdocumentor-element-found-in__line">516</span>
 
     </aside>
 
@@ -3381,7 +3382,7 @@ entities should be derived from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">614</span>
+    <span class="phpdocumentor-element-found-in__line">626</span>
 
     </aside>
 
@@ -3429,7 +3430,7 @@ entities should be derived from.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">540</span>
+    <span class="phpdocumentor-element-found-in__line">549</span>
 
     </aside>
 
@@ -3633,7 +3634,7 @@ the graph.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">644</span>
+    <span class="phpdocumentor-element-found-in__line">656</span>
 
     </aside>
 
@@ -3691,7 +3692,7 @@ the graph.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">474</span>
+    <span class="phpdocumentor-element-found-in__line">483</span>
 
     </aside>
 
@@ -3739,7 +3740,7 @@ the graph.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">444</span>
+    <span class="phpdocumentor-element-found-in__line">453</span>
 
     </aside>
 
@@ -3904,7 +3905,7 @@ the graph.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-skosvocabulary.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/SkosVocabulary.php">SkosVocabulary.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">678</span>
+    <span class="phpdocumentor-element-found-in__line">690</span>
 
     </aside>
 

@@ -9633,8 +9633,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AsetAllowedNamespaces\u0028\u0029",
             "name": "setAllowedNamespaces",
-            "summary": "Set\u0020RDF\u0020property\u0020filter\u0020for\u0020skos\u0020resources",
+            "summary": "Set\u0020RDF\u0020property\u0020filter\u0020for\u0020skos\u0020resources.",
             "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setAllowedNamespaces"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AsetAllowedResourceNamespaces\u0028\u0029",
+            "name": "setAllowedResourceNamespaces",
+            "summary": "Defines\u0020namespaces\u0020of\u0020RDF\u0020properties\u0020allowed\u0020to\u0020keep\u0020object\u0020values.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setAllowedResourceNamespaces"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AsetExactMatchMode\u0028\u0029",
             "name": "setExactMatchMode",
@@ -9650,11 +9655,6 @@ Search.appendIndex(
             "name": "setImportCollections",
             "summary": "Sets\u0020up\u0020if\u0020skos\u003ACollection\u0020and\u0020skos\u003AOrderedCollection\u0020nodes\u0020should\u0020be\ningested\u0020into\u0020the\u0020repository.",
             "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setImportCollections"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AsetEnforceLiterals\u0028\u0029",
-            "name": "setEnforceLiterals",
-            "summary": "When\u0020\u0024enforce\u0020is\u0020set\u0020to\u0020true,\u0020all\u0020RDF\u0020properties\u0020of\u0020skos\u0020entities\u0020but\nskos\u0020properties,\u0020repository\u0020id\u0020property\u0020and\u0020repository\u0020parent\u0020property\nare\u0020casted\u0020to\u0020literals.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#method_setEnforceLiterals"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003AsetAddParentProperty\u0028\u0029",
             "name": "setAddParentProperty",
@@ -9816,6 +9816,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_allowedNmsp"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003A\u0024allowedResourceNmsp",
+            "name": "allowedResourceNmsp",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_allowedResourceNmsp"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003A\u0024exactMatchMode",
             "name": "exactMatchMode",
             "summary": "How\u0020to\u0020handle\u0020skos\u003AexactMatch\u0020triples\u0020with\u0020object\u0020outside\u0020the\u0020current\u0020vocabulary",
@@ -9840,11 +9845,6 @@ Search.appendIndex(
             "name": "importCollections",
             "summary": "Should\u0020skos\u003ACollection\u0020and\u0020skos\u003AOrderedCollection\u0020resources\u0020be\u0020ingested\u003F",
             "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_importCollections"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003A\u0024enforceLiterals",
-            "name": "enforceLiterals",
-            "summary": "Should\u0020all\u0020properties\u0020other\u0020then\u0020id,\u0020rdf\u003Aclass,\u0020and\u0020skos\u0020relations\u0020be\ncasted\u0020to\u0020literals\u003F",
-            "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_enforceLiterals"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkosVocabulary\u003A\u003A\u0024addParentProperty",
             "name": "addParentProperty",
@@ -12421,6 +12421,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-schemaImport-Entity.html#property_schema"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Metadata",
+            "name": "Metadata",
+            "summary": "Description\u0020of\u0020Metadata",
+            "url": "classes/acdhOeaw-arche-schemaImport-Metadata.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Metadata\u003A\u003AfromFile\u0028\u0029",
+            "name": "fromFile",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-schemaImport-Metadata.html#method_fromFile"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Metadata\u003A\u003AenrichFromArgs\u0028\u0029",
+            "name": "enrichFromArgs",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-schemaImport-Metadata.html#method_enrichFromArgs"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Metadata\u003A\u003AenrichFromComposer\u0028\u0029",
+            "name": "enrichFromComposer",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-schemaImport-Metadata.html#method_enrichFromComposer"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology",
             "name": "Ontology",
             "summary": "Description\u0020of\u0020Ontology",
@@ -12470,6 +12490,11 @@ Search.appendIndex(
             "name": "sanitizeOwlObject",
             "summary": "Prepares\u0020an\u0020RDF\u0020resource\u0020representing\u0020an\u0020OWL\u0020object\n\u0028class\/dataProperty\/objectProperty\/restriction\u0029\u0020for\u0020repository\u0020import.",
             "url": "classes/acdhOeaw-arche-schemaImport-Ontology.html#method_sanitizeOwlObject"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003AremoveObsoleteChildren\u0028\u0029",
+            "name": "removeObsoleteChildren",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-schemaImport-Ontology.html#method_removeObsoleteChildren"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003A\u0024collections",
             "name": "collections",
@@ -12531,105 +12556,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-schemaImport-Restriction.html#method_getId"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Restriction\u003A\u003AdoesInherit\u0028\u0029",
+            "name": "doesInherit",
+            "summary": "Checks\u0020if\u0020\u0024what\u0020inherits\u0020from\u0020\u0024from",
+            "url": "classes/acdhOeaw-arche-schemaImport-Restriction.html#method_doesInherit"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Restriction\u003A\u003A\u0024id",
             "name": "id",
             "summary": "",
             "url": "classes/acdhOeaw-arche-schemaImport-Restriction.html#property_id"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\SkosConcept",
-            "name": "SkosConcept",
-            "summary": "Description\u0020of\u0020SkosConcept",
-            "url": "classes/acdhOeaw-arche-schemaImport-SkosConcept.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\SkosConcept\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-SkosConcept.html#method___construct"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\SkosConcept\u003A\u003AgetUri\u0028\u0029",
-            "name": "getUri",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-SkosConcept.html#method_getUri"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\SkosConcept\u003A\u003AgetMetadata\u0028\u0029",
-            "name": "getMetadata",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-SkosConcept.html#method_getMetadata"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\SkosConcept\u003A\u003Asanitize\u0028\u0029",
-            "name": "sanitize",
-            "summary": "Sanitizes\u0020a\u0020SKOS\u0020concept\u0020by\u0020adding\u0020a\u0020repository\u0020id,\u0020assuring\u0020it\u0020has\u0020a\u0020title,\netc.",
-            "url": "classes/acdhOeaw-arche-schemaImport-SkosConcept.html#method_sanitize"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\SkosConcept\u003A\u003A\u0024res",
-            "name": "res",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-SkosConcept.html#property_res"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Util",
-            "name": "Util",
-            "summary": "Description\u0020of\u0020Util",
-            "url": "classes/acdhOeaw-arche-schemaImport-Util.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Util\u003A\u003AremoveObsoleteChildren\u0028\u0029",
-            "name": "removeObsoleteChildren",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-Util.html#method_removeObsoleteChildren"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Util\u003A\u003AupdateOrCreate\u0028\u0029",
-            "name": "updateOrCreate",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-Util.html#method_updateOrCreate"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Util\u003A\u003AdoesInherit\u0028\u0029",
-            "name": "doesInherit",
-            "summary": "Checks\u0020if\u0020\u0024what\u0020inherits\u0020from\u0020\u0024from",
-            "url": "classes/acdhOeaw-arche-schemaImport-Util.html#method_doesInherit"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Vocabulary",
-            "name": "Vocabulary",
-            "summary": "Description\u0020of\u0020Vocabulary",
-            "url": "classes/acdhOeaw-arche-schemaImport-Vocabulary.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Vocabulary\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-Vocabulary.html#method___construct"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Vocabulary\u003A\u003AloadUrl\u0028\u0029",
-            "name": "loadUrl",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-Vocabulary.html#method_loadUrl"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Vocabulary\u003A\u003AloadFile\u0028\u0029",
-            "name": "loadFile",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-Vocabulary.html#method_loadFile"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Vocabulary\u003A\u003Aupdate\u0028\u0029",
-            "name": "update",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-Vocabulary.html#method_update"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Vocabulary\u003A\u003AsanitizeSchemaMeta\u0028\u0029",
-            "name": "sanitizeSchemaMeta",
-            "summary": "Vocabulary\u0020top\u002Dlevel\u0020metadata\u0020quality\u0020is\u0020typically\u0020very\u0020poor\u0020and\u0020has\u0020to\nbe\u0020cleaned\u0020up.",
-            "url": "classes/acdhOeaw-arche-schemaImport-Vocabulary.html#method_sanitizeSchemaMeta"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Vocabulary\u003A\u003A\u0024url",
-            "name": "url",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-Vocabulary.html#property_url"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Vocabulary\u003A\u003A\u0024schema",
-            "name": "schema",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-Vocabulary.html#property_schema"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Vocabulary\u003A\u003A\u0024graph",
-            "name": "graph",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-Vocabulary.html#property_graph"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ClearCache",
             "name": "ClearCache",
