@@ -12476,10 +12476,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-schemaImport-Ontology.html#method_importOwlFile"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003AimportVocabularies\u0028\u0029",
-            "name": "importVocabularies",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-schemaImport-Ontology.html#method_importVocabularies"
+            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003AgetVocabularies\u0028\u0029",
+            "name": "getVocabularies",
+            "summary": "Returns\u0020an\u0020array\u0020of\u0020vocabulary\u0020URIs\u0020used\u0020by\u0020the\u0020ontology",
+            "url": "classes/acdhOeaw-arche-schemaImport-Ontology.html#method_getVocabularies"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003AcreateCollection\u0028\u0029",
             "name": "createCollection",
