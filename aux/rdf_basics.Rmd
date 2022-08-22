@@ -48,20 +48,21 @@ This brings two issues:
 * URIs may contain characters banned in property names of you programming language.
 * URIs are long and cumbersome to write. You don't want to refer to each property (previous point issue aside) as `myObject.http://some.namespace/someProperty`.
 
-A solution to this problem is called *framing* and is discussed in a separate chapter.
+A solution to this problem is called *compacting* and is discussed [here](rdf_compacting_and_framing.html).
 
 ## Object IDs being URIs
 
-You may face similar issue with the RDF graph nodes - mapped to objects - identifiers:
+Identifiers of RDF graph nodes - mapped to objects - are also URIs:
 
-* If you are attached to integer ids, sorry, it's not the case.
-* You should pay attention to blank nodes as if their identifiers can be compared only within a single graph (and if they match an id of a blank node from another graph, then, surprisingly, they aren't considered equal).
+* If you are attached to integer IDs, then sorry, it's not the case.
+* You should pay attention to blank nodes as their identifiers can be compared only within a single RDF graph (and if they come from different RDF graphs they always differ, even if their URIs match!).
 
 ## Literal objects immutability
 
 Another complexity is brought by literals.
 
-Literals have compound structure with value, datatype and language tag which requires mapping them to objects. The important thing is these objects should be immutable.
+Literals have compound structure with value, datatype and language tag. Because of that they must be modeled as objects.
+The important thing is these objects have to be immutable.
 
 Let's consider a following RDF graph:
 
@@ -229,3 +230,6 @@ Remember, all examples below represent exactly the same RDF graph!
       ]
     }
     ```
+
+Now ask yourself a question - are you able to assure data you fetch from an external source, e.g. ARCHE, will be always serialized in the same way?
+(the answer is obviously "no, you don't")
