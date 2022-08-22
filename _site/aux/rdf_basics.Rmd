@@ -128,7 +128,7 @@ Remember, all examples below represent exactly the same RDF graph!
   _:b1 <http://baz> "baz" .
   ```
 * turtle
-  * all n-triples serialization variant (n-triples is a subset of turtle)
+  * all n-triples serializations (as n-triples is a subset of the turtle format)
   * ```
     @prefix foo: <http://foo/> .
     foo:1 <http://bar/1> foo:2 ,
@@ -142,7 +142,7 @@ Remember, all examples below represent exactly the same RDF graph!
     <http://foo/2> <http://baz> "baz" .
    _:b1            <http://baz> "baz" .
     ```
-  * and countless others as we can freely choose which namespace to declare and which aliases assign to them
+  * and countless others...
 * JSON-LD:
   * [flattened](https://www.w3.org/TR/json-ld11-api/#flattening)
     ```json
@@ -223,6 +223,7 @@ Remember, all examples below represent exactly the same RDF graph!
       ]
     }
     ```
+  * and countless others...
 
 Now ask yourself a question - are you able to assure data you fetch from an external source, e.g. ARCHE, will be always serialized in the same way?
 (the answer is obviously "no, you don't")
