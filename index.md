@@ -10,6 +10,10 @@ layout: default
 * [Metadata API performance](aux/metadata_api_performance.html)
 * [Dissemination services](aux/dissemination_services.html)
 * [Parallel ingestion](aux/parallel_ingestion.html)
+* RDF for webapp programmers
+  * [basics](aux/rdf_basics.html) or why do you need to use a dedicated RDF library
+  * [compacting and framing](aux/rdf_compacting_and_framing.html)
+* [Metadata API for webapp programmers](aus/metadata_api_for_programmers.html)
 
 # Components
 
