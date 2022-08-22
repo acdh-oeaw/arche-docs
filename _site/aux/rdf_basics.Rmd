@@ -1,0 +1,224 @@
+# Introduction
+
+ARCHE provides metadata in RDF which is not the most intuitive format for most programmers.
+The aim of this guide is to help avoid most common caveats connected with dealing with RDF.
+
+# Summary
+
+This document goes down to two rules:
+
+* Always use a dedicated RDF library to deal with RDF, e.g.
+  * [one of those](https://rdf.js.org/) in JavaScript
+  * [RDFLib](https://rdflib.readthedocs.io/en/stable/) in Python
+  * [sweetrdf/rdfInterface family](https://github.com/sweetrdf/rdfInterface) or [EasyRDF](https://www.easyrdf.org/) in PHP
+* Use the [compacting and framing](rdf_framing_and_compacting.html) transformations to map RDF to something usable for an object-oriented programming.
+* If you can choose serialization format, use `application/n-triples` for machine processing ([for performance reasons](metadata_api_performance.html)).
+
+# RDF data model for object-oriented programmers
+
+RDF represents graphs with directed and labelled edges which has pretty intuitive object mapping:
+
+* RDF graph nodes are objects
+* RDF graph edges are object properties with property name being edge label and property value being references to objects being edge target
+
+There are three kinds of graph nodes in the RDF:
+
+* literals having a value (which is always a string), an optional data type (indicating how the value should be interpreted) and an optional language tag
+* objects having a unique id (URI) which can be matched between different RDF graphs
+* blanks having locally unique id which can not be matched between different RDF graphs
+
+So far doesn't sound bad but the devil is in the details.
+
+The most common caveats are discussed bellow. 
+
+The bottom line is **you should always use a dedicated RDF library to deal with RDF** because handling it by hand is too complex and error prone.
+
+## Property names being URIs
+
+The main problem is RDF edge labels - being mapped to object properties - are URIs.
+This brings two issues:
+
+* URIs may contain characters banned in property names of you programming language.
+* URIs are long and cumbersome to write. You don't want to refer to each property (previous point issue aside) as `myObject.http://some.namespace/someProperty`.
+
+A solution to this problem is called *framing* and is discussed in a separate chapter.
+
+## Object IDs being URIs
+
+You may face similar issue with the RDF graph nodes - mapped to objects - identifiers:
+
+* If you are attached to integer ids, sorry, it's not the case.
+* You should pay attention to blank nodes as if their identifiers can be compared only within a single graph (and if they match an id of a blank node from another graph, then, surprisingly, they aren't considered equal).
+
+## Literal objects immutability
+
+Another complexity is brought by literals.
+
+Literals have compound structure with value, datatype and language tag which requires mapping them to objects. The important thing is these objects should be immutable.
+
+Let's consider a following RDF graph:
+
+```
+Resource1(someUri) --someProperty--> Literal1(someValue, someDatatype, someLang)
+                                        ^
+Resource2(otherUri) --someProperty------|
+```
+
+mapped to two objects `resource1` and `resource2` sharing a reference to a common `literal1` object.
+
+After doing something like (it's pseudo code and not any particular programming language) `resource1.someProperty.setValue(NEWVALUE)` the graph should look as follows:
+
+```
+Resource1(someUri) --someProperty--> Literal1(NEWVALUE, someDatatype, someLang)
+
+Resource2(otherUri) --someProperty--> Literal2(someValue, someDatatype, someLang)
+```
+
+and **not**:
+
+```
+Resource1(someUri) --someProperty--> Literal1(NEWVALUE, someDatatype, someLang)
+                                        ^
+Resource2(otherUri) --someProperty------|
+```
+
+By the way means the `resource1->someProperty->setValue(NEWVALUE)` syntax shouldn't exist and the right one should be `resource1.someProperty = resource1.someProperty.withValue(NEWVALUE)` or during the parsing of the RDF graph into objects of your programming language a separate `literal1` objects should be created for `resource1.someProperty` value and `resource2.someProperty` value.
+
+# Serialization formats
+
+RDF is an abstract data model which can be expressed in (far too many to be honest) different serialization formats.
+Just to name the most important:
+
+* [n-triples](https://www.w3.org/TR/n-triples/) (application/n-triples)
+* [turtle](https://www.w3.org/TR/turtle/) (text/turtle)
+* [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/) (application/rdf+xml) which is also a valid XML
+* [JSON-LD](https://www.w3.org/TR/json-ld11/) (application/ld+json) which is also a valid JSON
+
+What you should remember is that **a given RDF data set may have virtually countless valid serializations even in a single serialization formats.**
+
+This is particularly important **for RDF-XML and JSON-LD serialization** where **you can feel tempted to assume the data structure is stable and can be directly used by your app. It can't.**
+
+**The only safe way to go is to use a dedicated RDF parsing library which will deal with all those ambiguities.**
+
+
+
+## Example
+
+Let's take a simple RDF graph:
+
+```
+Resource(http://foo/1) --http://bar/1--> Resource(http://foo/2)
+    |                                     |
+ http://bar/1                          http://baz
+    |                                     |
+    v                                     v
+   Blank(_://b1) --http://baz--> Literal(baz)
+```
+
+and consider a small subset of its possible serializations.
+
+Remember, all examples below represent exactly the same RDF graph!
+
+* n-triples - lines below in any order
+  ```
+  <http://foo/1> <http://bar/1> <http://foo/2> .
+  <http://foo/1> <http://bar/1> _:b1 .
+  <http://foo/2> <http://baz> "baz" .
+  _:b1 <http://baz> "baz" .
+  ```
+* turtle
+  * all n-triples serialization variant (n-triples is a subset of turtle)
+  * ```
+    @prefix foo: <http://foo/> .
+    foo:1 <http://bar/1> foo:2 ,
+                       [<http://baz> "baz"] .
+    foo:2 <http://baz> "baz" .
+    ```
+  * ```
+    @prefix foo: <http://bar/> .
+    <http://foo/1> foo:1         <http://foo/2> ,
+                                _:b1 .
+    <http://foo/2> <http://baz> "baz" .
+   _:b1            <http://baz> "baz" .
+    ```
+  * and countless others as we can freely choose which namespace to declare and which aliases assign to them
+* JSON-LD:
+  * [flattened](https://www.w3.org/TR/json-ld11-api/#flattening)
+    ```json
+    {
+      "@graph": [
+        {
+          "@id": "_:b1",
+          "http://baz": [
+            {"@value": "baz"}
+          ]
+        },
+        {
+          "@id": "http://foo/1",
+          "http://bar/1": [
+            {"@id": "http://foo/2"},
+            {"@id": "_:b1"}
+          ]
+        },
+        {
+          "@id": "http://foo/2",
+          "http://baz": [
+            {"@value": "baz"}
+          ]
+        }
+      ]
+    }
+    ```
+  * [compacted](https://www.w3.org/TR/json-ld11-api/#compaction) (just an example, different contexts can be used resulting with different serializations)
+    ```json
+    {
+      "@context": {
+        "bar": "http://bar/1",
+        "baz": "http://baz"
+      },
+      "@graph": [
+        {
+          "@id": "_:b1",
+          "baz": "baz"
+        },
+        {
+          "@id": "http://foo/1",
+          "bar": [
+            {
+              "@id": "http://foo/2"
+            },
+            {
+              "@id": "_:b1"
+            }
+          ]
+        },
+        {
+          "@id": "http://foo/2",
+          "baz": "baz"
+        }
+      ]
+    }
+    ```
+  * with no particular standardization
+    ```json
+    {
+      "@graph": [
+        {
+          "@id": "_:b1",
+          "http://baz": {"@value": "baz"}
+        },
+        {
+          "@id": "http://foo/1",
+          "http://bar/1": [
+            {
+              "@id": "http://foo/2",
+              "http://baz": [
+                 {"@value": "baz"}
+              ]
+            },
+            {"@id": "_:b1"}
+          ]
+        }
+      ]
+    }
+    ```

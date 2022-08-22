@@ -1,0 +1,210 @@
+# Introduction
+
+As described in more details [here](rdf_basics.html) dealing with RDF data can be pretty troublesome.
+
+To make mapping of the RDF to object-oriented programming languages data model simpler a few standardized algorithms have been developed.
+For us the most important ones are
+
+* [compacting](https://www.w3.org/TR/json-ld11-api/#compaction) which allows to map property URIs to something short, handy and not containing special characters,
+* [framing](https://www.w3.org/TR/json-ld11-framing/) which allows to filter out unneeded information and shape them in a way matching our needs
+
+(while these algorithms have been originally developed for JSON-LD, they can be generally applied to any RDF data set)
+
+# Compacting
+
+The most common ^[And the only one described here but feel free to read [this](https://www.w3.org/TR/json-ld11/#the-context), [this](https://www.w3.org/TR/json-ld11/#indexed-values), [this](https://www.w3.org/TR/json-ld11/#sets-and-lists) and [that](https://www.w3.org/TR/json-ld11/#nested-properties).] application of compacting is to simplify RDF property URIs to something more handy.
+
+It's as simple as:
+
+* Define a context describing your own shorthands for properties and, when needed, indicating their values are RDF resources/blanks (in contrary to RDF literals).
+  For example here we say `https://vocabs.acdh.oeaw.ac.at/schema#hasTitle` should be shortened to `title` and `https://vocabs.acdh.oeaw.ac.at/schema#hasCreator` should be shortened to `creator` while its value should be treated as an RDF node URI (in JSON-LD):
+  ```json
+  {
+    "title": "https://vocabs.acdh.oeaw.ac.at/schema#hasTitle",
+    "creator": {
+      "@id": "https://vocabs.acdh.oeaw.ac.at/schema#hasCreator",
+      "@type": "@id"
+    }
+  }
+  ```
+* Apply it to data to get nice property names:
+  * data (in JSON-LD)
+    ```json
+    {
+      "@graph": [
+        {
+          "@id": "http://foo/1",
+          "https://vocabs.acdh.oeaw.ac.at/schema#hasTitle": [
+            {"@value": "English title", @language: "en"},
+            {"@value": "Deutcher Titel", @language: "de"},
+          ],
+          "https://vocabs.acdh.oeaw.ac.at/schema#hasCreator": {
+            "@id": "http://id.acdh.oeaw.ac.at/somePerson"
+          }
+        }
+    }
+    ```
+  * result (in JSON-LD):
+    ```json
+    {
+      "@graph": [
+        {
+          "@id": "http://foo/1",
+          "title": [
+            {"@value": "English title", @language: "en"},
+            {"@value": "Deutcher Titel", @language: "de"},
+          ],
+          "creator": "http://id.acdh.oeaw.ac.at/somePerson"
+        }
+    }
+    ```
+
+If you are processing JSON-LD, the library you're using (you're using one, don't you? if not, please read [this](rdf_basics.html)) should be able to perform the compacting for you and then you can just deserialize the resulting JSON into you programming language data structures (see a chapter below).
+
+If you are dealing with other RDF serialization, you may easily perform the compacting on your own - see a chapter below.
+
+## Where to get a contect from?
+
+There are two obvious sources:
+
+* Your own preferences. You know what properties your webapp needs and what are corresponding RDF property URIs, so you prepare the context on your own.
+* The ARCHE repository schema reported by the `{apiBase}/describe` endpoint, e.g. https://arche.acdh.oeaw.ac.at/api/describe.  
+
+## Compacting JSON-LD
+
+TODO
+
+### JavaScript/Node example
+
+TODO
+
+### Python example
+
+TODO
+
+### PHP example
+
+TODO
+
+## Manual compacting
+
+Below manual compacting examples in Python and PHP using the `schema` section of the ARCHE repository config as a context.
+
+### Python example
+
+(`rdflib` and `requests` libraries required)
+
+```python3
+import rdflib
+import requests
+
+# fetch the context
+context = requests.get('https://arche.acdh.oeaw.ac.at/api/describe', headers={'Accept': 'application/json'})
+context = context.json()['schema']
+# flip the context so it's uri->shortName
+context = {v: k for k, v in context.items() if isinstance(v, str)}
+
+# parse RDF data
+rawrdf = requests.get('https://hdl.handle.net/21.11115/0000-000E-C8A6-5', headers={'Accept': 'application/n-triples'})
+data = rdflib.Graph()
+data.parse(data=rawrdf.text, format="nt")
+
+# create Python data model base on dictionaries
+nodes = {}
+for (sbj, prop, obj) in data:
+  sbj = str(sbj)
+  prop = str(prop)
+  # skip RDF properties for which we don't know the mapping
+  if prop not in context:
+    continue
+    
+  # map prop name according to the context
+  prop = context[prop]
+
+  # if the triple points to another node in the graph, maintain the reference
+  if not isinstance(obj, rdflib.term.Literal):
+    if str(obj) not in nodes:
+      nodes[str(obj)] = {'__uri__': str(obj)}
+    obj = nodes[str(obj)]
+    
+  # manage the data
+  if sbj not in nodes:
+    nodes[sbj] = {'__uri__': sbj}
+  if prop not in nodes[sbj]:
+    nodes[sbj][prop] = []
+  nodes[sbj][prop].append(obj)
+
+# print results:
+for uri, node in nodes.items():
+  print(f"{uri}:")
+  for prop, values in node.items():
+    if prop == '__uri__':
+      continue
+    print(f"\t{prop}:")
+    for val in values:
+      if isinstance(val, dict):
+        print(f"\t\treference to the {val['__uri__']} node")
+      else:
+        print(f"\t\t{val}")
+```
+
+### PHP example
+
+(`guzzlehttp/guzzle`, `sweetrdf/quick-rdf-io` and `sweetrdf/quick-rdf` libraries required)
+
+```php
+require 'vendor/autoload.php';
+$client = new GuzzleHttp\Client();
+$dataFactory = new quickRdf\DataFactory();
+
+# fetch the context
+$context = $client->request('get', 'https://arche.acdh.oeaw.ac.at/api/describe', ['headers' => ['Accept' => 'application/json']]);
+$context = json_decode($context->getBody(), true)['schema'];
+# flip the context so it's uri->shortName
+$context = array_filter($context, fn($x) => is_scalar($x));
+$context = array_flip($context);
+
+# parse RDF data
+$data = $client->request('get', 'https://hdl.handle.net/21.11115/0000-000E-C8A6-5', ['headers' => ['Accept' => 'application/n-triples']]);
+$data = quickRdfIo\Util::parse($data, $dataFactory);
+
+# perform the mapping
+$nodes = [];
+foreach ($data as $triple) {
+  $sbj = $triple->getSubject()->getValue();
+  $prop = $triple->getPredicate()->getValue();
+  $obj = $triple->getObject();
+  
+  # skip RDF properties for which we don't know the mapping
+  if (!isset($context[$prop])) {
+    continue;
+  }
+  # map prop name according to the context
+  $prop = $context[$prop];
+
+  # if the triple points to another node in the graph, maintain the reference
+  if (!($obj instanceof rdfInterface\Literal)) {
+    $objUri = $obj->getValue();
+    if (!isset($nodes[$objUri])) {
+      $nodes[$objUri] = (object) ['__uri__' => $objUri];
+    }
+    $obj = $nodes[$objUri];
+  }
+    
+  # manage the data
+  if (!isset($nodes[$sbj])) {
+    $nodes[$sbj] = (object) ['__uri__' => $sbj];
+  }
+  if (!isset($nodes[$sbj]->$prop)) {
+    $nodes[$sbj]->prop = [];
+  }
+  $nodes[$sbj]->prop[] = $obj;
+}
+
+# print results
+print_r($nodes);
+```
+
+# Framing
+
+TODO
