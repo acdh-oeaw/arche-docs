@@ -101,7 +101,7 @@ Below manual compacting examples in Python and PHP using the `schema` section of
 
 (`rdflib` and `requests` libraries required)
 
-```python3
+```python
 import rdflib
 import requests
 
@@ -116,7 +116,7 @@ rawrdf = requests.get('https://hdl.handle.net/21.11115/0000-000E-C8A6-5', header
 data = rdflib.Graph()
 data.parse(data=rawrdf.text, format="nt")
 
-# create Python data model base on dictionaries
+# create Python-native data model based on dictionaries
 nodes = {}
 for (sbj, prop, obj) in data:
   sbj = str(sbj)
