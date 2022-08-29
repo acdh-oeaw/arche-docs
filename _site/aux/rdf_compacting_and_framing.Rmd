@@ -153,7 +153,6 @@ for uri, node in nodes.items():
 (`guzzlehttp/guzzle`, `sweetrdf/quick-rdf-io` and `sweetrdf/quick-rdf` libraries required)
 
 ```php
-require 'vendor/autoload.php';
 $client = new GuzzleHttp\Client();
 $dataFactory = new quickRdf\DataFactory();
 
@@ -196,13 +195,130 @@ foreach ($data as $triple) {
     $nodes[$sbj] = (object) ['__uri__' => $sbj];
   }
   if (!isset($nodes[$sbj]->$prop)) {
-    $nodes[$sbj]->prop = [];
+    $nodes[$sbj]->$prop = [];
   }
-  $nodes[$sbj]->prop[] = $obj;
+  $nodes[$sbj]->$prop[] = $obj;
 }
 
 # print results
 print_r($nodes);
+```
+
+### PHP example using arche-lib Repo object
+
+(`acdhcd/arche-lib` library required)
+
+```
+# initialize the RepoDb object and perform a simple search
+$repo = acdhOeaw\arche\lib\Repo::factoryFromUrl('https://arche.acdh.oeaw.ac.at/api');
+$schema = $repo->getSchema();
+$searchTerm = new acdhOeaw\arche\lib\SearchTerm($schema->pid, 'https://hdl.handle.net/21.11115/0000-000E-C8A6-5');
+$searchCfg = new acdhOeaw\arche\lib\SearchConfig();
+$searchCfg->metadataMode = 'neighbors';
+$graph = $repo->getGraphBySearchTerms([$searchTerm], $searchCfg);
+
+# define context
+$matchProp = $schema->searchMatch;
+$context = [
+  'https://vocabs.acdh.oeaw.ac.at/schema#hasTitle' => 'title',
+  'https://vocabs.acdh.oeaw.ac.at/schema#hasDescription' => 'description',
+  'https://vocabs.acdh.oeaw.ac.at/schema#hasAvailableDate' => 'createDate',
+  'https://vocabs.acdh.oeaw.ac.at/schema#hasUpdatedDate' => 'modificationDate',
+  'https://vocabs.acdh.oeaw.ac.at/schema#hasCreator' => 'creator',
+  'https://vocabs.acdh.oeaw.ac.at/schema#hasRightsHolder' => 'rightsHolder',
+  $matchProp => '__match__',
+];
+
+# map results to PHP objects according to the context
+$nodes = [];
+foreach ($graph->resources() as $res) {
+  // $res is of type EasyRdf\Resource
+  $obj = (object) ['uri' => $res->getUri()];
+  $toMap = array_intersect($res->propertyUris(), array_keys($context));
+  foreach ($toMap as $i) {
+    $prop = $context[$i];
+    $obj->$prop = [];
+    foreach ($res->allLiterals($i) as $v) {
+      $obj->$prop[(string) $v->getLang()] = $v->getValue();
+    }
+    foreach ($res->allResources($i) as $v) {
+      $obj->$prop[] = $v->getUri();
+    }
+  }
+  $nodes[$res->getUri()] = $obj;
+}
+
+# find and display nodes matching the search
+$matches = array_filter($nodes, fn($x) => isset($x->__match__));
+print_r($matches);
+```
+
+### PHP example using arche-lib RepoDb object
+
+(`acdhcd/arche-lib` library required)
+
+```
+# initialize the RepoDb object and perform a simple search
+$repo = acdhOeaw\arche\lib\RepoDb::factory('pathToConfig.yaml');
+$schema = $repo->getSchema();
+$searchTerm = new acdhOeaw\arche\lib\SearchTerm($schema->pid, 'https://hdl.handle.net/21.11115/0000-000E-C8A6-5');
+$searchCfg = new acdhOeaw\arche\lib\SearchConfig();
+$searchCfg->metadataMode = 'neighbors';
+$pdoStmt = $repo->getPdoStatementBySearchTerms([$searchTerm], $searchCfg);
+
+# define context
+$matchProp = $schema->searchMatch;
+$context = [
+  'https://vocabs.acdh.oeaw.ac.at/schema#hasTitle' => 'title',
+  'https://vocabs.acdh.oeaw.ac.at/schema#hasDescription' => 'description',
+  'https://vocabs.acdh.oeaw.ac.at/schema#hasAvailableDate' => 'createDate',
+  'https://vocabs.acdh.oeaw.ac.at/schema#hasUpdatedDate' => 'modificationDate',
+  'https://vocabs.acdh.oeaw.ac.at/schema#hasCreator' => 'creator',
+  'https://vocabs.acdh.oeaw.ac.at/schema#hasRightsHolder' => 'rightsHolder',
+  $matchProp => '__match__',
+];
+
+# map results to PHP objects according to the context
+$nodes = [];
+while ($triple = $pdoStmt->fetchObject()) {
+  # $triple is an object with properties id, property, type, lang, value
+
+  # skip RDF properties for which we don't know the mapping
+  if (!isset($context[$triple->property])) {
+    continue;
+  }
+  # map prop name according to the context
+  $prop = $context[$triple->property];
+
+  # if the triple points to another node in the graph, maintain the reference
+  if ($triple->type === 'REL') {
+    if (!isset($nodes[$triple->value])) {
+      $nodes[$triple->value] = (object) ['__id__' => $triple->value];
+    }
+  }
+    
+  # manage the data
+  if (!isset($nodes[$triple->id])) {
+    $nodes[$triple->id] = (object) ['__id__' => $triple->id];
+  }
+  if (!isset($nodes[$triple->id]->$prop)) {
+    $nodes[$triple->id]->$prop = [];
+  }
+  switch ($triple->type) {
+    case 'ID':
+      $nodes[$triple->id]->$prop[] = $triple->value;
+      break;
+    case 'REL':
+      $nodes[$triple->id]->$prop[] = $nodes[$triple->value];
+      break;
+    default:
+      $nodes[$triple->id]->$prop[(string) $triple->lang] = $triple->value;
+  }
+}
+
+# find and display nodes matching the search
+$matches = array_filter($nodes, fn($x) => isset($x->__match__));
+print_r($matches);
 ```
 
 # Framing
