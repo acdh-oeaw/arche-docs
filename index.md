@@ -5,7 +5,7 @@
 layout: default
 ---
 
-# Guides
+# Guides and publications
 
 * [Metadata API performance](aux/metadata_api_performance.html)
 * [Dissemination services](aux/dissemination_services.html)
@@ -13,7 +13,10 @@ layout: default
 * RDF for webapp programmers
   * [basics](aux/rdf_basics.html) or why do you need to use a dedicated RDF library
   * [compacting and framing](aux/rdf_compacting_and_framing.html)
-* [Metadata API for webapp programmers](aus/metadata_api_for_programmers.html)
+* [Metadata API for webapp programmers](aux/metadata_api_for_programmers.html)
+
+* [Paper from the CLARIN Annual Conference 2021](https://ecp.ep.liu.se/index.php/clarin/article/view/428/386)
+  (doi https://doi.org/10.3384/9789179294441)
 
 # Components
 

@@ -496,7 +496,33 @@ your own.</li>
 </div>
 <div id="php-example" class="section level3">
 <h3>PHP example</h3>
-<p>TODO</p>
+<p>(<code>guzzlehttp/guzzle</code> and <code>ml/json-ld</code> libraries
+required)</p>
+<pre class="php"><code># definte a custom context
+$context = &#39;{
+  &quot;title&quot;: &quot;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&quot;,
+  &quot;subject&quot;: &quot;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&quot;,
+  &quot;creator&quot;: {
+    &quot;@id&quot;: &quot;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&quot;,
+    &quot;@type&quot;: &quot;@id&quot;
+  }
+}&#39;;
+
+# get sample ARCHE resource data in JSON-LD
+# for clarity fetch only single resource metadata and only properties mentioned in the context
+$headers = [
+  &#39;Accept&#39; =&gt; &#39;application/ld+json&#39;,
+  &#39;X-METADATA-READ-MODE&#39; =&gt; &#39;resource&#39;, 
+  &#39;X-RESOURCE-PROPERTIES&#39; =&gt; &#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/schema#hasSubject,https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;
+];
+$client = new GuzzleHttp\Client([&#39;headers&#39; =&gt; $headers]);
+$response = $client-&gt;request(&#39;get&#39;, &#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;, $headers);
+$data = (string) $response-&gt;getBody();
+
+# before compacting
+print_r(json_decode($data));
+# after compacting
+print_r(ML\JsonLD\JsonLD::compact($data, $context));</code></pre>
 </div>
 </div>
 <div id="manual-compacting" class="section level2">

@@ -91,7 +91,35 @@ TODO
 
 ### PHP example
 
-TODO
+(`guzzlehttp/guzzle` and `ml/json-ld` libraries required)
+
+```php
+# definte a custom context
+$context = '{
+  "title": "https://vocabs.acdh.oeaw.ac.at/schema#hasTitle",
+  "subject": "https://vocabs.acdh.oeaw.ac.at/schema#hasSubject",
+  "creator": {
+    "@id": "https://vocabs.acdh.oeaw.ac.at/schema#hasCreator",
+    "@type": "@id"
+  }
+}';
+
+# get sample ARCHE resource data in JSON-LD
+# for clarity fetch only single resource metadata and only properties mentioned in the context
+$headers = [
+  'Accept' => 'application/ld+json',
+  'X-METADATA-READ-MODE' => 'resource', 
+  'X-RESOURCE-PROPERTIES' => 'https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/schema#hasSubject,https://vocabs.acdh.oeaw.ac.at/schema#hasCreator'
+];
+$client = new GuzzleHttp\Client(['headers' => $headers]);
+$response = $client->request('get', 'https://hdl.handle.net/21.11115/0000-000E-C8A6-5', $headers);
+$data = (string) $response->getBody();
+
+# before compacting
+print_r(json_decode($data));
+# after compacting
+print_r(ML\JsonLD\JsonLD::compact($data, $context));
+```
 
 ## Manual compacting
 
@@ -100,6 +128,7 @@ Below manual compacting examples in Python and PHP using the `schema` section of
 ### Python example
 
 (`rdflib` and `requests` libraries required)
+
 
 ```python
 import rdflib
