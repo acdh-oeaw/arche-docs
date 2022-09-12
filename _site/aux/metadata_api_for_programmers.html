@@ -382,7 +382,10 @@ in details</a>
 shorthands</a></li>
 </ul></li>
 <li><a href="#limiting-the-retrieved-rdf-properties-set" id="toc-limiting-the-retrieved-rdf-properties-set">Limiting the
-retrieved RDF properties set</a></li>
+retrieved RDF properties set</a>
+<ul>
+<li><a href="#example" id="toc-example">Example</a></li>
+</ul></li>
 <li><a href="#query-parameters-vs-request-headers" id="toc-query-parameters-vs-request-headers">Query parameters vs request
 headers</a></li>
 </ul>
@@ -683,12 +686,36 @@ properties to be fetched for other resources collected according to the
 <ul>
 <li>RDF property names passed trough these parameters have to be
 fully-qualified URIs. There’s no option to use prefix-shortened names,
-e.g. you have to specify the
-<code>https://vocabs.acdh.oeaw.ac.at/schema#hasTitle</code> and
-<code>acdh:hasTitle</code> wont’ work.</li>
+e.g. you have to specify it as
+<code>https://vocabs.acdh.oeaw.ac.at/schema#hasTitle</code>
+(<code>acdh:hasTitle</code> wont’ work).</li>
 <li>You can pass these parameters both as request query parameters and
-as request headers - see the</li>
+as request headers - see the <a href="#query-parameters-vs-request-headers">Query parameters vs request
+headers</a> chapter below.
+<ul>
+<li>When passing as request query parameters, pass multiple RDF property
+URIs as consecutive array parameters and make sure query parameter
+values are URL-encoded (see the example below).</li>
+<li>When passing as a request header, join multiple RDF property URIs
+with a comma (no URL-encoding needed),
+e.g. <code>X-RESOURCE-PROPERTIES: https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/Fschema#hasUpdatedDate</code>.</li>
+</ul></li>
 </ul>
+<div id="example" class="section level2">
+<h2>Example</h2>
+<p>Let’s split the URL from the <em>Metadata retrieval performance</em>
+chapter into a (more) human-readable form (note that RDF property URIs
+passes in the request query have to be URL-encoded, hence
+<code>%3A%2F%2F</code> in place of <code>://</code>, <code>%2F</code>
+instead of <code>/</code> and <code>%23</code> instead of
+<code>#</code>):</p>
+<pre class="bash"><code>https://arche.acdh.oeaw.ac.at/api/8274/metadata
+  ?readMode=1_0_0_0
+  &amp;format=application/n-triples
+  &amp;relativesProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle
+  &amp;resourceProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle
+  &amp;resourceProperties[1]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasUpdatedDate</code></pre>
+</div>
 </div>
 <div id="query-parameters-vs-request-headers" class="section level1">
 <h1>Query parameters vs request headers</h1>
@@ -727,8 +754,15 @@ one-liner.</li>
 value sent within a request query takes precedence over value sent using
 an HTTP header.</li>
 </ul>
-<p>All in all please just use the method you find more convenient in a
-given context.</p>
+<p>All in all just use the method you find more convenient in a given
+context.</p>
+<p>Remarks:</p>
+<ul>
+<li>Technically every ARCHE instance can use different HTTP headers
+names (and not only the onse described in the <a href="https://app.swaggerhub.com/apis/zozlak/arche">REST API
+documentation</a>). The safest way to determine the headers is to take a
+look at the <code>{repoCfg}$.rest.headers</code>.</li>
+</ul>
 </div>
 <div class="footnotes footnotes-end-of-document">
 <hr />
