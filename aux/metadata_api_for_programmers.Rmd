@@ -1,5 +1,6 @@
 ---
 title: "ARCHE Metadata API for programmers"
+date: "`r Sys.Date()`"
 output:
   html_document: 
     toc: yes
@@ -7,7 +8,7 @@ output:
 
 # Conventions
 
-* RDF property URIs are quite ofren shortened using following prefixes:
+* RDF property URIs are quite often shortened using following prefixes:
   ```
   acdh https://vocabs.acdh.oeaw.ac.at/schema#
   acdhi https://id.acdh.oeaw.ac.at
@@ -131,7 +132,7 @@ So which values it can take?
 
 The full description of the **readMode** consists of four digits separated by an underscore: `{children depth}_{parents depth}_{pointed to}_{pointed from}`, where:
 
-* `{children depth}` and `{parents depth}` specify how far from the **_requested resource_** in the repository structure we want go (by following the `{repoCfg}$.schema.parent` RDF property)
+* `{children depth}` and `{parents depth}` specify how far from the **_requested resource_** in the repository structure we want go (by following the RDF property indicated by the `parentProperty` request parameter)
 * `{pointed to}` and `{pointed from}` are binary flags (they take only values od `0` or `1`) and indicate if 
 
 ## Examples

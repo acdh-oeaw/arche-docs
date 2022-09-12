@@ -10,6 +10,7 @@
 
 
 
+<meta name="date" content="2022-09-12" />
 
 <title>Using RDF in webapps</title>
 
@@ -362,6 +363,7 @@ pre code {
 
 
 <h1 class="title toc-ignore">Using RDF in webapps</h1>
+<h4 class="date">2022-09-12</h4>
 
 </div>
 
@@ -445,27 +447,27 @@ programming language.</li>
 each property (previous point issue aside) as
 <code>myObject.http://some.namespace/someProperty</code>.</li>
 </ul>
-<p>A solution to this problem is called <em>framing</em> and is
-discussed in a separate chapter.</p>
+<p>A solution to this problem is called <em>compacting</em> and is
+discussed <a href="rdf_compacting_and_framing.html">here</a>.</p>
 </div>
 <div id="object-ids-being-uris" class="section level2">
 <h2>Object IDs being URIs</h2>
-<p>You may face similar issue with the RDF graph nodes - mapped to
-objects - identifiers:</p>
+<p>Identifiers of RDF graph nodes - mapped to objects - are also
+URIs:</p>
 <ul>
-<li>If you are attached to integer ids, sorry, it’s not the case.</li>
-<li>You should pay attention to blank nodes as if their identifiers can
-be compared only within a single graph (and if they match an id of a
-blank node from another graph, then, surprisingly, they aren’t
-considered equal).</li>
+<li>If you are attached to integer IDs, then sorry, it’s not the
+case.</li>
+<li>You should pay attention to blank nodes as their identifiers can be
+compared only within a single RDF graph (and if they come from different
+RDF graphs they always differ, even if their URIs match!).</li>
 </ul>
 </div>
 <div id="literal-objects-immutability" class="section level2">
 <h2>Literal objects immutability</h2>
 <p>Another complexity is brought by literals.</p>
 <p>Literals have compound structure with value, datatype and language
-tag which requires mapping them to objects. The important thing is these
-objects should be immutable.</p>
+tag. Because of that they must be modeled as objects. The important
+thing is these objects have to be immutable.</p>
 <p>Let’s consider a following RDF graph:</p>
 <pre><code>Resource1(someUri) --someProperty--&gt; Literal1(someValue, someDatatype, someLang)
                                         ^
@@ -538,8 +540,8 @@ graph!</p>
 _:b1 &lt;http://baz&gt; &quot;baz&quot; .</code></pre></li>
 <li><p>turtle</p>
 <ul>
-<li>all n-triples serialization variant (n-triples is a subset of
-turtle)</li>
+<li>all n-triples serializations (as n-triples is a subset of the turtle
+format)</li>
 <li><pre><code>  @prefix foo: &lt;http://foo/&gt; .
   foo:1 &lt;http://bar/1&gt; foo:2 ,
                      [&lt;http://baz&gt; &quot;baz&quot;] .
@@ -549,8 +551,7 @@ turtle)</li>
                               _:b1 .
   &lt;http://foo/2&gt; &lt;http://baz&gt; &quot;baz&quot; .
  _:b1            &lt;http://baz&gt; &quot;baz&quot; .</code></pre></li>
-<li>and countless others as we can freely choose which namespace to
-declare and which aliases assign to them</li>
+<li>and countless others…</li>
 </ul></li>
 <li><p>JSON-LD:</p>
 <ul>
@@ -629,8 +630,12 @@ different serializations)</p>
     }
   ]
 }</code></pre></li>
+<li><p>and countless others…</p></li>
 </ul></li>
 </ul>
+<p>Now ask yourself a question - are you able to assure data you fetch
+from an external source, e.g. ARCHE, will be always serialized in the
+same way? (the answer is obviously “no, you don’t”)</p>
 </div>
 </div>
 
