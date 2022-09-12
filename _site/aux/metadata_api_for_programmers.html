@@ -367,28 +367,27 @@ pre code {
 
 <div id="TOC">
 <ul>
-<li><a href="#introduction" id="toc-introduction">Introduction</a></li>
 <li><a href="#conventions" id="toc-conventions">Conventions</a></li>
+<li><a href="#introduction" id="toc-introduction">Introduction</a></li>
 <li><a href="#metadata-retrieval-performance" id="toc-metadata-retrieval-performance">Metadata retrieval
 performance</a>
 <ul>
 <li><a href="#examples-and-discussion" id="toc-examples-and-discussion">Examples and discussion</a></li>
 </ul></li>
-<li><a href="#metadata-retrieval-process" id="toc-metadata-retrieval-process">Metadata retrieval process</a></li>
+<li><a href="#readmode-in-details" id="toc-readmode-in-details">readMode
+in details</a>
+<ul>
+<li><a href="#examples" id="toc-examples">Examples</a></li>
+<li><a href="#readmode-shorthands" id="toc-readmode-shorthands">readMode
+shorthands</a></li>
+</ul></li>
+<li><a href="#limiting-the-retrieved-rdf-properties-set" id="toc-limiting-the-retrieved-rdf-properties-set">Limiting the
+retrieved RDF properties set</a></li>
+<li><a href="#query-parameters-vs-request-headers" id="toc-query-parameters-vs-request-headers">Query parameters vs request
+headers</a></li>
 </ul>
 </div>
 
-<div id="introduction" class="section level1">
-<h1>Introduction</h1>
-<p>ARCHE Suite uses RDF metadata but doesn’t provide an <a href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a> endpoint<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
-<p>Instead of the SPARQL endpoint ARCHE Suite provides its own REST API.
-This API doesn’t give you as much flexibility as SPARQL but is much
-simpler, delivers data much faster and covers most everyday use
-cases.</p>
-<p>This document supplements the (<a href="https://app.swaggerhub.com/apis/zozlak/arche/">technical openAPI
-documentation</a>) of the ARCHE Suite metadata API with practical
-examples illustrating its capabilities.</p>
-</div>
 <div id="conventions" class="section level1">
 <h1>Conventions</h1>
 <ul>
@@ -396,7 +395,38 @@ examples illustrating its capabilities.</p>
 prefixes:</p>
 <pre><code>acdh https://vocabs.acdh.oeaw.ac.at/schema#
 acdhi https://id.acdh.oeaw.ac.at</code></pre></li>
+<li><p>Examples are provided either in plain URLs or Python. In case of
+Python it’s assumed <code>datetime</code>, <code>requests</code> and
+<code>rdflib</code> libraries are loaded in a following way:</p>
+<pre class="python"><code>import datetime
+import requests
+import rdflib</code></pre></li>
+<li><p>The <code>{repoCfg}$.X.Y</code> syntax means an
+<code>$.X.Y</code> <a href="https://github.com/json-path/JsonPath">JSON
+path</a> over the repository configuration returned by its <a href="https://app.swaggerhub.com/apis/zozlak/arche/3.5#/default/get_describe">describe</a>
+REST API endpoint, e.g. <code>{repoCfg}$.schema.label</code> on <a href="https://arche.acdh.oeaw.ac.at/api" class="uri">https://arche.acdh.oeaw.ac.at/api</a> resolves to
+<code>https://vocabs.acdh.oeaw.ac.at/schema#hasTitle</code>.</p></li>
+<li><p>The <strong>ARCHE API</strong> term means “the REST API provided
+by the <a href="https://github.com/acdh-oeaw/arche-core">arche-core</a>”
+with its OpenAPI specification available <a href="https://app.swaggerhub.com/apis/zozlak/arche/">here</a>.</p></li>
+<li><p>The <strong><em>requested resource</em></strong> means both the
+resource requested by the <a href="https://app.swaggerhub.com/apis/zozlak/arche/3.5#/default/get__resourceId__metadata">resource
+metadata</a> REST API endpoint <strong>as well as</strong> all resources
+matched by the search condition in the search REST API endpoints (<a href="https://app.swaggerhub.com/apis/zozlak/arche/3.5#/default/get_search">GET</a>
+and <a href="https://app.swaggerhub.com/apis/zozlak/arche/3.5#/default/post_search">POST</a>
+ones)</p></li>
 </ul>
+</div>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>ARCHE Suite uses RDF metadata but doesn’t provide an <a href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a> endpoint<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>Instead of the SPARQL endpoint ARCHE Suite provides its own REST API
+(later on just “ARCHE API”). This API doesn’t give you as much
+flexibility as SPARQL but is much simpler, delivers data much faster and
+covers most everyday use cases.</p>
+<p>This document supplements the (<a href="https://app.swaggerhub.com/apis/zozlak/arche/">technical openAPI
+documentation</a>) of the ARCHE API with practical examples illustrating
+its capabilities.</p>
 </div>
 <div id="metadata-retrieval-performance" class="section level1">
 <h1>Metadata retrieval performance</h1>
@@ -415,12 +445,16 @@ longer to serialize, transfer over the network and parse on your side).
 <ul>
 <li>In ARCHE metadata API this is achieved by choosing the right
 metadata <strong>readMode</strong> parameter and combing it with the
-<strong>resourceProperties</strong> and
-<strong>relativesProperties</strong> parameters.</li>
+<strong><code>resourceProperties</code></strong> and
+<strong><code>relativesProperties</code></strong> parameters.</li>
 </ul></li>
 <li>Request metadata in <code>application/n-triples</code> format
 because it’s <a href="metadata_api_performance.html">definitely the
-fastest</a>.</li>
+fastest</a> and if you think you can avoid parsing the RDF with a
+dedicated parser library by choosing the serialization format smartly
+(e.g. by requesting <code>application/json</code> or
+<code>application/ld+json</code>), then <a href="rdf_basics.html">you
+are wrong</a>.</li>
 </ul>
 <div id="examples-and-discussion" class="section level2">
 <h2>Examples and discussion</h2>
@@ -429,10 +463,7 @@ modification date and title of all resources it refers to” scenario:</p>
 <ol style="list-style-type: decimal">
 <li><p>First fetch the <a href="https://arche.acdh.oeaw.ac.at/api/8274" class="uri">https://arche.acdh.oeaw.ac.at/api/8274</a> metadata, then
 fetch all resources it points to one-by-one:</p>
-<pre class="python"><code>import datetime
-import requests
-import rdflib
-t0 = datetime.datetime.now()
+<pre class="python"><code>t0 = datetime.datetime.now()
 response = requests.get(&#39;https://arche.acdh.oeaw.ac.at/api/8274/metadata?readMode=resource&amp;format=application/n-triples&#39;)
 resMeta = rdflib.Graph()
 resMeta.parse(data=response.text, format=&#39;nt&#39;)
@@ -442,16 +473,14 @@ for i in resMeta:
     response = requests.get(f&#39;{i[2]}/metadata?readMode=resource&amp;format=application/n-triples&#39;)
     resMeta.parse(data=response.text, format=&#39;nt&#39;)
     n += 1
+
 print(f&quot;Elapsed time {datetime.datetime.now() - t0}, {len(resMeta)} triples read, {n} requests made&quot;)</code></pre>
 <p>resulting in in
 <code>Elapsed time 0:00:16.629970, 465 triples read, 28 requests made</code>.</p></li>
 <li><p>Fetch metadata of <a href="https://arche.acdh.oeaw.ac.at/api/8274" class="uri">https://arche.acdh.oeaw.ac.at/api/8274</a> and all resources
-it refers to in one request by using the right <strong>read
-mode</strong>:</p>
-<pre class="python"><code>import datetime
-import requests
-import rdflib
-t0 = datetime.datetime.now()
+it refers to in one request by using the right
+<strong>readMode</strong>:</p>
+<pre class="python"><code>t0 = datetime.datetime.now()
 response = requests.get(&#39;https://arche.acdh.oeaw.ac.at/api/8274/metadata?readMode=0_0_1_0&amp;format=application/n-triples&#39;)
 resMeta = rdflib.Graph()
 resMeta.parse(data=response.text, format=&#39;nt&#39;)
@@ -465,31 +494,29 @@ shorter and simpler.</p>
 <p>This effect depends largely on the network latency and will be less
 pronounced if you make requests over local network and more pronounced
 when you make them over a slow network.</p>
-<p>Now let’s take a look on how much time we can save fetching only RDF
-properties we really want.</p>
-<p>At first let’s just adapt the previous scenario:</p>
-<pre class="python"><code>import datetime
-import requests
-import rdflib
-t0 = datetime.datetime.now()
+<p><strong>Now let’s take a look on how much time we can save fetching
+only RDF properties we really want.</strong></p>
+<p>At first let’s just adapt the previous scenario (You may skip
+analyzing the exact request URL as we will get back to it later. For now
+it’s enough to trust it does the job and focus at the results.):</p>
+<pre class="python"><code>t0 = datetime.datetime.now()
 response = requests.get(&#39;https://arche.acdh.oeaw.ac.at/api/8274/metadata?readMode=0_0_1_0&amp;format=application/n-triples&amp;relativesProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&amp;resourceProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&amp;resourceProperties[1]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasUpdatedDate&#39;)
 resMeta = rdflib.Graph()
 resMeta.parse(data=response.text, format=&#39;nt&#39;)
 print(f&quot;Elapsed time {datetime.datetime.now() - t0}, {len(resMeta)} triples read&quot;)</code></pre>
 <p>resulting in
 <code>Elapsed time 0:00:01.041821, 39 triples read</code>.</p>
-<p>Here we saved only 0.11 s corresponding to around 10% response time.
-Doesn’t look like a huge gain but hey, we’ve only save
-<code>465 - 39 = 426</code> triples. What if save thousands?</p>
+<p>Here we <strong>saved only 0.11 s corresponding to around 10% of the
+response time.</strong></p>
+<p>Doesn’t look like a huge gain but hey, we’ve only save
+<code>465 - 39 = 426</code> triples. <strong>What if we save thousands
+of triples?</strong></p>
 <p>To test that let’s fetch a title and a last modification date of <a href="https://arche.acdh.oeaw.ac.at/api/8274" class="uri">https://arche.acdh.oeaw.ac.at/api/8274</a> and title of all
 its children (there are few hundreds of them):</p>
 <ol style="list-style-type: decimal">
 <li><p>By just fetching all RDF data of the resource and its
 children</p>
-<pre class="python"><code>import datetime
-import requests
-import rdflib
-t0 = datetime.datetime.now()
+<pre class="python"><code>t0 = datetime.datetime.now()
 response = requests.get(&#39;https://arche.acdh.oeaw.ac.at/api/8274/metadata?readMode=1_0_0_0&amp;format=application/n-triples&amp;relativesProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&amp;resourceProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&amp;resourceProperties[1]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasUpdatedDate&#39;)
 resMeta = rdflib.Graph()
 resMeta.parse(data=response.text, format=&#39;nt&#39;)
@@ -497,10 +524,7 @@ print(f&quot;Elapsed time {datetime.datetime.now() - t0}, {len(resMeta)} triples
 <p>resulting in
 <code>Elapsed time 0:00:05.231554, 23810 triples read</code>.</p></li>
 <li><p>By limiting set of retrieved RDF properties</p>
-<pre class="python"><code>import datetime
-import requests
-import rdflib
-t0 = datetime.datetime.now()
+<pre class="python"><code>t0 = datetime.datetime.now()
 response = requests.get(&#39;https://arche.acdh.oeaw.ac.at/api/8274/metadata?readMode=1_0_0_0&amp;format=application/n-triples&amp;relativesProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&amp;resourceProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&amp;resourceProperties[1]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasUpdatedDate&#39;)
 resMeta = rdflib.Graph()
 resMeta.parse(data=response.text, format=&#39;nt&#39;)
@@ -508,32 +532,203 @@ print(f&quot;Elapsed time {datetime.datetime.now() - t0}, {len(resMeta)} triples
 <p>resulting in
 <code>Elapsed time 0:00:01.082643, 794 triples read</code>.</p></li>
 </ol>
-<p>The time went down from 5.2 s to 1.1 s which is a noticeable gain.
-It’s worth mentioning that a per-saved triple gain is comparable in both
-scenarios, just it only noticeable only for larger triples count.</p>
+<p>Now the <strong>time went down from 5.2 s to 1.1 s</strong> which is
+a noticeable gain.</p>
+<p>By the way a per-saved-triple-gain is comparable in both scenarios,
+just it’s so small per single triple that it only becomes noticeable for
+large triples count.</p>
 </div>
 </div>
-<div id="metadata-retrieval-process" class="section level1">
-<h1>Metadata retrieval process</h1>
-<p>Metadata is retrieved in three steps:</p>
-<ol style="list-style-type: decimal">
-<li>Initial set of repository resources is collected
+<div id="readmode-in-details" class="section level1">
+<h1>readMode in details</h1>
+<p>As we already saw choosing the right <strong>readMode</strong>
+parameter value is crucial for effective ARCHE REST API usage. So which
+values it can take?</p>
+<p>The full description of the <strong>readMode</strong> consists of
+four digits separated by an underscore:
+<code>{children depth}_{parents depth}_{pointed to}_{pointed from}</code>,
+where:</p>
 <ul>
-<li>For all single-resource oriented endpoints
-(<code>GET/PATCH {apiBase}/{resourceId}/metadata</code>,
-<code>PUT {apiBase}/{resourceId}</code>,
-<code>POST {apiBase}/metadata</code>) the initial set contains only a
-requested resource.</li>
-<li>For the search endpoints (<code>GET/POST {apiBase}/search}</code>)
-the initial set contains all resources matching the search criteria
-(after applying paging, if applicable).</li>
+<li><code>{children depth}</code> and <code>{parents depth}</code>
+specify how far from the <strong><em>requested resource</em></strong> in
+the repository structure we want go (by following the
+<code>{repoCfg}$.schema.parent</code> RDF property)</li>
+<li><code>{pointed to}</code> and <code>{pointed from}</code> are binary
+flags (they take only values od <code>0</code> or <code>1</code>) and
+indicate if</li>
+</ul>
+<div id="examples" class="section level2">
+<h2>Examples</h2>
+<p>Let’s take a following sample repository structure (circles are
+resources with the black one being the requested one, black arrows are
+parent RDF properties, blue and red arrows are any other RDF
+properties):</p>
+<p><img src="data:image/png;base64,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" /></p>
+<ul>
+<li>readMode <code>0_0_0_0</code> matches only the <em>requested
+resource</em> - the <code>R0</code>.</li>
+<li>readMode <code>0_0_1_0</code> matches the <em>requested
+resource</em> (<code>R0</code>) and all resources it points to (with any
+RDF property): <code>R2</code>, <code>R10</code> and
+<code>R12</code>.</li>
+<li>readMode <code>0_0_0_1</code> matches the <em>requested
+resource</em> (<code>R0</code>) and all resources pointing to it (with
+any RDF property): <code>R9</code>, <code>R3</code>, <code>R4</code> and
+<code>R13</code>.</li>
+<li>readMode <code>0_1_0_0</code> matches the <em>requested
+resource</em> (<code>R0</code>) and its first order parent
+(<code>R2</code>).</li>
+<li>readMode <code>0_2_0_0</code> matches the <em>requested
+resource</em> (<code>R0</code>) and its parents up to the second order
+(<code>R1</code> and <code>R2</code>).</li>
+<li>readMode <code>1_0_0_0</code> matches the <em>requested
+resource</em> (<code>R0</code>) and its first order children
+(<code>R3</code> and <code>R4</code>).</li>
+<li>readMode <code>2_0_0_0</code> matches the <em>requested
+resource</em> (<code>R0</code>) and its children up to the second order
+(<code>R3</code>, <code>R4</code>, <code>R5</code> and
+<code>R6</code>).</li>
+<li>readMode <code>2_1_1_0</code> is a union of results for
+<code>2_0_0_0</code> (<code>R0</code>, <code>R3</code>, <code>R4</code>,
+<code>R5</code>, <code>R6</code>), <code>0_1_0_0</code>
+(<code>R0</code>, <code>R2</code>) and <code>0_0_1_0</code>
+(<code>R0</code>, <code>R2</code>, <code>R10</code>, <code>R12</code>)
+so all in all it covers <code>R0</code>, <code>R2</code>,
+<code>R3</code>, <code>R4</code>, <code>R5</code>, <code>R6</code>,
+<code>R10</code> and <code>R12</code></li>
+</ul>
+</div>
+<div id="readmode-shorthands" class="section level2">
+<h2>readMode shorthands</h2>
+<p>A few most popular <strong>readMode</strong> values have shorthand
+labels which can be used instead:</p>
+<table>
+<colgroup>
+<col width="40%" />
+<col width="42%" />
+<col width="18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>shorthand</th>
+<th>readMode value</th>
+<th>remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>resource</code></td>
+<td><code>0_0_0_0</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>ids</code></td>
+<td><code>0_0_0_0</code></td>
+<td>limits fetched RDF properties to the label
+(<code>{repoCfg}$.schema.label</code>) only</td>
+</tr>
+<tr class="odd">
+<td><code>neighbors</code></td>
+<td><code>0_0_1_1</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>relatives</code></td>
+<td><code>999999_999999_1_0</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>relativesOnly</code></td>
+<td><code>999999_999999_0_0</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>relativesReverse</code></td>
+<td><code>999999_999999_1_1</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>parents</code></td>
+<td><code>0_999999_1_0</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>parentsOnly</code></td>
+<td><code>0_999999_0_0</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>parentsReverse</code></td>
+<td><code>0_999999_1_1</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="limiting-the-retrieved-rdf-properties-set" class="section level1">
+<h1>Limiting the retrieved RDF properties set</h1>
+<p>As we saw in the <a href="#metadata-retrieval-performance">Metadata
+retrieval performance</a> chapter fetching only RDF properties we are
+actually interested in can speed up the metadata retrieval
+significantly.</p>
+<p>This can be achieved with the
+<strong><code>resourceProperties</code></strong> and
+<strong><code>relativesProperties</code></strong> request parameters.
+The first one lists the RDF properties we want to fetch for the
+<strong><em>requested resource</em></strong> and the second one the RDF
+properties to be fetched for other resources collected according to the
+<strong>readMode</strong>.</p>
+<p>Remarks:</p>
+<ul>
+<li>RDF property names passed trough these parameters have to be
+fully-qualified URIs. There’s no option to use prefix-shortened names,
+e.g. you have to specify the
+<code>https://vocabs.acdh.oeaw.ac.at/schema#hasTitle</code> and
+<code>acdh:hasTitle</code> wont’ work.</li>
+<li>You can pass these parameters both as request query parameters and
+as request headers - see the</li>
+</ul>
+</div>
+<div id="query-parameters-vs-request-headers" class="section level1">
+<h1>Query parameters vs request headers</h1>
+<p>ARCHE API allows to provide various parameters either by request
+query parameters or HTTP headers. Why two methods are available and is
+there a difference between them?</p>
+<ul>
+<li>Query parameters are subject to some limitations of the URL
+processing:
+<ul>
+<li>Query parameters are typically lost on redirects, e.g. when you
+request a metadata-only ARCHE resource using the binary API endpoint
+like <a href="https://arche.acdh.oeaw.ac.at/api/8274?readMode=something" class="uri">https://arche.acdh.oeaw.ac.at/api/8274?readMode=something</a>,
+you will get a response redirecting to <a href="https://arche.acdh.oeaw.ac.at/api/8274/metadata" class="uri">https://arche.acdh.oeaw.ac.at/api/8274/metadata</a> with the
+query parameter being lost. Same is likely to happen if you make a
+request not directly to the ARCHE API but to some resolver service,
+e.g. when you request a PID in the <a href="https://hdl.handle.net" class="uri">https://hdl.handle.net</a> or <a href="https://id.acdh.oeaw.ac.at" class="uri">https://id.acdh.oeaw.ac.at</a> namespace. Sometimes
+resolvers allow you to pass target service parameters in a way they are
+preserved but this may require special syntax (e.g. the
+<code>@paramName</code> syntax used by the <a href="https://hdl.handle.net" class="uri">https://hdl.handle.net</a>
+resolver). In contrary most HTTP clients and libraries either preserve
+HTTP headers between the redirects by default or can be easily set up to
+do so. This assures parameters you want to pass to the ARCHE API survive
+intermediate redirects and reach the ARCHE API.</li>
+<li>The web server, proxies, etc. typically limit URL length to some
+arbitrary length, e.g. Apache to 8177 characters. While it’s not an
+everyday problem, it’s not impossible to generate a sane ARCHE API
+request URL longer than this limit. Passing parameters in HTTP headers
+helps to mitigate it.</li>
 </ul></li>
-<li>Metadata <strong>read mode</strong> request parameter is applied to
-all resources in the initial set.</li>
-<li>RDF properties included in the output are filtered based on the
-<strong>resourceProperties</strong> and
-<strong>relativesProperties</strong> requests parameters.</li>
-</ol>
+<li>The downside of passing parameters by headers is they can’t be
+passed as a “clickable URL”. This makes e.g. examples sharing much more
+troublesome as it requires a longer code snippet instead of an URL
+one-liner.</li>
+<li>Both methods are equivalent and can even be mixed but a parameter
+value sent within a request query takes precedence over value sent using
+an HTTP header.</li>
+</ul>
+<p>All in all please just use the method you find more convenient in a
+given context.</p>
 </div>
 <div class="footnotes footnotes-end-of-document">
 <hr />
