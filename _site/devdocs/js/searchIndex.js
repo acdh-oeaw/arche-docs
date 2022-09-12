@@ -8396,6 +8396,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_PROPERTY_BINARY"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003APROPERTY_NEGATE",
+            "name": "PROPERTY_NEGATE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_PROPERTY_NEGATE"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ADATETIME_REGEX",
             "name": "DATETIME_REGEX",
             "summary": "",
