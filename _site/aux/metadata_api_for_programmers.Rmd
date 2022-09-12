@@ -1,1 +1,131 @@
-TODO
+# Introduction
+
+ARCHE Suite uses RDF metadata but doesn't provide an [SPARQL](https://en.wikipedia.org/wiki/SPARQL) endpoint^[There are many reasons for that starting from performance and hardware resources consumption though assuring data consistency up to ability to assure access rights. Discussing them is beyond the scope of this document.].
+
+Instead of the SPARQL endpoint ARCHE Suite provides its own REST API.
+This API doesn't give you as much flexibility as SPARQL but is much simpler, delivers data much faster and covers most everyday use cases.
+
+This document supplements the ([technical openAPI documentation](https://app.swaggerhub.com/apis/zozlak/arche/)) of the ARCHE Suite metadata API with practical examples illustrating its capabilities.
+
+# Conventions
+
+* RDF property URIs are quite ofren shortened using following prefixes:
+  ```
+  acdh https://vocabs.acdh.oeaw.ac.at/schema#
+  acdhi https://id.acdh.oeaw.ac.at
+  ```
+  
+# Metadata retrieval performance
+
+Maximizing metadata retrieval performance goes down to few simple rules:
+
+* Make as few REST API requests as possible  
+  (because each requests introduces network latency and constant processing overhead).
+  * In ARCHE metadata API this is achieved by choosing the right metadata **readMode** parameter.
+* Request as little data as needed
+  (because large data sets take longer to serialize, transfer over the network and parse on your side).
+  * In ARCHE metadata API this is achieved by choosing the right metadata **readMode** parameter and combing it with the **resourceProperties** and **relativesProperties** parameters.
+* Request metadata in `application/n-triples` format because it's [definitely the fastest](metadata_api_performance.html).
+  
+## Examples and discussion
+
+Let's compare two implementations of a "fetch https://arche.acdh.oeaw.ac.at/api/8274 title and last modification date and title of all resources it refers to" scenario:
+
+1. First fetch the https://arche.acdh.oeaw.ac.at/api/8274 metadata,
+   then fetch all resources it points to one-by-one:
+   ```python
+   import datetime
+   import requests
+   import rdflib
+   t0 = datetime.datetime.now()
+   response = requests.get('https://arche.acdh.oeaw.ac.at/api/8274/metadata?readMode=resource&format=application/n-triples')
+   resMeta = rdflib.Graph()
+   resMeta.parse(data=response.text, format='nt')
+   n = 1
+   for i in resMeta:
+     if str(i[2]).startswith('https://arche.acdh.oeaw.ac.at/api/'):
+       response = requests.get(f'{i[2]}/metadata?readMode=resource&format=application/n-triples')
+       resMeta.parse(data=response.text, format='nt')
+       n += 1
+   print(f"Elapsed time {datetime.datetime.now() - t0}, {len(resMeta)} triples read, {n} requests made")
+   ```
+   resulting in in `Elapsed time 0:00:16.629970, 465 triples read, 28 requests made`.
+2. Fetch metadata of https://arche.acdh.oeaw.ac.at/api/8274 and all resources it refers to in one request by using the right **read mode**:
+   ```python
+   import datetime
+   import requests
+   import rdflib
+   t0 = datetime.datetime.now()
+   response = requests.get('https://arche.acdh.oeaw.ac.at/api/8274/metadata?readMode=0_0_1_0&format=application/n-triples')
+   resMeta = rdflib.Graph()
+   resMeta.parse(data=response.text, format='nt')
+   print(f"Elapsed time {datetime.datetime.now() - t0}, {len(resMeta)} triples read")
+   ```
+   resulting in `Elapsed time 0:00:01.151311, 465 triples read`.
+
+As we see using one request instead of 28 **reduced the time from 16.6 s to around 1.2 s**.
+Moreover, the faster code is also shorter and simpler.
+
+This effect depends largely on the network latency and will be less pronounced if you make requests over local network and more pronounced when you make them over a slow network.
+
+Now let's take a look on how much time we can save fetching only RDF properties we really want.
+
+At first let's just adapt the previous scenario:
+
+```python
+import datetime
+import requests
+import rdflib
+t0 = datetime.datetime.now()
+response = requests.get('https://arche.acdh.oeaw.ac.at/api/8274/metadata?readMode=0_0_1_0&format=application/n-triples&relativesProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&resourceProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&resourceProperties[1]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasUpdatedDate')
+resMeta = rdflib.Graph()
+resMeta.parse(data=response.text, format='nt')
+print(f"Elapsed time {datetime.datetime.now() - t0}, {len(resMeta)} triples read")
+```
+resulting in `Elapsed time 0:00:01.041821, 39 triples read`.
+
+Here we saved only 0.11 s corresponding to around 10% response time.
+Doesn't look like a huge gain but hey, we've only save `465 - 39 = 426` triples.
+What if save thousands?
+
+To test that let's fetch a title and a last modification date of https://arche.acdh.oeaw.ac.at/api/8274 and title of all its children (there are few hundreds of them):
+
+1. By just fetching all RDF data of the resource and its children
+   ```python
+   import datetime
+   import requests
+   import rdflib
+   t0 = datetime.datetime.now()
+   response = requests.get('https://arche.acdh.oeaw.ac.at/api/8274/metadata?readMode=1_0_0_0&format=application/n-triples&relativesProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&resourceProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&resourceProperties[1]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasUpdatedDate')
+   resMeta = rdflib.Graph()
+   resMeta.parse(data=response.text, format='nt')
+   print(f"Elapsed time {datetime.datetime.now() - t0}, {len(resMeta)} triples read")
+   ```
+   resulting in `Elapsed time 0:00:05.231554, 23810 triples read`.
+2. By limiting set of retrieved RDF properties
+   ```python
+   import datetime
+   import requests
+   import rdflib
+   t0 = datetime.datetime.now()
+   response = requests.get('https://arche.acdh.oeaw.ac.at/api/8274/metadata?readMode=1_0_0_0&format=application/n-triples&relativesProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&resourceProperties[0]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&resourceProperties[1]=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasUpdatedDate')
+   resMeta = rdflib.Graph()
+   resMeta.parse(data=response.text, format='nt')
+   print(f"Elapsed time {datetime.datetime.now() - t0}, {len(resMeta)} triples read")
+   ```
+   resulting in `Elapsed time 0:00:01.082643, 794 triples read`.
+
+The time went down from 5.2 s to 1.1 s which is a noticeable gain.
+It's worth mentioning that a per-saved triple gain is comparable in both scenarios, just it only noticeable only for larger triples count.
+
+# Metadata retrieval process
+
+Metadata is retrieved in three steps:
+
+1. Initial set of repository resources is collected
+   * For all single-resource oriented endpoints (`GET/PATCH {apiBase}/{resourceId}/metadata`, `PUT {apiBase}/{resourceId}`, `POST {apiBase}/metadata`)
+     the initial set contains only a requested resource.
+   * For the search endpoints (`GET/POST {apiBase}/search}`) the initial set contains all resources matching the search criteria
+     (after applying paging, if applicable).
+2. Metadata **read mode** request parameter is applied to all resources in the initial set.
+3. RDF properties included in the output are filtered based on the **resourceProperties** and **relativesProperties** requests parameters.
