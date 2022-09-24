@@ -6301,6 +6301,11 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020cardinality\u0020for\u0020the\u0020roottable",
             "url": "classes/Drupal-arche-gui-api-Helper-Metadata-MetadataGuiHelper.html#method_rtCardinality"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHelper\u003A\u003AremoveDuplicatesFromOntology\u0028\u0029",
+            "name": "removeDuplicatesFromOntology",
+            "summary": "Because\u0020of\u0020the\u0020rdf\u0020we\u0020have\u0020a\u0020lot\u0020of\u0020duplicates\u0020in\u0020the\u0020resource\u0020array,\u0020we\u0020have\u0020to\u0020remove\u0020them",
+            "url": "classes/Drupal-arche-gui-api-Helper-Metadata-MetadataGuiHelper.html#method_removeDuplicatesFromOntology"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHelper\u003A\u003AreorderRootTable\u0028\u0029",
             "name": "reorderRootTable",
             "summary": "Reorder\u0020the\u0020root\u0020table\u0020result",
