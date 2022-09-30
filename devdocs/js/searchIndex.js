@@ -2266,6 +2266,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainPropertyRangeLiteral"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AcheckPropertyRangeUri\u0028\u0029",
+            "name": "checkPropertyRangeUri",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkPropertyRangeUri"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AmaintainDefaultValues\u0028\u0029",
             "name": "maintainDefaultValues",
             "summary": "",
