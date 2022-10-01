@@ -12986,6 +12986,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizer.html#property_client"
         },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024cache",
+            "name": "cache",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizer.html#property_cache"
+        },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024cacheResolve",
             "name": "cacheResolve",
             "summary": "",
@@ -12995,6 +13000,11 @@ Search.appendIndex(
             "name": "cacheFetch",
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizer.html#property_cacheFetch"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024cacheNormalize",
+            "name": "cacheNormalize",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizer.html#property_cacheNormalize"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerException",
             "name": "UriNormalizerException",
@@ -13135,6 +13145,11 @@ Search.appendIndex(
             "name": "testWrongResolveRule",
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizerTest.html#method_testWrongResolveRule"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerTest\u003A\u003AtestNormalizeCache\u0028\u0029",
+            "name": "testNormalizeCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerTest.html#method_testNormalizeCache"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerTest\u003A\u003AtestResolveCache\u0028\u0029",
             "name": "testResolveCache",
