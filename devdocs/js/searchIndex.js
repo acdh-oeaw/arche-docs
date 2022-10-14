@@ -12953,18 +12953,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003Aresolve\u0028\u0029",
             "name": "resolve",
-            "summary": "Resolves\u0020a\u0020given\u0020URI\u0020to\u0020the\u0020URL\u0020fetching\u0020its\u0020RDF\u0020metadata\u0020and\u0020returns\na\u0020corresponding\u0020PSR\u002D7\u0020response\u0020object.",
+            "summary": "Resolves\u0020a\u0020given\u0020URI\u0020to\u0020a\u0020PSR\u002D7\u0020request\u0020fetching\u0020its\u0020RDF\u0020metadata.",
             "url": "classes/acdhOeaw-UriNormalizer.html#method_resolve"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003Afetch\u0028\u0029",
             "name": "fetch",
-            "summary": "Tries\u0020to\u0020fetch\u0020RDF\u0020metadata\u0020for\u0020a\u0020given\u0020URI.",
+            "summary": "Fetches\u0020RDF\u0020metadata\u0020for\u0020a\u0020given\u0020URI.",
             "url": "classes/acdhOeaw-UriNormalizer.html#method_fetch"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003AfetchUrl\u0028\u0029",
             "name": "fetchUrl",
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizer.html#method_fetchUrl"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003AsetCache\u0028\u0029",
+            "name": "setCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizer.html#method_setCache"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024obj",
             "name": "obj",
@@ -12991,20 +12996,65 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizer.html#property_cache"
         },                {
-            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024cacheResolve",
-            "name": "cacheResolve",
-            "summary": "",
-            "url": "classes/acdhOeaw-UriNormalizer.html#property_cacheResolve"
+            "fqsen": "\\acdhOeaw\\UriNormalizerCache",
+            "name": "UriNormalizerCache",
+            "summary": "A\u0020PSR\u002D16\u0020compliant\u0020memory\u0020\u002B\u0020\u0028optional\u0029\u0020sqlite\u0020database\u0020cache\nfor\u0020the\u0020UriNormalizer\u0020class.",
+            "url": "classes/acdhOeaw-UriNormalizerCache.html"
         },                {
-            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024cacheFetch",
-            "name": "cacheFetch",
+            "fqsen": "\\acdhOeaw\\UriNormalizerCache\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
             "summary": "",
-            "url": "classes/acdhOeaw-UriNormalizer.html#property_cacheFetch"
+            "url": "classes/acdhOeaw-UriNormalizerCache.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024cacheNormalize",
-            "name": "cacheNormalize",
+            "fqsen": "\\acdhOeaw\\UriNormalizerCache\u003A\u003Aclear\u0028\u0029",
+            "name": "clear",
             "summary": "",
-            "url": "classes/acdhOeaw-UriNormalizer.html#property_cacheNormalize"
+            "url": "classes/acdhOeaw-UriNormalizerCache.html#method_clear"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCache\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerCache.html#method_delete"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCache\u003A\u003AdeleteMultiple\u0028\u0029",
+            "name": "deleteMultiple",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerCache.html#method_deleteMultiple"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCache\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerCache.html#method_get"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCache\u003A\u003AgetMultiple\u0028\u0029",
+            "name": "getMultiple",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerCache.html#method_getMultiple"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCache\u003A\u003Ahas\u0028\u0029",
+            "name": "has",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerCache.html#method_has"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCache\u003A\u003Aset\u0028\u0029",
+            "name": "set",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerCache.html#method_set"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCache\u003A\u003AsetMultiple\u0028\u0029",
+            "name": "setMultiple",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerCache.html#method_setMultiple"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCache\u003A\u003A\u0024pdo",
+            "name": "pdo",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerCache.html#property_pdo"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCache\u003A\u003A\u0024memCache",
+            "name": "memCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerCache.html#property_memCache"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerException",
             "name": "UriNormalizerException",
@@ -13046,6 +13096,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizerRule.html#property_format"
         },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCacheTest",
+            "name": "UriNormalizerCacheTest",
+            "summary": "Description\u0020of\u0020IndexerTest",
+            "url": "classes/acdhOeaw-UriNormalizerCacheTest.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCacheTest\u003A\u003AinitCache\u0028\u0029",
+            "name": "initCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerCacheTest.html#method_initCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCacheTest\u003A\u003AtestMemoryOnly\u0028\u0029",
+            "name": "testMemoryOnly",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerCacheTest.html#method_testMemoryOnly"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerCacheTest\u003A\u003AtestSqlite\u0028\u0029",
+            "name": "testSqlite",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerCacheTest.html#method_testSqlite"
+        },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerRuleTest",
             "name": "UriNormalizerRuleTest",
             "summary": "Description\u0020of\u0020IndexerTest",
@@ -13060,6 +13130,11 @@ Search.appendIndex(
             "name": "UriNormalizerTest",
             "summary": "Description\u0020of\u0020IndexerTest",
             "url": "classes/acdhOeaw-UriNormalizerTest.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerTest\u003A\u003AinitCache\u0028\u0029",
+            "name": "initCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerTest.html#method_initCache"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerTest\u003A\u003AtestInit\u0028\u0029",
             "name": "testInit",
@@ -13145,11 +13220,6 @@ Search.appendIndex(
             "name": "testWrongResolveRule",
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizerTest.html#method_testWrongResolveRule"
-        },                {
-            "fqsen": "\\acdhOeaw\\UriNormalizerTest\u003A\u003AtestNormalizeCache\u0028\u0029",
-            "name": "testNormalizeCache",
-            "summary": "",
-            "url": "classes/acdhOeaw-UriNormalizerTest.html#method_testNormalizeCache"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerTest\u003A\u003AtestResolveCache\u0028\u0029",
             "name": "testResolveCache",

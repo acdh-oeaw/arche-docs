@@ -140,7 +140,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -178,28 +178,7 @@
                     <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-UriNormalizer.html#property_cache">$cache</a>
     <span>
-                        &nbsp;: bool            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-UriNormalizer.html#property_cacheFetch">$cacheFetch</a>
-    <span>
-                        &nbsp;: array&lt;string, resource&gt;            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-UriNormalizer.html#property_cacheNormalize">$cacheNormalize</a>
-    <span>
-                        &nbsp;: array&lt;string, string&gt;            </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-UriNormalizer.html#property_cacheResolve">$cacheResolve</a>
-    <span>
-                        &nbsp;: array&lt;string, <abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>&gt;            </span>
+                        &nbsp;: <abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>            </span>
 </dt>
 <dd></dd>
 
@@ -243,7 +222,7 @@
     <span>
                                 &nbsp;: resource    </span>
 </dt>
-<dd>Tries to fetch RDF metadata for a given URI.</dd>
+<dd>Fetches RDF metadata for a given URI.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-UriNormalizer.html#method_gFetch">gFetch()</a>
@@ -269,7 +248,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-UriNormalizer.html#method_gResolve">gResolve()</a>
     <span>
-                                &nbsp;: <abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>    </span>
+                                &nbsp;: <abbr title="\Psr\Http\Message\RequestInterface">RequestInterface</abbr>    </span>
 </dt>
 <dd>A static version of the resolve() method.</dd>
 
@@ -298,15 +277,21 @@ metadata resource object.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-UriNormalizer.html#method_resolve">resolve()</a>
     <span>
-                                &nbsp;: <abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>    </span>
+                                &nbsp;: <abbr title="\GuzzleHttp\Psr7\Request">Request</abbr>    </span>
 </dt>
-<dd>Resolves a given URI to the URL fetching its RDF metadata and returns
-a corresponding PSR-7 response object.</dd>
+<dd>Resolves a given URI to a PSR-7 request fetching its RDF metadata.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-UriNormalizer.html#method_fetchUrl">fetchUrl()</a>
     <span>
                                 &nbsp;: <abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-UriNormalizer.html#method_setCache">setCache()</a>
+    <span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
@@ -338,14 +323,14 @@ a corresponding PSR-7 response object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">bool</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr></span>
     <span class="phpdocumentor-signature__name">$cache</span>
     </code>
 
@@ -353,120 +338,6 @@ a corresponding PSR-7 response object.</dd>
 
         <section class="phpdocumentor-description"></section>
 
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_cacheFetch">
-        $cacheFetch
-        <a href="classes/acdhOeaw-UriNormalizer.html#property_cacheFetch" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">149</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string, resource&gt;</span>
-    <span class="phpdocumentor-signature__name">$cacheFetch</span>
-     = <span class="phpdocumentor-signature__default-value">[]</span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_cacheNormalize">
-        $cacheNormalize
-        <a href="classes/acdhOeaw-UriNormalizer.html#property_cacheNormalize" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">155</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
-    <span class="phpdocumentor-signature__name">$cacheNormalize</span>
-     = <span class="phpdocumentor-signature__default-value">[]</span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                </dl>
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_cacheResolve">
-        $cacheResolve
-        <a href="classes/acdhOeaw-UriNormalizer.html#property_cacheResolve" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">143</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string, <abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>&gt;</span>
-    <span class="phpdocumentor-signature__name">$cacheResolve</span>
-     = <span class="phpdocumentor-signature__default-value">[]</span></code>
-
-    
-    
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -492,7 +363,7 @@ a corresponding PSR-7 response object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -532,7 +403,7 @@ a corresponding PSR-7 response object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -572,7 +443,7 @@ a corresponding PSR-7 response object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -610,7 +481,7 @@ a corresponding PSR-7 response object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -654,14 +525,14 @@ a corresponding PSR-7 response object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, \acdhOeaw\UriNormalizerRule|array<string,string>|\stdClass&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mappings</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, \acdhOeaw\UriNormalizerRule|array<string,string>|\stdClass&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mappings</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -701,12 +572,11 @@ is used.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$cache</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>should caching be used? Cache consumes memory but
-provides speedup for calls supplying same URLs/URIs. This can be
-particularly important for resolve() and fetch() calls.</p>
+                    <section class="phpdocumentor-description"><p>instance of a PSR-16 compatible cache
+object for caching normalize()/resolve()/normalize() results</p>
 </section>
 
             </dd>
@@ -739,11 +609,11 @@ particularly important for resolve() and fetch() calls.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">291</span>
+    <span class="phpdocumentor-element-found-in__line">267</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Tries to fetch RDF metadata for a given URI.</p>
+        <p class="phpdocumentor-summary">Fetches RDF metadata for a given URI.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -798,7 +668,7 @@ particularly important for resolve() and fetch() calls.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -857,7 +727,7 @@ particularly important for resolve() and fetch() calls.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -898,7 +768,7 @@ particularly important for resolve() and fetch() calls.</p>
                     <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\acdhOeaw\UriNormalizer::UriNormalizer">UriNormalizer::UriNormalizer</abbr></span>
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-UriNormalizer.html#method_normalize"><abbr title="\acdhOeaw\UriNormalizer::normalize()">UriNormalizer::normalize()</abbr></a></span>
                                         
                                              
                                     </dd>
@@ -923,7 +793,7 @@ particularly important for resolve() and fetch() calls.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -1004,7 +874,7 @@ matches no rule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -1012,7 +882,7 @@ matches no rule</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">gResolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">gResolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\RequestInterface">RequestInterface</abbr></span></code>
 
         <section class="phpdocumentor-description"><p>Call <code class="prettyprint">UriNormalizer::init()</code> before first use.</p>
 </section>
@@ -1045,7 +915,7 @@ matches no rule</p>
                                             </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\RequestInterface">RequestInterface</abbr></span>
             &mdash;
         
     
@@ -1063,7 +933,7 @@ matches no rule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -1071,7 +941,7 @@ matches no rule</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">init</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, \acdhOeaw\UriNormalizerRule|array<string,string>|\stdClass&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mappings</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">init</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, \acdhOeaw\UriNormalizerRule|array<string,string>|\stdClass&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mappings</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1111,11 +981,11 @@ is used.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$cache</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>should caching be used? (cache consumes memory but
-provides speedup for calls supplying same URLs/URIs)</p>
+                    <section class="phpdocumentor-description"><p>instance of a PSR-16 compatible cache
+object for caching normalize()/resolve()/normalize() results</p>
 </section>
 
             </dd>
@@ -1156,7 +1026,7 @@ provides speedup for calls supplying same URLs/URIs)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
     </aside>
 
@@ -1225,7 +1095,7 @@ matches no rule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">231</span>
+    <span class="phpdocumentor-element-found-in__line">215</span>
 
     </aside>
 
@@ -1307,21 +1177,17 @@ matches no rule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">258</span>
+    <span class="phpdocumentor-element-found-in__line">237</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Resolves a given URI to the URL fetching its RDF metadata and returns
-a corresponding PSR-7 response object.</p>
+        <p class="phpdocumentor-summary">Resolves a given URI to a PSR-7 request fetching its RDF metadata.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">resolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">resolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span></code>
 
         <section class="phpdocumentor-description"><p>Throws the UriNormalizerException if the resolving fails.</p>
-<p>The final URL (which may differ from the supplied $uri parameter because
-of normalization and redirects) is provided in the Location header of the
-returned Response object.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1329,6 +1195,62 @@ returned Response object.</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$uri</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-UriNormalizerException.html"><abbr title="\acdhOeaw\UriNormalizerException">UriNormalizerException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fetchUrl">
+        fetchUrl()
+        <a href="classes/acdhOeaw-UriNormalizer.html#method_fetchUrl" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">305</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">fetchUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1363,45 +1285,49 @@ returned Response object.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_fetchUrl">
-        fetchUrl()
-        <a href="classes/acdhOeaw-UriNormalizer.html#method_fetchUrl" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setCache">
+        setCache()
+        <a href="classes/acdhOeaw-UriNormalizer.html#method_setCache" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">331</span>
+    <span class="phpdocumentor-element-found-in__line">348</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">fetchUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-UriNormalizerRule.html"><abbr title="\acdhOeaw\UriNormalizerRule">UriNormalizerRule</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rule</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">setCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key1</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key2</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-    
+        <section class="phpdocumentor-description"></section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$url</span>
+                <span class="phpdocumentor-signature__argument__name">$key1</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$method</span>
+                <span class="phpdocumentor-signature__argument__name">$key2</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rule</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-UriNormalizerRule.html"><abbr title="\acdhOeaw\UriNormalizerRule">UriNormalizerRule</abbr></a></span>
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
             </dl>
 
@@ -1411,18 +1337,10 @@ returned Response object.</p>
         <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-UriNormalizerException.html"><abbr title="\acdhOeaw\UriNormalizerException">UriNormalizerException</abbr></a></span>
-                                                            
-                                             
-                                    </dd>
-                                            </dl>
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
