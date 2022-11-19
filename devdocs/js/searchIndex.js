@@ -10116,10 +10116,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_setOntology"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003A__sleep\u0028\u0029",
+            "name": "__sleep",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method___sleep"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003A__get\u0028\u0029",
             "name": "__get",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method___get"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003AsetOntologyObject\u0028\u0029",
+            "name": "setOntologyObject",
+            "summary": "Used\u0020to\u0020restore\u0020the\u0020object\u0020after\u0020unserializing\u0020it\u0020from\u0020cache.",
+            "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method_setOntologyObject"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003AgetVocabularyValues\u0028\u0029",
             "name": "getVocabularyValues",
