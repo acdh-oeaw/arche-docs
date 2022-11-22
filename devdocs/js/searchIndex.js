@@ -11241,6 +11241,71 @@ Search.appendIndex(
             "summary": "Configuration\u0020object",
             "url": "classes/acdhOeaw-arche-oaipmh-deleted-Tombstone.html#property_config"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata",
+            "name": "AcdhDcMetadata",
+            "summary": "Creates\u0020OAI\u002DPMH\u0020\u0026lt\u003Bmetadata\u0026gt\u003B\u0020element\u0020in\u0020Dublin\u0020Core\u0020format\u0020from\na\u0020FedoraResource\u0020RDF\u0020metadata.",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "Fetches\u0020mappings\u0020from\u0020the\u0020triplestore",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html#method_init"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Creates\u0020a\u0020metadata\u0020object\u0020for\u0020a\u0020given\u0020repository\u0020resource.",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata\u003A\u003AgetXml\u0028\u0029",
+            "name": "getXml",
+            "summary": "Creates\u0020resource\u0027s\u0020XML\u0020metadata",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html#method_getXml"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata\u003A\u003AextendSearchFilterQuery\u0028\u0029",
+            "name": "extendSearchFilterQuery",
+            "summary": "This\u0020implementation\u0020has\u0020no\u0020need\u0020to\u0020extend\u0020the\u0020search\u0020query.",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html#method_extendSearchFilterQuery"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata\u003A\u003AextendSearchDataQuery\u0028\u0029",
+            "name": "extendSearchDataQuery",
+            "summary": "This\u0020implementation\u0020has\u0020no\u0020need\u0020to\u0020extend\u0020the\u0020search\u0020query.",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html#method_extendSearchDataQuery"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata\u003A\u003AMODE_URL",
+            "name": "MODE_URL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html#constant_MODE_URL"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata\u003A\u003AMODE_TITLE",
+            "name": "MODE_TITLE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html#constant_MODE_TITLE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata\u003A\u003AMODE_BOTH",
+            "name": "MODE_BOTH",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html#constant_MODE_BOTH"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata\u003A\u003A\u0024dcNmsp",
+            "name": "dcNmsp",
+            "summary": "Dublin\u0020Core\u0020namespace",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html#property_dcNmsp"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata\u003A\u003A\u0024mappings",
+            "name": "mappings",
+            "summary": "Stores\u0020metadata\u0020property\u0020to\u0020Dublic\u0020Core\u0020property\u0020mappings",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html#property_mappings"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata\u003A\u003A\u0024res",
+            "name": "res",
+            "summary": "Repository\u0020resource\u0020object",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html#property_res"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\AcdhDcMetadata\u003A\u003A\u0024format",
+            "name": "format",
+            "summary": "Metadata\u0020format\u0020descriptor",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-AcdhDcMetadata.html#property_format"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\CmdiMetadata",
             "name": "CmdiMetadata",
             "summary": "Specialization\u0020of\u0020ResMetadata\u0020class\u0020checking\u0020if\u0020the\u0020CMDI\u0020schema\u0020matches\nmetadata\u0020format\u0020requested\u0020by\u0020the\u0020user.",
