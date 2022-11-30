@@ -8276,6 +8276,11 @@ Search.appendIndex(
             "summary": "If\u0020specified,\u0020only\u0020property\u0020values\u0020with\u0020a\u0020given\u0020language\u0020are\u0020taken\u0020into\naccount\u0020for\u0020ordering\u0020search\u0020matches.",
             "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_orderByLang"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024orderByCollation",
+            "name": "orderByCollation",
+            "summary": "If\u0020specified,\u0020determines\u0020the\u0020collation\u0020used\u0020for\u0020ordering\u0020the\u0020search\u0020results.",
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_orderByCollation"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024resourceProperties",
             "name": "resourceProperties",
             "summary": "List\u0020of\u0020metadata\u0020properties\u0020to\u0020fetch\u0020for\u0020the\u0020resource.",
