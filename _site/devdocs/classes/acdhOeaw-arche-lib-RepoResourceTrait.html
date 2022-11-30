@@ -52,7 +52,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -117,8 +117,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section class="phpdocumentor-column -nine">
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-arche.html">arche</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-arche-lib.html">lib</a></li>
@@ -159,44 +160,54 @@ implementations.</p>
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 </h3>
 
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -private">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_metadata">$metadata</a>
     <span>
                         &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_metaSynced">$metaSynced</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_repoInt">$repoInt</a>
     <span>
                         &nbsp;: <a href="classes/acdhOeaw-arche-lib-RepoInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoInterface">RepoInterface</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_url">$url</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getClasses">getClasses()</a>
     <span>
                                 &nbsp;: array&lt;string|int, string&gt;    </span>
@@ -250,7 +261,6 @@ implementations.</p>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_setGraph">setGraph()</a>
@@ -270,7 +280,8 @@ $metadata object automatically affect the resource metadata.</dd>
 of the provided metadata is stored meaning future modifications of the
 $metadata object don&#039;t affect the resource metadata.</dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -307,8 +318,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <span class="phpdocumentor-signature__name">$metadata</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -341,8 +351,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <span class="phpdocumentor-signature__name">$metaSynced</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -375,8 +384,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <span class="phpdocumentor-signature__name">$repoInt</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -409,8 +417,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <span class="phpdocumentor-signature__name">$url</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -752,8 +759,7 @@ metadata.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__abstract">abstract</span>                <span class="phpdocumentor-signature__name">loadMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
@@ -998,7 +1004,50 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-column -three phpdocumentor-on-this-page__sidebar">
+                            
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#toc-properties">Properties</a></li>
+                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#toc-methods">Methods</a></li>
+                </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getClasses">getClasses()</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getGraph">getGraph()</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getIds">getIds()</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getMetadata">getMetadata()</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getRepo">getRepo()</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getUri">getUri()</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_isA">isA()</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_loadMetadata">loadMetadata()</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_setGraph">setGraph()</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_setMetadata">setMetadata()</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_metadata">$metadata<a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_metaSynced">$metaSynced<a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_repoInt">$repoInt<a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_url">$url<a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html"></li>
+                                            </ul>
+                </li>
+                    </ul>
+    </section>
+
+                </section>
+                                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>

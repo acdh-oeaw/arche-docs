@@ -52,7 +52,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -117,8 +117,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section class="phpdocumentor-column -nine">
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/drupal.html">Drupal</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/drupal-acdh-repo-gui.html">acdh_repo_gui</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/drupal-acdh-repo-gui-helper.html">Helper</a></li>
@@ -173,28 +174,40 @@
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 </h3>
 
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -private">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#property_prefixesToChange">$prefixesToChange</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_createFullPropertyFromShortcut">createFullPropertyFromShortcut()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_createShortcut">createShortcut()</a>
@@ -208,16 +221,15 @@
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_getValueFromShortCut">getValueFromShortCut()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -256,8 +268,7 @@
     <span class="phpdocumentor-signature__name">$prefixesToChange</span>
      = <span class="phpdocumentor-signature__default-value">array(&quot;http://fedora.info/definitions/v4/repository#&quot; =&gt; &quot;fedora&quot;, &quot;http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#&quot; =&gt; &quot;ebucore&quot;, &quot;http://www.loc.gov/premis/rdf/v1#&quot; =&gt; &quot;premis&quot;, &quot;http://www.jcp.org/jcr/nt/1.0#&quot; =&gt; &quot;nt&quot;, &quot;http://www.w3.org/2000/01/rdf-schema#&quot; =&gt; &quot;rdfs&quot;, &quot;http://www.w3.org/ns/ldp#&quot; =&gt; &quot;ldp&quot;, &quot;http://www.iana.org/assignments/relation/&quot; =&gt; &quot;iana&quot;, &quot;https://vocabs.acdh.oeaw.ac.at/schema#&quot; =&gt; &quot;acdh&quot;, &quot;https://id.acdh.oeaw.ac.at/&quot; =&gt; &quot;acdhID&quot;, &quot;http://purl.org/dc/elements/1.1/&quot; =&gt; &quot;dc&quot;, &quot;http://purl.org/dc/terms/&quot; =&gt; &quot;dcterms&quot;, &quot;http://www.w3.org/2002/07/owl#&quot; =&gt; &quot;owl&quot;, &quot;http://xmlns.com/foaf/0.1/&quot; =&gt; &quot;foaf&quot;, &quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot; =&gt; &quot;rdf&quot;, &quot;http://www.w3.org/2004/02/skos/core#&quot; =&gt; &quot;skos&quot;, &quot;http://hdl.handle.net/21.11115/&quot; =&gt; &quot;handle&quot;)</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <section class="phpdocumentor-description"></section>
 
     
@@ -292,8 +303,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">createFullPropertyFromShortcut</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prop</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -301,8 +311,7 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -379,8 +388,7 @@
     <span class="phpdocumentor-signature__visibility">private</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getDomainFromShortCut</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prop</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -388,8 +396,7 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -423,8 +430,7 @@
     <span class="phpdocumentor-signature__visibility">private</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getValueFromShortCut</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prop</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -432,8 +438,7 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -540,7 +545,42 @@
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-column -three phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#property_prefixesToChange">$prefixesToChange<a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_createFullPropertyFromShortcut">createFullPropertyFromShortcut()</a></li>
+                                            <li><a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_createShortcut">createShortcut()</a></li>
+                                            <li><a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_getDomainFromShortCut">getDomainFromShortCut()</a></li>
+                                            <li><a href="classes/Drupal-acdh-repo-gui-Helper-ArcheHelper.html#method_getValueFromShortCut">getValueFromShortCut()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
