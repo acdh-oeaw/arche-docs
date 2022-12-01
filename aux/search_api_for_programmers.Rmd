@@ -4,6 +4,7 @@ date: "`r Sys.Date()`"
 output:
   html_document: 
     toc: yes
+    highlight: tango
 ---
 
 # Conventions
@@ -30,11 +31,29 @@ output:
   This should allow us to avoid many misconceptions coming from the fact that the ARCHE REST api provides metadata in RDF.
 * Before making a complex search, think for a moment if what you want can't be achieved with a [readMode](metadata_api_for_programmers.html#readmode-in-details).
   A request using the `readMode` and a simple search condition will be simpler, easier to understand and is likely to run faster.
-* If your search is likely to match hundreds of resources and you don't use paging, you'll be better off using **resourceProperties** and **relativesProperties** parameters - see [here](https://acdh-oeaw.github.io/arche-docs/aux/metadata_api_for_programmers.html#metadata-retrieval-performance).
+* If your search is likely to match hundreds of resources and you don't use paging, you'll be better off using **resourceProperties** and **relativesProperties** parameters - see [here](metadata_api_for_programmers.html#metadata-retrieval-performance).
+* When querying the API from your app, use rather POST then GET. That way you'll avoid the risk of hitting the too long request URL issue.
+
+# Search workflow
+
+A search API call is handled in a few steps:
+
+1. Finding resources matching search conditions.  
+   This is done either based on an explicitly given SQL query (with `sql` and `sqlParam[]` request parameters)
+   or by so-called _search terms_ build from `property[]`, `value[]`, `operator[]`, `type[]` and `language[]` request parameters.
+2. Ordering matched resources.  
+   This is done based on the `orderBy[]`, `oderByLang` and `orderByCollation` request parameters
+   and if the `orderBy[]` isn't specified, by an internal ARCHE resource id.
+3. Applying paging.  
+   This is done based on the `offset` and `limit` request parameters.
+   If they aren't provided, all matched resources are included.
+4. Generation of technical triples annotating search results.
+5. Applying the `readMode`, `resourceProperties` and `relativesProperties`
+   (read more [here](metadata_api_for_programmers.html#readmode-in-details) and [here](metadata_api_for_programmers.html#metadata-retrieval-performance)).
 
 # Technical RDF properties provided by the search
 
-The search endpoint annotates search results with some RDF properties:
+The search results are annotated with special technical RDF properties:
 
 | subject            | property                                     | object value type     | object value description                                |
 |--------------------|----------------------------------------------|-----------------------|---------------------------------------------------------|
@@ -44,116 +63,153 @@ The search endpoint annotates search results with some RDF properties:
 | `resourceURI`      | `{repoCfg}$.schema.searchOrderValue` + `{N}` | mixed                 | actual value of the RDF property indicated by the `orderBy[{N}]` request parameter used for ordering the results - see the [Ordering results](#ordering-results) chapter below - only when the `orderBy[]` request parameter(s) was provided |
 | `resourceURI`      | `{repoCfg}$.schema.searchFts`                | `xsd:string`          | highlighted full text search matches - only when a full text search was performed |
 
-# Using array parameters in request query
+To see how these properties look in the output, please jump to the example in the [ordering results - simple case](#simple-case) section.
 
-Many search API parameters are arrays and some of them (`property[]` and `value[]`) accept nested arrays of values.
+# Specyfying the search condition
 
-ARCHE APIP supports two conventions of passing array parameters:
+## With search terms
 
-* With implicit enumeration, e.g (`URL representation => internal representation`):
-  ```
-  property[]=someProp&property[]=otherProp => {0: someProp, 1: otherProp}
-  ```
-  * This syntax makes it impossible to pass a given element value as an array as
-   ```
-   property[][]=someProp&prop[][]=orOtherProp => {0: {0: someProp}, 1: {0: orOtherProp}}`
-   ```
-   while the internal representation we want to end up with is:
-   ```
-   {0: {0: someProp, 1: orOtherProp}}
-   ```
-* With explicit enumeration - they key is provided in the request parameter name, e.g (`URL representation => internal representation`):
-  ```
-  property[0]=someProp&property[1]=otherProp => {0: someProp, 1: otherProp}
-  property[9]=someProp&property[4]=otherProp => {9: someProp, 4: otherProp}
-  property[foo]=someProp&property[bar]=otherProp => {foo: someProp, bar: otherProp}
-  ```
-  * This syntax allows to pass a value being an array, e.g.
-    ```
-    property[0][]=someProp&property[0][]=orOther&property[1]=oneMore => {0: [someProp, orOther], 1: oneMore}
-    ```
-  * If a key is repeated, the last value overwrites the previous ones, e.g.
-    ```
-    property[0]=someProp&property[0]=otherProp => {0: otherProp}
-    ```
-* It is also technically possible to mix both conventions, e.g. (`URL representation => internal representation`):
-  ```
-  property[]=someProp&property[1]=otherProp   => {0 => someProp, 1 => otherProp}
-  property[]=someProp&property[0]=otherProp   => {0 => otherProp}
-  property[foo]=someProp&property[]=otherProp => {foo => someProp, 0 => otherProp}
-  ```
-  but it doesn't mean you should use it just because you can :-)
-  (it's easy to make stupid mistakes when you mix conventions)
+The simplest way of performing the search is by specifying so-called _search terms_.
 
-Now, when constructing the actual search conditions ARCHE just tries to match `property[]`, `operator[]`, `value[]` and `lang[]`
-parameters with the same key. It doesn't matter if a key is numeric or non-numeric and if it was generated implicitly or explicitly.
-A union of all keys existing for `property[]`, `value[]` and `lang[]` is taken
-(`operator[]` isn't included because it's impossible to construct a condition based only on the operator), e.g.:
+A search term is a condition matching an RDF triple based on triple's property and/or object.
+If an ARCHE resource has RDF triples having it as a subject and matching all requested _search terms_, it matches the search.
 
+A single _search term_ is defined by (almost) any combination of corresponding `property[]`, `operator[]`, `value[]`, `type[]` and `language[]` request properties.
+
+* The only forbidden combination is specifying only the `operator[]` as this is not enough information to formulate any condition.
+* Both `property[]` and `value[]` can supply either single or multiple values which are taken as alternatives.
+* The `property[]` can be inverted by prepending it with a `^`.
+  This implicitly enforces the `type[]=URI` for the `value[]`, if `value[]` is specified.
+* The default `operator[]` is `=`.
+* Default `property[]`, `value[]`, `type[]` and `language[]` are "any".
+  * The `type[]` might be implicitly enforced by `operator[]`, presence of `language[]` or requesting an inversed `property[]`.
+* When denoting an ARCHE resource as a `value[]`, any identifier of a resource can be used
+  (e.g. `https://arche.acdh.oeaw.ac.at/api/23174`, `https://hdl.handle.net/21.11115/0000-000C-20E3-F`, `https://id.acdh.oeaw.ac.at/uuid/512c8b7b-1427-4310-8606-43b8faf5619b` and `https://id.acdh.oeaw.ac.at/ODeeg/Collections/AT-Vienna-KHM/KHM-ANSA-IV3456/3D-data/3Dscan_raw-data/KHM-ANSA-IV3456_raw3d.zip` are equally valid ways of relating the same resource).
+* **You have to use full URIs while specifying `property[]`, `type[]` or URI `value[]`.**
+  ARCHE API doesn't allow you to define namespace aliases and it doesn't come with a set of predefined ones.
+
+Examples (for explanation of the brackets syntax see the next chapters):
+
+* `property[]=https://vocabs.acdh.oeaw.ac.at/schema#isTitleImageOf` - _find all resources being a title image (recognizing by existence of actual acdh:isTitleOf relation)_
+* `value[0][]=foo&value[0][]=bar` - _find all resources having any property value equal "foo" or "bar"_
+* `value[]=foo&operator[]=@@` - _find all resources with any property matching a full text search for "foo"_
+* `property[0][]=https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&property[0][]=https://vocabs.acdh.oeaw.ac.at/schema#hasDescription&value[]=foo&operator=@@` -
+  _find all resources having either acdh:hasTitle or acdh:hasDescription matching a full text search for "foo"_
+* `type[]=relation` - _find all resources having a triple pointing to another resource_
+* `property[]=^https://vocabs.acdh.oeaw.ac.at/schema#isPartOf&value[]=https://some.id` -
+  _find all resources being children of the https://some.id resource_  
+  (this can be probably done more efficiently by just using the right [readMode](metadata_api_for_programmers.html#readmode-in-details) on the https://some.id metadata endpoint)
+* `property[]=https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&language[]=ja` - _find all resources having acdh:hasTitle in Japanese_
+* `value[]=https://orcid.org/0000-0001-5853-2534&type[]=relation` - _find all resources pointing to the resource with id https://orcid.org/0000-0001-5853-2534_
+  * In comparison to `value[]=https://orcid.org/0000-0001-5853-2534` - _find all resources pointing to the resource with id https://orcid.org/0000-0001-5853-2534 and a resource with id https://orcid.org/0000-0001-5853-2534_
+    because this _search term_ mathces also the `<someResource> <id property> <https://orcid.org/0000-0001-5853-2534>` triple.
+* `value[]=POINT (31.8181 30.7884)&operator=&&` - _find all resources spatially intersecting with the 31.8181E 30.7884N point_
+  
+If multiple `property[]`/`operator[]`/`value[]`/`type[]`/`language[]` parameters are defined by the request, they are grouped into single _search terms_ definitions
+by the same (implicit or explicit) key. Continue reading for details.
+
+### Multiple search terms parsing
+
+When parsing the GET search request or a POST request with the body encoded as `application/x-www-form-urlencoded`
+each `property[]`/`operator[]`/`value[]`/`type[]`/`language[]` parameter value is assigned a key using following rules:
+
+* If the `parameter[]` syntax is used, the key is assigned automatically by taking the next number after the last existing numeric key.
+* If the `parameter[key]` syntax is used, the specified key is used.
+  * The key can be numeric or string.
+  * If the specified key already exists, the previous value is overwritten
+    (also if the previously existing key was assign implicitly).
+
+For example:
 ```
-property[foo]=fooProp
-&operator[foo]=@@
-&value[foo]=fooValue
-&value[]=value
-&lang[0]=en
-&property[5]=otherProp
+property[]=x&property=y                 => property: {0: x, 1: y}
+property[]=a&property[1]=b&property[]=c => property: {0: a, 1: b, 2: c}
+property[2]=a&property[]=b              => property: {2: a, 3: b}
+property[foo]=a&property[]=b            => property: {foo: a, 0: b}
+property[]=a&property[0]=b              => property: {0: b}
 ```
 
-will result with an internal representation of:
+Then parameter values with the same key are grouped to form _search terms_, e.g.
+`property[0]=x&property[1]=y&value[1]=a` results into two _search terms_:
 
-```
-property: {          5: otherProp, foo: fooProp }
-operator: {                        foo: @@      }
-value:    {0: value,               foo: fooValue}
-lang:     {0: en                                }
-```
+* with the key `0` and condition `property[]=x`
+* with the key `1` and condition `property[]=y` and `value[]=a`
 
-and the search condition _find all resources having at the same time: a triple with value `value@en` and any triple with the `otherProp` and a triple with property `fooProp` and value matching a full text search for `fooValue`_.
+### Passing multiple values to property[] and value[]
 
-## Support in frameworks
+`property[]` and `value[]` allow to specify a set of allowed values which is interpreted as "any of".
 
-In most cases you won't be creating the API request URL by hand. You'll use some HTTP client framework/library instead.
+When using the GET search request or a POST request with the body encoded as `application/x-www-form-urlencoded` 
+this should be encoded using the `parameter[key][]=value1&parameter[key][]=value2&(...)` syntax, e.g.
+`value[0][]=foo&value[0][]=bar`.
 
-Some of them, support the serialization used by the ARCHE API out of the box, e.g.
-let's try to perform a following search: 
-_find all resources with `someProp` having either `somePropValue1` or `somePropValue2` value and `otherProp` having `otherPropValue`_:
+* The `parameter[key][0]=value1&parameter[key][1]=value2&(...)` syntax will also work but the `parameter[][]=value1&parameter[][]=value2&(...)` syntax **won't**
+  (as it will result in `parameter: {0: [value1], 1: [value2]}` instead of `parameter: {0: [value1, value2]}`)
+
+### Preparing a search query using HTTP client libraries
+
+Hopefully most of the time you won't create ARCHE search API requests by hand but you'll use some HTTP client library provided by your programming language.
+
+If you are lucky, the library will just do the job for you, e.g.
 
 ```js
-// jQuery example
+// jQuery
 jQuery.ajax({
   url: 'https://arche.acdh.oeaw.ac.at/api/search',
+  method: 'GET', // POST would work equally well
   data: {
-    'property': ['someProp',                           'otherProp'],
-    'value':    [['somePropValue1', 'somePropValue2'], 'otherPropValue'],
-    'readMode': 'resource',
-    'format': 'text/turtle'
+    "property":  ["someProp", "otherProp"                           ],
+    "value":     [""        , ["otherPropValue1", "otherPropValue2"]],
+    "readMode":  "resource",
+    "format":    "text/turtle"
+  },
+  success: function(d) {console.log(d)}
+})
+// or with explicit keys
+jQuery.ajax({
+  url: 'https://arche.acdh.oeaw.ac.at/api/search',
+  method: 'GET', // POST would work equally well
+  data: {
+    "property":  {"0": "someProp", "1": "otherProp"},
+    "value":     {                 "1": ["otherPropValue1", "otherPropValue2"]},
+    "readMode":  "resource",
+    "format":    "text/turtle"
   },
   success: function(d) {console.log(d)}
 })
 ```
 ```php
 // PHP
-$query = http_build_query([
-    'property' => ['someProp',                           'otherProp'],
-    'value'    => [['somePropValue1', 'somePropValue2'], 'otherPropValue'],
+$searchParam = [
+    'property' => ['someProp', 'otherProp'                           ],
+    'value'    => [''        , ['otherPropValue1', 'otherPropValue2']],
     'readMode' => 'resource',
     'format'   => 'text/turtle'
-]);
-// just with file_get_contents
-$response = file_get_contents('https://arche.acdh.oeaw.ac.at/api/search?' . $query);
+];
+
+// just with file_get_contents() - only GET possible
+$response = file_get_contents('https://arche.acdh.oeaw.ac.at/api/search?' . http_build_query($searchParam));
 echo $response;
-// PSR-7 & PSR-18 way provided by Guzzle
+
+// PSR-7 & PSR-18 way provided by Guzzle - both GET and POST possible
 $client = new GuzzleHttp\Client();
-$request = new GuzzleHttp\Psr7\Request('GET', 'https://arche.acdh.oeaw.ac.at/api/search?' . $query);
-$response = $client->sendRequest($request);
-echo $response->getBody();
+$getRequest = new GuzzleHttp\Psr7\Request(
+  'GET', 
+  'https://arche.acdh.oeaw.ac.at/api/search?' . http_build_query($searchParam)
+);
+$getResponse = $client->sendRequest($getRequest);
+echo $getResponse->getBody();
+$postRequest = new GuzzleHttp\Psr7\Request(
+  'POST', 
+  'https://arche.acdh.oeaw.ac.at/api/search',
+  ['Content-Type' => 'application/x-www-form-urlencoded'], 
+  http_build_query($searchParam)
+);
+$postResponse = $client->sendRequest($postRequest);
+echo $postResponse->getBody();
 ```
 
-while for others some manual job is needed.
-
-Most notably in Python I am not aware of any HTTP client library able to serialize to URL any more complex data structure.
-Requests is only able to serialize lists (by just repeating the parameter name) which does the job until we can rely
-on implicit enumeration but requires manual tuning if we can't:
+and if you're unlucky and your HTTP client library can't serialize complex objects into URL query
+(which most notably affects Python users), you need to prepare the request a little more carefully:
 
 ```python
 # Python with requests
@@ -162,8 +218,7 @@ resp = requests.get(
   'https://arche.acdh.oeaw.ac.at/api/search',
   params={
     'property[]': ['someProp', 'otherProp'],
-    'value[0][]': ['somePropValue1', 'somePropValue2'],
-    'value[1]': 'otherPropValue',
+    'value[1][]': ['otherPropValue1', 'otherPropValue2'],
     'readMode': 'resource',
     'format': 'text/turtle'
   }
@@ -171,13 +226,54 @@ resp = requests.get(
 print(resp.text)
 ```
 
+Last but not least if you're using PHP, you might want to use the [arche-lib](https://github.com/acdh-oeaw/arche-lib/)
+which provides object wrappers for the _search terms_, ARCHE repository, etc.
+
+## With explicit SQL query
+
+The _search terms_ are rather simple to use but provide limited flexibility.
+If your search is to complex for them or if you prefer to use naked SQL, the search API allows you to do it.
+
+* You should pass your SQL query using the `sql` request parameter.
+* It's recommended to pass all literal values used in the query trough the `sqlParam[]` parameter.
+  * That way you don't need to care about proper escaping SQL-reserved characters.
+  * It's even more important if some values aren't hardcoded in you app code but come from the user input
+    (that being said a properly set up ARCHE instance will run your query as a user without any data modification rights 
+    so there should be no data deletion threat).
+* Your query must return a column named `id` which will be matched against ARCHE internal resource ids
+  (the `id` column in the `resources` table). All other columns returned by your query will be just discarded.
+* To plan your query you'll probably need to take a look at the [ARCHE database schema](https://github.com/acdh-oeaw/arche-core/blob/master/build/db_schema.sql).
+  The most commonly used data reside in three tables (but you might be also interested in the `full_text_search` and `spatial_search` tables):
+  * `identifiers (id, ids)` storing resource identifiers with `id` being internal resource id and `ids` all URI ids of a given resource
+  * `relations(id, target_id, property)` storing RDF graph edges
+  * `metadata(mid, id, property, type, lang, value, value_n, value_t)` storing all triples with literal values.
+    * `mid` is an internal triple id which is rather useless for you
+    * `id`, `property`, `type`, `lang` and `value` store triple's subject, predicate, value type, value lang tag and the value itself
+    * `value_n` stores parsed numeric value for values of numeric types - this column can be used for proper numeric comparison of values
+    * `value_t` like `value_n`, just for values of type date/datetime
+* Remember your query is used **only** for selecting resources matching the search (point 1. in the [search workflow](#search-workflow)).
+
+Example (passing literal values used in the query using the `sqlParam[]` request parameter):
+
+
+_Find all resources with acdh:hasTitle in Japanese_:
+```
+https://arche.acdh.oeaw.ac.at/api/search
+  ?sql=SELECT id FROM metadata WHERE property = ? AND lang = ?
+  &sqlParam[]=https://vocabs.acdh.oeaw.ac.at/schema#hasTitle
+  &sqlParam[]=ja
+  
+https://arche.acdh.oeaw.ac.at/api/search?sql=SELECT%20id%20FROM%20metadata%20WHERE%20property%20%3D%20%3F%20AND%20lang%20%3D%20%3F&sqlParam%5B%5D=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&sqlParam%5B%5D=ja
+```
+
 # Ordering results
 
 ## Simple case
 
-Just use the `oderbBy[]` request parameter coupled with the `orderByLang` if needed,
-e.g. let's search for all resources bigger than 1.3 GB ordering results by their `acdh:hasTitle`
-(in any language provided):
+Just use the `oderbBy[]` request parameter coupled, if needed, with the `orderByLang` parameter.
+
+For example let's search for all resources bigger than 1.3 GB ordering results by their `acdh:hasTitle`
+(for the detailed discussion on API parameters encoding take a look at [this section](#multiple-search-terms-parsing)):
 
 ```
 https://arche.acdh.oeaw.ac.at/api/search
@@ -262,7 +358,7 @@ Fortunately there's can be easily checked and controlled:
   * Inspect the `$.collation.available` to get the list of all collations available on a given
     ARCHE instance.
 
-## Multiple values
+## Multiple values of property used for ordering
 
 A resource may have multiple values of a property used for results ordering.
 A typical case are labels in multiple languages but you shouldn't optimistically assume it's the only possible case.
@@ -322,12 +418,12 @@ to the API).
 
 # Paging 
 
-Search results may be paged. This is controlled by the `offset` and `limit` parameters.
+Search results may be paged. This is controlled by the `offset` and `limit` parameters which work exactly how they sound.
 
 * You almost for sure want to combine paging with explicit ordering (see the previous chapter).
-  * Still it's technically safe to use paging without providing `orderBy[]`.
+  * It's technically safe to use paging without providing `orderBy[]`.
     In such a case ARCHE resources are ordered by their internal identifiers
-    which doesn't provide any intuitive order but is stable.
+    which doesn't provide any intuitive order but assures a stable ordering.
 * You can always check the total number of resources matching the search by inspecting the
   `<restAPIbaseURL> <{repoCfg}$.schema.searchCount> "count" .` response triple, e.g.
   ```
@@ -336,13 +432,31 @@ Search results may be paged. This is controlled by the `offset` and `limit` para
 * The requested values of the `offset` and `limit` aren't included in the output.
   ARCHE hopes you can remember them :-)
 
-Example - 
+Example: _fetch 3rd page (10 results per page) of https://hdl.handle.net/21.11115/0000-000E-CE35-F (some Karl Kraus subcollection) ordering them by acdh:hasTitle_:
 
+```
+https://arche.acdh.oeaw.ac.at/api/search
+  ?property[]=https://vocabs.acdh.oeaw.ac.at/schema#isPartOf
+  &value[]=https://hdl.handle.net/21.11115/0000-000E-CE35-F
+  &orderBy[]=https://vocabs.acdh.oeaw.ac.at/schema#hasTitle
+  &limit=10
+  &offset=20
+  &readMode=resource
+  &format=text/turtle
+  
+https://arche.acdh.oeaw.ac.at/api/search?property%5B%5D=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23isPartOf&value%5B%5D=https%3A%2F%2Fhdl.handle.net%2F21.11115%2F0000-000E-CE35-F&orderBy%5B0%5D=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&limit=10&offset=20&readMode=resource&format=text%2Fturtle
+```
 
 # Full text search
 
 TODO
 
-# SQL query-based search
+```
+https://arche.acdh.oeaw.ac.at/api/search
+  ?operator[]=@@
+  &value[]=Japan-Bibliographie
+  &readMode=resource
+  &format=text/turtle
 
-TODO
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&value%5B%5D=Japan-Bibliographie&readMode=resource&format=text%2turtle
+```
