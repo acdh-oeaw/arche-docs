@@ -15,9 +15,11 @@ output:
   ```
 * The `{repoCfg}$.X.Y` syntax means an `$.X.Y` [JSON path](https://github.com/json-path/JsonPath) over the repository configuration returned by its [describe](https://app.swaggerhub.com/apis/zozlak/arche/3.5#/default/get_describe) REST API endpoint,
   e.g. `{repoCfg}$.schema.label` on https://arche.acdh.oeaw.ac.at/api resolves to `https://vocabs.acdh.oeaw.ac.at/schema#hasTitle`.
-* Search URLs examples always come in pairs:
+* Full Search URLs examples always come in pairs:
   * A human-readable version with non-URL-encoded parameter values and every parameter written in a new line.
   * A copy-paste friendly (but human-unreadable) version allowing you to test it easily in a browser/curl/postman/whatsoever.
+* Short examples of particular API parameters are always provided in non-URL-encoded form
+  (read "just copy-pasting them into the browser/curl may not work").
 * Most search URL examples use `readMode=resource` and `format=text/turtle` to provide the most human-readable output
   allowing to focus on the topic being discussed.
   For a real-world usage you're likely use a different `readMode` and/or output format.
@@ -42,51 +44,24 @@ The search endpoint annotates search results with some RDF properties:
 | `resourceURI`      | `{repoCfg}$.schema.searchOrderValue` + `{N}` | mixed                 | actual value of the RDF property indicated by the `orderBy[{N}]` request parameter used for ordering the results - see the [Ordering results](#ordering-results) chapter below - only when the `orderBy[]` request parameter(s) was provided |
 | `resourceURI`      | `{repoCfg}$.schema.searchFts`                | `xsd:string`          | highlighted full text search matches - only when a full text search was performed |
 
-# Using array parameters
+# Using array parameters in request query
 
-Many search API parameters are arrays and some of them accept nested arrays of values.
+Many search API parameters are arrays and some of them (`property[]` and `value[]`) accept nested arrays of values.
 
-The good thing is, if you're using any library to make the API request, the library should be able to properly serialize everything for you, e.g.
-_find all resources with `someProp` having either `somePropValue1` or `somePropValue2` value and `otherProp` having `otherPropValue`_:
-
-```js
-// jQuery example
-jQuery.ajax({
-  url: 'https://arche.acdh.oeaw.ac.at/api/search',
-  data: {
-    'property': ['someProp',                           'otherProp'],
-    'value':    [['somePropValue1', 'somePropValue2'], 'otherPropValue'],
-    'readMode': 'resource',
-    'format': 'text/turtle'
-  },
-  success: function(d) {console.log(d)}
-})
-```
-```python
-# Python example
-import requests 
-resp = requests.get(
-  'https://arche.acdh.oeaw.ac.at/api/search',
-  params={
-    'property': ['someProp',                           'otherProp'],
-    'value':    [['somePropValue1', 'somePropValue2'], 'otherPropValue'],
-    'readMode': 'resource',
-    'format': 'text/turtle'
-  }
-)
-print(resp.text)
-```
-
-Anyway, if for some reason you need/want to construct the request URL by hand, that's how it works.
-
-There are a two conventions of passing array parameters:
+ARCHE APIP supports two conventions of passing array parameters:
 
 * With implicit enumeration, e.g (`URL representation => internal representation`):
   ```
   property[]=someProp&property[]=otherProp => {0: someProp, 1: otherProp}
   ```
-  * This syntax makes it impossible to pass a given element value as an array
-   `property[][]=someProp&prop[][]=orOtherProp` **won't work**.
+  * This syntax makes it impossible to pass a given element value as an array as
+   ```
+   property[][]=someProp&prop[][]=orOtherProp => {0: {0: someProp}, 1: {0: orOtherProp}}`
+   ```
+   while the internal representation we want to end up with is:
+   ```
+   {0: {0: someProp, 1: orOtherProp}}
+   ```
 * With explicit enumeration - they key is provided in the request parameter name, e.g (`URL representation => internal representation`):
   ```
   property[0]=someProp&property[1]=otherProp => {0: someProp, 1: otherProp}
@@ -103,11 +78,12 @@ There are a two conventions of passing array parameters:
     ```
 * It is also technically possible to mix both conventions, e.g. (`URL representation => internal representation`):
   ```
-  property[]=someProp&property[1]=otherProp => [0 => someProp, 1 => otherProp]
-  property[]=someProp&property[0]=otherProp => [0 => otherProp]
-  property[foo]=someProp&property[]=otherProp => [foo => someProp, 0 => otherProp]
+  property[]=someProp&property[1]=otherProp   => {0 => someProp, 1 => otherProp}
+  property[]=someProp&property[0]=otherProp   => {0 => otherProp}
+  property[foo]=someProp&property[]=otherProp => {foo => someProp, 0 => otherProp}
   ```
   but it doesn't mean you should use it just because you can :-)
+  (it's easy to make stupid mistakes when you mix conventions)
 
 Now, when constructing the actual search conditions ARCHE just tries to match `property[]`, `operator[]`, `value[]` and `lang[]`
 parameters with the same key. It doesn't matter if a key is numeric or non-numeric and if it was generated implicitly or explicitly.
@@ -133,6 +109,67 @@ lang:     {0: en                                }
 ```
 
 and the search condition _find all resources having at the same time: a triple with value `value@en` and any triple with the `otherProp` and a triple with property `fooProp` and value matching a full text search for `fooValue`_.
+
+## Support in frameworks
+
+In most cases you won't be creating the API request URL by hand. You'll use some HTTP client framework/library instead.
+
+Some of them, support the serialization used by the ARCHE API out of the box, e.g.
+let's try to perform a following search: 
+_find all resources with `someProp` having either `somePropValue1` or `somePropValue2` value and `otherProp` having `otherPropValue`_:
+
+```js
+// jQuery example
+jQuery.ajax({
+  url: 'https://arche.acdh.oeaw.ac.at/api/search',
+  data: {
+    'property': ['someProp',                           'otherProp'],
+    'value':    [['somePropValue1', 'somePropValue2'], 'otherPropValue'],
+    'readMode': 'resource',
+    'format': 'text/turtle'
+  },
+  success: function(d) {console.log(d)}
+})
+```
+```php
+// PHP
+$query = http_build_query([
+    'property' => ['someProp',                           'otherProp'],
+    'value'    => [['somePropValue1', 'somePropValue2'], 'otherPropValue'],
+    'readMode' => 'resource',
+    'format'   => 'text/turtle'
+]);
+// just with file_get_contents
+$response = file_get_contents('https://arche.acdh.oeaw.ac.at/api/search?' . $query);
+echo $response;
+// PSR-7 & PSR-18 way provided by Guzzle
+$client = new GuzzleHttp\Client();
+$request = new GuzzleHttp\Psr7\Request('GET', 'https://arche.acdh.oeaw.ac.at/api/search?' . $query);
+$response = $client->sendRequest($request);
+echo $response->getBody();
+```
+
+while for others some manual job is needed.
+
+Most notably in Python I am not aware of any HTTP client library able to serialize to URL any more complex data structure.
+Requests is only able to serialize lists (by just repeating the parameter name) which does the job until we can rely
+on implicit enumeration but requires manual tuning if we can't:
+
+```python
+# Python with requests
+import requests 
+resp = requests.get(
+  'https://arche.acdh.oeaw.ac.at/api/search',
+  params={
+    'property[]': ['someProp', 'otherProp'],
+    'value[0][]': ['somePropValue1', 'somePropValue2'],
+    'value[1]': 'otherPropValue',
+    'readMode': 'resource',
+    'format': 'text/turtle'
+  }
+)
+print(resp.text)
+```
 
 # Ordering results
 
@@ -228,7 +265,7 @@ Fortunately there's can be easily checked and controlled:
 ## Multiple values
 
 A resource may have multiple values of a property used for results ordering.
-A typical case are labels in multiple languages but you shouldn't assume it's the only possible case.
+A typical case are labels in multiple languages but you shouldn't optimistically assume it's the only possible case.
 Consult metadata schema to check if a given property may multiple values and if they have a language tag.
 
 In case of multiple property values ARCHE implements two rules:
@@ -244,7 +281,34 @@ In case of multiple property values ARCHE implements two rules:
   * This is a fully arbitrary ARCHE's design decision.
     We need to pick up a single value, we're using the lowest one.
 
-TODO - add examples.
+E.g. let's assume we have following resources:
+
+```
+<res1> <hasTitle> "foo" ,
+                  "bar"@en ;
+       <hasAuthor> "Alice" .
+<res2> <hasTitle> "bar"@en ,
+                  "baz"@de ;
+       <hasAuthor> "John" .
+<res3> <otherProp> "placeholder" .
+```
+
+which all match the search. Now,
+
+* For `orderBy[]=hasTitle&orderBy[]=^hasAuthor&orderByLang=en` the order will be `res2`, `res1`, `res3` because:
+  * For `hasTitle` of `res1` we take the lowest among `foo` (qualifies because it has no lang tag) and `bar` (qualifies because its lang tag matches the `orderByLang`)
+    giving us with `bar`.
+  * For `res2` we skip `baz` and keep `bar` because both have lang tag but only the latter matches the `orderByLang`.
+  * For `res3` we get nothing, so it ends up at the end of the sort.
+  * As `res1` as `res2` have same sorting order according to the `hasTitle` we continue to the second order by property for them - `hasAuthor`.
+    For `res1` it's `Alice` and for `res2` it's `John` but as a reverse order was requested (note the `^` in `orderBy[]=^hasAuthor`), sorting
+    is done in reverse order and `res2` comes before `res1`
+* For `orderBy[]=^hasTitle&orderByLang=de` the order will be `res1`, `res2`, `res3` because:
+  * For `res1` the `foo` value of the `hasTitle` is taken (it doesn't have lang tag)
+  * For `res2` the `baz` value of the `hasTitle` is taken (matches the `orderByLang`)
+  * `res3` has no `hasTitle` so it goes to the end.
+  * As the descending order was requested `foo` comes before `baz` and therefore `res1` before `res2`.
+  
 
 ## Lack of value and non-literal values
 
@@ -272,6 +336,13 @@ Search results may be paged. This is controlled by the `offset` and `limit` para
 * The requested values of the `offset` and `limit` aren't included in the output.
   ARCHE hopes you can remember them :-)
 
+Example - 
+
+
 # Full text search
+
+TODO
+
+# SQL query-based search
 
 TODO

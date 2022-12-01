@@ -71,12 +71,17 @@ If you are processing JSON-LD, the library you're using (you're using one, don't
 
 If you are dealing with other RDF serialization, you may easily perform the compacting on your own - see a chapter below.
 
-## Where to get a contect from?
+## Where to get a context from?
 
 There are two obvious sources:
 
-* Your own preferences. You know what properties your webapp needs and what are corresponding RDF property URIs, so you prepare the context on your own.
+* Your own preferences. You know what properties your webapp needs and what are corresponding RDF property URIs, so you prepare the context on your own.  
+  **Generally this should be your choice.**
 * The ARCHE repository schema reported by the `{apiBase}/describe` endpoint, e.g. https://arche.acdh.oeaw.ac.at/api/describe.  
+  It's not a good long-term solution because ARCHE schema may not contain mappings for properties you need
+  and for sure contains mappings for properties you don't care about.
+  Also there's no guarantee of stability of this schema - it can change when ARCHE internals need it at no one will ask about your opinion.
+  But if you need just any context to try out how compacting works, it will do the job.
 
 ## Compacting JSON-LD
 

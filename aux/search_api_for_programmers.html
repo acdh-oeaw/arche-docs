@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2022-11-30" />
+<meta name="date" content="2022-12-01" />
 
 <title>ARCHE Search API for programmers</title>
 
@@ -350,7 +350,7 @@ display: none;
 
 
 <h1 class="title toc-ignore">ARCHE Search API for programmers</h1>
-<h4 class="date">2022-11-30</h4>
+<h4 class="date">2022-12-01</h4>
 
 </div>
 
@@ -361,7 +361,11 @@ display: none;
 advices</a></li>
 <li><a href="#technical-rdf-properties-provided-by-the-search" id="toc-technical-rdf-properties-provided-by-the-search">Technical RDF
 properties provided by the search</a></li>
-<li><a href="#using-array-parameters" id="toc-using-array-parameters">Using array parameters</a></li>
+<li><a href="#using-array-parameters-in-request-query" id="toc-using-array-parameters-in-request-query">Using array parameters
+in request query</a>
+<ul>
+<li><a href="#support-in-frameworks" id="toc-support-in-frameworks">Support in frameworks</a></li>
+</ul></li>
 <li><a href="#ordering-results" id="toc-ordering-results">Ordering
 results</a>
 <ul>
@@ -375,6 +379,7 @@ non-literal values</a></li>
 <li><a href="#paging" id="toc-paging">Paging</a></li>
 <li><a href="#full-text-search" id="toc-full-text-search">Full text
 search</a></li>
+<li><a href="#sql-query-based-search" id="toc-sql-query-based-search">SQL query-based search</a></li>
 </ul>
 </div>
 
@@ -390,13 +395,16 @@ acdhi https://id.acdh.oeaw.ac.at</code></pre></li>
 path</a> over the repository configuration returned by its <a href="https://app.swaggerhub.com/apis/zozlak/arche/3.5#/default/get_describe">describe</a>
 REST API endpoint, e.g. <code>{repoCfg}$.schema.label</code> on <a href="https://arche.acdh.oeaw.ac.at/api" class="uri">https://arche.acdh.oeaw.ac.at/api</a> resolves to
 <code>https://vocabs.acdh.oeaw.ac.at/schema#hasTitle</code>.</p></li>
-<li><p>Search URLs examples always come in pairs:</p>
+<li><p>Full Search URLs examples always come in pairs:</p>
 <ul>
 <li>A human-readable version with non-URL-encoded parameter values and
 every parameter written in a new line.</li>
 <li>A copy-paste friendly (but human-unreadable) version allowing you to
 test it easily in a browser/curl/postman/whatsoever.</li>
 </ul></li>
+<li><p>Short examples of particular API parameters are always provided
+in non-URL-encoded form (read “just copy-pasting them into the
+browser/curl may not work”).</p></li>
 <li><p>Most search URL examples use <code>readMode=resource</code> and
 <code>format=text/turtle</code> to provide the most human-readable
 output allowing to focus on the topic being discussed. For a real-world
@@ -483,50 +491,23 @@ was performed</td>
 </tbody>
 </table>
 </div>
-<div id="using-array-parameters" class="section level1">
-<h1>Using array parameters</h1>
-<p>Many search API parameters are arrays and some of them accept nested
-arrays of values.</p>
-<p>The good thing is, if you’re using any library to make the API
-request, the library should be able to properly serialize everything for
-you, e.g. <em>find all resources with <code>someProp</code> having
-either <code>somePropValue1</code> or <code>somePropValue2</code> value
-and <code>otherProp</code> having <code>otherPropValue</code></em>:</p>
-<pre class="js"><code>// jQuery example
-jQuery.ajax({
-  url: &#39;https://arche.acdh.oeaw.ac.at/api/search&#39;,
-  data: {
-    &#39;property&#39;: [&#39;someProp&#39;,                           &#39;otherProp&#39;],
-    &#39;value&#39;:    [[&#39;somePropValue1&#39;, &#39;somePropValue2&#39;], &#39;otherPropValue&#39;],
-    &#39;readMode&#39;: &#39;resource&#39;,
-    &#39;format&#39;: &#39;text/turtle&#39;
-  },
-  success: function(d) {console.log(d)}
-})</code></pre>
-<pre class="python"><code># Python example
-import requests 
-resp = requests.get(
-  &#39;https://arche.acdh.oeaw.ac.at/api/search&#39;,
-  params={
-    &#39;property&#39;: [&#39;someProp&#39;,                           &#39;otherProp&#39;],
-    &#39;value&#39;:    [[&#39;somePropValue1&#39;, &#39;somePropValue2&#39;], &#39;otherPropValue&#39;],
-    &#39;readMode&#39;: &#39;resource&#39;,
-    &#39;format&#39;: &#39;text/turtle&#39;
-  }
-)
-print(resp.text)</code></pre>
-<p>Anyway, if for some reason you need/want to construct the request URL
-by hand, that’s how it works.</p>
-<p>There are a two conventions of passing array parameters:</p>
+<div id="using-array-parameters-in-request-query" class="section level1">
+<h1>Using array parameters in request query</h1>
+<p>Many search API parameters are arrays and some of them
+(<code>property[]</code> and <code>value[]</code>) accept nested arrays
+of values.</p>
+<p>ARCHE APIP supports two conventions of passing array parameters:</p>
 <ul>
 <li><p>With implicit enumeration, e.g
 (<code>URL representation =&gt; internal representation</code>):</p>
 <pre><code>property[]=someProp&amp;property[]=otherProp =&gt; {0: someProp, 1: otherProp}</code></pre>
 <ul>
 <li>This syntax makes it impossible to pass a given element value as an
-array <code>property[][]=someProp&amp;prop[][]=orOtherProp</code>
-<strong>won’t work</strong>.</li>
-</ul></li>
+array as</li>
+</ul>
+<pre><code>property[][]=someProp&amp;prop[][]=orOtherProp =&gt; {0: {0: someProp}, 1: {0: orOtherProp}}`</code></pre>
+<p>while the internal representation we want to end up with is:
+<code>{0: {0: someProp, 1: orOtherProp}}</code></p></li>
 <li><p>With explicit enumeration - they key is provided in the request
 parameter name, e.g
 (<code>URL representation =&gt; internal representation</code>):</p>
@@ -542,11 +523,11 @@ ones, e.g.</p>
 </ul></li>
 <li><p>It is also technically possible to mix both conventions,
 e.g. (<code>URL representation =&gt; internal representation</code>):</p>
-<pre><code>property[]=someProp&amp;property[1]=otherProp =&gt; [0 =&gt; someProp, 1 =&gt; otherProp]
-property[]=someProp&amp;property[0]=otherProp =&gt; [0 =&gt; otherProp]
-property[foo]=someProp&amp;property[]=otherProp =&gt; [foo =&gt; someProp, 0 =&gt; otherProp]</code></pre>
-<p>but it doesn’t mean you should use it just because you can
-:-)</p></li>
+<pre><code>property[]=someProp&amp;property[1]=otherProp   =&gt; {0 =&gt; someProp, 1 =&gt; otherProp}
+property[]=someProp&amp;property[0]=otherProp   =&gt; {0 =&gt; otherProp}
+property[foo]=someProp&amp;property[]=otherProp =&gt; {foo =&gt; someProp, 0 =&gt; otherProp}</code></pre>
+<p>but it doesn’t mean you should use it just because you can :-) (it’s
+easy to make stupid mistakes when you mix conventions)</p></li>
 </ul>
 <p>Now, when constructing the actual search conditions ARCHE just tries
 to match <code>property[]</code>, <code>operator[]</code>,
@@ -572,6 +553,61 @@ time: a triple with value <code>value@en</code> and any triple with the
 <code>otherProp</code> and a triple with property <code>fooProp</code>
 and value matching a full text search for
 <code>fooValue</code></em>.</p>
+<div id="support-in-frameworks" class="section level2">
+<h2>Support in frameworks</h2>
+<p>In most cases you won’t be creating the API request URL by hand.
+You’ll use some HTTP client framework/library instead.</p>
+<p>Some of them, support the serialization used by the ARCHE API out of
+the box, e.g. let’s try to perform a following search: <em>find all
+resources with <code>someProp</code> having either
+<code>somePropValue1</code> or <code>somePropValue2</code> value and
+<code>otherProp</code> having <code>otherPropValue</code></em>:</p>
+<pre class="js"><code>// jQuery example
+jQuery.ajax({
+  url: &#39;https://arche.acdh.oeaw.ac.at/api/search&#39;,
+  data: {
+    &#39;property&#39;: [&#39;someProp&#39;,                           &#39;otherProp&#39;],
+    &#39;value&#39;:    [[&#39;somePropValue1&#39;, &#39;somePropValue2&#39;], &#39;otherPropValue&#39;],
+    &#39;readMode&#39;: &#39;resource&#39;,
+    &#39;format&#39;: &#39;text/turtle&#39;
+  },
+  success: function(d) {console.log(d)}
+})</code></pre>
+<pre class="php"><code>// PHP
+$query = http_build_query([
+    &#39;property&#39; =&gt; [&#39;someProp&#39;,                           &#39;otherProp&#39;],
+    &#39;value&#39;    =&gt; [[&#39;somePropValue1&#39;, &#39;somePropValue2&#39;], &#39;otherPropValue&#39;],
+    &#39;readMode&#39; =&gt; &#39;resource&#39;,
+    &#39;format&#39;   =&gt; &#39;text/turtle&#39;
+]);
+// just with file_get_contents
+$response = file_get_contents(&#39;https://arche.acdh.oeaw.ac.at/api/search?&#39; . $query);
+echo $response;
+// PSR-7 &amp; PSR-18 way provided by Guzzle
+$client = new GuzzleHttp\Client();
+$request = new GuzzleHttp\Psr7\Request(&#39;GET&#39;, &#39;https://arche.acdh.oeaw.ac.at/api/search?&#39; . $query);
+$response = $client-&gt;sendRequest($request);
+echo $response-&gt;getBody();</code></pre>
+<p>while for others some manual job is needed.</p>
+<p>Most notably in Python I am not aware of any HTTP client library able
+to serialize to URL any more complex data structure. Requests is only
+able to serialize lists (by just repeating the parameter name) which
+does the job until we can rely on implicit enumeration but requires
+manual tuning if we can’t:</p>
+<pre class="python"><code># Python with requests
+import requests 
+resp = requests.get(
+  &#39;https://arche.acdh.oeaw.ac.at/api/search&#39;,
+  params={
+    &#39;property[]&#39;: [&#39;someProp&#39;, &#39;otherProp&#39;],
+    &#39;value[0][]&#39;: [&#39;somePropValue1&#39;, &#39;somePropValue2&#39;],
+    &#39;value[1]&#39;: &#39;otherPropValue&#39;,
+    &#39;readMode&#39;: &#39;resource&#39;,
+    &#39;format&#39;: &#39;text/turtle&#39;
+  }
+)
+print(resp.text)</code></pre>
+</div>
 </div>
 <div id="ordering-results" class="section level1">
 <h1>Ordering results</h1>
@@ -702,9 +738,9 @@ all collations available on a given ARCHE instance.</li>
 <h2>Multiple values</h2>
 <p>A resource may have multiple values of a property used for results
 ordering. A typical case are labels in multiple languages but you
-shouldn’t assume it’s the only possible case. Consult metadata schema to
-check if a given property may multiple values and if they have a
-language tag.</p>
+shouldn’t optimistically assume it’s the only possible case. Consult
+metadata schema to check if a given property may multiple values and if
+they have a language tag.</p>
 <p>In case of multiple property values ARCHE implements two rules:</p>
 <ul>
 <li>It the <code>orderByLang</code> request property is provided, all
@@ -725,7 +761,53 @@ differnt <code>orderBy[]</code> parameter values.</li>
 up a single value, we’re using the lowest one.</li>
 </ul></li>
 </ul>
-<p>TODO - add examples.</p>
+<p>E.g. let’s assume we have following resources:</p>
+<pre><code>&lt;res1&gt; &lt;hasTitle&gt; &quot;foo&quot; ,
+                  &quot;bar&quot;@en ;
+       &lt;hasAuthor&gt; &quot;Alice&quot; .
+&lt;res2&gt; &lt;hasTitle&gt; &quot;bar&quot;@en ,
+                  &quot;baz&quot;@de ;
+       &lt;hasAuthor&gt; &quot;John&quot; .
+&lt;res3&gt; &lt;otherProp&gt; &quot;placeholder&quot; .</code></pre>
+<p>which all match the search. Now,</p>
+<ul>
+<li>For
+<code>orderBy[]=hasTitle&amp;orderBy[]=^hasAuthor&amp;orderByLang=en</code>
+the order will be <code>res2</code>, <code>res1</code>,
+<code>res3</code> because:
+<ul>
+<li>For <code>hasTitle</code> of <code>res1</code> we take the lowest
+among <code>foo</code> (qualifies because it has no lang tag) and
+<code>bar</code> (qualifies because its lang tag matches the
+<code>orderByLang</code>) giving us with <code>bar</code>.</li>
+<li>For <code>res2</code> we skip <code>baz</code> and keep
+<code>bar</code> because both have lang tag but only the latter matches
+the <code>orderByLang</code>.</li>
+<li>For <code>res3</code> we get nothing, so it ends up at the end of
+the sort.</li>
+<li>As <code>res1</code> as <code>res2</code> have same sorting order
+according to the <code>hasTitle</code> we continue to the second order
+by property for them - <code>hasAuthor</code>. For <code>res1</code>
+it’s <code>Alice</code> and for <code>res2</code> it’s <code>John</code>
+but as a reverse order was requested (note the <code>^</code> in
+<code>orderBy[]=^hasAuthor</code>), sorting is done in reverse order and
+<code>res2</code> comes before <code>res1</code></li>
+</ul></li>
+<li>For <code>orderBy[]=^hasTitle&amp;orderByLang=de</code> the order
+will be <code>res1</code>, <code>res2</code>, <code>res3</code> because:
+<ul>
+<li>For <code>res1</code> the <code>foo</code> value of the
+<code>hasTitle</code> is taken (it doesn’t have lang tag)</li>
+<li>For <code>res2</code> the <code>baz</code> value of the
+<code>hasTitle</code> is taken (matches the
+<code>orderByLang</code>)</li>
+<li><code>res3</code> has no <code>hasTitle</code> so it goes to the
+end.</li>
+<li>As the descending order was requested <code>foo</code> comes before
+<code>baz</code> and therefore <code>res1</code> before
+<code>res2</code>.</li>
+</ul></li>
+</ul>
 </div>
 <div id="lack-of-value-and-non-literal-values" class="section level2">
 <h2>Lack of value and non-literal values</h2>
@@ -761,9 +843,14 @@ response triple, e.g.</p>
 <code>limit</code> aren’t included in the output. ARCHE hopes you can
 remember them :-)</p></li>
 </ul>
+<p>Example -</p>
 </div>
 <div id="full-text-search" class="section level1">
 <h1>Full text search</h1>
+<p>TODO</p>
+</div>
+<div id="sql-query-based-search" class="section level1">
+<h1>SQL query-based search</h1>
 <p>TODO</p>
 </div>
 
