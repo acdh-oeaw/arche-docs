@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -118,7 +119,7 @@
 </aside>
 
             <div class="phpdocumentor-column -nine phpdocumentor-content">
-                                <section class="phpdocumentor-column -nine">
+                                <section>
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-arche.html">arche</a></li>
@@ -152,20 +153,16 @@
         <a href="namespaces/acdhoeaw-arche-oaipmh.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-Cache.html"><abbr title="\acdhOeaw\arche\oaipmh\Cache">Cache</abbr></a></dt>
-            <dd>Implements simple caching</dd>
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-Oai.html"><abbr title="\acdhOeaw\arche\oaipmh\Oai">Oai</abbr></a></dt>
-            <dd>Implements controller for the OAI-PMH service:
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-Cache.html"><abbr title="\acdhOeaw\arche\oaipmh\Cache">Cache</abbr></a></dt><dd>Implements simple caching</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-Oai.html"><abbr title="\acdhOeaw\arche\oaipmh\Oai">Oai</abbr></a></dt><dd>Implements controller for the OAI-PMH service:
 - checks OAI-PMH requests correctness,
 - handles OAI-PMH `identify` and `ListMetadataFormats` commands
 - delegates OAI-PMH `GetRecord`, `ListIdentifiers` and `ListRecords` commands
   to a chosen class implementing the `acdhOeaw\arche\oaipmh\search\SearchInterface`
 - delegates OAI-PMH `ListSets` command to a chosen class extending the
-  `acdhOeaw\arche\oaipmh\set\SetInterface` class.</dd>
-                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-OaiException.html"><abbr title="\acdhOeaw\arche\oaipmh\OaiException">OaiException</abbr></a></dt>
-            <dd>Simple specialized exception class to easy distinguish between OAI-PMH and
-internal exceptions.</dd>
-            </dl>
+  `acdhOeaw\arche\oaipmh\set\SetInterface` class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/acdhOeaw-arche-oaipmh-OaiException.html"><abbr title="\acdhOeaw\arche\oaipmh\OaiException">OaiException</abbr></a></dt><dd>Simple specialized exception class to easy distinguish between OAI-PMH and
+internal exceptions.</dd>    </dl>
+
+
 
 
 
@@ -269,7 +266,7 @@ internal exceptions.</dd>
 
     </article>
                                 </section>
-                <section class="phpdocumentor-column -three phpdocumentor-on-this-page__sidebar">
+                <section class="phpdocumentor-on-this-page__sidebar">
                             
     <section class="phpdocumentor-on-this-page__content">
         <strong class="phpdocumentor-on-this-page__title">On this page</strong>
@@ -287,7 +284,8 @@ internal exceptions.</dd>
     </section>
 
                 </section>
-                                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -298,7 +296,6 @@ internal exceptions.</dd>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="namespaces/acdhoeaw-arche-oaipmh.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
