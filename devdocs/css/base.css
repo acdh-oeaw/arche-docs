@@ -463,7 +463,7 @@ textarea {
     outline: 0;
 }
 
-.phpdocumentor-label {
+label.phpdocumentor-label {
     display: block;
     margin-bottom: var(--spacing-xs);
 }
@@ -589,7 +589,9 @@ td.phpdocumentor-cell:last-child {
     padding-right: 0;
 }
 .phpdocumentor-label-line {
-    display: flex; flex-direction: row; gap: 1rem
+    display: flex;
+    flex-direction: row;
+    gap: 1rem
 }
 
 .phpdocumentor-label {
@@ -598,6 +600,14 @@ td.phpdocumentor-cell:last-child {
     font-size: 80%;
     display: inline-block;
     overflow: hidden
+}
+
+/*
+It would be better if the phpdocumentor-element class were to become a flex element with a gap, but for #3337 that
+is too big a fix and needs to be done in a new design iteration.
+*/
+.phpdocumentor-signature + .phpdocumentor-label-line .phpdocumentor-label {
+    margin-top: var(--spacing-sm);
 }
 
 .phpdocumentor-label span {
