@@ -9236,6 +9236,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_INCLUDE"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AERRMODE_CONTINUE",
+            "name": "ERRMODE_CONTINUE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_CONTINUE"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AENC_UTF8",
             "name": "ENC_UTF8",
             "summary": "",
