@@ -5291,6 +5291,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#property_publicAccessValue"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ResourceObject\u003A\u003A\u0024publicAccessTitle",
+            "name": "publicAccessTitle",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Object-ResourceObject.html#property_publicAccessTitle"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Object\\ThreeDObject",
             "name": "ThreeDObject",
             "summary": "Description\u0020of\u0020ThreeDObject",
