@@ -12506,6 +12506,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#property_skip"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping\u003A\u003A\u0024value",
+            "name": "value",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#property_value"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping\u003A\u003A\u0024path",
             "name": "path",
             "summary": "",
@@ -12528,8 +12533,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003AaddExternalDatabase\u0028\u0029",
             "name": "addExternalDatabase",
-            "summary": "",
+            "summary": "Adds\u0020URI\u0020normalization\u0020rule\u0020for\u0020a\u0020given\u0020external\u0020database.",
             "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#method_addExternalDatabase"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003AaddExternalDatabaseClass\u0028\u0029",
+            "name": "addExternalDatabaseClass",
+            "summary": "Adds\u0020property\u0020mappings\u0020for\u0020a\u0020given\u0020class\u0020of\u0020a\u0020given\u0020external\u0020database.",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#method_addExternalDatabaseClass"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003AgetRule\u0028\u0029",
+            "name": "getRule",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#method_getRule"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003AmapIdentifiers\u0028\u0029",
             "name": "mapIdentifiers",
@@ -12545,6 +12560,16 @@ Search.appendIndex(
             "name": "resolveAndMerge",
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#method_resolveAndMerge"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003AgetId\u0028\u0029",
+            "name": "getId",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#method_getId"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003AgetClasses\u0028\u0029",
+            "name": "getClasses",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#method_getClasses"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003A\u0024normalizer",
             "name": "normalizer",
