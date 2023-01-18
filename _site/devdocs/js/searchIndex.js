@@ -1663,12 +1663,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_property_detail\u0028\u0029",
             "name": "dashboard_property_detail",
-            "summary": "Dashboard\u0020property\u0020count\u0020distinct\u0020values\u0020\u0020view",
+            "summary": "\u003C\u003C\u003C\u003C\u003C\u003C\u003C\u0020HEAD\n\u003D\u003D\u003D\u003D\u003D\u003D\u003D\nDashboard\u0020property\u0020count\u0020distinct\u0020values\u0020\u0020view",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_property_detail"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_overview\u0028\u0029",
             "name": "dashboard_overview",
-            "summary": "The\u0020Dashboard\u0020Main\u0020Menu\u0020View",
+            "summary": "\u003E\u003E\u003E\u003E\u003E\u003E\u003E\u00206529209fc231e305f3fba35c203ad65ed0c2667b\nThe\u0020Dashboard\u0020Main\u0020Menu\u0020View",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_overview"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgenerateView\u0028\u0029",
@@ -1723,12 +1723,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgetProperty\u0028\u0029",
             "name": "getProperty",
-            "summary": "",
+            "summary": "The\u0020properties\u0020menu\u0020template\u0020generation",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getProperty"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgetPropertyApi\u0028\u0029",
             "name": "getPropertyApi",
-            "summary": "",
+            "summary": "The\u0020properties\u0020menu\u0020API\u0020call\u0020backend\u0020for\u0020the\u0020table\u0020data\u0020generation",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getPropertyApi"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003A\u0024data",
@@ -1811,10 +1811,10 @@ Search.appendIndex(
             "summary": "Count\u0020the\u0020selected\u0020dissemination\u0020service\u0020matching\u0020resources",
             "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_countAllMatchingResourcesForDisseminationService"
         },                {
-            "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetByPropertyApi\u0028\u0029",
-            "name": "getByPropertyApi",
-            "summary": "",
-            "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_getByPropertyApi"
+            "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetPropertyApi\u0028\u0029",
+            "name": "getPropertyApi",
+            "summary": "SQL\u0020for\u0020the\u0020property\u0020menu\u0020table",
+            "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_getPropertyApi"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetValuesByPropertyApiData\u0028\u0029",
             "name": "getValuesByPropertyApiData",
