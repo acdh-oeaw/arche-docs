@@ -1646,10 +1646,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method___construct"
         },                {
-            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_detail\u0028\u0029",
-            "name": "dashboard_detail",
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AdashboardDetail\u0028\u0029",
+            "name": "dashboardDetail",
             "summary": "Dashboard\u0020property\u0020count\u0020view",
-            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_detail"
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboardDetail"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AdashboardDetailAjax\u0028\u0029",
+            "name": "dashboardDetailAjax",
+            "summary": "AJAX\u0020related\u0020table\u0020main\u0020template\u0020\u002D\u0020latest",
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboardDetailAjax"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AdashboardDetailAjaxApi\u0028\u0029",
+            "name": "dashboardDetailAjaxApi",
+            "summary": "Ajax\u0020related\u0020table\u0020main\u0020API\u0020call\u0020\u002D\u0020latest",
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboardDetailAjaxApi"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_format_property_detail\u0028\u0029",
             "name": "dashboard_format_property_detail",
@@ -1663,12 +1673,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_property_detail\u0028\u0029",
             "name": "dashboard_property_detail",
-            "summary": "\u003C\u003C\u003C\u003C\u003C\u003C\u003C\u0020HEAD\n\u003D\u003D\u003D\u003D\u003D\u003D\u003D\nDashboard\u0020property\u0020count\u0020distinct\u0020values\u0020\u0020view",
+            "summary": "Dashboard\u0020property\u0020count\u0020distinct\u0020values\u0020\u0020view",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_property_detail"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_overview\u0028\u0029",
             "name": "dashboard_overview",
-            "summary": "\u003E\u003E\u003E\u003E\u003E\u003E\u003E\u00206529209fc231e305f3fba35c203ad65ed0c2667b\nThe\u0020Dashboard\u0020Main\u0020Menu\u0020View",
+            "summary": "The\u0020Dashboard\u0020Main\u0020Menu\u0020View",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_overview"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgenerateView\u0028\u0029",
@@ -1761,6 +1771,21 @@ Search.appendIndex(
             "summary": "This\u0020function\u0020handle\u0020the\u0020\u0023\u0020removing\u0020problem\u0020in\u0020the\u0020browser",
             "url": "classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_generatePropertyUrl"
         },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper\u003A\u003AaddUrlToTableData\u0028\u0029",
+            "name": "addUrlToTableData",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_addUrlToTableData"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper\u003A\u003AformatNumberToGuiFriendlyFormat\u0028\u0029",
+            "name": "formatNumberToGuiFriendlyFormat",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_formatNumberToGuiFriendlyFormat"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper\u003A\u003A\u0024tableInfo",
+            "name": "tableInfo",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#property_tableInfo"
+        },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DisseminationServiceHelper",
             "name": "DisseminationServiceHelper",
             "summary": "Description\u0020of\u0020DisseminationServiceHelper",
@@ -1835,6 +1860,11 @@ Search.appendIndex(
             "name": "queries",
             "summary": "",
             "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#property_queries"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003A\u0024queryKeys",
+            "name": "queryKeys",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#property_queryKeys"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Object\\DisseminationService",
             "name": "DisseminationService",
