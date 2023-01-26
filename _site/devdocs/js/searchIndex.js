@@ -1816,10 +1816,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetValuesByProperty\u0028\u0029",
+            "name": "getValuesByProperty",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_getValuesByProperty"
+        },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetViewData\u0028\u0029",
             "name": "getViewData",
             "summary": "Generate\u0020the\u0020sql\u0020data",
             "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_getViewData"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AsetUpSearch\u0028\u0029",
+            "name": "setUpSearch",
+            "summary": "We\u0020have\u0020to\u0020setup\u0020the\u0020sql\u0020for\u0020the\u0020datatable\u0020search\u0020fields",
+            "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_setUpSearch"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetFacet\u0028\u0029",
             "name": "getFacet",
