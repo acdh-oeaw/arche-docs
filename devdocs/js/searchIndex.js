@@ -1646,11 +1646,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method___construct"
         },                {
-            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AdashboardDetail\u0028\u0029",
-            "name": "dashboardDetail",
-            "summary": "Dashboard\u0020property\u0020count\u0020view",
-            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboardDetail"
-        },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AdashboardDetailAjax\u0028\u0029",
             "name": "dashboardDetailAjax",
             "summary": "AJAX\u0020related\u0020table\u0020main\u0020template\u0020\u002D\u0020latest",
@@ -1761,6 +1756,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#property_helper"
         },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003A\u0024cacheTypes",
+            "name": "cacheTypes",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#property_cacheTypes"
+        },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper",
             "name": "DashboardHelper",
             "summary": "Description\u0020of\u0020DashboardHelper",
@@ -1773,12 +1773,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper\u003A\u003AaddUrlToTableData\u0028\u0029",
             "name": "addUrlToTableData",
-            "summary": "",
+            "summary": "We\u0020have\u0020to\u0020change\u0020the\u0020field\u0020values\u0020for\u0020the\u0020server\u0020side\u0020generated\u0020tables\u0020case.",
             "url": "classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_addUrlToTableData"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper\u003A\u003AgetCachedFilePath\u0028\u0029",
+            "name": "getCachedFilePath",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_getCachedFilePath"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper\u003A\u003AformatNumberToGuiFriendlyFormat\u0028\u0029",
             "name": "formatNumberToGuiFriendlyFormat",
-            "summary": "",
+            "summary": "Formalize\u0020the\u0020bytes\u0020to\u0020MB\/GB\/etc\u0020for\u0020the\u0020gui",
             "url": "classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_formatNumberToGuiFriendlyFormat"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper\u003A\u003A\u0024tableInfo",
@@ -1861,6 +1866,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_changeBackDBConnection"
         },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetDBLastModificationDate\u0028\u0029",
+            "name": "getDBLastModificationDate",
+            "summary": "Get\u0020the\u0020latest\u0020modification\u0020date",
+            "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_getDBLastModificationDate"
+        },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003A\u0024repodb",
             "name": "repodb",
             "summary": "",
@@ -1875,6 +1885,56 @@ Search.appendIndex(
             "name": "queryKeys",
             "summary": "",
             "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#property_queryKeys"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Object\\CacheFile",
+            "name": "CacheFile",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Object-CacheFile.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Object\\CacheFile\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Object-CacheFile.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Object\\CacheFile\u003A\u003AgetJsonContent\u0028\u0029",
+            "name": "getJsonContent",
+            "summary": "Get\u0020the\u0020saved\u0020file\u0020json\u0020content",
+            "url": "classes/Drupal-arche-dashboard-Object-CacheFile.html#method_getJsonContent"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Object\\CacheFile\u003A\u003AcheckFileExists\u0028\u0029",
+            "name": "checkFileExists",
+            "summary": "Check\u0020the\u0020file\u0020exists",
+            "url": "classes/Drupal-arche-dashboard-Object-CacheFile.html#method_checkFileExists"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Object\\CacheFile\u003A\u003AcompareDates\u0028\u0029",
+            "name": "compareDates",
+            "summary": "Compare\u0020the\u0020DB\u0020last\u0020modify\u0020date\u0020and\u0020the\u0020file\u0020creation\u0020date.",
+            "url": "classes/Drupal-arche-dashboard-Object-CacheFile.html#method_compareDates"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Object\\CacheFile\u003A\u003AcheckFileModificationTime\u0028\u0029",
+            "name": "checkFileModificationTime",
+            "summary": "Get\u0020the\u0020File\u0020modification\u0020date",
+            "url": "classes/Drupal-arche-dashboard-Object-CacheFile.html#method_checkFileModificationTime"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Object\\CacheFile\u003A\u003AgetSize\u0028\u0029",
+            "name": "getSize",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Object-CacheFile.html#method_getSize"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Object\\CacheFile\u003A\u003AaddContent\u0028\u0029",
+            "name": "addContent",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Object-CacheFile.html#method_addContent"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Object\\CacheFile\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Object-CacheFile.html#property_path"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Object\\CacheFile\u003A\u003A\u0024filename",
+            "name": "filename",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Object-CacheFile.html#property_filename"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Object\\DisseminationService",
             "name": "DisseminationService",
