@@ -339,14 +339,30 @@ on the passed property</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByProperty">getValuesByProperty()</a>
     <span>
-                                &nbsp;: <abbr title="\Drupal\arche_dashboard\Controller\type">type</abbr>    </span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
+<dd>dashboard-values-by-property page</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByPropertyApi">getValuesByPropertyApi()</a>
     <span>
                                 &nbsp;: <abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr>    </span>
 </dt>
+<dd>dashboard-values-by-property API call</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByPropertyDetail">getValuesByPropertyDetail()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>dashboard-vbp-detail page</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByPropertyDetailApi">getValuesByPropertyDetailApi()</a>
+    <span>
+                                &nbsp;: <abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr>    </span>
+</dt>
+<dd>dashboard-vbp-detail API</dd>
 
     </dl>
 
@@ -1227,7 +1243,7 @@ on the passed property</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-dashboard/src/Controller/DashboardController.php"><a href="files/arche-dashboard-src-controller-dashboardcontroller.html"><abbr title="arche-dashboard/src/Controller/DashboardController.php">DashboardController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">451</span>
+    <span class="phpdocumentor-element-found-in__line">514</span>
 
     </aside>
 
@@ -1273,7 +1289,7 @@ on the passed property</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-dashboard/src/Controller/DashboardController.php"><a href="files/arche-dashboard-src-controller-dashboardcontroller.html"><abbr title="arche-dashboard/src/Controller/DashboardController.php">DashboardController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">474</span>
+    <span class="phpdocumentor-element-found-in__line">537</span>
 
     </aside>
 
@@ -1319,14 +1335,15 @@ on the passed property</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-dashboard/src/Controller/DashboardController.php"><a href="files/arche-dashboard-src-controller-dashboardcontroller.html"><abbr title="arche-dashboard/src/Controller/DashboardController.php">DashboardController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">396</span>
+    <span class="phpdocumentor-element-found-in__line">397</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">dashboard-values-by-property page</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getValuesByProperty</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\arche_dashboard\Controller\type">type</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">getValuesByProperty</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1336,7 +1353,7 @@ on the passed property</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\arche_dashboard\Controller\type">type</abbr></span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             </section>
 
 </article>
@@ -1354,11 +1371,12 @@ on the passed property</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-dashboard/src/Controller/DashboardController.php"><a href="files/arche-dashboard-src-controller-dashboardcontroller.html"><abbr title="arche-dashboard/src/Controller/DashboardController.php">DashboardController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">414</span>
+    <span class="phpdocumentor-element-found-in__line">418</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">dashboard-values-by-property API call</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getValuesByPropertyApi</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span></code>
@@ -1370,6 +1388,98 @@ on the passed property</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$property</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getValuesByPropertyDetail">
+        getValuesByPropertyDetail()
+        <a href="classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByPropertyDetail" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-dashboard/src/Controller/DashboardController.php"><a href="files/arche-dashboard-src-controller-dashboardcontroller.html"><abbr title="arche-dashboard/src/Controller/DashboardController.php">DashboardController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">454</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">dashboard-vbp-detail page</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getValuesByPropertyDetail</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$params</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getValuesByPropertyDetailApi">
+        getValuesByPropertyDetailApi()
+        <a href="classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByPropertyDetailApi" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-dashboard/src/Controller/DashboardController.php"><a href="files/arche-dashboard-src-controller-dashboardcontroller.html"><abbr title="arche-dashboard/src/Controller/DashboardController.php">DashboardController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">476</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">dashboard-vbp-detail API</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getValuesByPropertyDetailApi</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$params</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -1528,6 +1638,8 @@ on the passed property</p>
                                             <li><a href="classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getPropertyApi">getPropertyApi()</a></li>
                                             <li><a href="classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByProperty">getValuesByProperty()</a></li>
                                             <li><a href="classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByPropertyApi">getValuesByPropertyApi()</a></li>
+                                            <li><a href="classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByPropertyDetail">getValuesByPropertyDetail()</a></li>
+                                            <li><a href="classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByPropertyDetailApi">getValuesByPropertyDetailApi()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -218,6 +218,12 @@
 <dd>We have to change the field values for the server side generated tables case.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_dashboardValuesByPropertyTableFormat">dashboardValuesByPropertyTableFormat()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_generatePropertyUrl">generatePropertyUrl()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
@@ -227,8 +233,16 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_getCachedFilePath">getCachedFilePath()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: <abbr title="\Drupal\arche_dashboard\Helper\type">type</abbr>    </span>
 </dt>
+<dd>Get the cached query files path</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_processValuesByPropApiParamaters">processValuesByPropApiParamaters()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Create array from the passed properties</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_formatNumberToGuiFriendlyFormat">formatNumberToGuiFriendlyFormat()</a>
@@ -351,6 +365,65 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_dashboardValuesByPropertyTableFormat">
+        dashboardValuesByPropertyTableFormat()
+        <a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_dashboardValuesByPropertyTableFormat" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-dashboard/src/Helper/DashboardHelper.php"><a href="files/arche-dashboard-src-helper-dashboardhelper.html"><abbr title="arche-dashboard/src/Helper/DashboardHelper.php">DashboardHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">183</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">dashboardValuesByPropertyTableFormat</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prop</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rdf</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$prop</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$rdf</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_generatePropertyUrl">
         generatePropertyUrl()
         <a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_generatePropertyUrl" class="headerlink"><i class="fas fa-link"></i></a>
@@ -367,7 +440,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">generatePropertyUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">generatePropertyUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;property&quot;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -378,6 +451,13 @@
                 <span class="phpdocumentor-signature__argument__name">$data</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$field</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&quot;property&quot;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -405,14 +485,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-dashboard/src/Helper/DashboardHelper.php"><a href="files/arche-dashboard-src-helper-dashboardhelper.html"><abbr title="arche-dashboard/src/Helper/DashboardHelper.php">DashboardHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Get the cached query files path</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getCachedFilePath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getCachedFilePath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\arche_dashboard\Helper\type">type</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -420,7 +501,57 @@
     
     
 
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\arche_dashboard\Helper\type">type</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_processValuesByPropApiParamaters">
+        processValuesByPropApiParamaters()
+        <a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_processValuesByPropApiParamaters" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-dashboard/src/Helper/DashboardHelper.php"><a href="files/arche-dashboard-src-helper-dashboardhelper.html"><abbr title="arche-dashboard/src/Helper/DashboardHelper.php">DashboardHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">167</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create array from the passed properties</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">processValuesByPropApiParamaters</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
     
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$params</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -436,7 +567,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-dashboard/src/Helper/DashboardHelper.php"><a href="files/arche-dashboard-src-helper-dashboardhelper.html"><abbr title="arche-dashboard/src/Helper/DashboardHelper.php">DashboardHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -589,8 +720,10 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_addUrlToTableData">addUrlToTableData()</a></li>
+                                            <li><a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_dashboardValuesByPropertyTableFormat">dashboardValuesByPropertyTableFormat()</a></li>
                                             <li><a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_generatePropertyUrl">generatePropertyUrl()</a></li>
                                             <li><a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_getCachedFilePath">getCachedFilePath()</a></li>
+                                            <li><a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_processValuesByPropApiParamaters">processValuesByPropApiParamaters()</a></li>
                                             <li><a href="classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_formatNumberToGuiFriendlyFormat">formatNumberToGuiFriendlyFormat()</a></li>
                                     </ul>
             </li>

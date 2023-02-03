@@ -1718,13 +1718,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgetValuesByProperty\u0028\u0029",
             "name": "getValuesByProperty",
-            "summary": "",
+            "summary": "dashboard\u002Dvalues\u002Dby\u002Dproperty\u0020page",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByProperty"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgetValuesByPropertyApi\u0028\u0029",
             "name": "getValuesByPropertyApi",
-            "summary": "",
+            "summary": "dashboard\u002Dvalues\u002Dby\u002Dproperty\u0020API\u0020call",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByPropertyApi"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgetValuesByPropertyDetail\u0028\u0029",
+            "name": "getValuesByPropertyDetail",
+            "summary": "dashboard\u002Dvbp\u002Ddetail\u0020page",
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByPropertyDetail"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgetValuesByPropertyDetailApi\u0028\u0029",
+            "name": "getValuesByPropertyDetailApi",
+            "summary": "dashboard\u002Dvbp\u002Ddetail\u0020API",
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getValuesByPropertyDetailApi"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgetProperty\u0028\u0029",
             "name": "getProperty",
@@ -1778,13 +1788,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper\u003A\u003AgetCachedFilePath\u0028\u0029",
             "name": "getCachedFilePath",
-            "summary": "",
+            "summary": "Get\u0020the\u0020cached\u0020query\u0020files\u0020path",
             "url": "classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_getCachedFilePath"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper\u003A\u003AformatNumberToGuiFriendlyFormat\u0028\u0029",
             "name": "formatNumberToGuiFriendlyFormat",
             "summary": "Formalize\u0020the\u0020bytes\u0020to\u0020MB\/GB\/etc\u0020for\u0020the\u0020gui",
             "url": "classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_formatNumberToGuiFriendlyFormat"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper\u003A\u003AprocessValuesByPropApiParamaters\u0028\u0029",
+            "name": "processValuesByPropApiParamaters",
+            "summary": "Create\u0020array\u0020from\u0020the\u0020passed\u0020properties",
+            "url": "classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_processValuesByPropApiParamaters"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper\u003A\u003AdashboardValuesByPropertyTableFormat\u0028\u0029",
+            "name": "dashboardValuesByPropertyTableFormat",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Helper-DashboardHelper.html#method_dashboardValuesByPropertyTableFormat"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Helper\\DashboardHelper\u003A\u003A\u0024tableInfo",
             "name": "tableInfo",
@@ -1823,8 +1843,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetValuesByProperty\u0028\u0029",
             "name": "getValuesByProperty",
-            "summary": "",
+            "summary": "Get\u0020all\u0020of\u0020the\u0020properties\u0020for\u0020the\u0020dropdown\u0020menu",
             "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_getValuesByProperty"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetAcdhTypes\u0028\u0029",
+            "name": "getAcdhTypes",
+            "summary": "Get\u0020the\u0020ACDH\u0020RDf\u003ATYPE\u002Ds\u0020for\u0020the\u0020dropdown\u0020list",
+            "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_getAcdhTypes"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetViewData\u0028\u0029",
             "name": "getViewData",
@@ -1866,10 +1891,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_changeBackDBConnection"
         },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AformatTypeArray\u0028\u0029",
+            "name": "formatTypeArray",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_formatTypeArray"
+        },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetDBLastModificationDate\u0028\u0029",
             "name": "getDBLastModificationDate",
             "summary": "Get\u0020the\u0020latest\u0020modification\u0020date",
             "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_getDBLastModificationDate"
+        },                {
+            "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003AgetValuesByPropertyDetailData\u0028\u0029",
+            "name": "getValuesByPropertyDetailData",
+            "summary": "",
+            "url": "classes/Drupal-arche-dashboard-Model-DashboardModel.html#method_getValuesByPropertyDetailData"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Model\\DashboardModel\u003A\u003A\u0024repodb",
             "name": "repodb",
