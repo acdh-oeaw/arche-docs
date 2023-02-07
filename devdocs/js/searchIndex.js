@@ -1656,25 +1656,20 @@ Search.appendIndex(
             "summary": "Ajax\u0020related\u0020table\u0020main\u0020API\u0020call\u0020\u002D\u0020latest",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboardDetailAjaxApi"
         },                {
-            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_format_property_detail\u0028\u0029",
-            "name": "dashboard_format_property_detail",
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AdashboardFormatPropertyDetail\u0028\u0029",
+            "name": "dashboardFormatPropertyDetail",
             "summary": "",
-            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_format_property_detail"
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboardFormatPropertyDetail"
         },                {
-            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_class_property_detail\u0028\u0029",
-            "name": "dashboard_class_property_detail",
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AdashboardClassPropertyDetail\u0028\u0029",
+            "name": "dashboardClassPropertyDetail",
             "summary": "The\u0020rdf\u003Atype\u0020class\u0020properties\u0020detail\u0020view",
-            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_class_property_detail"
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboardClassPropertyDetail"
         },                {
-            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_property_detail\u0028\u0029",
-            "name": "dashboard_property_detail",
-            "summary": "Dashboard\u0020property\u0020count\u0020distinct\u0020values\u0020\u0020view",
-            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_property_detail"
-        },                {
-            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_overview\u0028\u0029",
-            "name": "dashboard_overview",
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AdashboardOverview\u0028\u0029",
+            "name": "dashboardOverview",
             "summary": "The\u0020Dashboard\u0020Main\u0020Menu\u0020View",
-            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_overview"
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboardOverview"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgenerateView\u0028\u0029",
             "name": "generateView",
@@ -1686,35 +1681,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_generateHeaders"
         },                {
-            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_property_detail_api\u0028\u0029",
-            "name": "dashboard_property_detail_api",
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AdashboardPropertyDetailApi\u0028\u0029",
+            "name": "dashboardPropertyDetailApi",
             "summary": "The\u0020properties\u0020deatil\u0020view",
-            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_property_detail_api"
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboardPropertyDetailApi"
         },                {
-            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_dissemination_services_list\u0028\u0029",
-            "name": "dashboard_dissemination_services_list",
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AdashboardDisseminationServicesList\u0028\u0029",
+            "name": "dashboardDisseminationServicesList",
             "summary": "The\u0020properties\u0020deatil\u0020view",
-            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_dissemination_services_list"
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboardDisseminationServicesList"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgetDisseminationServiceApi\u0028\u0029",
             "name": "getDisseminationServiceApi",
             "summary": "Dissemination\u0020services\u0020list\u0020api\u0020call\u0020for\u0020the\u0020datatable",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getDisseminationServiceApi"
         },                {
-            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_dissemination_services_detail\u0028\u0029",
-            "name": "dashboard_dissemination_services_detail",
+            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AdashboardDisseminationServicesDetail\u0028\u0029",
+            "name": "dashboardDisseminationServicesDetail",
             "summary": "Dissemination\u0020service\u0020detail\u0020page\u0020with\u0020the\u0020basic\u0020infos",
-            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_dissemination_services_detail"
+            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboardDisseminationServicesDetail"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgetDisseminationServiceMatchingResourcesApi\u0028\u0029",
             "name": "getDisseminationServiceMatchingResourcesApi",
             "summary": "The\u0020matching\u0020resource\u0020api\u0020call\u0020for\u0020the\u0020dissemination\u0020service\u0020detail\u0020datatable",
             "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_getDisseminationServiceMatchingResourcesApi"
-        },                {
-            "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003Adashboard_detail_api\u0028\u0029",
-            "name": "dashboard_detail_api",
-            "summary": "",
-            "url": "classes/Drupal-arche-dashboard-Controller-DashboardController.html#method_dashboard_detail_api"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController\u003A\u003AgetValuesByProperty\u0028\u0029",
             "name": "getValuesByProperty",
