@@ -6156,6 +6156,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_getMetadataGui"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_getMetadataGuiHTML\u0028\u0029",
+            "name": "api_getMetadataGuiHTML",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_getMetadataGuiHTML"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_versions\u0028\u0029",
             "name": "api_versions",
             "summary": "Fetch\u0020the\u0020versions\u0020data\u0020for\u0020the\u0020tree",
@@ -6305,6 +6310,26 @@ Search.appendIndex(
             "name": "execute",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-Metadata-MetadataGuiController.html#method_execute"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Metadata\\MetadataGuiHTMLController",
+            "name": "MetadataGuiHTMLController",
+            "summary": "Description\u0020of\u0020MetadataGuiController",
+            "url": "classes/Drupal-arche-gui-api-Controller-Metadata-MetadataGuiHTMLController.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Metadata\\MetadataGuiHTMLController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-Metadata-MetadataGuiHTMLController.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Metadata\\MetadataGuiHTMLController\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-Metadata-MetadataGuiHTMLController.html#method_execute"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Metadata\\MetadataGuiHTMLController\u003A\u003A\u0024helper",
+            "name": "helper",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-Metadata-MetadataGuiHTMLController.html#property_helper"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Metadata\\RootTableController",
             "name": "RootTableController",
@@ -6515,6 +6540,26 @@ Search.appendIndex(
             "name": "curation",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Helper-Metadata-MetadataGuiHelper.html#property_curation"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHTMLHelper",
+            "name": "MetadataGuiHTMLHelper",
+            "summary": "Description\u0020of\u0020MetadataGuiHTMLHelper",
+            "url": "classes/Drupal-arche-gui-api-Helper-Metadata-MetadataGuiHTMLHelper.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHTMLHelper\u003A\u003AfetchHtmlContent\u0028\u0029",
+            "name": "fetchHtmlContent",
+            "summary": "Fetch\u0020the\u0020whole\u0020table",
+            "url": "classes/Drupal-arche-gui-api-Helper-Metadata-MetadataGuiHTMLHelper.html#method_fetchHtmlContent"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHTMLHelper\u003A\u003AcreateRows\u0028\u0029",
+            "name": "createRows",
+            "summary": "fetch\u0020the\u0020table\u0020rows",
+            "url": "classes/Drupal-arche-gui-api-Helper-Metadata-MetadataGuiHTMLHelper.html#method_createRows"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHTMLHelper\u003A\u003AcreateHeader\u0028\u0029",
+            "name": "createHeader",
+            "summary": "Create\u0020the\u0020Header\u0020for\u0020the\u0020HTML\u0020table",
+            "url": "classes/Drupal-arche-gui-api-Helper-Metadata-MetadataGuiHTMLHelper.html#method_createHeader"
         },                {
             "fqsen": "\\Utils",
             "name": "Utils",
