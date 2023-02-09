@@ -6161,6 +6161,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_getMetadataGuiHTML"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_getFileFormatsHTML\u0028\u0029",
+            "name": "api_getFileFormatsHTML",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_getFileFormatsHTML"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_versions\u0028\u0029",
             "name": "api_versions",
             "summary": "Fetch\u0020the\u0020versions\u0020data\u0020for\u0020the\u0020tree",
@@ -6271,6 +6276,26 @@ Search.appendIndex(
             "summary": "It\u0020has\u0020no\u0020public\u0020endpoint.\u0020Collection\u0020download\u0020uses\u0020it.",
             "url": "classes/Drupal-arche-gui-api-Controller-Dissemination-TurtleDissController.html#method_execute"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\FileFormats\\FileFormatsHTMLController",
+            "name": "FileFormatsHTMLController",
+            "summary": "Description\u0020of\u0020MetadataGuiController",
+            "url": "classes/Drupal-arche-gui-api-Controller-FileFormats-FileFormatsHTMLController.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\FileFormats\\FileFormatsHTMLController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-FileFormats-FileFormatsHTMLController.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\FileFormats\\FileFormatsHTMLController\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-FileFormats-FileFormatsHTMLController.html#method_execute"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\FileFormats\\FileFormatsHTMLController\u003A\u003A\u0024helper",
+            "name": "helper",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-FileFormats-FileFormatsHTMLController.html#property_helper"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\GND\\GndPersonsController",
             "name": "GndPersonsController",
             "summary": "Description\u0020of\u0020GndPersonsController",
@@ -6380,6 +6405,51 @@ Search.appendIndex(
             "name": "getAlertDiv",
             "summary": "Get\u0020the\u0020alert\u0020div\u0020Id\u0020for\u0020the\u0020gui\u0020detail\u0020page\u0020header",
             "url": "classes/Drupal-arche-gui-api-Controller-VersionsController.html#method_getAlertDiv"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\FileFormats\\FileFormatsHTMLHelper",
+            "name": "FileFormatsHTMLHelper",
+            "summary": "Description\u0020of\u0020MetadataGuiHTMLHelper",
+            "url": "classes/Drupal-arche-gui-api-Helper-FileFormats-FileFormatsHTMLHelper.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\FileFormats\\FileFormatsHTMLHelper\u003A\u003AfetchHtmlContent\u0028\u0029",
+            "name": "fetchHtmlContent",
+            "summary": "Fetch\u0020the\u0020whole\u0020table",
+            "url": "classes/Drupal-arche-gui-api-Helper-FileFormats-FileFormatsHTMLHelper.html#method_fetchHtmlContent"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\FileFormats\\FileFormatsHTMLHelper\u003A\u003AfetchCategoriesData\u0028\u0029",
+            "name": "fetchCategoriesData",
+            "summary": "Loop\u0020through\u0020the\u0020data\u0020array\u0020to\u0020reorder\u0020the\u0020data\u0020based\u0020on\u0020the\u0020categories",
+            "url": "classes/Drupal-arche-gui-api-Helper-FileFormats-FileFormatsHTMLHelper.html#method_fetchCategoriesData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\FileFormats\\FileFormatsHTMLHelper\u003A\u003AcreateRows\u0028\u0029",
+            "name": "createRows",
+            "summary": "fetch\u0020the\u0020table\u0020rows",
+            "url": "classes/Drupal-arche-gui-api-Helper-FileFormats-FileFormatsHTMLHelper.html#method_createRows"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\FileFormats\\FileFormatsHTMLHelper\u003A\u003AcreateHeader\u0028\u0029",
+            "name": "createHeader",
+            "summary": "Create\u0020the\u0020Header\u0020for\u0020the\u0020HTML\u0020table",
+            "url": "classes/Drupal-arche-gui-api-Helper-FileFormats-FileFormatsHTMLHelper.html#method_createHeader"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\FileFormats\\FileFormatsHTMLHelper\u003A\u003A\u0024fields",
+            "name": "fields",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Helper-FileFormats-FileFormatsHTMLHelper.html#property_fields"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\FileFormats\\FileFormatsHTMLHelper\u003A\u003A\u0024categories",
+            "name": "categories",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Helper-FileFormats-FileFormatsHTMLHelper.html#property_categories"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\FileFormats\\FileFormatsHTMLHelper\u003A\u003A\u0024categoriesData",
+            "name": "categoriesData",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Helper-FileFormats-FileFormatsHTMLHelper.html#property_categoriesData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\FileFormats\\FileFormatsHTMLHelper\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Helper-FileFormats-FileFormatsHTMLHelper.html#property_data"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata\\MetadataGuiHelper",
             "name": "MetadataGuiHelper",
@@ -6995,6 +7065,96 @@ Search.appendIndex(
             "name": "processBody",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Object-Dissemination-TurtleDissObject.html#method_processBody"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject",
+            "name": "FileFormatObject",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#method_getName"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003AgetCategory\u0028\u0029",
+            "name": "getCategory",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#method_getCategory"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003AgetConformance\u0028\u0029",
+            "name": "getConformance",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#method_getConformance"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003AgetExtensions\u0028\u0029",
+            "name": "getExtensions",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#method_getExtensions"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003AsetName\u0028\u0029",
+            "name": "setName",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#method_setName"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003AsetCategory\u0028\u0029",
+            "name": "setCategory",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#method_setCategory"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003AsetConformance\u0028\u0029",
+            "name": "setConformance",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#method_setConformance"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003AsetExtensions\u0028\u0029",
+            "name": "setExtensions",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#method_setExtensions"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#method_init"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003AisValid\u0028\u0029",
+            "name": "isValid",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#method_isValid"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003AgetCategoryData\u0028\u0029",
+            "name": "getCategoryData",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#method_getCategoryData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#property_name"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003A\u0024category",
+            "name": "category",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#property_category"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003A\u0024conformance",
+            "name": "conformance",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#property_conformance"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003A\u0024extensions",
+            "name": "extensions",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#property_extensions"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\FileFormatObject\u003A\u003A\u0024obj",
+            "name": "obj",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-FileFormatObject.html#property_obj"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject",
             "name": "GndPersonsObject",
@@ -13926,6 +14086,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/drupal-arche-gui-api-controller-dissemination.html"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\FileFormats",
+            "name": "FileFormats",
+            "summary": "",
+            "url": "namespaces/drupal-arche-gui-api-controller-fileformats.html"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\GND",
             "name": "GND",
             "summary": "",
@@ -13941,15 +14106,20 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/drupal-arche-gui-api-controller-ontology.html"
         },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata",
-            "name": "Metadata",
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\FileFormats",
+            "name": "FileFormats",
             "summary": "",
-            "url": "namespaces/drupal-arche-gui-api-helper-metadata.html"
+            "url": "namespaces/drupal-arche-gui-api-helper-fileformats.html"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Helper",
             "name": "Helper",
             "summary": "",
             "url": "namespaces/drupal-arche-gui-api-helper.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Helper\\Metadata",
+            "name": "Metadata",
+            "summary": "",
+            "url": "namespaces/drupal-arche-gui-api-helper-metadata.html"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Model",
             "name": "Model",
