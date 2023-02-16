@@ -9971,6 +9971,41 @@ Search.appendIndex(
             "summary": "Returns\u0020metadata\u0020coupled\u0020with\u0020a\u0020file.",
             "url": "classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupInterface.html#method_getMetadata"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Redmine",
+            "name": "Redmine",
+            "summary": "Helper\u0020for\u0020updating\u0020the\u0020ACDH\u0020Redmine\u0020issues\u0020documenting\u0020the\u0020curation\u0020process",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Redmine.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Redmine\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Redmine.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Redmine\u003A\u003AupdateIssue\u0028\u0029",
+            "name": "updateIssue",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Redmine.html#method_updateIssue"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Redmine\u003A\u003ASUBTASKS",
+            "name": "SUBTASKS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Redmine.html#constant_SUBTASKS"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Redmine\u003A\u003AISSUE_STATUSES",
+            "name": "ISSUE_STATUSES",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Redmine.html#constant_ISSUE_STATUSES"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Redmine\u003A\u003A\u0024apiBase",
+            "name": "apiBase",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Redmine.html#property_apiBase"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Redmine\u003A\u003A\u0024redmine",
+            "name": "redmine",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Redmine.html#property_redmine"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\SkippedException",
             "name": "SkippedException",
             "summary": "Exception\u0020used\u0020to\u0020denoted\u0020a\u0020file\u0020has\u0020been\u0020skipped\u0020to\u0020to\u0020Indexer\u0020class\nskip\u0020rules.",
