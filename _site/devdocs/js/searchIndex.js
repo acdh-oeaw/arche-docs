@@ -6906,6 +6906,11 @@ Search.appendIndex(
             "summary": "Setup\u0020the\u0020collection\u0020directory\u0020for\u0020the\u0020downloads",
             "url": "classes/Drupal-arche-gui-api-Object-Collection-CollectionBinariesObject.html#method_collectionCreateDlDirectory"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\Collection\\CollectionBinariesObject\u003A\u003AcreatePathString\u0028\u0029",
+            "name": "createPathString",
+            "summary": "We\u0020have\u0020to\u0020remove\u0020the\u0020special\u0020chars\u0020from\u0020the\u0020path\u0020string",
+            "url": "classes/Drupal-arche-gui-api-Object-Collection-CollectionBinariesObject.html#method_createPathString"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\Collection\\CollectionBinariesObject\u003A\u003AcollectionDownloadFiles\u0028\u0029",
             "name": "collectionDownloadFiles",
             "summary": "Download\u0020the\u0020selected\u0020binaries",
