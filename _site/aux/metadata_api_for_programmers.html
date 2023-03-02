@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2022-12-01" />
+<meta name="date" content="2023-03-02" />
 
 <title>ARCHE Metadata API for programmers</title>
 
@@ -421,7 +421,7 @@ display: none;
 
 
 <h1 class="title toc-ignore">ARCHE Metadata API for programmers</h1>
-<h4 class="date">2022-12-01</h4>
+<h4 class="date">2023-03-02</h4>
 
 </div>
 
@@ -760,6 +760,10 @@ values are URL-encoded (see the example below).</li>
 with a comma (no URL-encoding needed),
 e.g. <code>X-RESOURCE-PROPERTIES: https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/Fschema#hasUpdatedDate</code>.</li>
 </ul></li>
+<li>When it comes to the relatives reverse-pointing to the <em>requested
+resource</em>, the property reverse-pointing to the <em>requested
+resource</em> is always returned, even if it’s not on the
+<code>relativesProperties</code> list.</li>
 </ul>
 <div id="example" class="section level2">
 <h2>Example</h2>
