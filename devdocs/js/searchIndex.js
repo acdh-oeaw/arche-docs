@@ -9601,6 +9601,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ENC_UTF8"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003ANETWORKERROR_SLEEP",
+            "name": "NETWORKERROR_SLEEP",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_NETWORKERROR_SLEEP"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024debug",
             "name": "debug",
             "summary": "Turns\u0020debug\u0020messages\u0020on",
@@ -9845,6 +9850,11 @@ Search.appendIndex(
             "name": "ERRMODE_INCLUDE",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#constant_ERRMODE_INCLUDE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003ANETWORKERROR_SLEEP",
+            "name": "NETWORKERROR_SLEEP",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#constant_NETWORKERROR_SLEEP"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003A\u0024debug",
             "name": "debug",
