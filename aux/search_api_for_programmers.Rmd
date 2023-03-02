@@ -416,6 +416,16 @@ This is because an ARCHE resource may have any number of (equally important) ide
 it impossible to tell, which one should be used (at least without introducing additional complexity
 to the API).
 
+## Unsupported features
+
+* Ordering by properties of linked resources.  
+  Let's say you want to order by, let's say a title of a parent resource and then by a resource title.  
+  This is (at least currently) impossible.
+* Ordering by dynamically created properties.  
+  Especially when searching with an explicit SQL query you might want to order by a property created on-the-fly.  
+  This is impossible for security reasons. To prevent leaking any arbitrary data from the database a well-defined
+  barrier between the search query and output is needed and this barrier allows to pass only ids of resources matching the search.
+
 # Paging 
 
 Search results may be paged. This is controlled by the `offset` and `limit` parameters which work exactly how they sound.
@@ -449,14 +459,57 @@ https://arche.acdh.oeaw.ac.at/api/search?property%5B%5D=https%3A%2F%2Fvocabs.acd
 
 # Full text search
 
-TODO
+On the resource matching side (1st step of the [search workflow](#search-workflow)) the full text search works pretty intuitively:
 
-```
-https://arche.acdh.oeaw.ac.at/api/search
-  ?operator[]=@@
-  &value[]=Japan-Bibliographie
-  &readMode=resource
-  &format=text/turtle
+* Just use the `@@` as the `operartor[]`.
+* If you want to limit search to a given property(ies), use the `property[]` parameter.
+  * You can use a special `BINARY` property name to limit the search to the binary payload of resources.
+* Remember that what is covered with the full text search index depends on the given repository instance config
+  (see the `fullTextSearch` section, e.g. of https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/repo.yaml).
+  * The binary content is indexed only for resources with certain MIME types and only up to a certain size.
+  * Certain RDF properties might be excluded from the indexing or only certain properties can be indexed.
+  * For the https://arche.acdh.oeaw.ac.at instance only `text/plain`, `text/xml`, `text/turtle`, `text/html`, `text/csv`, `application/xml`, `application/pdf` and `application/json`
+    binary payloads of size up to 1 GB and all metadata properties are being indexed.
+* For the exact description on how the search phrase is parsed please refer to the
+  Postgresql documentation on the `websearch_to_tsquery()` function
+  [here](https://www.postgresql.org/docs/15/functions-textsearch.html#TEXTSEARCH-FUNCTIONS-TABLE)
+  and [here](https://www.postgresql.org/docs/15/textsearch-controls.html#TEXTSEARCH-PARSING-QUERIES).
 
-https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&value%5B%5D=Japan-Bibliographie&readMode=resource&format=text%2turtle
-```
+Examples:
+
+* Search for resources containing the _Japan-Bibliographie_ phrase.
+  ```
+  https://arche.acdh.oeaw.ac.at/api/search
+    ?operator[]=@@
+    &value[]=Japan-Bibliographie
+    &readMode=resource
+    &format=text/turtle
+
+  https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&value%5B%5D=Japan-Bibliographie&readMode=resource&format=text%2fturtle
+  ```
+* Search for resources containing _Alexandria_ in their binary payload.
+  ```
+  https://arche.acdh.oeaw.ac.at/api/search
+    ?operator[]=@@
+    &property[]=BINARY
+    &value[]=Alexandria
+    &readMode=resource
+    &format=text/turtle
+
+  https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&property%5B%5D=BINARY&value%5B%5D=Alexandria&readMode=resource&format=text%2fturtle
+  ```
+
+## Highlighting the results
+
+First, it's crucial to understand that the full text search match highlighting works fully independently from the actual search.  
+**The actual search works in the 1st step of the [search workflow](#search-workflow) while the FTS matches highlighting works in the 4th step.**
+
+The main reason for that is performance - FTS matches highlighting is a very costly operation (especially on large content like resource's binary payloads)
+and it only makes sense to apply it to data actually being returned, after the paging being applied.
+
+* Technically it's possible (although it doesn't make much sense) to perform a full text search against one property and match highlighting against another.
+
+TODO:
+* simple example
+* many triples with the highlight
+* no way to determine the property giving the match if `ftsProperty` isn't specified (what happens then actually?!)

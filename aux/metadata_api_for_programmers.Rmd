@@ -180,6 +180,7 @@ Remarks:
 * You can pass these parameters both as request query parameters and as request headers - see the [Query parameters vs request headers](#query-parameters-vs-request-headers) chapter below.
   * When passing as request query parameters, pass multiple RDF property URIs as consecutive array parameters and make sure query parameter values are URL-encoded (see the example below).
   * When passing as a request header, join multiple RDF property URIs with a comma (no URL-encoding needed), e.g. `X-RESOURCE-PROPERTIES: https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/Fschema#hasUpdatedDate`.
+* When it comes to the relatives reverse-pointing to the _requested resource_, the property reverse-pointing to the _requested resource_ is always returned, even if it's not on the `relativesProperties` list.
 
 ## Example
 

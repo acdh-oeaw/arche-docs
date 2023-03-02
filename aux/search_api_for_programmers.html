@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2022-12-01" />
+<meta name="date" content="2022-12-05" />
 
 <title>ARCHE Search API for programmers</title>
 
@@ -421,7 +421,7 @@ display: none;
 
 
 <h1 class="title toc-ignore">ARCHE Search API for programmers</h1>
-<h4 class="date">2022-12-01</h4>
+<h4 class="date">2022-12-05</h4>
 
 </div>
 
@@ -458,10 +458,14 @@ results</a>
 of property used for ordering</a></li>
 <li><a href="#lack-of-value-and-non-literal-values" id="toc-lack-of-value-and-non-literal-values">Lack of value and
 non-literal values</a></li>
+<li><a href="#unsupported-features" id="toc-unsupported-features">Unsupported features</a></li>
 </ul></li>
 <li><a href="#paging" id="toc-paging">Paging</a></li>
 <li><a href="#full-text-search" id="toc-full-text-search">Full text
-search</a></li>
+search</a>
+<ul>
+<li><a href="#highlighting-the-results" id="toc-highlighting-the-results">Highlighting the results</a></li>
+</ul></li>
 </ul>
 </div>
 
@@ -1097,6 +1101,22 @@ number of (equally important) identifiers making it impossible to tell,
 which one should be used (at least without introducing additional
 complexity to the API).</p>
 </div>
+<div id="unsupported-features" class="section level2">
+<h2>Unsupported features</h2>
+<ul>
+<li>Ordering by properties of linked resources.<br />
+Let’s say you want to order by, let’s say a title of a parent resource
+and then by a resource title.<br />
+This is (at least currently) impossible.</li>
+<li>Ordering by dynamically created properties.<br />
+Especially when searching with an explicit SQL query you might want to
+order by a property created on-the-fly.<br />
+This is impossible for security reasons. To prevent leaking any
+arbitrary data from the database a well-defined barrier between the
+search query and output is needed and this barrier allows to pass only
+ids of resources matching the search.</li>
+</ul>
+</div>
 </div>
 <div id="paging" class="section level1">
 <h1>Paging</h1>
@@ -1136,14 +1156,74 @@ https://arche.acdh.oeaw.ac.at/api/search?property%5B%5D=https%3A%2F%2Fvocabs.acd
 </div>
 <div id="full-text-search" class="section level1">
 <h1>Full text search</h1>
-<p>TODO</p>
+<p>On the resource matching side (1st step of the <a href="#search-workflow">search workflow</a>) the full text search works
+pretty intuitively:</p>
+<ul>
+<li>Just use the <code>@@</code> as the <code>operartor[]</code>.</li>
+<li>If you want to limit search to a given property(ies), use the
+<code>property[]</code> parameter.
+<ul>
+<li>You can use a special <code>BINARY</code> property name to limit the
+search to the binary payload of resources.</li>
+</ul></li>
+<li>Remember that what is covered with the full text search index
+depends on the given repository instance config (see the
+<code>fullTextSearch</code> section, e.g. of <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/repo.yaml" class="uri">https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/repo.yaml</a>).
+<ul>
+<li>The binary content is indexed only for resources with certain MIME
+types and only up to a certain size.</li>
+<li>Certain RDF properties might be excluded from the indexing or only
+certain properties can be indexed.</li>
+<li>For the <a href="https://arche.acdh.oeaw.ac.at" class="uri">https://arche.acdh.oeaw.ac.at</a> instance only
+<code>text/plain</code>, <code>text/xml</code>,
+<code>text/turtle</code>, <code>text/html</code>, <code>text/csv</code>,
+<code>application/xml</code>, <code>application/pdf</code> and
+<code>application/json</code> binary payloads of size up to 1 GB and all
+metadata properties are being indexed.</li>
+</ul></li>
+<li>For the exact description on how the search phrase is parsed please
+refer to the Postgresql documentation on the
+<code>websearch_to_tsquery()</code> function <a href="https://www.postgresql.org/docs/15/functions-textsearch.html#TEXTSEARCH-FUNCTIONS-TABLE">here</a>
+and <a href="https://www.postgresql.org/docs/15/textsearch-controls.html#TEXTSEARCH-PARSING-QUERIES">here</a>.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><p>Search for resources containing the <em>Japan-Bibliographie</em>
+phrase.</p>
 <pre><code>https://arche.acdh.oeaw.ac.at/api/search
   ?operator[]=@@
   &amp;value[]=Japan-Bibliographie
   &amp;readMode=resource
   &amp;format=text/turtle
 
-https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&amp;value%5B%5D=Japan-Bibliographie&amp;readMode=resource&amp;format=text%2turtle</code></pre>
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&amp;value%5B%5D=Japan-Bibliographie&amp;readMode=resource&amp;format=text%2fturtle</code></pre></li>
+<li><p>Search for resources containing <em>Alexandria</em> in their
+binary payload.</p>
+<pre><code>https://arche.acdh.oeaw.ac.at/api/search
+  ?operator[]=@@
+  &amp;property[]=BINARY
+  &amp;value[]=Alexandria
+  &amp;readMode=resource
+  &amp;format=text/turtle
+
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&amp;property%5B%5D=BINARY&amp;value%5B%5D=Alexandria&amp;readMode=resource&amp;format=text%2fturtle</code></pre></li>
+</ul>
+<div id="highlighting-the-results" class="section level2">
+<h2>Highlighting the results</h2>
+<p>First, it’s crucial to understand that the full text search match
+highlighting works fully independently from the actual search.<br />
+<strong>The actual search works in the 1st step of the <a href="#search-workflow">search workflow</a> while the FTS matches
+highlighting works in the 4th step.</strong></p>
+<p>The main reason for that is performance - FTS matches highlighting is
+a very costly operation (especially on large content like resource’s
+binary payloads) and it only makes sense to apply it to data actually
+being returned, after the paging being applied.</p>
+<ul>
+<li>Technically it’s possible (although it doesn’t make much sense) to
+perform a full text search against one property and match highlighting
+against another.</li>
+</ul>
+</div>
 </div>
 
 
