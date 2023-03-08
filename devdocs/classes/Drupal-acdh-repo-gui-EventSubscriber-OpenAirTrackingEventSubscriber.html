@@ -121,11 +121,14 @@
             <div class="phpdocumentor-column -nine phpdocumentor-content">
                                 <section>
                                         <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/drupal.html">Drupal</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/drupal-acdh-repo-gui.html">acdh_repo_gui</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/drupal-acdh-repo-gui-eventsubscriber.html">EventSubscriber</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Utils
+    OpenAirTrackingEventSubscriber
 
     
             <div class="phpdocumentor-element__package">
@@ -135,6 +138,9 @@
                             </ul>
         </div>
     
+            <span class="phpdocumentor-element__implements">
+            implements
+                            <abbr title="\Symfony\Component\EventDispatcher\EventSubscriberInterface">EventSubscriberInterface</abbr>                    </span>
     
     </h2>
 
@@ -144,77 +150,62 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui-api/src/Helper/Utils.php"><a href="files/arche-gui-api-src-helper-utils.html"><abbr title="arche-gui-api/src/Helper/Utils.php">Utils.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/EventSubscriber/OpenAirTrackingEventSubscriber.php"><a href="files/arche-gui-src-eventsubscriber-openairtrackingeventsubscriber.html"><abbr title="arche-gui/src/EventSubscriber/OpenAirTrackingEventSubscriber.php">OpenAirTrackingEventSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">8</span>
+    <span class="phpdocumentor-element-found-in__line">20</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Description of Utils</p>
+        
 
 
-
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/Utils.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">author</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>nczirjak</p>
-</section>
-
-                                    </dd>
-                                            </dl>
 
 
 
 <h3 id="toc">
     Table of Contents
-    <a href="classes/Utils.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
 
 
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Symfony\Component\EventDispatcher\EventSubscriberInterface">EventSubscriberInterface</abbr></dt>    </dl>
 
 
 
 
 
 
-<h4 id="toc-properties">
-    Properties
-    <a href="classes/Utils.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
-
-</h4>
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Utils.html#property_config">$config</a>
-    <span>
-                        &nbsp;: mixed            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/Utils.html#property_repo">$repo</a>
-    <span>
-                        &nbsp;: mixed            </span>
-</dt>
-
-    </dl>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Utils.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Utils.html#method___construct">__construct()</a>
+    <a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#method_checkForOpenAirTracking">checkForOpenAirTracking()</a>
+    <span>
+                                &nbsp;: <abbr title="\Drupal\Core\Routing\TrustedRedirectResponse">TrustedRedirectResponse</abbr>    </span>
+</dt>
+<dd>send tracking info to openair tracking server</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#method_getSubscribedEvents">getSubscribedEvents()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>This is the event handler main method</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#method_setupMainClasses">setupMainClasses()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -227,84 +218,11 @@
         
 
         
-    <section class="phpdocumentor-properties">
-        <h3 class="phpdocumentor-elements__header" id="properties">
-            Properties
-            <a href="classes/Utils.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_config">
-        $config
-        <a href="classes/Utils.html#property_config" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui-api/src/Helper/Utils.php"><a href="files/arche-gui-api-src-helper-utils.html"><abbr title="arche-gui-api/src/Helper/Utils.php">Utils.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">10</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$config</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_repo">
-        $repo
-        <a href="classes/Utils.html#property_repo" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui-api/src/Helper/Utils.php"><a href="files/arche-gui-api-src-helper-utils.html"><abbr title="arche-gui-api/src/Helper/Utils.php">Utils.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">11</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">$repo</span>
-    </code>
-
-    
-    
-    
-
-</article>
-            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Utils.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -313,22 +231,23 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/Utils.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_checkForOpenAirTracking">
+        checkForOpenAirTracking()
+        <a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#method_checkForOpenAirTracking" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui-api/src/Helper/Utils.php"><a href="files/arche-gui-api-src-helper-utils.html"><abbr title="arche-gui-api/src/Helper/Utils.php">Utils.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/EventSubscriber/OpenAirTrackingEventSubscriber.php"><a href="files/arche-gui-src-eventsubscriber-openairtrackingeventsubscriber.html"><abbr title="arche-gui/src/EventSubscriber/OpenAirTrackingEventSubscriber.php">OpenAirTrackingEventSubscriber.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">send tracking info to openair tracking server</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cfg</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">checkForOpenAirTracking</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\Core\Routing\TrustedRedirectResponse">TrustedRedirectResponse</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -336,14 +255,101 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$cfg</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$event</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Symfony\Component\HttpKernel\Event\GetResponseEvent">GetResponseEvent</abbr></span>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
             </dl>
 
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#method_checkForOpenAirTracking#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">global</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>type $user</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\Core\Routing\TrustedRedirectResponse">TrustedRedirectResponse</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getSubscribedEvents">
+        getSubscribedEvents()
+        <a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#method_getSubscribedEvents" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/EventSubscriber/OpenAirTrackingEventSubscriber.php"><a href="files/arche-gui-src-eventsubscriber-openairtrackingeventsubscriber.html"><abbr title="arche-gui/src/EventSubscriber/OpenAirTrackingEventSubscriber.php">OpenAirTrackingEventSubscriber.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">This is the event handler main method</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getSubscribedEvents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setupMainClasses">
+        setupMainClasses()
+        <a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#method_setupMainClasses" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-gui/src/EventSubscriber/OpenAirTrackingEventSubscriber.php"><a href="files/arche-gui-src-eventsubscriber-openairtrackingeventsubscriber.html"><abbr title="arche-gui/src/EventSubscriber/OpenAirTrackingEventSubscriber.php">OpenAirTrackingEventSubscriber.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">22</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setupMainClasses</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
     
 
     
@@ -354,7 +360,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/arche-gui-api/src/Helper/Utils.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/arche-gui/src/EventSubscriber/OpenAirTrackingEventSubscriber.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -453,23 +459,17 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                            <li><a href="classes/Utils.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/Utils.html#toc-methods">Methods</a></li>
+                                                                                <li><a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
-                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
-                <li>
-                    <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Utils.html#property_config">$config<a href="classes/Utils.html"></li>
-                                                    <li><a href="classes/Utils.html#property_repo">$repo<a href="classes/Utils.html"></li>
-                                            </ul>
-                </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Utils.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#method_checkForOpenAirTracking">checkForOpenAirTracking()</a></li>
+                                            <li><a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#method_getSubscribedEvents">getSubscribedEvents()</a></li>
+                                            <li><a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#method_setupMainClasses">setupMainClasses()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -489,7 +489,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/Utils.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
