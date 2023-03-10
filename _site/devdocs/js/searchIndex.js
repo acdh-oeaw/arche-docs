@@ -8366,11 +8366,6 @@ Search.appendIndex(
             "summary": "A\u0020class\u0020used\u0020to\u0020instantiate\u0020objects\u0020representing\u0020repository\u0020resources.",
             "url": "classes/acdhOeaw-arche-lib-RepoDb.html#property_resourceClass"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003A\u0024highlightParam",
-            "name": "highlightParam",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-RepoDb.html#property_highlightParam"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003A\u0024pdo",
             "name": "pdo",
             "summary": "",
@@ -8901,10 +8896,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_toQuery"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AgetTsHeadlineOptions\u0028\u0029",
+            "name": "getTsHeadlineOptions",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_getTsHeadlineOptions"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AFTS_BINARY",
             "name": "FTS_BINARY",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#constant_FTS_BINARY"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024highlightParam",
+            "name": "highlightParam",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_highlightParam"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024metadataMode",
             "name": "metadataMode",
@@ -9020,6 +9025,11 @@ Search.appendIndex(
             "name": "SearchTerm",
             "summary": "Describes\u0020a\u0020single\u0020search\u0020condition.",
             "url": "classes/acdhOeaw-arche-lib-SearchTerm.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AescapeFts\u0028\u0029",
+            "name": "escapeFts",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#method_escapeFts"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003Afactory\u0028\u0029",
             "name": "factory",
@@ -9180,6 +9190,146 @@ Search.appendIndex(
             "name": "language",
             "summary": "Language\u0020to\u0020be\u0020matched\u0020by\u0020the\u0020RDF\u0020triple",
             "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#property_language"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch",
+            "name": "SmartSearch",
+            "summary": "Provides\u0020an\u0020API\u0020for\u0020advanced\u0020weighted",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AsetPropertyWeights\u0028\u0029",
+            "name": "setPropertyWeights",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_setPropertyWeights"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AsetFacetWeights\u0028\u0029",
+            "name": "setFacetWeights",
+            "summary": "Results\u0020with\u0020a\u0020matching\u0020weight\u0020are",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_setFacetWeights"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AsetExactWeight\u0028\u0029",
+            "name": "setExactWeight",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_setExactWeight"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AsetLangWeight\u0028\u0029",
+            "name": "setLangWeight",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_setLangWeight"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AsetNamedEntityFilter\u0028\u0029",
+            "name": "setNamedEntityFilter",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_setNamedEntityFilter"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AsetNamedEntityWeights\u0028\u0029",
+            "name": "setNamedEntityWeights",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_setNamedEntityWeights"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AsetQueryLog\u0028\u0029",
+            "name": "setQueryLog",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_setQueryLog"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003Asearch\u0028\u0029",
+            "name": "search",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_search"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AgetSearchPage\u0028\u0029",
+            "name": "getSearchPage",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_getSearchPage"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AgetSearchFacets\u0028\u0029",
+            "name": "getSearchFacets",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_getSearchFacets"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AcloseSearch\u0028\u0029",
+            "name": "closeSearch",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_closeSearch"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AgetWeightsWith\u0028\u0029",
+            "name": "getWeightsWith",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_getWeightsWith"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003ATEMPTABNAME",
+            "name": "TEMPTABNAME",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TEMPTABNAME"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024pdo",
+            "name": "pdo",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_pdo"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_repo"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_schema"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024propWeights",
+            "name": "propWeights",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_propWeights"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024facets",
+            "name": "facets",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_facets"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024exactWeight",
+            "name": "exactWeight",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_exactWeight"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024langWeight",
+            "name": "langWeight",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_langWeight"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024namedEntitiesProperty",
+            "name": "namedEntitiesProperty",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_namedEntitiesProperty"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024namedEntitiesValues",
+            "name": "namedEntitiesValues",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_namedEntitiesValues"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024namedEntityWeights",
+            "name": "namedEntityWeights",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_namedEntityWeights"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024namedEntityDefaultWeight",
+            "name": "namedEntityDefaultWeight",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_namedEntityDefaultWeight"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024phrase",
+            "name": "phrase",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_phrase"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024queryLog",
+            "name": "queryLog",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_queryLog"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\Format",
             "name": "Format",
