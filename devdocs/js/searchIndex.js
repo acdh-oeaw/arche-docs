@@ -9341,6 +9341,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-TripleValue.html#method_fromDbRow"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\TripleValue\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-TripleValue.html#method___toString"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\TripleValue\u003A\u003A\u0024type",
             "name": "type",
             "summary": "",
