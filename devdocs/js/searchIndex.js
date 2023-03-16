@@ -9331,6 +9331,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_queryLog"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\TripleValue",
+            "name": "TripleValue",
+            "summary": "Simole\u0020container\u0020for\u0020an\u0020RDF\u0020triple\u0020value\u0020read\u0020from\u0020a\u0020database",
+            "url": "classes/acdhOeaw-arche-lib-TripleValue.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\TripleValue\u003A\u003AfromDbRow\u0028\u0029",
+            "name": "fromDbRow",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-TripleValue.html#method_fromDbRow"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\TripleValue\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-TripleValue.html#property_type"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\TripleValue\u003A\u003A\u0024lang",
+            "name": "lang",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-TripleValue.html#property_lang"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\TripleValue\u003A\u003A\u0024value",
+            "name": "value",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-TripleValue.html#property_value"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\Format",
             "name": "Format",
             "summary": "Container\u0020describing\u0020dissemination\u0020service\u0020return\u0020format.",
