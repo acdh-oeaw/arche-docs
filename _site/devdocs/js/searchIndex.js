@@ -2456,6 +2456,11 @@ Search.appendIndex(
             "summary": "If\u0020a\u0020property\u0020is\u0020in\u0020the\u0020ontology\u0020namespace\u0020it\u0020has\u0020to\u0020be\u0020part\u0020of\u0020the\u0020ontology.",
             "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkUnknownProperties"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AcheckIsNewVersionOf\u0028\u0029",
+            "name": "checkIsNewVersionOf",
+            "summary": "isNewVersionOf\u0020can\u0027t\u0020create\u0020cycles\u0020so\u0020creation\u0020of\u0020the\u00202nd\u0020\u0028and\u0020higher\u0020order\u0029\nisNewVersionOf\u0020links\u0020to\u0020a\u0020resource\u0020is\u0020forbidden.",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkIsNewVersionOf"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AcheckAutoCreatedResources\u0028\u0029",
             "name": "checkAutoCreatedResources",
             "summary": "",
@@ -10900,6 +10905,16 @@ Search.appendIndex(
             "name": "getProperty",
             "summary": "Returns\u0020a\u0020given\u0020property\u0020description\u0020for\u0020a\u0020given\u0020set\u0020of\u0020RDF\u0020classes\u0020or\nan\u0020RDF\u0020resource\u0020\u0028in\u0020the\u0020latter\u0020case\u0020classes\u0020list\u0020is\u0020extracted\u0020from\u0020the\nresource\u0029.",
             "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_getProperty"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AgetClasses\u0028\u0029",
+            "name": "getClasses",
+            "summary": "Returns\u0020all\u0020classes\u0020known\u0020in\u0020the\u0020ontology.",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_getClasses"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AgetProperties\u0028\u0029",
+            "name": "getProperties",
+            "summary": "Returns\u0020all\u0020properties\u0020defined\u0020in\u0020the\u0020ontology.",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_getProperties"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AgetVocabularyValues\u0028\u0029",
             "name": "getVocabularyValues",

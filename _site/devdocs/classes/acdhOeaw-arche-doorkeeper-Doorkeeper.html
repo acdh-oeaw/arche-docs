@@ -242,6 +242,14 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkIsNewVersionOf">checkIsNewVersionOf()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>isNewVersionOf can&#039;t create cycles so creation of the 2nd (and higher order)
+isNewVersionOf links to a resource is forbidden.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainAccessRights">maintainAccessRights()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -587,6 +595,81 @@ repository resource.</dd>
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_checkIsNewVersionOf">
+        checkIsNewVersionOf()
+        <a href="classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkIsNewVersionOf" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">799</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">isNewVersionOf can&#039;t create cycles so creation of the 2nd (and higher order)
+isNewVersionOf links to a resource is forbidden.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">checkIsNewVersionOf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pdo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$txId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resourceIds</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p>As the doorkeeper can't lock resources in an effective way checking it is
+possible only at the transaction commit.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pdo</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$txId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resourceIds</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, int&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkIsNewVersionOf#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-doorkeeper-DoorkeeperException.html"><abbr title="\acdhOeaw\arche\doorkeeper\DoorkeeperException">DoorkeeperException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_maintainAccessRights">
         maintainAccessRights()
         <a href="classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainAccessRights" class="headerlink"><i class="fas fa-link"></i></a>
@@ -595,7 +678,7 @@ repository resource.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">304</span>
+    <span class="phpdocumentor-element-found-in__line">305</span>
 
     </aside>
 
@@ -787,7 +870,7 @@ in <code class="prettyprint">cfg.schema.accessRole</code>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1083</span>
+    <span class="phpdocumentor-element-found-in__line">1174</span>
 
     </aside>
 
@@ -839,7 +922,7 @@ in <code class="prettyprint">cfg.schema.accessRole</code>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">793</span>
+    <span class="phpdocumentor-element-found-in__line">855</span>
 
     </aside>
 
@@ -909,7 +992,7 @@ in <code class="prettyprint">cfg.schema.accessRole</code>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">606</span>
+    <span class="phpdocumentor-element-found-in__line">607</span>
 
     </aside>
 
@@ -950,7 +1033,7 @@ in <code class="prettyprint">cfg.schema.accessRole</code>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">558</span>
+    <span class="phpdocumentor-element-found-in__line">559</span>
 
     </aside>
 
@@ -1007,7 +1090,7 @@ in <code class="prettyprint">cfg.schema.accessRole</code>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">646</span>
+    <span class="phpdocumentor-element-found-in__line">647</span>
 
     </aside>
 
@@ -1072,7 +1155,7 @@ ID (so they must always have exactly two).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">515</span>
+    <span class="phpdocumentor-element-found-in__line">516</span>
 
     </aside>
 
@@ -1113,7 +1196,7 @@ ID (so they must always have exactly two).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">426</span>
+    <span class="phpdocumentor-element-found-in__line">427</span>
 
     </aside>
 
@@ -1168,7 +1251,7 @@ ID (so they must always have exactly two).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">538</span>
+    <span class="phpdocumentor-element-found-in__line">539</span>
 
     </aside>
 
@@ -1228,7 +1311,7 @@ and should be done for all metadata properties.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">680</span>
+    <span class="phpdocumentor-element-found-in__line">681</span>
 
     </aside>
 
@@ -1285,7 +1368,7 @@ and should be done for all metadata properties.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">766</span>
+    <span class="phpdocumentor-element-found-in__line">767</span>
 
     </aside>
 
@@ -1327,7 +1410,7 @@ and should be done for all metadata properties.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1061</span>
+    <span class="phpdocumentor-element-found-in__line">1152</span>
 
     </aside>
 
@@ -1358,7 +1441,7 @@ and should be done for all metadata properties.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
     </aside>
 
@@ -1430,7 +1513,7 @@ it to be automatically filled in for resources in a given
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">461</span>
+    <span class="phpdocumentor-element-found-in__line">462</span>
 
     </aside>
 
@@ -1471,7 +1554,7 @@ it to be automatically filled in for resources in a given
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -1512,7 +1595,7 @@ it to be automatically filled in for resources in a given
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">339</span>
+    <span class="phpdocumentor-element-found-in__line">340</span>
 
     </aside>
 
@@ -1553,7 +1636,7 @@ it to be automatically filled in for resources in a given
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">395</span>
+    <span class="phpdocumentor-element-found-in__line">396</span>
 
     </aside>
 
@@ -1608,7 +1691,7 @@ it to be automatically filled in for resources in a given
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">367</span>
+    <span class="phpdocumentor-element-found-in__line">368</span>
 
     </aside>
 
@@ -1663,7 +1746,7 @@ it to be automatically filled in for resources in a given
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">484</span>
+    <span class="phpdocumentor-element-found-in__line">485</span>
 
     </aside>
 
@@ -1704,7 +1787,7 @@ it to be automatically filled in for resources in a given
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1077</span>
+    <span class="phpdocumentor-element-found-in__line">1168</span>
 
     </aside>
 
@@ -1749,7 +1832,7 @@ it to be automatically filled in for resources in a given
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">965</span>
+    <span class="phpdocumentor-element-found-in__line">1056</span>
 
     </aside>
 
@@ -1790,7 +1873,7 @@ it to be automatically filled in for resources in a given
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">825</span>
+    <span class="phpdocumentor-element-found-in__line">916</span>
 
     </aside>
 
@@ -1860,7 +1943,7 @@ it to be automatically filled in for resources in a given
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-doorkeeper.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">Doorkeeper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">908</span>
+    <span class="phpdocumentor-element-found-in__line">999</span>
 
     </aside>
 
@@ -2017,6 +2100,7 @@ it to be automatically filled in for resources in a given
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_checkIsNewVersionOf">checkIsNewVersionOf()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainAccessRights">maintainAccessRights()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_onResEdit">onResEdit()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_onTxCommit">onTxCommit()</a></li>
