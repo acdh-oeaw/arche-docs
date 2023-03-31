@@ -241,6 +241,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method___construct"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003A__destruct\u0028\u0029",
+            "name": "__destruct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method___destruct"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003Aupload\u0028\u0029",
             "name": "upload",
             "summary": "",
@@ -310,6 +315,11 @@ Search.appendIndex(
             "name": "size",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#property_size"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003A\u0024tmpPath",
+            "name": "tmpPath",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#property_tmpPath"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\ConflictException",
             "name": "ConflictException",
