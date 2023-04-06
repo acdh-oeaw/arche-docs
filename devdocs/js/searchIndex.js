@@ -9296,6 +9296,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_getWeightsWith"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AlinkNamedEntities\u0028\u0029",
+            "name": "linkNamedEntities",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_linkNamedEntities"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003ATEMPTABNAME",
             "name": "TEMPTABNAME",
             "summary": "",
@@ -9321,10 +9326,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_propWeights"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024propDefaultWeight",
+            "name": "propDefaultWeight",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_propDefaultWeight"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024facets",
             "name": "facets",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_facets"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024facetsDefaultWeight",
+            "name": "facetsDefaultWeight",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_facetsDefaultWeight"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024exactWeight",
             "name": "exactWeight",
@@ -9360,6 +9375,11 @@ Search.appendIndex(
             "name": "phrase",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_phrase"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024oderExp",
+            "name": "oderExp",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_oderExp"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024queryLog",
             "name": "queryLog",
