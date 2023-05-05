@@ -3576,6 +3576,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003AdisplayLeftSideSearchBlock\u0028\u0029",
+            "name": "displayLeftSideSearchBlock",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_displayLeftSideSearchBlock"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003AgenerateView\u0028\u0029",
             "name": "generateView",
             "summary": "",
