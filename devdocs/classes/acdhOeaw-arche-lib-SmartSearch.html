@@ -210,6 +210,12 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_dateFacetsFormat">$dateFacetsFormat</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_exactWeight">$exactWeight</a>
     <span>
                         &nbsp;: float            </span>
@@ -218,7 +224,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_facets">$facets</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, object&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
@@ -242,7 +248,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_namedEntitiesValues">$namedEntitiesValues</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string|int, string&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
@@ -254,11 +260,11 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_namedEntityWeights">$namedEntityWeights</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string, float&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_oderExp">$oderExp</a>
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_orderExp">$orderExp</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
@@ -284,13 +290,19 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_propWeights">$propWeights</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                        &nbsp;: array&lt;string, float&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_queryLog">$queryLog</a>
     <span>
                         &nbsp;: <abbr title="\Psr\Log\AbstractLogger">AbstractLogger</abbr>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_rangeFacets">$rangeFacets</a>
+    <span>
+                        &nbsp;: array&lt;string, object&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
@@ -328,7 +340,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getSearchFacets">getSearchFacets()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;string, array&lt;string, mixed&gt;&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -344,17 +356,16 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setExactWeight">setExactWeight()</a>
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setDateFacetsFormat">setDateFacetsFormat()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setFacetWeights">setFacetWeights()</a>
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setExactWeight">setExactWeight()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>Results with a matching weight are</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setLangWeight">setLangWeight()</a>
@@ -385,6 +396,19 @@
     <span>
                                 &nbsp;: self    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setRangeFacets">setRangeFacets()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setWeightedFacets">setWeightedFacets()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Results with a matching weight are</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getWeightsWith">getWeightsWith()</a>
@@ -454,6 +478,39 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_dateFacetsFormat">
+        $dateFacetsFormat
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_dateFacetsFormat" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">86</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$dateFacetsFormat</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;YYYY-MM-DD&#039;</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_exactWeight">
         $exactWeight
         <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_exactWeight" class="headerlink"><i class="fas fa-link"></i></a>
@@ -464,7 +521,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -497,14 +554,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, object&gt;</span>
     <span class="phpdocumentor-signature__name">$facets</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -530,7 +587,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -563,7 +620,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -596,7 +653,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -629,14 +686,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$namedEntitiesValues</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -662,7 +719,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -695,14 +752,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, float&gt;</span>
     <span class="phpdocumentor-signature__name">$namedEntityWeights</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -718,9 +775,9 @@
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_oderExp">
-        $oderExp
-        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_oderExp" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_orderExp">
+        $orderExp
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_orderExp" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
@@ -728,7 +785,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -736,7 +793,7 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$oderExp</span>
+    <span class="phpdocumentor-signature__name">$orderExp</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
     
@@ -794,7 +851,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -827,7 +884,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -860,14 +917,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, float&gt;</span>
     <span class="phpdocumentor-signature__name">$propWeights</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -893,7 +950,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -903,6 +960,39 @@
         <span class="phpdocumentor-signature__type"><abbr title="\Psr\Log\AbstractLogger">AbstractLogger</abbr>|null</span>
     <span class="phpdocumentor-signature__name">$queryLog</span>
     </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_rangeFacets">
+        $rangeFacets
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_rangeFacets" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, object&gt;</span>
+    <span class="phpdocumentor-signature__name">$rangeFacets</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -997,14 +1087,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pdo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDO">PDO</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pdo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baseUrl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1021,6 +1111,13 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$schema</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$baseUrl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1045,7 +1142,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">452</span>
+    <span class="phpdocumentor-element-found-in__line">744</span>
 
     </aside>
 
@@ -1076,24 +1173,34 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">397</span>
+    <span class="phpdocumentor-element-found-in__line">586</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getSearchFacets</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getSearchFacets</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefLang</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string, mixed&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$prefLang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string, mixed&gt;&gt;</span>
             </section>
 
 </article>
@@ -1111,7 +1218,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">318</span>
+    <span class="phpdocumentor-element-found-in__line">502</span>
 
     </aside>
 
@@ -1170,14 +1277,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">search</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$phrase</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$language</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inBinary</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowedProperties</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">search</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$phrase</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$language</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inBinary</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowedProperties</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|<a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spatialTerm</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentIds</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1207,7 +1314,7 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$allowedProperties</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1215,6 +1322,20 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$searchTerms</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$spatialTerm</span>
+                : <span class="phpdocumentor-signature__argument__return-type">null|<a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentIds</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, int&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1231,6 +1352,51 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setDateFacetsFormat">
+        setDateFacetsFormat()
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setDateFacetsFormat" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">137</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setDateFacetsFormat</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$format</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setExactWeight">
         setExactWeight()
         <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setExactWeight" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1239,7 +1405,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -1276,59 +1442,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setFacetWeights">
-        setFacetWeights()
-        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setFacetWeights" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">83</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Results with a matching weight are</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setFacetWeights</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$facets</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$defaultWeight</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1.0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$facets</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$defaultWeight</span>
-                : <span class="phpdocumentor-signature__argument__return-type">float</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">1.0</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_setLangWeight">
         setLangWeight()
         <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setLangWeight" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1337,7 +1450,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -1382,14 +1495,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setNamedEntityFilter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">RDF::RDF_TYPE</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">setNamedEntityFilter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">RDF::RDF_TYPE</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1398,7 +1511,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$values</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1434,14 +1547,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setNamedEntityWeights</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$weights</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$defaultWeight</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1.0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">setNamedEntityWeights</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, float&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$weights</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$defaultWeight</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1.0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1450,7 +1563,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$weights</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, float&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1486,14 +1599,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setPropertyWeights</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$weights</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$defaultWeight</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1.0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">setPropertyWeights</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, float&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$weights</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$defaultWeight</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1.0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1502,7 +1615,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$weights</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, float&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1538,7 +1651,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 
     </aside>
 
@@ -1572,6 +1685,104 @@
                     <article
         class="phpdocumentor-element
             -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setRangeFacets">
+        setRangeFacets()
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setRangeFacets" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">132</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setRangeFacets</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, object&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$facets</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$facets</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, object&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setWeightedFacets">
+        setWeightedFacets()
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setWeightedFacets" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">113</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Results with a matching weight are</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setWeightedFacets</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, object&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$facets</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$defaultWeight</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1.0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$facets</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, object&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$defaultWeight</span>
+                : <span class="phpdocumentor-signature__argument__return-type">float</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">1.0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
             -private
                                                         "
 >
@@ -1583,14 +1794,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">456</span>
+    <span class="phpdocumentor-element-found-in__line">755</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">getWeightsWith</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$weights</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$weightName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">getWeightsWith</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, float&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$weights</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$weightName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$valueType</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;text&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1599,7 +1810,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$weights</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, float&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1608,6 +1819,13 @@
                 <span class="phpdocumentor-signature__argument__name">$weightName</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$valueType</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;text&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -1635,7 +1853,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">467</span>
+    <span class="phpdocumentor-element-found-in__line">767</span>
 
     </aside>
 
@@ -1776,6 +1994,7 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_dateFacetsFormat">$dateFacetsFormat<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_exactWeight">$exactWeight<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_facets">$facets<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_facetsDefaultWeight">$facetsDefaultWeight<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
@@ -1784,12 +2003,13 @@
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_namedEntitiesValues">$namedEntitiesValues<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_namedEntityDefaultWeight">$namedEntityDefaultWeight<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_namedEntityWeights">$namedEntityWeights<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_oderExp">$oderExp<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_orderExp">$orderExp<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_pdo">$pdo<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_phrase">$phrase<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_propDefaultWeight">$propDefaultWeight<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_propWeights">$propWeights<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_queryLog">$queryLog<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_rangeFacets">$rangeFacets<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_repo">$repo<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_schema">$schema<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                             </ul>
@@ -1803,13 +2023,15 @@
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getSearchFacets">getSearchFacets()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getSearchPage">getSearchPage()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_search">search()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setDateFacetsFormat">setDateFacetsFormat()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setExactWeight">setExactWeight()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setFacetWeights">setFacetWeights()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setLangWeight">setLangWeight()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setNamedEntityFilter">setNamedEntityFilter()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setNamedEntityWeights">setNamedEntityWeights()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setPropertyWeights">setPropertyWeights()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setQueryLog">setQueryLog()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setRangeFacets">setRangeFacets()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setWeightedFacets">setWeightedFacets()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getWeightsWith">getWeightsWith()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_linkNamedEntities">linkNamedEntities()</a></li>
                                     </ul>
