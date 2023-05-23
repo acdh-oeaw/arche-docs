@@ -1,0 +1,152 @@
+---
+title: "Doorkeeper profiling"
+output: 
+  html_document: 
+    df_print: kable
+date: "2022-11-14"
+---
+
+```{r setup, echo = FALSE, warning = FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, fig.width = 10)
+library(dplyr)
+library(ggplot2)
+options(scipen = 100)
+```
+
+# Summary
+
+* Checking if URIs denoting named entities are valid by trying to resolve them is perfectly possible
+  (if only results are cached).
+* Doorkeeper checks do not dominate the request handling time.
+  * But it can be worth to develop a method of caching an object representation of the ontology as almost half of each request handling time is spent on loading it.
+
+# Analysis
+
+###  Data used for test ingestion
+
+[Karl Kraus: Rechtsakten der Kanzlei Oskar Samek. Wissenschaftliche Edition.](https://arche.acdh.oeaw.ac.at/api/188397)
+
+### Results
+
+```{r read}
+# cat rest.log | grep -E 'START|END' > rest1.tsv
+d1 = readr::read_tsv('~/Pobrane/rest1.tsv', col_names = c('dt', 'rid', 'a', 'event', 'method', 'b'), show_col_types = FALSE, trim_ws = TRUE) %>% 
+  select(-a, -b) %>% 
+  mutate(rid = as.integer(rid))
+# cat rest.log | grep -E 'Memory usage|------------------------------' > rest2.tsv
+d2 = readr::read_tsv('~/Pobrane/rest2.tsv', col_names = c('dt', 'rid', 'a', 'event'), show_col_types = FALSE, trim_ws = TRUE) %>% 
+  select(-a) %>% 
+  mutate(
+    rid = as.integer(rid),
+    method = 'WHOLE REQUEST',
+    event = if_else(event == '------------------------------', 'START', 'END')
+  )
+# cat rest.log | grep -E 'ONTOLOGY LOAD|DB COMMIT|DB SETUP' > rest3.tsv
+d3 = readr::read_tsv('~/Pobrane/rest3.tsv', col_names = c('dt', 'rid', 'a', 'method', 'tm'), show_col_types = FALSE, trim_ws = TRUE) %>% 
+  select(-a) %>%
+  mutate(rid = as.integer(rid), action = 'END')
+d3 = bind_rows(d3, d3 %>% mutate(dt = dt - tm, action = 'START'))
+
+# deal with duplicated request ids
+d = bind_rows(d1, d2, d3) %>% 
+  arrange(dt) %>%
+  group_by(rid) %>%
+  mutate(rid = rid + 1000000 * (cumsum(as.integer(method == 'WHOLE REQUEST' & event == 'START')) - 1L)) %>%
+  ungroup()
+stopifnot(d %>% group_by(rid, method) %>% filter(n() != 2) %>% nrow() == 0)
+d = d %>% 
+  group_by(rid, method) %>%
+  arrange(dt) %>%
+  summarize(tms = 1000 * as.numeric(last(dt) - first(dt)))
+
+# cat rest.log | grep resolved > resolve.log
+r = readr::read_tsv('~/Pobrane/resolve.log', col_names = c('dt', 'rid', 'a', 'log')) %>%
+  select(-a) %>%
+  tidyr::extract(log, c('uri', 'tms'), '^### Normalized/resolved ([^ ]+) in (.*)$', remove = TRUE, convert = TRUE) %>%
+  mutate(tms = as.numeric(tms * 1000)) %>%
+  group_by(uri) %>%
+  arrange(dt) %>%
+  mutate(first = row_number() == 1) %>%
+  ungroup()
+
+```
+
+```{r stat1}
+d %>% 
+  mutate(
+    action = case_when(
+      method == 'WHOLE REQUEST' ~ 'whole request',
+      method == 'ONTOLOGY LOAD' ~ 'ontology load',
+      method %in% c('DB SETUP', 'DB COMMIT') ~ 'other',
+      TRUE ~ 'doorkeeper checks'
+    )
+  ) %>%
+  filter(action != 'other') %>%
+  group_by(rid, action) %>%
+  summarize(tms = sum(tms)) %>%
+  ungroup() %>%
+  filter(tms < quantile(tms, 0.97)) %>%
+  ggplot(aes(x = tms, group = action, color = action)) +
+  geom_density() +
+  theme_light() +
+  ggtitle('Distribution of request handling time') + xlab('time [ms]') +
+  theme(axis.text.y = element_blank(), axis.title.y = element_blank())
+```
+
+```{r stat2}
+d %>% 
+  filter(!(method %in% c('WHOLE REQUEST', 'ONTOLOGY LOAD', 'DB SETUP', 'DB COMMIT'))) %>%
+  ggplot(aes(x = method, y = tms)) +
+  geom_violin() +
+  scale_y_log10() +
+  theme_light() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) +
+  ggtitle('Distribution of doorkeeper checks execution time') + ylab('check') + xlab('time [ms]')
+```
+
+```{r stat3}
+d %>% 
+  group_by(method) %>%
+  summarize(
+    minMs = min(tms),
+    maxMs = max(tms),
+    meanMs = mean(tms),
+    medianMs = median(tms),
+    n = n(),
+    totalS = sum(tms) / 1000
+  ) %>%
+  ungroup() %>%
+  arrange(desc(totalS))
+```
+
+```{r resolveChart}
+bind_rows(r, r %>% mutate(uri = 'ALL')) %>%
+  mutate(nmsp = substr(uri, 1, 15), first = if_else(first, 'not cached', 'cached')) %>%
+  ggplot(aes(x = nmsp, y = tms)) +
+    geom_violin() +
+    scale_y_log10() +
+    ggtitle('URI check time depending on source and caching') + xlab('namespace') + ylab('check time [ms]') +
+    theme_light() +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) +
+    facet_wrap(~first)
+```
+
+```{r resolveTab}
+bind_rows(r, r %>% mutate(uri = 'ALL')) %>%
+  mutate(nmsp = substr(uri, 1, 15), cached = !first) %>%
+  select(-first) %>%
+  group_by(nmsp, cached) %>%
+  summarise(
+    tmsMean = round(mean(tms), 2),
+    n = n(), 
+    tsSum = round(sum(tms / 1000), 1)
+  ) %>%
+  group_by(nmsp) %>%
+  mutate(tsRel = round(tsSum / sum(tsSum), 2)) %>%
+  arrange(cached, nmsp) 
+```
+
+* `tmsMean` average URI check time in milliseconds
+* `n` number of checks
+* `tsSum` total time in seconds spent on checks
+* `tsRel` fraction of time spent on checks relative to all time spent for checks in a given namespace
