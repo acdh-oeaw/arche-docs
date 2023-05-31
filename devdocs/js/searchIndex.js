@@ -3601,6 +3601,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_searchParams"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SmartSearchController",
+            "name": "SmartSearchController",
+            "summary": "Description\u0020of\u0020SearchViewController",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-SmartSearchController.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SmartSearchController\u003A\u003Adisplay\u0028\u0029",
+            "name": "display",
+            "summary": "",
+            "url": "classes/Drupal-acdh-repo-gui-Controller-SmartSearchController.html#method_display"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\VersionsController",
             "name": "VersionsController",
             "summary": "Description\u0020of\u0020VersionsController",
@@ -5666,6 +5676,16 @@ Search.appendIndex(
             "summary": "Search\u0020Sb\u0020block",
             "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-RepoSearchBlock.html#method_build"
         },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\SmartSearchBlock",
+            "name": "SmartSearchBlock",
+            "summary": "Provides\u0020a\u0020\u0027SmartSearchBlock\u0027\u0020block.",
+            "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-SmartSearchBlock.html"
+        },                {
+            "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\SmartSearchBlock\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "Left\u0020block\u0020build\u0020function",
+            "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-SmartSearchBlock.html#method_build"
+        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\StartPageLeftBlock",
             "name": "StartPageLeftBlock",
             "summary": "Provides\u0020a\u0020\u0027StartPageLeftBlock\u0027\u0020block.",
@@ -6640,6 +6660,51 @@ Search.appendIndex(
             "name": "getData",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-SearchBlock-MainController.html#method_getData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SmartSearchController",
+            "name": "SmartSearchController",
+            "summary": "Description\u0020of\u0020SmartSearchController",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SmartSearchController.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SmartSearchController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SmartSearchController.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SmartSearchController\u003A\u003AsetContext\u0028\u0029",
+            "name": "setContext",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SmartSearchController.html#method_setContext"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SmartSearchController\u003A\u003Asearch\u0028\u0029",
+            "name": "search",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SmartSearchController.html#method_search"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SmartSearchController\u003A\u003AdateFacets\u0028\u0029",
+            "name": "dateFacets",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SmartSearchController.html#method_dateFacets"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SmartSearchController\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SmartSearchController.html#property_config"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SmartSearchController\u003A\u003A\u0024sConfig",
+            "name": "sConfig",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SmartSearchController.html#property_sConfig"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SmartSearchController\u003A\u003A\u0024context",
+            "name": "context",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SmartSearchController.html#property_context"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SmartSearchController\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SmartSearchController.html#property_schema"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\VersionsController",
             "name": "VersionsController",
@@ -14985,6 +15050,11 @@ Search.appendIndex(
             "name": "SearchBlock",
             "summary": "",
             "url": "namespaces/drupal-arche-gui-api-controller-searchblock.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch",
+            "name": "SmartSearch",
+            "summary": "",
+            "url": "namespaces/drupal-arche-gui-api-controller-smartsearch.html"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Helper\\FileFormats",
             "name": "FileFormats",
