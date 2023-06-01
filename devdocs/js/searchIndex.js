@@ -3571,11 +3571,6 @@ Search.appendIndex(
             "summary": "Description\u0020of\u0020SearchViewController",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method___construct"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003AdisplayLeftSideSearchBlock\u0028\u0029",
             "name": "displayLeftSideSearchBlock",
             "summary": "",
@@ -3590,16 +3585,6 @@ Search.appendIndex(
             "name": "search_vcr",
             "summary": "Get\u0020the\u0020json\u0020object\u0020with\u0020the\u0020search\u0020values\u0020for\u0020the\u0020VCR\u0020submit",
             "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#method_search_vcr"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024pagingHelper",
-            "name": "pagingHelper",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_pagingHelper"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SearchViewController\u003A\u003A\u0024searchParams",
-            "name": "searchParams",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Controller-SearchViewController.html#property_searchParams"
         },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Controller\\SmartSearchController",
             "name": "SmartSearchController",
@@ -6331,6 +6316,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_child"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_search_date_facets\u0028\u0029",
+            "name": "api_search_date_facets",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_search_date_facets"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_smart_search\u0028\u0029",
+            "name": "api_smart_search",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_smart_search"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Child\\ChildController",
             "name": "ChildController",
             "summary": "Description\u0020of\u0020RPRController",
@@ -6660,6 +6655,11 @@ Search.appendIndex(
             "name": "getData",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-SearchBlock-MainController.html#method_getData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SearchBlock\\MainController\u003A\u003AdateFacets\u0028\u0029",
+            "name": "dateFacets",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SearchBlock-MainController.html#method_dateFacets"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SmartSearchController",
             "name": "SmartSearchController",
