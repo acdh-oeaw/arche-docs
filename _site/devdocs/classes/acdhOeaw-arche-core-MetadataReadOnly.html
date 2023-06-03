@@ -149,15 +149,15 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">Specialized version of the Metadata class.</p>
 
-    <section class="phpdocumentor-description"><p>Supports only read from database but developed with low memory footprint in mind.</p>
+    <section class="phpdocumentor-description"><p>Supports only reading the metadata but can stream the output assuring small
+memory footprint.</p>
 <p>Uses various serializers depending on the output format.</p>
-<p>API is a subset of the Metadata class API.</p>
 </section>
 
 
@@ -201,31 +201,34 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_format">$format</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_id">$id</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_iriEscapeMap">$iriEscapeMap</a>
+    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_loadFromDbParams">$loadFromDbParams</a>
     <span>
-                        &nbsp;: array&lt;string|int, string&gt;            </span>
+                        &nbsp;: array&lt;string, mixed&gt;            </span>
 </dt>
-<dd>Characters forbidden in n-triples literals according to
-https://www.w3.org/TR/n-triples/#grammar-production-IRIREF</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_literalEscapeMap">$literalEscapeMap</a>
-    <span>
-                        &nbsp;: array&lt;string|int, string&gt;            </span>
-</dt>
-<dd>Characters forbidden in n-triples literals according to
-https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</dd>
+<dd>Parameters of the loadFromDb call stored for lazy initialization.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_pdoStmnt">$pdoStmnt</a>
     <span>
                         &nbsp;: <abbr title="\PDOStatement">PDOStatement</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_pdoStmntSafe">$pdoStmntSafe</a>
+    <span>
+                        &nbsp;: bool            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
@@ -255,19 +258,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</dd>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_escapeIri">escapeIri()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_escapeLiteral">escapeLiteral()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_generateOutput">generateOutput()</a>
+    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_freeDbConnection">freeDbConnection()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -279,10 +270,17 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</dd>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_lazyLoadFromDb">lazyLoadFromDb()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_loadFromDb">loadFromDb()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
+<dd>Sets up parameters for loading the metadata from the database.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_loadFromPdoStatement">loadFromPdoStatement()</a>
@@ -296,34 +294,22 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</dd>
                                 &nbsp;: void    </span>
 </dt>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_addPrefixes">addPrefixes()</a>
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_setFormat">setFormat()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_preparePropObj">preparePropObj()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, string&gt;    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_serializeEasyRdf">serializeEasyRdf()</a>
+    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_generateOutput">generateOutput()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_serializeHardf">serializeHardf()</a>
+    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_getNamespaces">getNamespaces()</a>
     <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_serializeNTriples">serializeNTriples()</a>
-    <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: <abbr title="\rdfInterface\RdfNamespaceInterface">RdfNamespaceInterface</abbr>    </span>
 </dt>
 
     </dl>
@@ -347,6 +333,39 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</dd>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_format">
+        $format
+        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_format" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">53</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$format</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_id">
         $id
         <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_id" class="headerlink"><i class="fas fa-link"></i></a>
@@ -357,7 +376,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -378,11 +397,11 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</dd>
             phpdocumentor-element
             -property
             -private
-            -static                                            "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="property_iriEscapeMap">
-        $iriEscapeMap
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_iriEscapeMap" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_loadFromDbParams">
+        $loadFromDbParams
+        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_loadFromDbParams" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
@@ -390,53 +409,17 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Characters forbidden in n-triples literals according to
-https://www.w3.org/TR/n-triples/#grammar-production-IRIREF</p>
+        <p class="phpdocumentor-summary">Parameters of the loadFromDb call stored for lazy initialization.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
-    <span class="phpdocumentor-signature__name">$iriEscapeMap</span>
-     = <span class="phpdocumentor-signature__default-value">[&quot;&lt;&quot; =&gt; &quot;\\u003C&quot;, &quot;&gt;&quot; =&gt; &quot;\\u003E&quot;, &#039;&quot;&#039; =&gt; &quot;\\u0022&quot;, &quot;{&quot; =&gt; &quot;\\u007B&quot;, &quot;}&quot; =&gt; &quot;\\u007D&quot;, &quot;|&quot; =&gt; &quot;\\u007C&quot;, &quot;^&quot; =&gt; &quot;\\u005E&quot;, &quot;`&quot; =&gt; &quot;\\u0060&quot;, &quot;\\&quot; =&gt; &quot;\\u005C&quot;, &quot;\x00&quot; =&gt; &quot;\\u0000&quot;, &quot;\x01&quot; =&gt; &quot;\\u0001&quot;, &quot;\x02&quot; =&gt; &quot;\\u0002&quot;, &quot;\x03&quot; =&gt; &quot;\\u0003&quot;, &quot;\x04&quot; =&gt; &quot;\\u0004&quot;, &quot;\x05&quot; =&gt; &quot;\\u0005&quot;, &quot;\x06&quot; =&gt; &quot;\\u0006&quot;, &quot;\x07&quot; =&gt; &quot;\\u0007&quot;, &quot;\x08&quot; =&gt; &quot;\\u0008&quot;, &quot;\t&quot; =&gt; &quot;\\u0009&quot;, &quot;\n&quot; =&gt; &quot;\\u000A&quot;, &quot;\v&quot; =&gt; &quot;\\u000B&quot;, &quot;\f&quot; =&gt; &quot;\\u000C&quot;, &quot;\r&quot; =&gt; &quot;\\u000D&quot;, &quot;\x0e&quot; =&gt; &quot;\\u000E&quot;, &quot;\x0f&quot; =&gt; &quot;\\u000F&quot;, &quot;\x10&quot; =&gt; &quot;\\u0010&quot;, &quot;\x11&quot; =&gt; &quot;\\u0011&quot;, &quot;\x12&quot; =&gt; &quot;\\u0012&quot;, &quot;\x13&quot; =&gt; &quot;\\u0013&quot;, &quot;\x14&quot; =&gt; &quot;\\u0014&quot;, &quot;\x15&quot; =&gt; &quot;\\u0015&quot;, &quot;\x16&quot; =&gt; &quot;\\u0016&quot;, &quot;\x17&quot; =&gt; &quot;\\u0017&quot;, &quot;\x18&quot; =&gt; &quot;\\u0018&quot;, &quot;\x19&quot; =&gt; &quot;\\u0019&quot;, &quot;\x1a&quot; =&gt; &quot;\\u001A&quot;, &quot;\x1b&quot; =&gt; &quot;\\u001B&quot;, &quot;\x1c&quot; =&gt; &quot;\\u001C&quot;, &quot;\x1d&quot; =&gt; &quot;\\u001D&quot;, &quot;\x1e&quot; =&gt; &quot;\\u001E&quot;, &quot;\x1f&quot; =&gt; &quot;\\u001F&quot;, &quot; &quot; =&gt; &quot;\\u0020&quot;]</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-            -static                                            "
->
-    <h4 class="phpdocumentor-element__name" id="property_literalEscapeMap">
-        $literalEscapeMap
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_literalEscapeMap" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">106</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Characters forbidden in n-triples literals according to
-https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
-    <span class="phpdocumentor-signature__name">$literalEscapeMap</span>
-     = <span class="phpdocumentor-signature__default-value">[&quot;\n&quot; =&gt; &#039;\\n&#039;, &quot;\r&quot; =&gt; &#039;\\r&#039;, &#039;&quot;&#039; =&gt; &#039;\\&quot;&#039;, &#039;\\&#039; =&gt; &#039;\\\\&#039;]</span></code>
+        <span class="phpdocumentor-signature__type">array&lt;string, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$loadFromDbParams</span>
+    </code>
 
     
     
@@ -460,7 +443,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -470,6 +453,39 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
         <span class="phpdocumentor-signature__type"><abbr title="\PDOStatement">PDOStatement</abbr></span>
     <span class="phpdocumentor-signature__name">$pdoStmnt</span>
     </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_pdoStmntSafe">
+        $pdoStmntSafe
+        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_pdoStmntSafe" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$pdoStmntSafe</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
     
@@ -493,7 +509,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -526,7 +542,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -564,7 +580,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -595,145 +611,30 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_escapeIri">
-        escapeIri()
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_escapeIri" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">117</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">escapeIri</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$str</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_escapeLiteral">
-        escapeLiteral()
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_escapeLiteral" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">113</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">escapeLiteral</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$str</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_generateOutput">
-        generateOutput()
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_generateOutput" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_freeDbConnection">
+        freeDbConnection()
+        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_freeDbConnection" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">190</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">generateOutput</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">freeDbConnection</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$format</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_generateOutput#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-core-RepoException.html"><abbr title="\acdhOeaw\arche\core\RepoException">RepoException</abbr></a></span>
-                                                            
-                                             
-                                    </dd>
-                                            </dl>
+    
 
     
 </article>
@@ -751,7 +652,7 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -778,6 +679,37 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_lazyLoadFromDb">
+        lazyLoadFromDb()
+        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_lazyLoadFromDb" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">147</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">lazyLoadFromDb</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_loadFromDb">
         loadFromDb()
         <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_loadFromDb" class="headerlink"><i class="fas fa-link"></i></a>
@@ -786,18 +718,21 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Sets up parameters for loading the metadata from the database.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">loadFromDb</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resourceProperties</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$relativesProperties</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
-    
+        <section class="phpdocumentor-description"><p>The actual data loading happens when the lazyLoadFromDb() is called.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -848,14 +783,14 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">loadFromPdoStatement</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-RepoDb.html"><abbr title="\acdhOeaw\arche\lib\RepoDb">RepoDb</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pdoStatement</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">loadFromPdoStatement</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-RepoDb.html"><abbr title="\acdhOeaw\arche\lib\RepoDb">RepoDb</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pdoStatement</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$safe</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -875,6 +810,16 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$safe</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>set to <code class="prettyprint">true</code> if the <code class="prettyprint">$pdoStatement</code> does not require
+to be freed on the <code class="prettyprint">freeDbConnection()</code> call</p>
+</section>
+
             </dd>
             </dl>
 
@@ -896,45 +841,14 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sendOutput</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_addPrefixes">
-        addPrefixes()
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_addPrefixes" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">291</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">addPrefixes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$prefixes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">sendOutput</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$triplesCacheCount</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1000</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -942,15 +856,49 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$uri</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
+                <span class="phpdocumentor-signature__argument__name">$triplesCacheCount</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">1000</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setFormat">
+        setFormat()
+        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_setFormat" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setFormat</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$prefixes</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, int&gt;</span>
+                <span class="phpdocumentor-signature__argument__name">$format</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -958,22 +906,6 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_addPrefixes#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">staticvar</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>int $n</p>
-</section>
-
-                                    </dd>
-                                            </dl>
 
     
 </article>
@@ -983,22 +915,22 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_preparePropObj">
-        preparePropObj()
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_preparePropObj" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_generateOutput">
+        generateOutput()
+        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_generateOutput" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">309</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">preparePropObj</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-core-util-Triple.html"><abbr title="\acdhOeaw\arche\core\util\Triple">Triple</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$triple</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baseUrl</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ntriples</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">generateOutput</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$triplesCacheCount</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1006,29 +938,56 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$triple</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-core-util-Triple.html"><abbr title="\acdhOeaw\arche\core\util\Triple">Triple</abbr></a></span>
+                <span class="phpdocumentor-signature__argument__name">$triplesCacheCount</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getNamespaces">
+        getNamespaces()
+        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_getNamespaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">189</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getNamespaces</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-core-util-TriplesIterator.html"><abbr title="\acdhOeaw\arche\core\util\TriplesIterator">TriplesIterator</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$iter</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$triplesCacheCount</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\RdfNamespaceInterface">RdfNamespaceInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$iter</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-core-util-TriplesIterator.html"><abbr title="\acdhOeaw\arche\core\util\TriplesIterator">TriplesIterator</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$baseUrl</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$idProp</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ntriples</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                <span class="phpdocumentor-signature__argument__name">$triplesCacheCount</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1039,122 +998,9 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\RdfNamespaceInterface">RdfNamespaceInterface</abbr></span>
             </section>
 
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_serializeEasyRdf">
-        serializeEasyRdf()
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_serializeEasyRdf" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">222</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">serializeEasyRdf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$format</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_serializeHardf">
-        serializeHardf()
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_serializeHardf" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">232</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">serializeHardf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$format</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_serializeNTriples">
-        serializeNTriples()
-        <a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_serializeNTriples" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php"><a href="files/arche-core-src-acdhoeaw-arche-core-metadatareadonly.html"><abbr title="arche-core/src/acdhOeaw/arche/core/MetadataReadOnly.php">MetadataReadOnly.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">274</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">serializeNTriples</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-    
 </article>
             </section>
 
@@ -1269,10 +1115,11 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_format">$format<a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_id">$id<a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_iriEscapeMap">$iriEscapeMap<a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_literalEscapeMap">$literalEscapeMap<a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_loadFromDbParams">$loadFromDbParams<a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_pdoStmnt">$pdoStmnt<a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_pdoStmntSafe">$pdoStmntSafe<a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_repo">$repo<a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_stream">$stream<a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html"></li>
                                             </ul>
@@ -1282,18 +1129,15 @@ https://www.w3.org/TR/n-triples/#grammar-production-STRING_LITERAL_QUOTE</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_escapeIri">escapeIri()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_escapeLiteral">escapeLiteral()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_generateOutput">generateOutput()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_freeDbConnection">freeDbConnection()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_getUri">getUri()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_lazyLoadFromDb">lazyLoadFromDb()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_loadFromDb">loadFromDb()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_loadFromPdoStatement">loadFromPdoStatement()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_sendOutput">sendOutput()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_addPrefixes">addPrefixes()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_preparePropObj">preparePropObj()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_serializeEasyRdf">serializeEasyRdf()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_serializeHardf">serializeHardf()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_serializeNTriples">serializeNTriples()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_setFormat">setFormat()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_generateOutput">generateOutput()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_getNamespaces">getNamespaces()</a></li>
                                     </ul>
             </li>
                     </ul>

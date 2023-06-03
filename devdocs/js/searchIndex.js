@@ -706,16 +706,6 @@ Search.appendIndex(
             "summary": "Specialized\u0020version\u0020of\u0020the\u0020Metadata\u0020class.",
             "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AescapeLiteral\u0028\u0029",
-            "name": "escapeLiteral",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_escapeLiteral"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AescapeIri\u0028\u0029",
-            "name": "escapeIri",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_escapeIri"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
@@ -726,9 +716,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_getUri"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AsetFormat\u0028\u0029",
+            "name": "setFormat",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_setFormat"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AloadFromDb\u0028\u0029",
             "name": "loadFromDb",
-            "summary": "",
+            "summary": "Sets\u0020up\u0020parameters\u0020for\u0020loading\u0020the\u0020metadata\u0020from\u0020the\u0020database.",
             "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_loadFromDb"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AloadFromPdoStatement\u0028\u0029",
@@ -741,50 +736,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_sendOutput"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AfreeDbConnection\u0028\u0029",
+            "name": "freeDbConnection",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_freeDbConnection"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AlazyLoadFromDb\u0028\u0029",
+            "name": "lazyLoadFromDb",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_lazyLoadFromDb"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AgenerateOutput\u0028\u0029",
             "name": "generateOutput",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_generateOutput"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AserializeEasyRdf\u0028\u0029",
-            "name": "serializeEasyRdf",
+            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AgetNamespaces\u0028\u0029",
+            "name": "getNamespaces",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_serializeEasyRdf"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AserializeHardf\u0028\u0029",
-            "name": "serializeHardf",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_serializeHardf"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AserializeNTriples\u0028\u0029",
-            "name": "serializeNTriples",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_serializeNTriples"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003AaddPrefixes\u0028\u0029",
-            "name": "addPrefixes",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_addPrefixes"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003ApreparePropObj\u0028\u0029",
-            "name": "preparePropObj",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_preparePropObj"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003A\u0024iriEscapeMap",
-            "name": "iriEscapeMap",
-            "summary": "Characters\u0020forbidden\u0020in\u0020n\u002Dtriples\u0020literals\u0020according\u0020to\nhttps\u003A\/\/www.w3.org\/TR\/n\u002Dtriples\/\u0023grammar\u002Dproduction\u002DIRIREF",
-            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_iriEscapeMap"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003A\u0024literalEscapeMap",
-            "name": "literalEscapeMap",
-            "summary": "Characters\u0020forbidden\u0020in\u0020n\u002Dtriples\u0020literals\u0020according\u0020to\nhttps\u003A\/\/www.w3.org\/TR\/n\u002Dtriples\/\u0023grammar\u002Dproduction\u002DSTRING_LITERAL_QUOTE",
-            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_literalEscapeMap"
+            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#method_getNamespaces"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003A\u0024id",
             "name": "id",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_id"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003A\u0024format",
+            "name": "format",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_format"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003A\u0024repo",
             "name": "repo",
@@ -795,6 +775,16 @@ Search.appendIndex(
             "name": "pdoStmnt",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_pdoStmnt"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003A\u0024pdoStmntSafe",
+            "name": "pdoStmntSafe",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_pdoStmntSafe"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003A\u0024loadFromDbParams",
+            "name": "loadFromDbParams",
+            "summary": "Parameters\u0020of\u0020the\u0020loadFromDb\u0020call\u0020stored\u0020for\u0020lazy\u0020initialization.",
+            "url": "classes/acdhOeaw-arche-core-MetadataReadOnly.html#property_loadFromDbParams"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\MetadataReadOnly\u003A\u003A\u0024stream",
             "name": "stream",
@@ -1036,6 +1026,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-RestController.html#method_sendOutput"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AlogFinalStatus\u0028\u0029",
+            "name": "logFinalStatus",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#method_logFinalStatus"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AID_CREATE",
             "name": "ID_CREATE",
             "summary": "",
@@ -1055,6 +1050,11 @@ Search.appendIndex(
             "name": "CORS_ORIGIN",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-RestController.html#constant_CORS_ORIGIN"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003ATRIPLES_CACHE_DEFAULT",
+            "name": "TRIPLES_CACHE_DEFAULT",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#constant_TRIPLES_CACHE_DEFAULT"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003A\u0024requestParam",
             "name": "requestParam",
@@ -1645,6 +1645,81 @@ Search.appendIndex(
             "name": "uri",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-util-Triple.html#property_uri"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator",
+            "name": "TriplesIterator",
+            "summary": "rdfInterface\\QuadIteratorInterface\u0020wrapper\u0020for\u0020metadata_view\u0020table\u0020rows.",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#method_current"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003Akey\u0028\u0029",
+            "name": "key",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#method_key"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003Anext\u0028\u0029",
+            "name": "next",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#method_next"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003Arewind\u0028\u0029",
+            "name": "rewind",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#method_rewind"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003Avalid\u0028\u0029",
+            "name": "valid",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#method_valid"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003AgetObject\u0028\u0029",
+            "name": "getObject",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#method_getObject"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003A\u0024query",
+            "name": "query",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#property_query"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003A\u0024baseUrl",
+            "name": "baseUrl",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#property_baseUrl"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003A\u0024idProp",
+            "name": "idProp",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#property_idProp"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003A\u0024cacheSize",
+            "name": "cacheSize",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#property_cacheSize"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003A\u0024n",
+            "name": "n",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#property_n"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003A\u0024triple",
+            "name": "triple",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#property_triple"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003A\u0024cache",
+            "name": "cache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#property_cache"
         },                {
             "fqsen": "\\Drupal\\arche_dashboard\\Controller\\DashboardController",
             "name": "DashboardController",
