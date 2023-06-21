@@ -5,7 +5,14 @@
 layout: default
 ---
 
-# Guides and publications
+# Introduction
+
+* [What ARCHE Suite is and what it is not](aux/intro.html)
+* [Very basic setup](aux/firstSteps.html)
+* [Paper from the CLARIN Annual Conference 2021](https://ecp.ep.liu.se/index.php/clarin/article/view/428/386)
+  (doi https://doi.org/10.3384/9789179294441)
+
+# Technical Guides
 
 * [Metadata API performance](aux/metadata_api_performance.html)
 * [Dissemination services](aux/dissemination_services.html)
@@ -15,9 +22,6 @@ layout: default
   * [compacting and framing](aux/rdf_compacting_and_framing.html)
 * [Metadata API guide](aux/metadata_api_for_programmers.html)
 * [Search API guide](aux/search_api_for_programmers.html)
-
-* [Paper from the CLARIN Annual Conference 2021](https://ecp.ep.liu.se/index.php/clarin/article/view/428/386)
-  (doi https://doi.org/10.3384/9789179294441)
 
 # Components
 
