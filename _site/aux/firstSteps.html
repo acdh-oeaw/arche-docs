@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Quick startup guide | ARCHE Suite documentation</title>
+<title>First steps | ARCHE Suite documentation</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Quick startup guide" />
+<meta property="og:title" content="First steps" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Documentation for the ARCHE repository software stack" />
 <meta property="og:description" content="Documentation for the ARCHE repository software stack" />
@@ -16,12 +16,12 @@
 <meta property="og:url" content="/arche-docs/aux/firstSteps.html" />
 <meta property="og:site_name" content="ARCHE Suite documentation" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Quick startup guide" />
+<meta property="twitter:title" content="First steps" />
 <script type="application/ld+json">
-{"description":"Documentation for the ARCHE repository software stack","url":"/arche-docs/aux/firstSteps.html","@type":"WebPage","headline":"Quick startup guide","@context":"https://schema.org"}</script>
+{"description":"Documentation for the ARCHE repository software stack","url":"/arche-docs/aux/firstSteps.html","@type":"WebPage","headline":"First steps","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=bf811166dbbefe729c9c2c43a0277c8793057f87">
+    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=98dc7589031cf33216f0a2762d7e2a46655da85e">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -45,7 +45,171 @@
       </header>
       <section>
 
-      <h1 id="quick-startup-guide">Quick startup guide</h1>
+      <h1 id="first-steps">First steps</h1>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>You need:</p>
+
+<ul>
+  <li><a href="https://git-scm.com/">git</a></li>
+  <li><a href="https://www.docker.com/">Docker</a></li>
+  <li>any unformatted text editor</li>
+  <li>ability to work with a console</li>
+</ul>
+
+<p>Remarks:</p>
+
+<ul>
+  <li>This guide was tested on a linux (Ubuntu 22.04) machine.
+As we are using <a href="https://www.docker.com/">Docker</a> it should be also reproducible on a Windows and macOS machine
+but this was not tested and there is a risk you will run into platform-specific issues.</li>
+</ul>
+
+<h2 id="really-quick-and-dirty-setup">Really quick and dirty setup</h2>
+
+<p>In this step we will just set up an ARCHE Suite instance as it is used at the <a href="https://www.oeaw.ac.at/acdh/">ACDH-CH</a>.</p>
+
+<p>It creates a fully-fledged setup with some optional services and also ingests some data into the repository.</p>
+
+<ol>
+  <li>Start it up with:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--name</span> arche-suite <span class="nt">-p</span> 80:80 <span class="nt">-e</span> <span class="nv">CFG_BRANCH</span><span class="o">=</span>arche <span class="nt">-e</span> <span class="nv">ADMIN_PSWD</span><span class="o">=</span><span class="s1">'myAdminPassword'</span> <span class="nt">-d</span> acdhch/arche
+</code></pre></div>    </div>
+  </li>
+  <li>Run:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker logs <span class="nt">-f</span> arche-suite
+</code></pre></div>    </div>
+    <p>and wait until you see something like:</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">##########</span>
+<span class="c"># Starting supervisord</span>
+<span class="c">##########</span>
+   
+2023-06-22 08:44:35,458 INFO Included extra file <span class="s2">"/home/www-data/config/supervisord.conf.d/postgresql.conf"</span> during parsing
+2023-06-22 08:44:35,458 INFO Included extra file <span class="s2">"/home/www-data/config/supervisord.conf.d/tika.conf"</span> during parsing
+2023-06-22 08:44:35,459 INFO RPC interface <span class="s1">'supervisor'</span> initialized
+2023-06-22 08:44:35,459 CRIT Server <span class="s1">'unix_http_server'</span> running without any HTTP authentication checking
+2023-06-22 08:44:35,459 INFO supervisord started with pid 1253
+2023-06-22 08:44:36,462 INFO spawned: <span class="s1">'initScripts'</span> with pid 1255
+2023-06-22 08:44:36,463 INFO spawned: <span class="s1">'apache2'</span> with pid 1256
+2023-06-22 08:44:36,464 INFO spawned: <span class="s1">'postgresql'</span> with pid 1257
+2023-06-22 08:44:36,464 INFO spawned: <span class="s1">'tika'</span> with pid 1258
+2023-06-22 08:44:36,465 INFO spawned: <span class="s1">'txDaemon'</span> with pid 1259
+2023-06-22 08:44:37,496 INFO success: initScripts entered RUNNING state, process has stayed up <span class="k">for</span> <span class="o">&gt;</span> than 1 seconds <span class="o">(</span>startsecs<span class="o">)</span>
+2023-06-22 08:44:37,496 INFO success: apache2 entered RUNNING state, process has stayed up <span class="k">for</span> <span class="o">&gt;</span> than 1 seconds <span class="o">(</span>startsecs<span class="o">)</span>
+2023-06-22 08:44:37,496 INFO success: postgresql entered RUNNING state, process has stayed up <span class="k">for</span> <span class="o">&gt;</span> than 1 seconds <span class="o">(</span>startsecs<span class="o">)</span>
+2023-06-22 08:44:37,496 INFO success: tika entered RUNNING state, process has stayed up <span class="k">for</span> <span class="o">&gt;</span> than 1 seconds <span class="o">(</span>startsecs<span class="o">)</span>
+2023-06-22 08:44:37,496 INFO success: txDaemon entered RUNNING state, process has stayed up <span class="k">for</span> <span class="o">&gt;</span> than 1 seconds <span class="o">(</span>startsecs<span class="o">)</span>
+</code></pre></div>    </div>
+    <p>Now hit <code class="language-plaintext highlighter-rouge">CRTL+C</code>.<br />
+At this point the repository is up and running.</p>
+  </li>
+  <li>Wait until initial data is imported.<br />
+Run:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker <span class="nb">exec</span> <span class="nt">-ti</span> <span class="nt">-u</span> www-data arche-suite <span class="nb">tail</span> <span class="nt">-f</span> log/initScripts.log
+</code></pre></div>    </div>
+    <p>and wait until you see (this may take a few minutes as two big controlled vocabularies are being imported):</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">##########</span>
+<span class="c"># INIT SCRIPTS ENDED</span>
+<span class="c">##########</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Import a sample collection with a resource:
+    <ul>
+      <li>Log into the docker container with:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker <span class="nb">exec</span> <span class="nt">-ti</span> <span class="nt">-u</span> www-data arche-suite bash
+</code></pre></div>        </div>
+      </li>
+      <li>Create a <code class="language-plaintext highlighter-rouge">collection.ttl</code> describing a top collection resource and a TEI-XML resource according to the <a href="https://github.com/acdh-oeaw/arche-schema">ACDH-CH metadata schema</a>:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s1">'
+@prefix n1: &lt;https://vocabs.acdh.oeaw.ac.at/schema#&gt;.
+
+&lt;https://id.acdh.oeaw.ac.at/traveldigital&gt; a n1:TopCollection;
+    n1:hasIdentifier &lt;https://hdl.handle.net/21.11115/0000-000C-29F3-4&gt;;
+    n1:hasPid "https://hdl.handle.net/21.11115/0000-000C-29F3-4"^^&lt;http://www.w3.org/2001/XMLSchema#anyURI&gt;;
+    n1:hasTitle "travel!digital Collection"@en;
+    n1:hasDescription "A digital collection of early German travel guides on non-European countries which were released by the Baedeker publishing house between 1875 and 1914. The collection consists of the travel!digital Corpus (XML/TEI transcriptions of first editions (5 volumes) including structural, semantic and linguistic annotations), the travel!digital Facsimiles (scans and photographs of the historical prints), the travel!digital Auxiliary Files (a TEI schema of the annotations applied in the corpus, and a list of term labels for indexing names of persons annotated in the corpus), and the travel!digital Thesaurus (a SKOS vocabulary covering designations of groups and selected sights annotated in the corpus).\n The collection was created within the GO!DIGITAL 1.0 project \"travel!digital. Exploring People and Monuments in Baedeker Guidebooks (1875-1914)\", Project-Nr.: ÖAW0204.\n Image creation was done in 2004 at the Austrian Academy of Sciences (AAC-Austrian Academy Corpus)."@en;
+    n1:hasSubject "Karl Baedeker"@en,
+        "historical travel guides"@en;
+    n1:hasHosting &lt;https://id.acdh.oeaw.ac.at/arche&gt;;
+    n1:hasRightsHolder &lt;https://d-nb.info/gnd/1001454-8&gt;;
+    n1:hasLicensor &lt;https://d-nb.info/gnd/1123037736&gt;;
+    n1:hasMetadataCreator &lt;https://id.acdh.oeaw.ac.at/uczeitschner&gt;;
+    n1:hasCurator &lt;https://id.acdh.oeaw.ac.at/uczeitschner&gt;;
+    n1:hasCreator &lt;https://id.acdh.oeaw.ac.at/uczeitschner&gt;; 
+    n1:hasDepositor &lt;https://id.acdh.oeaw.ac.at/uczeitschner&gt;;
+    n1:hasContact &lt;https://id.acdh.oeaw.ac.at/uczeitschner&gt;;
+    n1:hasOwner &lt;https://d-nb.info/gnd/1123037736&gt;.
+
+&lt;https://id.acdh.oeaw.ac.at/traveldigital/Corpus/Baedeker-Mittelmeer_1909.xml&gt; a n1:Resource;
+    n1:hasTitle "Karl Baedeker: Das Mittelmeer. Handbuch für Reisende: Digital Edition"@en;
+    n1:hasCategory &lt;http://purl.org/dc/dcmitype/Dataset&gt;;
+    n1:hasDepositor &lt;https://id.acdh.oeaw.ac.at/uczeitschner&gt;;
+    n1:hasMetadataCreator &lt;https://id.acdh.oeaw.ac.at/uczeitschner&gt;;
+    n1:hasOwner &lt;https://d-nb.info/gnd/1123037736&gt;;
+    n1:hasRightsHolder &lt;https://d-nb.info/gnd/1001454-8&gt;;
+    n1:hasLicensor &lt;https://d-nb.info/gnd/1123037736&gt;;
+    n1:hasLicense &lt;https://creativecommons.org/licenses/by/4.0/&gt;;
+    n1:hasHosting &lt;https://id.acdh.oeaw.ac.at/arche&gt;;
+    n1:isPartOf &lt;https://id.acdh.oeaw.ac.at/traveldigital&gt;.
+'</span> <span class="o">&gt;</span> collection.ttl
+</code></pre></div>        </div>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   * Ingest the metadata into the repository with:  ```bash  composer require acdh-oeaw/arche-ingest  ~/vendor/bin/arche-import-metadata collection.ttl http://127.0.0.1/api admin myAdminPassword  ```
+</code></pre></div>        </div>
+      </li>
+      <li>note down the URLs of created resources reported in the log, e.g.:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    created http://127.0.0.1/api/11305 <span class="o">(</span>1/2<span class="o">)</span>
+    created http://127.0.0.1/api/11306 <span class="o">(</span>2/2<span class="o">)</span>
+</code></pre></div>        </div>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  * Download and ingest the TEI-XML resource binary:  ```  mkdir sampledata  curl https://arche.acdh.oeaw.ac.at/api/29688 &gt; sampledata/Baedeker-Mittelmeer_1909.xml  ~/vendor/bin/arche-import-binary \   sampledata \   https://id.acdh.oeaw.ac.at/traveldigital/Corpus \   http://127.0.0.1/api admin myAdminPassword  ```
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>At this point we have a repository with some data in it.<br />
+We can check it out in a few ways:</p>
+
+<ul>
+  <li>With an API call:
+    <ul>
+      <li>open URLs of the two ingested resources in your browser
+(e.g. http://127.0.0.1/api/11305 and http://127.0.0.1/api/11306)
+        <ul>
+          <li>the URL of the collection resource will display a metadata view
+(note you were redirected to <code class="language-plaintext highlighter-rouge">{originalURL}/metadata</code>)</li>
+          <li>the URL of the TEI-XML will download the TEI-XML file
+(you can append <code class="language-plaintext highlighter-rouge">/metadata</code> to the URL to display the metadata view)</li>
+        </ul>
+      </li>
+      <li>If you want to display metadata in RDF (instead of HTML) append the <code class="language-plaintext highlighter-rouge">?format={RDF format MIME}</code>,
+e.g. <code class="language-plaintext highlighter-rouge">http://127.0.0.1/api/11305/metadata?format=application/rdf%2Bxml</code></li>
+      <li>To learn more about fetching metadata trough the API read <a href="/arche-docs/aux/metadata_api_for_programmers.html">here</a></li>
+    </ul>
+  </li>
+  <li>With the <a href="https://github.com/acdh-oeaw/arche-gui">ACDH-CH GUI</a> - open http://localhost/browser/<br />
+TODO - check with Norbert why the collection view doesn’t work</li>
+  <li>With the <a href="">OAI-PMH</a> service - http://127.0.0.1/oaipmh/?verb=ListRecords&amp;metadataPrefix=oai_dc</li>
+</ul>
+
+<h2 id="step-by-step-installation">Step-by-step installation</h2>
+
+<p>Now let’s take a step back and make a step-by-step installation starting from a minimal setup.</p>
+
+<h3 id="installing-arche-core">Installing arche-core</h3>
+
+<h3 id="ingesting-some-data">Ingesting some data</h3>
+
+<h3 id="adding-a-dissemination-service">Adding a dissemination service</h3>
+
+<h3 id="setting-up-basic-oai-pmh">Setting up basic OAI-PMH</h3>
+
+<h3 id="plugging-in-a-doorkeeper">Plugging in a doorkeeper</h3>
+
+<h2 id="further-considerations">Further considerations</h2>
+
+<p>Last but not least, if you have questions, please do not hesitate to <a href="mailto:mzoltak@oeaw.ac.at">ask us</a>.</p>
 
 
       </section>
