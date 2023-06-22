@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Introduction | ARCHE Suite documentation</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Introduction" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Documentation for the ARCHE repository software stack" />
+<meta property="og:description" content="Documentation for the ARCHE repository software stack" />
+<link rel="canonical" href="/arche-docs/aux/intro.html" />
+<meta property="og:url" content="/arche-docs/aux/intro.html" />
+<meta property="og:site_name" content="ARCHE Suite documentation" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Introduction" />
+<script type="application/ld+json">
+{"description":"Documentation for the ARCHE repository software stack","url":"/arche-docs/aux/intro.html","@type":"WebPage","headline":"Introduction","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=bf811166dbbefe729c9c2c43a0277c8793057f87">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="/arche-docs/">ARCHE Suite documentation</a></h1>
+        
+        
+
+        <p>Documentation for the ARCHE repository software stack</p>
+
+        
+        <p class="view"><a href="https://github.com/acdh-oeaw/arche-docs">View the Project on GitHub <small>acdh-oeaw/arche-docs</small></a></p>
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="introduction">Introduction</h1>
+
+<h2 id="what-is-arche-suite-and-what-is-not">What is ARCHE Suite and what is not</h2>
+
+<p>Probably the most important thing you need to know is that the ARCHE Suite <strong>is a framework</strong>
+(in contrary to being an application or a service).
+To put it simple <strong>you need to be (or have around) a programmer</strong> to make a working repository out of it.
+If you are searching for an just-install-and-use app, please rather take a look at software like the <a href="https://dspace.lyrasis.org/">DSpace</a>.</p>
+
+<h2 id="unique-features">Unique features</h2>
+
+<p>If you are still reading, here are a few features which are rather unique to the ARCHE Suite:</p>
+
+<ul>
+  <li>Proper support for the Linked Data in RDF:
+    <ul>
+      <li>Support for metadata input and output in any of RDF-XML, n-triples, turtle and JSON-LD serialization formats.</li>
+      <li>Metadata is stored in RDF with resource URL as a subject.</li>
+      <li>While there is no SPARQL endpoint (for performance reasons), 
+it is possible to flexibly fetch linked resources in one REST API call
+(more information can be found <a href="/arche-docs/aux/metadata_api_for_programmers.html">here</a>).</li>
+      <li>Native support for multiple resource identifiers.<br />
+If metadata is integrated from multiple sources or external identifier sources are used (e.g. DOI),
+you might easily end up with multiple concurrent identifiers for the same resource.
+The ARCHE API allows you to identify the resource with any of them.</li>
+      <li>Foreign keys are checked - you can not remove a repository resource until other repository resources
+point to it in their metadata.</li>
+    </ul>
+  </li>
+  <li>No metadata schema enforced.<br />
+While there are some concepts which have to be assigned an RDF predicate (e.g. a predicate for storing multiple identifiers or resource labels),
+this is fully flexible and set up as a configuration.</li>
+  <li>Extensibility.<br />
+You can easily plug in your own code in any programming language having the <a href="https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol">AMQP</a> support.
+The plugins system supports all <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a> events and is covered by the transactions system.</li>
+  <li>Very powerful OAI-PMH service
+allowing on-the-fly mapping of the RDF metadata to the OAI-PMH ones.</li>
+  <li>Fully <a href="https://en.wikipedia.org/wiki/ACID">ACID</a> data modification transactions.</li>
+  <li>Shipped with own handles service.</li>
+  <li>Modules (microservices) providing intergration with:
+    <ul>
+      <li><a href="https://www.clarin.eu/content/federated-content-search-clarin-fcs-technical-details">CLARIN FCS</a></li>
+      <li><a href="https://openrefine.org/">OpenRefine</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="architecture">Architecture</h2>
+
+<p>The ARCHE Suite is build in a very modular way.
+It increases flexibility and extensibility but unfortunatelly it also makes it slightly harder to understand how things work at the beginning.</p>
+
+<p>The most crucial parts are:</p>
+
+<ul>
+  <li><a href="https://github.com/acdh-oeaw/arche-core">arche-core</a> implements the REST API 
+providing the <a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a> operations as well as a search.
+<strong>It does not provide any graphical user interface.</strong></li>
+  <li><a href="https://github.com/acdh-oeaw/arche-docker">arche-docker</a> provides a <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> image
+with the runtime environment for the arche-core.</li>
+  <li><a href="https://github.com/acdh-oeaw/arche-docker-config">arche-docker-config</a> providing a sample configuration for the arche-core and other components.</li>
+</ul>
+
+<p>On top of this minimal set you will be almost for sure interested in:</p>
+
+<ul>
+  <li><a href="https://github.com/acdh-oeaw/arche-oaipmh">arche-oaipmh</a> implementing
+the <a href="https://en.wikipedia.org/wiki/Open_Archives_Initiative_Protocol_for_Metadata_Harvesting">OAI-PMH</a> service.</li>
+  <li><a href="https://github.com/acdh-oeaw/arche-resolver">arche-resolver</a> implementing
+a handles and <a href="dissemination_services.html">dissemination services</a> redirection service.</li>
+</ul>
+
+<p>There is a set of modules implementing <a href="dissemination_services.html">dissemination services</a>:</p>
+
+<ul>
+  <li><a href="https://github.com/acdh-oeaw/arche-biblatex">arche-biblatex</a> for generation of <a href="https://en.wikipedia.org/wiki/BibTeX#Bibliographic_information_file">Bib(La)TeX bibliographic entries</a>
+from the metadata.</li>
+  <li><a href="https://github.com/acdh-oeaw/arche-exif">arche-exif</a> for exif metadata extraction from images stored in the repository.</li>
+  <li><a href="https://github.com/acdh-oeaw/arche-openrefine">arche-openrefine</a> implementing the <a href="https://openrefine.org/">OpenRefine</a> reconciliation API endpoint.</li>
+  <li><a href="https://github.com/acdh-oeaw/arche-thumbnails">arche-thumbnails</a> generating minified versions of images store in the repository.</li>
+</ul>
+
+<h3 id="gui">GUI</h3>
+
+<p>At this point you are probably wondering where is a graphical user interface.
+Well, there is none…</p>
+
+<p>More precisely there is one - <a href="https://github.com/acdh-oeaw/arche-gui">arche-gui</a> - which we use for our own repository instance(s)
+but it is quite unlikely it will do the job for you as it is tightly coupled with our metadata schema.</p>
+
+<p><strong>If you are using the ARCHE Suite you are expected to develop the graphical user interface for browsing the repository on your own.</strong></p>
+
+<p>This is a well-though decision on our side.
+The thing is everyone wants to adjust the GUI to their preferences and there is no one-suits-it-all solution.
+So taking into account our limited resources we decided we will not aim for providing a reusable GUI.</p>
+
+<p>Still the arche-core API (for more information on using it see the guides on the <a href="../">main page</a>) 
+and the pretty straightforward underlaying database structure should allow you do develop a GUI quite easily and fast.</p>
+
+<h3 id="data-consistency-check-tools">Data consistency check tools</h3>
+
+<p>As with the GUI we did not try to prepare a one-fits-it-all data consistency checks system.</p>
+
+<p>What ARCHE Suite provides here is a flexible plugins system allowing you to execute your own code on particular events like the resource addition, modification, deletion, etc.</p>
+
+<p>In our case we developed and plugged in the <a href="https://github.com/acdh-oeaw/arche-doorkeeper">arche-doorkeeper</a> module.
+It performs various checks (mainly metadata consistency once) and some automations (e.g. on-demand fetching of PIDs from an external handles service).</p>
+
+<p>In our setup the arche-doorkeeper reads the configuration from an <a href="https://github.com/acdh-oeaw/arche-schema-ingest">OWL ontology</a> 
+which is stored as a set of ordinary repository resources
+(as an OWL ontology is expresses in the RDF and the arche-core stores metadata in RDF, it is pretty straightforward and natural approach;
+there is a separate <a href="https://github.com/acdh-oeaw/arche-schema-ingest">piece of software responsible for the ingestion</a>).</p>
+
+<p>While the chances that it will be directly reusable by you are rather small, you can take it as an inspiration
+for your own checks implementation.</p>
+
+<h2 id="data-ingestion-tools">Data ingestion tools</h2>
+
+<p>The ARCHE Suite comes with a quite a powerful set of data ingestion tools.
+The only caveat is they are console tools (lack graphical user interface).</p>
+
+<p>For end-user scripts take a look at the <a href="https://github.com/acdh-oeaw/arche-ingest">arche-ingest</a>
+while the underlaying PHP libraries are provided by the <a href="https://github.com/acdh-oeaw/arche-lib-ingest">arche-lib-ingest</a></p>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="https://github.com/acdh-oeaw">acdh-oeaw</a></p>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/arche-docs/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>
