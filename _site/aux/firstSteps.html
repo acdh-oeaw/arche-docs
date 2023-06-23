@@ -21,7 +21,7 @@
 {"description":"Documentation for the ARCHE repository software stack","url":"/arche-docs/aux/firstSteps.html","@type":"WebPage","headline":"First steps","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=5b33a4a69f72b64e9d529d923841a15914f6aeb3">
+    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=5058ba4f9d3720a686563456f96214ccc38bd205">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -55,15 +55,34 @@
   <li><a href="https://git-scm.com/">git</a></li>
   <li><a href="https://www.docker.com/">Docker</a></li>
   <li>any unformatted text editor</li>
-  <li>ability to work with a console</li>
+  <li>ability to work with a command line</li>
+  <li>a tool to make HTTP requests
+(e.g. <a href="https://curl.se/">curl</a>, <a href="https://podman.io/">Podman</a>
+or a web browser)</li>
 </ul>
 
 <p>Remarks:</p>
 
 <ul>
   <li>This guide was tested on a linux (Ubuntu 22.04) machine.
-As we are using <a href="https://www.docker.com/">Docker</a> it should be also reproducible on a Windows and macOS machine
+    <ul>
+      <li>As we are using Docker it should be also reproducible on a Windows and macOS machine
 but this was not tested and there is a risk you will run into platform-specific issues.</li>
+      <li>If you are using Fedora/RedHat, then you may want to use Podman instead of Docker.
+This should work in general but there might be some differences you will need to address
+and which are not covered by this guide
+(e.g. slightly different handling of mounting host directories as volumes or lack of the <em>compose</em> action).
+For the most smooth experience I would advise you to install Docker.</li>
+      <li>If you are using Fedora/RedHat with selinux turned on, you might need to add <code class="language-plaintext highlighter-rouge">--privileged</code> switch to
+<code class="language-plaintext highlighter-rouge">docker run</code> commands (or <code class="language-plaintext highlighter-rouge">privileged: true</code> in the <code class="language-plaintext highlighter-rouge">docker-compose.yaml</code>).</li>
+    </ul>
+  </li>
+  <li>We will be using Docker extensively.
+If you have no experience with it at all, you may succeed with the <em>Really quick and dirty setup</em>
+but it will be really difficult for you to go beyond it.
+There are two solutions of this problem - either find someone who knows Docker
+(it is quite a widespread technology nowadays so it should not be a trouble)
+or read a little how it works on the internet.</li>
 </ul>
 
 <h2 id="really-quick-and-dirty-setup">Really quick and dirty setup</h2>
@@ -187,7 +206,7 @@ We can check it out in a few ways:</p>
   <li>With an API call:
     <ul>
       <li>open URLs of the two ingested resources in your browser
-(e.g. http://127.0.0.1/api/11305 and http://127.0.0.1/api/11306)
+(e.g. http://127.0.0.1/api/11305 and http://127.0.0.1/api/11306 from the examples above)
         <ul>
           <li>the URL of the collection resource will display a metadata view
 (note you were redirected to <code class="language-plaintext highlighter-rouge">{originalURL}/metadata</code>)</li>
@@ -210,6 +229,124 @@ TODO - check with Norbert why the collection view doesn’t work</li>
 <p>Now let’s take a step back and make a step-by-step installation starting from a minimal setup.</p>
 
 <h3 id="installing-arche-core">Installing arche-core</h3>
+
+<p>Let’s say we want to set up a repository:</p>
+
+<ul>
+  <li>working under the http://my.domain</li>
+  <li><a href="https://github.com/acdh-oeaw/arche-docker#with-postgresql-database-on-other-host">using an external Postgresql database</a></li>
+  <li><a href="https://github.com/acdh-oeaw/arche-docker#with-data-directories-in-docker-named-volumes">storing data in a named Docker volume</a></li>
+  <li><a href="https://github.com/acdh-oeaw/arche-docker#with-data-directories-mounted-from-host">storing logs in a host directory</a> so we can access them easily</li>
+</ul>
+
+<p>Let’s go:</p>
+
+<ul>
+  <li>As we will set up the repository locally we need to fake that the <code class="language-plaintext highlighter-rouge">my.domain</code> points to our own machine.
+This can be done by adding a line to the <code class="language-plaintext highlighter-rouge">/etc/hosts</code>:
+(you need admin rights for that, by the way this file exists also under Windows - google it):
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.0.1 my.domain
+</code></pre></div>    </div>
+  </li>
+  <li>Clone a “vanilla” version of the configuration repository.<br />
+This will allow us to adjust the configuration in a persistent way.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone <span class="nt">--depth</span> 1 <span class="nt">--branch</span> master https://github.com/acdh-oeaw/arche-docker-config.git
+</code></pre></div>    </div>
+  </li>
+  <li>Adjust the configuration
+    <ul>
+      <li>Create the instance-specific settings
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cp </span>arche-docker-config/yaml/local.yaml.sample arche-docker-config/yaml/local.yaml
+</code></pre></div>        </div>
+        <p>and edit it so it looks as follows:</p>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">rest</span><span class="pi">:</span>
+  <span class="na">urlBase</span><span class="pi">:</span> <span class="s">http://my.domain</span>
+  <span class="na">pathBase</span><span class="pi">:</span> <span class="s">/api/</span>
+</code></pre></div>        </div>
+      </li>
+      <li>Turn off internal Postgresql instance within the arche-core Docker container
+(we assumed we will use an external database):
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm arche-docker-config/supervisord.conf.d/postgresql.conf
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Make a local directory for logs:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>log
+</code></pre></div>    </div>
+  </li>
+  <li>Prepare a <a href="https://docs.docker.com/compose/">Docker compose</a> config for our setup in the <code class="language-plaintext highlighter-rouge">docker-compose.yaml</code>:
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">services</span><span class="pi">:</span>
+  <span class="c1"># container for "external" Postgresql database</span>
+  <span class="na">postgresql</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">postgis/postgis:15-master</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">postgresql:/var/lib/postgresql/data</span>
+    <span class="na">networks</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">backend</span>
+    <span class="na">environment</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s2">"</span><span class="s">POSTGRES_PASSWORD=${MYREPO_DB_PSWD}"</span>
+  <span class="c1"># container for the arche-core</span>
+  <span class="na">arche-core</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">acdhch/arche</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">data:/home/www-data/data</span>
+    <span class="pi">-</span> <span class="s">./arche-docker-config:/home/www-data/config</span>
+    <span class="pi">-</span> <span class="s">./log:/home/www-data/log</span>
+    <span class="na">environment</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">PG_HOST=postgresql</span>
+    <span class="pi">-</span> <span class="s">PG_USER=postgres</span>
+    <span class="pi">-</span> <span class="s2">"</span><span class="s">PG_PSWD=${MYREPO_DB_PSWD}"</span>
+    <span class="pi">-</span> <span class="s">PG_DBNAME=arche</span>
+    <span class="pi">-</span> <span class="s2">"</span><span class="s">USER_UID=${USER_UID}"</span>
+    <span class="pi">-</span> <span class="s2">"</span><span class="s">USER_GID=${USER_GID}"</span>
+    <span class="pi">-</span> <span class="s2">"</span><span class="s">ADMIN_PSWD=${ADMIN_PSWD}"</span>
+    <span class="na">ports</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s2">"</span><span class="s">80:80"</span>
+    <span class="na">networks</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">backend</span>
+    <span class="pi">-</span> <span class="s">bridge</span>
+    <span class="na">depends_on</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">postgresql</span>
+<span class="na">networks</span><span class="pi">:</span>
+  <span class="na">backend</span><span class="pi">:</span>
+    <span class="na">driver</span><span class="pi">:</span> <span class="s">bridge</span>
+  <span class="na">bridge</span><span class="pi">:</span>
+<span class="na">volumes</span><span class="pi">:</span>
+  <span class="na">postgresql</span><span class="pi">:</span>
+  <span class="na">data</span><span class="pi">:</span>
+</code></pre></div>    </div>
+    <p>and an <code class="language-plaintext highlighter-rouge">.env</code> file containing private environment variables:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MYREPO_DB_PSWD=strongPassword
+USER_UID=number reported by running id -u
+USER_GID=number reported by running id -g
+</code></pre></div>    </div>
+  </li>
+  <li>Start everything up:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker compose up
+</code></pre></div>    </div>
+  </li>
+  <li>Check if everything works by making a GET request to the http://my.domain/api/describe, e.g.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-i</span> http://my.domain/api/describe
+</code></pre></div>    </div>
+    <p>you should get a YAML file describing the repository instance configuration which might be
+relevant from the client perspective.</p>
+  </li>
+</ul>
+
+<p>Congratulations, at that point we have the repository backbone up and running.</p>
+
+<h3 id="troubleshooting">Troubleshooting</h3>
+
+<p>If something did not work, you can inspect:</p>
+
+<ul>
+  <li>Logs displayed in the terminal in which you run the <code class="language-plaintext highlighter-rouge">docker compose up</code> command.</li>
+  <li>ARCHE Suite logs located in the <code class="language-plaintext highlighter-rouge">log</code> directory,
+especially the <code class="language-plaintext highlighter-rouge">error.log</code>, <code class="language-plaintext highlighter-rouge">rest.log</code> and ‘initScripts.log`.</li>
+</ul>
+
+<h3 id="deciding-on-metadata-schema">Deciding on metadata schema</h3>
 
 <h3 id="ingesting-some-data">Ingesting some data</h3>
 
