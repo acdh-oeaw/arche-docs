@@ -21,7 +21,7 @@
 {"description":"Documentation for the ARCHE repository software stack","url":"/arche-docs/aux/firstSteps.html","@type":"WebPage","headline":"First steps","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=61e0f91a67ee93937f92b0b8544691f3307b383b">
+    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=5b33a4a69f72b64e9d529d923841a15914f6aeb3">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -154,14 +154,26 @@ Run:
     n1:isPartOf &lt;https://id.acdh.oeaw.ac.at/traveldigital&gt;.
 '</span> <span class="o">&gt;</span> collection.ttl
 </code></pre></div>        </div>
-        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   * Ingest the metadata into the repository with:  ```bash  composer require acdh-oeaw/arche-ingest  ~/vendor/bin/arche-import-metadata collection.ttl http://127.0.0.1/api admin myAdminPassword  ```
-</code></pre></div>        </div>
       </li>
-      <li>note down the URLs of created resources reported in the log, e.g.:
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    created http://127.0.0.1/api/11305 <span class="o">(</span>1/2<span class="o">)</span>
-    created http://127.0.0.1/api/11306 <span class="o">(</span>2/2<span class="o">)</span>
+      <li>Ingest the metadata into the repository with:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer require acdh-oeaw/arche-ingest
+~/vendor/bin/arche-import-metadata collection.ttl http://127.0.0.1/api admin myAdminPassword
 </code></pre></div>        </div>
-        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  * Download and ingest the TEI-XML resource binary:  ```  mkdir sampledata  curl https://arche.acdh.oeaw.ac.at/api/29688 &gt; sampledata/Baedeker-Mittelmeer_1909.xml  ~/vendor/bin/arche-import-binary \   sampledata \   https://id.acdh.oeaw.ac.at/traveldigital/Corpus \   http://127.0.0.1/api admin myAdminPassword  ```
+        <ul>
+          <li>note down the URLs of created resources reported in the log, e.g.:
+            <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    created http://127.0.0.1/api/11305 <span class="o">(</span>1/2<span class="o">)</span>
+    created http://127.0.0.1/api/11306 <span class="o">(</span>2/2<span class="o">)</span>
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li>Download and ingest the TEI-XML resource binary:
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir sampledata
+curl https://arche.acdh.oeaw.ac.at/api/29688 &gt; sampledata/Baedeker-Mittelmeer_1909.xml
+~/vendor/bin/arche-import-binary \
+    sampledata \
+    https://id.acdh.oeaw.ac.at/traveldigital/Corpus \
+    http://127.0.0.1/api admin myAdminPassword
 </code></pre></div>        </div>
       </li>
     </ul>

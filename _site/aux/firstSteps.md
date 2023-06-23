@@ -104,25 +104,25 @@ It creates a fully-fledged setup with some optional services and also ingests so
          n1:isPartOf <https://id.acdh.oeaw.ac.at/traveldigital>.
      ' > collection.ttl
      ```
-  * Ingest the metadata into the repository with:
-    ```bash
-    composer require acdh-oeaw/arche-ingest
-    ~/vendor/bin/arche-import-metadata collection.ttl http://127.0.0.1/api admin myAdminPassword
-    ```
-    * note down the URLs of created resources reported in the log, e.g.:
-      ```bash
-          created http://127.0.0.1/api/11305 (1/2)
-          created http://127.0.0.1/api/11306 (2/2)
-      ```
-  * Download and ingest the TEI-XML resource binary:
-    ```
-    mkdir sampledata
-    curl https://arche.acdh.oeaw.ac.at/api/29688 > sampledata/Baedeker-Mittelmeer_1909.xml
-    ~/vendor/bin/arche-import-binary \
-        sampledata \
-        https://id.acdh.oeaw.ac.at/traveldigital/Corpus \
-        http://127.0.0.1/api admin myAdminPassword
-    ```
+   * Ingest the metadata into the repository with:
+     ```bash
+     composer require acdh-oeaw/arche-ingest
+     ~/vendor/bin/arche-import-metadata collection.ttl http://127.0.0.1/api admin myAdminPassword
+     ```
+     * note down the URLs of created resources reported in the log, e.g.:
+       ```bash
+           created http://127.0.0.1/api/11305 (1/2)
+           created http://127.0.0.1/api/11306 (2/2)
+       ```
+   * Download and ingest the TEI-XML resource binary:
+     ```
+     mkdir sampledata
+     curl https://arche.acdh.oeaw.ac.at/api/29688 > sampledata/Baedeker-Mittelmeer_1909.xml
+     ~/vendor/bin/arche-import-binary \
+         sampledata \
+         https://id.acdh.oeaw.ac.at/traveldigital/Corpus \
+         http://127.0.0.1/api admin myAdminPassword
+     ```
 
 At this point we have a repository with some data in it.  
 We can check it out in a few ways:
