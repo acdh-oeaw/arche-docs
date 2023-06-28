@@ -248,6 +248,7 @@ Let's go:
   and an `.env` file containing private environment variables:
   ```
   MYREPO_DB_PSWD=strongPassword
+  ADMIN_PSWD=anotherStrongPassword
   USER_UID=number reported by running id -u
   USER_GID=number reported by running id -g
   ```
@@ -275,18 +276,96 @@ If something did not work, you can inspect:
 
 ### Deciding on metadata schema
 
+ARCHE Suite itself does not enforce any metadata schema.
+You can use whichever you want.
+
+Still, some ARCHE components define concepts which have to mapped to RDF properties to make everything work, e.g.
+
+* arche-core requires you to assign an RDF property storing repository resource identifiers and a label(s)
+* arche-resolver requires you to assign various RDF properties describing dissemination services behavior
+  (see [here](https://acdh-oeaw.github.io/arche-docs/aux/dissemination_services.html))
+* etc.
+
+Here and know let's create a mapping for the arche-core only assuming we want to use Dublin Core 
+wherever suitable and artificial predicates for everything else
+(especially for the [technical predicates used by the API](https://acdh-oeaw.github.io/arche-docs/aux/search_api_for_programmers.html#technical-rdf-properties-provided-by-the-search).
+
+To do that please modify the top part of the `schema` section of the `arche-docker-config/yaml/schema.yaml` so it looks as follows:
+
+```yaml
+schema:
+    id: http://purl.org/dc/terms/identifier 
+    parent: http://purl.org/dc/terms/isPartOf
+    label: http://purl.org/dc/terms/title
+    delete: delete://delete
+    searchMatch: search://match
+    searchOrder: search://order
+    searchOrderValue: search://orderValue
+    searchFts: search://fts
+    searchCount: search://count
+    binarySize: http://purl.org/dc/terms/extent
+    fileName: file://name
+    mime: http://purl.org/dc/terms/format
+    hash: file://hash
+    modificationDate: http://purl.org/dc/terms/modified
+    modificationUser: http://purl.org/dc/terms/contributor
+    binaryModificationDate: file://modified
+    binaryModificationUser: file://modifiedUser
+    creationDate: http://purl.org/dc/terms/created
+    creationUser: http://purl.org/dc/terms/creator
+```
 
 ### Ingesting some data
 
+Let's ingest one metadata-only resource and a TEI-XML file as its child.
 
-### Adding a dissemination service
+* Create a 'sampleData` folder and the `sampleData/metadata.tll` in it containing:
+  ```
+  @prefix dc: <http://purl.org/dc/terms/>.
+  <http://id.namespace/collection1> dc:title "Sample collection"@en .
+  <http://id.namespace/Baedeker-Mittelmeer_1909.xml> dc:title "Sample TEI-XML"@en ;
+      dc:isPartOf <http://id.namespace/collection1> .
+  ```
+* Run a dedicated temporary docker container which we will use for the ingestion
+  (it will have the `sampleData` directory availble under `/data`):
+  ```bash
+  docker run --rm -ti --network host -v ./sampleData:/data php:8.1 bash
+  ```
+  and install software required for the ingestion:
+  ```bash
+  curl -L https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions > /usr/local/bin/install-php-extensions &&\
+  chmod +x /usr/local/bin/install-php-extensions &&\
+  install-php-extensions @composer &&\
+  composer require acdh-oeaw/arche-ingest
+  ```
+* Ingest the metadata file with:
+  ```bash
+  vendor/bin/arche-import-metadata /data/metadata.ttl http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file
+  ```
+  * note down the URLs of created resources reported in the log, e.g.:
+    ```bash
+        created http://127.0.0.1/api/1 (2/2)
+        created http://127.0.0.1/api/2 (1/2)
+    ```
+* Download and ingest the TEI-XML resource binary:
+  ```bash
+  curl https://arche.acdh.oeaw.ac.at/api/29688 > /data/Baedeker-Mittelmeer_1909.xml
+  vendor/bin/arche-import-binary \
+    /data \
+    http://id.namespace \
+    http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file \
+    --skip not_exist
+  ```
+
 
 
 ### Setting up basic OAI-PMH
 
 
-### Plugging in a doorkeeper
+### Plugging in checks on the data ingestion
 
+
+### Adding PIDs resolver and a dissemination service
 
 ## Further considerations
 
