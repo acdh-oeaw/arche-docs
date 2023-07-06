@@ -67,7 +67,7 @@ It creates a fully-fledged setup with some optional services and also ingests so
    2023-06-22 08:44:37,496 INFO success: tika entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
    2023-06-22 08:44:37,496 INFO success: txDaemon entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
    ```
-   Now hit `CRTL+C`.  
+   Now hit `CRTL+c`.  
    At this point the repository is up and running.
 3. Wait until initial data is imported.  
    Run:
@@ -248,6 +248,7 @@ Let's go:
   and an `.env` file containing private environment variables:
   ```
   MYREPO_DB_PSWD=strongPassword
+  ADMIN_PSWD=anotherStrongPassword
   USER_UID=number reported by running id -u
   USER_GID=number reported by running id -g
   ```
@@ -275,19 +276,656 @@ If something did not work, you can inspect:
 
 ### Deciding on metadata schema
 
+ARCHE Suite itself does not enforce any metadata schema.
+You can use whichever you want.
+
+Still, some ARCHE components define concepts which have to mapped to RDF properties to make everything work, e.g.
+
+* arche-core requires you to assign an RDF property storing repository resource identifiers and a label(s)
+* arche-resolver requires you to assign various RDF properties describing dissemination services behavior
+  (see [here](https://acdh-oeaw.github.io/arche-docs/aux/dissemination_services.html))
+* etc.
+
+Here and know let's create a mapping for the arche-core only assuming we want to use Dublin Core 
+wherever suitable and artificial predicates for everything else
+(especially for the [technical predicates used by the API](https://acdh-oeaw.github.io/arche-docs/aux/search_api_for_programmers.html#technical-rdf-properties-provided-by-the-search).
+
+To do that please modify the top part of the `schema` section of the `arche-docker-config/yaml/schema.yaml` so it looks as follows:
+
+```yaml
+schema:
+    id: http://purl.org/dc/terms/identifier 
+    parent: http://purl.org/dc/terms/isPartOf
+    label: http://purl.org/dc/terms/title
+    delete: delete://delete
+    searchMatch: search://match
+    searchOrder: search://order
+    searchOrderValue: search://orderValue
+    searchFts: search://fts
+    searchCount: search://count
+    binarySize: http://purl.org/dc/terms/extent
+    fileName: file://name
+    mime: http://purl.org/dc/terms/format
+    hash: file://hash
+    modificationDate: http://purl.org/dc/terms/modified
+    modificationUser: http://purl.org/dc/terms/contributor
+    binaryModificationDate: file://modified
+    binaryModificationUser: file://modifiedUser
+    creationDate: http://purl.org/dc/terms/created
+    creationUser: http://purl.org/dc/terms/creator
+```
+
+and then restart the arche-core by hitting `CTRL+c` on the console where you run `docker compose up`
+and running `docker compose up` again.
 
 ### Ingesting some data
 
+Let's ingest one metadata-only resource and a TEI-XML file as its child.
 
-### Adding a dissemination service
+* Create a 'sampleData` folder and the `sampleData/metadata.ttl` in it containing:
+  ```
+  @prefix dc: <http://purl.org/dc/terms/>.
+  <http://id.namespace/collection1> dc:title "Sample collection"@en .
+  <http://id.namespace/Baedeker-Mittelmeer_1909.xml> dc:title "Sample TEI-XML"@en ;
+      dc:isPartOf <http://id.namespace/collection1> .
+  ```
+* Run a dedicated temporary docker container which we will use for the ingestion
+  (it will have the `sampleData` directory availble under `/data`):
+  ```bash
+  docker run --rm -ti --network host -v ./sampleData:/data php:8.1 bash
+  ```
+  and install software required for the ingestion:
+  ```bash
+  curl -L https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions > /usr/local/bin/install-php-extensions &&\
+  chmod +x /usr/local/bin/install-php-extensions &&\
+  install-php-extensions @composer &&\
+  composer require acdh-oeaw/arche-ingest
+  ```
+* Ingest the metadata file with:
+  ```bash
+  vendor/bin/arche-import-metadata /data/metadata.ttl http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file
+  ```
+  * note down the URLs of created resources reported in the log, e.g.:
+    ```bash
+        created http://my.domain/api/1 (1/2)
+        created http://my.domain/api/2 (2/2)
+    ```
+* Download and ingest the TEI-XML resource binary:
+  ```bash
+  curl https://arche.acdh.oeaw.ac.at/api/29688 > /data/Baedeker-Mittelmeer_1909.xml
+  vendor/bin/arche-import-binary \
+    /data \
+    http://id.namespace \
+    http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file \
+    --skip not_exist
+  ```
+  * note the URL of the updated resource reported in the log, e.g.:
+    ```bash
+    Processing /data/Baedeker-Mittelmeer_1909.xml (1/2 50%): update + upload  http://my.domain/api/2
+    ```
+* Leave the ingestion container with
+  ```bash
+  exit
+  ```
+
+Now we have some rudimentary data and we can check if our metadata schema has been picked up.
+
+Fetch the metadata of the TEI-XML binary.  
+It is http://my.domain/api/2 in my case but check your ingestion logs for yours.
+```bash
+curl -u 'admin:ADMIN_PSWD_as_set_in_.env_file' 'http://my.domain/api/2/metadata?readMode=resource'
+```
+which in my case resulted in:
+```
+@prefix n0: <http://my.domain/api/>.
+@prefix n1: <file://>.
+@prefix n2: <http://purl.org/dc/terms/>.
+@prefix n3: <http://id.namespace/>.
+@prefix n4: <https://vocabs.acdh.oeaw.ac.at/schema#>.
+
+<http://my.domain/api/2> n1:modified "2023-07-06T11:56:53.559750"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    n2:title "Sample TEI-XML"@en;
+    n2:creator "admin";
+    n2:isPartOf <http://my.domain/api/1>;
+    n2:identifier <http://id.namespace/Baedeker-Mittelmeer_1909.xml>;
+    n2:extent "32380001"^^<http://www.w3.org/2001/XMLSchema#integer>;
+    n2:identifier <http://my.domain/api/2>;
+    n2:modified "2023-07-06T11:56:53.659461"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    n4:aclRead "admin";
+    n1:modifiedUser "admin";
+    n1:hash "sha1:ad8a457099d70990f6d936182f0e3b2c35a19ad6";
+    n2:contributor "admin";
+    n4:aclWrite "admin";
+    n1:name "Baedeker-Mittelmeer_1909.xml";
+    n2:format "application/xml";
+    n2:created "2023-07-06T11:56:30.757867"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+```  
+
+We can see that:
+
+* The `dc:title`, `dc:identifier` and `dc:isPartOf`
+  look exactly like we set them up in the `sampleData/metadata.ttl`.
+* Quite many other metadata properties have been assigned automatically, e.g.
+  * `dc:creator "admin"` because we used the `admin` account for the ingestion
+  * `dc:extent "32380001"^^<http://www.w3.org/2001/XMLSchema#integer>`
+    and `<file://hash> "sha1:ad8a457099d70990f6d936182f0e3b2c35a19ad6"`
+    because the arche-core computed them while storing the uploaded file
+  * `<file://name> "Baedeker-Mittelmeer_1909.xml"` because the upload script
+    provided this information while uploading the file
+  * etc.
+* We can also see some access control-related properties like
+  `<https://vocabs.acdh.oeaw.ac.at/schema#aclWrite "admin"`
+  but this is discussed in the next chapter.
 
 
-### Setting up basic OAI-PMH
+You can also try:
+
+* Fetching metadata of a given resource and all repository resources it points to in a single REST API call:
+  ```bash
+  curl -u 'admin:ADMIN_PSWD_as_set_in_.env_file' 'http://my.domain/api/2/metadata?readMode=neighbors'
+  ```
+* Fetching the resource binary:
+  ```
+  curl -u 'admin:ADMIN_PSWD_as_set_in_.env_file' 'http://my.domain/api/2'
+  ```
+* Checking that without providing the username and the password, you are denied access
+  ```
+  curl -i http://my.domain/api/2
+  ```
+
+### Acess control
+
+Access control is based on *roles* which are generalization of the *user* and *group* concepts.
+
+* During the arche-core initialization an `admin` *role* is created.
+* There is also a `public` role which is used to indicate unauthenticated users.
+
+You can create and modify users using the `{repo base URL}/user` REST API endpoint
+(see [swagger API documentation](https://app.swaggerhub.com/apis/zozlak/arche) for details), e.g.
+
+* List existing roles with (the output is in JSON):
+  ```bash
+  curl -u 'admin:ADMIN_PSWD_as_set_in_.env_file' 'http://my.domain/api/user'
+  ```
+* Add a new role `bob` belonging to the `creators` role:
+  ```bash
+  curl -i -u 'admin:anotherStrongPassword' 'http://my.domain/api/user/bob' \
+    -X PUT \
+    -H 'Content-Type: application/json' \
+    --data-binary '{"groups": ["creators"], "password": "randomPassword"}'
+  ```
+
+The access control settings are stored in the `accessControl` section of the `arche-docker-config/yaml/repo.yaml` file.
+
+In our case it should look more or less as follows:
+
+```yaml
+accessControl:
+    publicRole: public
+    adminRoles:
+        - admin
+    create:
+        # who can create new resources
+        allowedRoles:
+            - creators
+        # rights assigned to the creator uppon resource creation
+        creatorRights:
+            - read
+            - write
+        # rights assigned to other roles upon resource creation
+        assignRoles:
+            read: []
+    defaultAction:
+        read: deny
+        write: deny
+    enforceOnMetadata: true
+    schema:
+        read: https://vocabs.acdh.oeaw.ac.at/schema#aclRead
+        write: https://vocabs.acdh.oeaw.ac.at/schema#aclWrite
+    db:
+        connStr: 'pgsql: user={PG_USER_PREFIX}repo dbname={PG_DBNAME} host={PG_HOST} port={PG_PORT}'
+        table: users
+        userCol: user_id
+        dataCol: data
+    authMethods:
+        - class: \zozlak\auth\authMethod\TrustedHeader
+          parameters:
+            - HTTP_EPPN
+        - class: \zozlak\auth\authMethod\HttpBasic
+          parameters:
+             - repo
+        - class: \zozlak\auth\authMethod\Guest
+          parameters:
+             - public
+```
+
+Let's analyze it step-by-step:
+
+* `publicRole: public` - defines the name of the role used to indicate unauthorized user
+* ```yaml
+   adminRoles:
+       - admin
+  ```
+  defines the list of admin roles.
+  Admin rights are needed to create new roles.
+  Also, having the admin rights allows to freely create, read, modify and delete repository resources.
+* ```yaml
+   create:
+        allowedRoles:
+            - creators
+        creatorRights:
+            - read 
+            - write
+        assignRoles:
+            read: []
+  ```
+  defines who can create new repository resources 
+  and what are the default access rights being set on newly created resources.
+  Here:
+  * only *roles* belonging to the *creators* role (and, obviously, admins) can create new resources
+  * the creator is automatically assigned *read* and *write* rights on a created resource
+    (which is a sane default but e.g. dropping `write` from this list would enforce
+    creation of immutable repository resources, at least until you are and admin)
+  * no other roles are assigned rights on a newly create resource
+    * if you would like a newly created resource to be read-only by everyone you could use
+      ```yaml
+      assignRoles:
+            read: [public]
+      ```
+* ```yaml
+  defaultAction:
+        read: deny
+        write: deny
+  ```
+  determines what to use if no access control rule has been matched.
+  In this case the access is denied.
+  You can e.g. consider setting `write: allow`.
+* `enforceOnMetadata: true` enforces the **read** access rights
+  to be applied also to metadata (the write access rights are always applied
+  both to the metadata and resource binary content).
+* The `schema` section defines RDF properties used to store 
+  access control information in the metadata.
+  You can choose them however you want, just do the adjustment before 
+  you start ingesting resources into the repository.
+* The `db` section contains internal config we will not dig into.
+* The `auth` section contains configuration of the [zozlak/auth](https://github.com/zozlak/auth)
+  authentication framework. In this case:
+  * First we check for the presence of the `EPPN` HTTP header
+    and if it exists, we take the *role* name from the header value.
+    This is quite a common integration scenario for the single sign-on
+    authorization methods like the Shibboleth Apache module.
+  * Then a standard username & password based authentication is used.
+  * If both failed, a fixed role `public` is assumed.
+
+Now let's try to use the `bob` role we created in the examples at the beginning of the chapter
+to allow public read rights on the TEI-XML resource (http://my.domain/api/2 in my case).
+
+First, we need to allow `bob` to modify the resouces which is currently possible only for the `admin` role
+(and all roles with admin priviledges).
+This can be done
+
+* By adding `bob` to the `accessControl.adminRoles` list in the arche-docker-config/yaml/repo.yaml
+  and restarting the repository's Docker container. But we will not use it as we do not want `bob`
+  to become an admin.
+* Or by granting `bob` writes to modify the resource.
+  Presicely by adding the `accessControl.schema.write "bob"` triple
+  (in our case `<https://vocabs.acdh.oeaw.ac.at/schema#aclWrite> "bob"`) to resource's metadata.
+  This is the solution we prefer.
+
+For that let's create a `sampleData/acl1.ttl` file:
+```
+<http://id.namespace/Baedeker-Mittelmeer_1909.xml> <https://vocabs.acdh.oeaw.ac.at/schema#aclWrite> "bob", "admin" .
+<http://id.namespace/Baedeker-Mittelmeer_1909.xml> <https://vocabs.acdh.oeaw.ac.at/schema#aclRead> "bob", "admin" .
+```
+
+After ingesting it `bob` should be able to grant public read writes by importing a `sampleData/acl2.ttl`:
+```
+<http://id.namespace/Baedeker-Mittelmeer_1909.xml> <https://vocabs.acdh.oeaw.ac.at/schema#aclRead> "public" .
+```
+
+Let's ingest both metadata files the same way we did before:
+
+* Run a dedicated temporary docker container which we will use for the ingestion
+  (it will have the `sampleData` directory availble under `/data`):
+  ```bash
+  docker run --rm -ti --network host -v ./sampleData:/data php:8.1 bash
+  ```
+  and install software required for the ingestion:
+  ```bash
+  curl -L https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions > /usr/local/bin/install-php-extensions &&\
+  chmod +x /usr/local/bin/install-php-extensions &&\
+  install-php-extensions @composer &&\
+  composer require acdh-oeaw/arche-ingest
+  ```
+* Try to ingest the `acl1.ttl` as the `bob` user:
+  ```bash
+  vendor/bin/arche-import-metadata /data/acl1.ttl http://my.domain/api bob randomPassword
+  ```
+  and note it failed to perform the update
+  ```bash
+  (...)
+  Ingested resources count: 0 errors count: 0
+  ```
+* No try again as `admin`
+  ```bash
+  vendor/bin/arche-import-metadata /data/acl1.ttl http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file
+  ```
+  which should succeed
+  ```bash
+  (...)
+  Importing http://id.namespace/Baedeker-Mittelmeer_1909.xml (1/1)
+      updating http://my.domain/api/2 (1/1)
+  Ingested resources count: 1 errors count: 0
+  ```
+* At this point bob should have rights to perform the update
+  ```bash
+  vendor/bin/arche-import-metadata /data/acl2.ttl http://my.domain/api bob randomPassword
+  ```
+* Leave the ingestion container
+  ```bash
+  exit
+  ```
+* And we should be able to read the resource without any authentication:
+  ```bash
+  curl -i 'http://my.domain/api/2/metadata?readMode=resource'
+  curl 'http://my.domain/api/2'
+  ```
+
+### Setting up a basic OAI-PMH
+
+Now let's try to add an [OAI-PMH](https://www.openarchives.org/pmh/)
+service to our repository to make it harvestable by external aggregators.
+
+We can deploy it either in the same docker container as the arche-core or in a separate one.
+In this example we will use the first approach.
+
+* Add `acdh-oeaw/arche-oaipmh` to the packages list in `arche-docker-config/composer.json`:
+  ```json
+  {
+    "require": {
+      "acdh-oeaw/arche-core": "^3",
+      "zozlak/yaml-merge": "^1",
+      "acdh-oeaw/arche-oaipmh": "^4.2"
+    }
+  }
+  ```
+  This will make the [arche-oaipmh](https://github.com/acdh-oeaw/arche-oaipmh) being installed
+  on the Docker container startup.
+* Create and **make executable** the `arche-docker-config/run.d/oaipmh.sh` file
+  initializing the OAI-PMH service under the `{repoBaseUrl}/oaipmh` path:
+  ```bash
+  #!/bin/bash
+  if [ ! -d /home/www-data/docroot/oaipmh ]; then
+      su -l www-data -c 'mkdir /home/www-data/docroot/oaipmh'
+      su -l www-data -c 'ln -s /home/www-data/vendor /home/www-data/docroot/oaipmh/vendor'
+  fi
+  su -l www-data -c 'cp /home/www-data/vendor/acdh-oeaw/arche-oaipmh/.htaccess /home/www-data/docroot/oaipmh/.htaccess'
+  su -l www-data -c 'cp /home/www-data/vendor/acdh-oeaw/arche-oaipmh/index.php /home/www-data/docroot/oaipmh/index.php'
+
+  CMD=/home/www-data/vendor/zozlak/yaml-merge/bin/yaml-edit.php
+  CFGD=/home/www-data/config/yaml
+  rm -f /home/www-data/docroot/oaipmh/config.yaml $CFGD/config-oaipmh.yaml
+  su -l www-data -c "$CMD --src $CFGD/oaipmh.yaml --src $CFGD/local.yaml $CFGD/config-oaipmh.yaml"
+  su -l www-data -c "ln -s $CFGD/config-oaipmh.yaml /home/www-data/docroot/oaipmh/config.yaml"
+  ```
+* Create a minimal OAI-PMH service configuration file `arche-docker-config/yaml/oaipmh.yaml`:
+  ```yaml
+  oai:
+    info:
+        repositoryName: my repository
+        baseURL: http://my.domain/oaipmh/
+        earliestDatestamp: "1900-01-01T00:00:00Z"
+        adminEmail: admin@my.domain
+        granularity: YYYY-MM-DDThh:mm:ssZ
+    # the guest user is created during the arche-core initialization and we can reuse it
+    dbConnStr: "pgsql: user=guest dbname=postgres host=postgresql"
+    cacheDir: ""
+    logging:
+        file: /home/www-data/log/oaipmh.log
+        level: info
+    deleted:
+        deletedClass: \acdhOeaw\arche\oaipmh\deleted\Tombstone
+        deletedRecord: transient
+    search:
+        searchClass: \acdhOeaw\arche\oaipmh\search\BaseSearch
+        dateProp: http://purl.org/dc/terms/modified
+        idNmsp: http://my.domain
+        id: http://purl.org/dc/terms/identifier
+        searchMatch: search://match
+        searchCount: search://count
+        repoBaseUrl: http://my.domain/api/
+        resumptionTimeout: 120
+        resumptionDir: "tmp"
+        resumptionKeepAlive: 600
+    sets:
+        setClass: \acdhOeaw\arche\oaipmh\set\NoSets
+    formats:
+        oai_dc:
+            metadataPrefix: oai_dc
+            schema: http://www.openarchives.org/OAI/2.0/oai_dc.xsd
+            metadataNamespace: http://www.openarchives.org/OAI/2.0/oai_dc/
+            class: \acdhOeaw\arche\oaipmh\metadata\DcMetadata
+  ```
+  For more details please look at the [sample config](https://github.com/acdh-oeaw/arche-oaipmh/blob/master/config-sample.yaml)
+  provided in the arche-oaimph git repository and at the 
+  [metadata format classes documentation](https://acdh-oeaw.github.io/arche-docs/devdocs/namespaces/acdhoeaw-arche-oaipmh-metadata.html).
+* Restart the arche-core by hitting `CTRL+c` on the console where you run `docker compose up`
+  and running `docker compose up` again.
+
+We should have the OAI-PMH service with a very basic configuration running now.
+You can try:
+
+* http://my.domain/oaipmh/?verb=Identify
+* http://my.domain/oaipmh/?verb=ListMetadataFormats
+* http://my.domain/oaipmh/?verb=ListIdentifiers
+* http://my.domain/oaipmh/?verb=ListRecords&metadataPrefix=oai_dc
+
+As we internally store metadata in the Dublin Core schema, it was possible to use the very simple
+metadata format class `\acdhOeaw\arche\oaipmh\metadata\DcMetadata` which does not require any
+additional config.
+In real-world scenarios you will almost for sure need to prepare templates using the
+`\acdhOeaw\arche\oaipmh\metadata\LiveCmdiMetadata` class which will map your internal
+metadata schema into the schema you want to provide to an external aggregator.
+Please read [this documentation](https://acdh-oeaw.github.io/arche-docs/devdocs/classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html)
+and [template examples used at the ACDH-CH](https://github.com/acdh-oeaw/arche-docker-config/tree/arche/oaipmhTemplates).
+
+### Plugging in checks on the data ingestion
+
+Now an advanced topic - plugging your own logic into the arche-core.
+
+This is possible in two ways:
+
+* By embedding a PHP handlers like we do at the ACDH-CH
+  (e.g. [our handlers code](https://github.com/acdh-oeaw/arche-doorkeeper/blob/master/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php)
+  and [configuration](https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/doorkeeper.yaml#L24)
+  plugging them into the arche-core)
+* By setting up a handlers service written in any language of your choice
+  and consuming messages from an AMQP broker
+  (e.g. from the [RabbitMQ](https://www.rabbitmq.com/)).
+  * In this case the message passed to the handler is a JSON object with following properties:
+    * `method` - TODO
+    * `path` - TODO
+    * `URI` - full resource URI, e.g. http://my.domain/api/2 
+    * `id` - numeric internal id of the resource, e.g. `2`
+    * `metadata` - RDF metadata of the resources in the application/n-triples format
+  * the handler is expected to respond with a message containing a JSON object:
+    * either with the `metadata` property containing RDF metadata of the resource
+      (optionally modified by the handler) in the application/n-triples format
+    * or with `errorCode` and `errorMessage` properties indicating a verification
+      error (first containing the desired HTTP response status code
+      to be set, e.g. `400` to indicate that the error was caused by wrong data
+      provided by the user and latter an error message understendable for the user)
+
+By the way it is possible to mix both methods.
+
+Here we will take the second approach and implement a simple metadata consistency check handler in Python.
+
+* Let's start with adding a [RabbitMQ](https://www.rabbitmq.com/) broker service to our
+  Docker containers stack.
+  It will pass messages between the arche-core and our handlers service.
+  * Extend the `services` section of the `docker-compose.yaml` with:
+    ```
+    services:
+      rabbitmq:
+        image: rabbitmq
+        networks:
+        - backend
+    ```
+* We also need an execution enviromnent for our Python handlers service.
+  This makes another Docker container.
+  * Extend the `services` section of the `docker-compose.yaml` with:
+    ```
+    services:
+      handlers:
+        image: python:3.11
+        networks:
+        - backend
+        volumes:
+        - ./handlers:/opt
+        entrypoint: /opt/start.sh
+    ```
+* Now let's create the starup script for our handlers Docker container.
+  It will install required Python libraries and then start our handlers
+  service.  
+  * Create the `handlers` directory
+  * Create and **make executable** `handlers/start.sh`:
+    ```bash
+    #!/bin/bash
+    pip install pika
+    pip install rdflib
+    # give rabbitmq some time to start
+    sleep 10
+    python3 /opt/handlers.py
+    ```
+* Create a simple handler code.  
+  It will check if the `dc:license` triple is defined in the resource metadata.  
+  On top of it we need a little boilerplate code to couple it with the AMQP broker.  
+  Edit `handlers/handlers.py` so it contains:
+  ```python3
+  import pika
+  import json
+  from rdflib import Graph, URIRef
+
+  # this is our handler
+  def checkMeta(channel, deliver, msgProperties, body):
+    message = json.loads(body.decode('utf-8'))
+    g = Graph()
+    g.parse(data=message['metadata'])
+    # if http://purl.org/dc/terms/license is not provided
+    # return an empty graph and set an error message
+    if (None, URIRef('http://purl.org/dc/terms/license'), None) not in g:
+      retMsg = {
+        'errorCode': 400,
+        'errorMessage': 'dc:license triple is missing'
+      }
+    else:
+      retMsg = {
+        'metadata': g.serialize(format='nt')
+      }
+    channel.basic_publish(
+      exchange=deliver.exchange, 
+      routing_key=msgProperties.reply_to,
+      body=json.dumps(retMsg),
+      properties=msgProperties
+    )
+
+  # boilerplate code coupling our handler with the AMQP broker
+  connCfg = pika.ConnectionParameters(host='rabbitmq')
+  connection = pika.BlockingConnection(connCfg)
+  channel = connection.channel()
+  channel.basic_qos(0, 1, False)
+  # create the 'onModify' queue
+  channel.queue_declare(queue='onModify')
+  # set up a handler function
+  channel.basic_consume(
+    queue='onModify', 
+    on_message_callback=checkMeta,
+    auto_ack=True
+  )
+  channel.start_consuming()
+  ```
+* Tell the arche-core to use AMQP handlers.
+  Edit the `rest.handlers` section of the `arche-docker-config/yaml/repo.yaml`:
+  ```yaml
+  handlers:
+    rabbitMq:
+      host: rabbitmq
+      port: 5672
+      user: guest # default settings of the rabbitmq docker image
+      password: guest # default settings of the rabbitmq docker image
+      timeout: 5 # handler execution timeout in seconds
+      exceptionOnTimeout: true
+    methods:
+      create:
+        - type: rpc
+          queue: onModify # must match the queue name in Python code
+      updateBinary: []
+      updateMetadata:
+        - type: rpc
+          queue: onModify # must match the queue name in Python code
+      txCommit: []
+  ```
+
+Remarks about a production environment usage:
+
+* You should rather make a dedicated Docker image containing a complete 
+  execution environment for your handlers service rather than installing 
+  libraries as a part of the `handlers/start.sh`.
+* You should probably set up RabbitMQ authorization (or make sure you
+  run in in an izolated and trusted network).
+* Sleeping 10 seconds to give RabbitMQ time to start is not the nicest
+  solution (but a nice implementation depends on how you run the RabbitMQ 
+  on production)
+
+### Adding PIDs resolver and a dissemination service
 
 
-### Plugging in a doorkeeper
 
+### Batch-updating metadata
+
+From time to time you might want to perform a batch-update of the metadata.
+The most common scenario are chagnes made in the metadata schema.
+
+Performing such changes using the REST API is technically possible but very troublesome and time-consuming.
+Instead of that you can directly access the metadata database and modify it using SQL queries.
+
+Let's say we want to change the RDF predicates used to store access control information:
+
+* turn `https://vocabs.acdh.oeaw.ac.at/schema#aclRead` into `acl://read`
+* turn `https://vocabs.acdh.oeaw.ac.at/schema#aclWrite` into `acl://write`
+
+First, we modify the `accessControl.schema` settings in the `arche-docker-config/yaml/repo.yaml`
+but this will only affect future interactions trought the REST API
+so we have to update all already existing triples not to mess up everything.
+
+Fortunately it's pretty straigtforward:
+
+* As in this guide we are running the database in a separate Docker container called `postgresql`:
+  * check the exact container name with `docker ps` - it will be the one with `postgresql` in name
+    (e.g. `tmp-postgresql-1` in my case)
+  * run `psql arch` inside of it with
+    ```bash
+    docker exec -ti -u postgres tmp-postgresql-1 psql arche
+    ```
+* Update the metadata:
+  ```sql
+  BEGIN;
+  UPDATE metadata SET property = 'acl://read' WHERE property = 'https://vocabs.acdh.oeaw.ac.at/schema#aclRead';
+  UPDATE metadata SET property = 'acl://write' WHERE property = 'https://vocabs.acdh.oeaw.ac.at/schema#aclWrite';
+  COMMIT;
+  ```
+* Exit with
+  ```
+  \q
+  ```
+
+The direct database access can be also used to analyze the metadata, e.g.
+quickly compute distribution of RDF predicated values, etc.
+
+A little more information on the database structure is provided [here](https://github.com/acdh-oeaw/arche-core#database-structure).
 
 ## Further considerations
+
+TODO
 
 Last but not least, if you have questions, please do not hesitate to [ask us](mailto:mzoltak@oeaw.ac.at).

@@ -21,7 +21,7 @@
 {"description":"Documentation for the ARCHE repository software stack","url":"/arche-docs/aux/firstSteps.html","@type":"WebPage","headline":"First steps","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=fc7de13ffc052d6d50cf54879b3871857aab2b89">
+    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=299a57c1f27b9f04da11667b2127bea9351b3662">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -120,7 +120,7 @@ or read a little how it works on the internet.</li>
 2023-06-22 08:44:37,496 INFO success: tika entered RUNNING state, process has stayed up <span class="k">for</span> <span class="o">&gt;</span> than 1 seconds <span class="o">(</span>startsecs<span class="o">)</span>
 2023-06-22 08:44:37,496 INFO success: txDaemon entered RUNNING state, process has stayed up <span class="k">for</span> <span class="o">&gt;</span> than 1 seconds <span class="o">(</span>startsecs<span class="o">)</span>
 </code></pre></div>    </div>
-    <p>Now hit <code class="language-plaintext highlighter-rouge">CRTL+C</code>.<br />
+    <p>Now hit <code class="language-plaintext highlighter-rouge">CRTL+c</code>.<br />
 At this point the repository is up and running.</p>
   </li>
   <li>Wait until initial data is imported.<br />
@@ -318,6 +318,7 @@ This will allow us to adjust the configuration in a persistent way.
 </code></pre></div>    </div>
     <p>and an <code class="language-plaintext highlighter-rouge">.env</code> file containing private environment variables:</p>
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MYREPO_DB_PSWD=strongPassword
+ADMIN_PSWD=anotherStrongPassword
 USER_UID=number reported by running id -u
 USER_GID=number reported by running id -g
 </code></pre></div>    </div>
@@ -348,15 +349,715 @@ especially the <code class="language-plaintext highlighter-rouge">error.log</cod
 
 <h3 id="deciding-on-metadata-schema">Deciding on metadata schema</h3>
 
+<p>ARCHE Suite itself does not enforce any metadata schema.
+You can use whichever you want.</p>
+
+<p>Still, some ARCHE components define concepts which have to mapped to RDF properties to make everything work, e.g.</p>
+
+<ul>
+  <li>arche-core requires you to assign an RDF property storing repository resource identifiers and a label(s)</li>
+  <li>arche-resolver requires you to assign various RDF properties describing dissemination services behavior
+(see <a href="https://acdh-oeaw.github.io/arche-docs/aux/dissemination_services.html">here</a>)</li>
+  <li>etc.</li>
+</ul>
+
+<p>Here and know let’s create a mapping for the arche-core only assuming we want to use Dublin Core 
+wherever suitable and artificial predicates for everything else
+(especially for the <a href="https://acdh-oeaw.github.io/arche-docs/aux/search_api_for_programmers.html#technical-rdf-properties-provided-by-the-search">technical predicates used by the API</a>.</p>
+
+<p>To do that please modify the top part of the <code class="language-plaintext highlighter-rouge">schema</code> section of the <code class="language-plaintext highlighter-rouge">arche-docker-config/yaml/schema.yaml</code> so it looks as follows:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">schema</span><span class="pi">:</span>
+    <span class="na">id</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/identifier</span> 
+    <span class="na">parent</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/isPartOf</span>
+    <span class="na">label</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/title</span>
+    <span class="na">delete</span><span class="pi">:</span> <span class="s">delete://delete</span>
+    <span class="na">searchMatch</span><span class="pi">:</span> <span class="s">search://match</span>
+    <span class="na">searchOrder</span><span class="pi">:</span> <span class="s">search://order</span>
+    <span class="na">searchOrderValue</span><span class="pi">:</span> <span class="s">search://orderValue</span>
+    <span class="na">searchFts</span><span class="pi">:</span> <span class="s">search://fts</span>
+    <span class="na">searchCount</span><span class="pi">:</span> <span class="s">search://count</span>
+    <span class="na">binarySize</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/extent</span>
+    <span class="na">fileName</span><span class="pi">:</span> <span class="s">file://name</span>
+    <span class="na">mime</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/format</span>
+    <span class="na">hash</span><span class="pi">:</span> <span class="s">file://hash</span>
+    <span class="na">modificationDate</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/modified</span>
+    <span class="na">modificationUser</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/contributor</span>
+    <span class="na">binaryModificationDate</span><span class="pi">:</span> <span class="s">file://modified</span>
+    <span class="na">binaryModificationUser</span><span class="pi">:</span> <span class="s">file://modifiedUser</span>
+    <span class="na">creationDate</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/created</span>
+    <span class="na">creationUser</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/creator</span>
+</code></pre></div></div>
+
+<p>and then restart the arche-core by hitting <code class="language-plaintext highlighter-rouge">CTRL+c</code> on the console where you run <code class="language-plaintext highlighter-rouge">docker compose up</code>
+and running <code class="language-plaintext highlighter-rouge">docker compose up</code> again.</p>
+
 <h3 id="ingesting-some-data">Ingesting some data</h3>
 
-<h3 id="adding-a-dissemination-service">Adding a dissemination service</h3>
+<p>Let’s ingest one metadata-only resource and a TEI-XML file as its child.</p>
 
-<h3 id="setting-up-basic-oai-pmh">Setting up basic OAI-PMH</h3>
+<ul>
+  <li>Create a ‘sampleData<code class="language-plaintext highlighter-rouge"> folder and the </code>sampleData/metadata.ttl` in it containing:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@prefix dc: &lt;http://purl.org/dc/terms/&gt;.
+&lt;http://id.namespace/collection1&gt; dc:title "Sample collection"@en .
+&lt;http://id.namespace/Baedeker-Mittelmeer_1909.xml&gt; dc:title "Sample TEI-XML"@en ;
+    dc:isPartOf &lt;http://id.namespace/collection1&gt; .
+</code></pre></div>    </div>
+  </li>
+  <li>Run a dedicated temporary docker container which we will use for the ingestion
+(it will have the <code class="language-plaintext highlighter-rouge">sampleData</code> directory availble under <code class="language-plaintext highlighter-rouge">/data</code>):
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-ti</span> <span class="nt">--network</span> host <span class="nt">-v</span> ./sampleData:/data php:8.1 bash
+</code></pre></div>    </div>
+    <p>and install software required for the ingestion:</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-L</span> https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions <span class="o">&gt;</span> /usr/local/bin/install-php-extensions <span class="o">&amp;&amp;</span><span class="se">\</span>
+<span class="nb">chmod</span> +x /usr/local/bin/install-php-extensions <span class="o">&amp;&amp;</span><span class="se">\</span>
+install-php-extensions @composer <span class="o">&amp;&amp;</span><span class="se">\</span>
+composer require acdh-oeaw/arche-ingest
+</code></pre></div>    </div>
+  </li>
+  <li>Ingest the metadata file with:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vendor/bin/arche-import-metadata /data/metadata.ttl http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file
+</code></pre></div>    </div>
+    <ul>
+      <li>note down the URLs of created resources reported in the log, e.g.:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    created http://my.domain/api/1 <span class="o">(</span>1/2<span class="o">)</span>
+    created http://my.domain/api/2 <span class="o">(</span>2/2<span class="o">)</span>
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Download and ingest the TEI-XML resource binary:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://arche.acdh.oeaw.ac.at/api/29688 <span class="o">&gt;</span> /data/Baedeker-Mittelmeer_1909.xml
+vendor/bin/arche-import-binary <span class="se">\</span>
+  /data <span class="se">\</span>
+  http://id.namespace <span class="se">\</span>
+  http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file <span class="se">\</span>
+  <span class="nt">--skip</span> not_exist
+</code></pre></div>    </div>
+    <ul>
+      <li>note the URL of the updated resource reported in the log, e.g.:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Processing /data/Baedeker-Mittelmeer_1909.xml <span class="o">(</span>1/2 50%<span class="o">)</span>: update + upload  http://my.domain/api/2
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Leave the ingestion container with
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">exit</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
 
-<h3 id="plugging-in-a-doorkeeper">Plugging in a doorkeeper</h3>
+<p>Now we have some rudimentary data and we can check if our metadata schema has been picked up.</p>
+
+<p>Fetch the metadata of the TEI-XML binary.<br />
+It is http://my.domain/api/2 in my case but check your ingestion logs for yours.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-u</span> <span class="s1">'admin:ADMIN_PSWD_as_set_in_.env_file'</span> <span class="s1">'http://my.domain/api/2/metadata?readMode=resource'</span>
+</code></pre></div></div>
+<p>which in my case resulted in:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@prefix n0: &lt;http://my.domain/api/&gt;.
+@prefix n1: &lt;file://&gt;.
+@prefix n2: &lt;http://purl.org/dc/terms/&gt;.
+@prefix n3: &lt;http://id.namespace/&gt;.
+@prefix n4: &lt;https://vocabs.acdh.oeaw.ac.at/schema#&gt;.
+
+&lt;http://my.domain/api/2&gt; n1:modified "2023-07-06T11:56:53.559750"^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;
+    n2:title "Sample TEI-XML"@en;
+    n2:creator "admin";
+    n2:isPartOf &lt;http://my.domain/api/1&gt;;
+    n2:identifier &lt;http://id.namespace/Baedeker-Mittelmeer_1909.xml&gt;;
+    n2:extent "32380001"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;;
+    n2:identifier &lt;http://my.domain/api/2&gt;;
+    n2:modified "2023-07-06T11:56:53.659461"^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;;
+    n4:aclRead "admin";
+    n1:modifiedUser "admin";
+    n1:hash "sha1:ad8a457099d70990f6d936182f0e3b2c35a19ad6";
+    n2:contributor "admin";
+    n4:aclWrite "admin";
+    n1:name "Baedeker-Mittelmeer_1909.xml";
+    n2:format "application/xml";
+    n2:created "2023-07-06T11:56:30.757867"^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;.
+</code></pre></div></div>
+
+<p>We can see that:</p>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">dc:title</code>, <code class="language-plaintext highlighter-rouge">dc:identifier</code> and <code class="language-plaintext highlighter-rouge">dc:isPartOf</code>
+look exactly like we set them up in the <code class="language-plaintext highlighter-rouge">sampleData/metadata.ttl</code>.</li>
+  <li>Quite many other metadata properties have been assigned automatically, e.g.
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">dc:creator "admin"</code> because we used the <code class="language-plaintext highlighter-rouge">admin</code> account for the ingestion</li>
+      <li><code class="language-plaintext highlighter-rouge">dc:extent "32380001"^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;</code>
+and <code class="language-plaintext highlighter-rouge">&lt;file://hash&gt; "sha1:ad8a457099d70990f6d936182f0e3b2c35a19ad6"</code>
+because the arche-core computed them while storing the uploaded file</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;file://name&gt; "Baedeker-Mittelmeer_1909.xml"</code> because the upload script
+provided this information while uploading the file</li>
+      <li>etc.</li>
+    </ul>
+  </li>
+  <li>We can also see some access control-related properties like
+<code class="language-plaintext highlighter-rouge">&lt;https://vocabs.acdh.oeaw.ac.at/schema#aclWrite "admin"</code>
+but this is discussed in the next chapter.</li>
+</ul>
+
+<p>You can also try:</p>
+
+<ul>
+  <li>Fetching metadata of a given resource and all repository resources it points to in a single REST API call:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-u</span> <span class="s1">'admin:ADMIN_PSWD_as_set_in_.env_file'</span> <span class="s1">'http://my.domain/api/2/metadata?readMode=neighbors'</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Fetching the resource binary:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -u 'admin:ADMIN_PSWD_as_set_in_.env_file' 'http://my.domain/api/2'
+</code></pre></div>    </div>
+  </li>
+  <li>Checking that without providing the username and the password, you are denied access
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -i http://my.domain/api/2
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="acess-control">Acess control</h3>
+
+<p>Access control is based on <em>roles</em> which are generalization of the <em>user</em> and <em>group</em> concepts.</p>
+
+<ul>
+  <li>During the arche-core initialization an <code class="language-plaintext highlighter-rouge">admin</code> <em>role</em> is created.</li>
+  <li>There is also a <code class="language-plaintext highlighter-rouge">public</code> role which is used to indicate unauthenticated users.</li>
+</ul>
+
+<p>You can create and modify users using the <code class="language-plaintext highlighter-rouge">{repo base URL}/user</code> REST API endpoint
+(see <a href="https://app.swaggerhub.com/apis/zozlak/arche">swagger API documentation</a> for details), e.g.</p>
+
+<ul>
+  <li>List existing roles with (the output is in JSON):
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-u</span> <span class="s1">'admin:ADMIN_PSWD_as_set_in_.env_file'</span> <span class="s1">'http://my.domain/api/user'</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Add a new role <code class="language-plaintext highlighter-rouge">bob</code> belonging to the <code class="language-plaintext highlighter-rouge">creators</code> role:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-i</span> <span class="nt">-u</span> <span class="s1">'admin:anotherStrongPassword'</span> <span class="s1">'http://my.domain/api/user/bob'</span> <span class="se">\</span>
+  <span class="nt">-X</span> PUT <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  <span class="nt">--data-binary</span> <span class="s1">'{"groups": ["creators"], "password": "randomPassword"}'</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>The access control settings are stored in the <code class="language-plaintext highlighter-rouge">accessControl</code> section of the <code class="language-plaintext highlighter-rouge">arche-docker-config/yaml/repo.yaml</code> file.</p>
+
+<p>In our case it should look more or less as follows:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">accessControl</span><span class="pi">:</span>
+    <span class="na">publicRole</span><span class="pi">:</span> <span class="s">public</span>
+    <span class="na">adminRoles</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">admin</span>
+    <span class="na">create</span><span class="pi">:</span>
+        <span class="c1"># who can create new resources</span>
+        <span class="na">allowedRoles</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s">creators</span>
+        <span class="c1"># rights assigned to the creator uppon resource creation</span>
+        <span class="na">creatorRights</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s">read</span>
+            <span class="pi">-</span> <span class="s">write</span>
+        <span class="c1"># rights assigned to other roles upon resource creation</span>
+        <span class="na">assignRoles</span><span class="pi">:</span>
+            <span class="na">read</span><span class="pi">:</span> <span class="pi">[]</span>
+    <span class="na">defaultAction</span><span class="pi">:</span>
+        <span class="na">read</span><span class="pi">:</span> <span class="s">deny</span>
+        <span class="na">write</span><span class="pi">:</span> <span class="s">deny</span>
+    <span class="na">enforceOnMetadata</span><span class="pi">:</span> <span class="no">true</span>
+    <span class="na">schema</span><span class="pi">:</span>
+        <span class="na">read</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#aclRead</span>
+        <span class="na">write</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#aclWrite</span>
+    <span class="na">db</span><span class="pi">:</span>
+        <span class="na">connStr</span><span class="pi">:</span> <span class="s1">'</span><span class="s">pgsql:</span><span class="nv"> </span><span class="s">user={PG_USER_PREFIX}repo</span><span class="nv"> </span><span class="s">dbname={PG_DBNAME}</span><span class="nv"> </span><span class="s">host={PG_HOST}</span><span class="nv"> </span><span class="s">port={PG_PORT}'</span>
+        <span class="na">table</span><span class="pi">:</span> <span class="s">users</span>
+        <span class="na">userCol</span><span class="pi">:</span> <span class="s">user_id</span>
+        <span class="na">dataCol</span><span class="pi">:</span> <span class="s">data</span>
+    <span class="na">authMethods</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="na">class</span><span class="pi">:</span> <span class="s">\zozlak\auth\authMethod\TrustedHeader</span>
+          <span class="na">parameters</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s">HTTP_EPPN</span>
+        <span class="pi">-</span> <span class="na">class</span><span class="pi">:</span> <span class="s">\zozlak\auth\authMethod\HttpBasic</span>
+          <span class="na">parameters</span><span class="pi">:</span>
+             <span class="pi">-</span> <span class="s">repo</span>
+        <span class="pi">-</span> <span class="na">class</span><span class="pi">:</span> <span class="s">\zozlak\auth\authMethod\Guest</span>
+          <span class="na">parameters</span><span class="pi">:</span>
+             <span class="pi">-</span> <span class="s">public</span>
+</code></pre></div></div>
+
+<p>Let’s analyze it step-by-step:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">publicRole: public</code> - defines the name of the role used to indicate unauthorized user</li>
+  <li>
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">adminRoles</span><span class="pi">:</span>
+     <span class="pi">-</span> <span class="s">admin</span>
+</code></pre></div>    </div>
+    <p>defines the list of admin roles.
+Admin rights are needed to create new roles.
+Also, having the admin rights allows to freely create, read, modify and delete repository resources.</p>
+  </li>
+  <li>
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">create</span><span class="pi">:</span>
+      <span class="na">allowedRoles</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">creators</span>
+      <span class="na">creatorRights</span><span class="pi">:</span>
+          <span class="pi">-</span> <span class="s">read</span> 
+          <span class="pi">-</span> <span class="s">write</span>
+      <span class="na">assignRoles</span><span class="pi">:</span>
+          <span class="na">read</span><span class="pi">:</span> <span class="pi">[]</span>
+</code></pre></div>    </div>
+    <p>defines who can create new repository resources 
+and what are the default access rights being set on newly created resources.
+Here:</p>
+    <ul>
+      <li>only <em>roles</em> belonging to the <em>creators</em> role (and, obviously, admins) can create new resources</li>
+      <li>the creator is automatically assigned <em>read</em> and <em>write</em> rights on a created resource
+(which is a sane default but e.g. dropping <code class="language-plaintext highlighter-rouge">write</code> from this list would enforce
+creation of immutable repository resources, at least until you are and admin)</li>
+      <li>no other roles are assigned rights on a newly create resource
+        <ul>
+          <li>if you would like a newly created resource to be read-only by everyone you could use
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">assignRoles</span><span class="pi">:</span>
+      <span class="na">read</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">public</span><span class="pi">]</span>
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">defaultAction</span><span class="pi">:</span>
+      <span class="na">read</span><span class="pi">:</span> <span class="s">deny</span>
+      <span class="na">write</span><span class="pi">:</span> <span class="s">deny</span>
+</code></pre></div>    </div>
+    <p>determines what to use if no access control rule has been matched.
+In this case the access is denied.
+You can e.g. consider setting <code class="language-plaintext highlighter-rouge">write: allow</code>.</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">enforceOnMetadata: true</code> enforces the <strong>read</strong> access rights
+to be applied also to metadata (the write access rights are always applied
+both to the metadata and resource binary content).</li>
+  <li>The <code class="language-plaintext highlighter-rouge">schema</code> section defines RDF properties used to store 
+access control information in the metadata.
+You can choose them however you want, just do the adjustment before 
+you start ingesting resources into the repository.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">db</code> section contains internal config we will not dig into.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">auth</code> section contains configuration of the <a href="https://github.com/zozlak/auth">zozlak/auth</a>
+authentication framework. In this case:
+    <ul>
+      <li>First we check for the presence of the <code class="language-plaintext highlighter-rouge">EPPN</code> HTTP header
+and if it exists, we take the <em>role</em> name from the header value.
+This is quite a common integration scenario for the single sign-on
+authorization methods like the Shibboleth Apache module.</li>
+      <li>Then a standard username &amp; password based authentication is used.</li>
+      <li>If both failed, a fixed role <code class="language-plaintext highlighter-rouge">public</code> is assumed.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Now let’s try to use the <code class="language-plaintext highlighter-rouge">bob</code> role we created in the examples at the beginning of the chapter
+to allow public read rights on the TEI-XML resource (http://my.domain/api/2 in my case).</p>
+
+<p>First, we need to allow <code class="language-plaintext highlighter-rouge">bob</code> to modify the resouces which is currently possible only for the <code class="language-plaintext highlighter-rouge">admin</code> role
+(and all roles with admin priviledges).
+This can be done</p>
+
+<ul>
+  <li>By adding <code class="language-plaintext highlighter-rouge">bob</code> to the <code class="language-plaintext highlighter-rouge">accessControl.adminRoles</code> list in the arche-docker-config/yaml/repo.yaml
+and restarting the repository’s Docker container. But we will not use it as we do not want <code class="language-plaintext highlighter-rouge">bob</code>
+to become an admin.</li>
+  <li>Or by granting <code class="language-plaintext highlighter-rouge">bob</code> writes to modify the resource.
+Presicely by adding the <code class="language-plaintext highlighter-rouge">accessControl.schema.write "bob"</code> triple
+(in our case <code class="language-plaintext highlighter-rouge">&lt;https://vocabs.acdh.oeaw.ac.at/schema#aclWrite&gt; "bob"</code>) to resource’s metadata.
+This is the solution we prefer.</li>
+</ul>
+
+<p>For that let’s create a <code class="language-plaintext highlighter-rouge">sampleData/acl1.ttl</code> file:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;http://id.namespace/Baedeker-Mittelmeer_1909.xml&gt; &lt;https://vocabs.acdh.oeaw.ac.at/schema#aclWrite&gt; "bob", "admin" .
+&lt;http://id.namespace/Baedeker-Mittelmeer_1909.xml&gt; &lt;https://vocabs.acdh.oeaw.ac.at/schema#aclRead&gt; "bob", "admin" .
+</code></pre></div></div>
+
+<p>After ingesting it <code class="language-plaintext highlighter-rouge">bob</code> should be able to grant public read writes by importing a <code class="language-plaintext highlighter-rouge">sampleData/acl2.ttl</code>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;http://id.namespace/Baedeker-Mittelmeer_1909.xml&gt; &lt;https://vocabs.acdh.oeaw.ac.at/schema#aclRead&gt; "public" .
+</code></pre></div></div>
+
+<p>Let’s ingest both metadata files the same way we did before:</p>
+
+<ul>
+  <li>Run a dedicated temporary docker container which we will use for the ingestion
+(it will have the <code class="language-plaintext highlighter-rouge">sampleData</code> directory availble under <code class="language-plaintext highlighter-rouge">/data</code>):
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-ti</span> <span class="nt">--network</span> host <span class="nt">-v</span> ./sampleData:/data php:8.1 bash
+</code></pre></div>    </div>
+    <p>and install software required for the ingestion:</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-L</span> https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions <span class="o">&gt;</span> /usr/local/bin/install-php-extensions <span class="o">&amp;&amp;</span><span class="se">\</span>
+<span class="nb">chmod</span> +x /usr/local/bin/install-php-extensions <span class="o">&amp;&amp;</span><span class="se">\</span>
+install-php-extensions @composer <span class="o">&amp;&amp;</span><span class="se">\</span>
+composer require acdh-oeaw/arche-ingest
+</code></pre></div>    </div>
+  </li>
+  <li>Try to ingest the <code class="language-plaintext highlighter-rouge">acl1.ttl</code> as the <code class="language-plaintext highlighter-rouge">bob</code> user:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vendor/bin/arche-import-metadata /data/acl1.ttl http://my.domain/api bob randomPassword
+</code></pre></div>    </div>
+    <p>and note it failed to perform the update</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>...<span class="o">)</span>
+Ingested resources count: 0 errors count: 0
+</code></pre></div>    </div>
+  </li>
+  <li>No try again as <code class="language-plaintext highlighter-rouge">admin</code>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vendor/bin/arche-import-metadata /data/acl1.ttl http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file
+</code></pre></div>    </div>
+    <p>which should succeed</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>...<span class="o">)</span>
+Importing http://id.namespace/Baedeker-Mittelmeer_1909.xml <span class="o">(</span>1/1<span class="o">)</span>
+    updating http://my.domain/api/2 <span class="o">(</span>1/1<span class="o">)</span>
+Ingested resources count: 1 errors count: 0
+</code></pre></div>    </div>
+  </li>
+  <li>At this point bob should have rights to perform the update
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vendor/bin/arche-import-metadata /data/acl2.ttl http://my.domain/api bob randomPassword
+</code></pre></div>    </div>
+  </li>
+  <li>Leave the ingestion container
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">exit</span>
+</code></pre></div>    </div>
+  </li>
+  <li>And we should be able to read the resource without any authentication:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-i</span> <span class="s1">'http://my.domain/api/2/metadata?readMode=resource'</span>
+curl <span class="s1">'http://my.domain/api/2'</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="setting-up-a-basic-oai-pmh">Setting up a basic OAI-PMH</h3>
+
+<p>Now let’s try to add an <a href="https://www.openarchives.org/pmh/">OAI-PMH</a>
+service to our repository to make it harvestable by external aggregators.</p>
+
+<p>We can deploy it either in the same docker container as the arche-core or in a separate one.
+In this example we will use the first approach.</p>
+
+<ul>
+  <li>Add <code class="language-plaintext highlighter-rouge">acdh-oeaw/arche-oaipmh</code> to the packages list in <code class="language-plaintext highlighter-rouge">arche-docker-config/composer.json</code>:
+    <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"require"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"acdh-oeaw/arche-core"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^3"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"zozlak/yaml-merge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"acdh-oeaw/arche-oaipmh"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^4.2"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>    </div>
+    <p>This will make the <a href="https://github.com/acdh-oeaw/arche-oaipmh">arche-oaipmh</a> being installed
+on the Docker container startup.</p>
+  </li>
+  <li>Create and <strong>make executable</strong> the <code class="language-plaintext highlighter-rouge">arche-docker-config/run.d/oaipmh.sh</code> file
+initializing the OAI-PMH service under the <code class="language-plaintext highlighter-rouge">{repoBaseUrl}/oaipmh</code> path:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="k">if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-d</span> /home/www-data/docroot/oaipmh <span class="o">]</span><span class="p">;</span> <span class="k">then
+    </span>su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s1">'mkdir /home/www-data/docroot/oaipmh'</span>
+    su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s1">'ln -s /home/www-data/vendor /home/www-data/docroot/oaipmh/vendor'</span>
+<span class="k">fi
+</span>su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s1">'cp /home/www-data/vendor/acdh-oeaw/arche-oaipmh/.htaccess /home/www-data/docroot/oaipmh/.htaccess'</span>
+su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s1">'cp /home/www-data/vendor/acdh-oeaw/arche-oaipmh/index.php /home/www-data/docroot/oaipmh/index.php'</span>
+
+<span class="nv">CMD</span><span class="o">=</span>/home/www-data/vendor/zozlak/yaml-merge/bin/yaml-edit.php
+<span class="nv">CFGD</span><span class="o">=</span>/home/www-data/config/yaml
+<span class="nb">rm</span> <span class="nt">-f</span> /home/www-data/docroot/oaipmh/config.yaml <span class="nv">$CFGD</span>/config-oaipmh.yaml
+su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s2">"</span><span class="nv">$CMD</span><span class="s2"> --src </span><span class="nv">$CFGD</span><span class="s2">/oaipmh.yaml --src </span><span class="nv">$CFGD</span><span class="s2">/local.yaml </span><span class="nv">$CFGD</span><span class="s2">/config-oaipmh.yaml"</span>
+su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s2">"ln -s </span><span class="nv">$CFGD</span><span class="s2">/config-oaipmh.yaml /home/www-data/docroot/oaipmh/config.yaml"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Create a minimal OAI-PMH service configuration file <code class="language-plaintext highlighter-rouge">arche-docker-config/yaml/oaipmh.yaml</code>:
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">oai</span><span class="pi">:</span>
+  <span class="na">info</span><span class="pi">:</span>
+      <span class="na">repositoryName</span><span class="pi">:</span> <span class="s">my repository</span>
+      <span class="na">baseURL</span><span class="pi">:</span> <span class="s">http://my.domain/oaipmh/</span>
+      <span class="na">earliestDatestamp</span><span class="pi">:</span> <span class="s2">"</span><span class="s">1900-01-01T00:00:00Z"</span>
+      <span class="na">adminEmail</span><span class="pi">:</span> <span class="s">admin@my.domain</span>
+      <span class="na">granularity</span><span class="pi">:</span> <span class="s">YYYY-MM-DDThh:mm:ssZ</span>
+  <span class="c1"># the guest user is created during the arche-core initialization and we can reuse it</span>
+  <span class="na">dbConnStr</span><span class="pi">:</span> <span class="s2">"</span><span class="s">pgsql:</span><span class="nv"> </span><span class="s">user=guest</span><span class="nv"> </span><span class="s">dbname=postgres</span><span class="nv"> </span><span class="s">host=postgresql"</span>
+  <span class="na">cacheDir</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
+  <span class="na">logging</span><span class="pi">:</span>
+      <span class="na">file</span><span class="pi">:</span> <span class="s">/home/www-data/log/oaipmh.log</span>
+      <span class="na">level</span><span class="pi">:</span> <span class="s">info</span>
+  <span class="na">deleted</span><span class="pi">:</span>
+      <span class="na">deletedClass</span><span class="pi">:</span> <span class="s">\acdhOeaw\arche\oaipmh\deleted\Tombstone</span>
+      <span class="na">deletedRecord</span><span class="pi">:</span> <span class="s">transient</span>
+  <span class="na">search</span><span class="pi">:</span>
+      <span class="na">searchClass</span><span class="pi">:</span> <span class="s">\acdhOeaw\arche\oaipmh\search\BaseSearch</span>
+      <span class="na">dateProp</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/modified</span>
+      <span class="na">idNmsp</span><span class="pi">:</span> <span class="s">http://my.domain</span>
+      <span class="na">id</span><span class="pi">:</span> <span class="s">http://purl.org/dc/terms/identifier</span>
+      <span class="na">searchMatch</span><span class="pi">:</span> <span class="s">search://match</span>
+      <span class="na">searchCount</span><span class="pi">:</span> <span class="s">search://count</span>
+      <span class="na">repoBaseUrl</span><span class="pi">:</span> <span class="s">http://my.domain/api/</span>
+      <span class="na">resumptionTimeout</span><span class="pi">:</span> <span class="m">120</span>
+      <span class="na">resumptionDir</span><span class="pi">:</span> <span class="s2">"</span><span class="s">tmp"</span>
+      <span class="na">resumptionKeepAlive</span><span class="pi">:</span> <span class="m">600</span>
+  <span class="na">sets</span><span class="pi">:</span>
+      <span class="na">setClass</span><span class="pi">:</span> <span class="s">\acdhOeaw\arche\oaipmh\set\NoSets</span>
+  <span class="na">formats</span><span class="pi">:</span>
+      <span class="na">oai_dc</span><span class="pi">:</span>
+          <span class="na">metadataPrefix</span><span class="pi">:</span> <span class="s">oai_dc</span>
+          <span class="na">schema</span><span class="pi">:</span> <span class="s">http://www.openarchives.org/OAI/2.0/oai_dc.xsd</span>
+          <span class="na">metadataNamespace</span><span class="pi">:</span> <span class="s">http://www.openarchives.org/OAI/2.0/oai_dc/</span>
+          <span class="na">class</span><span class="pi">:</span> <span class="s">\acdhOeaw\arche\oaipmh\metadata\DcMetadata</span>
+</code></pre></div>    </div>
+    <p>For more details please look at the <a href="https://github.com/acdh-oeaw/arche-oaipmh/blob/master/config-sample.yaml">sample config</a>
+provided in the arche-oaimph git repository and at the 
+<a href="https://acdh-oeaw.github.io/arche-docs/devdocs/namespaces/acdhoeaw-arche-oaipmh-metadata.html">metadata format classes documentation</a>.</p>
+  </li>
+  <li>Restart the arche-core by hitting <code class="language-plaintext highlighter-rouge">CTRL+c</code> on the console where you run <code class="language-plaintext highlighter-rouge">docker compose up</code>
+and running <code class="language-plaintext highlighter-rouge">docker compose up</code> again.</li>
+</ul>
+
+<p>We should have the OAI-PMH service with a very basic configuration running now.
+You can try:</p>
+
+<ul>
+  <li>http://my.domain/oaipmh/?verb=Identify</li>
+  <li>http://my.domain/oaipmh/?verb=ListMetadataFormats</li>
+  <li>http://my.domain/oaipmh/?verb=ListIdentifiers</li>
+  <li>http://my.domain/oaipmh/?verb=ListRecords&amp;metadataPrefix=oai_dc</li>
+</ul>
+
+<p>As we internally store metadata in the Dublin Core schema, it was possible to use the very simple
+metadata format class <code class="language-plaintext highlighter-rouge">\acdhOeaw\arche\oaipmh\metadata\DcMetadata</code> which does not require any
+additional config.
+In real-world scenarios you will almost for sure need to prepare templates using the
+<code class="language-plaintext highlighter-rouge">\acdhOeaw\arche\oaipmh\metadata\LiveCmdiMetadata</code> class which will map your internal
+metadata schema into the schema you want to provide to an external aggregator.
+Please read <a href="https://acdh-oeaw.github.io/arche-docs/devdocs/classes/acdhOeaw-arche-oaipmh-metadata-LiveCmdiMetadata.html">this documentation</a>
+and <a href="https://github.com/acdh-oeaw/arche-docker-config/tree/arche/oaipmhTemplates">template examples used at the ACDH-CH</a>.</p>
+
+<h3 id="plugging-in-checks-on-the-data-ingestion">Plugging in checks on the data ingestion</h3>
+
+<p>Now an advanced topic - plugging your own logic into the arche-core.</p>
+
+<p>This is possible in two ways:</p>
+
+<ul>
+  <li>By embedding a PHP handlers like we do at the ACDH-CH
+(e.g. <a href="https://github.com/acdh-oeaw/arche-doorkeeper/blob/master/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">our handlers code</a>
+and <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/doorkeeper.yaml#L24">configuration</a>
+plugging them into the arche-core)</li>
+  <li>By setting up a handlers service written in any language of your choice
+and consuming messages from an AMQP broker
+(e.g. from the <a href="https://www.rabbitmq.com/">RabbitMQ</a>).
+    <ul>
+      <li>In this case the message passed to the handler is a JSON object with following properties:
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">method</code> - TODO</li>
+          <li><code class="language-plaintext highlighter-rouge">path</code> - TODO</li>
+          <li><code class="language-plaintext highlighter-rouge">URI</code> - full resource URI, e.g. http://my.domain/api/2</li>
+          <li><code class="language-plaintext highlighter-rouge">id</code> - numeric internal id of the resource, e.g. <code class="language-plaintext highlighter-rouge">2</code></li>
+          <li><code class="language-plaintext highlighter-rouge">metadata</code> - RDF metadata of the resources in the application/n-triples format</li>
+        </ul>
+      </li>
+      <li>the handler is expected to respond with a message containing a JSON object:
+        <ul>
+          <li>either with the <code class="language-plaintext highlighter-rouge">metadata</code> property containing RDF metadata of the resource
+(optionally modified by the handler) in the application/n-triples format</li>
+          <li>or with <code class="language-plaintext highlighter-rouge">errorCode</code> and <code class="language-plaintext highlighter-rouge">errorMessage</code> properties indicating a verification
+error (first containing the desired HTTP response status code
+to be set, e.g. <code class="language-plaintext highlighter-rouge">400</code> to indicate that the error was caused by wrong data
+provided by the user and latter an error message understendable for the user)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>By the way it is possible to mix both methods.</p>
+
+<p>Here we will take the second approach and implement a simple metadata consistency check handler in Python.</p>
+
+<ul>
+  <li>Let’s start with adding a <a href="https://www.rabbitmq.com/">RabbitMQ</a> broker service to our
+Docker containers stack.
+It will pass messages between the arche-core and our handlers service.
+    <ul>
+      <li>Extend the <code class="language-plaintext highlighter-rouge">services</code> section of the <code class="language-plaintext highlighter-rouge">docker-compose.yaml</code> with:
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>services:
+  rabbitmq:
+    image: rabbitmq
+    networks:
+    - backend
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>We also need an execution enviromnent for our Python handlers service.
+This makes another Docker container.
+    <ul>
+      <li>Extend the <code class="language-plaintext highlighter-rouge">services</code> section of the <code class="language-plaintext highlighter-rouge">docker-compose.yaml</code> with:
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>services:
+  handlers:
+    image: python:3.11
+    networks:
+    - backend
+    volumes:
+    - ./handlers:/opt
+    entrypoint: /opt/start.sh
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Now let’s create the starup script for our handlers Docker container.
+It will install required Python libraries and then start our handlers
+service.
+    <ul>
+      <li>Create the <code class="language-plaintext highlighter-rouge">handlers</code> directory</li>
+      <li>Create and <strong>make executable</strong> <code class="language-plaintext highlighter-rouge">handlers/start.sh</code>:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+pip <span class="nb">install </span>pika
+pip <span class="nb">install </span>rdflib
+<span class="c"># give rabbitmq some time to start</span>
+<span class="nb">sleep </span>10
+python3 /opt/handlers.py
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Create a simple handler code.<br />
+It will check if the <code class="language-plaintext highlighter-rouge">dc:license</code> triple is defined in the resource metadata.<br />
+On top of it we need a little boilerplate code to couple it with the AMQP broker.<br />
+Edit <code class="language-plaintext highlighter-rouge">handlers/handlers.py</code> so it contains:
+    <pre><code class="language-python3">import pika
+import json
+from rdflib import Graph, URIRef
+
+# this is our handler
+def checkMeta(channel, deliver, msgProperties, body):
+  message = json.loads(body.decode('utf-8'))
+  g = Graph()
+  g.parse(data=message['metadata'])
+  # if http://purl.org/dc/terms/license is not provided
+  # return an empty graph and set an error message
+  if (None, URIRef('http://purl.org/dc/terms/license'), None) not in g:
+    retMsg = {
+      'errorCode': 400,
+      'errorMessage': 'dc:license triple is missing'
+    }
+  else:
+    retMsg = {
+      'metadata': g.serialize(format='nt')
+    }
+  channel.basic_publish(
+    exchange=deliver.exchange, 
+    routing_key=msgProperties.reply_to,
+    body=json.dumps(retMsg),
+    properties=msgProperties
+  )
+
+# boilerplate code coupling our handler with the AMQP broker
+connCfg = pika.ConnectionParameters(host='rabbitmq')
+connection = pika.BlockingConnection(connCfg)
+channel = connection.channel()
+channel.basic_qos(0, 1, False)
+# create the 'onModify' queue
+channel.queue_declare(queue='onModify')
+# set up a handler function
+channel.basic_consume(
+  queue='onModify', 
+  on_message_callback=checkMeta,
+  auto_ack=True
+)
+channel.start_consuming()
+</code></pre>
+  </li>
+  <li>Tell the arche-core to use AMQP handlers.
+Edit the <code class="language-plaintext highlighter-rouge">rest.handlers</code> section of the <code class="language-plaintext highlighter-rouge">arche-docker-config/yaml/repo.yaml</code>:
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">handlers</span><span class="pi">:</span>
+  <span class="na">rabbitMq</span><span class="pi">:</span>
+    <span class="na">host</span><span class="pi">:</span> <span class="s">rabbitmq</span>
+    <span class="na">port</span><span class="pi">:</span> <span class="m">5672</span>
+    <span class="na">user</span><span class="pi">:</span> <span class="s">guest</span> <span class="c1"># default settings of the rabbitmq docker image</span>
+    <span class="na">password</span><span class="pi">:</span> <span class="s">guest</span> <span class="c1"># default settings of the rabbitmq docker image</span>
+    <span class="na">timeout</span><span class="pi">:</span> <span class="m">5</span> <span class="c1"># handler execution timeout in seconds</span>
+    <span class="na">exceptionOnTimeout</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">methods</span><span class="pi">:</span>
+    <span class="na">create</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">rpc</span>
+        <span class="na">queue</span><span class="pi">:</span> <span class="s">onModify</span> <span class="c1"># must match the queue name in Python code</span>
+    <span class="na">updateBinary</span><span class="pi">:</span> <span class="pi">[]</span>
+    <span class="na">updateMetadata</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">rpc</span>
+        <span class="na">queue</span><span class="pi">:</span> <span class="s">onModify</span> <span class="c1"># must match the queue name in Python code</span>
+    <span class="na">txCommit</span><span class="pi">:</span> <span class="pi">[]</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Remarks about a production environment usage:</p>
+
+<ul>
+  <li>You should rather make a dedicated Docker image containing a complete 
+execution environment for your handlers service rather than installing 
+libraries as a part of the <code class="language-plaintext highlighter-rouge">handlers/start.sh</code>.</li>
+  <li>You should probably set up RabbitMQ authorization (or make sure you
+run in in an izolated and trusted network).</li>
+  <li>Sleeping 10 seconds to give RabbitMQ time to start is not the nicest
+solution (but a nice implementation depends on how you run the RabbitMQ 
+on production)</li>
+</ul>
+
+<h3 id="adding-pids-resolver-and-a-dissemination-service">Adding PIDs resolver and a dissemination service</h3>
+
+<h3 id="batch-updating-metadata">Batch-updating metadata</h3>
+
+<p>From time to time you might want to perform a batch-update of the metadata.
+The most common scenario are chagnes made in the metadata schema.</p>
+
+<p>Performing such changes using the REST API is technically possible but very troublesome and time-consuming.
+Instead of that you can directly access the metadata database and modify it using SQL queries.</p>
+
+<p>Let’s say we want to change the RDF predicates used to store access control information:</p>
+
+<ul>
+  <li>turn <code class="language-plaintext highlighter-rouge">https://vocabs.acdh.oeaw.ac.at/schema#aclRead</code> into <code class="language-plaintext highlighter-rouge">acl://read</code></li>
+  <li>turn <code class="language-plaintext highlighter-rouge">https://vocabs.acdh.oeaw.ac.at/schema#aclWrite</code> into <code class="language-plaintext highlighter-rouge">acl://write</code></li>
+</ul>
+
+<p>First, we modify the <code class="language-plaintext highlighter-rouge">accessControl.schema</code> settings in the <code class="language-plaintext highlighter-rouge">arche-docker-config/yaml/repo.yaml</code>
+but this will only affect future interactions trought the REST API
+so we have to update all already existing triples not to mess up everything.</p>
+
+<p>Fortunately it’s pretty straigtforward:</p>
+
+<ul>
+  <li>As in this guide we are running the database in a separate Docker container called <code class="language-plaintext highlighter-rouge">postgresql</code>:
+    <ul>
+      <li>check the exact container name with <code class="language-plaintext highlighter-rouge">docker ps</code> - it will be the one with <code class="language-plaintext highlighter-rouge">postgresql</code> in name
+(e.g. <code class="language-plaintext highlighter-rouge">tmp-postgresql-1</code> in my case)</li>
+      <li>run <code class="language-plaintext highlighter-rouge">psql arch</code> inside of it with
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker <span class="nb">exec</span> <span class="nt">-ti</span> <span class="nt">-u</span> postgres tmp-postgresql-1 psql arche
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Update the metadata:
+    <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">BEGIN</span><span class="p">;</span>
+<span class="k">UPDATE</span> <span class="n">metadata</span> <span class="k">SET</span> <span class="n">property</span> <span class="o">=</span> <span class="s1">'acl://read'</span> <span class="k">WHERE</span> <span class="n">property</span> <span class="o">=</span> <span class="s1">'https://vocabs.acdh.oeaw.ac.at/schema#aclRead'</span><span class="p">;</span>
+<span class="k">UPDATE</span> <span class="n">metadata</span> <span class="k">SET</span> <span class="n">property</span> <span class="o">=</span> <span class="s1">'acl://write'</span> <span class="k">WHERE</span> <span class="n">property</span> <span class="o">=</span> <span class="s1">'https://vocabs.acdh.oeaw.ac.at/schema#aclWrite'</span><span class="p">;</span>
+<span class="k">COMMIT</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Exit with
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\q
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>The direct database access can be also used to analyze the metadata, e.g.
+quickly compute distribution of RDF predicated values, etc.</p>
+
+<p>A little more information on the database structure is provided <a href="https://github.com/acdh-oeaw/arche-core#database-structure">here</a>.</p>
 
 <h2 id="further-considerations">Further considerations</h2>
+
+<p>TODO</p>
 
 <p>Last but not least, if you have questions, please do not hesitate to <a href="mailto:mzoltak@oeaw.ac.at">ask us</a>.</p>
 
