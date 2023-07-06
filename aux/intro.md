@@ -92,6 +92,10 @@ So taking into account our limited resources we decided we will not aim for prov
 Still the arche-core API (for more information on using it see the guides on the [main page](../)) 
 and the pretty straightforward underlaying database structure should allow you do develop a GUI quite easily and fast.
 
+The crucial factor here is for you (your programmer) to understand well how to go from metadata in RDF
+to data structures front-end developers are used to.
+[This](rdf_basics.html) and [this](rdf_compacting_and_framing.html) guide can hopefully help a little with that.
+
 ### Data consistency check tools
 
 As with the GUI we did not try to prepare a one-fits-it-all data consistency checks system.
