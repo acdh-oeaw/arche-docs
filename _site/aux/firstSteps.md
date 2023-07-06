@@ -7,13 +7,29 @@ You need:
 * [git](https://git-scm.com/)
 * [Docker](https://www.docker.com/)
 * any unformatted text editor
-* ability to work with a console
+* ability to work with a command line
+* a tool to make HTTP requests
+  (e.g. [curl](https://curl.se/), [Podman](https://podman.io/)
+  or a web browser)
 
 Remarks:
 
 * This guide was tested on a linux (Ubuntu 22.04) machine.
-  As we are using [Docker](https://www.docker.com/) it should be also reproducible on a Windows and macOS machine
-  but this was not tested and there is a risk you will run into platform-specific issues.
+  * As we are using Docker it should be also reproducible on a Windows and macOS machine
+    but this was not tested and there is a risk you will run into platform-specific issues.
+  * If you are using Fedora/RedHat, then you may want to use Podman instead of Docker.
+    This should work in general but there might be some differences you will need to address
+    and which are not covered by this guide
+    (e.g. slightly different handling of mounting host directories as volumes or lack of the *compose* action).
+    For the most smooth experience I would advise you to install Docker.
+  * If you are using Fedora/RedHat with selinux turned on, you might need to add `--privileged` switch to
+    `docker run` commands (or `privileged: true` in the `docker-compose.yaml`).
+* We will be using Docker extensively.
+  If you have no experience with it at all, you may succeed with the *Really quick and dirty setup*
+  but it will be really difficult for you to go beyond it.
+  There are two solutions of this problem - either find someone who knows Docker
+  (it is quite a widespread technology nowadays so it should not be a trouble)
+  or read a little how it works on the internet.
 
 ## Really quick and dirty setup
 
@@ -129,7 +145,7 @@ We can check it out in a few ways:
 
 * With an API call:
   * open URLs of the two ingested resources in your browser
-    (e.g. http://127.0.0.1/api/11305 and http://127.0.0.1/api/11306)
+    (e.g. http://127.0.0.1/api/11305 and http://127.0.0.1/api/11306 from the examples above)
     * the URL of the collection resource will display a metadata view
       (note you were redirected to `{originalURL}/metadata`)
     * the URL of the TEI-XML will download the TEI-XML file
@@ -146,6 +162,118 @@ We can check it out in a few ways:
 Now let's take a step back and make a step-by-step installation starting from a minimal setup.
 
 ### Installing arche-core
+
+Let's say we want to set up a repository:
+
+* working under the http://my.domain
+* [using an external Postgresql database](https://github.com/acdh-oeaw/arche-docker#with-postgresql-database-on-other-host)
+* [storing data in a named Docker volume](https://github.com/acdh-oeaw/arche-docker#with-data-directories-in-docker-named-volumes)
+* [storing logs in a host directory](https://github.com/acdh-oeaw/arche-docker#with-data-directories-mounted-from-host) so we can access them easily
+
+Let's go:
+
+* As we will set up the repository locally we need to fake that the `my.domain` points to our own machine.
+  This can be done by adding a line to the `/etc/hosts`:
+  (you need admin rights for that, by the way this file exists also under Windows - google it):
+  ```
+  127.0.0.1 my.domain
+  ```
+* Clone a "vanilla" version of the configuration repository.  
+  This will allow us to adjust the configuration in a persistent way.
+  ```bash
+  git clone --depth 1 --branch master https://github.com/acdh-oeaw/arche-docker-config.git
+  ```
+* Adjust the configuration
+  * Create the instance-specific settings
+    ```bash
+    cp arche-docker-config/yaml/local.yaml.sample arche-docker-config/yaml/local.yaml
+    ```
+    and edit it so it looks as follows:
+    ```yaml
+    rest:
+      urlBase: http://my.domain
+      pathBase: /api/
+    ```
+  * Turn off internal Postgresql instance within the arche-core Docker container
+    (we assumed we will use an external database):
+    ```
+    rm arche-docker-config/supervisord.conf.d/postgresql.conf
+    ```
+* Make a local directory for logs:
+  ```bash
+  mkdir log
+  ```
+* Prepare a [Docker compose](https://docs.docker.com/compose/) config for our setup in the `docker-compose.yaml`:
+  ```yaml
+  services:
+    # container for "external" Postgresql database
+    postgresql:
+      image: postgis/postgis:15-master
+      volumes:
+      - postgresql:/var/lib/postgresql/data
+      networks:
+      - backend
+      environment:
+      - "POSTGRES_PASSWORD=${MYREPO_DB_PSWD}"
+    # container for the arche-core
+    arche-core:
+      image: acdhch/arche
+      volumes:
+      - data:/home/www-data/data
+      - ./arche-docker-config:/home/www-data/config
+      - ./log:/home/www-data/log
+      environment:
+      - PG_HOST=postgresql
+      - PG_USER=postgres
+      - "PG_PSWD=${MYREPO_DB_PSWD}"
+      - PG_DBNAME=arche
+      - "USER_UID=${USER_UID}"
+      - "USER_GID=${USER_GID}"
+      - "ADMIN_PSWD=${ADMIN_PSWD}"
+      ports:
+      - "80:80"
+      networks:
+      - backend
+      - bridge
+      depends_on:
+      - postgresql
+  networks:
+    backend:
+      driver: bridge
+    bridge:
+  volumes:
+    postgresql:
+    data:
+  ```
+  and an `.env` file containing private environment variables:
+  ```
+  MYREPO_DB_PSWD=strongPassword
+  USER_UID=number reported by running id -u
+  USER_GID=number reported by running id -g
+  ```
+* Start everything up:
+  ```bash
+  docker compose up
+  ```
+* Check if everything works by making a GET request to the http://my.domain/api/describe, e.g.
+  ```bash
+  curl -i http://my.domain/api/describe
+  ```
+  you should get a YAML file describing the repository instance configuration which might be
+  relevant from the client perspective.  
+
+Congratulations, at that point we have the repository backbone up and running.
+
+### Troubleshooting
+
+
+If something did not work, you can inspect:
+
+* Logs displayed in the terminal in which you run the `docker compose up` command.
+* ARCHE Suite logs located in the `log` directory,
+  especially the `error.log`, `rest.log` and 'initScripts.log`.
+
+### Deciding on metadata schema
 
 
 ### Ingesting some data
