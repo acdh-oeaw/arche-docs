@@ -1,4 +1,4 @@
-# First steps
+# First steps to set up your own ARCHE Suite instance
 
 ## Prerequisites
 
@@ -735,26 +735,68 @@ Now an advanced topic - plugging your own logic into the arche-core.
 
 This is possible in two ways:
 
-* By embedding a PHP handlers like we do at the ACDH-CH
-  (e.g. [our handlers code](https://github.com/acdh-oeaw/arche-doorkeeper/blob/master/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php)
-  and [configuration](https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/doorkeeper.yaml#L24)
-  plugging them into the arche-core)
-* By setting up a handlers service written in any language of your choice
-  and consuming messages from an AMQP broker
-  (e.g. from the [RabbitMQ](https://www.rabbitmq.com/)).
-  * In this case the message passed to the handler is a JSON object with following properties:
-    * `method` - TODO
-    * `path` - TODO
-    * `URI` - full resource URI, e.g. http://my.domain/api/2 
-    * `id` - numeric internal id of the resource, e.g. `2`
-    * `metadata` - RDF metadata of the resources in the application/n-triples format
-  * the handler is expected to respond with a message containing a JSON object:
-    * either with the `metadata` property containing RDF metadata of the resource
-      (optionally modified by the handler) in the application/n-triples format
-    * or with `errorCode` and `errorMessage` properties indicating a verification
-      error (first containing the desired HTTP response status code
-      to be set, e.g. `400` to indicate that the error was caused by wrong data
-      provided by the user and latter an error message understendable for the user)
+* With handlers written in PHP
+  * For `txBegin`, `txCommit` and `txRollback` events your handler signature should be:
+    ```php
+    function myHandler(
+        string $event, 
+        int $transactionId, 
+        array<int> $idsOfResourcesModifiedByTheTransaction)
+    ): void
+    ```
+  * For all other events
+    (`get`, `getMetadata`, `create`, `updateBinary`, `updateMetadata`, `delete`, `deleteTombstone`)
+    your handler signature should be:
+    ```php
+    function myHandler(
+        string $event,
+        EasyRdf\Resource $resourceMetadata,
+        ?string $pathToBinaryPayload
+    ): EasyRdf\Resource
+    ```
+    and it should return the final metadata of the resource.
+  * Handlers can break hadnling of a request by throwing an exception.
+    In such a case the exception code is used as HTTP response code
+    (e.g. 400 to indicate error in data provided by a user)
+    and exception message is provided in the response body.
+  * To register such a handler:
+    * Make sure its code is being loaded or autoloadable.
+    * Register it in the `rest.handlers` section of the `arche-docker-config/yaml/repo.yaml` file, e.g.
+      ```yaml
+      rest:
+        handlers:
+          create:
+          - type: function
+            function: myClassName::myHandler
+      ```
+  * You can search for an inspiration by looking at
+    [our handlers code](https://github.com/acdh-oeaw/arche-doorkeeper/blob/master/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php)
+    and the way we [registered them in the configuration](https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/doorkeeper.yaml#L24).
+* With handlers written in [any language with AMQP support](https://www.rabbitmq.com/devtools.html)
+  and communicating with the arche-core over an AMQP broker (e.g. the [RabbitMQ](https://www.rabbitmq.com/)).
+  * The message passed to the handler is a JSON object with following properties:
+    * For `txBegin`, `txCommit` and `txRollback` events:
+      * `method` - event name, e.g. `get`, `updateMetadata`, etc.
+      * `transactionId` - identifier of the transaction
+      * `resourceIds` - array containing interal ids of repository resouced 
+        modified by this transaction (e.g. `[3, 8, 125]`)
+    * For all other events
+      (`get`, `getMetadata`, `create`, `updateBinary`, `updateMetadata`, `delete`, `deleteTombstone`):
+      * `method` - event name, e.g. `get`, `updateMetadata`, etc.
+      * `path` - path to the resource binary content
+      * `URI` - full resource URI, e.g. http://my.domain/api/2 
+      * `id` - numeric internal id of the resource, e.g. `2`
+      * `metadata` - RDF metadata of the resources in the application/n-triples format
+  * the handler is expected to respond with a message being a JSON object containing
+    the `status` field.
+    * Status of 0 means handler executed successfully.
+      In case of `txBegin`, `txCommit` and `txRollback` events, that is it.
+      For other events the respons from the handler should also provide target resource's
+      metadata serialized in `application/n-triples` in the `metadata` property.
+    * Non-0 status indicates an error.
+      In such a case the request processing is being stopped and an error response is sent to the client
+      with an HTTP status code equal to the `status` property value and the response body containing
+      the optional `message` property value (if it is missing, a default error message is used).
 
 By the way it is possible to mix both methods.
 
@@ -801,7 +843,7 @@ Here we will take the second approach and implement a simple metadata consistenc
   It will check if the `dc:license` triple is defined in the resource metadata.  
   On top of it we need a little boilerplate code to couple it with the AMQP broker.  
   Edit `handlers/handlers.py` so it contains:
-  ```python3
+  ```python
   import pika
   import json
   from rdflib import Graph, URIRef
@@ -815,11 +857,12 @@ Here we will take the second approach and implement a simple metadata consistenc
     # return an empty graph and set an error message
     if (None, URIRef('http://purl.org/dc/terms/license'), None) not in g:
       retMsg = {
-        'errorCode': 400,
-        'errorMessage': 'dc:license triple is missing'
+        'status': 400,
+        'message': 'dc:license triple is missing'
       }
     else:
       retMsg = {
+        'status': 0,
         'metadata': g.serialize(format='nt')
       }
     channel.basic_publish(
@@ -868,6 +911,8 @@ Here we will take the second approach and implement a simple metadata consistenc
 
 Remarks about a production environment usage:
 
+* If you want to use multiple AMQP handlers, you should assign each of
+  them a unique queue name.
 * You should rather make a dedicated Docker image containing a complete 
   execution environment for your handlers service rather than installing 
   libraries as a part of the `handlers/start.sh`.

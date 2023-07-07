@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>First steps | ARCHE Suite documentation</title>
+<title>First steps to set up your own ARCHE Suite instance | ARCHE Suite documentation</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="First steps" />
+<meta property="og:title" content="First steps to set up your own ARCHE Suite instance" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Documentation for the ARCHE repository software stack" />
 <meta property="og:description" content="Documentation for the ARCHE repository software stack" />
@@ -16,12 +16,12 @@
 <meta property="og:url" content="/arche-docs/aux/firstSteps.html" />
 <meta property="og:site_name" content="ARCHE Suite documentation" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="First steps" />
+<meta property="twitter:title" content="First steps to set up your own ARCHE Suite instance" />
 <script type="application/ld+json">
-{"description":"Documentation for the ARCHE repository software stack","url":"/arche-docs/aux/firstSteps.html","@type":"WebPage","headline":"First steps","@context":"https://schema.org"}</script>
+{"description":"Documentation for the ARCHE repository software stack","url":"/arche-docs/aux/firstSteps.html","@type":"WebPage","headline":"First steps to set up your own ARCHE Suite instance","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=28774c397b5942d341aac13af8e94299f306cc26">
+    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=e819093d85b901b365ac084fce236ba490ce2c31">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -45,7 +45,7 @@
       </header>
       <section>
 
-      <h1 id="first-steps">First steps</h1>
+      <h1 id="first-steps-to-set-up-your-own-arche-suite-instance">First steps to set up your own ARCHE Suite instance</h1>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
@@ -838,31 +838,85 @@ and <a href="https://github.com/acdh-oeaw/arche-docker-config/tree/arche/oaipmhT
 <p>This is possible in two ways:</p>
 
 <ul>
-  <li>By embedding a PHP handlers like we do at the ACDH-CH
-(e.g. <a href="https://github.com/acdh-oeaw/arche-doorkeeper/blob/master/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">our handlers code</a>
-and <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/doorkeeper.yaml#L24">configuration</a>
-plugging them into the arche-core)</li>
-  <li>By setting up a handlers service written in any language of your choice
-and consuming messages from an AMQP broker
-(e.g. from the <a href="https://www.rabbitmq.com/">RabbitMQ</a>).
+  <li>With handlers written in PHP
     <ul>
-      <li>In this case the message passed to the handler is a JSON object with following properties:
+      <li>For <code class="language-plaintext highlighter-rouge">txBegin</code>, <code class="language-plaintext highlighter-rouge">txCommit</code> and <code class="language-plaintext highlighter-rouge">txRollback</code> events your handler signature should be:
+        <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">function</span> <span class="n">myHandler</span><span class="p">(</span>
+    <span class="kt">string</span> <span class="nv">$event</span><span class="p">,</span> 
+    <span class="kt">int</span> <span class="nv">$transactionId</span><span class="p">,</span> 
+    <span class="kt">array</span><span class="o">&lt;</span><span class="n">int</span><span class="o">&gt;</span> <span class="nv">$idsOfResourcesModifiedByTheTransaction</span><span class="p">)</span>
+<span class="p">)</span><span class="o">:</span> <span class="n">void</span>
+</code></pre></div>        </div>
+      </li>
+      <li>For all other events
+(<code class="language-plaintext highlighter-rouge">get</code>, <code class="language-plaintext highlighter-rouge">getMetadata</code>, <code class="language-plaintext highlighter-rouge">create</code>, <code class="language-plaintext highlighter-rouge">updateBinary</code>, <code class="language-plaintext highlighter-rouge">updateMetadata</code>, <code class="language-plaintext highlighter-rouge">delete</code>, <code class="language-plaintext highlighter-rouge">deleteTombstone</code>)
+your handler signature should be:
+        <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">function</span> <span class="n">myHandler</span><span class="p">(</span>
+    <span class="kt">string</span> <span class="nv">$event</span><span class="p">,</span>
+    <span class="kt">EasyRdf</span><span class="err">\</span><span class="nc">Resource</span> <span class="nv">$resourceMetadata</span><span class="p">,</span>
+    <span class="o">?</span><span class="n">string</span> <span class="nv">$pathToBinaryPayload</span>
+<span class="p">)</span><span class="o">:</span> <span class="nc">EasyRdf\Resource</span>
+</code></pre></div>        </div>
+        <p>and it should return the final metadata of the resource.</p>
+      </li>
+      <li>Handlers can break hadnling of a request by throwing an exception.
+In such a case the exception code is used as HTTP response code
+(e.g. 400 to indicate error in data provided by a user)
+and exception message is provided in the response body.</li>
+      <li>To register such a handler:
         <ul>
-          <li><code class="language-plaintext highlighter-rouge">method</code> - TODO</li>
-          <li><code class="language-plaintext highlighter-rouge">path</code> - TODO</li>
-          <li><code class="language-plaintext highlighter-rouge">URI</code> - full resource URI, e.g. http://my.domain/api/2</li>
-          <li><code class="language-plaintext highlighter-rouge">id</code> - numeric internal id of the resource, e.g. <code class="language-plaintext highlighter-rouge">2</code></li>
-          <li><code class="language-plaintext highlighter-rouge">metadata</code> - RDF metadata of the resources in the application/n-triples format</li>
+          <li>Make sure its code is being loaded or autoloadable.</li>
+          <li>Register it in the <code class="language-plaintext highlighter-rouge">rest.handlers</code> section of the <code class="language-plaintext highlighter-rouge">arche-docker-config/yaml/repo.yaml</code> file, e.g.
+            <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">rest</span><span class="pi">:</span>
+  <span class="na">handlers</span><span class="pi">:</span>
+    <span class="na">create</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">function</span>
+      <span class="na">function</span><span class="pi">:</span> <span class="s">myClassName::myHandler</span>
+</code></pre></div>            </div>
+          </li>
         </ul>
       </li>
-      <li>the handler is expected to respond with a message containing a JSON object:
+      <li>You can search for an inspiration by looking at
+<a href="https://github.com/acdh-oeaw/arche-doorkeeper/blob/master/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">our handlers code</a>
+and the way we <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/doorkeeper.yaml#L24">registered them in the configuration</a>.</li>
+    </ul>
+  </li>
+  <li>With handlers written in <a href="https://www.rabbitmq.com/devtools.html">any language with AMQP support</a>
+and communicating with the arche-core over an AMQP broker (e.g. the <a href="https://www.rabbitmq.com/">RabbitMQ</a>).
+    <ul>
+      <li>The message passed to the handler is a JSON object with following properties:
         <ul>
-          <li>either with the <code class="language-plaintext highlighter-rouge">metadata</code> property containing RDF metadata of the resource
-(optionally modified by the handler) in the application/n-triples format</li>
-          <li>or with <code class="language-plaintext highlighter-rouge">errorCode</code> and <code class="language-plaintext highlighter-rouge">errorMessage</code> properties indicating a verification
-error (first containing the desired HTTP response status code
-to be set, e.g. <code class="language-plaintext highlighter-rouge">400</code> to indicate that the error was caused by wrong data
-provided by the user and latter an error message understendable for the user)</li>
+          <li>For <code class="language-plaintext highlighter-rouge">txBegin</code>, <code class="language-plaintext highlighter-rouge">txCommit</code> and <code class="language-plaintext highlighter-rouge">txRollback</code> events:
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">method</code> - event name, e.g. <code class="language-plaintext highlighter-rouge">get</code>, <code class="language-plaintext highlighter-rouge">updateMetadata</code>, etc.</li>
+              <li><code class="language-plaintext highlighter-rouge">transactionId</code> - identifier of the transaction</li>
+              <li><code class="language-plaintext highlighter-rouge">resourceIds</code> - array containing interal ids of repository resouced 
+modified by this transaction (e.g. <code class="language-plaintext highlighter-rouge">[3, 8, 125]</code>)</li>
+            </ul>
+          </li>
+          <li>For all other events
+(<code class="language-plaintext highlighter-rouge">get</code>, <code class="language-plaintext highlighter-rouge">getMetadata</code>, <code class="language-plaintext highlighter-rouge">create</code>, <code class="language-plaintext highlighter-rouge">updateBinary</code>, <code class="language-plaintext highlighter-rouge">updateMetadata</code>, <code class="language-plaintext highlighter-rouge">delete</code>, <code class="language-plaintext highlighter-rouge">deleteTombstone</code>):
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">method</code> - event name, e.g. <code class="language-plaintext highlighter-rouge">get</code>, <code class="language-plaintext highlighter-rouge">updateMetadata</code>, etc.</li>
+              <li><code class="language-plaintext highlighter-rouge">path</code> - path to the resource binary content</li>
+              <li><code class="language-plaintext highlighter-rouge">URI</code> - full resource URI, e.g. http://my.domain/api/2</li>
+              <li><code class="language-plaintext highlighter-rouge">id</code> - numeric internal id of the resource, e.g. <code class="language-plaintext highlighter-rouge">2</code></li>
+              <li><code class="language-plaintext highlighter-rouge">metadata</code> - RDF metadata of the resources in the application/n-triples format</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>the handler is expected to respond with a message being a JSON object containing
+the <code class="language-plaintext highlighter-rouge">status</code> field.
+        <ul>
+          <li>Status of 0 means handler executed successfully.
+In case of <code class="language-plaintext highlighter-rouge">txBegin</code>, <code class="language-plaintext highlighter-rouge">txCommit</code> and <code class="language-plaintext highlighter-rouge">txRollback</code> events, that is it.
+For other events the respons from the handler should also provide target resource’s
+metadata serialized in <code class="language-plaintext highlighter-rouge">application/n-triples</code> in the <code class="language-plaintext highlighter-rouge">metadata</code> property.</li>
+          <li>Non-0 status indicates an error.
+In such a case the request processing is being stopped and an error response is sent to the client
+with an HTTP status code equal to the <code class="language-plaintext highlighter-rouge">status</code> property value and the response body containing
+the optional <code class="language-plaintext highlighter-rouge">message</code> property value (if it is missing, a default error message is used).</li>
         </ul>
       </li>
     </ul>
@@ -924,48 +978,49 @@ python3 /opt/handlers.py
 It will check if the <code class="language-plaintext highlighter-rouge">dc:license</code> triple is defined in the resource metadata.<br />
 On top of it we need a little boilerplate code to couple it with the AMQP broker.<br />
 Edit <code class="language-plaintext highlighter-rouge">handlers/handlers.py</code> so it contains:
-    <pre><code class="language-python3">import pika
-import json
-from rdflib import Graph, URIRef
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pika</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">rdflib</span> <span class="kn">import</span> <span class="n">Graph</span><span class="p">,</span> <span class="n">URIRef</span>
 
-# this is our handler
-def checkMeta(channel, deliver, msgProperties, body):
-  message = json.loads(body.decode('utf-8'))
-  g = Graph()
-  g.parse(data=message['metadata'])
-  # if http://purl.org/dc/terms/license is not provided
-  # return an empty graph and set an error message
-  if (None, URIRef('http://purl.org/dc/terms/license'), None) not in g:
-    retMsg = {
-      'errorCode': 400,
-      'errorMessage': 'dc:license triple is missing'
-    }
-  else:
-    retMsg = {
-      'metadata': g.serialize(format='nt')
-    }
-  channel.basic_publish(
-    exchange=deliver.exchange, 
-    routing_key=msgProperties.reply_to,
-    body=json.dumps(retMsg),
-    properties=msgProperties
-  )
+<span class="c1"># this is our handler
+</span><span class="k">def</span> <span class="nf">checkMeta</span><span class="p">(</span><span class="n">channel</span><span class="p">,</span> <span class="n">deliver</span><span class="p">,</span> <span class="n">msgProperties</span><span class="p">,</span> <span class="n">body</span><span class="p">):</span>
+  <span class="n">message</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">loads</span><span class="p">(</span><span class="n">body</span><span class="p">.</span><span class="n">decode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">))</span>
+  <span class="n">g</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">()</span>
+  <span class="n">g</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">message</span><span class="p">[</span><span class="s">'metadata'</span><span class="p">])</span>
+  <span class="c1"># if http://purl.org/dc/terms/license is not provided
+</span>  <span class="c1"># return an empty graph and set an error message
+</span>  <span class="k">if</span> <span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="n">URIRef</span><span class="p">(</span><span class="s">'http://purl.org/dc/terms/license'</span><span class="p">),</span> <span class="bp">None</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">g</span><span class="p">:</span>
+    <span class="n">retMsg</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="s">'status'</span><span class="p">:</span> <span class="mi">400</span><span class="p">,</span>
+      <span class="s">'message'</span><span class="p">:</span> <span class="s">'dc:license triple is missing'</span>
+    <span class="p">}</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="n">retMsg</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="s">'status'</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s">'metadata'</span><span class="p">:</span> <span class="n">g</span><span class="p">.</span><span class="n">serialize</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s">'nt'</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="n">channel</span><span class="p">.</span><span class="n">basic_publish</span><span class="p">(</span>
+    <span class="n">exchange</span><span class="o">=</span><span class="n">deliver</span><span class="p">.</span><span class="n">exchange</span><span class="p">,</span> 
+    <span class="n">routing_key</span><span class="o">=</span><span class="n">msgProperties</span><span class="p">.</span><span class="n">reply_to</span><span class="p">,</span>
+    <span class="n">body</span><span class="o">=</span><span class="n">json</span><span class="p">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">retMsg</span><span class="p">),</span>
+    <span class="n">properties</span><span class="o">=</span><span class="n">msgProperties</span>
+  <span class="p">)</span>
 
-# boilerplate code coupling our handler with the AMQP broker
-connCfg = pika.ConnectionParameters(host='rabbitmq')
-connection = pika.BlockingConnection(connCfg)
-channel = connection.channel()
-channel.basic_qos(0, 1, False)
-# create the 'onModify' queue
-channel.queue_declare(queue='onModify')
-# set up a handler function
-channel.basic_consume(
-  queue='onModify', 
-  on_message_callback=checkMeta,
-  auto_ack=True
-)
-channel.start_consuming()
-</code></pre>
+<span class="c1"># boilerplate code coupling our handler with the AMQP broker
+</span><span class="n">connCfg</span> <span class="o">=</span> <span class="n">pika</span><span class="p">.</span><span class="n">ConnectionParameters</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s">'rabbitmq'</span><span class="p">)</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">pika</span><span class="p">.</span><span class="n">BlockingConnection</span><span class="p">(</span><span class="n">connCfg</span><span class="p">)</span>
+<span class="n">channel</span> <span class="o">=</span> <span class="n">connection</span><span class="p">.</span><span class="n">channel</span><span class="p">()</span>
+<span class="n">channel</span><span class="p">.</span><span class="n">basic_qos</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+<span class="c1"># create the 'onModify' queue
+</span><span class="n">channel</span><span class="p">.</span><span class="n">queue_declare</span><span class="p">(</span><span class="n">queue</span><span class="o">=</span><span class="s">'onModify'</span><span class="p">)</span>
+<span class="c1"># set up a handler function
+</span><span class="n">channel</span><span class="p">.</span><span class="n">basic_consume</span><span class="p">(</span>
+  <span class="n">queue</span><span class="o">=</span><span class="s">'onModify'</span><span class="p">,</span> 
+  <span class="n">on_message_callback</span><span class="o">=</span><span class="n">checkMeta</span><span class="p">,</span>
+  <span class="n">auto_ack</span><span class="o">=</span><span class="bp">True</span>
+<span class="p">)</span>
+<span class="n">channel</span><span class="p">.</span><span class="n">start_consuming</span><span class="p">()</span>
+</code></pre></div>    </div>
   </li>
   <li>Tell the arche-core to use AMQP handlers.
 Edit the <code class="language-plaintext highlighter-rouge">rest.handlers</code> section of the <code class="language-plaintext highlighter-rouge">arche-docker-config/yaml/repo.yaml</code>:
@@ -993,6 +1048,8 @@ Edit the <code class="language-plaintext highlighter-rouge">rest.handlers</code>
 <p>Remarks about a production environment usage:</p>
 
 <ul>
+  <li>If you want to use multiple AMQP handlers, you should assign each of
+them a unique queue name.</li>
   <li>You should rather make a dedicated Docker image containing a complete 
 execution environment for your handlers service rather than installing 
 libraries as a part of the <code class="language-plaintext highlighter-rouge">handlers/start.sh</code>.</li>
