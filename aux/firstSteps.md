@@ -754,7 +754,7 @@ This is possible in two ways:
         ?string $pathToBinaryPayload
     ): EasyRdf\Resource
     ```
-    and it should return the final metadata of the resource.
+    and it should return the final metadata of the resource (as an `EasyRdf\Resource` object).
   * Handlers can break hadnling of a request by throwing an exception.
     In such a case the exception code is used as HTTP response code
     (e.g. 400 to indicate error in data provided by a user)
@@ -800,7 +800,11 @@ This is possible in two ways:
 
 By the way it is possible to mix both methods.
 
-Here we will take the second approach and implement a simple metadata consistency check handler in Python.
+As the first approach (PHP handlers with no AMQP) is well illustrated in our own ARCHE Suite deployment
+code (you may look [here](https://github.com/acdh-oeaw/arche-doorkeeper/blob/master/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php)
+and [here](https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/doorkeeper.yaml#L24)),
+in this tutorial we will take the second approach and implement a simple metadata consistency check handler in Python
+over the AMQP.
 
 * Let's start with adding a [RabbitMQ](https://www.rabbitmq.com/) broker service to our
   Docker containers stack.
@@ -833,10 +837,13 @@ Here we will take the second approach and implement a simple metadata consistenc
   * Create and **make executable** `handlers/start.sh`:
     ```bash
     #!/bin/bash
+
+    # install required python modules
     pip install pika
     pip install rdflib
     # give rabbitmq some time to start
     sleep 10
+    # start our handlers service
     python3 /opt/handlers.py
     ```
 * Create a simple handler code.  
@@ -900,27 +907,86 @@ Here we will take the second approach and implement a simple metadata consistenc
       exceptionOnTimeout: true
     methods:
       create:
-        - type: rpc
-          queue: onModify # must match the queue name in Python code
+      - type: rpc
+        queue: onModify # must match the queue name in Python code
       updateBinary: []
       updateMetadata:
-        - type: rpc
-          queue: onModify # must match the queue name in Python code
+      - type: rpc
+        queue: onModify # must match the queue name in Python code
       txCommit: []
   ```
+* Restart the arche-core by hitting `CTRL+c` on the console where you run `docker compose up`
+  and running `docker compose up` again.  
+  Wait until you see ` 
+* Test if it works
+  * Run a dedicated temporary docker container which we will use for the ingestion (it will have the sampleData directory availble under /data):
+    ```bash
+    docker run --rm -ti --network host -v ./sampleData:/data php:8.1 bash
+    ```
+    and install software required for the ingestion:
+    ```bash
+    curl -L https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions > /usr/local/bin/install-php-extensions &&\
+    chmod +x /usr/local/bin/install-php-extensions &&\
+    install-php-extensions @composer &&\
+    composer require acdh-oeaw/arche-ingest
+    ```
+  * Try to reingest the `metadata.ttl` file we used in the previous chapter:
+    ```bash
+    vendor/bin/arche-import-metadata /data/metadata.ttl http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file
+    ```
+    You should get something like
+    ```
+    (...)
+    Importing http://id.namespace/Baedeker-Mittelmeer_1909.xml (2/2)
+	updating http://my.domain/api/1 (1/2)
+	updating http://my.domain/api/2 (2/2)
+	ERROR while processing http://id.namespace/collection1: 400 dc:license triple is missing(GuzzleHttp\Exception\ClientException)
+	ERROR while processing http://id.namespace/Baedeker-Mittelmeer_1909.xml: 400 dc:license triple is missing(GuzzleHttp\Exception\ClientException)
+    (...)
+    ```
+    which is exactly what we wanted - our metadata check procedure revoked
+    the metadata update requests with the HTTP code 400 (Bad Request)
+     because the `dc:licence` RDF triple was missing.
+    * If you got another error code, try looking at the logs
+      in the `docs/rest.log`
+  * Edit the `sampleData/metadata.ttl` adding `dc:license triples`
+    for both resources to it, e.g.:
+    ```
+    @prefix dc: <http://purl.org/dc/terms/>.
+        <http://id.namespace/collection1> dc:title "Sample collection"@en ;
+        dc:license "CC BY-NC" .
+    <http://id.namespace/Baedeker-Mittelmeer_1909.xml> dc:title "Sample TEI-XML"@en ;
+        dc:isPartOf <http://id.namespace/collection1> ;
+        dc:license "CC BY-NC".
+    ```
+  * Try to ingest again:
+    ```bash
+    vendor/bin/arche-import-metadata /data/metadata.ttl http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file
+    ```
+    This time the ingestion should succeed.
+    * If you git an error, try looking at the logs in the `docs/rest.log`
+* Congratulations, you have just created and tested a very basic
+  data consistency check.
 
 Remarks about a production environment usage:
 
-* If you want to use multiple AMQP handlers, you should assign each of
-  them a unique queue name.
+* If you want to use multiple AMQP handlers for different events
+  (`txBegin/txCommit/txRollback/get/getMetadata/create/updateBinary/updateMetadata/delete/deleteTombstone`),
+  you should assign each of them a unique queue name.
 * You should rather make a dedicated Docker image containing a complete 
   execution environment for your handlers service rather than installing 
   libraries as a part of the `handlers/start.sh`.
-* You should probably set up RabbitMQ authorization (or make sure you
-  run in in an izolated and trusted network).
-* Sleeping 10 seconds to give RabbitMQ time to start is not the nicest
-  solution (but a nice implementation depends on how you run the RabbitMQ 
-  on production)
+* You should either set up RabbitMQ authorization or make sure you
+  run in in an izolated and trusted network.
+* Instead of just waiting 10 seconds for the RabbitMQ to start you should
+  rather implement a loop checking and waiting until the service is available
+  either in the `handlers/start.sh` or in the `handlers/handlers.py`.
+* If you expect higher repository loads, you may need to write your
+  handlers in a way multiple checks can run at once. Please consult
+  the AMQP broker of your choice (e.g. the RabbigMQ) documentation
+  to check how to do that.
+  * This problem does not exist in case of handlers written in PHP
+    and not using the AMQP. 
 
 ### Adding PIDs resolver and a dissemination service
 
