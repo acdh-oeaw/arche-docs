@@ -988,9 +988,88 @@ Remarks about a production environment usage:
   * This problem does not exist in case of handlers written in PHP
     and not using the AMQP. 
 
+Other remarks:
+
+* The [arche-openaire](https://github.com/acdh-oeaw/arche-openaire/) repository
+  provides a set of handlers for integrating the ARCHE Suite repository with
+  the [OpenAIRE usage statistics tracking](https://openaire.github.io/usage-statistics-guidelines/service-specification/service-spec/)
+
 ### Adding PIDs resolver and a dissemination service
 
+You probably want to assign [PIDs](https://en.wikipedia.org/wiki/Persistent_identifier)
+to resources in your repository.
+You can depend on an external PIDs service for that (e.g. a https://www.handle.net/) but
+this requires a constant maintenance (e.g. if you migrate your repository base URL, you
+need to update all the handles in the external service on your own).
+Alternatively you can set up your own PIDs service based on the ARCHE Suite repository
+metadata.
+For that you just need a dedicated (sub)domain and a deployment of the
+[arche-resolver](https://github.com/acdh-oeaw/arche-resolver/) module.
+The `arche-resolver` will also allow you to provide users with the content type negotation,
+e.g. redirect them to a service converting the resource as it is stored in the repository
+to another format.
 
+Let's try (deploying the resolver module within the arche-core Docker container
+like we did for the OAI-PMH):
+
+* Choose a domain for your PIDs.
+  Here we will use th `my.pid`.
+  * For the local testing define it as pointing to the `127.0.0.1` in the `/etc/hosts`
+    just like we did at the very beginning for the `my.domain`:
+    ```bash
+    (...)
+    127.0.0.1 my.pid
+    ```
+* Create the `arche-docker-config/yaml/resolver.yaml` file containing the resolver module config
+  (consider reading comments provided in the code below):
+  ```yaml
+  # this section should be in line with corresponding settings
+  # in the arche-docker-config/yaml/schema.yaml
+  schema:
+    id: http://purl.org/dc/terms/identifier
+    parent: http://purl.org/dc/terms/isPartOf
+    label: http://purl.org/dc/terms/title
+    searchMatch: search://match
+    searchFts: search://fts
+    # this section defines RDF properties used to describe dissemination services
+    # here we just reuse the same settings we use at our OEAW deployment
+    # see https://acdh-oeaw.github.io/arche-docs/aux/dissemination_services.html
+    # for details
+    dissService:
+      class: https://vocabs.acdh.oeaw.ac.at/schema#DisseminationService
+      location: https://vocabs.acdh.oeaw.ac.at/schema#serviceLocation
+      returnFormat: https://vocabs.acdh.oeaw.ac.at/schema#hasReturnType
+      matchProperty: https://vocabs.acdh.oeaw.ac.at/schema#matchesProp
+      matchValue: https://vocabs.acdh.oeaw.ac.at/schema#matchesValue
+      matchRequired: https://vocabs.acdh.oeaw.ac.at/schema#isRequired
+      revProxy: https://vocabs.acdh.oeaw.ac.at/schema#serviceRevProxy
+      parameterClass: https://vocabs.acdh.oeaw.ac.at/schema#DisseminationServiceParameter
+      parameterDefaultValue: https://vocabs.acdh.oeaw.ac.at/schema#hasDefaultValue
+      parameterRdfProperty: https://vocabs.acdh.oeaw.ac.at/schema#usesRdfProperty
+      hasService: https://vocabs.acdh.oeaw.ac.at/schema#hasDissService
+  resolver:
+    logging:
+      file: /var/www/html/log
+      level: warning
+    idProtocol: http
+    idHost: my.pid
+    idPathBase: ''
+    defaultDissService: raw
+    # redirects for dissemination formats provided by the arche-core
+    fastTrack:
+      raw: ''
+      application/octet-stream: ''
+      rdf: /metadata
+      text/turtle: /metadata
+      application/n-triples: /metadata
+      application/rdf+xml: /metadata
+      application/ld+json: /metadata
+    repositories:
+      # the resolver is capable of searching against multiple arche-core
+      # instances but we have only one so we set up only one
+      main:
+        baseUrl: http://my.domain
+  ```
 
 ### Batch-updating metadata
 
