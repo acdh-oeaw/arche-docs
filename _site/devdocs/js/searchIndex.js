@@ -423,7 +423,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\HandlersController\u003A\u003Acallback\u0028\u0029",
             "name": "callback",
-            "summary": "",
+            "summary": "Handles\u0020the\u0020AMQP\u0020message\u0020received\u0020from\u0020a\u0020handler.",
             "url": "classes/acdhOeaw-arche-core-HandlersController.html#method_callback"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\HandlersController\u003A\u003ATYPE_RPC",
@@ -1680,6 +1680,11 @@ Search.appendIndex(
             "name": "valid",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#method_valid"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003Asort\u0028\u0029",
+            "name": "sort",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#method_sort"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\util\\TriplesIterator\u003A\u003AgetObject\u0028\u0029",
             "name": "getObject",
