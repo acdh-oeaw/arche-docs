@@ -17,6 +17,9 @@ Remarks:
 * This guide was tested on a linux (Ubuntu 22.04) machine.
   * As we are using Docker it should be also reproducible on a Windows and macOS machine
     but this was not tested and there is a risk you will run into platform-specific issues.
+  * If you are using Windows, you may install Ubuntu as a virtual machine using the WSL.
+    See https://learn.microsoft.com/en-us/windows/wsl/install and
+    https://docs.docker.com/engine/install/ubuntu/ .
   * If you are using Fedora/RedHat, then you may want to use Podman instead of Docker.
     This should work in general but there might be some differences you will need to address
     and which are not covered by this guide
