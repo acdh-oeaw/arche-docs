@@ -332,14 +332,7 @@ Let's ingest one metadata-only resource and a TEI-XML file as its child.
 * Run a dedicated temporary docker container which we will use for the ingestion
   (it will have the `sampleData` directory availble under `/data`):
   ```bash
-  docker run --rm -ti --network host -v ./sampleData:/data php:8.1 bash
-  ```
-  and install software required for the ingestion:
-  ```bash
-  curl -L https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions > /usr/local/bin/install-php-extensions &&\
-  chmod +x /usr/local/bin/install-php-extensions &&\
-  install-php-extensions @composer &&\
-  composer require acdh-oeaw/arche-ingest
+  docker run --rm -ti --network host -v ./sampleData:/data acdhch/arche-ingest
   ```
 * Ingest the metadata file with:
   ```bash
@@ -432,6 +425,9 @@ You can also try:
   ```
   curl -i http://my.domain/api/2
   ```
+
+The [arche-ingest](https://github.com/acdh-oeaw/arche-ingest) repository provides
+scripts automating metadata and binary data repository upload.
 
 ### Acess control
 
@@ -588,14 +584,7 @@ Let's ingest both metadata files the same way we did before:
 * Run a dedicated temporary docker container which we will use for the ingestion
   (it will have the `sampleData` directory availble under `/data`):
   ```bash
-  docker run --rm -ti --network host -v ./sampleData:/data php:8.1 bash
-  ```
-  and install software required for the ingestion:
-  ```bash
-  curl -L https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions > /usr/local/bin/install-php-extensions &&\
-  chmod +x /usr/local/bin/install-php-extensions &&\
-  install-php-extensions @composer &&\
-  composer require acdh-oeaw/arche-ingest
+  docker run --rm -ti --network host -v ./sampleData:/data acdhch/arche-ingest
   ```
 * Try to ingest the `acl1.ttl` as the `bob` user:
   ```bash
@@ -643,7 +632,7 @@ In this example we will use the first approach.
   ```json
   {
     "require": {
-      "acdh-oeaw/arche-core": "^3",
+      "acdh-oeaw/arche-core": "^4",
       "zozlak/yaml-merge": "^1",
       "acdh-oeaw/arche-oaipmh": "^4.2"
     }
@@ -651,7 +640,8 @@ In this example we will use the first approach.
   ```
   This will make the [arche-oaipmh](https://github.com/acdh-oeaw/arche-oaipmh) being installed
   on the Docker container startup.
-* Create and **make executable** the `arche-docker-config/run.d/oaipmh.sh` file
+* Create and **make executable** (`chmod +x arche-docker-config/run.d/oaipmh.sh`)
+  the `arche-docker-config/run.d/oaipmh.sh` file
   initializing the OAI-PMH service under the `{repoBaseUrl}/oaipmh` path:
   ```bash
   #!/bin/bash
@@ -662,6 +652,8 @@ In this example we will use the first approach.
   su -l www-data -c 'cp /home/www-data/vendor/acdh-oeaw/arche-oaipmh/.htaccess /home/www-data/docroot/oaipmh/.htaccess'
   su -l www-data -c 'cp /home/www-data/vendor/acdh-oeaw/arche-oaipmh/index.php /home/www-data/docroot/oaipmh/index.php'
 
+  # compile the final resolver config file from arche-docker-config/yaml/schema.yaml,
+  # arche-docker-config/yaml/resolver.yaml and arche-docker-config/yaml/local.yaml
   CMD=/home/www-data/vendor/zozlak/yaml-merge/bin/yaml-edit.php
   CFGD=/home/www-data/config/yaml
   rm -f /home/www-data/docroot/oaipmh/config.yaml $CFGD/config-oaipmh.yaml
@@ -921,14 +913,7 @@ over the AMQP.
 * Test if it works
   * Run a dedicated temporary docker container which we will use for the ingestion (it will have the sampleData directory availble under /data):
     ```bash
-    docker run --rm -ti --network host -v ./sampleData:/data php:8.1 bash
-    ```
-    and install software required for the ingestion:
-    ```bash
-    curl -L https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions > /usr/local/bin/install-php-extensions &&\
-    chmod +x /usr/local/bin/install-php-extensions &&\
-    install-php-extensions @composer &&\
-    composer require acdh-oeaw/arche-ingest
+    docker run --rm -ti --network host -v ./sampleData:/data acdhch/arche-ingest
     ```
   * Try to reingest the `metadata.ttl` file we used in the previous chapter:
     ```bash
@@ -949,7 +934,7 @@ over the AMQP.
      because the `dc:licence` RDF triple was missing.
     * If you got another error code, try looking at the logs
       in the `docs/rest.log`
-  * Edit the `sampleData/metadata.ttl` adding `dc:license triples`
+  * Edit the `sampleData/metadata.ttl` adding `dc:license` triples
     for both resources to it, e.g.:
     ```
     @prefix dc: <http://purl.org/dc/terms/>.
@@ -998,9 +983,11 @@ Other remarks:
 
 You probably want to assign [PIDs](https://en.wikipedia.org/wiki/Persistent_identifier)
 to resources in your repository.
+
 You can depend on an external PIDs service for that (e.g. a https://www.handle.net/) but
 this requires a constant maintenance (e.g. if you migrate your repository base URL, you
 need to update all the handles in the external service on your own).
+
 Alternatively you can set up your own PIDs service based on the ARCHE Suite repository
 metadata.
 For that you just need a dedicated (sub)domain and a deployment of the
@@ -1020,21 +1007,25 @@ like we did for the OAI-PMH):
     (...)
     127.0.0.1 my.pid
     ```
+* Add `acdh-oeaw/arche-resolver` to the packages list in `arche-docker-config/composer.json`:
+  ```json
+  {
+    "require": {
+      "acdh-oeaw/arche-core": "^4",
+      "zozlak/yaml-merge": "^1",
+      "acdh-oeaw/arche-oaipmh": "^4.2",
+      "acdh-oeaw/arche-resolver": "^3"
+    }
+  }
+  ```
 * Create the `arche-docker-config/yaml/resolver.yaml` file containing the resolver module config
   (consider reading comments provided in the code below):
   ```yaml
-  # this section should be in line with corresponding settings
-  # in the arche-docker-config/yaml/schema.yaml
   schema:
-    id: http://purl.org/dc/terms/identifier
-    parent: http://purl.org/dc/terms/isPartOf
-    label: http://purl.org/dc/terms/title
-    searchMatch: search://match
-    searchFts: search://fts
-    # this section defines RDF properties used to describe dissemination services
-    # here we just reuse the same settings we use at our OEAW deployment
-    # see https://acdh-oeaw.github.io/arche-docs/aux/dissemination_services.html
-    # for details
+    # This section defines RDF properties used to describe dissemination services.
+    # Here we just reuse the same settings we use at our OEAW deployment.
+    # See https://acdh-oeaw.github.io/arche-docs/aux/dissemination_services.html
+    # for details.
     dissService:
       class: https://vocabs.acdh.oeaw.ac.at/schema#DisseminationService
       location: https://vocabs.acdh.oeaw.ac.at/schema#serviceLocation
@@ -1049,13 +1040,13 @@ like we did for the OAI-PMH):
       hasService: https://vocabs.acdh.oeaw.ac.at/schema#hasDissService
   resolver:
     logging:
-      file: /var/www/html/log
+      file: /home/www-data/log/resolver.log
       level: warning
     idProtocol: http
     idHost: my.pid
     idPathBase: ''
     defaultDissService: raw
-    # redirects for dissemination formats provided by the arche-core
+    # quick redirects for dissemination formats provided by the arche-core
     fastTrack:
       raw: ''
       application/octet-stream: ''
@@ -1067,9 +1058,169 @@ like we did for the OAI-PMH):
     repositories:
       # the resolver is capable of searching against multiple arche-core
       # instances but we have only one so we set up only one
+      # see https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/resolver.yaml
+      # for a multi-repo setup
       main:
-        baseUrl: http://my.domain
+        baseUrl: http://my.domain/api
   ```
+* Create and **make executable** (`chmod +x arche-docker-config/run.d/resolver.sh`)
+  the `arche-docker-config/run.d/resolver.sh` file
+  initializing the resolver:
+  ```bash
+  if [ ! -d /home/www-data/docroot/resolver ]; then
+    su -l www-data -c 'mkdir /home/www-data/docroot/resolver'
+    su -l www-data -c 'ln -s /home/www-data/vendor /home/www-data/docroot/resolver/vendor'
+  fi
+  su -l www-data -c 'cp /home/www-data/vendor/acdh-oeaw/arche-resolver/.htaccess /home/www-data/docroot/resolver/.htaccess'
+  su -l www-data -c 'cp /home/www-data/vendor/acdh-oeaw/arche-resolver/index.php /home/www-data/docroot/resolver/index.php'
+
+  # compile the final resolver config file from arche-docker-config/yaml/schema.yaml,
+  # arche-docker-config/yaml/resolver.yaml and arche-docker-config/yaml/local.yaml
+  CMD=/home/www-data/vendor/zozlak/yaml-merge/bin/yaml-edit.php
+  CFGD=/home/www-data/config/yaml
+  rm -f /home/www-data/docroot/resolver/config.yaml $CFGD/config-resolver.yaml
+  su -l www-data -c "$CMD --src $CFGD/schema.yaml --src $CFGD/resolver.yaml --src $CFGD/local.yaml $CFGD/config-resolver.yaml"
+  su -l www-data -c "ln -s $CFGD/config-resolver.yaml /home/www-data/docroot/resolver/config.yaml"
+  ```
+* Create the `arche-docker-config/sites-enabled/my.pid.conf` file
+  providing the webserver configuration for the my.pi domain:
+  ```
+  <VirtualHost *:80>
+      DocumentRoot /home/www-data/docroot/resolver
+      ServerName my.pid
+
+      <Directory /home/www-data/docroot/resolver>
+          Options All
+          AllowOverride All
+          Require all granted
+      </Directory>
+  </VirtualHost>
+  ```
+* Restart the arche-core by hitting `CTRL+c` on the console where you run 
+  `docker compose up` and running `docker compose up` again.
+
+At this point we have the resolver service ready.
+What we still need to do to make it useful is to assign our repository resources
+identifiers in the my.pid domain:
+
+* Edit the `sampleData/metadata.ttl` adding `dc:identifier` triples
+  in the my.pid domain and setting read access rights to public
+  (we restricted them in our ACL experiments few chapters before), e.g.:
+  ```
+  @prefix dc: <http://purl.org/dc/terms/>.
+      <http://id.namespace/collection1> dc:title "Sample collection"@en ;
+      dc:license "CC BY-NC" ;
+      dc:identifier <http://my.pid/collection1> ;
+      <https://vocabs.acdh.oeaw.ac.at/schema#aclRead> "public" .
+  <http://id.namespace/Baedeker-Mittelmeer_1909.xml> dc:title "Sample TEI-XML"@en ;
+      dc:isPartOf <http://id.namespace/collection1> ;
+      dc:license "CC BY-NC" ;
+      dc:identifier <http://my.pid/mittelmeer> ;
+      <https://vocabs.acdh.oeaw.ac.at/schema#aclRead> "public" .
+  ``` 
+* Run a dedicated temporary docker container which we will use for the ingestion (it will have the sampleData directory availble under /data):
+  ```bash
+  docker run --rm -ti --network host -v ./sampleData:/data acdhch/arche-ingest
+  ```
+* Reingest the metadata:
+  ```bash
+  vendor/bin/arche-import-metadata /data/metadata.ttl http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file
+  ```
+  * If you git an error, try looking at the logs in the `docs/rest.log`
+
+Now we should be able to play with the resolver
+(we will user the `curl` so we can see what is going on in details
+and are not affected by web browsers content negotation settings -
+browsers always request response in `text/html`):
+
+* Resolve a resource using its identifier in the my.pid domain
+  (with the `-i` curl option we ask HTTP response headers to be displayed):
+  ```bash
+  curl -i 'http://my.pid/mittelmeer'
+  ```
+  You should get something like:
+  ```
+  HTTP/1.1 302 Found
+  (...)
+  Location: http://my.domain/api/2
+  (...)
+  ```
+  which means a resource has been found and you are redirected to
+  its actual location - http://my.domain/api/2
+* Let's do the same asking the curl to follow the redirect (the `-L` option):
+  ```bash
+  curl -L 'http://my.pid/mittelmeer'
+  ```
+  Now you should get the TEI-XML repository resource content.
+* Let's try the content negotiation and request this resource in the
+  `application/n-triples` format:
+  ```bash
+  curl -i -H 'Accept: application/n-triples' 'http://my.pid/mittelmeer'
+  ```
+  Now you should get something like:
+  ```
+  HTTP/1.1 302 Found
+  (...)
+  Location: http://my.domain/api/2/metadata
+  ```
+  As you can see the redirect location is different this time.
+  This is because we requested the repository resource to be
+  disseminated in a particular format (which is configured
+  in the resolver config - see the `resolver.fastTrack` section
+  of the `arche-docker-config/yaml/resolver.yaml`).
+  * Let's repeat asking curl to follow the redirect:
+    ```bash
+    curl -L -H 'Accept: application/n-triples' 'http://my.pid/mittelmeer'
+    ```
+    and we should get something like:
+    ```
+    <http://my.domain/api/2> <http://purl.org/dc/terms/format> "application/xml"  .
+    <http://my.domain/api/2> <http://purl.org/dc/terms/created> "2023-07-06T11:56:30.757867"^^<http://www.w3.org/2001/XMLSchema#dateTime>  .
+    (...)
+    <http://my.domain/api/1> <http://purl.org/dc/terms/title> "Sample collection"@en  .
+    (...)
+    ```
+    being metadata of the requested resource (as well as resources its metadata
+    directly point to, e.g. here the parent collection) in the `application/n-triples` format.
+* As we set `resolver.defaultDissService` to `raw` in the `arche-docker-config/yaml/resolver.yaml`,
+  requesting a not configured format will end up in `raw` which just redirects to
+  the resource's repository URL:
+  ```bash
+  curl -i -H 'Accept: application/foo' 'http://my.pid/mittelmeer'
+  ```
+  should fetch:
+  ```
+  HTTP/1.1 302 Found
+  (...)
+  Location: http://my.domain/api/2
+  (...)
+  ```
+* Of course requesting an URL in the my.pid domain which does not correspond
+  to identifier of any repository resource will end up with HTTP 404 Not Found:
+  ```bash
+  curl -i 'http://my.pid/bar'
+  ```
+  should result in something like:
+  ```
+  HTTP/1.1 404 Not Found
+  (...)
+  ```
+
+Summing up the nice thing about having the PIDs service is:
+
+* it can provide content negotation to the end user
+* if you change the repository location, the only thing you need
+  to adjust to keep arche-resolver-managed PIDs being redirected
+  to the new repository location is to adjust
+  a single line in the `arche-docker-config/yaml/resolver.yaml`
+
+Closing remarks:
+
+* In this chapter only the "fast track" content negotation has been presented.
+  It is limited to just adding a suffix to the resource's repository URL.
+  The arche-resolver provides far more powerful method of defining dissemination
+  services redirection rules but it is admittedly more complex.
+  You can read more about it [here](dissemination_services.html).
 
 ### Batch-updating metadata
 
@@ -1110,12 +1261,32 @@ Fortunately it's pretty straigtforward:
   ```
 
 The direct database access can be also used to analyze the metadata, e.g.
-quickly compute distribution of RDF predicated values, etc.
+quickly compute distribution of RDF predicated values, etc.:
+
+```sql
+SELECT property, count(*) FROM metadata GROUP BY 1 ORDER BY 2 DESC;
+```
 
 A little more information on the database structure is provided [here](https://github.com/acdh-oeaw/arche-core#database-structure).
 
 ## Further considerations
 
-TODO
+Congratulations, you completed your first dive into the ARCHE Suite world!
 
-Last but not least, if you have questions, please do not hesitate to [ask us](mailto:mzoltak@oeaw.ac.at).
+You managed to set up quite a range of services: the core repository module,
+the OAI-PMH service, the PIDs resolver.
+You managed to ingest a little data into the repository.
+You played a little with the access control and metadata schema
+and you also set up your very own metadata consistency check handler.
+
+That being said in most cases we only touched a topic and there is still
+a lot to discover (OAI-PMH templates, resolver's dissemination services,
+implementing your complete checks logic using handlers, dealing with
+ARCHE Suites modules not mentioned in this guide, etc.).
+
+Also, we have not touched at all the topic of your repository GUI
+(explanation [here](intro.html)).
+
+You would surely benefit from some help dealing with all that missing stuff
+so please do not hesitate to [contact us](mailto:mzoltak@oeaw.ac.at).
+
