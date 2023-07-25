@@ -1,5 +1,21 @@
 # First steps to set up your own ARCHE Suite instance
 
+## Table of contents
+
+* [Prerequisites](#prerequisites)
+* [Really quick and dirty setup](#really-quick-and-dirty-setup)
+* [Step-by-step installation](#step-by-step-installation)
+  * [Installing arche-core](#installing-arche-core)
+  * [Troubleshooting](#troubleshooting)
+  * [Deciding on metadata schema](#deciding-on-metadata-schema)
+  * [Ingesting some data](#ingesting-some-data)
+  * [Acess control](#acess-control)
+  * [Setting up a basic OAI-PMH](#setting-up-a-basic-oai-pmh)
+  * [Plugging in checks on the data ingestion](#plugging-in-checks-on-the-data-ingestion)
+  * [Adding PIDs resolver and content format negotation](#adding-pids-resolver-and-content-format-negotation)
+  * [Batch-updating metadata](#batch-updating-metadata)
+* [Further considerations](#further-considerations)
+
 ## Prerequisites
 
 You need:
@@ -982,7 +998,7 @@ Other remarks:
   provides a set of handlers for integrating the ARCHE Suite repository with
   the [OpenAIRE usage statistics tracking](https://openaire.github.io/usage-statistics-guidelines/service-specification/service-spec/)
 
-### Adding PIDs resolver and a dissemination service
+### Adding PIDs resolver and content format negotation
 
 You probably want to assign [PIDs](https://en.wikipedia.org/wiki/Persistent_identifier)
 to resources in your repository.
