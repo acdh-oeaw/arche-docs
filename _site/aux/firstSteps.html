@@ -21,7 +21,7 @@
 {"description":"Documentation for the ARCHE repository software stack","url":"/arche-docs/aux/firstSteps.html","@type":"WebPage","headline":"First steps to set up your own ARCHE Suite instance","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=bb4dac04204c7183b77884a6f790dd930fde7f0d">
+    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=77a387d9da05e27f1acc2c3afd7add019f82db8c">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -406,13 +406,7 @@ and running <code class="language-plaintext highlighter-rouge">docker compose up
   </li>
   <li>Run a dedicated temporary docker container which we will use for the ingestion
 (it will have the <code class="language-plaintext highlighter-rouge">sampleData</code> directory availble under <code class="language-plaintext highlighter-rouge">/data</code>):
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-ti</span> <span class="nt">--network</span> host <span class="nt">-v</span> ./sampleData:/data php:8.1 bash
-</code></pre></div>    </div>
-    <p>and install software required for the ingestion:</p>
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-L</span> https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions <span class="o">&gt;</span> /usr/local/bin/install-php-extensions <span class="o">&amp;&amp;</span><span class="se">\</span>
-<span class="nb">chmod</span> +x /usr/local/bin/install-php-extensions <span class="o">&amp;&amp;</span><span class="se">\</span>
-install-php-extensions @composer <span class="o">&amp;&amp;</span><span class="se">\</span>
-composer require acdh-oeaw/arche-ingest
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-ti</span> <span class="nt">--network</span> host <span class="nt">-v</span> ./sampleData:/data acdhch/arche-ingest
 </code></pre></div>    </div>
   </li>
   <li>Ingest the metadata file with:
@@ -515,6 +509,9 @@ but this is discussed in the next chapter.</li>
 </code></pre></div>    </div>
   </li>
 </ul>
+
+<p>The <a href="https://github.com/acdh-oeaw/arche-ingest">arche-ingest</a> repository provides
+scripts automating metadata and binary data repository upload.</p>
 
 <h3 id="acess-control">Acess control</h3>
 
@@ -687,13 +684,7 @@ This is the solution we prefer.</li>
 <ul>
   <li>Run a dedicated temporary docker container which we will use for the ingestion
 (it will have the <code class="language-plaintext highlighter-rouge">sampleData</code> directory availble under <code class="language-plaintext highlighter-rouge">/data</code>):
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-ti</span> <span class="nt">--network</span> host <span class="nt">-v</span> ./sampleData:/data php:8.1 bash
-</code></pre></div>    </div>
-    <p>and install software required for the ingestion:</p>
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-L</span> https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions <span class="o">&gt;</span> /usr/local/bin/install-php-extensions <span class="o">&amp;&amp;</span><span class="se">\</span>
-<span class="nb">chmod</span> +x /usr/local/bin/install-php-extensions <span class="o">&amp;&amp;</span><span class="se">\</span>
-install-php-extensions @composer <span class="o">&amp;&amp;</span><span class="se">\</span>
-composer require acdh-oeaw/arche-ingest
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-ti</span> <span class="nt">--network</span> host <span class="nt">-v</span> ./sampleData:/data acdhch/arche-ingest
 </code></pre></div>    </div>
   </li>
   <li>Try to ingest the <code class="language-plaintext highlighter-rouge">acl1.ttl</code> as the <code class="language-plaintext highlighter-rouge">bob</code> user:
@@ -741,7 +732,7 @@ In this example we will use the first approach.</p>
   <li>Add <code class="language-plaintext highlighter-rouge">acdh-oeaw/arche-oaipmh</code> to the packages list in <code class="language-plaintext highlighter-rouge">arche-docker-config/composer.json</code>:
     <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"require"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"acdh-oeaw/arche-core"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^3"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"acdh-oeaw/arche-core"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^4"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"zozlak/yaml-merge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^1"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"acdh-oeaw/arche-oaipmh"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^4.2"</span><span class="w">
   </span><span class="p">}</span><span class="w">
@@ -750,7 +741,8 @@ In this example we will use the first approach.</p>
     <p>This will make the <a href="https://github.com/acdh-oeaw/arche-oaipmh">arche-oaipmh</a> being installed
 on the Docker container startup.</p>
   </li>
-  <li>Create and <strong>make executable</strong> the <code class="language-plaintext highlighter-rouge">arche-docker-config/run.d/oaipmh.sh</code> file
+  <li>Create and <strong>make executable</strong> (<code class="language-plaintext highlighter-rouge">chmod +x arche-docker-config/run.d/oaipmh.sh</code>)
+the <code class="language-plaintext highlighter-rouge">arche-docker-config/run.d/oaipmh.sh</code> file
 initializing the OAI-PMH service under the <code class="language-plaintext highlighter-rouge">{repoBaseUrl}/oaipmh</code> path:
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
 <span class="k">if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-d</span> /home/www-data/docroot/oaipmh <span class="o">]</span><span class="p">;</span> <span class="k">then
@@ -760,6 +752,8 @@ initializing the OAI-PMH service under the <code class="language-plaintext highl
 </span>su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s1">'cp /home/www-data/vendor/acdh-oeaw/arche-oaipmh/.htaccess /home/www-data/docroot/oaipmh/.htaccess'</span>
 su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s1">'cp /home/www-data/vendor/acdh-oeaw/arche-oaipmh/index.php /home/www-data/docroot/oaipmh/index.php'</span>
 
+<span class="c"># compile the final resolver config file from arche-docker-config/yaml/schema.yaml,</span>
+<span class="c"># arche-docker-config/yaml/resolver.yaml and arche-docker-config/yaml/local.yaml</span>
 <span class="nv">CMD</span><span class="o">=</span>/home/www-data/vendor/zozlak/yaml-merge/bin/yaml-edit.php
 <span class="nv">CFGD</span><span class="o">=</span>/home/www-data/config/yaml
 <span class="nb">rm</span> <span class="nt">-f</span> /home/www-data/docroot/oaipmh/config.yaml <span class="nv">$CFGD</span>/config-oaipmh.yaml
@@ -857,7 +851,7 @@ your handler signature should be:
     <span class="o">?</span><span class="n">string</span> <span class="nv">$pathToBinaryPayload</span>
 <span class="p">)</span><span class="o">:</span> <span class="nc">EasyRdf\Resource</span>
 </code></pre></div>        </div>
-        <p>and it should return the final metadata of the resource.</p>
+        <p>and it should return the final metadata of the resource (as an <code class="language-plaintext highlighter-rouge">EasyRdf\Resource</code> object).</p>
       </li>
       <li>Handlers can break hadnling of a request by throwing an exception.
 In such a case the exception code is used as HTTP response code
@@ -925,7 +919,11 @@ the optional <code class="language-plaintext highlighter-rouge">message</code> p
 
 <p>By the way it is possible to mix both methods.</p>
 
-<p>Here we will take the second approach and implement a simple metadata consistency check handler in Python.</p>
+<p>As the first approach (PHP handlers with no AMQP) is well illustrated in our own ARCHE Suite deployment
+code (you may look <a href="https://github.com/acdh-oeaw/arche-doorkeeper/blob/master/src/acdhOeaw/arche/doorkeeper/Doorkeeper.php">here</a>
+and <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/doorkeeper.yaml#L24">here</a>),
+in this tutorial we will take the second approach and implement a simple metadata consistency check handler in Python
+over the AMQP.</p>
 
 <ul>
   <li>Let’s start with adding a <a href="https://www.rabbitmq.com/">RabbitMQ</a> broker service to our
@@ -965,10 +963,13 @@ service.
       <li>Create the <code class="language-plaintext highlighter-rouge">handlers</code> directory</li>
       <li>Create and <strong>make executable</strong> <code class="language-plaintext highlighter-rouge">handlers/start.sh</code>:
         <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="c"># install required python modules</span>
 pip <span class="nb">install </span>pika
 pip <span class="nb">install </span>rdflib
 <span class="c"># give rabbitmq some time to start</span>
 <span class="nb">sleep </span>10
+<span class="c"># start our handlers service</span>
 python3 /opt/handlers.py
 </code></pre></div>        </div>
       </li>
@@ -1034,33 +1035,355 @@ Edit the <code class="language-plaintext highlighter-rouge">rest.handlers</code>
     <span class="na">exceptionOnTimeout</span><span class="pi">:</span> <span class="no">true</span>
   <span class="na">methods</span><span class="pi">:</span>
     <span class="na">create</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">rpc</span>
-        <span class="na">queue</span><span class="pi">:</span> <span class="s">onModify</span> <span class="c1"># must match the queue name in Python code</span>
+    <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">rpc</span>
+      <span class="na">queue</span><span class="pi">:</span> <span class="s">onModify</span> <span class="c1"># must match the queue name in Python code</span>
     <span class="na">updateBinary</span><span class="pi">:</span> <span class="pi">[]</span>
     <span class="na">updateMetadata</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">rpc</span>
-        <span class="na">queue</span><span class="pi">:</span> <span class="s">onModify</span> <span class="c1"># must match the queue name in Python code</span>
+    <span class="pi">-</span> <span class="na">type</span><span class="pi">:</span> <span class="s">rpc</span>
+      <span class="na">queue</span><span class="pi">:</span> <span class="s">onModify</span> <span class="c1"># must match the queue name in Python code</span>
     <span class="na">txCommit</span><span class="pi">:</span> <span class="pi">[]</span>
 </code></pre></div>    </div>
   </li>
+  <li>Restart the arche-core by hitting <code class="language-plaintext highlighter-rouge">CTRL+c</code> on the console where you run <code class="language-plaintext highlighter-rouge">docker compose up</code>
+and running <code class="language-plaintext highlighter-rouge">docker compose up</code> again.<br />
+Wait until you see `</li>
+  <li>Test if it works
+    <ul>
+      <li>Run a dedicated temporary docker container which we will use for the ingestion (it will have the sampleData directory availble under /data):
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-ti</span> <span class="nt">--network</span> host <span class="nt">-v</span> ./sampleData:/data acdhch/arche-ingest
+</code></pre></div>        </div>
+      </li>
+      <li>Try to reingest the <code class="language-plaintext highlighter-rouge">metadata.ttl</code> file we used in the previous chapter:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vendor/bin/arche-import-metadata /data/metadata.ttl http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file
+</code></pre></div>        </div>
+        <p>You should get something like</p>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(...)
+Importing http://id.namespace/Baedeker-Mittelmeer_1909.xml (2/2)
+updating http://my.domain/api/1 (1/2)
+updating http://my.domain/api/2 (2/2)
+ERROR while processing http://id.namespace/collection1: 400 dc:license triple is missing(GuzzleHttp\Exception\ClientException)
+ERROR while processing http://id.namespace/Baedeker-Mittelmeer_1909.xml: 400 dc:license triple is missing(GuzzleHttp\Exception\ClientException)
+(...)
+</code></pre></div>        </div>
+        <p>which is exactly what we wanted - our metadata check procedure revoked
+the metadata update requests with the HTTP code 400 (Bad Request)
+ because the <code class="language-plaintext highlighter-rouge">dc:licence</code> RDF triple was missing.</p>
+        <ul>
+          <li>If you got another error code, try looking at the logs
+in the <code class="language-plaintext highlighter-rouge">docs/rest.log</code></li>
+        </ul>
+      </li>
+      <li>Edit the <code class="language-plaintext highlighter-rouge">sampleData/metadata.ttl</code> adding <code class="language-plaintext highlighter-rouge">dc:license</code> triples
+for both resources to it, e.g.:
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@prefix dc: &lt;http://purl.org/dc/terms/&gt;.
+    &lt;http://id.namespace/collection1&gt; dc:title "Sample collection"@en ;
+    dc:license "CC BY-NC" .
+&lt;http://id.namespace/Baedeker-Mittelmeer_1909.xml&gt; dc:title "Sample TEI-XML"@en ;
+    dc:isPartOf &lt;http://id.namespace/collection1&gt; ;
+    dc:license "CC BY-NC".
+</code></pre></div>        </div>
+      </li>
+      <li>Try to ingest again:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vendor/bin/arche-import-metadata /data/metadata.ttl http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file
+</code></pre></div>        </div>
+        <p>This time the ingestion should succeed.</p>
+        <ul>
+          <li>If you git an error, try looking at the logs in the <code class="language-plaintext highlighter-rouge">docs/rest.log</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Congratulations, you have just created and tested a very basic
+data consistency check.</li>
 </ul>
 
 <p>Remarks about a production environment usage:</p>
 
 <ul>
-  <li>If you want to use multiple AMQP handlers, you should assign each of
-them a unique queue name.</li>
+  <li>If you want to use multiple AMQP handlers for different events
+(<code class="language-plaintext highlighter-rouge">txBegin/txCommit/txRollback/get/getMetadata/create/updateBinary/updateMetadata/delete/deleteTombstone</code>),
+you should assign each of them a unique queue name.</li>
   <li>You should rather make a dedicated Docker image containing a complete 
 execution environment for your handlers service rather than installing 
 libraries as a part of the <code class="language-plaintext highlighter-rouge">handlers/start.sh</code>.</li>
-  <li>You should probably set up RabbitMQ authorization (or make sure you
-run in in an izolated and trusted network).</li>
-  <li>Sleeping 10 seconds to give RabbitMQ time to start is not the nicest
-solution (but a nice implementation depends on how you run the RabbitMQ 
-on production)</li>
+  <li>You should either set up RabbitMQ authorization or make sure you
+run in in an izolated and trusted network.</li>
+  <li>Instead of just waiting 10 seconds for the RabbitMQ to start you should
+rather implement a loop checking and waiting until the service is available
+either in the <code class="language-plaintext highlighter-rouge">handlers/start.sh</code> or in the <code class="language-plaintext highlighter-rouge">handlers/handlers.py</code>.</li>
+  <li>If you expect higher repository loads, you may need to write your
+handlers in a way multiple checks can run at once. Please consult
+the AMQP broker of your choice (e.g. the RabbigMQ) documentation
+to check how to do that.
+    <ul>
+      <li>This problem does not exist in case of handlers written in PHP
+and not using the AMQP.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Other remarks:</p>
+
+<ul>
+  <li>The <a href="https://github.com/acdh-oeaw/arche-openaire/">arche-openaire</a> repository
+provides a set of handlers for integrating the ARCHE Suite repository with
+the <a href="https://openaire.github.io/usage-statistics-guidelines/service-specification/service-spec/">OpenAIRE usage statistics tracking</a></li>
 </ul>
 
 <h3 id="adding-pids-resolver-and-a-dissemination-service">Adding PIDs resolver and a dissemination service</h3>
+
+<p>You probably want to assign <a href="https://en.wikipedia.org/wiki/Persistent_identifier">PIDs</a>
+to resources in your repository.</p>
+
+<p>You can depend on an external PIDs service for that (e.g. a https://www.handle.net/) but
+this requires a constant maintenance (e.g. if you migrate your repository base URL, you
+need to update all the handles in the external service on your own).</p>
+
+<p>Alternatively you can set up your own PIDs service based on the ARCHE Suite repository
+metadata.
+For that you just need a dedicated (sub)domain and a deployment of the
+<a href="https://github.com/acdh-oeaw/arche-resolver/">arche-resolver</a> module.
+The <code class="language-plaintext highlighter-rouge">arche-resolver</code> will also allow you to provide users with the content type negotation,
+e.g. redirect them to a service converting the resource as it is stored in the repository
+to another format.</p>
+
+<p>Let’s try (deploying the resolver module within the arche-core Docker container
+like we did for the OAI-PMH):</p>
+
+<ul>
+  <li>Choose a domain for your PIDs.
+Here we will use th <code class="language-plaintext highlighter-rouge">my.pid</code>.
+    <ul>
+      <li>For the local testing define it as pointing to the <code class="language-plaintext highlighter-rouge">127.0.0.1</code> in the <code class="language-plaintext highlighter-rouge">/etc/hosts</code>
+just like we did at the very beginning for the <code class="language-plaintext highlighter-rouge">my.domain</code>:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>...<span class="o">)</span>
+127.0.0.1 my.pid
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Add <code class="language-plaintext highlighter-rouge">acdh-oeaw/arche-resolver</code> to the packages list in <code class="language-plaintext highlighter-rouge">arche-docker-config/composer.json</code>:
+    <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"require"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"acdh-oeaw/arche-core"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^4"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"zozlak/yaml-merge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"acdh-oeaw/arche-oaipmh"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^4.2"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"acdh-oeaw/arche-resolver"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^3"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>    </div>
+  </li>
+  <li>Create the <code class="language-plaintext highlighter-rouge">arche-docker-config/yaml/resolver.yaml</code> file containing the resolver module config
+(consider reading comments provided in the code below):
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">schema</span><span class="pi">:</span>
+  <span class="c1"># This section defines RDF properties used to describe dissemination services.</span>
+  <span class="c1"># Here we just reuse the same settings we use at our OEAW deployment.</span>
+  <span class="c1"># See https://acdh-oeaw.github.io/arche-docs/aux/dissemination_services.html</span>
+  <span class="c1"># for details.</span>
+  <span class="na">dissService</span><span class="pi">:</span>
+    <span class="na">class</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#DisseminationService</span>
+    <span class="na">location</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#serviceLocation</span>
+    <span class="na">returnFormat</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#hasReturnType</span>
+    <span class="na">matchProperty</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#matchesProp</span>
+    <span class="na">matchValue</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#matchesValue</span>
+    <span class="na">matchRequired</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#isRequired</span>
+    <span class="na">revProxy</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#serviceRevProxy</span>
+    <span class="na">parameterClass</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#DisseminationServiceParameter</span>
+    <span class="na">parameterDefaultValue</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#hasDefaultValue</span>
+    <span class="na">parameterRdfProperty</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#usesRdfProperty</span>
+    <span class="na">hasService</span><span class="pi">:</span> <span class="s">https://vocabs.acdh.oeaw.ac.at/schema#hasDissService</span>
+<span class="na">resolver</span><span class="pi">:</span>
+  <span class="na">logging</span><span class="pi">:</span>
+    <span class="na">file</span><span class="pi">:</span> <span class="s">/home/www-data/log/resolver.log</span>
+    <span class="na">level</span><span class="pi">:</span> <span class="s">warning</span>
+  <span class="na">idProtocol</span><span class="pi">:</span> <span class="s">http</span>
+  <span class="na">idHost</span><span class="pi">:</span> <span class="s">my.pid</span>
+  <span class="na">idPathBase</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">defaultDissService</span><span class="pi">:</span> <span class="s">raw</span>
+  <span class="c1"># quick redirects for dissemination formats provided by the arche-core</span>
+  <span class="na">fastTrack</span><span class="pi">:</span>
+    <span class="na">raw</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+    <span class="s">application/octet-stream</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+    <span class="na">rdf</span><span class="pi">:</span> <span class="s">/metadata</span>
+    <span class="s">text/turtle</span><span class="pi">:</span> <span class="s">/metadata</span>
+    <span class="s">application/n-triples</span><span class="pi">:</span> <span class="s">/metadata</span>
+    <span class="s">application/rdf+xml</span><span class="pi">:</span> <span class="s">/metadata</span>
+    <span class="s">application/ld+json</span><span class="pi">:</span> <span class="s">/metadata</span>
+  <span class="na">repositories</span><span class="pi">:</span>
+    <span class="c1"># the resolver is capable of searching against multiple arche-core</span>
+    <span class="c1"># instances but we have only one so we set up only one</span>
+    <span class="c1"># see https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/resolver.yaml</span>
+    <span class="c1"># for a multi-repo setup</span>
+    <span class="na">main</span><span class="pi">:</span>
+      <span class="na">baseUrl</span><span class="pi">:</span> <span class="s">http://my.domain/api</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Create and <strong>make executable</strong> (<code class="language-plaintext highlighter-rouge">chmod +x arche-docker-config/run.d/resolver.sh</code>)
+the <code class="language-plaintext highlighter-rouge">arche-docker-config/run.d/resolver.sh</code> file
+initializing the resolver:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">[</span> <span class="o">!</span> <span class="nt">-d</span> /home/www-data/docroot/resolver <span class="o">]</span><span class="p">;</span> <span class="k">then
+  </span>su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s1">'mkdir /home/www-data/docroot/resolver'</span>
+  su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s1">'ln -s /home/www-data/vendor /home/www-data/docroot/resolver/vendor'</span>
+<span class="k">fi
+</span>su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s1">'cp /home/www-data/vendor/acdh-oeaw/arche-resolver/.htaccess /home/www-data/docroot/resolver/.htaccess'</span>
+su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s1">'cp /home/www-data/vendor/acdh-oeaw/arche-resolver/index.php /home/www-data/docroot/resolver/index.php'</span>
+
+<span class="c"># compile the final resolver config file from arche-docker-config/yaml/schema.yaml,</span>
+<span class="c"># arche-docker-config/yaml/resolver.yaml and arche-docker-config/yaml/local.yaml</span>
+<span class="nv">CMD</span><span class="o">=</span>/home/www-data/vendor/zozlak/yaml-merge/bin/yaml-edit.php
+<span class="nv">CFGD</span><span class="o">=</span>/home/www-data/config/yaml
+<span class="nb">rm</span> <span class="nt">-f</span> /home/www-data/docroot/resolver/config.yaml <span class="nv">$CFGD</span>/config-resolver.yaml
+su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s2">"</span><span class="nv">$CMD</span><span class="s2"> --src </span><span class="nv">$CFGD</span><span class="s2">/schema.yaml --src </span><span class="nv">$CFGD</span><span class="s2">/resolver.yaml --src </span><span class="nv">$CFGD</span><span class="s2">/local.yaml </span><span class="nv">$CFGD</span><span class="s2">/config-resolver.yaml"</span>
+su <span class="nt">-l</span> www-data <span class="nt">-c</span> <span class="s2">"ln -s </span><span class="nv">$CFGD</span><span class="s2">/config-resolver.yaml /home/www-data/docroot/resolver/config.yaml"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Create the <code class="language-plaintext highlighter-rouge">arche-docker-config/sites-enabled/my.pid.conf</code> file
+providing the webserver configuration for the my.pi domain:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;VirtualHost *:80&gt;
+    DocumentRoot /home/www-data/docroot/resolver
+    ServerName my.pid
+
+    &lt;Directory /home/www-data/docroot/resolver&gt;
+        Options All
+        AllowOverride All
+        Require all granted
+    &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Restart the arche-core by hitting <code class="language-plaintext highlighter-rouge">CTRL+c</code> on the console where you run 
+<code class="language-plaintext highlighter-rouge">docker compose up</code> and running <code class="language-plaintext highlighter-rouge">docker compose up</code> again.</li>
+</ul>
+
+<p>At this point we have the resolver service ready.
+What we still need to do to make it useful is to assign our repository resources
+identifiers in the my.pid domain:</p>
+
+<ul>
+  <li>Edit the <code class="language-plaintext highlighter-rouge">sampleData/metadata.ttl</code> adding <code class="language-plaintext highlighter-rouge">dc:identifier</code> triples
+in the my.pid domain and setting read access rights to public
+(we restricted them in our ACL experiments few chapters before), e.g.:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@prefix dc: &lt;http://purl.org/dc/terms/&gt;.
+    &lt;http://id.namespace/collection1&gt; dc:title "Sample collection"@en ;
+    dc:license "CC BY-NC" ;
+    dc:identifier &lt;http://my.pid/collection1&gt; ;
+    &lt;https://vocabs.acdh.oeaw.ac.at/schema#aclRead&gt; "public" .
+&lt;http://id.namespace/Baedeker-Mittelmeer_1909.xml&gt; dc:title "Sample TEI-XML"@en ;
+    dc:isPartOf &lt;http://id.namespace/collection1&gt; ;
+    dc:license "CC BY-NC" ;
+    dc:identifier &lt;http://my.pid/mittelmeer&gt; ;
+    &lt;https://vocabs.acdh.oeaw.ac.at/schema#aclRead&gt; "public" .
+</code></pre></div>    </div>
+  </li>
+  <li>Run a dedicated temporary docker container which we will use for the ingestion (it will have the sampleData directory availble under /data):
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-ti</span> <span class="nt">--network</span> host <span class="nt">-v</span> ./sampleData:/data acdhch/arche-ingest
+</code></pre></div>    </div>
+  </li>
+  <li>Reingest the metadata:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vendor/bin/arche-import-metadata /data/metadata.ttl http://my.domain/api admin ADMIN_PSWD_as_set_in_.env_file
+</code></pre></div>    </div>
+    <ul>
+      <li>If you git an error, try looking at the logs in the <code class="language-plaintext highlighter-rouge">docs/rest.log</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Now we should be able to play with the resolver
+(we will user the <code class="language-plaintext highlighter-rouge">curl</code> so we can see what is going on in details
+and are not affected by web browsers content negotation settings -
+browsers always request response in <code class="language-plaintext highlighter-rouge">text/html</code>):</p>
+
+<ul>
+  <li>Resolve a resource using its identifier in the my.pid domain
+(with the <code class="language-plaintext highlighter-rouge">-i</code> curl option we ask HTTP response headers to be displayed):
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-i</span> <span class="s1">'http://my.pid/mittelmeer'</span>
+</code></pre></div>    </div>
+    <p>You should get something like:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 302 Found
+(...)
+Location: http://my.domain/api/2
+(...)
+</code></pre></div>    </div>
+    <p>which means a resource has been found and you are redirected to
+its actual location - http://my.domain/api/2</p>
+  </li>
+  <li>Let’s do the same asking the curl to follow the redirect (the <code class="language-plaintext highlighter-rouge">-L</code> option):
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-L</span> <span class="s1">'http://my.pid/mittelmeer'</span>
+</code></pre></div>    </div>
+    <p>Now you should get the TEI-XML repository resource content.</p>
+  </li>
+  <li>Let’s try the content negotiation and request this resource in the
+<code class="language-plaintext highlighter-rouge">application/n-triples</code> format:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s1">'Accept: application/n-triples'</span> <span class="s1">'http://my.pid/mittelmeer'</span>
+</code></pre></div>    </div>
+    <p>Now you should get something like:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 302 Found
+(...)
+Location: http://my.domain/api/2/metadata
+</code></pre></div>    </div>
+    <p>As you can see the redirect location is different this time.
+This is because we requested the repository resource to be
+disseminated in a particular format (which is configured
+in the resolver config - see the <code class="language-plaintext highlighter-rouge">resolver.fastTrack</code> section
+of the <code class="language-plaintext highlighter-rouge">arche-docker-config/yaml/resolver.yaml</code>).</p>
+    <ul>
+      <li>Let’s repeat asking curl to follow the redirect:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-L</span> <span class="nt">-H</span> <span class="s1">'Accept: application/n-triples'</span> <span class="s1">'http://my.pid/mittelmeer'</span>
+</code></pre></div>        </div>
+        <p>and we should get something like:</p>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;http://my.domain/api/2&gt; &lt;http://purl.org/dc/terms/format&gt; "application/xml"  .
+&lt;http://my.domain/api/2&gt; &lt;http://purl.org/dc/terms/created&gt; "2023-07-06T11:56:30.757867"^^&lt;http://www.w3.org/2001/XMLSchema#dateTime&gt;  .
+(...)
+&lt;http://my.domain/api/1&gt; &lt;http://purl.org/dc/terms/title&gt; "Sample collection"@en  .
+(...)
+</code></pre></div>        </div>
+        <p>being metadata of the requested resource (as well as resources its metadata
+directly point to, e.g. here the parent collection) in the <code class="language-plaintext highlighter-rouge">application/n-triples</code> format.</p>
+      </li>
+    </ul>
+  </li>
+  <li>As we set <code class="language-plaintext highlighter-rouge">resolver.defaultDissService</code> to <code class="language-plaintext highlighter-rouge">raw</code> in the <code class="language-plaintext highlighter-rouge">arche-docker-config/yaml/resolver.yaml</code>,
+requesting a not configured format will end up in <code class="language-plaintext highlighter-rouge">raw</code> which just redirects to
+the resource’s repository URL:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s1">'Accept: application/foo'</span> <span class="s1">'http://my.pid/mittelmeer'</span>
+</code></pre></div>    </div>
+    <p>should fetch:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 302 Found
+(...)
+Location: http://my.domain/api/2
+(...)
+</code></pre></div>    </div>
+  </li>
+  <li>Of course requesting an URL in the my.pid domain which does not correspond
+to identifier of any repository resource will end up with HTTP 404 Not Found:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-i</span> <span class="s1">'http://my.pid/bar'</span>
+</code></pre></div>    </div>
+    <p>should result in something like:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 404 Not Found
+(...)
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Summing up the nice thing about having the PIDs service is:</p>
+
+<ul>
+  <li>it can provide content negotation to the end user</li>
+  <li>if you change the repository location, the only thing you need
+to adjust to keep arche-resolver-managed PIDs being redirected
+to the new repository location is to adjust
+a single line in the <code class="language-plaintext highlighter-rouge">arche-docker-config/yaml/resolver.yaml</code></li>
+</ul>
+
+<p>Closing remarks:</p>
+
+<ul>
+  <li>In this chapter only the “fast track” content negotation has been presented.
+It is limited to just adding a suffix to the resource’s repository URL.
+The arche-resolver provides far more powerful method of defining dissemination
+services redirection rules but it is admittedly more complex.
+You can read more about it <a href="dissemination_services.html">here</a>.</li>
+</ul>
 
 <h3 id="batch-updating-metadata">Batch-updating metadata</h3>
 
@@ -1108,15 +1431,34 @@ so we have to update all already existing triples not to mess up everything.</p>
 </ul>
 
 <p>The direct database access can be also used to analyze the metadata, e.g.
-quickly compute distribution of RDF predicated values, etc.</p>
+quickly compute distribution of RDF predicated values, etc.:</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">property</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">metadata</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="mi">1</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="mi">2</span> <span class="k">DESC</span><span class="p">;</span>
+</code></pre></div></div>
 
 <p>A little more information on the database structure is provided <a href="https://github.com/acdh-oeaw/arche-core#database-structure">here</a>.</p>
 
 <h2 id="further-considerations">Further considerations</h2>
 
-<p>TODO</p>
+<p>Congratulations, you completed your first dive into the ARCHE Suite world!</p>
 
-<p>Last but not least, if you have questions, please do not hesitate to <a href="mailto:mzoltak@oeaw.ac.at">ask us</a>.</p>
+<p>You managed to set up quite a range of services: the core repository module,
+the OAI-PMH service, the PIDs resolver.
+You managed to ingest a little data into the repository.
+You played a little with the access control and metadata schema
+and you also set up your very own metadata consistency check handler.</p>
+
+<p>That being said in most cases we only touched a topic and there is still
+a lot to discover (OAI-PMH templates, resolver’s dissemination services,
+implementing your complete checks logic using handlers, dealing with
+ARCHE Suites modules not mentioned in this guide, etc.).</p>
+
+<p>Also, we have not touched at all the topic of your repository GUI
+(explanation <a href="intro.html">here</a>).</p>
+
+<p>You would surely benefit from some help dealing with all that missing stuff
+so please do not hesitate to <a href="mailto:mzoltak@oeaw.ac.at">contact us</a>.</p>
+
 
 
       </section>
