@@ -262,9 +262,9 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsProperty">$ftsProperty</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: null|string|array&lt;string|int, string&gt;            </span>
 </dt>
-<dd>Data to be used for full text search results highlighting.</dd>
+<dd>Limits highlighting to indicated properties.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsQuery">$ftsQuery</a>
@@ -728,21 +728,15 @@ methods.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Data to be used for full text search results highlighting.</p>
+        <p class="phpdocumentor-summary">Limits highlighting to indicated properties.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__type">null|string|array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$ftsProperty</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
 
-        <section class="phpdocumentor-description"><ul>
-<li>
-<code class="prettyprint">null</code> if both resource metadata and binary content should be used;</li>
-<li>an RDF property if a given metadata property should be used</li>
-<li>
-<code class="prettyprint">SearchConfig::FTS_BINARY</code> if the resource binary content should be used</li>
-</ul>
+        <section class="phpdocumentor-description"><p>Use <code class="prettyprint">SearchConfig::FTS_BINARY</code> to indicate binary content.</p>
 </section>
 
     

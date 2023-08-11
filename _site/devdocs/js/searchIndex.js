@@ -9143,7 +9143,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsProperty",
             "name": "ftsProperty",
-            "summary": "Data\u0020to\u0020be\u0020used\u0020for\u0020full\u0020text\u0020search\u0020results\u0020highlighting.",
+            "summary": "Limits\u0020highlighting\u0020to\u0020indicated\u0020properties.",
             "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsProperty"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsStartSel",
