@@ -7121,15 +7121,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Model-GndPersonsModel.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\GndPersonsModel\u003A\u003AcheckId\u0028\u0029",
+            "name": "checkId",
+            "summary": "Check\u0020the\u0020gnd\u0020and\u0020acdhid",
+            "url": "classes/Drupal-arche-gui-api-Model-GndPersonsModel.html#method_checkId"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Model\\GndPersonsModel\u003A\u003AgetData\u0028\u0029",
             "name": "getData",
-            "summary": "",
+            "summary": "Get\u0020the\u0020graphs\u0020and\u0020return\u0020the\u0020result\u0020as\u0020a\u0020string",
             "url": "classes/Drupal-arche-gui-api-Model-GndPersonsModel.html#method_getData"
         },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Model\\GndPersonsModel\u003A\u003AgetQueryPropVal\u0028\u0029",
-            "name": "getQueryPropVal",
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\GndPersonsModel\u003A\u003A\u0024repo",
+            "name": "repo",
             "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Model-GndPersonsModel.html#method_getQueryPropVal"
+            "url": "classes/Drupal-arche-gui-api-Model-GndPersonsModel.html#property_repo"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Model\\InverseDataModel",
             "name": "InverseDataModel",
@@ -7685,26 +7690,6 @@ Search.appendIndex(
             "name": "createFileContent",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_createFileContent"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003AgetGNDIdentifier\u0028\u0029",
-            "name": "getGNDIdentifier",
-            "summary": "Get\u0020the\u0020GND\u0020identifier\u0020from\u0020the\u0020data\u0020array",
-            "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_getGNDIdentifier"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003AgetRepoId\u0028\u0029",
-            "name": "getRepoId",
-            "summary": "Get\u0020the\u0020ARCHE\u0020GUI\u0020Detail\u0020view\u0020url",
-            "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_getRepoId"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003AgetResourceUrl\u0028\u0029",
-            "name": "getResourceUrl",
-            "summary": "Return\u0020the\u0020id.acdh.oeaw.ac.at\/pid\/gui\u0020url",
-            "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_getResourceUrl"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003AfetchUrls\u0028\u0029",
-            "name": "fetchUrls",
-            "summary": "Collect\u0020the\u0020urls\u0020from\u0020the\u0020identifiers\u0020array",
-            "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_fetchUrls"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003A\u0024fileLocation",
             "name": "fileLocation",
