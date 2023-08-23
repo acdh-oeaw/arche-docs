@@ -69,12 +69,12 @@ The important thing is these objects have to be immutable.
 Let's consider a following RDF graph:
 
 ```
-Resource1(someUri) --someProperty--> Literal1(someValue, someDatatype, someLang)
-                                        ^
-Resource2(otherUri) --someProperty------|
+Resource1(someUri) --someProperty----\
+                                    Literal1(someValue, someDatatype, someLang)
+Resource2(otherUri) --someProperty---/
 ```
 
-mapped to two objects `resource1` and `resource2` sharing a reference to a common `literal1` object.
+with two objects (`Resource1` and `Resource2`) sharing a reference to a common `literal1` object.
 
 After doing something like (it's pseudo code and not any particular programming language) `resource1.someProperty.setValue(NEWVALUE)` the graph should look as follows:
 
@@ -87,12 +87,12 @@ Resource2(otherUri) --someProperty--> Literal2(someValue, someDatatype, someLang
 and **not**:
 
 ```
-Resource1(someUri) --someProperty--> Literal1(NEWVALUE, someDatatype, someLang)
-                                        ^
-Resource2(otherUri) --someProperty------|
+Resource1(someUri) --someProperty----\
+                                    Literal1(NEWVALUE, someDatatype, someLang)
+Resource2(otherUri) --someProperty---/
 ```
 
-By the way means the `resource1->someProperty->setValue(NEWVALUE)` syntax shouldn't exist and the right one should be `resource1.someProperty = resource1.someProperty.withValue(NEWVALUE)` or during the parsing of the RDF graph into objects of your programming language a separate `literal1` objects should be created for `resource1.someProperty` value and `resource2.someProperty` value.
+By the way it means the `resource1->someProperty->setValue(NEWVALUE)` syntax should not exist in the first place and the right one should be `resource1.someProperty = resource1.someProperty.withValue(NEWVALUE)` or during the parsing of the RDF graph into objects of your programming language a separate `Literal1` objects should be created for `resource1.someProperty` value and `resource2.someProperty` value.
 
 # Serialization formats
 
@@ -104,13 +104,11 @@ Just to name the most important:
 * [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/) (application/rdf+xml) which is also a valid XML
 * [JSON-LD](https://www.w3.org/TR/json-ld11/) (application/ld+json) which is also a valid JSON
 
-What you should remember is that **a given RDF data set may have virtually countless valid serializations even in a single serialization formats.**
+What you should remember is that **a given RDF data set may have virtually countless valid serializations even in a single serialization format.**
 
 This is particularly important **for RDF-XML and JSON-LD serialization** where **you can feel tempted to assume the data structure is stable and can be directly used by your app. It can't.**
 
 **The only safe way to go is to use a dedicated RDF parsing library which will deal with all those ambiguities.**
-
-
 
 ## Example
 
@@ -233,6 +231,3 @@ Remember, all examples below represent exactly the same RDF graph!
     }
     ```
   * and countless others...
-
-Now ask yourself a question - are you able to assure data you fetch from an external source, e.g. ARCHE, will be always serialized in the same way?
-(the answer is obviously "no, you don't")

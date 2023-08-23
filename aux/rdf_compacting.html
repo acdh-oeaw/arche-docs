@@ -12,7 +12,7 @@
 
 <meta name="date" content="2023-08-23" />
 
-<title>Using RDF in webapps</title>
+<title>RDF Framing and Compacting</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -420,7 +420,7 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Using RDF in webapps</h1>
+<h1 class="title toc-ignore">RDF Framing and Compacting</h1>
 <h4 class="date">2023-08-23</h4>
 
 </div>
@@ -428,269 +428,403 @@ display: none;
 <div id="TOC">
 <ul>
 <li><a href="#introduction" id="toc-introduction">Introduction</a></li>
-<li><a href="#summary" id="toc-summary">Summary</a></li>
-<li><a href="#rdf-data-model-for-object-oriented-programmers" id="toc-rdf-data-model-for-object-oriented-programmers">RDF data model
-for object-oriented programmers</a>
+<li><a href="#compacting" id="toc-compacting">Compacting</a>
 <ul>
-<li><a href="#property-names-being-uris" id="toc-property-names-being-uris">Property names being URIs</a></li>
-<li><a href="#object-ids-being-uris" id="toc-object-ids-being-uris">Object IDs being URIs</a></li>
-<li><a href="#literal-objects-immutability" id="toc-literal-objects-immutability">Literal objects
-immutability</a></li>
+<li><a href="#where-to-get-a-context-from" id="toc-where-to-get-a-context-from">Where to get a context
+from?</a></li>
+<li><a href="#compacting-json-ld" id="toc-compacting-json-ld">Compacting
+JSON-LD</a>
+<ul>
+<li><a href="#javascriptnode-example" id="toc-javascriptnode-example">JavaScript/Node example</a></li>
+<li><a href="#python-example" id="toc-python-example">Python
+example</a></li>
+<li><a href="#php-example" id="toc-php-example">PHP example</a></li>
 </ul></li>
-<li><a href="#serialization-formats" id="toc-serialization-formats">Serialization formats</a>
+<li><a href="#manual-compacting" id="toc-manual-compacting">Manual
+compacting</a>
 <ul>
-<li><a href="#example" id="toc-example">Example</a></li>
+<li><a href="#python-example-1" id="toc-python-example-1">Python
+example</a></li>
+<li><a href="#php-example-1" id="toc-php-example-1">PHP example</a></li>
+<li><a href="#php-example-using-arche-lib-repo-object" id="toc-php-example-using-arche-lib-repo-object">PHP example using
+arche-lib Repo object</a></li>
+<li><a href="#php-example-using-arche-lib-repodb-object" id="toc-php-example-using-arche-lib-repodb-object">PHP example using
+arche-lib RepoDb object</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </div>
 
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>ARCHE provides metadata in RDF which is not the most intuitive format
-for most programmers. The aim of this guide is to help avoid most common
-caveats connected with dealing with RDF.</p>
-</div>
-<div id="summary" class="section level1">
-<h1>Summary</h1>
-<p>This document goes down to two rules:</p>
+<p>As described in more details <a href="rdf_basics.html">here</a>
+dealing with RDF data can be pretty troublesome.</p>
+<p>To make mapping of the RDF to object-oriented programming languages
+data model simpler a few standardized algorithms have been developed.
+For us the most important ones are</p>
 <ul>
-<li>Always use a dedicated RDF library to deal with RDF, e.g.
-<ul>
-<li><a href="https://rdf.js.org/">one of those</a> in JavaScript</li>
-<li><a href="https://rdflib.readthedocs.io/en/stable/">RDFLib</a> in
-Python</li>
-<li><a href="https://github.com/sweetrdf/rdfInterface">sweetrdf/rdfInterface
-family</a> or <a href="https://www.easyrdf.org/">EasyRDF</a> in PHP</li>
-</ul></li>
-<li>Use the <a href="rdf_framing_and_compacting.html">compacting and
-framing</a> transformations to map RDF to something usable for an
-object-oriented programming.</li>
-<li>If you can choose serialization format, use
-<code>application/n-triples</code> for machine processing (<a href="metadata_api_performance.html">for performance reasons</a>).</li>
+<li><a href="https://www.w3.org/TR/json-ld11-api/#compaction">compacting</a>
+which allows to map property URIs to something short, handy and not
+containing special characters,</li>
+<li><a href="https://www.w3.org/TR/json-ld11-framing/">framing</a> which
+allows to filter out unneeded information and shape them in a way
+matching our needs</li>
 </ul>
+<p>While these algorithms have been originally developed for JSON-LD,
+they can be generally applied to any RDF data set.</p>
+<p>Here we focus on the first one - the compacting.</p>
 </div>
-<div id="rdf-data-model-for-object-oriented-programmers" class="section level1">
-<h1>RDF data model for object-oriented programmers</h1>
-<p>RDF represents graphs with directed and labelled edges which has
-pretty intuitive object mapping:</p>
+<div id="compacting" class="section level1">
+<h1>Compacting</h1>
+<p>The most common <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> application of compacting is to simplify
+RDF property URIs to something more handy.</p>
+<p>It’s as simple as:</p>
 <ul>
-<li>RDF graph nodes are objects</li>
-<li>RDF graph edges are object properties with property name being edge
-label and property value being references to objects being edge
-target</li>
-</ul>
-<p>There are three kinds of graph nodes in the RDF:</p>
+<li><p>Define a context describing your own shorthands for properties
+and, when needed, indicating their values are RDF resources/blanks (in
+contrary to RDF literals). For example here we say
+<code>https://vocabs.acdh.oeaw.ac.at/schema#hasTitle</code> should be
+shortened to <code>title</code> and
+<code>https://vocabs.acdh.oeaw.ac.at/schema#hasCreator</code> should be
+shortened to <code>creator</code> while its value should be treated as
+an RDF node URI (in JSON-LD):</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>  <span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&quot;</span><span class="fu">,</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>  <span class="dt">&quot;creator&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>    <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&quot;</span><span class="fu">,</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>    <span class="dt">&quot;@type&quot;</span><span class="fu">:</span> <span class="st">&quot;@id&quot;</span></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>  <span class="fu">}</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
+<li><p>Apply it to data to get nice property names:</p>
 <ul>
-<li>literals having a value (which is always a string), an optional data
-type (indicating how the value should be interpreted) and an optional
-language tag</li>
-<li>objects having a unique id (URI) which can be matched between
-different RDF graphs</li>
-<li>blanks having locally unique id which can not be matched between
-different RDF graphs</li>
-</ul>
-<p>So far doesn’t sound bad but the devil is in the details.</p>
-<p>The most common caveats are discussed bellow.</p>
-<p>The bottom line is <strong>you should always use a dedicated RDF
-library to deal with RDF</strong> because handling it by hand is too
-complex and error prone.</p>
-<div id="property-names-being-uris" class="section level2">
-<h2>Property names being URIs</h2>
-<p>The main problem is RDF edge labels - being mapped to object
-properties - are URIs. This brings two issues:</p>
-<ul>
-<li>URIs may contain characters banned in property names of you
-programming language.</li>
-<li>URIs are long and cumbersome to write. You don’t want to refer to
-each property (previous point issue aside) as
-<code>myObject.http://some.namespace/someProperty</code>.</li>
-</ul>
-<p>A solution to this problem is called <em>compacting</em> and is
-discussed <a href="rdf_compacting_and_framing.html">here</a>.</p>
-</div>
-<div id="object-ids-being-uris" class="section level2">
-<h2>Object IDs being URIs</h2>
-<p>Identifiers of RDF graph nodes - mapped to objects - are also
-URIs:</p>
-<ul>
-<li>If you are attached to integer IDs, then sorry, it’s not the
-case.</li>
-<li>You should pay attention to blank nodes as their identifiers can be
-compared only within a single RDF graph (and if they come from different
-RDF graphs they always differ, even if their URIs match!).</li>
-</ul>
-</div>
-<div id="literal-objects-immutability" class="section level2">
-<h2>Literal objects immutability</h2>
-<p>Another complexity is brought by literals.</p>
-<p>Literals have compound structure with value, datatype and language
-tag. Because of that they must be modeled as objects. The important
-thing is these objects have to be immutable.</p>
-<p>Let’s consider a following RDF graph:</p>
-<pre><code>Resource1(someUri) --someProperty----\
-                                    Literal1(someValue, someDatatype, someLang)
-Resource2(otherUri) --someProperty---/</code></pre>
-<p>with two objects (<code>Resource1</code> and <code>Resource2</code>)
-sharing a reference to a common <code>literal1</code> object.</p>
-<p>After doing something like (it’s pseudo code and not any particular
-programming language)
-<code>resource1.someProperty.setValue(NEWVALUE)</code> the graph should
-look as follows:</p>
-<pre><code>Resource1(someUri) --someProperty--&gt; Literal1(NEWVALUE, someDatatype, someLang)
-
-Resource2(otherUri) --someProperty--&gt; Literal2(someValue, someDatatype, someLang)</code></pre>
-<p>and <strong>not</strong>:</p>
-<pre><code>Resource1(someUri) --someProperty----\
-                                    Literal1(NEWVALUE, someDatatype, someLang)
-Resource2(otherUri) --someProperty---/</code></pre>
-<p>By the way it means the
-<code>resource1-&gt;someProperty-&gt;setValue(NEWVALUE)</code> syntax
-should not exist in the first place and the right one should be
-<code>resource1.someProperty = resource1.someProperty.withValue(NEWVALUE)</code>
-or during the parsing of the RDF graph into objects of your programming
-language a separate <code>Literal1</code> objects should be created for
-<code>resource1.someProperty</code> value and
-<code>resource2.someProperty</code> value.</p>
-</div>
-</div>
-<div id="serialization-formats" class="section level1">
-<h1>Serialization formats</h1>
-<p>RDF is an abstract data model which can be expressed in (far too many
-to be honest) different serialization formats. Just to name the most
-important:</p>
-<ul>
-<li><a href="https://www.w3.org/TR/n-triples/">n-triples</a>
-(application/n-triples)</li>
-<li><a href="https://www.w3.org/TR/turtle/">turtle</a>
-(text/turtle)</li>
-<li><a href="https://www.w3.org/TR/rdf-syntax-grammar/">RDF-XML</a>
-(application/rdf+xml) which is also a valid XML</li>
-<li><a href="https://www.w3.org/TR/json-ld11/">JSON-LD</a>
-(application/ld+json) which is also a valid JSON</li>
-</ul>
-<p>What you should remember is that <strong>a given RDF data set may
-have virtually countless valid serializations even in a single
-serialization format.</strong></p>
-<p>This is particularly important <strong>for RDF-XML and JSON-LD
-serialization</strong> where <strong>you can feel tempted to assume the
-data structure is stable and can be directly used by your app. It
-can’t.</strong></p>
-<p><strong>The only safe way to go is to use a dedicated RDF parsing
-library which will deal with all those ambiguities.</strong></p>
-<div id="example" class="section level2">
-<h2>Example</h2>
-<p>Let’s take a simple RDF graph:</p>
-<pre><code>Resource(http://foo/1) --http://bar/1--&gt; Resource(http://foo/2)
-    |                                     |
- http://bar/1                          http://baz
-    |                                     |
-    v                                     v
-   Blank(_://b1) --http://baz--&gt; Literal(baz)</code></pre>
-<p>and consider a small subset of its possible serializations.</p>
-<p>Remember, all examples below represent exactly the same RDF
-graph!</p>
-<ul>
-<li><p>n-triples - lines below in any order</p>
-<pre><code>&lt;http://foo/1&gt; &lt;http://bar/1&gt; &lt;http://foo/2&gt; .
-&lt;http://foo/1&gt; &lt;http://bar/1&gt; _:b1 .
-&lt;http://foo/2&gt; &lt;http://baz&gt; &quot;baz&quot; .
-_:b1 &lt;http://baz&gt; &quot;baz&quot; .</code></pre></li>
-<li><p>turtle</p>
-<ul>
-<li>all n-triples serializations (as n-triples is a subset of the turtle
-format)</li>
-<li><pre><code>  @prefix foo: &lt;http://foo/&gt; .
-  foo:1 &lt;http://bar/1&gt; foo:2 ,
-                     [&lt;http://baz&gt; &quot;baz&quot;] .
-  foo:2 &lt;http://baz&gt; &quot;baz&quot; .</code></pre></li>
-<li><pre><code>  @prefix foo: &lt;http://bar/&gt; .
-  &lt;http://foo/1&gt; foo:1         &lt;http://foo/2&gt; ,
-                              _:b1 .
-  &lt;http://foo/2&gt; &lt;http://baz&gt; &quot;baz&quot; .
- _:b1            &lt;http://baz&gt; &quot;baz&quot; .</code></pre></li>
-<li>and countless others…</li>
-</ul></li>
-<li><p>JSON-LD:</p>
-<ul>
-<li><p><a href="https://www.w3.org/TR/json-ld11-api/#flattening">flattened</a></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>  <span class="dt">&quot;@graph&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">,</span></span>
-<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a>      <span class="dt">&quot;http://baz&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span><span class="fu">}</span></span>
-<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a>      <span class="ot">]</span></span>
-<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/1&quot;</span><span class="fu">,</span></span>
-<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a>      <span class="dt">&quot;http://bar/1&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb8-12"><a href="#cb8-12" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb8-13"><a href="#cb8-13" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">}</span></span>
-<span id="cb8-14"><a href="#cb8-14" tabindex="-1"></a>      <span class="ot">]</span></span>
-<span id="cb8-15"><a href="#cb8-15" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb8-16"><a href="#cb8-16" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb8-17"><a href="#cb8-17" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span><span class="fu">,</span></span>
-<span id="cb8-18"><a href="#cb8-18" tabindex="-1"></a>      <span class="dt">&quot;http://baz&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb8-19"><a href="#cb8-19" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span><span class="fu">}</span></span>
-<span id="cb8-20"><a href="#cb8-20" tabindex="-1"></a>      <span class="ot">]</span></span>
-<span id="cb8-21"><a href="#cb8-21" tabindex="-1"></a>    <span class="fu">}</span></span>
-<span id="cb8-22"><a href="#cb8-22" tabindex="-1"></a>  <span class="ot">]</span></span>
-<span id="cb8-23"><a href="#cb8-23" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
-<li><p><a href="https://www.w3.org/TR/json-ld11-api/#compaction">compacted</a>
-(just an example, different contexts can be used resulting with
-different serializations)</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>  <span class="dt">&quot;@context&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>    <span class="dt">&quot;bar&quot;</span><span class="fu">:</span> <span class="st">&quot;http://bar/1&quot;</span><span class="fu">,</span></span>
-<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a>    <span class="dt">&quot;baz&quot;</span><span class="fu">:</span> <span class="st">&quot;http://baz&quot;</span></span>
-<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>  <span class="fu">},</span></span>
-<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>  <span class="dt">&quot;@graph&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">,</span></span>
-<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a>      <span class="dt">&quot;baz&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span></span>
-<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/1&quot;</span><span class="fu">,</span></span>
-<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a>      <span class="dt">&quot;bar&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb9-14"><a href="#cb9-14" tabindex="-1"></a>        <span class="fu">{</span></span>
-<span id="cb9-15"><a href="#cb9-15" tabindex="-1"></a>          <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span></span>
-<span id="cb9-16"><a href="#cb9-16" tabindex="-1"></a>        <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb9-17"><a href="#cb9-17" tabindex="-1"></a>        <span class="fu">{</span></span>
-<span id="cb9-18"><a href="#cb9-18" tabindex="-1"></a>          <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span></span>
-<span id="cb9-19"><a href="#cb9-19" tabindex="-1"></a>        <span class="fu">}</span></span>
-<span id="cb9-20"><a href="#cb9-20" tabindex="-1"></a>      <span class="ot">]</span></span>
-<span id="cb9-21"><a href="#cb9-21" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb9-22"><a href="#cb9-22" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb9-23"><a href="#cb9-23" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span><span class="fu">,</span></span>
-<span id="cb9-24"><a href="#cb9-24" tabindex="-1"></a>      <span class="dt">&quot;baz&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span></span>
-<span id="cb9-25"><a href="#cb9-25" tabindex="-1"></a>    <span class="fu">}</span></span>
-<span id="cb9-26"><a href="#cb9-26" tabindex="-1"></a>  <span class="ot">]</span></span>
-<span id="cb9-27"><a href="#cb9-27" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
-<li><p>with no particular standardization</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>  <span class="dt">&quot;@graph&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">,</span></span>
-<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>      <span class="dt">&quot;http://baz&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span><span class="fu">}</span></span>
-<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/1&quot;</span><span class="fu">,</span></span>
-<span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a>      <span class="dt">&quot;http://bar/1&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb10-10"><a href="#cb10-10" tabindex="-1"></a>        <span class="fu">{</span></span>
-<span id="cb10-11"><a href="#cb10-11" tabindex="-1"></a>          <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span><span class="fu">,</span></span>
-<span id="cb10-12"><a href="#cb10-12" tabindex="-1"></a>          <span class="dt">&quot;http://baz&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb10-13"><a href="#cb10-13" tabindex="-1"></a>             <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span><span class="fu">}</span></span>
-<span id="cb10-14"><a href="#cb10-14" tabindex="-1"></a>          <span class="ot">]</span></span>
-<span id="cb10-15"><a href="#cb10-15" tabindex="-1"></a>        <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb10-16"><a href="#cb10-16" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">}</span></span>
-<span id="cb10-17"><a href="#cb10-17" tabindex="-1"></a>      <span class="ot">]</span></span>
-<span id="cb10-18"><a href="#cb10-18" tabindex="-1"></a>    <span class="fu">}</span></span>
-<span id="cb10-19"><a href="#cb10-19" tabindex="-1"></a>  <span class="ot">]</span></span>
-<span id="cb10-20"><a href="#cb10-20" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
-<li><p>and countless others…</p></li>
+<li><p>data (in JSON-LD)</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>  <span class="dt">&quot;@graph&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/1&quot;</span><span class="fu">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>      <span class="dt">&quot;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;English title&quot;</span><span class="fu">,</span> <span class="er">@language</span><span class="fu">:</span> <span class="st">&quot;en&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;Deutcher Titel&quot;</span><span class="fu">,</span> <span class="er">@language</span><span class="fu">:</span> <span class="st">&quot;de&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a>      <span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a>      <span class="dt">&quot;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a>        <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://id.acdh.oeaw.ac.at/somePerson&quot;</span></span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a>      <span class="fu">}</span></span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb2-13"><a href="#cb2-13" tabindex="-1"></a><span class="er">}</span></span></code></pre></div></li>
+<li><p>result (in JSON-LD):</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>  <span class="dt">&quot;@graph&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/1&quot;</span><span class="fu">,</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>      <span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;English title&quot;</span><span class="fu">,</span> <span class="er">@language</span><span class="fu">:</span> <span class="st">&quot;en&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;Deutcher Titel&quot;</span><span class="fu">,</span> <span class="er">@language</span><span class="fu">:</span> <span class="st">&quot;de&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a>      <span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>      <span class="dt">&quot;creator&quot;</span><span class="fu">:</span> <span class="st">&quot;http://id.acdh.oeaw.ac.at/somePerson&quot;</span></span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="er">}</span></span></code></pre></div></li>
 </ul></li>
 </ul>
+<p>If you are processing JSON-LD, the library you’re using (you’re using
+one, don’t you? if not, please read <a href="rdf_basics.html">this</a>)
+should be able to perform the compacting for you and then you can just
+deserialize the resulting JSON into you programming language data
+structures (see a chapter below).</p>
+<p>If you are dealing with other RDF serialization, you may easily
+perform the compacting on your own - see a chapter below.</p>
+<div id="where-to-get-a-context-from" class="section level2">
+<h2>Where to get a context from?</h2>
+<p>There are two obvious sources:</p>
+<ul>
+<li>Your own preferences. You know what properties your webapp needs and
+what are corresponding RDF property URIs, so you prepare the context on
+your own.<br />
+<strong>Generally this should be your choice.</strong></li>
+<li>The ARCHE repository schema reported by the
+<code>{apiBase}/describe</code> endpoint, e.g. <a href="https://arche.acdh.oeaw.ac.at/api/describe" class="uri">https://arche.acdh.oeaw.ac.at/api/describe</a>.<br />
+It’s not a good long-term solution because ARCHE schema may not contain
+mappings for properties you need and for sure contains mappings for
+properties you don’t care about. Also there’s no guarantee of stability
+of this schema - it can change when ARCHE internals need it at no one
+will ask about your opinion. But if you need just any context to try out
+how compacting works, it will do the job.</li>
+</ul>
 </div>
+<div id="compacting-json-ld" class="section level2">
+<h2>Compacting JSON-LD</h2>
+<p>TODO</p>
+<div id="javascriptnode-example" class="section level3">
+<h3>JavaScript/Node example</h3>
+<p>TODO</p>
+</div>
+<div id="python-example" class="section level3">
+<h3>Python example</h3>
+<p>TODO</p>
+</div>
+<div id="php-example" class="section level3">
+<h3>PHP example</h3>
+<p>(<code>guzzlehttp/guzzle</code> and <code>ml/json-ld</code> libraries
+required)</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="co"># definte a custom context</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="st">&#39;{</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="st">  &quot;title&quot;: &quot;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&quot;,</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="st">  &quot;subject&quot;: &quot;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&quot;,</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="st">  &quot;creator&quot;: {</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="st">    &quot;@id&quot;: &quot;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&quot;,</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="st">    &quot;@type&quot;: &quot;@id&quot;</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="st">  }</span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="st">}&#39;</span><span class="ot">;</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="co"># get sample ARCHE resource data in JSON-LD</span></span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="co"># for clarity fetch only single resource metadata and only properties mentioned in the context</span></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a><span class="va">$headers</span> <span class="op">=</span> [</span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a>  <span class="st">&#39;Accept&#39;</span> =&gt; <span class="st">&#39;application/ld+json&#39;</span><span class="ot">,</span></span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a>  <span class="st">&#39;X-METADATA-READ-MODE&#39;</span> =&gt; <span class="st">&#39;resource&#39;</span><span class="ot">,</span> </span>
+<span id="cb4-16"><a href="#cb4-16" tabindex="-1"></a>  <span class="st">&#39;X-RESOURCE-PROPERTIES&#39;</span> =&gt; <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/schema#hasSubject,https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span></span>
+<span id="cb4-17"><a href="#cb4-17" tabindex="-1"></a>]<span class="ot">;</span></span>
+<span id="cb4-18"><a href="#cb4-18" tabindex="-1"></a><span class="va">$client</span> <span class="op">=</span> <span class="kw">new</span> <span class="cn">G</span>uzzleHttp\<span class="cn">C</span>lient([<span class="st">&#39;headers&#39;</span> =&gt; <span class="va">$headers</span>])<span class="ot">;</span></span>
+<span id="cb4-19"><a href="#cb4-19" tabindex="-1"></a><span class="va">$response</span> <span class="op">=</span> <span class="va">$client</span>-&gt;request(<span class="st">&#39;get&#39;</span><span class="ot">,</span> <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span><span class="ot">,</span> <span class="va">$headers</span>)<span class="ot">;</span></span>
+<span id="cb4-20"><a href="#cb4-20" tabindex="-1"></a><span class="va">$data</span> <span class="op">=</span> <span class="dt">(string)</span> <span class="va">$response</span>-&gt;getBody()<span class="ot">;</span></span>
+<span id="cb4-21"><a href="#cb4-21" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" tabindex="-1"></a><span class="co"># before compacting</span></span>
+<span id="cb4-23"><a href="#cb4-23" tabindex="-1"></a><span class="fu">print_r</span>(<span class="fu">json_decode</span>(<span class="va">$data</span>))<span class="ot">;</span></span>
+<span id="cb4-24"><a href="#cb4-24" tabindex="-1"></a><span class="co"># after compacting</span></span>
+<span id="cb4-25"><a href="#cb4-25" tabindex="-1"></a><span class="fu">print_r</span>(<span class="cn">ML</span>\<span class="cn">J</span>sonLD\<span class="cn">J</span>sonLD::<span class="fu">compact</span>(<span class="va">$data</span><span class="ot">,</span> <span class="va">$context</span>))<span class="ot">;</span></span></code></pre></div>
+</div>
+</div>
+<div id="manual-compacting" class="section level2">
+<h2>Manual compacting</h2>
+<p>Below manual compacting examples in Python and PHP using the
+<code>schema</code> section of the ARCHE repository config as a
+context.</p>
+<div id="python-example-1" class="section level3">
+<h3>Python example</h3>
+<p>(<code>rdflib</code> and <code>requests</code> libraries
+required)</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="im">import</span> rdflib</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co"># fetch the context</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>context <span class="op">=</span> requests.get(<span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/describe&#39;</span>, headers<span class="op">=</span>{<span class="st">&#39;Accept&#39;</span>: <span class="st">&#39;application/json&#39;</span>})</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>context <span class="op">=</span> context.json()[<span class="st">&#39;schema&#39;</span>]</span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="co"># flip the context so it&#39;s uri-&gt;shortName</span></span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a>context <span class="op">=</span> {v: k <span class="cf">for</span> k, v <span class="kw">in</span> context.items() <span class="cf">if</span> <span class="bu">isinstance</span>(v, <span class="bu">str</span>)}</span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="co"># parse RDF data</span></span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a>rawrdf <span class="op">=</span> requests.get(<span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span>, headers<span class="op">=</span>{<span class="st">&#39;Accept&#39;</span>: <span class="st">&#39;application/n-triples&#39;</span>})</span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a>data <span class="op">=</span> rdflib.Graph()</span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a>data.parse(data<span class="op">=</span>rawrdf.text, <span class="bu">format</span><span class="op">=</span><span class="st">&quot;nt&quot;</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a><span class="co"># create Python-native data model based on dictionaries</span></span>
+<span id="cb5-16"><a href="#cb5-16" tabindex="-1"></a>nodes <span class="op">=</span> {}</span>
+<span id="cb5-17"><a href="#cb5-17" tabindex="-1"></a><span class="cf">for</span> (sbj, prop, obj) <span class="kw">in</span> data:</span>
+<span id="cb5-18"><a href="#cb5-18" tabindex="-1"></a>  sbj <span class="op">=</span> <span class="bu">str</span>(sbj)</span>
+<span id="cb5-19"><a href="#cb5-19" tabindex="-1"></a>  prop <span class="op">=</span> <span class="bu">str</span>(prop)</span>
+<span id="cb5-20"><a href="#cb5-20" tabindex="-1"></a>  <span class="co"># skip RDF properties for which we don&#39;t know the mapping</span></span>
+<span id="cb5-21"><a href="#cb5-21" tabindex="-1"></a>  <span class="cf">if</span> prop <span class="kw">not</span> <span class="kw">in</span> context:</span>
+<span id="cb5-22"><a href="#cb5-22" tabindex="-1"></a>    <span class="cf">continue</span></span>
+<span id="cb5-23"><a href="#cb5-23" tabindex="-1"></a>    </span>
+<span id="cb5-24"><a href="#cb5-24" tabindex="-1"></a>  <span class="co"># map prop name according to the context</span></span>
+<span id="cb5-25"><a href="#cb5-25" tabindex="-1"></a>  prop <span class="op">=</span> context[prop]</span>
+<span id="cb5-26"><a href="#cb5-26" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" tabindex="-1"></a>  <span class="co"># if the triple points to another node in the graph, maintain the reference</span></span>
+<span id="cb5-28"><a href="#cb5-28" tabindex="-1"></a>  <span class="cf">if</span> <span class="kw">not</span> <span class="bu">isinstance</span>(obj, rdflib.term.Literal):</span>
+<span id="cb5-29"><a href="#cb5-29" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">str</span>(obj) <span class="kw">not</span> <span class="kw">in</span> nodes:</span>
+<span id="cb5-30"><a href="#cb5-30" tabindex="-1"></a>      nodes[<span class="bu">str</span>(obj)] <span class="op">=</span> {<span class="st">&#39;__uri__&#39;</span>: <span class="bu">str</span>(obj)}</span>
+<span id="cb5-31"><a href="#cb5-31" tabindex="-1"></a>    obj <span class="op">=</span> nodes[<span class="bu">str</span>(obj)]</span>
+<span id="cb5-32"><a href="#cb5-32" tabindex="-1"></a>    </span>
+<span id="cb5-33"><a href="#cb5-33" tabindex="-1"></a>  <span class="co"># manage the data</span></span>
+<span id="cb5-34"><a href="#cb5-34" tabindex="-1"></a>  <span class="cf">if</span> sbj <span class="kw">not</span> <span class="kw">in</span> nodes:</span>
+<span id="cb5-35"><a href="#cb5-35" tabindex="-1"></a>    nodes[sbj] <span class="op">=</span> {<span class="st">&#39;__uri__&#39;</span>: sbj}</span>
+<span id="cb5-36"><a href="#cb5-36" tabindex="-1"></a>  <span class="cf">if</span> prop <span class="kw">not</span> <span class="kw">in</span> nodes[sbj]:</span>
+<span id="cb5-37"><a href="#cb5-37" tabindex="-1"></a>    nodes[sbj][prop] <span class="op">=</span> []</span>
+<span id="cb5-38"><a href="#cb5-38" tabindex="-1"></a>  nodes[sbj][prop].append(obj)</span>
+<span id="cb5-39"><a href="#cb5-39" tabindex="-1"></a></span>
+<span id="cb5-40"><a href="#cb5-40" tabindex="-1"></a><span class="co"># print results:</span></span>
+<span id="cb5-41"><a href="#cb5-41" tabindex="-1"></a><span class="cf">for</span> uri, node <span class="kw">in</span> nodes.items():</span>
+<span id="cb5-42"><a href="#cb5-42" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>uri<span class="sc">}</span><span class="ss">:&quot;</span>)</span>
+<span id="cb5-43"><a href="#cb5-43" tabindex="-1"></a>  <span class="cf">for</span> prop, values <span class="kw">in</span> node.items():</span>
+<span id="cb5-44"><a href="#cb5-44" tabindex="-1"></a>    <span class="cf">if</span> prop <span class="op">==</span> <span class="st">&#39;__uri__&#39;</span>:</span>
+<span id="cb5-45"><a href="#cb5-45" tabindex="-1"></a>      <span class="cf">continue</span></span>
+<span id="cb5-46"><a href="#cb5-46" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\t</span><span class="sc">{</span>prop<span class="sc">}</span><span class="ss">:&quot;</span>)</span>
+<span id="cb5-47"><a href="#cb5-47" tabindex="-1"></a>    <span class="cf">for</span> val <span class="kw">in</span> values:</span>
+<span id="cb5-48"><a href="#cb5-48" tabindex="-1"></a>      <span class="cf">if</span> <span class="bu">isinstance</span>(val, <span class="bu">dict</span>):</span>
+<span id="cb5-49"><a href="#cb5-49" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\t\t</span><span class="ss">reference to the </span><span class="sc">{</span>val[<span class="st">&#39;__uri__&#39;</span>]<span class="sc">}</span><span class="ss"> node&quot;</span>)</span>
+<span id="cb5-50"><a href="#cb5-50" tabindex="-1"></a>      <span class="cf">else</span>:</span>
+<span id="cb5-51"><a href="#cb5-51" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\t\t</span><span class="sc">{</span>val<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+</div>
+<div id="php-example-1" class="section level3">
+<h3>PHP example</h3>
+<p>(<code>guzzlehttp/guzzle</code>, <code>sweetrdf/quick-rdf-io</code>
+and <code>sweetrdf/quick-rdf</code> libraries required)</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="va">$client</span> <span class="op">=</span> <span class="kw">new</span> <span class="cn">G</span>uzzleHttp\<span class="cn">C</span>lient()<span class="ot">;</span></span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="va">$dataFactory</span> <span class="op">=</span> <span class="kw">new</span> quickRdf\<span class="cn">D</span>ataFactory()<span class="ot">;</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="co"># fetch the context</span></span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="va">$client</span>-&gt;request(<span class="st">&#39;get&#39;</span><span class="ot">,</span> <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/describe&#39;</span><span class="ot">,</span> [<span class="st">&#39;headers&#39;</span> =&gt; [<span class="st">&#39;Accept&#39;</span> =&gt; <span class="st">&#39;application/json&#39;</span>]])<span class="ot">;</span></span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="fu">json_decode</span>(<span class="va">$context</span>-&gt;getBody()<span class="ot">,</span> <span class="kw">true</span>)[<span class="st">&#39;schema&#39;</span>]<span class="ot">;</span></span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="co"># flip the context so it&#39;s uri-&gt;shortName</span></span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="fu">array_filter</span>(<span class="va">$context</span><span class="ot">,</span> <span class="kw">fn</span>(<span class="va">$x</span>) =&gt; <span class="fu">is_scalar</span>(<span class="va">$x</span>))<span class="ot">;</span></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="fu">array_flip</span>(<span class="va">$context</span>)<span class="ot">;</span></span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="co"># parse RDF data</span></span>
+<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="va">$data</span> <span class="op">=</span> <span class="va">$client</span>-&gt;request(<span class="st">&#39;get&#39;</span><span class="ot">,</span> <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span><span class="ot">,</span> [<span class="st">&#39;headers&#39;</span> =&gt; [<span class="st">&#39;Accept&#39;</span> =&gt; <span class="st">&#39;application/n-triples&#39;</span>]])<span class="ot">;</span></span>
+<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="va">$data</span> <span class="op">=</span> quickRdfIo\<span class="cn">U</span>til::parse(<span class="va">$data</span><span class="ot">,</span> <span class="va">$dataFactory</span>)<span class="ot">;</span></span>
+<span id="cb6-14"><a href="#cb6-14" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" tabindex="-1"></a><span class="co"># perform the mapping</span></span>
+<span id="cb6-16"><a href="#cb6-16" tabindex="-1"></a><span class="va">$nodes</span> <span class="op">=</span> []<span class="ot">;</span></span>
+<span id="cb6-17"><a href="#cb6-17" tabindex="-1"></a><span class="cf">foreach</span> (<span class="va">$data</span> <span class="kw">as</span> <span class="va">$triple</span>) {</span>
+<span id="cb6-18"><a href="#cb6-18" tabindex="-1"></a>  <span class="va">$sbj</span> <span class="op">=</span> <span class="va">$triple</span>-&gt;getSubject()-&gt;getValue()<span class="ot">;</span></span>
+<span id="cb6-19"><a href="#cb6-19" tabindex="-1"></a>  <span class="va">$prop</span> <span class="op">=</span> <span class="va">$triple</span>-&gt;getPredicate()-&gt;getValue()<span class="ot">;</span></span>
+<span id="cb6-20"><a href="#cb6-20" tabindex="-1"></a>  <span class="va">$obj</span> <span class="op">=</span> <span class="va">$triple</span>-&gt;getObject()<span class="ot">;</span></span>
+<span id="cb6-21"><a href="#cb6-21" tabindex="-1"></a>  </span>
+<span id="cb6-22"><a href="#cb6-22" tabindex="-1"></a>  <span class="co"># skip RDF properties for which we don&#39;t know the mapping</span></span>
+<span id="cb6-23"><a href="#cb6-23" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$context</span>[<span class="va">$prop</span>])) {</span>
+<span id="cb6-24"><a href="#cb6-24" tabindex="-1"></a>    <span class="cf">continue</span><span class="ot">;</span></span>
+<span id="cb6-25"><a href="#cb6-25" tabindex="-1"></a>  }</span>
+<span id="cb6-26"><a href="#cb6-26" tabindex="-1"></a>  <span class="co"># map prop name according to the context</span></span>
+<span id="cb6-27"><a href="#cb6-27" tabindex="-1"></a>  <span class="va">$prop</span> <span class="op">=</span> <span class="va">$context</span>[<span class="va">$prop</span>]<span class="ot">;</span></span>
+<span id="cb6-28"><a href="#cb6-28" tabindex="-1"></a></span>
+<span id="cb6-29"><a href="#cb6-29" tabindex="-1"></a>  <span class="co"># if the triple points to another node in the graph, maintain the reference</span></span>
+<span id="cb6-30"><a href="#cb6-30" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span>(<span class="va">$obj</span> <span class="kw">instanceof</span> rdfInterface\<span class="cn">L</span>iteral)) {</span>
+<span id="cb6-31"><a href="#cb6-31" tabindex="-1"></a>    <span class="va">$objUri</span> <span class="op">=</span> <span class="va">$obj</span>-&gt;getValue()<span class="ot">;</span></span>
+<span id="cb6-32"><a href="#cb6-32" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$objUri</span>])) {</span>
+<span id="cb6-33"><a href="#cb6-33" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$objUri</span>] <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;__uri__&#39;</span> =&gt; <span class="va">$objUri</span>]<span class="ot">;</span></span>
+<span id="cb6-34"><a href="#cb6-34" tabindex="-1"></a>    }</span>
+<span id="cb6-35"><a href="#cb6-35" tabindex="-1"></a>    <span class="va">$obj</span> <span class="op">=</span> <span class="va">$nodes</span>[<span class="va">$objUri</span>]<span class="ot">;</span></span>
+<span id="cb6-36"><a href="#cb6-36" tabindex="-1"></a>  }</span>
+<span id="cb6-37"><a href="#cb6-37" tabindex="-1"></a>    </span>
+<span id="cb6-38"><a href="#cb6-38" tabindex="-1"></a>  <span class="co"># manage the data</span></span>
+<span id="cb6-39"><a href="#cb6-39" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$sbj</span>])) {</span>
+<span id="cb6-40"><a href="#cb6-40" tabindex="-1"></a>    <span class="va">$nodes</span>[<span class="va">$sbj</span>] <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;__uri__&#39;</span> =&gt; <span class="va">$sbj</span>]<span class="ot">;</span></span>
+<span id="cb6-41"><a href="#cb6-41" tabindex="-1"></a>  }</span>
+<span id="cb6-42"><a href="#cb6-42" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$sbj</span>]-&gt;<span class="va">$prop</span>)) {</span>
+<span id="cb6-43"><a href="#cb6-43" tabindex="-1"></a>    <span class="va">$nodes</span>[<span class="va">$sbj</span>]-&gt;<span class="va">$prop</span> <span class="op">=</span> []<span class="ot">;</span></span>
+<span id="cb6-44"><a href="#cb6-44" tabindex="-1"></a>  }</span>
+<span id="cb6-45"><a href="#cb6-45" tabindex="-1"></a>  <span class="va">$nodes</span>[<span class="va">$sbj</span>]-&gt;<span class="va">$prop</span>[] <span class="op">=</span> <span class="va">$obj</span><span class="ot">;</span></span>
+<span id="cb6-46"><a href="#cb6-46" tabindex="-1"></a>}</span>
+<span id="cb6-47"><a href="#cb6-47" tabindex="-1"></a></span>
+<span id="cb6-48"><a href="#cb6-48" tabindex="-1"></a><span class="co"># print results</span></span>
+<span id="cb6-49"><a href="#cb6-49" tabindex="-1"></a><span class="fu">print_r</span>(<span class="va">$nodes</span>)<span class="ot">;</span></span></code></pre></div>
+</div>
+<div id="php-example-using-arche-lib-repo-object" class="section level3">
+<h3>PHP example using arche-lib Repo object</h3>
+<p>(<code>acdhcd/arche-lib</code> library required)</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="co"># initialize the RepoDb object and perform a simple search</span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="va">$repo</span> <span class="op">=</span> acdhOeaw\arche\lib\<span class="cn">R</span>epo::factoryFromUrl(<span class="st">&#39;https://arche.acdh.oeaw.ac.at/api&#39;</span>)<span class="ot">;</span></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="va">$schema</span> <span class="op">=</span> <span class="va">$repo</span>-&gt;getSchema()<span class="ot">;</span></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="va">$searchTerm</span> <span class="op">=</span> <span class="kw">new</span> acdhOeaw\arche\lib\<span class="cn">S</span>earchTerm(<span class="va">$schema</span>-&gt;pid<span class="ot">,</span> <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span>)<span class="ot">;</span></span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="va">$searchCfg</span> <span class="op">=</span> <span class="kw">new</span> acdhOeaw\arche\lib\<span class="cn">S</span>earchConfig()<span class="ot">;</span></span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a><span class="va">$searchCfg</span>-&gt;metadataMode <span class="op">=</span> <span class="st">&#39;neighbors&#39;</span><span class="ot">;</span></span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="va">$graph</span> <span class="op">=</span> <span class="va">$repo</span>-&gt;getGraphBySearchTerms([<span class="va">$searchTerm</span>]<span class="ot">,</span> <span class="va">$searchCfg</span>)<span class="ot">;</span></span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a><span class="co"># define context</span></span>
+<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a><span class="va">$matchProp</span> <span class="op">=</span> <span class="va">$schema</span>-&gt;searchMatch<span class="ot">;</span></span>
+<span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> [</span>
+<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&#39;</span> =&gt; <span class="st">&#39;title&#39;</span><span class="ot">,</span></span>
+<span id="cb7-13"><a href="#cb7-13" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasDescription&#39;</span> =&gt; <span class="st">&#39;description&#39;</span><span class="ot">,</span></span>
+<span id="cb7-14"><a href="#cb7-14" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasAvailableDate&#39;</span> =&gt; <span class="st">&#39;createDate&#39;</span><span class="ot">,</span></span>
+<span id="cb7-15"><a href="#cb7-15" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasUpdatedDate&#39;</span> =&gt; <span class="st">&#39;modificationDate&#39;</span><span class="ot">,</span></span>
+<span id="cb7-16"><a href="#cb7-16" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span> =&gt; <span class="st">&#39;creator&#39;</span><span class="ot">,</span></span>
+<span id="cb7-17"><a href="#cb7-17" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasRightsHolder&#39;</span> =&gt; <span class="st">&#39;rightsHolder&#39;</span><span class="ot">,</span></span>
+<span id="cb7-18"><a href="#cb7-18" tabindex="-1"></a>  <span class="va">$matchProp</span> =&gt; <span class="st">&#39;__match__&#39;</span><span class="ot">,</span></span>
+<span id="cb7-19"><a href="#cb7-19" tabindex="-1"></a>]<span class="ot">;</span></span>
+<span id="cb7-20"><a href="#cb7-20" tabindex="-1"></a></span>
+<span id="cb7-21"><a href="#cb7-21" tabindex="-1"></a><span class="co"># map results to PHP objects according to the context</span></span>
+<span id="cb7-22"><a href="#cb7-22" tabindex="-1"></a><span class="va">$nodes</span> <span class="op">=</span> []<span class="ot">;</span></span>
+<span id="cb7-23"><a href="#cb7-23" tabindex="-1"></a><span class="cf">foreach</span> (<span class="va">$graph</span>-&gt;resources() <span class="kw">as</span> <span class="va">$res</span>) {</span>
+<span id="cb7-24"><a href="#cb7-24" tabindex="-1"></a>  <span class="co">// $res is of type EasyRdf\Resource</span></span>
+<span id="cb7-25"><a href="#cb7-25" tabindex="-1"></a>  <span class="va">$obj</span> <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;uri&#39;</span> =&gt; <span class="va">$res</span>-&gt;getUri()]<span class="ot">;</span></span>
+<span id="cb7-26"><a href="#cb7-26" tabindex="-1"></a>  <span class="va">$toMap</span> <span class="op">=</span> <span class="fu">array_intersect</span>(<span class="va">$res</span>-&gt;propertyUris()<span class="ot">,</span> <span class="fu">array_keys</span>(<span class="va">$context</span>))<span class="ot">;</span></span>
+<span id="cb7-27"><a href="#cb7-27" tabindex="-1"></a>  <span class="cf">foreach</span> (<span class="va">$toMap</span> <span class="kw">as</span> <span class="va">$i</span>) {</span>
+<span id="cb7-28"><a href="#cb7-28" tabindex="-1"></a>    <span class="va">$prop</span> <span class="op">=</span> <span class="va">$context</span>[<span class="va">$i</span>]<span class="ot">;</span></span>
+<span id="cb7-29"><a href="#cb7-29" tabindex="-1"></a>    <span class="va">$obj</span>-&gt;<span class="va">$prop</span> <span class="op">=</span> []<span class="ot">;</span></span>
+<span id="cb7-30"><a href="#cb7-30" tabindex="-1"></a>    <span class="cf">foreach</span> (<span class="va">$res</span>-&gt;allLiterals(<span class="va">$i</span>) <span class="kw">as</span> <span class="va">$v</span>) {</span>
+<span id="cb7-31"><a href="#cb7-31" tabindex="-1"></a>      <span class="va">$obj</span>-&gt;<span class="va">$prop</span>[<span class="dt">(string)</span> <span class="va">$v</span>-&gt;getLang()] <span class="op">=</span> <span class="va">$v</span>-&gt;getValue()<span class="ot">;</span></span>
+<span id="cb7-32"><a href="#cb7-32" tabindex="-1"></a>    }</span>
+<span id="cb7-33"><a href="#cb7-33" tabindex="-1"></a>    <span class="cf">foreach</span> (<span class="va">$res</span>-&gt;allResources(<span class="va">$i</span>) <span class="kw">as</span> <span class="va">$v</span>) {</span>
+<span id="cb7-34"><a href="#cb7-34" tabindex="-1"></a>      <span class="va">$obj</span>-&gt;<span class="va">$prop</span>[] <span class="op">=</span> <span class="va">$v</span>-&gt;getUri()<span class="ot">;</span></span>
+<span id="cb7-35"><a href="#cb7-35" tabindex="-1"></a>    }</span>
+<span id="cb7-36"><a href="#cb7-36" tabindex="-1"></a>  }</span>
+<span id="cb7-37"><a href="#cb7-37" tabindex="-1"></a>  <span class="va">$nodes</span>[<span class="va">$res</span>-&gt;getUri()] <span class="op">=</span> <span class="va">$obj</span><span class="ot">;</span></span>
+<span id="cb7-38"><a href="#cb7-38" tabindex="-1"></a>}</span>
+<span id="cb7-39"><a href="#cb7-39" tabindex="-1"></a></span>
+<span id="cb7-40"><a href="#cb7-40" tabindex="-1"></a><span class="co"># find and display nodes matching the search</span></span>
+<span id="cb7-41"><a href="#cb7-41" tabindex="-1"></a><span class="va">$matches</span> <span class="op">=</span> <span class="fu">array_filter</span>(<span class="va">$nodes</span><span class="ot">,</span> <span class="kw">fn</span>(<span class="va">$x</span>) =&gt; <span class="kw">isset</span>(<span class="va">$x</span>-&gt;<span class="cn">_</span>_match__))<span class="ot">;</span></span>
+<span id="cb7-42"><a href="#cb7-42" tabindex="-1"></a><span class="fu">print_r</span>(<span class="va">$matches</span>)<span class="ot">;</span></span></code></pre></div>
+</div>
+<div id="php-example-using-arche-lib-repodb-object" class="section level3">
+<h3>PHP example using arche-lib RepoDb object</h3>
+<p>(<code>acdhcd/arche-lib</code> library required)</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="co"># initialize the RepoDb object and perform a simple search</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="va">$repo</span> <span class="op">=</span> acdhOeaw\arche\lib\<span class="cn">R</span>epoDb::factory(<span class="st">&#39;pathToConfig.yaml&#39;</span>)<span class="ot">;</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="va">$schema</span> <span class="op">=</span> <span class="va">$repo</span>-&gt;getSchema()<span class="ot">;</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="va">$searchTerm</span> <span class="op">=</span> <span class="kw">new</span> acdhOeaw\arche\lib\<span class="cn">S</span>earchTerm(<span class="va">$schema</span>-&gt;pid<span class="ot">,</span> <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span>)<span class="ot">;</span></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="va">$searchCfg</span> <span class="op">=</span> <span class="kw">new</span> acdhOeaw\arche\lib\<span class="cn">S</span>earchConfig()<span class="ot">;</span></span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a><span class="va">$searchCfg</span>-&gt;metadataMode <span class="op">=</span> <span class="st">&#39;neighbors&#39;</span><span class="ot">;</span></span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a><span class="va">$pdoStmt</span> <span class="op">=</span> <span class="va">$repo</span>-&gt;getPdoStatementBySearchTerms([<span class="va">$searchTerm</span>]<span class="ot">,</span> <span class="va">$searchCfg</span>)<span class="ot">;</span></span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a><span class="co"># define context</span></span>
+<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a><span class="va">$matchProp</span> <span class="op">=</span> <span class="va">$schema</span>-&gt;searchMatch<span class="ot">;</span></span>
+<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> [</span>
+<span id="cb8-12"><a href="#cb8-12" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&#39;</span> =&gt; <span class="st">&#39;title&#39;</span><span class="ot">,</span></span>
+<span id="cb8-13"><a href="#cb8-13" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasDescription&#39;</span> =&gt; <span class="st">&#39;description&#39;</span><span class="ot">,</span></span>
+<span id="cb8-14"><a href="#cb8-14" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasAvailableDate&#39;</span> =&gt; <span class="st">&#39;createDate&#39;</span><span class="ot">,</span></span>
+<span id="cb8-15"><a href="#cb8-15" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasUpdatedDate&#39;</span> =&gt; <span class="st">&#39;modificationDate&#39;</span><span class="ot">,</span></span>
+<span id="cb8-16"><a href="#cb8-16" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span> =&gt; <span class="st">&#39;creator&#39;</span><span class="ot">,</span></span>
+<span id="cb8-17"><a href="#cb8-17" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasRightsHolder&#39;</span> =&gt; <span class="st">&#39;rightsHolder&#39;</span><span class="ot">,</span></span>
+<span id="cb8-18"><a href="#cb8-18" tabindex="-1"></a>  <span class="va">$matchProp</span> =&gt; <span class="st">&#39;__match__&#39;</span><span class="ot">,</span></span>
+<span id="cb8-19"><a href="#cb8-19" tabindex="-1"></a>]<span class="ot">;</span></span>
+<span id="cb8-20"><a href="#cb8-20" tabindex="-1"></a></span>
+<span id="cb8-21"><a href="#cb8-21" tabindex="-1"></a><span class="co"># map results to PHP objects according to the context</span></span>
+<span id="cb8-22"><a href="#cb8-22" tabindex="-1"></a><span class="va">$nodes</span> <span class="op">=</span> []<span class="ot">;</span></span>
+<span id="cb8-23"><a href="#cb8-23" tabindex="-1"></a><span class="cf">while</span> (<span class="va">$triple</span> <span class="op">=</span> <span class="va">$pdoStmt</span>-&gt;fetchObject()) {</span>
+<span id="cb8-24"><a href="#cb8-24" tabindex="-1"></a>  <span class="co"># $triple is an object with properties id, property, type, lang, value</span></span>
+<span id="cb8-25"><a href="#cb8-25" tabindex="-1"></a></span>
+<span id="cb8-26"><a href="#cb8-26" tabindex="-1"></a>  <span class="co"># skip RDF properties for which we don&#39;t know the mapping</span></span>
+<span id="cb8-27"><a href="#cb8-27" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$context</span>[<span class="va">$triple</span>-&gt;property])) {</span>
+<span id="cb8-28"><a href="#cb8-28" tabindex="-1"></a>    <span class="cf">continue</span><span class="ot">;</span></span>
+<span id="cb8-29"><a href="#cb8-29" tabindex="-1"></a>  }</span>
+<span id="cb8-30"><a href="#cb8-30" tabindex="-1"></a>  <span class="co"># map prop name according to the context</span></span>
+<span id="cb8-31"><a href="#cb8-31" tabindex="-1"></a>  <span class="va">$prop</span> <span class="op">=</span> <span class="va">$context</span>[<span class="va">$triple</span>-&gt;property]<span class="ot">;</span></span>
+<span id="cb8-32"><a href="#cb8-32" tabindex="-1"></a></span>
+<span id="cb8-33"><a href="#cb8-33" tabindex="-1"></a>  <span class="co"># if the triple points to another node in the graph, maintain the reference</span></span>
+<span id="cb8-34"><a href="#cb8-34" tabindex="-1"></a>  <span class="cf">if</span> (<span class="va">$triple</span>-&gt;type <span class="op">===</span> <span class="st">&#39;REL&#39;</span>) {</span>
+<span id="cb8-35"><a href="#cb8-35" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;value])) {</span>
+<span id="cb8-36"><a href="#cb8-36" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;value] <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;__id__&#39;</span> =&gt; <span class="va">$triple</span>-&gt;value]<span class="ot">;</span></span>
+<span id="cb8-37"><a href="#cb8-37" tabindex="-1"></a>    }</span>
+<span id="cb8-38"><a href="#cb8-38" tabindex="-1"></a>  }</span>
+<span id="cb8-39"><a href="#cb8-39" tabindex="-1"></a>    </span>
+<span id="cb8-40"><a href="#cb8-40" tabindex="-1"></a>  <span class="co"># manage the data</span></span>
+<span id="cb8-41"><a href="#cb8-41" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id])) {</span>
+<span id="cb8-42"><a href="#cb8-42" tabindex="-1"></a>    <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id] <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;__id__&#39;</span> =&gt; <span class="va">$triple</span>-&gt;id]<span class="ot">;</span></span>
+<span id="cb8-43"><a href="#cb8-43" tabindex="-1"></a>  }</span>
+<span id="cb8-44"><a href="#cb8-44" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span>)) {</span>
+<span id="cb8-45"><a href="#cb8-45" tabindex="-1"></a>    <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span> <span class="op">=</span> []<span class="ot">;</span></span>
+<span id="cb8-46"><a href="#cb8-46" tabindex="-1"></a>  }</span>
+<span id="cb8-47"><a href="#cb8-47" tabindex="-1"></a>  <span class="cf">switch</span> (<span class="va">$triple</span>-&gt;type) {</span>
+<span id="cb8-48"><a href="#cb8-48" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;ID&#39;</span><span class="ot">:</span></span>
+<span id="cb8-49"><a href="#cb8-49" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span>[] <span class="op">=</span> <span class="va">$triple</span>-&gt;value<span class="ot">;</span></span>
+<span id="cb8-50"><a href="#cb8-50" tabindex="-1"></a>      <span class="cf">break</span><span class="ot">;</span></span>
+<span id="cb8-51"><a href="#cb8-51" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;REL&#39;</span><span class="ot">:</span></span>
+<span id="cb8-52"><a href="#cb8-52" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span>[] <span class="op">=</span> <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;value]<span class="ot">;</span></span>
+<span id="cb8-53"><a href="#cb8-53" tabindex="-1"></a>      <span class="cf">break</span><span class="ot">;</span></span>
+<span id="cb8-54"><a href="#cb8-54" tabindex="-1"></a>    <span class="cf">default</span><span class="ot">:</span></span>
+<span id="cb8-55"><a href="#cb8-55" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span>[<span class="dt">(string)</span> <span class="va">$triple</span>-&gt;lang] <span class="op">=</span> <span class="va">$triple</span>-&gt;value<span class="ot">;</span></span>
+<span id="cb8-56"><a href="#cb8-56" tabindex="-1"></a>  }</span>
+<span id="cb8-57"><a href="#cb8-57" tabindex="-1"></a>}</span>
+<span id="cb8-58"><a href="#cb8-58" tabindex="-1"></a></span>
+<span id="cb8-59"><a href="#cb8-59" tabindex="-1"></a><span class="co"># find and display nodes matching the search</span></span>
+<span id="cb8-60"><a href="#cb8-60" tabindex="-1"></a><span class="va">$matches</span> <span class="op">=</span> <span class="fu">array_filter</span>(<span class="va">$nodes</span><span class="ot">,</span> <span class="kw">fn</span>(<span class="va">$x</span>) =&gt; <span class="kw">isset</span>(<span class="va">$x</span>-&gt;<span class="cn">_</span>_match__))<span class="ot">;</span></span>
+<span id="cb8-61"><a href="#cb8-61" tabindex="-1"></a><span class="fu">print_r</span>(<span class="va">$matches</span>)<span class="ot">;</span></span></code></pre></div>
+</div>
+</div>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>And the only one described here but feel free to read <a href="https://www.w3.org/TR/json-ld11/#the-context">this</a>, <a href="https://www.w3.org/TR/json-ld11/#indexed-values">this</a>, <a href="https://www.w3.org/TR/json-ld11/#sets-and-lists">this</a> and <a href="https://www.w3.org/TR/json-ld11/#nested-properties">that</a>.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 
 
