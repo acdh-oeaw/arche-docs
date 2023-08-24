@@ -8,7 +8,7 @@ layout: default
 # Introduction
 
 * [What ARCHE Suite is and what it is not](aux/intro.html)
-* [Pretty extensive tour trough an ARCHE Suite deployment](aux/firstSteps.html)
+* [Pretty extensive tour through the ARCHE Suite deployment](aux/firstSteps.html)
 
 * [Paper from the CLARIN Annual Conference 2021](https://ecp.ep.liu.se/index.php/clarin/article/view/428/386)
   (doi https://doi.org/10.3384/9789179294441)

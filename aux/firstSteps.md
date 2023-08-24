@@ -1,4 +1,4 @@
-# Pretty extensive tour trough an ARCHE Suite deployment
+# Pretty extensive tour through the ARCHE Suite deployment
 
 ## Table of contents
 
