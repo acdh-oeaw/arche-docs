@@ -597,35 +597,35 @@ library required)</p>
 <div id="python-example" class="section level3">
 <h3>Python example</h3>
 <p>(<code>rdflib</code> and <code>request</code> libraries required)</p>
-<pre class="python3"><code>import requests
-from rdflib import Graph
-
-# definte a custom context
-context = {
-  &#39;title&#39;: &#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&#39;,
-  &#39;subject&#39;: &#39;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&#39;,
-  &#39;creator&#39;: {
-    &#39;@id&#39;: &#39;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;,
-    &#39;@type&#39;: &#39;@id&#39;
-  }
-}
-
-# get sample ARCHE resource data in JSON-LD
-# for clarity fetch only single resource metadata and only properties mentioned in the context
-resp = requests.get(
-  &#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;,
-  headers={
-    &#39;Accept&#39;: &#39;application/ld+json&#39;,
-    &#39;X-METADATA-READ-MODE&#39;: &#39;resource&#39;, 
-    &#39;X-RESOURCE-PROPERTIES&#39;: &#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/schema#hasSubject,https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;
-  }
-)
-
-# before compacting
-print(resp.text)
-# after compacting
-graph = Graph().parse(data=resp.text, format=&#39;json-ld&#39;)
-print(graph.serialize(format=&#39;json-ld&#39;, context=context))</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="im">from</span> rdflib <span class="im">import</span> Graph</span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co"># definte a custom context</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>context <span class="op">=</span> {</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>  <span class="st">&#39;title&#39;</span>: <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&#39;</span>,</span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a>  <span class="st">&#39;subject&#39;</span>: <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&#39;</span>,</span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a>  <span class="st">&#39;creator&#39;</span>: {</span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a>    <span class="st">&#39;@id&#39;</span>: <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span>,</span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a>    <span class="st">&#39;@type&#39;</span>: <span class="st">&#39;@id&#39;</span></span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a>  }</span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a>}</span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a><span class="co"># get sample ARCHE resource data in JSON-LD</span></span>
+<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a><span class="co"># for clarity fetch only single resource metadata and only properties mentioned in the context</span></span>
+<span id="cb5-16"><a href="#cb5-16" tabindex="-1"></a>resp <span class="op">=</span> requests.get(</span>
+<span id="cb5-17"><a href="#cb5-17" tabindex="-1"></a>  <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span>,</span>
+<span id="cb5-18"><a href="#cb5-18" tabindex="-1"></a>  headers<span class="op">=</span>{</span>
+<span id="cb5-19"><a href="#cb5-19" tabindex="-1"></a>    <span class="st">&#39;Accept&#39;</span>: <span class="st">&#39;application/ld+json&#39;</span>,</span>
+<span id="cb5-20"><a href="#cb5-20" tabindex="-1"></a>    <span class="st">&#39;X-METADATA-READ-MODE&#39;</span>: <span class="st">&#39;resource&#39;</span>, </span>
+<span id="cb5-21"><a href="#cb5-21" tabindex="-1"></a>    <span class="st">&#39;X-RESOURCE-PROPERTIES&#39;</span>: <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/schema#hasSubject,https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span></span>
+<span id="cb5-22"><a href="#cb5-22" tabindex="-1"></a>  }</span>
+<span id="cb5-23"><a href="#cb5-23" tabindex="-1"></a>)</span>
+<span id="cb5-24"><a href="#cb5-24" tabindex="-1"></a></span>
+<span id="cb5-25"><a href="#cb5-25" tabindex="-1"></a><span class="co"># before compacting</span></span>
+<span id="cb5-26"><a href="#cb5-26" tabindex="-1"></a><span class="bu">print</span>(resp.text)</span>
+<span id="cb5-27"><a href="#cb5-27" tabindex="-1"></a><span class="co"># after compacting</span></span>
+<span id="cb5-28"><a href="#cb5-28" tabindex="-1"></a>graph <span class="op">=</span> Graph().parse(data<span class="op">=</span>resp.text, <span class="bu">format</span><span class="op">=</span><span class="st">&#39;json-ld&#39;</span>)</span>
+<span id="cb5-29"><a href="#cb5-29" tabindex="-1"></a><span class="bu">print</span>(graph.serialize(<span class="bu">format</span><span class="op">=</span><span class="st">&#39;json-ld&#39;</span>, context<span class="op">=</span>context))</span></code></pre></div>
 </div>
 <div id="php-example" class="section level3">
 <h3>PHP example</h3>
