@@ -3766,136 +3766,6 @@ Search.appendIndex(
             "summary": "This\u0020is\u0020the\u0020event\u0020handler\u0020main\u0020method",
             "url": "classes/Drupal-acdh-repo-gui-EventSubscriber-OpenAirTrackingEventSubscriber.html#method_getSubscribedEvents"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm",
-            "name": "ComplexSearchForm",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Set\u0020up\u0020necessary\u0020properties",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method___construct"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AgetFormId\u0028\u0029",
-            "name": "getFormId",
-            "summary": "Set\u0020up\u0020the\u0020form\u0020id",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_getFormId"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AdoTheRequest\u0028\u0029",
-            "name": "doTheRequest",
-            "summary": "Fetch\u0020the\u0020API\u0020with\u0020the\u0020search\u0020facets",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_doTheRequest"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AbuildForm\u0028\u0029",
-            "name": "buildForm",
-            "summary": "Build\u0020form",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_buildForm"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AvalidateForm\u0028\u0029",
-            "name": "validateForm",
-            "summary": "Validate\u0020the\u0020form",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_validateForm"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AsubmitForm\u0028\u0029",
-            "name": "submitForm",
-            "summary": "Form\u0020submit",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_submitForm"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AgenerateMetaUrlString\u0028\u0029",
-            "name": "generateMetaUrlString",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_generateMetaUrlString"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AaddPayload\u0028\u0029",
-            "name": "addPayload",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_addPayload"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AaddSearchText\u0028\u0029",
-            "name": "addSearchText",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_addSearchText"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AaddSearchType\u0028\u0029",
-            "name": "addSearchType",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_addSearchType"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AaddSearchCategory\u0028\u0029",
-            "name": "addSearchCategory",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_addSearchCategory"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AaddSearchDate\u0028\u0029",
-            "name": "addSearchDate",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_addSearchDate"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AcreateBox\u0028\u0029",
-            "name": "createBox",
-            "summary": "Create\u0020the\u0020checkbox\u0020templates",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_createBox"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AcreateSearchInput\u0028\u0029",
-            "name": "createSearchInput",
-            "summary": "this\u0020function\u0020creates\u0020the\u0020search\u0020input\u0020field",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_createSearchInput"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AaddSubmitButton\u0028\u0029",
-            "name": "addSubmitButton",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_addSubmitButton"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AgetCacheLastModificationDate\u0028\u0029",
-            "name": "getCacheLastModificationDate",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_getCacheLastModificationDate"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003AgetBoxData\u0028\u0029",
-            "name": "getBoxData",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#method_getBoxData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024model",
-            "name": "model",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_model"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024helper",
-            "name": "helper",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_helper"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024entityData",
-            "name": "entityData",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_entityData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024yearsData",
-            "name": "yearsData",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_yearsData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024categoryData",
-            "name": "categoryData",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_categoryData"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024lastModifyDateTime",
-            "name": "lastModifyDateTime",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_lastModifyDateTime"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024reCache",
-            "name": "reCache",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_reCache"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form\\ComplexSearchForm\u003A\u003A\u0024searchStr",
-            "name": "searchStr",
-            "summary": "",
-            "url": "classes/Drupal-acdh-repo-gui-Form-ComplexSearchForm.html#property_searchStr"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper\\ArcheHelper",
             "name": "ArcheHelper",
             "summary": "Description\u0020of\u0020ArcheHelper\u0020Static\u0020Class",
@@ -5731,16 +5601,6 @@ Search.appendIndex(
             "summary": "Class\u0020block",
             "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-LangSwitcherBlock.html#method_build"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\RepoSearchBlock",
-            "name": "RepoSearchBlock",
-            "summary": "Provides\u0020a\u0020\u0027SearchSD\u0027\u0020block.",
-            "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-RepoSearchBlock.html"
-        },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\RepoSearchBlock\u003A\u003Abuild\u0028\u0029",
-            "name": "build",
-            "summary": "Search\u0020Sb\u0020block",
-            "url": "classes/Drupal-acdh-repo-gui-Plugin-Block-RepoSearchBlock.html#method_build"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Plugin\\Block\\SmartSearchBlock",
             "name": "SmartSearchBlock",
             "summary": "Provides\u0020a\u0020\u0027SmartSearchBlock\u0027\u0020block.",
@@ -6726,21 +6586,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-RPRController.html#method_execute"
         },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SearchBlock\\MainController",
-            "name": "MainController",
-            "summary": "Description\u0020of\u0020CollectionController",
-            "url": "classes/Drupal-arche-gui-api-Controller-SearchBlock-MainController.html"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SearchBlock\\MainController\u003A\u003AgetData\u0028\u0029",
-            "name": "getData",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Controller-SearchBlock-MainController.html#method_getData"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SearchBlock\\MainController\u003A\u003AdateFacets\u0028\u0029",
-            "name": "dateFacets",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Controller-SearchBlock-MainController.html#method_dateFacets"
-        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SmartSearchController",
             "name": "SmartSearchController",
             "summary": "Description\u0020of\u0020SmartSearchController",
@@ -7276,15 +7121,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Model-GndPersonsModel.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\GndPersonsModel\u003A\u003AcheckId\u0028\u0029",
+            "name": "checkId",
+            "summary": "Check\u0020the\u0020gnd\u0020and\u0020acdhid",
+            "url": "classes/Drupal-arche-gui-api-Model-GndPersonsModel.html#method_checkId"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Model\\GndPersonsModel\u003A\u003AgetData\u0028\u0029",
             "name": "getData",
-            "summary": "",
+            "summary": "Get\u0020the\u0020graphs\u0020and\u0020return\u0020the\u0020result\u0020as\u0020a\u0020string",
             "url": "classes/Drupal-arche-gui-api-Model-GndPersonsModel.html#method_getData"
         },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Model\\GndPersonsModel\u003A\u003AgetQueryPropVal\u0028\u0029",
-            "name": "getQueryPropVal",
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\GndPersonsModel\u003A\u003A\u0024repo",
+            "name": "repo",
             "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Model-GndPersonsModel.html#method_getQueryPropVal"
+            "url": "classes/Drupal-arche-gui-api-Model-GndPersonsModel.html#property_repo"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Model\\InverseDataModel",
             "name": "InverseDataModel",
@@ -7400,31 +7250,6 @@ Search.appendIndex(
             "name": "getData",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Model-RPRModel.html#method_getData"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Model\\SearchBlock\\EntityTestModel",
-            "name": "EntityTestModel",
-            "summary": "Description\u0020of\u0020CollectionModel",
-            "url": "classes/Drupal-arche-gui-api-Model-SearchBlock-EntityTestModel.html"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Model\\SearchBlock\\EntityTestModel\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Model-SearchBlock-EntityTestModel.html#method___construct"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Model\\SearchBlock\\EntityTestModel\u003A\u003AgetAllRdfType\u0028\u0029",
-            "name": "getAllRdfType",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Model-SearchBlock-EntityTestModel.html#method_getAllRdfType"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Model\\SearchBlock\\EntityTestModel\u003A\u003AgetData\u0028\u0029",
-            "name": "getData",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Model-SearchBlock-EntityTestModel.html#method_getData"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Model\\SearchBlock\\EntityTestModel\u003A\u003AgetQueryPropVal\u0028\u0029",
-            "name": "getQueryPropVal",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Model-SearchBlock-EntityTestModel.html#method_getQueryPropVal"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Model\\SearchBlock\\SearchBlockModel",
             "name": "SearchBlockModel",
@@ -7866,26 +7691,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_createFileContent"
         },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003AgetGNDIdentifier\u0028\u0029",
-            "name": "getGNDIdentifier",
-            "summary": "Get\u0020the\u0020GND\u0020identifier\u0020from\u0020the\u0020data\u0020array",
-            "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_getGNDIdentifier"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003AgetRepoId\u0028\u0029",
-            "name": "getRepoId",
-            "summary": "Get\u0020the\u0020ARCHE\u0020GUI\u0020Detail\u0020view\u0020url",
-            "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_getRepoId"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003AgetResourceUrl\u0028\u0029",
-            "name": "getResourceUrl",
-            "summary": "Return\u0020the\u0020id.acdh.oeaw.ac.at\/pid\/gui\u0020url",
-            "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_getResourceUrl"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003AfetchUrls\u0028\u0029",
-            "name": "fetchUrls",
-            "summary": "Collect\u0020the\u0020urls\u0020from\u0020the\u0020identifiers\u0020array",
-            "url": "classes/Drupal-arche-gui-api-Object-GndPersonsObject.html#method_fetchUrls"
-        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\GndPersonsObject\u003A\u003A\u0024fileLocation",
             "name": "fileLocation",
             "summary": "",
@@ -8115,71 +7920,6 @@ Search.appendIndex(
             "name": "model",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Object-RPRObject.html#property_model"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject",
-            "name": "SearchBlockObject",
-            "summary": "Description\u0020of\u0020CollectionObject",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AcreateModel\u0028\u0029",
-            "name": "createModel",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_createModel"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003Ainit\u0028\u0029",
-            "name": "init",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_init"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AprocessData\u0028\u0029",
-            "name": "processData",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_processData"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AgetCategories\u0028\u0029",
-            "name": "getCategories",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_getCategories"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AgetYears\u0028\u0029",
-            "name": "getYears",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_getYears"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AgetEntities\u0028\u0029",
-            "name": "getEntities",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_getEntities"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AextendValuesForForm\u0028\u0029",
-            "name": "extendValuesForForm",
-            "summary": "\/\/\u0020name\u0020\u003D\u0020searchbox_types\u005Bacdh\u003ACollection\u005D\u0020value\u0020\u003D\u0020acdh\u003ACollection\n\u0020\u0020\/\/\u0020name\u0020\u003D\u0020searchbox_category\u005B3d\u002Ddata\u003A17683\u005D\u0020value\u0020\u003D\u00203d\u002Ddata\u003A17683\n\u0020\u0020\u0020\/\/\u0020name\u0020\u003D\u0020datebox_years\u005B2022\u005D\u0020value\u0020\u003D\u00202022",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_extendValuesForForm"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AextendYears\u0028\u0029",
-            "name": "extendYears",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_extendYears"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AextendCategory\u0028\u0029",
-            "name": "extendCategory",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_extendCategory"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AextendEntity\u0028\u0029",
-            "name": "extendEntity",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_extendEntity"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AformatCategoryTitleForValue\u0028\u0029",
-            "name": "formatCategoryTitleForValue",
-            "summary": "Transform\u0020the\u0020string\u0020to\u0020remove\u0020special\u0020chars",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_formatCategoryTitleForValue"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003A\u0024model",
-            "name": "model",
-            "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#property_model"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\VersionsObject",
             "name": "VersionsObject",
@@ -9321,6 +9061,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_getTsHeadlineOptions"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AreadFtsConfigFromTerms\u0028\u0029",
+            "name": "readFtsConfigFromTerms",
+            "summary": "Fills\u0020up\u0020\u0024ftsQuery\u0020and\u0020\u0024ftsProperty\u0020property\u0020values\u0020based\u0020on\nthe\u0020supported\u0020SearchTerm\u0020list.",
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_readFtsConfigFromTerms"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AgetSanitizedCopy\u0028\u0029",
+            "name": "getSanitizedCopy",
+            "summary": "Returns\u0020an\u0020object\u0020with\u0020all\u0020fts\u0020properties\u0020being\u0020arrays\u0020of\u0020the\u0020same\u0020count\nas\u0020the\u0020\u0024ftsQuery\u0020property.\u0020Also,\u0020all\u0020\u0024ftsProperty\u0020value\u0020is\u0020assured\u0020to\u0020be\nan\u0020array.",
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_getSanitizedCopy"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AFTS_BINARY",
             "name": "FTS_BINARY",
             "summary": "",
@@ -9388,7 +9138,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsProperty",
             "name": "ftsProperty",
-            "summary": "Data\u0020to\u0020be\u0020used\u0020for\u0020full\u0020text\u0020search\u0020results\u0020highlighting.",
+            "summary": "Limits\u0020highlighting\u0020to\u0020indicated\u0020properties.",
             "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsProperty"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003A\u0024ftsStartSel",
@@ -9565,6 +9315,11 @@ Search.appendIndex(
             "name": "OPERATOR_IN",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_OPERATOR_IN"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AOPERATOR_FTS",
+            "name": "OPERATOR_FTS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_OPERATOR_FTS"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ACOLUMN_STRING",
             "name": "COLUMN_STRING",
@@ -15006,11 +14761,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/drupal-acdh-repo-gui-eventsubscriber.html"
         },                {
-            "fqsen": "\\Drupal\\acdh_repo_gui\\Form",
-            "name": "Form",
-            "summary": "",
-            "url": "namespaces/drupal-acdh-repo-gui-form.html"
-        },                {
             "fqsen": "\\Drupal\\acdh_repo_gui\\Helper",
             "name": "Helper",
             "summary": "",
@@ -15126,11 +14876,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/drupal-arche-gui-api-controller-ontology.html"
         },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SearchBlock",
-            "name": "SearchBlock",
-            "summary": "",
-            "url": "namespaces/drupal-arche-gui-api-controller-searchblock.html"
-        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch",
             "name": "SmartSearch",
             "summary": "",
@@ -15215,11 +14960,6 @@ Search.appendIndex(
             "name": "Ontology",
             "summary": "",
             "url": "namespaces/drupal-arche-gui-api-object-ontology.html"
-        },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock",
-            "name": "SearchBlock",
-            "summary": "",
-            "url": "namespaces/drupal-arche-gui-api-object-searchblock.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib",
             "name": "lib",
