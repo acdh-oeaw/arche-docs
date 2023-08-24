@@ -60,8 +60,10 @@ The search results are annotated with special technical RDF properties:
 | `{restAPIbaseURL}` | `{repoCfg}$.schema.searchCount`              | `xsd:integer`         | total number of resources matched by the search         |
 | `resourceURI`      | `{repoCfg}$.schema.searchMatch`              | `"true"^^xsd:boolean` | marks resources matching the search (to distinguish them from the ones fetched because of the [readMode](metadata_api_for_programmers.html#readmode-in-details)) |
 | `resourceURI`      | `{repoCfg}$.schema.searchOrder`              | `xsd:positiveInteger` | order of the resource within the search results according to the `orderBy[]` request parameter(s) - see the [Ordering results](#ordering-results) chapter below - only when the `orderBy[]` request parameter(s) was provided |
-| `resourceURI`      | `{repoCfg}$.schema.searchOrderValue` + `{N}` | mixed                 | actual value of the RDF property indicated by the `orderBy[{N}]` request parameter used for ordering the results - see the [Ordering results](#ordering-results) chapter below - only when the `orderBy[]` request parameter(s) was provided |
-| `resourceURI`      | `{repoCfg}$.schema.searchFts`                | `xsd:string`          | highlighted full text search matches - only when a full text search was performed |
+| `resourceURI`      | `{repoCfg}$.schema.searchOrderValue{N}`      | mixed                 | actual value of the RDF property indicated by the `orderBy[{N}]` request parameter used for ordering the results - see the [Ordering results](#ordering-results) chapter below - only when the `orderBy[]` request parameter(s) was provided |
+| `resourceURI`      | `{repoCfg}$.schema.searchFts{N}`             | `xsd:string`          | `{N}`-th highlighted full text search match - only when a full text search was performed |
+| `resourceURI`      | `{repoCfg}$.schema.searchFtsProperty{N}`     | object                | RDF property of the `{N}`-th full text search match - only when a full text search was performed |
+| `resourceURI`      | `{repoCfg}$.schema.searchFtsQuery{N}`        | `xsd:string`          | Full text search highlighting query of the `{N}`-th full text search match - only when a full text search was performed |
 
 To see how these properties look in the output, please jump to the example in the [ordering results - simple case](#simple-case) section.
 
@@ -419,8 +421,8 @@ to the API).
 ## Unsupported features
 
 * Ordering by properties of linked resources.  
-  Let's say you want to order by, let's say a title of a parent resource and then by a resource title.  
-  This is (at least currently) impossible.
+  Let's say you want to order by a title of a parent resource and then by a resource title.  
+  This is currently impossible.
 * Ordering by dynamically created properties.  
   Especially when searching with an explicit SQL query you might want to order by a property created on-the-fly.  
   This is impossible for security reasons. To prevent leaking any arbitrary data from the database a well-defined
@@ -470,7 +472,7 @@ On the resource matching side (1st step of the [search workflow](#search-workflo
   * Certain RDF properties might be excluded from the indexing or only certain properties can be indexed.
   * For the https://arche.acdh.oeaw.ac.at instance only `text/plain`, `text/xml`, `text/turtle`, `text/html`, `text/csv`, `application/xml`, `application/pdf` and `application/json`
     binary payloads of size up to 1 GB and all metadata properties are being indexed.
-* For the exact description on how the search phrase is parsed please refer to the
+* For the exact description on how the full text search phrase is parsed please refer to the
   Postgresql documentation on the `websearch_to_tsquery()` function
   [here](https://www.postgresql.org/docs/15/functions-textsearch.html#TEXTSEARCH-FUNCTIONS-TABLE)
   and [here](https://www.postgresql.org/docs/15/textsearch-controls.html#TEXTSEARCH-PARSING-QUERIES).
@@ -501,15 +503,239 @@ Examples:
 
 ## Highlighting the results
 
-First, it's crucial to understand that the full text search match highlighting works fully independently from the actual search.  
-**The actual search works in the 1st step of the [search workflow](#search-workflow) while the FTS matches highlighting works in the 4th step.**
+When you use search terms-based search, the highlighting works just out of the box.
 
-The main reason for that is performance - FTS matches highlighting is a very costly operation (especially on large content like resource's binary payloads)
-and it only makes sense to apply it to data actually being returned, after the paging being applied.
+The highlighted matches can be found in the `<resource> <{repoCfg}$.schema.searchFts{N}> "highlighted text"` RDF properties in the output
+where `{N}` is a consecutive number from 1 to the number of matched metadata properties, e.g.
+(for the clarity we skip all resource metadata properties with the `resourceProperties[]=propertyWhichDoesNotExist` parameter
+leaving only technical properties generated by the search):
 
-* Technically it's possible (although it doesn't make much sense) to perform a full text search against one property and match highlighting against another.
+```
+https://arche.acdh.oeaw.ac.at/api/search
+  ?operator[]=@@
+  &value[]=Japan-Bibliographie
+  &readMode=resource
+  &format=text/turtle
+  &resourceProperties[]=propertyWhichDoesNotExist
 
-TODO:
-* simple example
-* many triples with the highlight
-* no way to determine the property giving the match if `ftsProperty` isn't specified (what happens then actually?!)
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&value%5B%5D=Japan-Bibliographie&readMode=resource&format=text%2fturtle&resourceProperties%5B%5D=propertyWhichDoesNotExist
+```
+
+resulting in something like
+
+```
+@prefix n0: <https://arche.acdh.oeaw.ac.at/api/>.
+@prefix n1: <search://>.
+@prefix n2: <https://arche.acdh.oeaw.ac.at/>.
+@prefix n3: <https://vocabs.acdh.oeaw.ac.at/schema#>.
+
+<https://arche.acdh.oeaw.ac.at/api/> n1:count "3"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<https://arche.acdh.oeaw.ac.at/api/30465> 
+    n1:match "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+    n1:fts1 "<b>Japan</b>-<b>Bibliographie</b> 1980–2000 (JB 80) – Thesaurus \n       2019-04-04Z \n       https://creativecommons.org/licenses/by/4.0/ \n       496descriptors";
+    n1:ftsQuery1 "Japan-Bibliographie";
+    n1:ftsProperty1 <BINARY>.
+<https://arche.acdh.oeaw.ac.at/api/24690>
+    n1:match "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+    n1:fts1 "Deutschsprachige <b>Japan</b>-<b>Bibliographie</b> 1980-2000 Datenbank mit über 30.000 bibliographischen Einträgen"@de;
+    n1:ftsQuery1 "Japan-Bibliographie";
+    n1:ftsProperty1 n3:hasAlternativeTitle;
+    n1:fts2 "<b>Japan</b>-<b>Bibliographie</b> 1980-2000"@de;
+    n1:ftsQuery2 "Japan-Bibliographie";
+    n1:ftsProperty2 n3:hasTitle.
+<https://arche.acdh.oeaw.ac.at/api/40725>
+    n1:match "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+    n1:fts1 "Deutschsprachige <b>Japan</b>-<b>Bibliographie</b> 1980-2000 Datenbank mit über 30.000 bibliographischen Einträgen"@de;
+    n1:ftsQuery1 "Japan-Bibliographie";
+    n1:ftsProperty1 n3:hasAlternativeTitle.
+```
+
+We can see four technical triples here:
+
+* `search://match` triples marking resources matching the search
+* `search://fts1` and `search://fts2` (`search://fts{N}` in general) triples providing the highlighted search matches
+  * We can see that in case of two resources there was only a single match
+    and in case of one resource, two matches were found.
+* `search://ftsQuery1` and `search://ftsQuery2` (`search://ftsQuery{N}` in general) triples
+  informing which highlighting query was used to perform the highlighting of a corresponding `search://fts{N}` triple value.
+  * Here the value is always the same as we have only single full text search filter but look in advanced example below.
+* `search://ftsProperty1` and `search://ftsProperty2` (`search://ftsProperty{N}` in general) triples
+  informing which metadata property matched the full text search.
+  * We can see that, depending on the resource, it was either a binary payload,
+    a `acdh:hasAlternativeTitle` or `acdh:hasTitle` and in case of one resource
+    there were two matches (both in the `acdh:hasAlternativeTitle` and the `acdh:hasTitle`).
+
+In case of multiple full text search filters, highlighting is by default provided for all of them.
+
+E.g. let's search for resources containing both _Japan-Bibliographie_ and _Datenbank_ phrases
+(here we also employ the trick to filter out non-technical properties from the output):
+
+```
+https://arche.acdh.oeaw.ac.at/api/search
+  ?operator[]=@@
+  &value[]=Japan-Bibliographie
+  ?operator[]=@@
+  &value[]=Datenbank
+  &readMode=resource
+  &format=text/turtle
+  &resourceProperties[]=propertyWhichDoesNotExist
+
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&value%5B%5D=Japan-Bibliographie&operator%5B%5D=%40%40&value%5B%5D=Datenbank&readMode=resource&format=text%2fturtle&resourceProperties%5B%5D=propertyWhichDoesNotExist
+```
+
+resulting in something like
+
+```
+@prefix n0: <https://arche.acdh.oeaw.ac.at/api/>.
+@prefix n1: <search://>.
+@prefix n2: <https://arche.acdh.oeaw.ac.at/>.
+@prefix n3: <https://vocabs.acdh.oeaw.ac.at/schema#>.
+
+<https://arche.acdh.oeaw.ac.at/api/> n1:count "2"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<https://arche.acdh.oeaw.ac.at/api/40725> 
+    n1:match "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+    n1:fts1 "<b>Datenbank</b> mit über 30.000 bibliographischen Einträgen, die nach folgenden Kriterien gesammelt wurden:\n\t* Japanbezug\n\t* deutschsprachig\n\t* veröffentlicht"@de;
+    n1:ftsQuery1 "Datenbank";
+    n1:ftsProperty1 n3:hasDescription;
+    n1:fts2 "Deutschsprachige Japan-Bibliographie 1980-2000 <b>Datenbank</b> mit über 30.000 bibliographischen Einträgen"@de;
+    n1:ftsQuery2 "Datenbank";
+    n1:ftsProperty2 n3:hasAlternativeTitle;
+    n1:fts3 "Deutschsprachige <b>Japan</b>-<b>Bibliographie</b> 1980-2000 Datenbank mit über 30.000 bibliographischen Einträgen"@de;
+    n1:ftsQuery3 "Japan-Bibliographie";
+    n1:ftsProperty3 n3:hasAlternativeTitle.
+<https://arche.acdh.oeaw.ac.at/api/24690> 
+    n1:match "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
+    n1:fts1 "<b>Japan</b>-<b>Bibliographie</b> 1980-2000"@de;
+    n1:ftsQuery1 "Japan-Bibliographie";
+    n1:ftsProperty1 n3:hasTitle;
+    n1:fts2 "<b>Datenbank</b> mit über 30.000 bibliographischen Einträgen, die nach folgenden Kriterien gesammelt wurden:\n\t* Japanbezug\n\t* deutschsprachig\n\t* veröffentlicht"@de;
+    n1:ftsQuery2 "Datenbank";
+    n1:ftsProperty2 n3:hasDescription;
+    n1:fts3 "Deutschsprachige Japan-Bibliographie 1980-2000 <b>Datenbank</b> mit über 30.000 bibliographischen Einträgen"@de;
+    n1:ftsQuery3 "Datenbank";
+    n1:ftsProperty3 n3:hasAlternativeTitle;
+    n1:fts4 "Deutschsprachige <b>Japan</b>-<b>Bibliographie</b> 1980-2000 Datenbank mit über 30.000 bibliographischen Einträgen"@de;
+    n1:ftsQuery4 "Japan-Bibliographie";
+    n1:ftsProperty4 n3:hasAlternativeTitle.
+```
+
+As we can see there are more highlighted results provided now and the `search://ftsQuery{N}` properties
+can be useful to determine which highlighted phrase comes from which full text search query.
+
+### Adjusting the highlighting configuration
+
+If you want to adjust the way the highlighting is performed, please read [this documentation](https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-HEADLINE) first
+and then provide the desired configuration values using `ftsStartSel[]`, `ftsStopSel[]`, `ftsMinWords[]`, `ftsMaxWords[]`, `ftsShortWord[]`, `ftsHighlightAll[]`, `ftsMaxFragments[]` and `ftsFragmentDelimiter[]`
+request parameters, e.g. to change the default `<b>` tag used for highlighting to the `<em>` one:
+
+```
+https://arche.acdh.oeaw.ac.at/api/search
+  ?operator[]=@@
+  &value[]=Japan-Bibliographie
+  &readMode=resource
+  &format=text/turtle
+  &ftsStartSel[]=<em>
+  &ftsStopSel[]=</em>
+
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&value%5B%5D=Japan-Bibliographie&readMode=resource&format=text%2fturtle&ftsStartSel%5B%5D=%3Cem%3E&ftsStopSel%5B%5D=%3C%2Fem%3E
+```
+
+In case of multiple full text search filters, parameters can be specified separately for each of them,
+e.g. to highlight the _Japan-Bibliographie_ matches with `<em>` and _Datenbank_ matches with `<b>`:
+
+```
+https://arche.acdh.oeaw.ac.at/api/search
+  ?operator[]=@@
+  &value[]=Japan-Bibliographie
+  &ftsStartSel[]=<em>
+  &ftsStopSel[]=</em>
+  &operator[]=@@
+  &value[]=Datenbank
+  &ftsStartSel[]=<b>
+  &ftsStopSel[]=</b>
+  &readMode=resource
+  &format=text/turtle
+
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&value%5B%5D=Japan-Bibliographie&ftsStartSel%5B%5D=%3Cem%3E&ftsStopSel%5B%5D=%3C%2Fem%3E&operator%5B%5D=%40%40&value%5B%5D=Datenbank&ftsStartSel%5B%5D=%3Cb%3E&ftsStopSel%5B%5D=%3C%2Fb%3E&readMode=resource&format=text%2fturtle
+```
+
+Last but not least the query(ies) used to perform the highlighting can be specified explicitly using the `ftsQuery[]` parameter
+and properties to which they are applied can be limited with the `ftsProperty[]` parameter.
+This is particularly useful when performing an SQL query-based search (see below) but can be also used for some advanced scenarios.
+
+If the `ftsQuery[]` parameter is provided it overrides highlighting queries extracted from the search terms,
+e.g. to search for resources containing both _Japan-Bibliographie_ and _2000_ phrases
+but highlight only _Japan-Bibliographie_ phrase matches and only in `acdh:hasTitle` and `acdh:hasAlternativeTitle` metadata property:
+
+```
+https://arche.acdh.oeaw.ac.at/api/search
+  ?operator[]=@@
+  &value[]=Japan-Bibliographie
+  &operator[]=@@
+  &value[]=2000
+  &ftsQuery[]=Japan-Bibliographie
+  &ftsProperty[0][0]=https://vocabs.acdh.oeaw.ac.at/schema#hasTitle
+  &ftsProperty[0][1]=https://vocabs.acdh.oeaw.ac.at/schema#hasAlternativeTitle
+  &readMode=resource
+  &format=text/turtle
+  
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&value%5B%5D=Japan-Bibliographie&operator%5B%5D=%40%40&value%5B%5D=2000&ftsQuery%5B%5D=Japan-Bibliographie&ftsProperty%5B0%5D%5B0%5D=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&ftsProperty%5B0%5D%5B1%5D=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasAlternativeTitle&readMode=resource&format=text%2fturtle
+```
+
+It is worth noting that in this case:
+
+* The syntax for specyfying multiple metadata properties to be used for the highlighting is just the same
+  as for filtering using the search terms (a nested array).
+* We have one resource matched by the search with no highlighted results (because the match was in the binary and we limited highlighting to `acdh:hasTitle` and `acdh:hasAlternativeTitle` metadata properties).
+
+## Full text search within an SQL query search
+
+You can also use the full text search while performing as SQL-based search.
+The SQL query for performing the full text search goes as follows:
+
+```sql
+SELECT coalesce(fts.id, iid, m.id) AS id
+FROM full_text_search fts LEFT JOIN metadata m USING (mid)
+WHERE websearch_to_tsquery('simple', 'SEARCH PHRASE') @@ segments
+```
+
+If you want to limit the search to a given property or a binary content, you should add to the `WHERE` clause:
+
+* `AND fts.id IS NOT NULL` for searching only in the binary content
+* `AND property IN ('list', 'of', 'allowed', 'properties')` for searching only in given metadata properties other than resource identifiers
+* `AND iid IS NOT NULL` for searching in resource identifiers
+
+E.g. to search for resources containing _Alexandria_ in their binary payload.
+```
+https://arche.acdh.oeaw.ac.at/api/search
+  ?sql=SELECT coalesce(fts.id, iid, m.id) AS id
+       FROM full_text_search fts LEFT JOIN metadata m USING (mid)
+       WHERE websearch_to_tsquery('simple', ?) @@ segments
+             AND fts.id IS NOT NULL
+  &sqlParam[]=Alexandria
+  &readMode=resource
+  &format=text/turtle
+
+https://arche.acdh.oeaw.ac.at/api/search?sql=SELECT%20coalesce%28fts.id%2C%20iid%2C%20m.id%29%20AS%20id%20FROM%20full_text_search%20fts%20LEFT%20JOIN%20metadata%20m%20USING%20%28mid%29%20WHERE%20websearch_to_tsquery%28%27simple%27%2C%20%3F%29%20%40%40%20segments%20AND%20fts.id%20IS%20NOT%20NULL&sqlParam%5B%5D=Alexandria&readMode=resource&format=text%2fturtle
+```
+
+To highlight full text search matches while using the SQL query search, the highlighting phrase has to be specified using the `ftsQuery[]` parameter
+and if you limited the search to particular properties, you should limit highlighting accordingly using the `ftsProperty[]` parameter.
+
+E.g. to search for resources containing _Alexandria_ in their binary payload with highlighting of the matching phrases:
+
+```
+https://arche.acdh.oeaw.ac.at/api/search
+  ?sql=SELECT coalesce(fts.id, iid, m.id) AS id
+       FROM full_text_search fts LEFT JOIN metadata m USING (mid)
+       WHERE websearch_to_tsquery('simple', ?) @@ segments
+             AND fts.id IS NOT NULL
+  &sqlParam[]=Alexandria
+  &ftsQuery[]=Alexandria
+  &ftsProperty[]=BINARY
+  &readMode=resource
+  &format=text/turtle
+
+https://arche.acdh.oeaw.ac.at/api/search?sql=SELECT%20coalesce%28fts.id%2C%20iid%2C%20m.id%29%20AS%20id%20FROM%20full_text_search%20fts%20LEFT%20JOIN%20metadata%20m%20USING%20%28mid%29%20WHERE%20websearch_to_tsquery%28%27simple%27%2C%20%3F%29%20%40%40%20segments%20AND%20fts.id%20IS%20NOT%20NULL&sqlParam%5B%5D=Alexandria&ftsQuery%5B%5D=Alexandria&ftsProperty%5B%5D=BINARY&readMode=resource&format=text%2fturtle
+```
+
