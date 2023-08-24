@@ -79,15 +79,87 @@ There are two obvious sources:
 
 ## Compacting JSON-LD
 
-TODO
+First let's try compacting the JSON-LD itself.
 
-### JavaScript/Node example
+If you are a JavaScript/Node.JS programmer, the result will be just an JS object with
+a structure you should find easy to deal with.
 
-TODO
+If you are using other programming language, you can either parse the resulting JSON
+or check the "manual compacting" methods described in the next chapter.
+
+### JavaScript/Node.JS example
+
+([jsonld](https://github.com/digitalbazaar/jsonld.js) library required)
+
+```javascript
+// define the context
+const context = {
+  "title": "https://vocabs.acdh.oeaw.ac.at/schema#hasTitle",
+  "subject": "https://vocabs.acdh.oeaw.ac.at/schema#hasSubject",
+  "creator": {
+    "@id": "https://vocabs.acdh.oeaw.ac.at/schema#hasCreator",
+    "@type": "@id"
+  }
+};
+// get sample ARCHE resource data in JSON-LD
+// for clarity fetch only single resource metadata and only properties mentioned in the context
+const req = new XMLHttpRequest();
+req.open("GET", "https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler", true);
+req.setRequestHeader('Accept', 'application/ld+json');
+req.setRequestHeader('X-METADATA-READ-MODE', 'resource');
+req.setRequestHeader('X-RESOURCE-PROPERTIES', ['https://vocabs.acdh.oeaw.ac.at/schema#hasTitle', 'https://vocabs.acdh.oeaw.ac.at/schema#hasSubject' , 'https://vocabs.acdh.oeaw.ac.at/schema#hasCreator'].join(','));
+
+// response processing handle
+req.onreadystatechange = function () {
+  if (req.readyState === XMLHttpRequest.DONE) {
+    const data = JSON.parse(req.responseText);
+    // before compacting
+    console.log(data);
+    const promise = jsonld.compact(data, context).then(function (x) {
+      // after compacting
+      console.log(x);
+    });
+    Promise.resolve(promise);
+  }
+};
+req.send();
+```
 
 ### Python example
 
-TODO
+(`rdflib` and `request` libraries required)
+
+```python3
+import requests
+from rdflib import Graph
+
+# definte a custom context
+context = {
+  'title': 'https://vocabs.acdh.oeaw.ac.at/schema#hasTitle',
+  'subject': 'https://vocabs.acdh.oeaw.ac.at/schema#hasSubject',
+  'creator': {
+    '@id': 'https://vocabs.acdh.oeaw.ac.at/schema#hasCreator',
+    '@type': '@id'
+  }
+}
+
+# get sample ARCHE resource data in JSON-LD
+# for clarity fetch only single resource metadata and only properties mentioned in the context
+resp = requests.get(
+  'https://hdl.handle.net/21.11115/0000-000E-C8A6-5',
+  headers={
+    'Accept': 'application/ld+json',
+    'X-METADATA-READ-MODE': 'resource', 
+    'X-RESOURCE-PROPERTIES': 'https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/schema#hasSubject,https://vocabs.acdh.oeaw.ac.at/schema#hasCreator'
+  }
+)
+
+# before compacting
+print(resp.text)
+# after compacting
+graph = Graph().parse(data=resp.text, format='json-ld')
+print(graph.serialize(format='json-ld', context=context))
+```
 
 ### PHP example
 
@@ -123,7 +195,11 @@ print_r(ML\JsonLD\JsonLD::compact($data, $context));
 
 ## Manual compacting
 
-Below manual compacting examples in Python and PHP using the `schema` section of the ARCHE repository config as a context.
+If you are programming in another programming language, you may find it more intuitive
+to directly perform "compacting" to the datatypes provided by your language
+(e.g. Python dictionaries or PHP arrays).
+
+Below a few examples in Python and PHP using the `schema` section of the ARCHE repository config as a context.
 
 ### Python example
 
@@ -218,7 +294,7 @@ foreach ($data as $triple) {
   $prop = $context[$prop];
 
   # if the triple points to another node in the graph, maintain the reference
-  if (!($obj instanceof rdfInterface\Literal)) {
+  if (!($obj instanceof rdfInterface\LiteralInterface)) {
     $objUri = $obj->getValue();
     if (!isset($nodes[$objUri])) {
       $nodes[$objUri] = (object) ['__uri__' => $objUri];
