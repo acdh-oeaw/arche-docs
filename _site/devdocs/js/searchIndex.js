@@ -9061,6 +9061,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_getTsHeadlineOptions"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AreadFtsConfigFromTerms\u0028\u0029",
+            "name": "readFtsConfigFromTerms",
+            "summary": "Fills\u0020up\u0020\u0024ftsQuery\u0020and\u0020\u0024ftsProperty\u0020property\u0020values\u0020based\u0020on\nthe\u0020supported\u0020SearchTerm\u0020list.",
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_readFtsConfigFromTerms"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AgetSanitizedCopy\u0028\u0029",
+            "name": "getSanitizedCopy",
+            "summary": "Returns\u0020an\u0020object\u0020with\u0020all\u0020fts\u0020properties\u0020being\u0020arrays\u0020of\u0020the\u0020same\u0020count\nas\u0020the\u0020\u0024ftsQuery\u0020property.\u0020Also,\u0020all\u0020\u0024ftsProperty\u0020value\u0020is\u0020assured\u0020to\u0020be\nan\u0020array.",
+            "url": "classes/acdhOeaw-arche-lib-SearchConfig.html#method_getSanitizedCopy"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchConfig\u003A\u003AFTS_BINARY",
             "name": "FTS_BINARY",
             "summary": "",
@@ -9305,6 +9315,11 @@ Search.appendIndex(
             "name": "OPERATOR_IN",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_OPERATOR_IN"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003AOPERATOR_FTS",
+            "name": "OPERATOR_FTS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SearchTerm.html#constant_OPERATOR_FTS"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SearchTerm\u003A\u003ACOLUMN_STRING",
             "name": "COLUMN_STRING",

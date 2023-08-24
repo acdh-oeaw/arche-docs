@@ -227,70 +227,70 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsFragmentDelimiter">$ftsFragmentDelimiter</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: string|array&lt;string|int, string&gt;            </span>
 </dt>
 <dd>Full text search highlighting options see - https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-HEADLINE</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsHighlightAll">$ftsHighlightAll</a>
     <span>
-                        &nbsp;: bool|null            </span>
+                        &nbsp;: bool|array&lt;string|int, bool&gt;            </span>
 </dt>
 <dd>Full text search highlighting options see - https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-HEADLINE</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsMaxFragments">$ftsMaxFragments</a>
     <span>
-                        &nbsp;: int|null            </span>
+                        &nbsp;: int|array&lt;string|int, int&gt;            </span>
 </dt>
 <dd>Full text search highlighting options see - https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-HEADLINE</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsMaxWords">$ftsMaxWords</a>
     <span>
-                        &nbsp;: int|null            </span>
+                        &nbsp;: int|array&lt;string|int, int&gt;            </span>
 </dt>
 <dd>Full text search highlighting options see - https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-HEADLINE</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsMinWords">$ftsMinWords</a>
     <span>
-                        &nbsp;: int|null            </span>
+                        &nbsp;: int|array&lt;string|int, int&gt;            </span>
 </dt>
 <dd>Full text search highlighting options see - https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-HEADLINE</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsProperty">$ftsProperty</a>
     <span>
-                        &nbsp;: null|string|array&lt;string|int, string&gt;            </span>
+                        &nbsp;: array&lt;string|int, string|array&lt;string|int, string&gt;&gt;            </span>
 </dt>
 <dd>Limits highlighting to indicated properties.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsQuery">$ftsQuery</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: string|array&lt;string|int, string&gt;            </span>
 </dt>
 <dd>A full text search query used for search results highlighting.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsShortWord">$ftsShortWord</a>
     <span>
-                        &nbsp;: int|null            </span>
+                        &nbsp;: int|array&lt;string|int, int&gt;            </span>
 </dt>
 <dd>Full text search highlighting options see - https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-HEADLINE</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsStartSel">$ftsStartSel</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: string|array&lt;string|int, string&gt;            </span>
 </dt>
 <dd>Full text search highlighting options see - https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-HEADLINE</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#property_ftsStopSel">$ftsStopSel</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: string|array&lt;string|int, string&gt;            </span>
 </dt>
 <dd>Full text search highlighting options see - https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-HEADLINE</dd>
 
@@ -399,10 +399,27 @@ given array.</dd>
 according to the search config settings.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_getSanitizedCopy">getSanitizedCopy()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Returns an object with all fts properties being arrays of the same count
+as the $ftsQuery property. Also, all $ftsProperty value is assured to be
+an array.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_getTsHeadlineOptions">getTsHeadlineOptions()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_readFtsConfigFromTerms">readFtsConfigFromTerms()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Fills up $ftsQuery and $ftsProperty property values based on
+the supported SearchTerm list.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_toArray">toArray()</a>
@@ -482,7 +499,7 @@ according to the search config settings.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">213</span>
+    <span class="phpdocumentor-element-found-in__line">267</span>
 
     </aside>
 
@@ -554,7 +571,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">261</span>
 
     </aside>
 
@@ -562,11 +579,15 @@ methods.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__type">string|array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$ftsFragmentDelimiter</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>If single value is used, it is applied to all FTS queries.
+If array is used, it has to have same length as the $ftsQuery
+and values are applied to corresponding queries.</p>
+</section>
+
     
     
 
@@ -588,7 +609,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
     </aside>
 
@@ -596,11 +617,15 @@ methods.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">bool|null</span>
+        <span class="phpdocumentor-signature__type">bool|array&lt;string|int, bool&gt;</span>
     <span class="phpdocumentor-signature__name">$ftsHighlightAll</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>If single value is used, it is applied to all FTS queries.
+If array is used, it has to have same length as the $ftsQuery
+and values are applied to corresponding queries.</p>
+</section>
+
     
     
 
@@ -622,7 +647,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">250</span>
 
     </aside>
 
@@ -630,11 +655,15 @@ methods.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__type">int|array&lt;string|int, int&gt;</span>
     <span class="phpdocumentor-signature__name">$ftsMaxFragments</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>If single value is used, it is applied to all FTS queries.
+If array is used, it has to have same length as the $ftsQuery
+and values are applied to corresponding queries.</p>
+</section>
+
     
     
 
@@ -656,7 +685,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">182</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
@@ -664,11 +693,15 @@ methods.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__type">int|array&lt;string|int, int&gt;</span>
     <span class="phpdocumentor-signature__name">$ftsMaxWords</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>If single value is used, it is applied to all FTS queries.
+If array is used, it has to have same length as the $ftsQuery
+and values are applied to corresponding queries.</p>
+</section>
+
     
     
 
@@ -690,7 +723,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -698,11 +731,15 @@ methods.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__type">int|array&lt;string|int, int&gt;</span>
     <span class="phpdocumentor-signature__name">$ftsMinWords</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>If single value is used, it is applied to all FTS queries.
+If array is used, it has to have same length as the $ftsQuery
+and values are applied to corresponding queries.</p>
+</section>
+
     
     
 
@@ -724,7 +761,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -732,11 +769,16 @@ methods.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">null|string|array&lt;string|int, string&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string|array&lt;string|int, string&gt;&gt;</span>
     <span class="phpdocumentor-signature__name">$ftsProperty</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-        <section class="phpdocumentor-description"><p>Use <code class="prettyprint">SearchConfig::FTS_BINARY</code> to indicate binary content.</p>
+        <section class="phpdocumentor-description"><p>If single value is used, it is applied to all FTS queries.
+If array is used, it has to have same length as the $ftsQuery
+and values are applied to corresponding queries.</p>
+<p>A value can be either a string or an array of string (meaning any of
+given properties).</p>
+<p>Use <code class="prettyprint">SearchConfig::FTS_BINARY</code> to indicate binary content.</p>
 </section>
 
     
@@ -760,7 +802,7 @@ methods.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -768,15 +810,12 @@ methods.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__type">string|array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$ftsQuery</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
         <section class="phpdocumentor-description"><p>See https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-PARSING-QUERIES
 and the websearch_to_tsquery() function documentation.</p>
-<p>Remember this query is applied only to the search results and is not used to
-perform an actual search (yes, technically you can search by one term
-and highlight results using the other).</p>
 </section>
 
     
@@ -800,7 +839,7 @@ and highlight results using the other).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">192</span>
+    <span class="phpdocumentor-element-found-in__line">228</span>
 
     </aside>
 
@@ -808,11 +847,15 @@ and highlight results using the other).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">int|null</span>
+        <span class="phpdocumentor-signature__type">int|array&lt;string|int, int&gt;</span>
     <span class="phpdocumentor-signature__name">$ftsShortWord</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>If single value is used, it is applied to all FTS queries.
+If array is used, it has to have same length as the $ftsQuery
+and values are applied to corresponding queries.</p>
+</section>
+
     
     
 
@@ -834,7 +877,7 @@ and highlight results using the other).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -842,11 +885,15 @@ and highlight results using the other).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__type">string|array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$ftsStartSel</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>If single value is used, it is applied to all FTS queries.
+If array is used, it has to have same length as the $ftsQuery
+and values are applied to corresponding queries.</p>
+</section>
+
     
     
 
@@ -868,7 +915,7 @@ and highlight results using the other).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -876,11 +923,15 @@ and highlight results using the other).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__type">string|array&lt;string|int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$ftsStopSel</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>If single value is used, it is applied to all FTS queries.
+If array is used, it has to have same length as the $ftsQuery
+and values are applied to corresponding queries.</p>
+</section>
+
     
     
 
@@ -1239,7 +1290,7 @@ resources.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">219</span>
+    <span class="phpdocumentor-element-found-in__line">273</span>
 
     </aside>
 
@@ -1362,7 +1413,7 @@ is used instead.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">300</span>
 
     </aside>
 
@@ -1401,22 +1452,25 @@ according to the search config settings.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getTsHeadlineOptions">
-        getTsHeadlineOptions()
-        <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_getTsHeadlineOptions" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getSanitizedCopy">
+        getSanitizedCopy()
+        <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_getSanitizedCopy" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">267</span>
+    <span class="phpdocumentor-element-found-in__line">371</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Returns an object with all fts properties being arrays of the same count
+as the $ftsQuery property. Also, all $ftsProperty value is assured to be
+an array.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getTsHeadlineOptions</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getSanitizedCopy</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1426,9 +1480,97 @@ according to the search config settings.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTsHeadlineOptions">
+        getTsHeadlineOptions()
+        <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_getTsHeadlineOptions" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">321</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getTsHeadlineOptions</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$offset</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
             </section>
 
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_readFtsConfigFromTerms">
+        readFtsConfigFromTerms()
+        <a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_readFtsConfigFromTerms" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">339</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Fills up $ftsQuery and $ftsProperty property values based on
+the supported SearchTerm list.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">readFtsConfigFromTerms</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$terms</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$terms</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1444,7 +1586,7 @@ according to the search config settings.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">225</span>
+    <span class="phpdocumentor-element-found-in__line">279</span>
 
     </aside>
 
@@ -1479,7 +1621,7 @@ according to the search config settings.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-searchconfig.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SearchConfig.php">SearchConfig.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">263</span>
+    <span class="phpdocumentor-element-found-in__line">317</span>
 
     </aside>
 
@@ -1651,7 +1793,9 @@ according to the search config settings.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_factory">factory()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_getHeaders">getHeaders()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_getSanitizedCopy">getSanitizedCopy()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_getTsHeadlineOptions">getTsHeadlineOptions()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_readFtsConfigFromTerms">readFtsConfigFromTerms()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_toArray">toArray()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SearchConfig.html#method_toQuery">toQuery()</a></li>
                                     </ul>
