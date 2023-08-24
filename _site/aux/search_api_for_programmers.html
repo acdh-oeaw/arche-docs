@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2022-12-05" />
+<meta name="date" content="2023-08-24" />
 
 <title>ARCHE Search API for programmers</title>
 
@@ -265,11 +265,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } 
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } 
-code span.at { color: #c4a000; } 
+code span.at { color: #204a87; } 
 code span.bn { color: #0000cf; } 
 code span.cf { color: #204a87; font-weight: bold; } 
 code span.ch { color: #4e9a06; } 
-code span.cn { color: #000000; } 
+code span.cn { color: #8f5902; } 
 code span.co { color: #8f5902; font-style: italic; } 
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } 
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } 
@@ -278,14 +278,14 @@ code span.dv { color: #0000cf; }
 code span.er { color: #a40000; font-weight: bold; } 
 code span.ex { } 
 code span.fl { color: #0000cf; } 
-code span.fu { color: #000000; } 
+code span.fu { color: #204a87; font-weight: bold; } 
 code span.im { } 
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } 
 code span.kw { color: #204a87; font-weight: bold; } 
 code span.op { color: #ce5c00; font-weight: bold; } 
 code span.ot { color: #8f5902; } 
 code span.pp { color: #8f5902; font-style: italic; } 
-code span.sc { color: #000000; } 
+code span.sc { color: #ce5c00; font-weight: bold; } 
 code span.ss { color: #4e9a06; } 
 code span.st { color: #4e9a06; } 
 code span.va { color: #000000; } 
@@ -421,7 +421,7 @@ display: none;
 
 
 <h1 class="title toc-ignore">ARCHE Search API for programmers</h1>
-<h4 class="date">2022-12-05</h4>
+<h4 class="date">2023-08-24</h4>
 
 </div>
 
@@ -464,7 +464,13 @@ non-literal values</a></li>
 <li><a href="#full-text-search" id="toc-full-text-search">Full text
 search</a>
 <ul>
-<li><a href="#highlighting-the-results" id="toc-highlighting-the-results">Highlighting the results</a></li>
+<li><a href="#highlighting-the-results" id="toc-highlighting-the-results">Highlighting the results</a>
+<ul>
+<li><a href="#adjusting-the-highlighting-configuration" id="toc-adjusting-the-highlighting-configuration">Adjusting the
+highlighting configuration</a></li>
+</ul></li>
+<li><a href="#full-text-search-within-an-sql-query-search" id="toc-full-text-search-within-an-sql-query-search">Full text search
+within an SQL query search</a></li>
 </ul></li>
 </ul>
 </div>
@@ -586,8 +592,7 @@ the <code>orderBy[]</code> request parameter(s) was provided</td>
 </tr>
 <tr class="even">
 <td><code>resourceURI</code></td>
-<td><code>{repoCfg}$.schema.searchOrderValue</code> +
-<code>{N}</code></td>
+<td><code>{repoCfg}$.schema.searchOrderValue{N}</code></td>
 <td>mixed</td>
 <td>actual value of the RDF property indicated by the
 <code>orderBy[{N}]</code> request parameter used for ordering the
@@ -597,10 +602,24 @@ parameter(s) was provided</td>
 </tr>
 <tr class="odd">
 <td><code>resourceURI</code></td>
-<td><code>{repoCfg}$.schema.searchFts</code></td>
+<td><code>{repoCfg}$.schema.searchFts{N}</code></td>
 <td><code>xsd:string</code></td>
-<td>highlighted full text search matches - only when a full text search
-was performed</td>
+<td><code>{N}</code>-th highlighted full text search match - only when a
+full text search was performed</td>
+</tr>
+<tr class="even">
+<td><code>resourceURI</code></td>
+<td><code>{repoCfg}$.schema.searchFtsProperty{N}</code></td>
+<td>object</td>
+<td>RDF property of the <code>{N}</code>-th full text search match -
+only when a full text search was performed</td>
+</tr>
+<tr class="odd">
+<td><code>resourceURI</code></td>
+<td><code>{repoCfg}$.schema.searchFtsQuery{N}</code></td>
+<td><code>xsd:string</code></td>
+<td>Full text search highlighting query of the <code>{N}</code>-th full
+text search match - only when a full text search was performed</td>
 </tr>
 </tbody>
 </table>
@@ -756,73 +775,73 @@ syntax <strong>won’t</strong> (as it will result in
 by hand but you’ll use some HTTP client library provided by your
 programming language.</p>
 <p>If you are lucky, the library will just do the job for you, e.g.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">// jQuery</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>jQuery<span class="op">.</span><span class="fu">ajax</span>({</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">url</span><span class="op">:</span> <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/search&#39;</span><span class="op">,</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;GET&#39;</span><span class="op">,</span> <span class="co">// POST would work equally well</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">data</span><span class="op">:</span> {</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;property&quot;</span><span class="op">:</span>  [<span class="st">&quot;someProp&quot;</span><span class="op">,</span> <span class="st">&quot;otherProp&quot;</span>                           ]<span class="op">,</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;value&quot;</span><span class="op">:</span>     [<span class="st">&quot;&quot;</span>        <span class="op">,</span> [<span class="st">&quot;otherPropValue1&quot;</span><span class="op">,</span> <span class="st">&quot;otherPropValue2&quot;</span>]]<span class="op">,</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;readMode&quot;</span><span class="op">:</span>  <span class="st">&quot;resource&quot;</span><span class="op">,</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;format&quot;</span><span class="op">:</span>    <span class="st">&quot;text/turtle&quot;</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">success</span><span class="op">:</span> <span class="kw">function</span>(d) {<span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(d)}</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co">// or with explicit keys</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>jQuery<span class="op">.</span><span class="fu">ajax</span>({</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="dt">url</span><span class="op">:</span> <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/search&#39;</span><span class="op">,</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;GET&#39;</span><span class="op">,</span> <span class="co">// POST would work equally well</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="dt">data</span><span class="op">:</span> {</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;property&quot;</span><span class="op">:</span>  {<span class="st">&quot;0&quot;</span><span class="op">:</span> <span class="st">&quot;someProp&quot;</span><span class="op">,</span> <span class="st">&quot;1&quot;</span><span class="op">:</span> <span class="st">&quot;otherProp&quot;</span>}<span class="op">,</span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;value&quot;</span><span class="op">:</span>     {                 <span class="st">&quot;1&quot;</span><span class="op">:</span> [<span class="st">&quot;otherPropValue1&quot;</span><span class="op">,</span> <span class="st">&quot;otherPropValue2&quot;</span>]}<span class="op">,</span></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;readMode&quot;</span><span class="op">:</span>  <span class="st">&quot;resource&quot;</span><span class="op">,</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;format&quot;</span><span class="op">:</span>    <span class="st">&quot;text/turtle&quot;</span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>  <span class="dt">success</span><span class="op">:</span> <span class="kw">function</span>(d) {<span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(d)}</span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">// PHP</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="va">$searchParam</span> <span class="op">=</span> [</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;property&#39;</span> =&gt; [<span class="st">&#39;someProp&#39;</span><span class="ot">,</span> <span class="st">&#39;otherProp&#39;</span>                           ]<span class="ot">,</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;value&#39;</span>    =&gt; [<span class="st">&#39;&#39;</span>        <span class="ot">,</span> [<span class="st">&#39;otherPropValue1&#39;</span><span class="ot">,</span> <span class="st">&#39;otherPropValue2&#39;</span>]]<span class="ot">,</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;readMode&#39;</span> =&gt; <span class="st">&#39;resource&#39;</span><span class="ot">,</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;format&#39;</span>   =&gt; <span class="st">&#39;text/turtle&#39;</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>]<span class="ot">;</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">// just with file_get_contents() - only GET possible</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="va">$response</span> <span class="op">=</span> <span class="fu">file_get_contents</span>(<span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/search?&#39;</span> <span class="op">.</span> <span class="fu">http_build_query</span>(<span class="va">$searchParam</span>))<span class="ot">;</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="kw">echo</span> <span class="va">$response</span><span class="ot">;</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">// PSR-7 &amp; PSR-18 way provided by Guzzle - both GET and POST possible</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="va">$client</span> <span class="op">=</span> <span class="kw">new</span> <span class="cn">G</span>uzzleHttp\<span class="cn">C</span>lient()<span class="ot">;</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="va">$getRequest</span> <span class="op">=</span> <span class="kw">new</span> <span class="cn">G</span>uzzleHttp\<span class="cn">P</span>sr7\<span class="cn">R</span>equest(</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">&#39;GET&#39;</span><span class="ot">,</span> </span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/search?&#39;</span> <span class="op">.</span> <span class="fu">http_build_query</span>(<span class="va">$searchParam</span>)</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>)<span class="ot">;</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="va">$getResponse</span> <span class="op">=</span> <span class="va">$client</span>-&gt;sendRequest(<span class="va">$getRequest</span>)<span class="ot">;</span></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="kw">echo</span> <span class="va">$getResponse</span>-&gt;getBody()<span class="ot">;</span></span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="va">$postRequest</span> <span class="op">=</span> <span class="kw">new</span> <span class="cn">G</span>uzzleHttp\<span class="cn">P</span>sr7\<span class="cn">R</span>equest(</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">&#39;POST&#39;</span><span class="ot">,</span> </span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/search&#39;</span><span class="ot">,</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  [<span class="st">&#39;Content-Type&#39;</span> =&gt; <span class="st">&#39;application/x-www-form-urlencoded&#39;</span>]<span class="ot">,</span> </span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">http_build_query</span>(<span class="va">$searchParam</span>)</span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>)<span class="ot">;</span></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="va">$postResponse</span> <span class="op">=</span> <span class="va">$client</span>-&gt;sendRequest(<span class="va">$postRequest</span>)<span class="ot">;</span></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="kw">echo</span> <span class="va">$postResponse</span>-&gt;getBody()<span class="ot">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co">// jQuery</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>jQuery<span class="op">.</span><span class="fu">ajax</span>({</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>  <span class="dt">url</span><span class="op">:</span> <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/search&#39;</span><span class="op">,</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>  <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;GET&#39;</span><span class="op">,</span> <span class="co">// POST would work equally well</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>  <span class="dt">data</span><span class="op">:</span> {</span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a>    <span class="st">&quot;property&quot;</span><span class="op">:</span>  [<span class="st">&quot;someProp&quot;</span><span class="op">,</span> <span class="st">&quot;otherProp&quot;</span>                           ]<span class="op">,</span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>    <span class="st">&quot;value&quot;</span><span class="op">:</span>     [<span class="st">&quot;&quot;</span>        <span class="op">,</span> [<span class="st">&quot;otherPropValue1&quot;</span><span class="op">,</span> <span class="st">&quot;otherPropValue2&quot;</span>]]<span class="op">,</span></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a>    <span class="st">&quot;readMode&quot;</span><span class="op">:</span>  <span class="st">&quot;resource&quot;</span><span class="op">,</span></span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>    <span class="st">&quot;format&quot;</span><span class="op">:</span>    <span class="st">&quot;text/turtle&quot;</span></span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a>  <span class="dt">success</span><span class="op">:</span> <span class="kw">function</span>(d) {<span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(d)}</span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a>})</span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="co">// or with explicit keys</span></span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a>jQuery<span class="op">.</span><span class="fu">ajax</span>({</span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a>  <span class="dt">url</span><span class="op">:</span> <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/search&#39;</span><span class="op">,</span></span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a>  <span class="dt">method</span><span class="op">:</span> <span class="st">&#39;GET&#39;</span><span class="op">,</span> <span class="co">// POST would work equally well</span></span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a>  <span class="dt">data</span><span class="op">:</span> {</span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a>    <span class="st">&quot;property&quot;</span><span class="op">:</span>  {<span class="st">&quot;0&quot;</span><span class="op">:</span> <span class="st">&quot;someProp&quot;</span><span class="op">,</span> <span class="st">&quot;1&quot;</span><span class="op">:</span> <span class="st">&quot;otherProp&quot;</span>}<span class="op">,</span></span>
+<span id="cb3-19"><a href="#cb3-19" tabindex="-1"></a>    <span class="st">&quot;value&quot;</span><span class="op">:</span>     {                 <span class="st">&quot;1&quot;</span><span class="op">:</span> [<span class="st">&quot;otherPropValue1&quot;</span><span class="op">,</span> <span class="st">&quot;otherPropValue2&quot;</span>]}<span class="op">,</span></span>
+<span id="cb3-20"><a href="#cb3-20" tabindex="-1"></a>    <span class="st">&quot;readMode&quot;</span><span class="op">:</span>  <span class="st">&quot;resource&quot;</span><span class="op">,</span></span>
+<span id="cb3-21"><a href="#cb3-21" tabindex="-1"></a>    <span class="st">&quot;format&quot;</span><span class="op">:</span>    <span class="st">&quot;text/turtle&quot;</span></span>
+<span id="cb3-22"><a href="#cb3-22" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb3-23"><a href="#cb3-23" tabindex="-1"></a>  <span class="dt">success</span><span class="op">:</span> <span class="kw">function</span>(d) {<span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(d)}</span>
+<span id="cb3-24"><a href="#cb3-24" tabindex="-1"></a>})</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="co">// PHP</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="va">$searchParam</span> <span class="op">=</span> [</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>    <span class="st">&#39;property&#39;</span> =&gt; [<span class="st">&#39;someProp&#39;</span><span class="ot">,</span> <span class="st">&#39;otherProp&#39;</span>                           ]<span class="ot">,</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>    <span class="st">&#39;value&#39;</span>    =&gt; [<span class="st">&#39;&#39;</span>        <span class="ot">,</span> [<span class="st">&#39;otherPropValue1&#39;</span><span class="ot">,</span> <span class="st">&#39;otherPropValue2&#39;</span>]]<span class="ot">,</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>    <span class="st">&#39;readMode&#39;</span> =&gt; <span class="st">&#39;resource&#39;</span><span class="ot">,</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a>    <span class="st">&#39;format&#39;</span>   =&gt; <span class="st">&#39;text/turtle&#39;</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a>]<span class="ot">;</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="co">// just with file_get_contents() - only GET possible</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="va">$response</span> <span class="op">=</span> <span class="fu">file_get_contents</span>(<span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/search?&#39;</span> <span class="op">.</span> <span class="fu">http_build_query</span>(<span class="va">$searchParam</span>))<span class="ot">;</span></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="kw">echo</span> <span class="va">$response</span><span class="ot">;</span></span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a><span class="co">// PSR-7 &amp; PSR-18 way provided by Guzzle - both GET and POST possible</span></span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a><span class="va">$client</span> <span class="op">=</span> <span class="kw">new</span> <span class="cn">G</span>uzzleHttp\<span class="cn">C</span>lient()<span class="ot">;</span></span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a><span class="va">$getRequest</span> <span class="op">=</span> <span class="kw">new</span> <span class="cn">G</span>uzzleHttp\<span class="cn">P</span>sr7\<span class="cn">R</span>equest(</span>
+<span id="cb4-16"><a href="#cb4-16" tabindex="-1"></a>  <span class="st">&#39;GET&#39;</span><span class="ot">,</span> </span>
+<span id="cb4-17"><a href="#cb4-17" tabindex="-1"></a>  <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/search?&#39;</span> <span class="op">.</span> <span class="fu">http_build_query</span>(<span class="va">$searchParam</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" tabindex="-1"></a>)<span class="ot">;</span></span>
+<span id="cb4-19"><a href="#cb4-19" tabindex="-1"></a><span class="va">$getResponse</span> <span class="op">=</span> <span class="va">$client</span>-&gt;sendRequest(<span class="va">$getRequest</span>)<span class="ot">;</span></span>
+<span id="cb4-20"><a href="#cb4-20" tabindex="-1"></a><span class="kw">echo</span> <span class="va">$getResponse</span>-&gt;getBody()<span class="ot">;</span></span>
+<span id="cb4-21"><a href="#cb4-21" tabindex="-1"></a><span class="va">$postRequest</span> <span class="op">=</span> <span class="kw">new</span> <span class="cn">G</span>uzzleHttp\<span class="cn">P</span>sr7\<span class="cn">R</span>equest(</span>
+<span id="cb4-22"><a href="#cb4-22" tabindex="-1"></a>  <span class="st">&#39;POST&#39;</span><span class="ot">,</span> </span>
+<span id="cb4-23"><a href="#cb4-23" tabindex="-1"></a>  <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/search&#39;</span><span class="ot">,</span></span>
+<span id="cb4-24"><a href="#cb4-24" tabindex="-1"></a>  [<span class="st">&#39;Content-Type&#39;</span> =&gt; <span class="st">&#39;application/x-www-form-urlencoded&#39;</span>]<span class="ot">,</span> </span>
+<span id="cb4-25"><a href="#cb4-25" tabindex="-1"></a>  <span class="fu">http_build_query</span>(<span class="va">$searchParam</span>)</span>
+<span id="cb4-26"><a href="#cb4-26" tabindex="-1"></a>)<span class="ot">;</span></span>
+<span id="cb4-27"><a href="#cb4-27" tabindex="-1"></a><span class="va">$postResponse</span> <span class="op">=</span> <span class="va">$client</span>-&gt;sendRequest(<span class="va">$postRequest</span>)<span class="ot">;</span></span>
+<span id="cb4-28"><a href="#cb4-28" tabindex="-1"></a><span class="kw">echo</span> <span class="va">$postResponse</span>-&gt;getBody()<span class="ot">;</span></span></code></pre></div>
 <p>and if you’re unlucky and your HTTP client library can’t serialize
 complex objects into URL query (which most notably affects Python
 users), you need to prepare the request a little more carefully:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Python with requests</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>resp <span class="op">=</span> requests.get(</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/search&#39;</span>,</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  params<span class="op">=</span>{</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;property[]&#39;</span>: [<span class="st">&#39;someProp&#39;</span>, <span class="st">&#39;otherProp&#39;</span>],</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;value[1][]&#39;</span>: [<span class="st">&#39;otherPropValue1&#39;</span>, <span class="st">&#39;otherPropValue2&#39;</span>],</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;readMode&#39;</span>: <span class="st">&#39;resource&#39;</span>,</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;format&#39;</span>: <span class="st">&#39;text/turtle&#39;</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(resp.text)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="co"># Python with requests</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="im">import</span> requests </span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>resp <span class="op">=</span> requests.get(</span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>  <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/search&#39;</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>  params<span class="op">=</span>{</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>    <span class="st">&#39;property[]&#39;</span>: [<span class="st">&#39;someProp&#39;</span>, <span class="st">&#39;otherProp&#39;</span>],</span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a>    <span class="st">&#39;value[1][]&#39;</span>: [<span class="st">&#39;otherPropValue1&#39;</span>, <span class="st">&#39;otherPropValue2&#39;</span>],</span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a>    <span class="st">&#39;readMode&#39;</span>: <span class="st">&#39;resource&#39;</span>,</span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a>    <span class="st">&#39;format&#39;</span>: <span class="st">&#39;text/turtle&#39;</span></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a>  }</span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a>)</span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a><span class="bu">print</span>(resp.text)</span></code></pre></div>
 <p>Last but not least if you’re using PHP, you might want to use the <a href="https://github.com/acdh-oeaw/arche-lib/">arche-lib</a> which
 provides object wrappers for the <em>search terms</em>, ARCHE
 repository, etc.</p>
@@ -1105,9 +1124,9 @@ complexity to the API).</p>
 <h2>Unsupported features</h2>
 <ul>
 <li>Ordering by properties of linked resources.<br />
-Let’s say you want to order by, let’s say a title of a parent resource
-and then by a resource title.<br />
-This is (at least currently) impossible.</li>
+Let’s say you want to order by a title of a parent resource and then by
+a resource title.<br />
+This is currently impossible.</li>
 <li>Ordering by dynamically created properties.<br />
 Especially when searching with an explicit SQL query you might want to
 order by a property created on-the-fly.<br />
@@ -1181,8 +1200,8 @@ certain properties can be indexed.</li>
 <code>application/json</code> binary payloads of size up to 1 GB and all
 metadata properties are being indexed.</li>
 </ul></li>
-<li>For the exact description on how the search phrase is parsed please
-refer to the Postgresql documentation on the
+<li>For the exact description on how the full text search phrase is
+parsed please refer to the Postgresql documentation on the
 <code>websearch_to_tsquery()</code> function <a href="https://www.postgresql.org/docs/15/functions-textsearch.html#TEXTSEARCH-FUNCTIONS-TABLE">here</a>
 and <a href="https://www.postgresql.org/docs/15/textsearch-controls.html#TEXTSEARCH-PARSING-QUERIES">here</a>.</li>
 </ul>
@@ -1210,19 +1229,253 @@ https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&amp;property%5B%5
 </ul>
 <div id="highlighting-the-results" class="section level2">
 <h2>Highlighting the results</h2>
-<p>First, it’s crucial to understand that the full text search match
-highlighting works fully independently from the actual search.<br />
-<strong>The actual search works in the 1st step of the <a href="#search-workflow">search workflow</a> while the FTS matches
-highlighting works in the 4th step.</strong></p>
-<p>The main reason for that is performance - FTS matches highlighting is
-a very costly operation (especially on large content like resource’s
-binary payloads) and it only makes sense to apply it to data actually
-being returned, after the paging being applied.</p>
+<p>When you use search terms-based search, the highlighting works just
+out of the box.</p>
+<p>The highlighted matches can be found in the
+<code>&lt;resource&gt; &lt;{repoCfg}$.schema.searchFts{N}&gt; &quot;highlighted text&quot;</code>
+RDF properties in the output where <code>{N}</code> is a consecutive
+number from 1 to the number of matched metadata properties, e.g. (for
+the clarity we skip all resource metadata properties with the
+<code>resourceProperties[]=propertyWhichDoesNotExist</code> parameter
+leaving only technical properties generated by the search):</p>
+<pre><code>https://arche.acdh.oeaw.ac.at/api/search
+  ?operator[]=@@
+  &amp;value[]=Japan-Bibliographie
+  &amp;readMode=resource
+  &amp;format=text/turtle
+  &amp;resourceProperties[]=propertyWhichDoesNotExist
+
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&amp;value%5B%5D=Japan-Bibliographie&amp;readMode=resource&amp;format=text%2fturtle&amp;resourceProperties%5B%5D=propertyWhichDoesNotExist</code></pre>
+<p>resulting in something like</p>
+<pre><code>@prefix n0: &lt;https://arche.acdh.oeaw.ac.at/api/&gt;.
+@prefix n1: &lt;search://&gt;.
+@prefix n2: &lt;https://arche.acdh.oeaw.ac.at/&gt;.
+@prefix n3: &lt;https://vocabs.acdh.oeaw.ac.at/schema#&gt;.
+
+&lt;https://arche.acdh.oeaw.ac.at/api/&gt; n1:count &quot;3&quot;^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;.
+&lt;https://arche.acdh.oeaw.ac.at/api/30465&gt; 
+    n1:match &quot;true&quot;^^&lt;http://www.w3.org/2001/XMLSchema#boolean&gt;;
+    n1:fts1 &quot;&lt;b&gt;Japan&lt;/b&gt;-&lt;b&gt;Bibliographie&lt;/b&gt; 1980–2000 (JB 80) – Thesaurus \n       2019-04-04Z \n       https://creativecommons.org/licenses/by/4.0/ \n       496descriptors&quot;;
+    n1:ftsQuery1 &quot;Japan-Bibliographie&quot;;
+    n1:ftsProperty1 &lt;BINARY&gt;.
+&lt;https://arche.acdh.oeaw.ac.at/api/24690&gt;
+    n1:match &quot;true&quot;^^&lt;http://www.w3.org/2001/XMLSchema#boolean&gt;;
+    n1:fts1 &quot;Deutschsprachige &lt;b&gt;Japan&lt;/b&gt;-&lt;b&gt;Bibliographie&lt;/b&gt; 1980-2000 Datenbank mit über 30.000 bibliographischen Einträgen&quot;@de;
+    n1:ftsQuery1 &quot;Japan-Bibliographie&quot;;
+    n1:ftsProperty1 n3:hasAlternativeTitle;
+    n1:fts2 &quot;&lt;b&gt;Japan&lt;/b&gt;-&lt;b&gt;Bibliographie&lt;/b&gt; 1980-2000&quot;@de;
+    n1:ftsQuery2 &quot;Japan-Bibliographie&quot;;
+    n1:ftsProperty2 n3:hasTitle.
+&lt;https://arche.acdh.oeaw.ac.at/api/40725&gt;
+    n1:match &quot;true&quot;^^&lt;http://www.w3.org/2001/XMLSchema#boolean&gt;;
+    n1:fts1 &quot;Deutschsprachige &lt;b&gt;Japan&lt;/b&gt;-&lt;b&gt;Bibliographie&lt;/b&gt; 1980-2000 Datenbank mit über 30.000 bibliographischen Einträgen&quot;@de;
+    n1:ftsQuery1 &quot;Japan-Bibliographie&quot;;
+    n1:ftsProperty1 n3:hasAlternativeTitle.</code></pre>
+<p>We can see four technical triples here:</p>
 <ul>
-<li>Technically it’s possible (although it doesn’t make much sense) to
-perform a full text search against one property and match highlighting
-against another.</li>
+<li><code>search://match</code> triples marking resources matching the
+search</li>
+<li><code>search://fts1</code> and <code>search://fts2</code>
+(<code>search://fts{N}</code> in general) triples providing the
+highlighted search matches
+<ul>
+<li>We can see that in case of two resources there was only a single
+match and in case of one resource, two matches were found.</li>
+</ul></li>
+<li><code>search://ftsQuery1</code> and <code>search://ftsQuery2</code>
+(<code>search://ftsQuery{N}</code> in general) triples informing which
+highlighting query was used to perform the highlighting of a
+corresponding <code>search://fts{N}</code> triple value.
+<ul>
+<li>Here the value is always the same as we have only single full text
+search filter but look in advanced example below.</li>
+</ul></li>
+<li><code>search://ftsProperty1</code> and
+<code>search://ftsProperty2</code> (<code>search://ftsProperty{N}</code>
+in general) triples informing which metadata property matched the full
+text search.
+<ul>
+<li>We can see that, depending on the resource, it was either a binary
+payload, a <code>acdh:hasAlternativeTitle</code> or
+<code>acdh:hasTitle</code> and in case of one resource there were two
+matches (both in the <code>acdh:hasAlternativeTitle</code> and the
+<code>acdh:hasTitle</code>).</li>
+</ul></li>
 </ul>
+<p>In case of multiple full text search filters, highlighting is by
+default provided for all of them.</p>
+<p>E.g. let’s search for resources containing both
+<em>Japan-Bibliographie</em> and <em>Datenbank</em> phrases (here we
+also employ the trick to filter out non-technical properties from the
+output):</p>
+<pre><code>https://arche.acdh.oeaw.ac.at/api/search
+  ?operator[]=@@
+  &amp;value[]=Japan-Bibliographie
+  ?operator[]=@@
+  &amp;value[]=Datenbank
+  &amp;readMode=resource
+  &amp;format=text/turtle
+  &amp;resourceProperties[]=propertyWhichDoesNotExist
+
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&amp;value%5B%5D=Japan-Bibliographie&amp;operator%5B%5D=%40%40&amp;value%5B%5D=Datenbank&amp;readMode=resource&amp;format=text%2fturtle&amp;resourceProperties%5B%5D=propertyWhichDoesNotExist</code></pre>
+<p>resulting in something like</p>
+<pre><code>@prefix n0: &lt;https://arche.acdh.oeaw.ac.at/api/&gt;.
+@prefix n1: &lt;search://&gt;.
+@prefix n2: &lt;https://arche.acdh.oeaw.ac.at/&gt;.
+@prefix n3: &lt;https://vocabs.acdh.oeaw.ac.at/schema#&gt;.
+
+&lt;https://arche.acdh.oeaw.ac.at/api/&gt; n1:count &quot;2&quot;^^&lt;http://www.w3.org/2001/XMLSchema#integer&gt;.
+&lt;https://arche.acdh.oeaw.ac.at/api/40725&gt; 
+    n1:match &quot;true&quot;^^&lt;http://www.w3.org/2001/XMLSchema#boolean&gt;;
+    n1:fts1 &quot;&lt;b&gt;Datenbank&lt;/b&gt; mit über 30.000 bibliographischen Einträgen, die nach folgenden Kriterien gesammelt wurden:\n\t* Japanbezug\n\t* deutschsprachig\n\t* veröffentlicht&quot;@de;
+    n1:ftsQuery1 &quot;Datenbank&quot;;
+    n1:ftsProperty1 n3:hasDescription;
+    n1:fts2 &quot;Deutschsprachige Japan-Bibliographie 1980-2000 &lt;b&gt;Datenbank&lt;/b&gt; mit über 30.000 bibliographischen Einträgen&quot;@de;
+    n1:ftsQuery2 &quot;Datenbank&quot;;
+    n1:ftsProperty2 n3:hasAlternativeTitle;
+    n1:fts3 &quot;Deutschsprachige &lt;b&gt;Japan&lt;/b&gt;-&lt;b&gt;Bibliographie&lt;/b&gt; 1980-2000 Datenbank mit über 30.000 bibliographischen Einträgen&quot;@de;
+    n1:ftsQuery3 &quot;Japan-Bibliographie&quot;;
+    n1:ftsProperty3 n3:hasAlternativeTitle.
+&lt;https://arche.acdh.oeaw.ac.at/api/24690&gt; 
+    n1:match &quot;true&quot;^^&lt;http://www.w3.org/2001/XMLSchema#boolean&gt;;
+    n1:fts1 &quot;&lt;b&gt;Japan&lt;/b&gt;-&lt;b&gt;Bibliographie&lt;/b&gt; 1980-2000&quot;@de;
+    n1:ftsQuery1 &quot;Japan-Bibliographie&quot;;
+    n1:ftsProperty1 n3:hasTitle;
+    n1:fts2 &quot;&lt;b&gt;Datenbank&lt;/b&gt; mit über 30.000 bibliographischen Einträgen, die nach folgenden Kriterien gesammelt wurden:\n\t* Japanbezug\n\t* deutschsprachig\n\t* veröffentlicht&quot;@de;
+    n1:ftsQuery2 &quot;Datenbank&quot;;
+    n1:ftsProperty2 n3:hasDescription;
+    n1:fts3 &quot;Deutschsprachige Japan-Bibliographie 1980-2000 &lt;b&gt;Datenbank&lt;/b&gt; mit über 30.000 bibliographischen Einträgen&quot;@de;
+    n1:ftsQuery3 &quot;Datenbank&quot;;
+    n1:ftsProperty3 n3:hasAlternativeTitle;
+    n1:fts4 &quot;Deutschsprachige &lt;b&gt;Japan&lt;/b&gt;-&lt;b&gt;Bibliographie&lt;/b&gt; 1980-2000 Datenbank mit über 30.000 bibliographischen Einträgen&quot;@de;
+    n1:ftsQuery4 &quot;Japan-Bibliographie&quot;;
+    n1:ftsProperty4 n3:hasAlternativeTitle.</code></pre>
+<p>As we can see there are more highlighted results provided now and the
+<code>search://ftsQuery{N}</code> properties can be useful to determine
+which highlighted phrase comes from which full text search query.</p>
+<div id="adjusting-the-highlighting-configuration" class="section level3">
+<h3>Adjusting the highlighting configuration</h3>
+<p>If you want to adjust the way the highlighting is performed, please
+read <a href="https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-HEADLINE">this
+documentation</a> first and then provide the desired configuration
+values using <code>ftsStartSel[]</code>, <code>ftsStopSel[]</code>,
+<code>ftsMinWords[]</code>, <code>ftsMaxWords[]</code>,
+<code>ftsShortWord[]</code>, <code>ftsHighlightAll[]</code>,
+<code>ftsMaxFragments[]</code> and <code>ftsFragmentDelimiter[]</code>
+request parameters, e.g. to change the default <code>&lt;b&gt;</code>
+tag used for highlighting to the <code>&lt;em&gt;</code> one:</p>
+<pre><code>https://arche.acdh.oeaw.ac.at/api/search
+  ?operator[]=@@
+  &amp;value[]=Japan-Bibliographie
+  &amp;readMode=resource
+  &amp;format=text/turtle
+  &amp;ftsStartSel[]=&lt;em&gt;
+  &amp;ftsStopSel[]=&lt;/em&gt;
+
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&amp;value%5B%5D=Japan-Bibliographie&amp;readMode=resource&amp;format=text%2fturtle&amp;ftsStartSel%5B%5D=%3Cem%3E&amp;ftsStopSel%5B%5D=%3C%2Fem%3E</code></pre>
+<p>In case of multiple full text search filters, parameters can be
+specified separately for each of them, e.g. to highlight the
+<em>Japan-Bibliographie</em> matches with <code>&lt;em&gt;</code> and
+<em>Datenbank</em> matches with <code>&lt;b&gt;</code>:</p>
+<pre><code>https://arche.acdh.oeaw.ac.at/api/search
+  ?operator[]=@@
+  &amp;value[]=Japan-Bibliographie
+  &amp;ftsStartSel[]=&lt;em&gt;
+  &amp;ftsStopSel[]=&lt;/em&gt;
+  &amp;operator[]=@@
+  &amp;value[]=Datenbank
+  &amp;ftsStartSel[]=&lt;b&gt;
+  &amp;ftsStopSel[]=&lt;/b&gt;
+  &amp;readMode=resource
+  &amp;format=text/turtle
+
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&amp;value%5B%5D=Japan-Bibliographie&amp;ftsStartSel%5B%5D=%3Cem%3E&amp;ftsStopSel%5B%5D=%3C%2Fem%3E&amp;operator%5B%5D=%40%40&amp;value%5B%5D=Datenbank&amp;ftsStartSel%5B%5D=%3Cb%3E&amp;ftsStopSel%5B%5D=%3C%2Fb%3E&amp;readMode=resource&amp;format=text%2fturtle</code></pre>
+<p>Last but not least the query(ies) used to perform the highlighting
+can be specified explicitly using the <code>ftsQuery[]</code> parameter
+and properties to which they are applied can be limited with the
+<code>ftsProperty[]</code> parameter. This is particularly useful when
+performing an SQL query-based search (see below) but can be also used
+for some advanced scenarios.</p>
+<p>If the <code>ftsQuery[]</code> parameter is provided it overrides
+highlighting queries extracted from the search terms, e.g. to search for
+resources containing both <em>Japan-Bibliographie</em> and <em>2000</em>
+phrases but highlight only <em>Japan-Bibliographie</em> phrase matches
+and only in <code>acdh:hasTitle</code> and
+<code>acdh:hasAlternativeTitle</code> metadata property:</p>
+<pre><code>https://arche.acdh.oeaw.ac.at/api/search
+  ?operator[]=@@
+  &amp;value[]=Japan-Bibliographie
+  &amp;operator[]=@@
+  &amp;value[]=2000
+  &amp;ftsQuery[]=Japan-Bibliographie
+  &amp;ftsProperty[0][0]=https://vocabs.acdh.oeaw.ac.at/schema#hasTitle
+  &amp;ftsProperty[0][1]=https://vocabs.acdh.oeaw.ac.at/schema#hasAlternativeTitle
+  &amp;readMode=resource
+  &amp;format=text/turtle
+  
+https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&amp;value%5B%5D=Japan-Bibliographie&amp;operator%5B%5D=%40%40&amp;value%5B%5D=2000&amp;ftsQuery%5B%5D=Japan-Bibliographie&amp;ftsProperty%5B0%5D%5B0%5D=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasTitle&amp;ftsProperty%5B0%5D%5B1%5D=https%3A%2F%2Fvocabs.acdh.oeaw.ac.at%2Fschema%23hasAlternativeTitle&amp;readMode=resource&amp;format=text%2fturtle</code></pre>
+<p>It is worth noting that in this case:</p>
+<ul>
+<li>The syntax for specyfying multiple metadata properties to be used
+for the highlighting is just the same as for filtering using the search
+terms (a nested array).</li>
+<li>We have one resource matched by the search with no highlighted
+results (because the match was in the binary and we limited highlighting
+to <code>acdh:hasTitle</code> and <code>acdh:hasAlternativeTitle</code>
+metadata properties).</li>
+</ul>
+</div>
+</div>
+<div id="full-text-search-within-an-sql-query-search" class="section level2">
+<h2>Full text search within an SQL query search</h2>
+<p>You can also use the full text search while performing as SQL-based
+search. The SQL query for performing the full text search goes as
+follows:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode sql"><code class="sourceCode sql"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="kw">SELECT</span> <span class="fu">coalesce</span>(fts.<span class="kw">id</span>, iid, m.<span class="kw">id</span>) <span class="kw">AS</span> <span class="kw">id</span></span>
+<span id="cb21-2"><a href="#cb21-2" tabindex="-1"></a><span class="kw">FROM</span> full_text_search fts <span class="kw">LEFT</span> <span class="kw">JOIN</span> metadata m <span class="kw">USING</span> (mid)</span>
+<span id="cb21-3"><a href="#cb21-3" tabindex="-1"></a><span class="kw">WHERE</span> websearch_to_tsquery(<span class="st">&#39;simple&#39;</span>, <span class="st">&#39;SEARCH PHRASE&#39;</span>) @@ segments</span></code></pre></div>
+<p>If you want to limit the search to a given property or a binary
+content, you should add to the <code>WHERE</code> clause:</p>
+<ul>
+<li><code>AND fts.id IS NOT NULL</code> for searching only in the binary
+content</li>
+<li><code>AND property IN (&#39;list&#39;, &#39;of&#39;, &#39;allowed&#39;, &#39;properties&#39;)</code>
+for searching only in given metadata properties other than resource
+identifiers</li>
+<li><code>AND iid IS NOT NULL</code> for searching in resource
+identifiers</li>
+</ul>
+<p>E.g. to search for resources containing <em>Alexandria</em> in their
+binary payload.</p>
+<pre><code>https://arche.acdh.oeaw.ac.at/api/search
+  ?sql=SELECT coalesce(fts.id, iid, m.id) AS id
+       FROM full_text_search fts LEFT JOIN metadata m USING (mid)
+       WHERE websearch_to_tsquery(&#39;simple&#39;, ?) @@ segments
+             AND fts.id IS NOT NULL
+  &amp;sqlParam[]=Alexandria
+  &amp;readMode=resource
+  &amp;format=text/turtle
+
+https://arche.acdh.oeaw.ac.at/api/search?sql=SELECT%20coalesce%28fts.id%2C%20iid%2C%20m.id%29%20AS%20id%20FROM%20full_text_search%20fts%20LEFT%20JOIN%20metadata%20m%20USING%20%28mid%29%20WHERE%20websearch_to_tsquery%28%27simple%27%2C%20%3F%29%20%40%40%20segments%20AND%20fts.id%20IS%20NOT%20NULL&amp;sqlParam%5B%5D=Alexandria&amp;readMode=resource&amp;format=text%2fturtle</code></pre>
+<p>To highlight full text search matches while using the SQL query
+search, the highlighting phrase has to be specified using the
+<code>ftsQuery[]</code> parameter and if you limited the search to
+particular properties, you should limit highlighting accordingly using
+the <code>ftsProperty[]</code> parameter.</p>
+<p>E.g. to search for resources containing <em>Alexandria</em> in their
+binary payload with highlighting of the matching phrases:</p>
+<pre><code>https://arche.acdh.oeaw.ac.at/api/search
+  ?sql=SELECT coalesce(fts.id, iid, m.id) AS id
+       FROM full_text_search fts LEFT JOIN metadata m USING (mid)
+       WHERE websearch_to_tsquery(&#39;simple&#39;, ?) @@ segments
+             AND fts.id IS NOT NULL
+  &amp;sqlParam[]=Alexandria
+  &amp;ftsQuery[]=Alexandria
+  &amp;ftsProperty[]=BINARY
+  &amp;readMode=resource
+  &amp;format=text/turtle
+
+https://arche.acdh.oeaw.ac.at/api/search?sql=SELECT%20coalesce%28fts.id%2C%20iid%2C%20m.id%29%20AS%20id%20FROM%20full_text_search%20fts%20LEFT%20JOIN%20metadata%20m%20USING%20%28mid%29%20WHERE%20websearch_to_tsquery%28%27simple%27%2C%20%3F%29%20%40%40%20segments%20AND%20fts.id%20IS%20NOT%20NULL&amp;sqlParam%5B%5D=Alexandria&amp;ftsQuery%5B%5D=Alexandria&amp;ftsProperty%5B%5D=BINARY&amp;readMode=resource&amp;format=text%2fturtle</code></pre>
 </div>
 </div>
 

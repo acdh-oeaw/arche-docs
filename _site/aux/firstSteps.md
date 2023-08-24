@@ -1,4 +1,4 @@
-# First steps to set up your own ARCHE Suite instance
+# Pretty extensive tour trough an ARCHE Suite deployment
 
 ## Table of contents
 

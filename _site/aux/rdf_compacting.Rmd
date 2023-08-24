@@ -8,7 +8,9 @@ For us the most important ones are
 * [compacting](https://www.w3.org/TR/json-ld11-api/#compaction) which allows to map property URIs to something short, handy and not containing special characters,
 * [framing](https://www.w3.org/TR/json-ld11-framing/) which allows to filter out unneeded information and shape them in a way matching our needs
 
-(while these algorithms have been originally developed for JSON-LD, they can be generally applied to any RDF data set)
+While these algorithms have been originally developed for JSON-LD, they can be generally applied to any RDF data set.
+
+Here we focus on the first one - the compacting.
 
 # Compacting
 
@@ -354,7 +356,3 @@ while ($triple = $pdoStmt->fetchObject()) {
 $matches = array_filter($nodes, fn($x) => isset($x->__match__));
 print_r($matches);
 ```
-
-# Framing
-
-TODO

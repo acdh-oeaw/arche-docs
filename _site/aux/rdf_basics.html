@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2022-12-01" />
+<meta name="date" content="2023-08-23" />
 
 <title>Using RDF in webapps</title>
 
@@ -265,11 +265,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } 
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } 
-code span.at { color: #c4a000; } 
+code span.at { color: #204a87; } 
 code span.bn { color: #0000cf; } 
 code span.cf { color: #204a87; font-weight: bold; } 
 code span.ch { color: #4e9a06; } 
-code span.cn { color: #000000; } 
+code span.cn { color: #8f5902; } 
 code span.co { color: #8f5902; font-style: italic; } 
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } 
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } 
@@ -278,14 +278,14 @@ code span.dv { color: #0000cf; }
 code span.er { color: #a40000; font-weight: bold; } 
 code span.ex { } 
 code span.fl { color: #0000cf; } 
-code span.fu { color: #000000; } 
+code span.fu { color: #204a87; font-weight: bold; } 
 code span.im { } 
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } 
 code span.kw { color: #204a87; font-weight: bold; } 
 code span.op { color: #ce5c00; font-weight: bold; } 
 code span.ot { color: #8f5902; } 
 code span.pp { color: #8f5902; font-style: italic; } 
-code span.sc { color: #000000; } 
+code span.sc { color: #ce5c00; font-weight: bold; } 
 code span.ss { color: #4e9a06; } 
 code span.st { color: #4e9a06; } 
 code span.va { color: #000000; } 
@@ -421,7 +421,7 @@ display: none;
 
 
 <h1 class="title toc-ignore">Using RDF in webapps</h1>
-<h4 class="date">2022-12-01</h4>
+<h4 class="date">2023-08-23</h4>
 
 </div>
 
@@ -527,12 +527,11 @@ RDF graphs they always differ, even if their URIs match!).</li>
 tag. Because of that they must be modeled as objects. The important
 thing is these objects have to be immutable.</p>
 <p>Let’s consider a following RDF graph:</p>
-<pre><code>Resource1(someUri) --someProperty--&gt; Literal1(someValue, someDatatype, someLang)
-                                        ^
-Resource2(otherUri) --someProperty------|</code></pre>
-<p>mapped to two objects <code>resource1</code> and
-<code>resource2</code> sharing a reference to a common
-<code>literal1</code> object.</p>
+<pre><code>Resource1(someUri) --someProperty----\
+                                    Literal1(someValue, someDatatype, someLang)
+Resource2(otherUri) --someProperty---/</code></pre>
+<p>with two objects (<code>Resource1</code> and <code>Resource2</code>)
+sharing a reference to a common <code>literal1</code> object.</p>
 <p>After doing something like (it’s pseudo code and not any particular
 programming language)
 <code>resource1.someProperty.setValue(NEWVALUE)</code> the graph should
@@ -541,15 +540,15 @@ look as follows:</p>
 
 Resource2(otherUri) --someProperty--&gt; Literal2(someValue, someDatatype, someLang)</code></pre>
 <p>and <strong>not</strong>:</p>
-<pre><code>Resource1(someUri) --someProperty--&gt; Literal1(NEWVALUE, someDatatype, someLang)
-                                        ^
-Resource2(otherUri) --someProperty------|</code></pre>
-<p>By the way means the
+<pre><code>Resource1(someUri) --someProperty----\
+                                    Literal1(NEWVALUE, someDatatype, someLang)
+Resource2(otherUri) --someProperty---/</code></pre>
+<p>By the way it means the
 <code>resource1-&gt;someProperty-&gt;setValue(NEWVALUE)</code> syntax
-shouldn’t exist and the right one should be
+should not exist in the first place and the right one should be
 <code>resource1.someProperty = resource1.someProperty.withValue(NEWVALUE)</code>
 or during the parsing of the RDF graph into objects of your programming
-language a separate <code>literal1</code> objects should be created for
+language a separate <code>Literal1</code> objects should be created for
 <code>resource1.someProperty</code> value and
 <code>resource2.someProperty</code> value.</p>
 </div>
@@ -571,7 +570,7 @@ important:</p>
 </ul>
 <p>What you should remember is that <strong>a given RDF data set may
 have virtually countless valid serializations even in a single
-serialization formats.</strong></p>
+serialization format.</strong></p>
 <p>This is particularly important <strong>for RDF-XML and JSON-LD
 serialization</strong> where <strong>you can feel tempted to assume the
 data structure is stable and can be directly used by your app. It
@@ -614,86 +613,83 @@ format)</li>
 <li><p>JSON-LD:</p>
 <ul>
 <li><p><a href="https://www.w3.org/TR/json-ld11-api/#flattening">flattened</a></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;@graph&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">,</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;http://baz&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span><span class="fu">}</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>      <span class="ot">]</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/1&quot;</span><span class="fu">,</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;http://bar/1&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">}</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>      <span class="ot">]</span></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span><span class="fu">,</span></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;http://baz&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span><span class="fu">}</span></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>      <span class="ot">]</span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb8"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>  <span class="dt">&quot;@graph&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">,</span></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a>      <span class="dt">&quot;http://baz&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span><span class="fu">}</span></span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a>      <span class="ot">]</span></span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/1&quot;</span><span class="fu">,</span></span>
+<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a>      <span class="dt">&quot;http://bar/1&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb8-12"><a href="#cb8-12" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span><span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb8-13"><a href="#cb8-13" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">}</span></span>
+<span id="cb8-14"><a href="#cb8-14" tabindex="-1"></a>      <span class="ot">]</span></span>
+<span id="cb8-15"><a href="#cb8-15" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb8-16"><a href="#cb8-16" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb8-17"><a href="#cb8-17" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span><span class="fu">,</span></span>
+<span id="cb8-18"><a href="#cb8-18" tabindex="-1"></a>      <span class="dt">&quot;http://baz&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb8-19"><a href="#cb8-19" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span><span class="fu">}</span></span>
+<span id="cb8-20"><a href="#cb8-20" tabindex="-1"></a>      <span class="ot">]</span></span>
+<span id="cb8-21"><a href="#cb8-21" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb8-22"><a href="#cb8-22" tabindex="-1"></a>  <span class="ot">]</span></span>
+<span id="cb8-23"><a href="#cb8-23" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
 <li><p><a href="https://www.w3.org/TR/json-ld11-api/#compaction">compacted</a>
 (just an example, different contexts can be used resulting with
 different serializations)</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;@context&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;bar&quot;</span><span class="fu">:</span> <span class="st">&quot;http://bar/1&quot;</span><span class="fu">,</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;baz&quot;</span><span class="fu">:</span> <span class="st">&quot;http://baz&quot;</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">},</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;@graph&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">,</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;baz&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/1&quot;</span><span class="fu">,</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;bar&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>          <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>          <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>      <span class="ot">]</span></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span><span class="fu">,</span></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;baz&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span></span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb9"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>  <span class="dt">&quot;@context&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>    <span class="dt">&quot;bar&quot;</span><span class="fu">:</span> <span class="st">&quot;http://bar/1&quot;</span><span class="fu">,</span></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a>    <span class="dt">&quot;baz&quot;</span><span class="fu">:</span> <span class="st">&quot;http://baz&quot;</span></span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>  <span class="fu">},</span></span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>  <span class="dt">&quot;@graph&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">,</span></span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a>      <span class="dt">&quot;baz&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span></span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/1&quot;</span><span class="fu">,</span></span>
+<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a>      <span class="dt">&quot;bar&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb9-14"><a href="#cb9-14" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb9-15"><a href="#cb9-15" tabindex="-1"></a>          <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span></span>
+<span id="cb9-16"><a href="#cb9-16" tabindex="-1"></a>        <span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb9-17"><a href="#cb9-17" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb9-18"><a href="#cb9-18" tabindex="-1"></a>          <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span></span>
+<span id="cb9-19"><a href="#cb9-19" tabindex="-1"></a>        <span class="fu">}</span></span>
+<span id="cb9-20"><a href="#cb9-20" tabindex="-1"></a>      <span class="ot">]</span></span>
+<span id="cb9-21"><a href="#cb9-21" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb9-22"><a href="#cb9-22" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb9-23"><a href="#cb9-23" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span><span class="fu">,</span></span>
+<span id="cb9-24"><a href="#cb9-24" tabindex="-1"></a>      <span class="dt">&quot;baz&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span></span>
+<span id="cb9-25"><a href="#cb9-25" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb9-26"><a href="#cb9-26" tabindex="-1"></a>  <span class="ot">]</span></span>
+<span id="cb9-27"><a href="#cb9-27" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
 <li><p>with no particular standardization</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;@graph&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">,</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;http://baz&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span><span class="fu">}</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">{</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/1&quot;</span><span class="fu">,</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;http://bar/1&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>          <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span><span class="fu">,</span></span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>          <span class="dt">&quot;http://baz&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>             <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span><span class="fu">}</span></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>          <span class="ot">]</span></span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span><span class="ot">,</span></span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">}</span></span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>      <span class="ot">]</span></span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
-<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb10"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>  <span class="dt">&quot;@graph&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">,</span></span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>      <span class="dt">&quot;http://baz&quot;</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span><span class="fu">}</span></span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>    <span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a>    <span class="fu">{</span></span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>      <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/1&quot;</span><span class="fu">,</span></span>
+<span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a>      <span class="dt">&quot;http://bar/1&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb10-10"><a href="#cb10-10" tabindex="-1"></a>        <span class="fu">{</span></span>
+<span id="cb10-11"><a href="#cb10-11" tabindex="-1"></a>          <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;http://foo/2&quot;</span><span class="fu">,</span></span>
+<span id="cb10-12"><a href="#cb10-12" tabindex="-1"></a>          <span class="dt">&quot;http://baz&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb10-13"><a href="#cb10-13" tabindex="-1"></a>             <span class="fu">{</span><span class="dt">&quot;@value&quot;</span><span class="fu">:</span> <span class="st">&quot;baz&quot;</span><span class="fu">}</span></span>
+<span id="cb10-14"><a href="#cb10-14" tabindex="-1"></a>          <span class="ot">]</span></span>
+<span id="cb10-15"><a href="#cb10-15" tabindex="-1"></a>        <span class="fu">}</span><span class="ot">,</span></span>
+<span id="cb10-16"><a href="#cb10-16" tabindex="-1"></a>        <span class="fu">{</span><span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;_:b1&quot;</span><span class="fu">}</span></span>
+<span id="cb10-17"><a href="#cb10-17" tabindex="-1"></a>      <span class="ot">]</span></span>
+<span id="cb10-18"><a href="#cb10-18" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb10-19"><a href="#cb10-19" tabindex="-1"></a>  <span class="ot">]</span></span>
+<span id="cb10-20"><a href="#cb10-20" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
 <li><p>and countless others…</p></li>
 </ul></li>
 </ul>
-<p>Now ask yourself a question - are you able to assure data you fetch
-from an external source, e.g. ARCHE, will be always serialized in the
-same way? (the answer is obviously “no, you don’t”)</p>
 </div>
 </div>
 
