@@ -46,15 +46,15 @@ A search API call is handled in a few steps:
 
 The search results are annotated with special technical RDF properties:
 
-| subject            | property                                     | object value type     | object value description                                |
-|--------------------|----------------------------------------------|-----------------------|---------------------------------------------------------|
-| `{restAPIbaseURL}` | `{repoCfg}$.schema.searchCount`              | `xsd:integer`         | total number of resources matched by the search         |
-| `resourceURI`      | `{repoCfg}$.schema.searchMatch`              | `"true"^^xsd:boolean` | marks resources matching the search (to distinguish them from the ones fetched because of the [readMode](metadata_api_for_programmers.html#readmode-in-details)) |
-| `resourceURI`      | `{repoCfg}$.schema.searchOrder`              | `xsd:positiveInteger` | order of the resource within the search results according to the `orderBy[]` request parameter(s) - see the [Ordering results](#ordering-results) chapter below - only when the `orderBy[]` request parameter(s) was provided |
-| `resourceURI`      | `{repoCfg}$.schema.searchOrderValue{N}`      | mixed                 | actual value of the RDF property indicated by the `orderBy[{N}]` request parameter used for ordering the results - see the [Ordering results](#ordering-results) chapter below - only when the `orderBy[]` request parameter(s) was provided |
-| `resourceURI`      | `{repoCfg}$.schema.searchFts{N}`             | `xsd:string`          | `{N}`-th highlighted full text search match - only when a full text search was performed |
-| `resourceURI`      | `{repoCfg}$.schema.searchFtsProperty{N}`     | object                | RDF property of the `{N}`-th full text search match - only when a full text search was performed |
-| `resourceURI`      | `{repoCfg}$.schema.searchFtsQuery{N}`        | `xsd:string`          | Full text search highlighting query of the `{N}`-th full text search match - only when a full text search was performed |
+| subject            | property                                     | object value type      | object value description                                |
+|--------------------|----------------------------------------------|------------------------|---------------------------------------------------------|
+| `{restAPIbaseURL}` | `{repoCfg}$.schema.searchCount`              | `xsd:integer`          | total number of resources matched by the search         |
+| `resourceURI`      | `{repoCfg}$.schema.searchMatch`              | `"true"^^xsd:boolean`  | marks resources matching the search (to distinguish them from the ones fetched because of the [readMode](metadata_api_for_programmers.html#readmode-in-details)) |
+| `resourceURI`      | `{repoCfg}$.schema.searchOrder`              | `xsd:positiveInteger`  | order of the resource within the search results according to the `orderBy[]` request parameter(s) - see the [Ordering results](#ordering-results) chapter below - only when the `orderBy[]` request parameter(s) was provided |
+| `resourceURI`      | `{repoCfg}$.schema.searchOrderValue{N}`      | mixed                  | actual value of the RDF property indicated by the `orderBy[{N}]` request parameter used for ordering the results - see the [Ordering results](#ordering-results) chapter below - only when the `orderBy[]` request parameter(s) was provided |
+| `resourceURI`      | `{repoCfg}$.schema.searchFts{N}`             | `xsd:string`           | `{N}`-th highlighted full text search match - only when a full text search was performed |
+| `resourceURI`      | `{repoCfg}$.schema.searchFtsProperty{N}`     | object or `xsd:string` | RDF property of the `{N}`-th full text search match or a `BINARY` literal if match in the binary content - only when a full text search was performed |
+| `resourceURI`      | `{repoCfg}$.schema.searchFtsQuery{N}`        | `xsd:string`           | Full text search highlighting query of the `{N}`-th full text search match - only when a full text search was performed |
 
 To see how these properties look in the output, please jump to the example in the [ordering results - simple case](#simple-case) section.
 
@@ -525,7 +525,7 @@ resulting in something like
     n1:match "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
     n1:fts1 "<b>Japan</b>-<b>Bibliographie</b> 1980–2000 (JB 80) – Thesaurus \n       2019-04-04Z \n       https://creativecommons.org/licenses/by/4.0/ \n       496descriptors";
     n1:ftsQuery1 "Japan-Bibliographie";
-    n1:ftsProperty1 <BINARY>.
+    n1:ftsProperty1 "BINARY".
 <https://arche.acdh.oeaw.ac.at/api/24690>
     n1:match "true"^^<http://www.w3.org/2001/XMLSchema#boolean>;
     n1:fts1 "Deutschsprachige <b>Japan</b>-<b>Bibliographie</b> 1980-2000 Datenbank mit über 30.000 bibliographischen Einträgen"@de;

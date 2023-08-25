@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2023-08-24" />
+<meta name="date" content="2023-08-25" />
 
 <title>ARCHE Search API for programmers</title>
 
@@ -421,7 +421,7 @@ display: none;
 
 
 <h1 class="title toc-ignore">ARCHE Search API for programmers</h1>
-<h4 class="date">2023-08-24</h4>
+<h4 class="date">2023-08-25</h4>
 
 </div>
 
@@ -557,8 +557,8 @@ properties:</p>
 <colgroup>
 <col width="13%" />
 <col width="31%" />
-<col width="15%" />
-<col width="39%" />
+<col width="16%" />
+<col width="38%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -610,9 +610,10 @@ full text search was performed</td>
 <tr class="even">
 <td><code>resourceURI</code></td>
 <td><code>{repoCfg}$.schema.searchFtsProperty{N}</code></td>
-<td>object</td>
-<td>RDF property of the <code>{N}</code>-th full text search match -
-only when a full text search was performed</td>
+<td>object or <code>xsd:string</code></td>
+<td>RDF property of the <code>{N}</code>-th full text search match or a
+<code>BINARY</code> literal if match in the binary content - only when a
+full text search was performed</td>
 </tr>
 <tr class="odd">
 <td><code>resourceURI</code></td>
@@ -1257,7 +1258,7 @@ https://arche.acdh.oeaw.ac.at/api/search?operator%5B%5D=%40%40&amp;value%5B%5D=J
     n1:match &quot;true&quot;^^&lt;http://www.w3.org/2001/XMLSchema#boolean&gt;;
     n1:fts1 &quot;&lt;b&gt;Japan&lt;/b&gt;-&lt;b&gt;Bibliographie&lt;/b&gt; 1980–2000 (JB 80) – Thesaurus \n       2019-04-04Z \n       https://creativecommons.org/licenses/by/4.0/ \n       496descriptors&quot;;
     n1:ftsQuery1 &quot;Japan-Bibliographie&quot;;
-    n1:ftsProperty1 &lt;BINARY&gt;.
+    n1:ftsProperty1 &quot;BINARY&quot;.
 &lt;https://arche.acdh.oeaw.ac.at/api/24690&gt;
     n1:match &quot;true&quot;^^&lt;http://www.w3.org/2001/XMLSchema#boolean&gt;;
     n1:fts1 &quot;Deutschsprachige &lt;b&gt;Japan&lt;/b&gt;-&lt;b&gt;Bibliographie&lt;/b&gt; 1980-2000 Datenbank mit über 30.000 bibliographischen Einträgen&quot;@de;
