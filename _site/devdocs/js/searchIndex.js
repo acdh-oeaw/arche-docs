@@ -6256,15 +6256,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_child"
         },                {
-            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_search_date_facets\u0028\u0029",
-            "name": "api_search_date_facets",
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_sms_coordinates\u0028\u0029",
+            "name": "api_sms_coordinates",
             "summary": "",
-            "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_search_date_facets"
+            "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_sms_coordinates"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_smart_search\u0028\u0029",
             "name": "api_smart_search",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_smart_search"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\ArcheApiMainController\u003A\u003Aapi_search_date_facets\u0028\u0029",
+            "name": "api_search_date_facets",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-ArcheApiMainController.html#method_api_search_date_facets"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\Child\\ChildController",
             "name": "ChildController",
@@ -6586,6 +6591,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-RPRController.html#method_execute"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SearchBlock\\MainController",
+            "name": "MainController",
+            "summary": "Description\u0020of\u0020CollectionController",
+            "url": "classes/Drupal-arche-gui-api-Controller-SearchBlock-MainController.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SearchBlock\\MainController\u003A\u003AgetData\u0028\u0029",
+            "name": "getData",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SearchBlock-MainController.html#method_getData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SearchBlock\\MainController\u003A\u003AdateFacets\u0028\u0029",
+            "name": "dateFacets",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SearchBlock-MainController.html#method_dateFacets"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SmartSearchController",
             "name": "SmartSearchController",
             "summary": "Description\u0020of\u0020SmartSearchController",
@@ -6630,6 +6650,36 @@ Search.appendIndex(
             "name": "schema",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SmartSearchController.html#property_schema"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SMCoordinatesController",
+            "name": "SMCoordinatesController",
+            "summary": "Description\u0020of\u0020SMCoordinatesController",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SMCoordinatesController.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SMCoordinatesController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SMCoordinatesController.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SMCoordinatesController\u003A\u003AsetModel\u0028\u0029",
+            "name": "setModel",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SMCoordinatesController.html#method_setModel"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SMCoordinatesController\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SMCoordinatesController.html#method_get"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SMCoordinatesController\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SMCoordinatesController.html#property_config"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch\\SMCoordinatesController\u003A\u003A\u0024model",
+            "name": "model",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Controller-SmartSearch-SMCoordinatesController.html#property_model"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\VersionsController",
             "name": "VersionsController",
@@ -7281,6 +7331,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Model-SearchBlock-SearchBlockModel.html#method_getCategoryData"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\SmartSearch\\SMCoordinatesModel",
+            "name": "SMCoordinatesModel",
+            "summary": "Description\u0020of\u0020SMCoordinatesModel",
+            "url": "classes/Drupal-arche-gui-api-Model-SmartSearch-SMCoordinatesModel.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\SmartSearch\\SMCoordinatesModel\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Model-SmartSearch-SMCoordinatesModel.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\SmartSearch\\SMCoordinatesModel\u003A\u003AgetData\u0028\u0029",
+            "name": "getData",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Model-SmartSearch-SMCoordinatesModel.html#method_getData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\SmartSearch\\SMCoordinatesModel\u003A\u003AgetCoordinates\u0028\u0029",
+            "name": "getCoordinates",
+            "summary": "Generate\u0020the\u0020entity\u0020box\u0020data",
+            "url": "classes/Drupal-arche-gui-api-Model-SmartSearch-SMCoordinatesModel.html#method_getCoordinates"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\Child\\ChildObject",
             "name": "ChildObject",
             "summary": "Description\u0020of\u0020RPRObject",
@@ -7920,6 +7990,71 @@ Search.appendIndex(
             "name": "model",
             "summary": "",
             "url": "classes/Drupal-arche-gui-api-Object-RPRObject.html#property_model"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject",
+            "name": "SearchBlockObject",
+            "summary": "Description\u0020of\u0020CollectionObject",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AcreateModel\u0028\u0029",
+            "name": "createModel",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_createModel"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_init"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AprocessData\u0028\u0029",
+            "name": "processData",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_processData"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AgetCategories\u0028\u0029",
+            "name": "getCategories",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_getCategories"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AgetYears\u0028\u0029",
+            "name": "getYears",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_getYears"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AgetEntities\u0028\u0029",
+            "name": "getEntities",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_getEntities"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AextendValuesForForm\u0028\u0029",
+            "name": "extendValuesForForm",
+            "summary": "\/\/\u0020name\u0020\u003D\u0020searchbox_types\u005Bacdh\u003ACollection\u005D\u0020value\u0020\u003D\u0020acdh\u003ACollection\n\u0020\u0020\/\/\u0020name\u0020\u003D\u0020searchbox_category\u005B3d\u002Ddata\u003A17683\u005D\u0020value\u0020\u003D\u00203d\u002Ddata\u003A17683\n\u0020\u0020\u0020\/\/\u0020name\u0020\u003D\u0020datebox_years\u005B2022\u005D\u0020value\u0020\u003D\u00202022",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_extendValuesForForm"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AextendYears\u0028\u0029",
+            "name": "extendYears",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_extendYears"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AextendCategory\u0028\u0029",
+            "name": "extendCategory",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_extendCategory"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AextendEntity\u0028\u0029",
+            "name": "extendEntity",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_extendEntity"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003AformatCategoryTitleForValue\u0028\u0029",
+            "name": "formatCategoryTitleForValue",
+            "summary": "Transform\u0020the\u0020string\u0020to\u0020remove\u0020special\u0020chars",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#method_formatCategoryTitleForValue"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock\\SearchBlockObject\u003A\u003A\u0024model",
+            "name": "model",
+            "summary": "",
+            "url": "classes/Drupal-arche-gui-api-Object-SearchBlock-SearchBlockObject.html#property_model"
         },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\VersionsObject",
             "name": "VersionsObject",
@@ -14876,6 +15011,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/drupal-arche-gui-api-controller-ontology.html"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SearchBlock",
+            "name": "SearchBlock",
+            "summary": "",
+            "url": "namespaces/drupal-arche-gui-api-controller-searchblock.html"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Controller\\SmartSearch",
             "name": "SmartSearch",
             "summary": "",
@@ -14931,6 +15071,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/drupal-arche-gui-api-model-searchblock.html"
         },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Model\\SmartSearch",
+            "name": "SmartSearch",
+            "summary": "",
+            "url": "namespaces/drupal-arche-gui-api-model-smartsearch.html"
+        },                {
             "fqsen": "\\Drupal\\arche_gui_api\\Object\\Child",
             "name": "Child",
             "summary": "",
@@ -14960,6 +15105,11 @@ Search.appendIndex(
             "name": "Ontology",
             "summary": "",
             "url": "namespaces/drupal-arche-gui-api-object-ontology.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_gui_api\\Object\\SearchBlock",
+            "name": "SearchBlock",
+            "summary": "",
+            "url": "namespaces/drupal-arche-gui-api-object-searchblock.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib",
             "name": "lib",
