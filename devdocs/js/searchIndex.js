@@ -2466,6 +2466,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_onTxCommit"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AmaintainWkt\u0028\u0029",
+            "name": "maintainWkt",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Doorkeeper.html#method_maintainWkt"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Doorkeeper\u003A\u003AmaintainPid\u0028\u0029",
             "name": "maintainPid",
             "summary": "",
