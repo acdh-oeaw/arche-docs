@@ -11236,10 +11236,25 @@ Search.appendIndex(
             "summary": "Provides\u0020an\u0020API\u0020for\u0020the\u0020ARCHE\u0020oontology.",
             "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AfactoryDb\u0028\u0029",
+            "name": "factoryDb",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method___construct"
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_factoryDb"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AfactoryRest\u0028\u0029",
+            "name": "factoryRest",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_factoryRest"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AfactoryCache\u0028\u0029",
+            "name": "factoryCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_factoryCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AsaveCache\u0028\u0029",
+            "name": "saveCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_saveCache"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AisA\u0028\u0029",
             "name": "isA",
@@ -11281,30 +11296,85 @@ Search.appendIndex(
             "summary": "Checks\u0020if\u0020a\u0020given\u0020value\u0020exists\u0020in\u0020a\u0020given\u0020vocabulary.",
             "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_checkVocabularyValue"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadClasses\u0028\u0029",
-            "name": "loadClasses",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AcheckVocabularyValueDb\u0028\u0029",
+            "name": "checkVocabularyValueDb",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_loadClasses"
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_checkVocabularyValueDb"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadProperties\u0028\u0029",
-            "name": "loadProperties",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AcheckVocabularyValueRest\u0028\u0029",
+            "name": "checkVocabularyValueRest",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_loadProperties"
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_checkVocabularyValueRest"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadRestrictions\u0028\u0029",
-            "name": "loadRestrictions",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadClassesDb\u0028\u0029",
+            "name": "loadClassesDb",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_loadRestrictions"
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_loadClassesDb"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadPropertiesDb\u0028\u0029",
+            "name": "loadPropertiesDb",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_loadPropertiesDb"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadRestrictionsDb\u0028\u0029",
+            "name": "loadRestrictionsDb",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_loadRestrictionsDb"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadRest\u0028\u0029",
+            "name": "loadRest",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_loadRest"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadClassRest\u0028\u0029",
+            "name": "loadClassRest",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_loadClassRest"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadPropertyRest\u0028\u0029",
+            "name": "loadPropertyRest",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_loadPropertyRest"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadRestrictionRest\u0028\u0029",
+            "name": "loadRestrictionRest",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_loadRestrictionRest"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AresolveParents\u0028\u0029",
+            "name": "resolveParents",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_resolveParents"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AbuildClassesRevIndex\u0028\u0029",
+            "name": "buildClassesRevIndex",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_buildClassesRevIndex"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadPropertyCommon\u0028\u0029",
+            "name": "loadPropertyCommon",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_loadPropertyCommon"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AloadRestrictionCommon\u0028\u0029",
+            "name": "loadRestrictionCommon",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_loadRestrictionCommon"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003Apreprocess\u0028\u0029",
             "name": "preprocess",
             "summary": "Combines\u0020class,\u0020property\u0020and\u0020restriction\u0020information",
             "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_preprocess"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AfetchVocabularyValues\u0028\u0029",
-            "name": "fetchVocabularyValues",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AfetchVocabularyValuesDb\u0028\u0029",
+            "name": "fetchVocabularyValuesDb",
             "summary": "Fetches\u0020information\u0020about\u0020SKOS\u0020concepts\u0020and\u0020formats\u0020them\u0020as\u0020SkosConceptDesc\nobjects.",
-            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_fetchVocabularyValues"
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_fetchVocabularyValuesDb"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AfetchVocabularyValuesRest\u0028\u0029",
+            "name": "fetchVocabularyValuesRest",
+            "summary": "Fetches\u0020information\u0020about\u0020SKOS\u0020concepts\u0020and\u0020formats\u0020them\u0020as\u0020SkosConceptDesc\nobjects.",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_fetchVocabularyValuesRest"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AVOCABSVALUE_ID",
             "name": "VOCABSVALUE_ID",
@@ -11345,6 +11415,11 @@ Search.appendIndex(
             "name": "schema",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#property_schema"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#property_repo"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003A\u0024classes",
             "name": "classes",
@@ -11515,11 +11590,6 @@ Search.appendIndex(
             "name": "SkosConceptDesc",
             "summary": "Container\u0020class\u0020for\u0020a\u0020skos\u003AConcept",
             "url": "classes/acdhOeaw-arche-lib-schema-SkosConceptDesc.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\SkosConceptDesc\u003A\u003A\u0024id",
-            "name": "id",
-            "summary": "Internal\u0020id\u0020of\u0020a\u0020corresponding\u0020repository\u0020resource",
-            "url": "classes/acdhOeaw-arche-lib-schema-SkosConceptDesc.html#property_id"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\SkosConceptDesc\u003A\u003A\u0024concept",
             "name": "concept",
