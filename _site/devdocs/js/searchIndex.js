@@ -11251,6 +11251,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_factoryCache"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AgetNamespace\u0028\u0029",
+            "name": "getNamespace",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_getNamespace"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AsaveCache\u0028\u0029",
             "name": "saveCache",
             "summary": "",
@@ -11275,6 +11280,11 @@ Search.appendIndex(
             "name": "getClasses",
             "summary": "Returns\u0020all\u0020classes\u0020known\u0020in\u0020the\u0020ontology.",
             "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_getClasses"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AgetNamespaceClasses\u0028\u0029",
+            "name": "getNamespaceClasses",
+            "summary": "Returns\u0020all\u0020classes\u0020in\u0020the\u0020given\u0020ontology\u0020namespace\u0020as\u0020an\u0020associative\narray\u0020with\u0020keys\u0020being\u0020class\u0020URIs\u0020in\u0020the\u0020ontology\u0020namespace.",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_getNamespaceClasses"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AgetProperties\u0028\u0029",
             "name": "getProperties",
