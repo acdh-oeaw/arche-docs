@@ -22,6 +22,7 @@ layout: default
   * [basics](aux/rdf_basics.html) or why do you need to use a dedicated RDF library
   * [compacting](aux/rdf_compacting.html)
   * framing (TODO)
+  * [if you really need SPARQL](aux/if_you_really_want_sparql.html)
 * [Metadata API guide](aux/metadata_api_for_programmers.html)
 * [Search API guide](aux/search_api_for_programmers.html)
 
