@@ -10,9 +10,9 @@
 
 
 
-<meta name="date" content="2023-08-24" />
+<meta name="date" content="2023-10-17" />
 
-<title>RDF Framing and Compacting</title>
+<title>RDF Compacting</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -420,8 +420,8 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">RDF Framing and Compacting</h1>
-<h4 class="date">2023-08-24</h4>
+<h1 class="title toc-ignore">RDF Compacting</h1>
+<h4 class="date">2023-10-17</h4>
 
 </div>
 
@@ -439,6 +439,8 @@ JSON-LD</a>
 <li><a href="#python-example" id="toc-python-example">Python
 example</a></li>
 <li><a href="#php-example" id="toc-php-example">PHP example</a></li>
+<li><a href="#general-remarks" id="toc-general-remarks">General
+remarks</a></li>
 </ul></li>
 <li><a href="#manual-compacting" id="toc-manual-compacting">Manual
 compacting</a>
@@ -493,8 +495,12 @@ an RDF node URI (in JSON-LD):</p>
 <span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>  <span class="dt">&quot;creator&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
 <span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>    <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&quot;</span><span class="fu">,</span></span>
 <span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>    <span class="dt">&quot;@type&quot;</span><span class="fu">:</span> <span class="st">&quot;@id&quot;</span></span>
-<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>  <span class="fu">}</span></span>
-<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>  <span class="fu">},</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>  <span class="dt">&quot;subject&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>    <span class="dt">&quot;@id&quot;</span><span class="fu">:</span> <span class="st">&quot;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&quot;</span><span class="fu">,</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>    <span class="dt">&quot;@container&quot;</span><span class="fu">:</span> <span class="st">&quot;@language&quot;</span></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>  <span class="fu">}</span></span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div></li>
 <li><p>Apply it to data to get nice property names:</p>
 <ul>
 <li><p>data (in JSON-LD)</p>
@@ -564,35 +570,42 @@ next chapter.</p>
 library required)</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="co">// define the context</span></span>
 <span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="kw">const</span> context <span class="op">=</span> {</span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>  <span class="st">&quot;title&quot;</span><span class="op">:</span> <span class="st">&quot;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&quot;</span><span class="op">,</span></span>
-<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>  <span class="st">&quot;subject&quot;</span><span class="op">:</span> <span class="st">&quot;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&quot;</span><span class="op">,</span></span>
-<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>  <span class="st">&quot;creator&quot;</span><span class="op">:</span> {</span>
-<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a>    <span class="st">&quot;@id&quot;</span><span class="op">:</span> <span class="st">&quot;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&quot;</span><span class="op">,</span></span>
-<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a>    <span class="st">&quot;@type&quot;</span><span class="op">:</span> <span class="st">&quot;@id&quot;</span></span>
-<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a>  }</span>
-<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a>}<span class="op">;</span></span>
-<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="co">// get sample ARCHE resource data in JSON-LD</span></span>
-<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="co">// for clarity fetch only single resource metadata and only properties mentioned in the context</span></span>
-<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="kw">const</span> req <span class="op">=</span> <span class="kw">new</span> <span class="bu">XMLHttpRequest</span>()<span class="op">;</span></span>
-<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a>req<span class="op">.</span><span class="fu">open</span>(<span class="st">&quot;GET&quot;</span><span class="op">,</span> <span class="st">&quot;https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler&quot;</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
-<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a>req<span class="op">.</span><span class="fu">setRequestHeader</span>(<span class="st">&#39;Accept&#39;</span><span class="op">,</span> <span class="st">&#39;application/ld+json&#39;</span>)<span class="op">;</span></span>
-<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a>req<span class="op">.</span><span class="fu">setRequestHeader</span>(<span class="st">&#39;X-METADATA-READ-MODE&#39;</span><span class="op">,</span> <span class="st">&#39;resource&#39;</span>)<span class="op">;</span></span>
-<span id="cb4-16"><a href="#cb4-16" tabindex="-1"></a>req<span class="op">.</span><span class="fu">setRequestHeader</span>(<span class="st">&#39;X-RESOURCE-PROPERTIES&#39;</span><span class="op">,</span> [<span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&#39;</span><span class="op">,</span> <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&#39;</span> <span class="op">,</span> <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span>]<span class="op">.</span><span class="fu">join</span>(<span class="st">&#39;,&#39;</span>))<span class="op">;</span></span>
-<span id="cb4-17"><a href="#cb4-17" tabindex="-1"></a></span>
-<span id="cb4-18"><a href="#cb4-18" tabindex="-1"></a><span class="co">// response processing handle</span></span>
-<span id="cb4-19"><a href="#cb4-19" tabindex="-1"></a>req<span class="op">.</span><span class="at">onreadystatechange</span> <span class="op">=</span> <span class="kw">function</span> () {</span>
-<span id="cb4-20"><a href="#cb4-20" tabindex="-1"></a>  <span class="cf">if</span> (req<span class="op">.</span><span class="at">readyState</span> <span class="op">===</span> <span class="bu">XMLHttpRequest</span><span class="op">.</span><span class="at">DONE</span>) {</span>
-<span id="cb4-21"><a href="#cb4-21" tabindex="-1"></a>    <span class="kw">const</span> data <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">parse</span>(req<span class="op">.</span><span class="at">responseText</span>)<span class="op">;</span></span>
-<span id="cb4-22"><a href="#cb4-22" tabindex="-1"></a>    <span class="co">// before compacting</span></span>
-<span id="cb4-23"><a href="#cb4-23" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(data)<span class="op">;</span></span>
-<span id="cb4-24"><a href="#cb4-24" tabindex="-1"></a>    <span class="kw">const</span> promise <span class="op">=</span> jsonld<span class="op">.</span><span class="fu">compact</span>(data<span class="op">,</span> context)<span class="op">.</span><span class="fu">then</span>(<span class="kw">function</span> (x) {</span>
-<span id="cb4-25"><a href="#cb4-25" tabindex="-1"></a>      <span class="co">// after compacting</span></span>
-<span id="cb4-26"><a href="#cb4-26" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(x)<span class="op">;</span></span>
-<span id="cb4-27"><a href="#cb4-27" tabindex="-1"></a>    })<span class="op">;</span></span>
-<span id="cb4-28"><a href="#cb4-28" tabindex="-1"></a>    <span class="bu">Promise</span><span class="op">.</span><span class="fu">resolve</span>(promise)<span class="op">;</span></span>
-<span id="cb4-29"><a href="#cb4-29" tabindex="-1"></a>  }</span>
-<span id="cb4-30"><a href="#cb4-30" tabindex="-1"></a>}<span class="op">;</span></span>
-<span id="cb4-31"><a href="#cb4-31" tabindex="-1"></a>req<span class="op">.</span><span class="fu">send</span>()<span class="op">;</span></span></code></pre></div>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>  <span class="st">&quot;title&quot;</span><span class="op">:</span> {</span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>    <span class="st">&quot;@id&quot;</span><span class="op">:</span> <span class="st">&quot;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&quot;</span><span class="op">,</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>    <span class="st">&quot;@container&quot;</span><span class="op">:</span> [<span class="st">&quot;@language&quot;</span><span class="op">,</span> <span class="st">&quot;@set&quot;</span>]</span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a>  <span class="st">&quot;creator&quot;</span><span class="op">:</span> {</span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a>    <span class="st">&quot;@id&quot;</span><span class="op">:</span> <span class="st">&quot;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&quot;</span><span class="op">,</span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a>    <span class="st">&quot;@type&quot;</span><span class="op">:</span> <span class="st">&quot;@id&quot;</span><span class="op">,</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a>    <span class="st">&quot;@container&quot;</span><span class="op">:</span> <span class="st">&quot;@set&quot;</span></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a>  <span class="st">&quot;subject&quot;</span><span class="op">:</span> {</span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a>    <span class="st">&quot;@id&quot;</span><span class="op">:</span> <span class="st">&quot;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&quot;</span><span class="op">,</span></span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a>    <span class="st">&quot;@container&quot;</span><span class="op">:</span> [<span class="st">&quot;@language&quot;</span><span class="op">,</span> <span class="st">&quot;@set&quot;</span>]</span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a>  }</span>
+<span id="cb4-16"><a href="#cb4-16" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb4-17"><a href="#cb4-17" tabindex="-1"></a><span class="co">// get sample ARCHE resource data in JSON-LD</span></span>
+<span id="cb4-18"><a href="#cb4-18" tabindex="-1"></a><span class="co">// for clarity fetch only single resource metadata and only properties mentioned in the context</span></span>
+<span id="cb4-19"><a href="#cb4-19" tabindex="-1"></a><span class="kw">const</span> req <span class="op">=</span> <span class="kw">new</span> <span class="bu">XMLHttpRequest</span>()<span class="op">;</span></span>
+<span id="cb4-20"><a href="#cb4-20" tabindex="-1"></a>req<span class="op">.</span><span class="fu">open</span>(<span class="st">&quot;GET&quot;</span><span class="op">,</span> <span class="st">&quot;https://id.acdh.oeaw.ac.at/schnitzler/bahrschnitzler&quot;</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb4-21"><a href="#cb4-21" tabindex="-1"></a>req<span class="op">.</span><span class="fu">setRequestHeader</span>(<span class="st">&#39;Accept&#39;</span><span class="op">,</span> <span class="st">&#39;application/ld+json&#39;</span>)<span class="op">;</span></span>
+<span id="cb4-22"><a href="#cb4-22" tabindex="-1"></a>req<span class="op">.</span><span class="fu">setRequestHeader</span>(<span class="st">&#39;X-METADATA-READ-MODE&#39;</span><span class="op">,</span> <span class="st">&#39;resource&#39;</span>)<span class="op">;</span></span>
+<span id="cb4-23"><a href="#cb4-23" tabindex="-1"></a>req<span class="op">.</span><span class="fu">setRequestHeader</span>(<span class="st">&#39;X-RESOURCE-PROPERTIES&#39;</span><span class="op">,</span> [<span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&#39;</span><span class="op">,</span> <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&#39;</span> <span class="op">,</span> <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span>]<span class="op">.</span><span class="fu">join</span>(<span class="st">&#39;,&#39;</span>))<span class="op">;</span></span>
+<span id="cb4-24"><a href="#cb4-24" tabindex="-1"></a></span>
+<span id="cb4-25"><a href="#cb4-25" tabindex="-1"></a><span class="co">// response processing handle</span></span>
+<span id="cb4-26"><a href="#cb4-26" tabindex="-1"></a>req<span class="op">.</span><span class="at">onreadystatechange</span> <span class="op">=</span> <span class="kw">function</span> () {</span>
+<span id="cb4-27"><a href="#cb4-27" tabindex="-1"></a>  <span class="cf">if</span> (req<span class="op">.</span><span class="at">readyState</span> <span class="op">===</span> <span class="bu">XMLHttpRequest</span><span class="op">.</span><span class="at">DONE</span>) {</span>
+<span id="cb4-28"><a href="#cb4-28" tabindex="-1"></a>    <span class="kw">const</span> data <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">parse</span>(req<span class="op">.</span><span class="at">responseText</span>)<span class="op">;</span></span>
+<span id="cb4-29"><a href="#cb4-29" tabindex="-1"></a>    <span class="co">// before compacting</span></span>
+<span id="cb4-30"><a href="#cb4-30" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(data)<span class="op">;</span></span>
+<span id="cb4-31"><a href="#cb4-31" tabindex="-1"></a>    <span class="kw">const</span> promise <span class="op">=</span> jsonld<span class="op">.</span><span class="fu">compact</span>(data<span class="op">,</span> context)<span class="op">.</span><span class="fu">then</span>(<span class="kw">function</span> (x) {</span>
+<span id="cb4-32"><a href="#cb4-32" tabindex="-1"></a>      <span class="co">// after compacting</span></span>
+<span id="cb4-33"><a href="#cb4-33" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(x)<span class="op">;</span></span>
+<span id="cb4-34"><a href="#cb4-34" tabindex="-1"></a>    })<span class="op">;</span></span>
+<span id="cb4-35"><a href="#cb4-35" tabindex="-1"></a>    <span class="bu">Promise</span><span class="op">.</span><span class="fu">resolve</span>(promise)<span class="op">;</span></span>
+<span id="cb4-36"><a href="#cb4-36" tabindex="-1"></a>  }</span>
+<span id="cb4-37"><a href="#cb4-37" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb4-38"><a href="#cb4-38" tabindex="-1"></a>req<span class="op">.</span><span class="fu">send</span>()<span class="op">;</span></span></code></pre></div>
 </div>
 <div id="python-example" class="section level3">
 <h3>Python example</h3>
@@ -602,30 +615,37 @@ library required)</p>
 <span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a></span>
 <span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co"># definte a custom context</span></span>
 <span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>context <span class="op">=</span> {</span>
-<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>  <span class="st">&#39;title&#39;</span>: <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&#39;</span>,</span>
-<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a>  <span class="st">&#39;subject&#39;</span>: <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&#39;</span>,</span>
-<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a>  <span class="st">&#39;creator&#39;</span>: {</span>
-<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a>    <span class="st">&#39;@id&#39;</span>: <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span>,</span>
-<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a>    <span class="st">&#39;@type&#39;</span>: <span class="st">&#39;@id&#39;</span></span>
-<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a>  }</span>
-<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a>}</span>
-<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a></span>
-<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a><span class="co"># get sample ARCHE resource data in JSON-LD</span></span>
-<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a><span class="co"># for clarity fetch only single resource metadata and only properties mentioned in the context</span></span>
-<span id="cb5-16"><a href="#cb5-16" tabindex="-1"></a>resp <span class="op">=</span> requests.get(</span>
-<span id="cb5-17"><a href="#cb5-17" tabindex="-1"></a>  <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span>,</span>
-<span id="cb5-18"><a href="#cb5-18" tabindex="-1"></a>  headers<span class="op">=</span>{</span>
-<span id="cb5-19"><a href="#cb5-19" tabindex="-1"></a>    <span class="st">&#39;Accept&#39;</span>: <span class="st">&#39;application/ld+json&#39;</span>,</span>
-<span id="cb5-20"><a href="#cb5-20" tabindex="-1"></a>    <span class="st">&#39;X-METADATA-READ-MODE&#39;</span>: <span class="st">&#39;resource&#39;</span>, </span>
-<span id="cb5-21"><a href="#cb5-21" tabindex="-1"></a>    <span class="st">&#39;X-RESOURCE-PROPERTIES&#39;</span>: <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/schema#hasSubject,https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span></span>
-<span id="cb5-22"><a href="#cb5-22" tabindex="-1"></a>  }</span>
-<span id="cb5-23"><a href="#cb5-23" tabindex="-1"></a>)</span>
-<span id="cb5-24"><a href="#cb5-24" tabindex="-1"></a></span>
-<span id="cb5-25"><a href="#cb5-25" tabindex="-1"></a><span class="co"># before compacting</span></span>
-<span id="cb5-26"><a href="#cb5-26" tabindex="-1"></a><span class="bu">print</span>(resp.text)</span>
-<span id="cb5-27"><a href="#cb5-27" tabindex="-1"></a><span class="co"># after compacting</span></span>
-<span id="cb5-28"><a href="#cb5-28" tabindex="-1"></a>graph <span class="op">=</span> Graph().parse(data<span class="op">=</span>resp.text, <span class="bu">format</span><span class="op">=</span><span class="st">&#39;json-ld&#39;</span>)</span>
-<span id="cb5-29"><a href="#cb5-29" tabindex="-1"></a><span class="bu">print</span>(graph.serialize(<span class="bu">format</span><span class="op">=</span><span class="st">&#39;json-ld&#39;</span>, context<span class="op">=</span>context))</span></code></pre></div>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>  <span class="st">&#39;title&#39;</span>: {</span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a>    <span class="st">&#39;@id&#39;</span>: <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&#39;</span>,</span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a>    <span class="st">&#39;@container&#39;</span>: [<span class="st">&#39;@language&#39;</span>, <span class="st">&#39;@set&#39;</span>]</span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a>  },</span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a>  <span class="st">&#39;creator&#39;</span>: {</span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a>    <span class="st">&#39;@id&#39;</span>: <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span>,</span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a>    <span class="st">&#39;@type&#39;</span>: <span class="st">&#39;@id&#39;</span>,</span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a>    <span class="st">&#39;@container&#39;</span>: <span class="st">&#39;@set&#39;</span></span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a>  },</span>
+<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a>  <span class="st">&#39;subject&#39;</span>: {</span>
+<span id="cb5-16"><a href="#cb5-16" tabindex="-1"></a>    <span class="st">&#39;@id&#39;</span>: <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&#39;</span>,</span>
+<span id="cb5-17"><a href="#cb5-17" tabindex="-1"></a>    <span class="st">&#39;@container&#39;</span>: [<span class="st">&#39;@language&#39;</span>, <span class="st">&#39;@set&#39;</span>]</span>
+<span id="cb5-18"><a href="#cb5-18" tabindex="-1"></a>  }</span>
+<span id="cb5-19"><a href="#cb5-19" tabindex="-1"></a>}</span>
+<span id="cb5-20"><a href="#cb5-20" tabindex="-1"></a></span>
+<span id="cb5-21"><a href="#cb5-21" tabindex="-1"></a><span class="co"># get sample ARCHE resource data in JSON-LD</span></span>
+<span id="cb5-22"><a href="#cb5-22" tabindex="-1"></a><span class="co"># for clarity fetch only single resource metadata and only properties mentioned in the context</span></span>
+<span id="cb5-23"><a href="#cb5-23" tabindex="-1"></a>resp <span class="op">=</span> requests.get(</span>
+<span id="cb5-24"><a href="#cb5-24" tabindex="-1"></a>  <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span>,</span>
+<span id="cb5-25"><a href="#cb5-25" tabindex="-1"></a>  headers<span class="op">=</span>{</span>
+<span id="cb5-26"><a href="#cb5-26" tabindex="-1"></a>    <span class="st">&#39;Accept&#39;</span>: <span class="st">&#39;application/ld+json&#39;</span>,</span>
+<span id="cb5-27"><a href="#cb5-27" tabindex="-1"></a>    <span class="st">&#39;X-METADATA-READ-MODE&#39;</span>: <span class="st">&#39;resource&#39;</span>, </span>
+<span id="cb5-28"><a href="#cb5-28" tabindex="-1"></a>    <span class="st">&#39;X-RESOURCE-PROPERTIES&#39;</span>: <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/schema#hasSubject,https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span></span>
+<span id="cb5-29"><a href="#cb5-29" tabindex="-1"></a>  }</span>
+<span id="cb5-30"><a href="#cb5-30" tabindex="-1"></a>)</span>
+<span id="cb5-31"><a href="#cb5-31" tabindex="-1"></a></span>
+<span id="cb5-32"><a href="#cb5-32" tabindex="-1"></a><span class="co"># before compacting</span></span>
+<span id="cb5-33"><a href="#cb5-33" tabindex="-1"></a><span class="bu">print</span>(resp.text)</span>
+<span id="cb5-34"><a href="#cb5-34" tabindex="-1"></a><span class="co"># after compacting</span></span>
+<span id="cb5-35"><a href="#cb5-35" tabindex="-1"></a>graph <span class="op">=</span> Graph().parse(data<span class="op">=</span>resp.text, <span class="bu">format</span><span class="op">=</span><span class="st">&#39;json-ld&#39;</span>)</span>
+<span id="cb5-36"><a href="#cb5-36" tabindex="-1"></a><span class="bu">print</span>(graph.serialize(<span class="bu">format</span><span class="op">=</span><span class="st">&#39;json-ld&#39;</span>, context<span class="op">=</span>context))</span></code></pre></div>
 </div>
 <div id="php-example" class="section level3">
 <h3>PHP example</h3>
@@ -633,29 +653,63 @@ library required)</p>
 required)</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="co"># definte a custom context</span></span>
 <span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="st">&#39;{</span></span>
-<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="st">  &quot;title&quot;: &quot;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&quot;,</span></span>
-<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="st">  &quot;subject&quot;: &quot;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&quot;,</span></span>
-<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="st">  &quot;creator&quot;: {</span></span>
-<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="st">    &quot;@id&quot;: &quot;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&quot;,</span></span>
-<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="st">    &quot;@type&quot;: &quot;@id&quot;</span></span>
-<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="st">  }</span></span>
-<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="st">}&#39;</span><span class="ot">;</span></span>
-<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a></span>
-<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="co"># get sample ARCHE resource data in JSON-LD</span></span>
-<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="co"># for clarity fetch only single resource metadata and only properties mentioned in the context</span></span>
-<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="va">$headers</span> <span class="op">=</span> [</span>
-<span id="cb6-14"><a href="#cb6-14" tabindex="-1"></a>  <span class="st">&#39;Accept&#39;</span> =&gt; <span class="st">&#39;application/ld+json&#39;</span><span class="ot">,</span></span>
-<span id="cb6-15"><a href="#cb6-15" tabindex="-1"></a>  <span class="st">&#39;X-METADATA-READ-MODE&#39;</span> =&gt; <span class="st">&#39;resource&#39;</span><span class="ot">,</span> </span>
-<span id="cb6-16"><a href="#cb6-16" tabindex="-1"></a>  <span class="st">&#39;X-RESOURCE-PROPERTIES&#39;</span> =&gt; <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/schema#hasSubject,https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span></span>
-<span id="cb6-17"><a href="#cb6-17" tabindex="-1"></a>]<span class="ot">;</span></span>
-<span id="cb6-18"><a href="#cb6-18" tabindex="-1"></a><span class="va">$client</span> <span class="op">=</span> <span class="kw">new</span> <span class="cn">G</span>uzzleHttp\<span class="cn">C</span>lient([<span class="st">&#39;headers&#39;</span> =&gt; <span class="va">$headers</span>])<span class="ot">;</span></span>
-<span id="cb6-19"><a href="#cb6-19" tabindex="-1"></a><span class="va">$response</span> <span class="op">=</span> <span class="va">$client</span>-&gt;request(<span class="st">&#39;get&#39;</span><span class="ot">,</span> <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span><span class="ot">,</span> <span class="va">$headers</span>)<span class="ot">;</span></span>
-<span id="cb6-20"><a href="#cb6-20" tabindex="-1"></a><span class="va">$data</span> <span class="op">=</span> <span class="dt">(string)</span> <span class="va">$response</span>-&gt;getBody()<span class="ot">;</span></span>
-<span id="cb6-21"><a href="#cb6-21" tabindex="-1"></a></span>
-<span id="cb6-22"><a href="#cb6-22" tabindex="-1"></a><span class="co"># before compacting</span></span>
-<span id="cb6-23"><a href="#cb6-23" tabindex="-1"></a><span class="fu">print_r</span>(<span class="fu">json_decode</span>(<span class="va">$data</span>))<span class="ot">;</span></span>
-<span id="cb6-24"><a href="#cb6-24" tabindex="-1"></a><span class="co"># after compacting</span></span>
-<span id="cb6-25"><a href="#cb6-25" tabindex="-1"></a><span class="fu">print_r</span>(<span class="cn">ML</span>\<span class="cn">J</span>sonLD\<span class="cn">J</span>sonLD::<span class="fu">compact</span>(<span class="va">$data</span><span class="ot">,</span> <span class="va">$context</span>))<span class="ot">;</span></span></code></pre></div>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="st">  &quot;title&quot;: {</span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="st">    &quot;@id&quot;: &quot;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&quot;,</span></span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="st">    &quot;@container&quot;: [&quot;@language&quot;, &quot;@set&quot;]</span></span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="st">  },</span></span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="st">  &quot;creator&quot;: {</span></span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="st">    &quot;@id&quot;: &quot;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&quot;,</span></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="st">    &quot;@type&quot;: &quot;@id&quot;,</span></span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="st">    &quot;@container&quot;: &quot;@set&quot;</span></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="st">  },</span></span>
+<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="st">  &quot;subject&quot;: {</span></span>
+<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="st">    &quot;@id&quot;: &quot;https://vocabs.acdh.oeaw.ac.at/schema#hasSubject&quot;,</span></span>
+<span id="cb6-14"><a href="#cb6-14" tabindex="-1"></a><span class="st">    &quot;@container&quot;: [&quot;@language&quot;, &quot;@set&quot;]</span></span>
+<span id="cb6-15"><a href="#cb6-15" tabindex="-1"></a><span class="st">  }</span></span>
+<span id="cb6-16"><a href="#cb6-16" tabindex="-1"></a><span class="st">}&#39;</span><span class="ot">;</span></span>
+<span id="cb6-17"><a href="#cb6-17" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" tabindex="-1"></a><span class="co"># get sample ARCHE resource data in JSON-LD</span></span>
+<span id="cb6-19"><a href="#cb6-19" tabindex="-1"></a><span class="co"># for clarity fetch only single resource metadata and only properties mentioned in the context</span></span>
+<span id="cb6-20"><a href="#cb6-20" tabindex="-1"></a><span class="va">$headers</span> <span class="op">=</span> [</span>
+<span id="cb6-21"><a href="#cb6-21" tabindex="-1"></a>  <span class="st">&#39;Accept&#39;</span> =&gt; <span class="st">&#39;application/ld+json&#39;</span><span class="ot">,</span></span>
+<span id="cb6-22"><a href="#cb6-22" tabindex="-1"></a>  <span class="st">&#39;X-METADATA-READ-MODE&#39;</span> =&gt; <span class="st">&#39;resource&#39;</span><span class="ot">,</span> </span>
+<span id="cb6-23"><a href="#cb6-23" tabindex="-1"></a>  <span class="st">&#39;X-RESOURCE-PROPERTIES&#39;</span> =&gt; <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle,https://vocabs.acdh.oeaw.ac.at/schema#hasSubject,https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span></span>
+<span id="cb6-24"><a href="#cb6-24" tabindex="-1"></a>]<span class="ot">;</span></span>
+<span id="cb6-25"><a href="#cb6-25" tabindex="-1"></a><span class="va">$client</span> <span class="op">=</span> <span class="kw">new</span> <span class="cn">G</span>uzzleHttp\<span class="cn">C</span>lient([<span class="st">&#39;headers&#39;</span> =&gt; <span class="va">$headers</span>])<span class="ot">;</span></span>
+<span id="cb6-26"><a href="#cb6-26" tabindex="-1"></a><span class="va">$response</span> <span class="op">=</span> <span class="va">$client</span>-&gt;request(<span class="st">&#39;get&#39;</span><span class="ot">,</span> <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span><span class="ot">,</span> <span class="va">$headers</span>)<span class="ot">;</span></span>
+<span id="cb6-27"><a href="#cb6-27" tabindex="-1"></a><span class="va">$data</span> <span class="op">=</span> <span class="dt">(string)</span> <span class="va">$response</span>-&gt;getBody()<span class="ot">;</span></span>
+<span id="cb6-28"><a href="#cb6-28" tabindex="-1"></a></span>
+<span id="cb6-29"><a href="#cb6-29" tabindex="-1"></a><span class="co"># before compacting</span></span>
+<span id="cb6-30"><a href="#cb6-30" tabindex="-1"></a><span class="fu">print_r</span>(<span class="fu">json_decode</span>(<span class="va">$data</span>))<span class="ot">;</span></span>
+<span id="cb6-31"><a href="#cb6-31" tabindex="-1"></a><span class="co"># after compacting</span></span>
+<span id="cb6-32"><a href="#cb6-32" tabindex="-1"></a><span class="fu">print_r</span>(<span class="cn">ML</span>\<span class="cn">J</span>sonLD\<span class="cn">J</span>sonLD::<span class="fu">compact</span>(<span class="va">$data</span><span class="ot">,</span> <span class="va">$context</span>))<span class="ot">;</span></span></code></pre></div>
+</div>
+<div id="general-remarks" class="section level3">
+<h3>General remarks</h3>
+<p>Typically JSON-LD libraries tend to simplify the output if possible,
+e.g.</p>
+<ul>
+<li>Make property values an array only if it has multiple values.
+<ul>
+<li>In examples above are using <code>&quot;@container&quot;: &quot;@set&quot;</code> to
+enforce values after compacting to always be an array.</li>
+</ul></li>
+<li>Skip the <code>@graph</code> property if there is only one subject
+in the graph.
+<ul>
+<li><p>I am not aware of any compacting context settings which would
+assure the <code>@graph</code> property is always at the top level of a
+JSON-LD document so this is something you probably need to check and
+assure on your own with something like:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="cf">if</span> (<span class="op">!</span><span class="bu">document</span>[<span class="st">&#39;graph&#39;</span>]) {</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>  <span class="bu">document</span> <span class="op">=</span> {</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>    <span class="st">&#39;@context&#39;</span><span class="op">:</span> <span class="bu">document</span>[<span class="st">&#39;context&#39;</span>]<span class="op">;</span></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>    <span class="st">&#39;@graph&#39;</span><span class="op">:</span> [<span class="bu">document</span>]</span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>  <span class="kw">delete</span> <span class="bu">document</span>[<span class="st">&#39;@graph&#39;</span>][<span class="dv">0</span>][<span class="st">&#39;@context&#39;</span>]<span class="op">;</span></span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a>}</span></code></pre></div></li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div id="manual-compacting" class="section level2">
@@ -665,172 +719,140 @@ it more intuitive to directly perform “compacting” to the datatypes
 provided by your language (e.g. Python dictionaries or PHP arrays).</p>
 <p>Below a few examples in Python and PHP using the <code>schema</code>
 section of the ARCHE repository config as a context.</p>
+<p>Remarks:</p>
+<ul>
+<li>In the JSON-LD examples object triple values store just an IRI of
+the target node. In the examples above we store the reference to the
+target node object which makes traversing the graph slightly
+easier.</li>
+<li>In JSON-LD examples we used <code>&quot;@container&quot;: &quot;@language&quot;</code>
+(so-called <em>language Indexing</em>) for some properties. This made
+property values being grouped by values language tag. This is not
+implemented in examples below (it is not hard to add though).</li>
+<li>In the code below we always store property values as arrays, just
+like with <code>&quot;@container&quot;: &quot;@set&quot;</code> int JSON-LD examples
+above.</li>
+</ul>
 <div id="python-example-1" class="section level3">
 <h3>Python example</h3>
 <p>(<code>rdflib</code> and <code>requests</code> libraries
 required)</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="im">import</span> rdflib</span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="im">import</span> requests</span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="co"># fetch the context</span></span>
-<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>context <span class="op">=</span> requests.get(<span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/describe&#39;</span>, headers<span class="op">=</span>{<span class="st">&#39;Accept&#39;</span>: <span class="st">&#39;application/json&#39;</span>})</span>
-<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>context <span class="op">=</span> context.json()[<span class="st">&#39;schema&#39;</span>]</span>
-<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="co"># flip the context so it&#39;s uri-&gt;shortName</span></span>
-<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a>context <span class="op">=</span> {v: k <span class="cf">for</span> k, v <span class="kw">in</span> context.items() <span class="cf">if</span> <span class="bu">isinstance</span>(v, <span class="bu">str</span>)}</span>
-<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a></span>
-<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a><span class="co"># parse RDF data</span></span>
-<span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a>rawrdf <span class="op">=</span> requests.get(<span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span>, headers<span class="op">=</span>{<span class="st">&#39;Accept&#39;</span>: <span class="st">&#39;application/n-triples&#39;</span>})</span>
-<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a>data <span class="op">=</span> rdflib.Graph()</span>
-<span id="cb7-13"><a href="#cb7-13" tabindex="-1"></a>data.parse(data<span class="op">=</span>rawrdf.text, <span class="bu">format</span><span class="op">=</span><span class="st">&quot;nt&quot;</span>)</span>
-<span id="cb7-14"><a href="#cb7-14" tabindex="-1"></a></span>
-<span id="cb7-15"><a href="#cb7-15" tabindex="-1"></a><span class="co"># create Python-native data model based on dictionaries</span></span>
-<span id="cb7-16"><a href="#cb7-16" tabindex="-1"></a>nodes <span class="op">=</span> {}</span>
-<span id="cb7-17"><a href="#cb7-17" tabindex="-1"></a><span class="cf">for</span> (sbj, prop, obj) <span class="kw">in</span> data:</span>
-<span id="cb7-18"><a href="#cb7-18" tabindex="-1"></a>  sbj <span class="op">=</span> <span class="bu">str</span>(sbj)</span>
-<span id="cb7-19"><a href="#cb7-19" tabindex="-1"></a>  prop <span class="op">=</span> <span class="bu">str</span>(prop)</span>
-<span id="cb7-20"><a href="#cb7-20" tabindex="-1"></a>  <span class="co"># skip RDF properties for which we don&#39;t know the mapping</span></span>
-<span id="cb7-21"><a href="#cb7-21" tabindex="-1"></a>  <span class="cf">if</span> prop <span class="kw">not</span> <span class="kw">in</span> context:</span>
-<span id="cb7-22"><a href="#cb7-22" tabindex="-1"></a>    <span class="cf">continue</span></span>
-<span id="cb7-23"><a href="#cb7-23" tabindex="-1"></a>    </span>
-<span id="cb7-24"><a href="#cb7-24" tabindex="-1"></a>  <span class="co"># map prop name according to the context</span></span>
-<span id="cb7-25"><a href="#cb7-25" tabindex="-1"></a>  prop <span class="op">=</span> context[prop]</span>
-<span id="cb7-26"><a href="#cb7-26" tabindex="-1"></a></span>
-<span id="cb7-27"><a href="#cb7-27" tabindex="-1"></a>  <span class="co"># if the triple points to another node in the graph, maintain the reference</span></span>
-<span id="cb7-28"><a href="#cb7-28" tabindex="-1"></a>  <span class="cf">if</span> <span class="kw">not</span> <span class="bu">isinstance</span>(obj, rdflib.term.Literal):</span>
-<span id="cb7-29"><a href="#cb7-29" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">str</span>(obj) <span class="kw">not</span> <span class="kw">in</span> nodes:</span>
-<span id="cb7-30"><a href="#cb7-30" tabindex="-1"></a>      nodes[<span class="bu">str</span>(obj)] <span class="op">=</span> {<span class="st">&#39;__uri__&#39;</span>: <span class="bu">str</span>(obj)}</span>
-<span id="cb7-31"><a href="#cb7-31" tabindex="-1"></a>    obj <span class="op">=</span> nodes[<span class="bu">str</span>(obj)]</span>
-<span id="cb7-32"><a href="#cb7-32" tabindex="-1"></a>    </span>
-<span id="cb7-33"><a href="#cb7-33" tabindex="-1"></a>  <span class="co"># manage the data</span></span>
-<span id="cb7-34"><a href="#cb7-34" tabindex="-1"></a>  <span class="cf">if</span> sbj <span class="kw">not</span> <span class="kw">in</span> nodes:</span>
-<span id="cb7-35"><a href="#cb7-35" tabindex="-1"></a>    nodes[sbj] <span class="op">=</span> {<span class="st">&#39;__uri__&#39;</span>: sbj}</span>
-<span id="cb7-36"><a href="#cb7-36" tabindex="-1"></a>  <span class="cf">if</span> prop <span class="kw">not</span> <span class="kw">in</span> nodes[sbj]:</span>
-<span id="cb7-37"><a href="#cb7-37" tabindex="-1"></a>    nodes[sbj][prop] <span class="op">=</span> []</span>
-<span id="cb7-38"><a href="#cb7-38" tabindex="-1"></a>  nodes[sbj][prop].append(obj)</span>
-<span id="cb7-39"><a href="#cb7-39" tabindex="-1"></a></span>
-<span id="cb7-40"><a href="#cb7-40" tabindex="-1"></a><span class="co"># print results:</span></span>
-<span id="cb7-41"><a href="#cb7-41" tabindex="-1"></a><span class="cf">for</span> uri, node <span class="kw">in</span> nodes.items():</span>
-<span id="cb7-42"><a href="#cb7-42" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>uri<span class="sc">}</span><span class="ss">:&quot;</span>)</span>
-<span id="cb7-43"><a href="#cb7-43" tabindex="-1"></a>  <span class="cf">for</span> prop, values <span class="kw">in</span> node.items():</span>
-<span id="cb7-44"><a href="#cb7-44" tabindex="-1"></a>    <span class="cf">if</span> prop <span class="op">==</span> <span class="st">&#39;__uri__&#39;</span>:</span>
-<span id="cb7-45"><a href="#cb7-45" tabindex="-1"></a>      <span class="cf">continue</span></span>
-<span id="cb7-46"><a href="#cb7-46" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\t</span><span class="sc">{</span>prop<span class="sc">}</span><span class="ss">:&quot;</span>)</span>
-<span id="cb7-47"><a href="#cb7-47" tabindex="-1"></a>    <span class="cf">for</span> val <span class="kw">in</span> values:</span>
-<span id="cb7-48"><a href="#cb7-48" tabindex="-1"></a>      <span class="cf">if</span> <span class="bu">isinstance</span>(val, <span class="bu">dict</span>):</span>
-<span id="cb7-49"><a href="#cb7-49" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\t\t</span><span class="ss">reference to the </span><span class="sc">{</span>val[<span class="st">&#39;__uri__&#39;</span>]<span class="sc">}</span><span class="ss"> node&quot;</span>)</span>
-<span id="cb7-50"><a href="#cb7-50" tabindex="-1"></a>      <span class="cf">else</span>:</span>
-<span id="cb7-51"><a href="#cb7-51" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\t\t</span><span class="sc">{</span>val<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="im">import</span> rdflib</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="co"># fetch the context</span></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a>context <span class="op">=</span> requests.get(<span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/describe&#39;</span>, headers<span class="op">=</span>{<span class="st">&#39;Accept&#39;</span>: <span class="st">&#39;application/json&#39;</span>})</span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a>context <span class="op">=</span> context.json()[<span class="st">&#39;schema&#39;</span>]</span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a><span class="co"># flip the context so it&#39;s uri-&gt;shortName</span></span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a>context <span class="op">=</span> {v: k <span class="cf">for</span> k, v <span class="kw">in</span> context.items() <span class="cf">if</span> <span class="bu">isinstance</span>(v, <span class="bu">str</span>)}</span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a><span class="co"># parse RDF data</span></span>
+<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a>rawrdf <span class="op">=</span> requests.get(<span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span>, headers<span class="op">=</span>{<span class="st">&#39;Accept&#39;</span>: <span class="st">&#39;application/n-triples&#39;</span>})</span>
+<span id="cb8-12"><a href="#cb8-12" tabindex="-1"></a>data <span class="op">=</span> rdflib.Graph()</span>
+<span id="cb8-13"><a href="#cb8-13" tabindex="-1"></a>data.parse(data<span class="op">=</span>rawrdf.text, <span class="bu">format</span><span class="op">=</span><span class="st">&quot;nt&quot;</span>)</span>
+<span id="cb8-14"><a href="#cb8-14" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" tabindex="-1"></a><span class="co"># create Python-native data model based on dictionaries</span></span>
+<span id="cb8-16"><a href="#cb8-16" tabindex="-1"></a>nodes <span class="op">=</span> {}</span>
+<span id="cb8-17"><a href="#cb8-17" tabindex="-1"></a><span class="cf">for</span> (sbj, prop, obj) <span class="kw">in</span> data:</span>
+<span id="cb8-18"><a href="#cb8-18" tabindex="-1"></a>  sbj <span class="op">=</span> <span class="bu">str</span>(sbj)</span>
+<span id="cb8-19"><a href="#cb8-19" tabindex="-1"></a>  prop <span class="op">=</span> <span class="bu">str</span>(prop)</span>
+<span id="cb8-20"><a href="#cb8-20" tabindex="-1"></a>  <span class="co"># skip RDF properties for which we don&#39;t know the mapping</span></span>
+<span id="cb8-21"><a href="#cb8-21" tabindex="-1"></a>  <span class="cf">if</span> prop <span class="kw">not</span> <span class="kw">in</span> context:</span>
+<span id="cb8-22"><a href="#cb8-22" tabindex="-1"></a>    <span class="cf">continue</span></span>
+<span id="cb8-23"><a href="#cb8-23" tabindex="-1"></a>    </span>
+<span id="cb8-24"><a href="#cb8-24" tabindex="-1"></a>  <span class="co"># map prop name according to the context</span></span>
+<span id="cb8-25"><a href="#cb8-25" tabindex="-1"></a>  prop <span class="op">=</span> context[prop]</span>
+<span id="cb8-26"><a href="#cb8-26" tabindex="-1"></a></span>
+<span id="cb8-27"><a href="#cb8-27" tabindex="-1"></a>  <span class="co"># if the triple points to another node in the graph, maintain the reference</span></span>
+<span id="cb8-28"><a href="#cb8-28" tabindex="-1"></a>  <span class="cf">if</span> <span class="kw">not</span> <span class="bu">isinstance</span>(obj, rdflib.term.Literal):</span>
+<span id="cb8-29"><a href="#cb8-29" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">str</span>(obj) <span class="kw">not</span> <span class="kw">in</span> nodes:</span>
+<span id="cb8-30"><a href="#cb8-30" tabindex="-1"></a>      nodes[<span class="bu">str</span>(obj)] <span class="op">=</span> {<span class="st">&#39;__uri__&#39;</span>: <span class="bu">str</span>(obj)}</span>
+<span id="cb8-31"><a href="#cb8-31" tabindex="-1"></a>    obj <span class="op">=</span> nodes[<span class="bu">str</span>(obj)]</span>
+<span id="cb8-32"><a href="#cb8-32" tabindex="-1"></a>    </span>
+<span id="cb8-33"><a href="#cb8-33" tabindex="-1"></a>  <span class="co"># manage the data</span></span>
+<span id="cb8-34"><a href="#cb8-34" tabindex="-1"></a>  <span class="cf">if</span> sbj <span class="kw">not</span> <span class="kw">in</span> nodes:</span>
+<span id="cb8-35"><a href="#cb8-35" tabindex="-1"></a>    nodes[sbj] <span class="op">=</span> {<span class="st">&#39;__uri__&#39;</span>: sbj}</span>
+<span id="cb8-36"><a href="#cb8-36" tabindex="-1"></a>  <span class="cf">if</span> prop <span class="kw">not</span> <span class="kw">in</span> nodes[sbj]:</span>
+<span id="cb8-37"><a href="#cb8-37" tabindex="-1"></a>    nodes[sbj][prop] <span class="op">=</span> []</span>
+<span id="cb8-38"><a href="#cb8-38" tabindex="-1"></a>  nodes[sbj][prop].append(obj)</span>
+<span id="cb8-39"><a href="#cb8-39" tabindex="-1"></a></span>
+<span id="cb8-40"><a href="#cb8-40" tabindex="-1"></a><span class="co"># print results:</span></span>
+<span id="cb8-41"><a href="#cb8-41" tabindex="-1"></a><span class="cf">for</span> uri, node <span class="kw">in</span> nodes.items():</span>
+<span id="cb8-42"><a href="#cb8-42" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>uri<span class="sc">}</span><span class="ss">:&quot;</span>)</span>
+<span id="cb8-43"><a href="#cb8-43" tabindex="-1"></a>  <span class="cf">for</span> prop, values <span class="kw">in</span> node.items():</span>
+<span id="cb8-44"><a href="#cb8-44" tabindex="-1"></a>    <span class="cf">if</span> prop <span class="op">==</span> <span class="st">&#39;__uri__&#39;</span>:</span>
+<span id="cb8-45"><a href="#cb8-45" tabindex="-1"></a>      <span class="cf">continue</span></span>
+<span id="cb8-46"><a href="#cb8-46" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\t</span><span class="sc">{</span>prop<span class="sc">}</span><span class="ss">:&quot;</span>)</span>
+<span id="cb8-47"><a href="#cb8-47" tabindex="-1"></a>    <span class="cf">for</span> val <span class="kw">in</span> values:</span>
+<span id="cb8-48"><a href="#cb8-48" tabindex="-1"></a>      <span class="cf">if</span> <span class="bu">isinstance</span>(val, <span class="bu">dict</span>):</span>
+<span id="cb8-49"><a href="#cb8-49" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\t\t</span><span class="ss">reference to the </span><span class="sc">{</span>val[<span class="st">&#39;__uri__&#39;</span>]<span class="sc">}</span><span class="ss"> node&quot;</span>)</span>
+<span id="cb8-50"><a href="#cb8-50" tabindex="-1"></a>      <span class="cf">else</span>:</span>
+<span id="cb8-51"><a href="#cb8-51" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\t\t</span><span class="sc">{</span>val<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
 </div>
 <div id="php-example-1" class="section level3">
 <h3>PHP example</h3>
 <p>(<code>guzzlehttp/guzzle</code>, <code>sweetrdf/quick-rdf-io</code>
 and <code>sweetrdf/quick-rdf</code> libraries required)</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="va">$client</span> <span class="op">=</span> <span class="kw">new</span> <span class="cn">G</span>uzzleHttp\<span class="cn">C</span>lient()<span class="ot">;</span></span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="va">$dataFactory</span> <span class="op">=</span> <span class="kw">new</span> quickRdf\<span class="cn">D</span>ataFactory()<span class="ot">;</span></span>
-<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="co"># fetch the context</span></span>
-<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="va">$client</span>-&gt;request(<span class="st">&#39;get&#39;</span><span class="ot">,</span> <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/describe&#39;</span><span class="ot">,</span> [<span class="st">&#39;headers&#39;</span> =&gt; [<span class="st">&#39;Accept&#39;</span> =&gt; <span class="st">&#39;application/json&#39;</span>]])<span class="ot">;</span></span>
-<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="fu">json_decode</span>(<span class="va">$context</span>-&gt;getBody()<span class="ot">,</span> <span class="kw">true</span>)[<span class="st">&#39;schema&#39;</span>]<span class="ot">;</span></span>
-<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a><span class="co"># flip the context so it&#39;s uri-&gt;shortName</span></span>
-<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="fu">array_filter</span>(<span class="va">$context</span><span class="ot">,</span> <span class="kw">fn</span>(<span class="va">$x</span>) =&gt; <span class="fu">is_scalar</span>(<span class="va">$x</span>))<span class="ot">;</span></span>
-<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="fu">array_flip</span>(<span class="va">$context</span>)<span class="ot">;</span></span>
-<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a></span>
-<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a><span class="co"># parse RDF data</span></span>
-<span id="cb8-12"><a href="#cb8-12" tabindex="-1"></a><span class="va">$data</span> <span class="op">=</span> <span class="va">$client</span>-&gt;request(<span class="st">&#39;get&#39;</span><span class="ot">,</span> <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span><span class="ot">,</span> [<span class="st">&#39;headers&#39;</span> =&gt; [<span class="st">&#39;Accept&#39;</span> =&gt; <span class="st">&#39;application/n-triples&#39;</span>]])<span class="ot">;</span></span>
-<span id="cb8-13"><a href="#cb8-13" tabindex="-1"></a><span class="va">$data</span> <span class="op">=</span> quickRdfIo\<span class="cn">U</span>til::parse(<span class="va">$data</span><span class="ot">,</span> <span class="va">$dataFactory</span>)<span class="ot">;</span></span>
-<span id="cb8-14"><a href="#cb8-14" tabindex="-1"></a></span>
-<span id="cb8-15"><a href="#cb8-15" tabindex="-1"></a><span class="co"># perform the mapping</span></span>
-<span id="cb8-16"><a href="#cb8-16" tabindex="-1"></a><span class="va">$nodes</span> <span class="op">=</span> []<span class="ot">;</span></span>
-<span id="cb8-17"><a href="#cb8-17" tabindex="-1"></a><span class="cf">foreach</span> (<span class="va">$data</span> <span class="kw">as</span> <span class="va">$triple</span>) {</span>
-<span id="cb8-18"><a href="#cb8-18" tabindex="-1"></a>  <span class="va">$sbj</span> <span class="op">=</span> <span class="va">$triple</span>-&gt;getSubject()-&gt;getValue()<span class="ot">;</span></span>
-<span id="cb8-19"><a href="#cb8-19" tabindex="-1"></a>  <span class="va">$prop</span> <span class="op">=</span> <span class="va">$triple</span>-&gt;getPredicate()-&gt;getValue()<span class="ot">;</span></span>
-<span id="cb8-20"><a href="#cb8-20" tabindex="-1"></a>  <span class="va">$obj</span> <span class="op">=</span> <span class="va">$triple</span>-&gt;getObject()<span class="ot">;</span></span>
-<span id="cb8-21"><a href="#cb8-21" tabindex="-1"></a>  </span>
-<span id="cb8-22"><a href="#cb8-22" tabindex="-1"></a>  <span class="co"># skip RDF properties for which we don&#39;t know the mapping</span></span>
-<span id="cb8-23"><a href="#cb8-23" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$context</span>[<span class="va">$prop</span>])) {</span>
-<span id="cb8-24"><a href="#cb8-24" tabindex="-1"></a>    <span class="cf">continue</span><span class="ot">;</span></span>
-<span id="cb8-25"><a href="#cb8-25" tabindex="-1"></a>  }</span>
-<span id="cb8-26"><a href="#cb8-26" tabindex="-1"></a>  <span class="co"># map prop name according to the context</span></span>
-<span id="cb8-27"><a href="#cb8-27" tabindex="-1"></a>  <span class="va">$prop</span> <span class="op">=</span> <span class="va">$context</span>[<span class="va">$prop</span>]<span class="ot">;</span></span>
-<span id="cb8-28"><a href="#cb8-28" tabindex="-1"></a></span>
-<span id="cb8-29"><a href="#cb8-29" tabindex="-1"></a>  <span class="co"># if the triple points to another node in the graph, maintain the reference</span></span>
-<span id="cb8-30"><a href="#cb8-30" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span>(<span class="va">$obj</span> <span class="kw">instanceof</span> rdfInterface\<span class="cn">L</span>iteralInterface)) {</span>
-<span id="cb8-31"><a href="#cb8-31" tabindex="-1"></a>    <span class="va">$objUri</span> <span class="op">=</span> <span class="va">$obj</span>-&gt;getValue()<span class="ot">;</span></span>
-<span id="cb8-32"><a href="#cb8-32" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$objUri</span>])) {</span>
-<span id="cb8-33"><a href="#cb8-33" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$objUri</span>] <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;__uri__&#39;</span> =&gt; <span class="va">$objUri</span>]<span class="ot">;</span></span>
-<span id="cb8-34"><a href="#cb8-34" tabindex="-1"></a>    }</span>
-<span id="cb8-35"><a href="#cb8-35" tabindex="-1"></a>    <span class="va">$obj</span> <span class="op">=</span> <span class="va">$nodes</span>[<span class="va">$objUri</span>]<span class="ot">;</span></span>
-<span id="cb8-36"><a href="#cb8-36" tabindex="-1"></a>  }</span>
-<span id="cb8-37"><a href="#cb8-37" tabindex="-1"></a>    </span>
-<span id="cb8-38"><a href="#cb8-38" tabindex="-1"></a>  <span class="co"># manage the data</span></span>
-<span id="cb8-39"><a href="#cb8-39" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$sbj</span>])) {</span>
-<span id="cb8-40"><a href="#cb8-40" tabindex="-1"></a>    <span class="va">$nodes</span>[<span class="va">$sbj</span>] <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;__uri__&#39;</span> =&gt; <span class="va">$sbj</span>]<span class="ot">;</span></span>
-<span id="cb8-41"><a href="#cb8-41" tabindex="-1"></a>  }</span>
-<span id="cb8-42"><a href="#cb8-42" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$sbj</span>]-&gt;<span class="va">$prop</span>)) {</span>
-<span id="cb8-43"><a href="#cb8-43" tabindex="-1"></a>    <span class="va">$nodes</span>[<span class="va">$sbj</span>]-&gt;<span class="va">$prop</span> <span class="op">=</span> []<span class="ot">;</span></span>
-<span id="cb8-44"><a href="#cb8-44" tabindex="-1"></a>  }</span>
-<span id="cb8-45"><a href="#cb8-45" tabindex="-1"></a>  <span class="va">$nodes</span>[<span class="va">$sbj</span>]-&gt;<span class="va">$prop</span>[] <span class="op">=</span> <span class="va">$obj</span><span class="ot">;</span></span>
-<span id="cb8-46"><a href="#cb8-46" tabindex="-1"></a>}</span>
-<span id="cb8-47"><a href="#cb8-47" tabindex="-1"></a></span>
-<span id="cb8-48"><a href="#cb8-48" tabindex="-1"></a><span class="co"># print results</span></span>
-<span id="cb8-49"><a href="#cb8-49" tabindex="-1"></a><span class="fu">print_r</span>(<span class="va">$nodes</span>)<span class="ot">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="va">$client</span> <span class="op">=</span> <span class="kw">new</span> <span class="cn">G</span>uzzleHttp\<span class="cn">C</span>lient()<span class="ot">;</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="va">$dataFactory</span> <span class="op">=</span> <span class="kw">new</span> quickRdf\<span class="cn">D</span>ataFactory()<span class="ot">;</span></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="co"># fetch the context</span></span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="va">$client</span>-&gt;request(<span class="st">&#39;get&#39;</span><span class="ot">,</span> <span class="st">&#39;https://arche.acdh.oeaw.ac.at/api/describe&#39;</span><span class="ot">,</span> [<span class="st">&#39;headers&#39;</span> =&gt; [<span class="st">&#39;Accept&#39;</span> =&gt; <span class="st">&#39;application/json&#39;</span>]])<span class="ot">;</span></span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="fu">json_decode</span>(<span class="va">$context</span>-&gt;getBody()<span class="ot">,</span> <span class="kw">true</span>)[<span class="st">&#39;schema&#39;</span>]<span class="ot">;</span></span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a><span class="co"># flip the context so it&#39;s uri-&gt;shortName</span></span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="fu">array_filter</span>(<span class="va">$context</span><span class="ot">,</span> <span class="kw">fn</span>(<span class="va">$x</span>) =&gt; <span class="fu">is_scalar</span>(<span class="va">$x</span>))<span class="ot">;</span></span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> <span class="fu">array_flip</span>(<span class="va">$context</span>)<span class="ot">;</span></span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a><span class="co"># parse RDF data</span></span>
+<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a><span class="va">$data</span> <span class="op">=</span> <span class="va">$client</span>-&gt;request(<span class="st">&#39;get&#39;</span><span class="ot">,</span> <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span><span class="ot">,</span> [<span class="st">&#39;headers&#39;</span> =&gt; [<span class="st">&#39;Accept&#39;</span> =&gt; <span class="st">&#39;application/n-triples&#39;</span>]])<span class="ot">;</span></span>
+<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a><span class="va">$data</span> <span class="op">=</span> quickRdfIo\<span class="cn">U</span>til::parse(<span class="va">$data</span><span class="ot">,</span> <span class="va">$dataFactory</span>)<span class="ot">;</span></span>
+<span id="cb9-14"><a href="#cb9-14" tabindex="-1"></a></span>
+<span id="cb9-15"><a href="#cb9-15" tabindex="-1"></a><span class="co"># perform the mapping</span></span>
+<span id="cb9-16"><a href="#cb9-16" tabindex="-1"></a><span class="va">$nodes</span> <span class="op">=</span> []<span class="ot">;</span></span>
+<span id="cb9-17"><a href="#cb9-17" tabindex="-1"></a><span class="cf">foreach</span> (<span class="va">$data</span> <span class="kw">as</span> <span class="va">$triple</span>) {</span>
+<span id="cb9-18"><a href="#cb9-18" tabindex="-1"></a>  <span class="va">$sbj</span> <span class="op">=</span> <span class="va">$triple</span>-&gt;getSubject()-&gt;getValue()<span class="ot">;</span></span>
+<span id="cb9-19"><a href="#cb9-19" tabindex="-1"></a>  <span class="va">$prop</span> <span class="op">=</span> <span class="va">$triple</span>-&gt;getPredicate()-&gt;getValue()<span class="ot">;</span></span>
+<span id="cb9-20"><a href="#cb9-20" tabindex="-1"></a>  <span class="va">$obj</span> <span class="op">=</span> <span class="va">$triple</span>-&gt;getObject()<span class="ot">;</span></span>
+<span id="cb9-21"><a href="#cb9-21" tabindex="-1"></a>  </span>
+<span id="cb9-22"><a href="#cb9-22" tabindex="-1"></a>  <span class="co"># skip RDF properties for which we don&#39;t know the mapping</span></span>
+<span id="cb9-23"><a href="#cb9-23" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$context</span>[<span class="va">$prop</span>])) {</span>
+<span id="cb9-24"><a href="#cb9-24" tabindex="-1"></a>    <span class="cf">continue</span><span class="ot">;</span></span>
+<span id="cb9-25"><a href="#cb9-25" tabindex="-1"></a>  }</span>
+<span id="cb9-26"><a href="#cb9-26" tabindex="-1"></a>  <span class="co"># map prop name according to the context</span></span>
+<span id="cb9-27"><a href="#cb9-27" tabindex="-1"></a>  <span class="va">$prop</span> <span class="op">=</span> <span class="va">$context</span>[<span class="va">$prop</span>]<span class="ot">;</span></span>
+<span id="cb9-28"><a href="#cb9-28" tabindex="-1"></a></span>
+<span id="cb9-29"><a href="#cb9-29" tabindex="-1"></a>  <span class="co"># if the triple points to another node in the graph, maintain the reference</span></span>
+<span id="cb9-30"><a href="#cb9-30" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span>(<span class="va">$obj</span> <span class="kw">instanceof</span> rdfInterface\<span class="cn">L</span>iteralInterface)) {</span>
+<span id="cb9-31"><a href="#cb9-31" tabindex="-1"></a>    <span class="va">$objUri</span> <span class="op">=</span> <span class="va">$obj</span>-&gt;getValue()<span class="ot">;</span></span>
+<span id="cb9-32"><a href="#cb9-32" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$objUri</span>])) {</span>
+<span id="cb9-33"><a href="#cb9-33" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$objUri</span>] <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;__uri__&#39;</span> =&gt; <span class="va">$objUri</span>]<span class="ot">;</span></span>
+<span id="cb9-34"><a href="#cb9-34" tabindex="-1"></a>    }</span>
+<span id="cb9-35"><a href="#cb9-35" tabindex="-1"></a>    <span class="va">$obj</span> <span class="op">=</span> <span class="va">$nodes</span>[<span class="va">$objUri</span>]<span class="ot">;</span></span>
+<span id="cb9-36"><a href="#cb9-36" tabindex="-1"></a>  }</span>
+<span id="cb9-37"><a href="#cb9-37" tabindex="-1"></a>    </span>
+<span id="cb9-38"><a href="#cb9-38" tabindex="-1"></a>  <span class="co"># manage the data</span></span>
+<span id="cb9-39"><a href="#cb9-39" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$sbj</span>])) {</span>
+<span id="cb9-40"><a href="#cb9-40" tabindex="-1"></a>    <span class="va">$nodes</span>[<span class="va">$sbj</span>] <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;__uri__&#39;</span> =&gt; <span class="va">$sbj</span>]<span class="ot">;</span></span>
+<span id="cb9-41"><a href="#cb9-41" tabindex="-1"></a>  }</span>
+<span id="cb9-42"><a href="#cb9-42" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$sbj</span>]-&gt;<span class="va">$prop</span>)) {</span>
+<span id="cb9-43"><a href="#cb9-43" tabindex="-1"></a>    <span class="va">$nodes</span>[<span class="va">$sbj</span>]-&gt;<span class="va">$prop</span> <span class="op">=</span> []<span class="ot">;</span></span>
+<span id="cb9-44"><a href="#cb9-44" tabindex="-1"></a>  }</span>
+<span id="cb9-45"><a href="#cb9-45" tabindex="-1"></a>  <span class="va">$nodes</span>[<span class="va">$sbj</span>]-&gt;<span class="va">$prop</span>[] <span class="op">=</span> <span class="va">$obj</span><span class="ot">;</span></span>
+<span id="cb9-46"><a href="#cb9-46" tabindex="-1"></a>}</span>
+<span id="cb9-47"><a href="#cb9-47" tabindex="-1"></a></span>
+<span id="cb9-48"><a href="#cb9-48" tabindex="-1"></a><span class="co"># print results</span></span>
+<span id="cb9-49"><a href="#cb9-49" tabindex="-1"></a><span class="fu">print_r</span>(<span class="va">$nodes</span>)<span class="ot">;</span></span></code></pre></div>
 </div>
 <div id="php-example-using-arche-lib-repo-object" class="section level3">
 <h3>PHP example using arche-lib Repo object</h3>
 <p>(<code>acdhcd/arche-lib</code> library required)</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="co"># initialize the RepoDb object and perform a simple search</span></span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="va">$repo</span> <span class="op">=</span> acdhOeaw\arche\lib\<span class="cn">R</span>epo::factoryFromUrl(<span class="st">&#39;https://arche.acdh.oeaw.ac.at/api&#39;</span>)<span class="ot">;</span></span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="va">$schema</span> <span class="op">=</span> <span class="va">$repo</span>-&gt;getSchema()<span class="ot">;</span></span>
-<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="va">$searchTerm</span> <span class="op">=</span> <span class="kw">new</span> acdhOeaw\arche\lib\<span class="cn">S</span>earchTerm(<span class="va">$schema</span>-&gt;pid<span class="ot">,</span> <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span>)<span class="ot">;</span></span>
-<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="va">$searchCfg</span> <span class="op">=</span> <span class="kw">new</span> acdhOeaw\arche\lib\<span class="cn">S</span>earchConfig()<span class="ot">;</span></span>
-<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a><span class="va">$searchCfg</span>-&gt;metadataMode <span class="op">=</span> <span class="st">&#39;neighbors&#39;</span><span class="ot">;</span></span>
-<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a><span class="va">$graph</span> <span class="op">=</span> <span class="va">$repo</span>-&gt;getGraphBySearchTerms([<span class="va">$searchTerm</span>]<span class="ot">,</span> <span class="va">$searchCfg</span>)<span class="ot">;</span></span>
-<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a></span>
-<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a><span class="co"># define context</span></span>
-<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a><span class="va">$matchProp</span> <span class="op">=</span> <span class="va">$schema</span>-&gt;searchMatch<span class="ot">;</span></span>
-<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> [</span>
-<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&#39;</span> =&gt; <span class="st">&#39;title&#39;</span><span class="ot">,</span></span>
-<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasDescription&#39;</span> =&gt; <span class="st">&#39;description&#39;</span><span class="ot">,</span></span>
-<span id="cb9-14"><a href="#cb9-14" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasAvailableDate&#39;</span> =&gt; <span class="st">&#39;createDate&#39;</span><span class="ot">,</span></span>
-<span id="cb9-15"><a href="#cb9-15" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasUpdatedDate&#39;</span> =&gt; <span class="st">&#39;modificationDate&#39;</span><span class="ot">,</span></span>
-<span id="cb9-16"><a href="#cb9-16" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span> =&gt; <span class="st">&#39;creator&#39;</span><span class="ot">,</span></span>
-<span id="cb9-17"><a href="#cb9-17" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasRightsHolder&#39;</span> =&gt; <span class="st">&#39;rightsHolder&#39;</span><span class="ot">,</span></span>
-<span id="cb9-18"><a href="#cb9-18" tabindex="-1"></a>  <span class="va">$matchProp</span> =&gt; <span class="st">&#39;__match__&#39;</span><span class="ot">,</span></span>
-<span id="cb9-19"><a href="#cb9-19" tabindex="-1"></a>]<span class="ot">;</span></span>
-<span id="cb9-20"><a href="#cb9-20" tabindex="-1"></a></span>
-<span id="cb9-21"><a href="#cb9-21" tabindex="-1"></a><span class="co"># map results to PHP objects according to the context</span></span>
-<span id="cb9-22"><a href="#cb9-22" tabindex="-1"></a><span class="va">$nodes</span> <span class="op">=</span> []<span class="ot">;</span></span>
-<span id="cb9-23"><a href="#cb9-23" tabindex="-1"></a><span class="cf">foreach</span> (<span class="va">$graph</span>-&gt;resources() <span class="kw">as</span> <span class="va">$res</span>) {</span>
-<span id="cb9-24"><a href="#cb9-24" tabindex="-1"></a>  <span class="co">// $res is of type EasyRdf\Resource</span></span>
-<span id="cb9-25"><a href="#cb9-25" tabindex="-1"></a>  <span class="va">$obj</span> <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;uri&#39;</span> =&gt; <span class="va">$res</span>-&gt;getUri()]<span class="ot">;</span></span>
-<span id="cb9-26"><a href="#cb9-26" tabindex="-1"></a>  <span class="va">$toMap</span> <span class="op">=</span> <span class="fu">array_intersect</span>(<span class="va">$res</span>-&gt;propertyUris()<span class="ot">,</span> <span class="fu">array_keys</span>(<span class="va">$context</span>))<span class="ot">;</span></span>
-<span id="cb9-27"><a href="#cb9-27" tabindex="-1"></a>  <span class="cf">foreach</span> (<span class="va">$toMap</span> <span class="kw">as</span> <span class="va">$i</span>) {</span>
-<span id="cb9-28"><a href="#cb9-28" tabindex="-1"></a>    <span class="va">$prop</span> <span class="op">=</span> <span class="va">$context</span>[<span class="va">$i</span>]<span class="ot">;</span></span>
-<span id="cb9-29"><a href="#cb9-29" tabindex="-1"></a>    <span class="va">$obj</span>-&gt;<span class="va">$prop</span> <span class="op">=</span> []<span class="ot">;</span></span>
-<span id="cb9-30"><a href="#cb9-30" tabindex="-1"></a>    <span class="cf">foreach</span> (<span class="va">$res</span>-&gt;allLiterals(<span class="va">$i</span>) <span class="kw">as</span> <span class="va">$v</span>) {</span>
-<span id="cb9-31"><a href="#cb9-31" tabindex="-1"></a>      <span class="va">$obj</span>-&gt;<span class="va">$prop</span>[<span class="dt">(string)</span> <span class="va">$v</span>-&gt;getLang()] <span class="op">=</span> <span class="va">$v</span>-&gt;getValue()<span class="ot">;</span></span>
-<span id="cb9-32"><a href="#cb9-32" tabindex="-1"></a>    }</span>
-<span id="cb9-33"><a href="#cb9-33" tabindex="-1"></a>    <span class="cf">foreach</span> (<span class="va">$res</span>-&gt;allResources(<span class="va">$i</span>) <span class="kw">as</span> <span class="va">$v</span>) {</span>
-<span id="cb9-34"><a href="#cb9-34" tabindex="-1"></a>      <span class="va">$obj</span>-&gt;<span class="va">$prop</span>[] <span class="op">=</span> <span class="va">$v</span>-&gt;getUri()<span class="ot">;</span></span>
-<span id="cb9-35"><a href="#cb9-35" tabindex="-1"></a>    }</span>
-<span id="cb9-36"><a href="#cb9-36" tabindex="-1"></a>  }</span>
-<span id="cb9-37"><a href="#cb9-37" tabindex="-1"></a>  <span class="va">$nodes</span>[<span class="va">$res</span>-&gt;getUri()] <span class="op">=</span> <span class="va">$obj</span><span class="ot">;</span></span>
-<span id="cb9-38"><a href="#cb9-38" tabindex="-1"></a>}</span>
-<span id="cb9-39"><a href="#cb9-39" tabindex="-1"></a></span>
-<span id="cb9-40"><a href="#cb9-40" tabindex="-1"></a><span class="co"># find and display nodes matching the search</span></span>
-<span id="cb9-41"><a href="#cb9-41" tabindex="-1"></a><span class="va">$matches</span> <span class="op">=</span> <span class="fu">array_filter</span>(<span class="va">$nodes</span><span class="ot">,</span> <span class="kw">fn</span>(<span class="va">$x</span>) =&gt; <span class="kw">isset</span>(<span class="va">$x</span>-&gt;<span class="cn">_</span>_match__))<span class="ot">;</span></span>
-<span id="cb9-42"><a href="#cb9-42" tabindex="-1"></a><span class="fu">print_r</span>(<span class="va">$matches</span>)<span class="ot">;</span></span></code></pre></div>
-</div>
-<div id="php-example-using-arche-lib-repodb-object" class="section level3">
-<h3>PHP example using arche-lib RepoDb object</h3>
-<p>(<code>acdhcd/arche-lib</code> library required)</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="co"># initialize the RepoDb object and perform a simple search</span></span>
-<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="va">$repo</span> <span class="op">=</span> acdhOeaw\arche\lib\<span class="cn">R</span>epoDb::factory(<span class="st">&#39;pathToConfig.yaml&#39;</span>)<span class="ot">;</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="va">$repo</span> <span class="op">=</span> acdhOeaw\arche\lib\<span class="cn">R</span>epo::factoryFromUrl(<span class="st">&#39;https://arche.acdh.oeaw.ac.at/api&#39;</span>)<span class="ot">;</span></span>
 <span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="va">$schema</span> <span class="op">=</span> <span class="va">$repo</span>-&gt;getSchema()<span class="ot">;</span></span>
 <span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a><span class="va">$searchTerm</span> <span class="op">=</span> <span class="kw">new</span> acdhOeaw\arche\lib\<span class="cn">S</span>earchTerm(<span class="va">$schema</span>-&gt;pid<span class="ot">,</span> <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span>)<span class="ot">;</span></span>
 <span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a><span class="va">$searchCfg</span> <span class="op">=</span> <span class="kw">new</span> acdhOeaw\arche\lib\<span class="cn">S</span>earchConfig()<span class="ot">;</span></span>
 <span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a><span class="va">$searchCfg</span>-&gt;metadataMode <span class="op">=</span> <span class="st">&#39;neighbors&#39;</span><span class="ot">;</span></span>
-<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a><span class="va">$pdoStmt</span> <span class="op">=</span> <span class="va">$repo</span>-&gt;getPdoStatementBySearchTerms([<span class="va">$searchTerm</span>]<span class="ot">,</span> <span class="va">$searchCfg</span>)<span class="ot">;</span></span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a><span class="va">$graph</span> <span class="op">=</span> <span class="va">$repo</span>-&gt;getGraphBySearchTerms([<span class="va">$searchTerm</span>]<span class="ot">,</span> <span class="va">$searchCfg</span>)<span class="ot">;</span></span>
 <span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a></span>
 <span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a><span class="co"># define context</span></span>
 <span id="cb10-10"><a href="#cb10-10" tabindex="-1"></a><span class="va">$matchProp</span> <span class="op">=</span> <span class="va">$schema</span>-&gt;searchMatch<span class="ot">;</span></span>
@@ -846,45 +868,91 @@ and <code>sweetrdf/quick-rdf</code> libraries required)</p>
 <span id="cb10-20"><a href="#cb10-20" tabindex="-1"></a></span>
 <span id="cb10-21"><a href="#cb10-21" tabindex="-1"></a><span class="co"># map results to PHP objects according to the context</span></span>
 <span id="cb10-22"><a href="#cb10-22" tabindex="-1"></a><span class="va">$nodes</span> <span class="op">=</span> []<span class="ot">;</span></span>
-<span id="cb10-23"><a href="#cb10-23" tabindex="-1"></a><span class="cf">while</span> (<span class="va">$triple</span> <span class="op">=</span> <span class="va">$pdoStmt</span>-&gt;fetchObject()) {</span>
-<span id="cb10-24"><a href="#cb10-24" tabindex="-1"></a>  <span class="co"># $triple is an object with properties id, property, type, lang, value</span></span>
-<span id="cb10-25"><a href="#cb10-25" tabindex="-1"></a></span>
-<span id="cb10-26"><a href="#cb10-26" tabindex="-1"></a>  <span class="co"># skip RDF properties for which we don&#39;t know the mapping</span></span>
-<span id="cb10-27"><a href="#cb10-27" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$context</span>[<span class="va">$triple</span>-&gt;property])) {</span>
-<span id="cb10-28"><a href="#cb10-28" tabindex="-1"></a>    <span class="cf">continue</span><span class="ot">;</span></span>
-<span id="cb10-29"><a href="#cb10-29" tabindex="-1"></a>  }</span>
-<span id="cb10-30"><a href="#cb10-30" tabindex="-1"></a>  <span class="co"># map prop name according to the context</span></span>
-<span id="cb10-31"><a href="#cb10-31" tabindex="-1"></a>  <span class="va">$prop</span> <span class="op">=</span> <span class="va">$context</span>[<span class="va">$triple</span>-&gt;property]<span class="ot">;</span></span>
-<span id="cb10-32"><a href="#cb10-32" tabindex="-1"></a></span>
-<span id="cb10-33"><a href="#cb10-33" tabindex="-1"></a>  <span class="co"># if the triple points to another node in the graph, maintain the reference</span></span>
-<span id="cb10-34"><a href="#cb10-34" tabindex="-1"></a>  <span class="cf">if</span> (<span class="va">$triple</span>-&gt;type <span class="op">===</span> <span class="st">&#39;REL&#39;</span>) {</span>
-<span id="cb10-35"><a href="#cb10-35" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;value])) {</span>
-<span id="cb10-36"><a href="#cb10-36" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;value] <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;__id__&#39;</span> =&gt; <span class="va">$triple</span>-&gt;value]<span class="ot">;</span></span>
-<span id="cb10-37"><a href="#cb10-37" tabindex="-1"></a>    }</span>
-<span id="cb10-38"><a href="#cb10-38" tabindex="-1"></a>  }</span>
-<span id="cb10-39"><a href="#cb10-39" tabindex="-1"></a>    </span>
-<span id="cb10-40"><a href="#cb10-40" tabindex="-1"></a>  <span class="co"># manage the data</span></span>
-<span id="cb10-41"><a href="#cb10-41" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id])) {</span>
-<span id="cb10-42"><a href="#cb10-42" tabindex="-1"></a>    <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id] <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;__id__&#39;</span> =&gt; <span class="va">$triple</span>-&gt;id]<span class="ot">;</span></span>
-<span id="cb10-43"><a href="#cb10-43" tabindex="-1"></a>  }</span>
-<span id="cb10-44"><a href="#cb10-44" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span>)) {</span>
-<span id="cb10-45"><a href="#cb10-45" tabindex="-1"></a>    <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span> <span class="op">=</span> []<span class="ot">;</span></span>
-<span id="cb10-46"><a href="#cb10-46" tabindex="-1"></a>  }</span>
-<span id="cb10-47"><a href="#cb10-47" tabindex="-1"></a>  <span class="cf">switch</span> (<span class="va">$triple</span>-&gt;type) {</span>
-<span id="cb10-48"><a href="#cb10-48" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;ID&#39;</span><span class="ot">:</span></span>
-<span id="cb10-49"><a href="#cb10-49" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span>[] <span class="op">=</span> <span class="va">$triple</span>-&gt;value<span class="ot">;</span></span>
-<span id="cb10-50"><a href="#cb10-50" tabindex="-1"></a>      <span class="cf">break</span><span class="ot">;</span></span>
-<span id="cb10-51"><a href="#cb10-51" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;REL&#39;</span><span class="ot">:</span></span>
-<span id="cb10-52"><a href="#cb10-52" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span>[] <span class="op">=</span> <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;value]<span class="ot">;</span></span>
-<span id="cb10-53"><a href="#cb10-53" tabindex="-1"></a>      <span class="cf">break</span><span class="ot">;</span></span>
-<span id="cb10-54"><a href="#cb10-54" tabindex="-1"></a>    <span class="cf">default</span><span class="ot">:</span></span>
-<span id="cb10-55"><a href="#cb10-55" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span>[<span class="dt">(string)</span> <span class="va">$triple</span>-&gt;lang] <span class="op">=</span> <span class="va">$triple</span>-&gt;value<span class="ot">;</span></span>
-<span id="cb10-56"><a href="#cb10-56" tabindex="-1"></a>  }</span>
-<span id="cb10-57"><a href="#cb10-57" tabindex="-1"></a>}</span>
-<span id="cb10-58"><a href="#cb10-58" tabindex="-1"></a></span>
-<span id="cb10-59"><a href="#cb10-59" tabindex="-1"></a><span class="co"># find and display nodes matching the search</span></span>
-<span id="cb10-60"><a href="#cb10-60" tabindex="-1"></a><span class="va">$matches</span> <span class="op">=</span> <span class="fu">array_filter</span>(<span class="va">$nodes</span><span class="ot">,</span> <span class="kw">fn</span>(<span class="va">$x</span>) =&gt; <span class="kw">isset</span>(<span class="va">$x</span>-&gt;<span class="cn">_</span>_match__))<span class="ot">;</span></span>
-<span id="cb10-61"><a href="#cb10-61" tabindex="-1"></a><span class="fu">print_r</span>(<span class="va">$matches</span>)<span class="ot">;</span></span></code></pre></div>
+<span id="cb10-23"><a href="#cb10-23" tabindex="-1"></a><span class="cf">foreach</span> (<span class="va">$graph</span>-&gt;resources() <span class="kw">as</span> <span class="va">$res</span>) {</span>
+<span id="cb10-24"><a href="#cb10-24" tabindex="-1"></a>  <span class="co">// $res is of type EasyRdf\Resource</span></span>
+<span id="cb10-25"><a href="#cb10-25" tabindex="-1"></a>  <span class="va">$obj</span> <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;uri&#39;</span> =&gt; <span class="va">$res</span>-&gt;getUri()]<span class="ot">;</span></span>
+<span id="cb10-26"><a href="#cb10-26" tabindex="-1"></a>  <span class="va">$toMap</span> <span class="op">=</span> <span class="fu">array_intersect</span>(<span class="va">$res</span>-&gt;propertyUris()<span class="ot">,</span> <span class="fu">array_keys</span>(<span class="va">$context</span>))<span class="ot">;</span></span>
+<span id="cb10-27"><a href="#cb10-27" tabindex="-1"></a>  <span class="cf">foreach</span> (<span class="va">$toMap</span> <span class="kw">as</span> <span class="va">$i</span>) {</span>
+<span id="cb10-28"><a href="#cb10-28" tabindex="-1"></a>    <span class="va">$prop</span> <span class="op">=</span> <span class="va">$context</span>[<span class="va">$i</span>]<span class="ot">;</span></span>
+<span id="cb10-29"><a href="#cb10-29" tabindex="-1"></a>    <span class="va">$obj</span>-&gt;<span class="va">$prop</span> <span class="op">=</span> []<span class="ot">;</span></span>
+<span id="cb10-30"><a href="#cb10-30" tabindex="-1"></a>    <span class="cf">foreach</span> (<span class="va">$res</span>-&gt;allLiterals(<span class="va">$i</span>) <span class="kw">as</span> <span class="va">$v</span>) {</span>
+<span id="cb10-31"><a href="#cb10-31" tabindex="-1"></a>      <span class="va">$obj</span>-&gt;<span class="va">$prop</span>[<span class="dt">(string)</span> <span class="va">$v</span>-&gt;getLang()] <span class="op">=</span> <span class="va">$v</span>-&gt;getValue()<span class="ot">;</span></span>
+<span id="cb10-32"><a href="#cb10-32" tabindex="-1"></a>    }</span>
+<span id="cb10-33"><a href="#cb10-33" tabindex="-1"></a>    <span class="cf">foreach</span> (<span class="va">$res</span>-&gt;allResources(<span class="va">$i</span>) <span class="kw">as</span> <span class="va">$v</span>) {</span>
+<span id="cb10-34"><a href="#cb10-34" tabindex="-1"></a>      <span class="va">$obj</span>-&gt;<span class="va">$prop</span>[] <span class="op">=</span> <span class="va">$v</span>-&gt;getUri()<span class="ot">;</span></span>
+<span id="cb10-35"><a href="#cb10-35" tabindex="-1"></a>    }</span>
+<span id="cb10-36"><a href="#cb10-36" tabindex="-1"></a>  }</span>
+<span id="cb10-37"><a href="#cb10-37" tabindex="-1"></a>  <span class="va">$nodes</span>[<span class="va">$res</span>-&gt;getUri()] <span class="op">=</span> <span class="va">$obj</span><span class="ot">;</span></span>
+<span id="cb10-38"><a href="#cb10-38" tabindex="-1"></a>}</span>
+<span id="cb10-39"><a href="#cb10-39" tabindex="-1"></a></span>
+<span id="cb10-40"><a href="#cb10-40" tabindex="-1"></a><span class="co"># find and display nodes matching the search</span></span>
+<span id="cb10-41"><a href="#cb10-41" tabindex="-1"></a><span class="va">$matches</span> <span class="op">=</span> <span class="fu">array_filter</span>(<span class="va">$nodes</span><span class="ot">,</span> <span class="kw">fn</span>(<span class="va">$x</span>) =&gt; <span class="kw">isset</span>(<span class="va">$x</span>-&gt;<span class="cn">_</span>_match__))<span class="ot">;</span></span>
+<span id="cb10-42"><a href="#cb10-42" tabindex="-1"></a><span class="fu">print_r</span>(<span class="va">$matches</span>)<span class="ot">;</span></span></code></pre></div>
+</div>
+<div id="php-example-using-arche-lib-repodb-object" class="section level3">
+<h3>PHP example using arche-lib RepoDb object</h3>
+<p>(<code>acdhcd/arche-lib</code> library required)</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode php"><code class="sourceCode php"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="co"># initialize the RepoDb object and perform a simple search</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="va">$repo</span> <span class="op">=</span> acdhOeaw\arche\lib\<span class="cn">R</span>epoDb::factory(<span class="st">&#39;pathToConfig.yaml&#39;</span>)<span class="ot">;</span></span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="va">$schema</span> <span class="op">=</span> <span class="va">$repo</span>-&gt;getSchema()<span class="ot">;</span></span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a><span class="va">$searchTerm</span> <span class="op">=</span> <span class="kw">new</span> acdhOeaw\arche\lib\<span class="cn">S</span>earchTerm(<span class="va">$schema</span>-&gt;pid<span class="ot">,</span> <span class="st">&#39;https://hdl.handle.net/21.11115/0000-000E-C8A6-5&#39;</span>)<span class="ot">;</span></span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a><span class="va">$searchCfg</span> <span class="op">=</span> <span class="kw">new</span> acdhOeaw\arche\lib\<span class="cn">S</span>earchConfig()<span class="ot">;</span></span>
+<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a><span class="va">$searchCfg</span>-&gt;metadataMode <span class="op">=</span> <span class="st">&#39;neighbors&#39;</span><span class="ot">;</span></span>
+<span id="cb11-7"><a href="#cb11-7" tabindex="-1"></a><span class="va">$pdoStmt</span> <span class="op">=</span> <span class="va">$repo</span>-&gt;getPdoStatementBySearchTerms([<span class="va">$searchTerm</span>]<span class="ot">,</span> <span class="va">$searchCfg</span>)<span class="ot">;</span></span>
+<span id="cb11-8"><a href="#cb11-8" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" tabindex="-1"></a><span class="co"># define context</span></span>
+<span id="cb11-10"><a href="#cb11-10" tabindex="-1"></a><span class="va">$matchProp</span> <span class="op">=</span> <span class="va">$schema</span>-&gt;searchMatch<span class="ot">;</span></span>
+<span id="cb11-11"><a href="#cb11-11" tabindex="-1"></a><span class="va">$context</span> <span class="op">=</span> [</span>
+<span id="cb11-12"><a href="#cb11-12" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasTitle&#39;</span> =&gt; <span class="st">&#39;title&#39;</span><span class="ot">,</span></span>
+<span id="cb11-13"><a href="#cb11-13" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasDescription&#39;</span> =&gt; <span class="st">&#39;description&#39;</span><span class="ot">,</span></span>
+<span id="cb11-14"><a href="#cb11-14" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasAvailableDate&#39;</span> =&gt; <span class="st">&#39;createDate&#39;</span><span class="ot">,</span></span>
+<span id="cb11-15"><a href="#cb11-15" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasUpdatedDate&#39;</span> =&gt; <span class="st">&#39;modificationDate&#39;</span><span class="ot">,</span></span>
+<span id="cb11-16"><a href="#cb11-16" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasCreator&#39;</span> =&gt; <span class="st">&#39;creator&#39;</span><span class="ot">,</span></span>
+<span id="cb11-17"><a href="#cb11-17" tabindex="-1"></a>  <span class="st">&#39;https://vocabs.acdh.oeaw.ac.at/schema#hasRightsHolder&#39;</span> =&gt; <span class="st">&#39;rightsHolder&#39;</span><span class="ot">,</span></span>
+<span id="cb11-18"><a href="#cb11-18" tabindex="-1"></a>  <span class="va">$matchProp</span> =&gt; <span class="st">&#39;__match__&#39;</span><span class="ot">,</span></span>
+<span id="cb11-19"><a href="#cb11-19" tabindex="-1"></a>]<span class="ot">;</span></span>
+<span id="cb11-20"><a href="#cb11-20" tabindex="-1"></a></span>
+<span id="cb11-21"><a href="#cb11-21" tabindex="-1"></a><span class="co"># map results to PHP objects according to the context</span></span>
+<span id="cb11-22"><a href="#cb11-22" tabindex="-1"></a><span class="va">$nodes</span> <span class="op">=</span> []<span class="ot">;</span></span>
+<span id="cb11-23"><a href="#cb11-23" tabindex="-1"></a><span class="cf">while</span> (<span class="va">$triple</span> <span class="op">=</span> <span class="va">$pdoStmt</span>-&gt;fetchObject()) {</span>
+<span id="cb11-24"><a href="#cb11-24" tabindex="-1"></a>  <span class="co"># $triple is an object with properties id, property, type, lang, value</span></span>
+<span id="cb11-25"><a href="#cb11-25" tabindex="-1"></a></span>
+<span id="cb11-26"><a href="#cb11-26" tabindex="-1"></a>  <span class="co"># skip RDF properties for which we don&#39;t know the mapping</span></span>
+<span id="cb11-27"><a href="#cb11-27" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$context</span>[<span class="va">$triple</span>-&gt;property])) {</span>
+<span id="cb11-28"><a href="#cb11-28" tabindex="-1"></a>    <span class="cf">continue</span><span class="ot">;</span></span>
+<span id="cb11-29"><a href="#cb11-29" tabindex="-1"></a>  }</span>
+<span id="cb11-30"><a href="#cb11-30" tabindex="-1"></a>  <span class="co"># map prop name according to the context</span></span>
+<span id="cb11-31"><a href="#cb11-31" tabindex="-1"></a>  <span class="va">$prop</span> <span class="op">=</span> <span class="va">$context</span>[<span class="va">$triple</span>-&gt;property]<span class="ot">;</span></span>
+<span id="cb11-32"><a href="#cb11-32" tabindex="-1"></a></span>
+<span id="cb11-33"><a href="#cb11-33" tabindex="-1"></a>  <span class="co"># if the triple points to another node in the graph, maintain the reference</span></span>
+<span id="cb11-34"><a href="#cb11-34" tabindex="-1"></a>  <span class="cf">if</span> (<span class="va">$triple</span>-&gt;type <span class="op">===</span> <span class="st">&#39;REL&#39;</span>) {</span>
+<span id="cb11-35"><a href="#cb11-35" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;value])) {</span>
+<span id="cb11-36"><a href="#cb11-36" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;value] <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;__id__&#39;</span> =&gt; <span class="va">$triple</span>-&gt;value]<span class="ot">;</span></span>
+<span id="cb11-37"><a href="#cb11-37" tabindex="-1"></a>    }</span>
+<span id="cb11-38"><a href="#cb11-38" tabindex="-1"></a>  }</span>
+<span id="cb11-39"><a href="#cb11-39" tabindex="-1"></a>    </span>
+<span id="cb11-40"><a href="#cb11-40" tabindex="-1"></a>  <span class="co"># manage the data</span></span>
+<span id="cb11-41"><a href="#cb11-41" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id])) {</span>
+<span id="cb11-42"><a href="#cb11-42" tabindex="-1"></a>    <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id] <span class="op">=</span> <span class="dt">(object)</span> [<span class="st">&#39;__id__&#39;</span> =&gt; <span class="va">$triple</span>-&gt;id]<span class="ot">;</span></span>
+<span id="cb11-43"><a href="#cb11-43" tabindex="-1"></a>  }</span>
+<span id="cb11-44"><a href="#cb11-44" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span><span class="kw">isset</span>(<span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span>)) {</span>
+<span id="cb11-45"><a href="#cb11-45" tabindex="-1"></a>    <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span> <span class="op">=</span> []<span class="ot">;</span></span>
+<span id="cb11-46"><a href="#cb11-46" tabindex="-1"></a>  }</span>
+<span id="cb11-47"><a href="#cb11-47" tabindex="-1"></a>  <span class="cf">switch</span> (<span class="va">$triple</span>-&gt;type) {</span>
+<span id="cb11-48"><a href="#cb11-48" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;ID&#39;</span><span class="ot">:</span></span>
+<span id="cb11-49"><a href="#cb11-49" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span>[] <span class="op">=</span> <span class="va">$triple</span>-&gt;value<span class="ot">;</span></span>
+<span id="cb11-50"><a href="#cb11-50" tabindex="-1"></a>      <span class="cf">break</span><span class="ot">;</span></span>
+<span id="cb11-51"><a href="#cb11-51" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">&#39;REL&#39;</span><span class="ot">:</span></span>
+<span id="cb11-52"><a href="#cb11-52" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span>[] <span class="op">=</span> <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;value]<span class="ot">;</span></span>
+<span id="cb11-53"><a href="#cb11-53" tabindex="-1"></a>      <span class="cf">break</span><span class="ot">;</span></span>
+<span id="cb11-54"><a href="#cb11-54" tabindex="-1"></a>    <span class="cf">default</span><span class="ot">:</span></span>
+<span id="cb11-55"><a href="#cb11-55" tabindex="-1"></a>      <span class="va">$nodes</span>[<span class="va">$triple</span>-&gt;id]-&gt;<span class="va">$prop</span>[<span class="dt">(string)</span> <span class="va">$triple</span>-&gt;lang] <span class="op">=</span> <span class="va">$triple</span>-&gt;value<span class="ot">;</span></span>
+<span id="cb11-56"><a href="#cb11-56" tabindex="-1"></a>  }</span>
+<span id="cb11-57"><a href="#cb11-57" tabindex="-1"></a>}</span>
+<span id="cb11-58"><a href="#cb11-58" tabindex="-1"></a></span>
+<span id="cb11-59"><a href="#cb11-59" tabindex="-1"></a><span class="co"># find and display nodes matching the search</span></span>
+<span id="cb11-60"><a href="#cb11-60" tabindex="-1"></a><span class="va">$matches</span> <span class="op">=</span> <span class="fu">array_filter</span>(<span class="va">$nodes</span><span class="ot">,</span> <span class="kw">fn</span>(<span class="va">$x</span>) =&gt; <span class="kw">isset</span>(<span class="va">$x</span>-&gt;<span class="cn">_</span>_match__))<span class="ot">;</span></span>
+<span id="cb11-61"><a href="#cb11-61" tabindex="-1"></a><span class="fu">print_r</span>(<span class="va">$matches</span>)<span class="ot">;</span></span></code></pre></div>
 </div>
 </div>
 </div>
