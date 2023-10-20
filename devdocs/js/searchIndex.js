@@ -11286,6 +11286,11 @@ Search.appendIndex(
             "summary": "Returns\u0020all\u0020classes\u0020in\u0020the\u0020given\u0020ontology\u0020namespace\u0020as\u0020an\u0020associative\narray\u0020with\u0020keys\u0020being\u0020class\u0020URIs\u0020in\u0020the\u0020ontology\u0020namespace.",
             "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_getNamespaceClasses"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AgetChildClasses\u0028\u0029",
+            "name": "getChildClasses",
+            "summary": "Returns\u0020all\u0020classes\u0020inheriting\u0020from\u0020a\u0020given\u0020one.",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#method_getChildClasses"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003AgetProperties\u0028\u0029",
             "name": "getProperties",
             "summary": "Returns\u0020all\u0020properties\u0020defined\u0020in\u0020the\u0020ontology.",
