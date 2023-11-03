@@ -10276,11 +10276,6 @@ Search.appendIndex(
             "summary": "Ingests\u0020files\u0020into\u0020the\u0020repository",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003ApathToUtf8\u0028\u0029",
-            "name": "pathToUtf8",
-            "summary": "Tries\u0020to\u0020detect\u0020path\u0020encoding\u0020used\u0020in\u0020the\u0020operating\u0020system.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_pathToUtf8"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020the\u0020Indexer\u0020object.",
@@ -10441,11 +10436,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_CONTINUE"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AENC_UTF8",
-            "name": "ENC_UTF8",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ENC_UTF8"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003ANETWORKERROR_SLEEP",
             "name": "NETWORKERROR_SLEEP",
             "summary": "",
@@ -10456,10 +10446,10 @@ Search.appendIndex(
             "summary": "Turns\u0020debug\u0020messages\u0020on",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_debug"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024pathEncoding",
-            "name": "pathEncoding",
-            "summary": "Detected\u0020operating\u0020system\u0020path\u0020enconding.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_pathEncoding"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024idgen",
+            "name": "idgen",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_idgen"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024parent",
             "name": "parent",
@@ -10510,11 +10500,6 @@ Search.appendIndex(
             "name": "directory",
             "summary": "Base\u0020ingestion\u0020path\u0020to\u0020be\u0020substituted\u0020with\u0020the\u0020\u0024idPrefix\nto\u0020form\u0020a\u0020binary\u0020id.",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_directory"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024directoryLength",
-            "name": "directoryLength",
-            "summary": "Length\u0020in\u0020bytes\u0020of\u0020the\u0020sanitized\u0020version\u0020of\u0020the\u0020\u0024directory\u0020property",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_directoryLength"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024idPrefix",
             "name": "idPrefix",
@@ -11125,6 +11110,46 @@ Search.appendIndex(
             "name": "titleProperties",
             "summary": "RDF\u0020properties\u0020to\u0020use\u0020for\u0020repository\u0020resource\u0020titles.",
             "url": "classes/acdhOeaw-arche-lib-ingest-SkosVocabulary.html#property_titleProperties"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\FileId",
+            "name": "FileId",
+            "summary": "Utility\u0020class\u0020for\u0020converting\u0020file\u0020paths\u0020into\u0020repository\u0020resource\u0020identifiers.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-FileId.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\FileId\u003A\u003ApathToUtf8\u0028\u0029",
+            "name": "pathToUtf8",
+            "summary": "Tries\u0020to\u0020detect\u0020path\u0020encoding\u0020used\u0020by\u0020the\u0020operating\u0020system.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-FileId.html#method_pathToUtf8"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\FileId\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-FileId.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\FileId\u003A\u003AgetId\u0028\u0029",
+            "name": "getId",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-FileId.html#method_getId"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\FileId\u003A\u003AENC_UTF8",
+            "name": "ENC_UTF8",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-FileId.html#constant_ENC_UTF8"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\FileId\u003A\u003A\u0024pathEncoding",
+            "name": "pathEncoding",
+            "summary": "Detected\u0020operating\u0020system\u0020path\u0020enconding.",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-FileId.html#property_pathEncoding"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\FileId\u003A\u003A\u0024idPrefix",
+            "name": "idPrefix",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-FileId.html#property_idPrefix"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\FileId\u003A\u003A\u0024defaultDirLen",
+            "name": "defaultDirLen",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-util-FileId.html#property_defaultDirLen"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\util\\ProgressMeter",
             "name": "ProgressMeter",
@@ -14566,6 +14591,11 @@ Search.appendIndex(
             "summary": "Initializes\u0020a\u0020global\u0020singleton\u0020instance\u0020of\u0020the\u0020UriNormalizer.",
             "url": "classes/acdhOeaw-UriNormalizer.html#method_init"
         },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003AgNormalizeNN\u0028\u0029",
+            "name": "gNormalizeNN",
+            "summary": "A\u0020static\u0020version\u0020of\u0020the\u0020normalizeNN\u0028\u0029\u0020method.",
+            "url": "classes/acdhOeaw-UriNormalizer.html#method_gNormalizeNN"
+        },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003AgNormalize\u0028\u0029",
             "name": "gNormalize",
             "summary": "A\u0020static\u0020version\u0020of\u0020the\u0020normalize\u0028\u0029\u0020method.",
@@ -14591,9 +14621,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizer.html#method___construct"
         },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003AnormalizeNN\u0028\u0029",
+            "name": "normalizeNN",
+            "summary": "Returns\u0020a\u0020normalized\u0020URI\u0020as\u0020a\u0020NamedNodeInterface\u0020object.",
+            "url": "classes/acdhOeaw-UriNormalizer.html#method_normalizeNN"
+        },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003Anormalize\u0028\u0029",
             "name": "normalize",
-            "summary": "Returns\u0020a\u0020normalized\u0020URIs.",
+            "summary": "Returns\u0020a\u0020normalized\u0020URI\u0020as\u0020string.",
             "url": "classes/acdhOeaw-UriNormalizer.html#method_normalize"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003AnormalizeMeta\u0028\u0029",
@@ -14631,10 +14666,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizer.html#property_mappings"
         },                {
-            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024idProp",
-            "name": "idProp",
+            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024idTmpl",
+            "name": "idTmpl",
             "summary": "",
-            "url": "classes/acdhOeaw-UriNormalizer.html#property_idProp"
+            "url": "classes/acdhOeaw-UriNormalizer.html#property_idTmpl"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024client",
             "name": "client",
@@ -14645,6 +14680,11 @@ Search.appendIndex(
             "name": "cache",
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizer.html#property_cache"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024dataFactory",
+            "name": "dataFactory",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizer.html#property_dataFactory"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerCache",
             "name": "UriNormalizerCache",

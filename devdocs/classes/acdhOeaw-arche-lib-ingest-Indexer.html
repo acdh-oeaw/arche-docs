@@ -150,7 +150,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -195,12 +195,6 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ENC_UTF8">ENC_UTF8</a>
-    <span>
-        &nbsp;= &#039;utf-8&#039;                            </span>
-</dt>
-
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_CONTINUE">ERRMODE_CONTINUE</a>
     <span>
@@ -356,13 +350,6 @@
 to form a binary id.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_directoryLength">$directoryLength</a>
-    <span>
-                        &nbsp;: int            </span>
-</dt>
-<dd>Length in bytes of the sanitized version of the $directory property</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_filter">$filter</a>
     <span>
                         &nbsp;: string            </span>
@@ -384,6 +371,12 @@ to form a binary id.</dd>
 <dd>Should children be directly attached to the RepoResource or maybe
 each subdirectory should result in a separate collection resource
 containing its children.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_idgen">$idgen</a>
+    <span>
+                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-ingest-util-FileId.html"><abbr title="\acdhOeaw\arche\lib\ingest\util\FileId">FileId</abbr></a>            </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_idPrefix">$idPrefix</a>
@@ -421,13 +414,6 @@ object) be skipped.</dd>
                         &nbsp;: <a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>            </span>
 </dt>
 <dd>RepoResource which children are created by the Indexer</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_pathEncoding">$pathEncoding</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>Detected operating system path enconding.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_pidPass">$pidPass</a>
@@ -605,13 +591,6 @@ should be simply overwritten with a new binary payload.</dd>
 <dd>Gets the list of files/dirs matching the filename filters and the depth
 limit.</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_pathToUtf8">pathToUtf8()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Tries to detect path encoding used in the operating system.</dd>
-
     </dl>
 
 
@@ -625,34 +604,6 @@ limit.</dd>
 
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_ENC_UTF8">
-        ENC_UTF8
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ENC_UTF8" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">72</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">ENC_UTF8</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;utf-8&#039;</span>
-</code>
-
-
-    
-    
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_ERRMODE_CONTINUE">
         ERRMODE_CONTINUE
         <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_CONTINUE" class="headerlink"><i class="fas fa-link"></i></a>
@@ -662,7 +613,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -690,7 +641,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -718,7 +669,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -746,7 +697,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -774,7 +725,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -802,7 +753,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -858,7 +809,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -886,7 +837,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -914,7 +865,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -942,7 +893,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -970,7 +921,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -998,7 +949,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -1026,7 +977,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -1054,7 +1005,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -1082,7 +1033,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -1110,7 +1061,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -1188,7 +1139,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -1222,7 +1173,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -1256,7 +1207,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -1290,7 +1241,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -1324,7 +1275,7 @@ limit.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -1349,40 +1300,6 @@ to form a binary id.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_directoryLength">
-        $directoryLength
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_directoryLength" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">173</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Length in bytes of the sanitized version of the $directory property</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">$directoryLength</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="property_filter">
         $filter
         <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_filter" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1393,7 +1310,7 @@ to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -1427,7 +1344,7 @@ to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -1461,7 +1378,7 @@ to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -1487,6 +1404,39 @@ containing its children.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_idgen">
+        $idgen
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_idgen" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-ingest-util-FileId.html"><abbr title="\acdhOeaw\arche\lib\ingest\util\FileId">FileId</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$idgen</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_idPrefix">
         $idPrefix
         <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_idPrefix" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1497,7 +1447,7 @@ containing its children.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -1532,7 +1482,7 @@ to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">186</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -1568,7 +1518,7 @@ to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
@@ -1602,7 +1552,7 @@ to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">221</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -1637,7 +1587,7 @@ object) be skipped.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -1648,40 +1598,6 @@ object) be skipped.</p>
         <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a></span>
     <span class="phpdocumentor-signature__name">$parent</span>
     </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-            -static                                            "
->
-    <h4 class="phpdocumentor-element__name" id="property_pathEncoding">
-        $pathEncoding
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_pathEncoding" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">83</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Detected operating system path enconding.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$pathEncoding</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
     
     
@@ -1705,7 +1621,7 @@ object) be skipped.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">204</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -1740,7 +1656,7 @@ during versioning.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
     </aside>
 
@@ -1774,7 +1690,7 @@ during versioning.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">231</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 
     </aside>
 
@@ -1808,7 +1724,7 @@ during versioning.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">192</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -1857,7 +1773,7 @@ during versioning.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -1896,7 +1812,7 @@ resources will be created.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">215</span>
+    <span class="phpdocumentor-element-found-in__line">180</span>
 
     </aside>
 
@@ -1929,7 +1845,7 @@ resources will be created.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">198</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -1969,7 +1885,7 @@ be created (if not, an existing resource is simply overwritten).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">258</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -2056,7 +1972,7 @@ resource identifiers from file/directory paths (see above).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">492</span>
+    <span class="phpdocumentor-element-found-in__line">456</span>
 
     </aside>
 
@@ -2160,7 +2076,7 @@ error occurs</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">298</span>
+    <span class="phpdocumentor-element-found-in__line">262</span>
 
     </aside>
 
@@ -2214,7 +2130,7 @@ don't want to do that for performance reasons).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">367</span>
+    <span class="phpdocumentor-element-found-in__line">331</span>
 
     </aside>
 
@@ -2263,7 +2179,7 @@ configuration property.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">354</span>
+    <span class="phpdocumentor-element-found-in__line">318</span>
 
     </aside>
 
@@ -2312,7 +2228,7 @@ configuration property.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">436</span>
+    <span class="phpdocumentor-element-found-in__line">400</span>
 
     </aside>
 
@@ -2360,7 +2276,7 @@ configuration property.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">387</span>
+    <span class="phpdocumentor-element-found-in__line">351</span>
 
     </aside>
 
@@ -2424,7 +2340,7 @@ one of Indexer::MATCH and Indexer::SKIP)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">409</span>
+    <span class="phpdocumentor-element-found-in__line">373</span>
 
     </aside>
 
@@ -2472,7 +2388,7 @@ be created for each subdirectory (`$isFlat` equals to `false`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">448</span>
+    <span class="phpdocumentor-element-found-in__line">412</span>
 
     </aside>
 
@@ -2535,7 +2451,7 @@ be created for each subdirectory (`$isFlat` equals to `false`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">459</span>
+    <span class="phpdocumentor-element-found-in__line">423</span>
 
     </aside>
 
@@ -2590,7 +2506,7 @@ be created for each subdirectory (`$isFlat` equals to `false`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">245</span>
 
     </aside>
 
@@ -2637,7 +2553,7 @@ parameter) directory.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">318</span>
+    <span class="phpdocumentor-element-found-in__line">282</span>
 
     </aside>
 
@@ -2696,7 +2612,7 @@ only resources.</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">425</span>
+    <span class="phpdocumentor-element-found-in__line">389</span>
 
     </aside>
 
@@ -2749,7 +2665,7 @@ matter their size</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">335</span>
+    <span class="phpdocumentor-element-found-in__line">299</span>
 
     </aside>
 
@@ -2825,7 +2741,7 @@ version - either Indexer::MIGRATE_NO or Indexer::MIGRATE_YES</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">602</span>
+    <span class="phpdocumentor-element-found-in__line">567</span>
 
     </aside>
 
@@ -2870,7 +2786,7 @@ version - either Indexer::MIGRATE_NO or Indexer::MIGRATE_YES</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">568</span>
+    <span class="phpdocumentor-element-found-in__line">533</span>
 
     </aside>
 
@@ -2907,67 +2823,6 @@ limit.</p>
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-ingest-File.html"><abbr title="\acdhOeaw\arche\lib\ingest\File">File</abbr></a>&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_pathToUtf8">
-        pathToUtf8()
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_pathToUtf8" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">89</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Tries to detect path encoding used in the operating system.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">pathToUtf8</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$path</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_pathToUtf8#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
-                                    </dd>
-                                            </dl>
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
             </section>
 
 </article>
@@ -3084,7 +2939,6 @@ limit.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ENC_UTF8">ENC_UTF8</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_CONTINUE">ERRMODE_CONTINUE</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_FAIL">ERRMODE_FAIL</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_INCLUDE">ERRMODE_INCLUDE</a></li>
@@ -3114,16 +2968,15 @@ limit.</p>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_collectionClass">$collectionClass<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_depth">$depth<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_directory">$directory<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_directoryLength">$directoryLength<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_filter">$filter<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_filterNot">$filterNot<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_flatStructure">$flatStructure<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_idgen">$idgen<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_idPrefix">$idPrefix<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_includeEmpty">$includeEmpty<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_metaLookup">$metaLookup<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_metaLookupRequire">$metaLookupRequire<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_parent">$parent<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_pathEncoding">$pathEncoding<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_pidPass">$pidPass<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_repo">$repo<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_schema">$schema<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
@@ -3153,7 +3006,6 @@ limit.</p>
                                             <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_setVersioning">setVersioning()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_createFile">createFile()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_listFiles">listFiles()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#method_pathToUtf8">pathToUtf8()</a></li>
                                     </ul>
             </li>
                     </ul>

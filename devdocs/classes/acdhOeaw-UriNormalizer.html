@@ -147,7 +147,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -207,9 +207,15 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-UriNormalizer.html#property_idProp">$idProp</a>
+    <a href="classes/acdhOeaw-UriNormalizer.html#property_dataFactory">$dataFactory</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: <abbr title="\rdfInterface\DataFactoryInterface">DataFactoryInterface</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-UriNormalizer.html#property_idTmpl">$idTmpl</a>
+    <span>
+                        &nbsp;: <abbr title="\termTemplates\PredicateTemplate">PredicateTemplate</abbr>|null            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
@@ -241,14 +247,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-UriNormalizer.html#method_fetch">fetch()</a>
     <span>
-                                &nbsp;: resource    </span>
+                                &nbsp;: <abbr title="\quickRdf\DatasetNode">DatasetNode</abbr>    </span>
 </dt>
 <dd>Fetches RDF metadata for a given URI.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-UriNormalizer.html#method_gFetch">gFetch()</a>
     <span>
-                                &nbsp;: resource    </span>
+                                &nbsp;: <abbr title="\quickRdf\DatasetNode">DatasetNode</abbr>    </span>
 </dt>
 <dd>A static version of the fetch() method.</dd>
 
@@ -265,6 +271,13 @@
                                 &nbsp;: void    </span>
 </dt>
 <dd>A static version of the normalizeMeta() method.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-UriNormalizer.html#method_gNormalizeNN">gNormalizeNN()</a>
+    <span>
+                                &nbsp;: <abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>    </span>
+</dt>
+<dd>A static version of the normalizeNN() method.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-UriNormalizer.html#method_gResolve">gResolve()</a>
@@ -285,7 +298,7 @@
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Returns a normalized URIs.</dd>
+<dd>Returns a normalized URI as string.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-UriNormalizer.html#method_normalizeMeta">normalizeMeta()</a>
@@ -294,6 +307,13 @@
 </dt>
 <dd>Performs id URI normalization on all id properties of a given
 metadata resource object.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-UriNormalizer.html#method_normalizeNN">normalizeNN()</a>
+    <span>
+                                &nbsp;: <abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>    </span>
+</dt>
+<dd>Returns a normalized URI as a NamedNodeInterface object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-UriNormalizer.html#method_resolve">resolve()</a>
@@ -345,7 +365,7 @@ metadata resource object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
 
     </aside>
 
@@ -378,7 +398,7 @@ metadata resource object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -401,9 +421,9 @@ metadata resource object.</dd>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_idProp">
-        $idProp
-        <a href="classes/acdhOeaw-UriNormalizer.html#property_idProp" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_dataFactory">
+        $dataFactory
+        <a href="classes/acdhOeaw-UriNormalizer.html#property_dataFactory" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
@@ -411,16 +431,49 @@ metadata resource object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$idProp</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\rdfInterface\DataFactoryInterface">DataFactoryInterface</abbr></span>
+    <span class="phpdocumentor-signature__name">$dataFactory</span>
     </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_idTmpl">
+        $idTmpl
+        <a href="classes/acdhOeaw-UriNormalizer.html#property_idTmpl" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">162</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\termTemplates\PredicateTemplate">PredicateTemplate</abbr>|null</span>
+    <span class="phpdocumentor-signature__name">$idTmpl</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
 
     
     
@@ -444,7 +497,7 @@ metadata resource object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -477,7 +530,7 @@ metadata resource object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -515,14 +568,14 @@ metadata resource object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-UriNormalizerRule.html"><abbr title="\acdhOeaw\UriNormalizerRule">UriNormalizerRule</abbr></a>|array&lt;string, string&gt;|<abbr title="\stdClass">stdClass</abbr>&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mappings</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-UriNormalizerRule.html"><abbr title="\acdhOeaw\UriNormalizerRule">UriNormalizerRule</abbr></a>|array&lt;string, string&gt;|<abbr title="\stdClass">stdClass</abbr>&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mappings</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DataFactoryInterface">DataFactoryInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dataFactory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -543,7 +596,7 @@ UriNormRules::getRules() class are used.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$idProp</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>a default RDF property to be used by the
@@ -572,6 +625,17 @@ object for caching normalize()/resolve()/normalize() results</p>
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$dataFactory</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DataFactoryInterface">DataFactoryInterface</abbr></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>factory class to be used to create
+RDF terms. If not provided, a quickRdf\DataFactory from the sweetrdf/quick-rdf
+library is used.</p>
+</section>
+
+            </dd>
             </dl>
 
     
@@ -592,7 +656,7 @@ object for caching normalize()/resolve()/normalize() results</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">267</span>
+    <span class="phpdocumentor-element-found-in__line">323</span>
 
     </aside>
 
@@ -600,7 +664,7 @@ object for caching normalize()/resolve()/normalize() results</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">fetch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
+                    <span class="phpdocumentor-signature__name">fetch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\DatasetNode">DatasetNode</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -611,7 +675,7 @@ object for caching normalize()/resolve()/normalize() results</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$uri</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -637,7 +701,7 @@ object for caching normalize()/resolve()/normalize() results</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">resource</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\DatasetNode">DatasetNode</abbr></span>
             </section>
 
 </article>
@@ -655,7 +719,7 @@ object for caching normalize()/resolve()/normalize() results</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -663,7 +727,7 @@ object for caching normalize()/resolve()/normalize() results</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">gFetch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">gFetch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\DatasetNode">DatasetNode</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -674,7 +738,7 @@ object for caching normalize()/resolve()/normalize() results</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$uri</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -700,7 +764,7 @@ object for caching normalize()/resolve()/normalize() results</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">resource</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\DatasetNode">DatasetNode</abbr></span>
             </section>
 
 </article>
@@ -718,7 +782,7 @@ object for caching normalize()/resolve()/normalize() results</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -726,7 +790,7 @@ object for caching normalize()/resolve()/normalize() results</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">gNormalize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requireMatch</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">gNormalize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requireMatch</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -737,7 +801,7 @@ object for caching normalize()/resolve()/normalize() results</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$uri</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -788,7 +852,7 @@ object for caching normalize()/resolve()/normalize() results</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -796,7 +860,7 @@ object for caching normalize()/resolve()/normalize() results</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">gNormalizeMeta</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requireMatch</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">gNormalizeMeta</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requireMatch</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -807,7 +871,7 @@ object for caching normalize()/resolve()/normalize() results</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$res</span>
-                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>metadata to be processed</p>
@@ -816,7 +880,7 @@ object for caching normalize()/resolve()/normalize() results</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$idProp</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>id property URI (if not provided, value passed to
@@ -861,23 +925,23 @@ matches no rule</p>
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_gResolve">
-        gResolve()
-        <a href="classes/acdhOeaw-UriNormalizer.html#method_gResolve" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_gNormalizeNN">
+        gNormalizeNN()
+        <a href="classes/acdhOeaw-UriNormalizer.html#method_gNormalizeNN" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">A static version of the resolve() method.</p>
+        <p class="phpdocumentor-summary">A static version of the normalizeNN() method.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">gResolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\RequestInterface">RequestInterface</abbr></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">gNormalizeNN</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requireMatch</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -888,7 +952,77 @@ matches no rule</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$uri</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$requireMatch</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/acdhOeaw-UriNormalizer.html#method_gNormalizeNN#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-UriNormalizer.html#method_normalize"><abbr title="\acdhOeaw\UriNormalizer::normalize()">UriNormalizer::normalize()</abbr></a></span>
+                                        
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_gResolve">
+        gResolve()
+        <a href="classes/acdhOeaw-UriNormalizer.html#method_gResolve" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">140</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A static version of the resolve() method.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">gResolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\RequestInterface">RequestInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p>Call <code class="prettyprint">UriNormalizer::init()</code> before first use.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$uri</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -932,7 +1066,7 @@ matches no rule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -940,7 +1074,7 @@ matches no rule</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">init</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-UriNormalizerRule.html"><abbr title="\acdhOeaw\UriNormalizerRule">UriNormalizerRule</abbr></a>|array&lt;string, string&gt;|<abbr title="\stdClass">stdClass</abbr>&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mappings</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">init</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-UriNormalizerRule.html"><abbr title="\acdhOeaw\UriNormalizerRule">UriNormalizerRule</abbr></a>|array&lt;string, string&gt;|<abbr title="\stdClass">stdClass</abbr>&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mappings</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Client\ClientInterface">ClientInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\SimpleCache\CacheInterface">CacheInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cache</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DataFactoryInterface">DataFactoryInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dataFactory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -990,6 +1124,17 @@ object for caching normalize()/resolve()/normalize() results</p>
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$dataFactory</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DataFactoryInterface">DataFactoryInterface</abbr></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>factory class to be used to create
+RDF terms. If not provided, a quickRdf\DataFactory from the sweetrdf/quick-rdf
+library is used.</p>
+</section>
+
+            </dd>
             </dl>
 
     
@@ -1025,15 +1170,15 @@ object for caching normalize()/resolve()/normalize() results</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">251</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Returns a normalized URIs.</p>
+        <p class="phpdocumentor-summary">Returns a normalized URI as string.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requireMatch</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">normalize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requireMatch</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1042,7 +1187,7 @@ object for caching normalize()/resolve()/normalize() results</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$uri</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>URI to be normalized</p>
@@ -1098,7 +1243,7 @@ matches no rule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">215</span>
+    <span class="phpdocumentor-element-found-in__line">269</span>
 
     </aside>
 
@@ -1107,7 +1252,7 @@ metadata resource object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">normalizeMeta</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requireMatch</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">normalizeMeta</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requireMatch</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1118,7 +1263,7 @@ metadata resource object.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$res</span>
-                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>metadata to be processed</p>
@@ -1127,7 +1272,7 @@ metadata resource object.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$idProp</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>id property URI (if not provided, value passed to
@@ -1172,6 +1317,79 @@ matches no rule</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_normalizeNN">
+        normalizeNN()
+        <a href="classes/acdhOeaw-UriNormalizer.html#method_normalizeNN" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">214</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns a normalized URI as a NamedNodeInterface object.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">normalizeNN</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requireMatch</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$uri</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>URI to be normalized</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$requireMatch</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>should an exception be rised if the $uri
+matches no rule</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/acdhOeaw-UriNormalizer.html#method_normalizeNN#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-UriNormalizerException.html"><abbr title="\acdhOeaw\UriNormalizerException">UriNormalizerException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_resolve">
         resolve()
         <a href="classes/acdhOeaw-UriNormalizer.html#method_resolve" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1180,7 +1398,7 @@ matches no rule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">237</span>
+    <span class="phpdocumentor-element-found-in__line">292</span>
 
     </aside>
 
@@ -1188,7 +1406,7 @@ matches no rule</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">resolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">resolve</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Psr7\Request">Request</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1199,7 +1417,7 @@ matches no rule</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$uri</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1243,7 +1461,7 @@ matches no rule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">305</span>
+    <span class="phpdocumentor-element-found-in__line">361</span>
 
     </aside>
 
@@ -1303,7 +1521,7 @@ matches no rule</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizer.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizer.php">UriNormalizer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">348</span>
+    <span class="phpdocumentor-element-found-in__line">404</span>
 
     </aside>
 
@@ -1459,7 +1677,8 @@ matches no rule</p>
                     <ul class="phpdocumentor-list -clean">
                                                     <li><a href="classes/acdhOeaw-UriNormalizer.html#property_cache">$cache<a href="classes/acdhOeaw-UriNormalizer.html"></li>
                                                     <li><a href="classes/acdhOeaw-UriNormalizer.html#property_client">$client<a href="classes/acdhOeaw-UriNormalizer.html"></li>
-                                                    <li><a href="classes/acdhOeaw-UriNormalizer.html#property_idProp">$idProp<a href="classes/acdhOeaw-UriNormalizer.html"></li>
+                                                    <li><a href="classes/acdhOeaw-UriNormalizer.html#property_dataFactory">$dataFactory<a href="classes/acdhOeaw-UriNormalizer.html"></li>
+                                                    <li><a href="classes/acdhOeaw-UriNormalizer.html#property_idTmpl">$idTmpl<a href="classes/acdhOeaw-UriNormalizer.html"></li>
                                                     <li><a href="classes/acdhOeaw-UriNormalizer.html#property_mappings">$mappings<a href="classes/acdhOeaw-UriNormalizer.html"></li>
                                                     <li><a href="classes/acdhOeaw-UriNormalizer.html#property_obj">$obj<a href="classes/acdhOeaw-UriNormalizer.html"></li>
                                             </ul>
@@ -1473,10 +1692,12 @@ matches no rule</p>
                                             <li><a href="classes/acdhOeaw-UriNormalizer.html#method_gFetch">gFetch()</a></li>
                                             <li><a href="classes/acdhOeaw-UriNormalizer.html#method_gNormalize">gNormalize()</a></li>
                                             <li><a href="classes/acdhOeaw-UriNormalizer.html#method_gNormalizeMeta">gNormalizeMeta()</a></li>
+                                            <li><a href="classes/acdhOeaw-UriNormalizer.html#method_gNormalizeNN">gNormalizeNN()</a></li>
                                             <li><a href="classes/acdhOeaw-UriNormalizer.html#method_gResolve">gResolve()</a></li>
                                             <li><a href="classes/acdhOeaw-UriNormalizer.html#method_init">init()</a></li>
                                             <li><a href="classes/acdhOeaw-UriNormalizer.html#method_normalize">normalize()</a></li>
                                             <li><a href="classes/acdhOeaw-UriNormalizer.html#method_normalizeMeta">normalizeMeta()</a></li>
+                                            <li><a href="classes/acdhOeaw-UriNormalizer.html#method_normalizeNN">normalizeNN()</a></li>
                                             <li><a href="classes/acdhOeaw-UriNormalizer.html#method_resolve">resolve()</a></li>
                                             <li><a href="classes/acdhOeaw-UriNormalizer.html#method_fetchUrl">fetchUrl()</a></li>
                                             <li><a href="classes/acdhOeaw-UriNormalizer.html#method_setCache">setCache()</a></li>
