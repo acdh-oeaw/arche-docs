@@ -220,6 +220,13 @@ of the metadata format descriptor (see the <code class="prettyprint">__construct
 <dd>Performs search using given filter values.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_findResumptionToken">findResumptionToken()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Reads search results based on the resumption token.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_getCount">getCount()</a>
     <span>
                                 &nbsp;: int    </span>
@@ -357,7 +364,7 @@ resumption token and returns the resumption token data.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-searchinterface.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php">SearchInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -395,7 +402,7 @@ resumption token and returns the resumption token data.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-searchinterface.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php">SearchInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -403,7 +410,7 @@ resumption token and returns the resumption token data.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">find</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$until</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$set</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resumptionToken</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">find</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$until</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$set</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -446,21 +453,57 @@ resumption token and returns the resumption token data.</dd>
 </section>
 
             </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$resumptionToken</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>resumption token - when present the search
-should be restored based on the token</p>
-</section>
-
-            </dd>
             </dl>
 
     
 
     
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_findResumptionToken">
+        findResumptionToken()
+        <a href="classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_findResumptionToken" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-searchinterface.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php">SearchInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Reads search results based on the resumption token.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">findResumptionToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$token</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -476,7 +519,7 @@ should be restored based on the token</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-searchinterface.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php">SearchInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -513,7 +556,7 @@ should be restored based on the token</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-searchinterface.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php">SearchInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -561,7 +604,7 @@ should be restored based on the token</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-searchinterface.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php">SearchInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -613,7 +656,7 @@ constructor method).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-searchinterface.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php">SearchInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -662,7 +705,7 @@ resumption token and returns the resumption token data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-searchinterface.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php">SearchInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -704,7 +747,7 @@ resumption token and returns the resumption token data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-searchinterface.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/SearchInterface.php">SearchInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -849,6 +892,7 @@ resumption token and returns the resumption token data.</p>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method___construct">__construct()</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_checkResumptionTimeout">checkResumptionTimeout()</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_find">find()</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_findResumptionToken">findResumptionToken()</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_getCount">getCount()</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_getHeader">getHeader()</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_getMetadata">getMetadata()</a></li>

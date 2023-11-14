@@ -322,6 +322,13 @@ descriptor).</p>
 <dd>Performs search using given filter values.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findResumptionToken">findResumptionToken()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Reads search results based on the resumption token.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getCount">getCount()</a>
     <span>
                                 &nbsp;: int    </span>
@@ -364,18 +371,6 @@ resumption token and returns the resumption token data.</dd>
                                 &nbsp;: void    </span>
 </dt>
 <dd>Sets metadata format configuration</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findQuery">findQuery()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findResumptionToken">findResumptionToken()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getDateFilter">getDateFilter()</a>
@@ -875,7 +870,7 @@ resumption token and returns the resumption token data.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
@@ -913,7 +908,7 @@ resumption token and returns the resumption token data.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -921,7 +916,7 @@ resumption token and returns the resumption token data.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">find</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$until</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$set</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resumptionToken</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">find</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$until</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$set</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -964,20 +959,57 @@ resumption token and returns the resumption token data.</dd>
 </section>
 
             </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$resumptionToken</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>resumption token</p>
-</section>
-
-            </dd>
             </dl>
 
     
 
     
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_findResumptionToken">
+        findResumptionToken()
+        <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findResumptionToken" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">192</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Reads search results based on the resumption token.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">findResumptionToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$token</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -993,7 +1025,7 @@ resumption token and returns the resumption token data.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
@@ -1030,7 +1062,7 @@ resumption token and returns the resumption token data.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -1078,7 +1110,7 @@ resumption token and returns the resumption token data.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">178</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -1126,7 +1158,7 @@ resumption token and returns the resumption token data.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -1175,7 +1207,7 @@ resumption token and returns the resumption token data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">347</span>
+    <span class="phpdocumentor-element-found-in__line">330</span>
 
     </aside>
 
@@ -1217,7 +1249,7 @@ resumption token and returns the resumption token data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">356</span>
+    <span class="phpdocumentor-element-found-in__line">339</span>
 
     </aside>
 
@@ -1253,109 +1285,6 @@ resumption token and returns the resumption token data.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_findQuery">
-        findQuery()
-        <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findQuery" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">233</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">findQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$until</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$set</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$from</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$until</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$set</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_findResumptionToken">
-        findResumptionToken()
-        <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findResumptionToken" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">208</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">findResumptionToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$token</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_getDateFilter">
         getDateFilter()
         <a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getDateFilter" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1364,7 +1293,7 @@ resumption token and returns the resumption token data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">311</span>
+    <span class="phpdocumentor-element-found-in__line">294</span>
 
     </aside>
 
@@ -1421,7 +1350,7 @@ resumption token and returns the resumption token data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">296</span>
+    <span class="phpdocumentor-element-found-in__line">279</span>
 
     </aside>
 
@@ -1469,7 +1398,7 @@ resumption token and returns the resumption token data.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-search-basesearch.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/search/BaseSearch.php">BaseSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">333</span>
+    <span class="phpdocumentor-element-found-in__line">316</span>
 
     </aside>
 
@@ -1636,14 +1565,13 @@ resumption token and returns the resumption token data.</p>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_checkResumptionTimeout">checkResumptionTimeout()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_find">find()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findResumptionToken">findResumptionToken()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getCount">getCount()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getHeader">getHeader()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getMetadata">getMetadata()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getResumptionToken">getResumptionToken()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_setLogger">setLogger()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_setMetadataFormat">setMetadataFormat()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findQuery">findQuery()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findResumptionToken">findResumptionToken()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getDateFilter">getDateFilter()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getIdFilter">getIdFilter()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getSetFilter">getSetFilter()</a></li>

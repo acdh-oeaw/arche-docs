@@ -12481,6 +12481,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-data-ResumptionTokenData.html#property_token"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\ResumptionTokenData\u003A\u003A\u0024metadataPrefix",
+            "name": "metadataPrefix",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-data-ResumptionTokenData.html#property_metadataPrefix"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\ResumptionTokenData\u003A\u003A\u0024expirationDate",
             "name": "expirationDate",
             "summary": "",
@@ -13201,11 +13206,6 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020search\u0020engine\u0020object.",
             "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003Afind\u0028\u0029",
-            "name": "find",
-            "summary": "Performs\u0020search\u0020using\u0020given\u0020filter\u0020values.",
-            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_find"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AgetCount\u0028\u0029",
             "name": "getCount",
             "summary": "Returns\u0020number\u0020of\u0020resources\u0020matching\u0020last\u0020search\u0020\u0028last\u0020call\u0020of\u0020the\n\u0060find\u0028\u0029\u0060\u0020method\u0029.",
@@ -13233,13 +13233,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AfindResumptionToken\u0028\u0029",
             "name": "findResumptionToken",
-            "summary": "",
+            "summary": "Reads\u0020search\u0020results\u0020based\u0020on\u0020the\u0020resumption\u0020token.",
             "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findResumptionToken"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AfindQuery\u0028\u0029",
-            "name": "findQuery",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_findQuery"
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003Afind\u0028\u0029",
+            "name": "find",
+            "summary": "Performs\u0020search\u0020using\u0020given\u0020filter\u0020values.",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_find"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AgetIdFilter\u0028\u0029",
             "name": "getIdFilter",
@@ -13335,6 +13335,11 @@ Search.appendIndex(
             "name": "find",
             "summary": "Performs\u0020search\u0020using\u0020given\u0020filter\u0020values.",
             "url": "classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_find"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\SearchInterface\u003A\u003AfindResumptionToken\u0028\u0029",
+            "name": "findResumptionToken",
+            "summary": "Reads\u0020search\u0020results\u0020based\u0020on\u0020the\u0020resumption\u0020token.",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-SearchInterface.html#method_findResumptionToken"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\SearchInterface\u003A\u003AgetCount\u0028\u0029",
             "name": "getCount",
