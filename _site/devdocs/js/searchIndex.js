@@ -14341,6 +14341,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-handler-Fallback.html#method_createGeneric"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\handler\\Fallback\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-handler-Fallback.html#property_config"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\handler\\HandlerInterface",
             "name": "HandlerInterface",
             "summary": "Description\u0020of\u0020FormatInterface",
@@ -14416,6 +14421,11 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020thumbnail\u0020with\u0020given\u0020dimensions\u0020for\u0020a\u0020given\u0020resource",
             "url": "classes/acdhOeaw-arche-thumbnails-handler-Text.html#method_createThumbnail"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\handler\\Text\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-handler-Text.html#property_config"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\NoSuchFileException",
             "name": "NoSuchFileException",
             "summary": "Description\u0020of\u0020NoSuchFile",
@@ -14455,11 +14465,6 @@ Search.appendIndex(
             "name": "getThumbnailPath",
             "summary": "Gets\u0020path\u0020to\u0020an\u0020already\u0020cached\u0020resource\u0020thumbnail\u0020of\u0020a\u0020given\u0020dimensions.",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getThumbnailPath"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetConfig\u0028\u0029",
-            "name": "getConfig",
-            "summary": "Returns\u0020a\u0020configuration\u0020property\u0020value\u0020stored\u0020in\u0020the\u0020config.ini\u0020file",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getConfig"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetCachedFiles\u0028\u0029",
             "name": "getCachedFiles",
@@ -14511,6 +14516,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_meta"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024defaultHandler",
+            "name": "defaultHandler",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_defaultHandler"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024handlers",
             "name": "handlers",
             "summary": "",
@@ -14530,11 +14540,6 @@ Search.appendIndex(
             "name": "getResourcePath",
             "summary": "Returns\u0020path\u0020to\u0020the\u0020file\u0020storing\u0020a\u0020repository\u0020resource\u0020payload.",
             "url": "classes/acdhOeaw-arche-thumbnails-ResourceInterface.html#method_getResourcePath"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceInterface\u003A\u003AgetConfig\u0028\u0029",
-            "name": "getConfig",
-            "summary": "Returns\u0020a\u0020configuration\u0020property\u0020value\u0020stored\u0020in\u0020the\u0020config.ini\u0020file",
-            "url": "classes/acdhOeaw-arche-thumbnails-ResourceInterface.html#method_getConfig"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceInterface\u003A\u003AgetCachedFiles\u0028\u0029",
             "name": "getCachedFiles",
