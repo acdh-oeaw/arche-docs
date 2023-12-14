@@ -11686,6 +11686,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-dissService-mapserver-Cache.html#property_pdo"
         },                {
+            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Cache\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-dissService-mapserver-Cache.html#property_log"
+        },                {
             "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map",
             "name": "Map",
             "summary": "Represents\u0020a\u0020raster\u0020or\u0020vector\u0020map\u0020to\u0020be\u0020stored\u0020in\u0020a\u0020cache.",
@@ -11701,10 +11706,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-dissService-mapserver-Map.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003AfetchFromFedora\u0028\u0029",
-            "name": "fetchFromFedora",
+            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003Afetch\u0028\u0029",
+            "name": "fetch",
             "summary": "Initialized\u0020the\u0020map\u0020object\u0020from\u0020a\u0020given\u0020ARCHE\u0020resource",
-            "url": "classes/acdhOeaw-dissService-mapserver-Map.html#method_fetchFromFedora"
+            "url": "classes/acdhOeaw-dissService-mapserver-Map.html#method_fetch"
         },                {
             "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003Arefresh\u0028\u0029",
             "name": "refresh",
@@ -11756,6 +11761,11 @@ Search.appendIndex(
             "summary": "Sets\u0020the\u0020map\u0020last\u0020requested\u0020date\u0020to\u0020the\u0020current\u0020time.",
             "url": "classes/acdhOeaw-dissService-mapserver-Map.html#method_touch"
         },                {
+            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003ATIME_FORMAT",
+            "name": "TIME_FORMAT",
+            "summary": "",
+            "url": "classes/acdhOeaw-dissService-mapserver-Map.html#constant_TIME_FORMAT"
+        },                {
             "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024mimeTypes",
             "name": "mimeTypes",
             "summary": "",
@@ -11771,30 +11781,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-dissService-mapserver-Map.html#property_baseUrl"
         },                {
-            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024archeId",
-            "name": "archeId",
+            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024url",
+            "name": "url",
             "summary": "",
-            "url": "classes/acdhOeaw-dissService-mapserver-Map.html#property_archeId"
-        },                {
-            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024id",
-            "name": "id",
-            "summary": "",
-            "url": "classes/acdhOeaw-dissService-mapserver-Map.html#property_id"
+            "url": "classes/acdhOeaw-dissService-mapserver-Map.html#property_url"
         },                {
             "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024type",
             "name": "type",
             "summary": "",
             "url": "classes/acdhOeaw-dissService-mapserver-Map.html#property_type"
         },                {
-            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024localDate",
-            "name": "localDate",
+            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024size",
+            "name": "size",
             "summary": "",
-            "url": "classes/acdhOeaw-dissService-mapserver-Map.html#property_localDate"
-        },                {
-            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024remoteDate",
-            "name": "remoteDate",
-            "summary": "",
-            "url": "classes/acdhOeaw-dissService-mapserver-Map.html#property_remoteDate"
+            "url": "classes/acdhOeaw-dissService-mapserver-Map.html#property_size"
         },                {
             "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024reqDate",
             "name": "reqDate",
@@ -11806,10 +11806,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-dissService-mapserver-Map.html#property_checkDate"
         },                {
-            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024size",
-            "name": "size",
+            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024localDate",
+            "name": "localDate",
             "summary": "",
-            "url": "classes/acdhOeaw-dissService-mapserver-Map.html#property_size"
+            "url": "classes/acdhOeaw-dissService-mapserver-Map.html#property_localDate"
+        },                {
+            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024remoteDate",
+            "name": "remoteDate",
+            "summary": "",
+            "url": "classes/acdhOeaw-dissService-mapserver-Map.html#property_remoteDate"
         },                {
             "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Map\u003A\u003A\u0024storageDir",
             "name": "storageDir",
@@ -11836,25 +11841,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-dissService-mapserver-Mapserver.html#method_serve"
         },                {
-            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Mapserver\u003A\u003AcheckId\u0028\u0029",
-            "name": "checkId",
-            "summary": "Make\u0020sure\u0020the\u0020map\u0020id\u0020is\u0020a\u0020fully\u0020qualified\u0020ARCHE\u0020URI",
-            "url": "classes/acdhOeaw-dissService-mapserver-Mapserver.html#method_checkId"
-        },                {
             "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Mapserver\u003A\u003A\u0024skipResponseHeaders",
             "name": "skipResponseHeaders",
             "summary": "",
             "url": "classes/acdhOeaw-dissService-mapserver-Mapserver.html#property_skipResponseHeaders"
         },                {
-            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Mapserver\u003A\u003A\u0024mapserverId",
-            "name": "mapserverId",
-            "summary": "",
-            "url": "classes/acdhOeaw-dissService-mapserver-Mapserver.html#property_mapserverId"
-        },                {
             "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Mapserver\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
             "url": "classes/acdhOeaw-dissService-mapserver-Mapserver.html#property_config"
+        },                {
+            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Mapserver\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-dissService-mapserver-Mapserver.html#property_log"
+        },                {
+            "fqsen": "\\acdhOeaw\\dissService\\mapserver\\Mapserver\u003A\u003A\u0024cache",
+            "name": "cache",
+            "summary": "",
+            "url": "classes/acdhOeaw-dissService-mapserver-Mapserver.html#property_cache"
         },                {
             "fqsen": "\\acdhOeaw\\dissService\\mapserver\\RemoteFileInfo",
             "name": "RemoteFileInfo",
