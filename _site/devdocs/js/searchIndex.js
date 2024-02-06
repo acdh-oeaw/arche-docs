@@ -11591,6 +11591,11 @@ Search.appendIndex(
             "summary": "acdh\u003Avocabs\u0020annotation\u0020property\u0020value",
             "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_vocabs"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003A\u0024exampleValue",
+            "name": "exampleValue",
+            "summary": "acdh\u003AexampleValue\u0020annotation\u0020property\u0020values",
+            "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_exampleValue"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003A\u0024vocabularyValues",
             "name": "vocabularyValues",
             "summary": "Array\u0020of\u0020vocabulary\u0020values\u0020fetched\u0020from\u0020vocabulary\u0020pointed\u0020by\u0020acdh\u003Avocabs\nannotation\u0020property",
@@ -14120,11 +14125,6 @@ Search.appendIndex(
             "name": "path",
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#property_path"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping\u003A\u003A\u0024termsFactory",
-            "name": "termsFactory",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#property_termsFactory"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings",
             "name": "PropertyMappings",
