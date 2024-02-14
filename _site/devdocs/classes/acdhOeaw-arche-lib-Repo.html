@@ -159,7 +159,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -268,7 +268,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-RepoTrait.html#property_headers">$headers</a>
     <span>
-                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a>            </span>
+                        &nbsp;: object            </span>
 </dt>
 <dd>An object providing mappings of repository REST API parameters to HTTP headers used by a given repository instance.</dd>
 
@@ -367,7 +367,7 @@ to a valid REST API endpoint.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySearchTerms">getGraphBySearchTerms()</a>
     <span>
-                                &nbsp;: <abbr title="\EasyRdf\Graph">Graph</abbr>    </span>
+                                &nbsp;: <abbr title="\quickRdf\Dataset">Dataset</abbr>    </span>
 </dt>
 <dd>Returns RDF metadata graph of the search results.</dd>
 
@@ -381,7 +381,7 @@ to a valid REST API endpoint.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getGraphBySqlQuery">getGraphBySqlQuery()</a>
     <span>
-                                &nbsp;: <abbr title="\EasyRdf\Graph">Graph</abbr>    </span>
+                                &nbsp;: <abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr>    </span>
 </dt>
 <dd>Asynchronous version of</dd>
 
@@ -437,7 +437,7 @@ to a valid REST API endpoint.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySearchTermsAsync">getResourcesBySearchTermsAsync()</a>
     <span>
-                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GeneratorPromise">GeneratorPromise</abbr></a>    </span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-RepoResourceGeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourceGeneratorPromise">RepoResourceGeneratorPromise</abbr></a>    </span>
 </dt>
 <dd>Asynchronous version of getResourcesBySearchTerms()</dd>
 
@@ -451,7 +451,7 @@ to a valid REST API endpoint.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-Repo.html#method_getResourcesBySqlQueryAsync">getResourcesBySqlQueryAsync()</a>
     <span>
-                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GeneratorPromise">GeneratorPromise</abbr></a>    </span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-promise-RepoResourceGeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourceGeneratorPromise">RepoResourceGeneratorPromise</abbr></a>    </span>
 </dt>
 <dd>Asynchronous version of getResourcesBySqlQuery()</dd>
 
@@ -512,9 +512,9 @@ to a valid REST API endpoint.</dd>
 <dd>Sets a search queries logger</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-Repo.html#method_extractResourcesFromGraph">extractResourcesFromGraph()</a>
+    <a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_extractResourcesFromGraph">extractResourcesFromGraph()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&gt;    </span>
 </dt>
 <dd>Extracts collection of RepoResource objects from the EasyRdf graph being
 parsed from a search response.</dd>
@@ -522,7 +522,7 @@ parsed from a search response.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-lib-Repo.html#method_parseSearchResponse">parseSearchResponse()</a>
     <span>
-                                &nbsp;: <abbr title="\EasyRdf\Graph">Graph</abbr>    </span>
+                                &nbsp;: <abbr title="\quickRdf\Dataset">Dataset</abbr>    </span>
 </dt>
 <dd>Parses search request response into the EasyRdf Graph.</dd>
 
@@ -560,7 +560,7 @@ parsed from a search response.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -588,7 +588,7 @@ parsed from a search response.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -616,7 +616,7 @@ parsed from a search response.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -644,7 +644,7 @@ parsed from a search response.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -688,7 +688,7 @@ parsed from a search response.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -724,7 +724,7 @@ parsed from a search response.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -758,7 +758,7 @@ parsed from a search response.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -792,7 +792,7 @@ parsed from a search response.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -800,7 +800,7 @@ parsed from a search response.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a></span>
+        <span class="phpdocumentor-signature__type">object</span>
     <span class="phpdocumentor-signature__name">$headers</span>
     </code>
 
@@ -826,7 +826,7 @@ parsed from a search response.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -859,7 +859,7 @@ parsed from a search response.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -893,7 +893,7 @@ parsed from a search response.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">219</span>
+    <span class="phpdocumentor-element-found-in__line">227</span>
 
     </aside>
 
@@ -932,7 +932,7 @@ parsed from a search response.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -986,7 +986,7 @@ by all requests to the repository REST API (e.g. credentials)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">636</span>
+    <span class="phpdocumentor-element-found-in__line">642</span>
 
     </aside>
 
@@ -1043,7 +1043,7 @@ by all requests to the repository REST API (e.g. credentials)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">670</span>
+    <span class="phpdocumentor-element-found-in__line">676</span>
 
     </aside>
 
@@ -1100,7 +1100,7 @@ by all requests to the repository REST API (e.g. credentials)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">264</span>
+    <span class="phpdocumentor-element-found-in__line">272</span>
 
     </aside>
 
@@ -1108,7 +1108,7 @@ by all requests to the repository REST API (e.g. credentials)</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">createResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-BinaryPayload.html"><abbr title="\acdhOeaw\arche\lib\BinaryPayload">BinaryPayload</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$payload</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">RepoResourceInterface::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">createResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-BinaryPayload.html"><abbr title="\acdhOeaw\arche\lib\BinaryPayload">BinaryPayload</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$payload</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">RepoResourceInterface::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1117,7 +1117,7 @@ by all requests to the repository REST API (e.g. credentials)</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$metadata</span>
-                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>resource metadata</p>
@@ -1189,7 +1189,7 @@ read mode denoted by the $readMode parameter</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">283</span>
+    <span class="phpdocumentor-element-found-in__line">291</span>
 
     </aside>
 
@@ -1197,7 +1197,7 @@ read mode denoted by the $readMode parameter</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">createResourceAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-BinaryPayload.html"><abbr title="\acdhOeaw\arche\lib\BinaryPayload">BinaryPayload</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$payload</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">RepoResourceInterface::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourcePromise">RepoResourcePromise</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">createResourceAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-BinaryPayload.html"><abbr title="\acdhOeaw\arche\lib\BinaryPayload">BinaryPayload</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$payload</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$readMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">RepoResourceInterface::META_RESOURCE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentProperty</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-RepoResourcePromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourcePromise">RepoResourcePromise</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1206,7 +1206,7 @@ read mode denoted by the $readMode parameter</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$metadata</span>
-                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1278,7 +1278,7 @@ read mode denoted by the $readMode parameter</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -1328,7 +1328,7 @@ read mode denoted by the $readMode parameter</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
     </aside>
 
@@ -1406,7 +1406,7 @@ initialization if the $url points to a repository resource.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
@@ -1483,7 +1483,7 @@ auth:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -1519,7 +1519,7 @@ auth:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">591</span>
+    <span class="phpdocumentor-element-found-in__line">597</span>
 
     </aside>
 
@@ -1527,7 +1527,7 @@ auth:
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getGraphBySearchTerms</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">getGraphBySearchTerms</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\Dataset">Dataset</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1554,7 +1554,7 @@ auth:
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\Dataset">Dataset</abbr></span>
             </section>
 
 </article>
@@ -1572,7 +1572,7 @@ auth:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">604</span>
+    <span class="phpdocumentor-element-found-in__line">610</span>
 
     </aside>
 
@@ -1640,7 +1640,7 @@ auth:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">551</span>
+    <span class="phpdocumentor-element-found-in__line">556</span>
 
     </aside>
 
@@ -1648,7 +1648,7 @@ auth:
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getGraphBySqlQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">getGraphBySqlQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1682,7 +1682,7 @@ auth:
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr></span>
             </section>
 
 </article>
@@ -1700,7 +1700,7 @@ auth:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">565</span>
+    <span class="phpdocumentor-element-found-in__line">570</span>
 
     </aside>
 
@@ -1775,7 +1775,7 @@ auth:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -1821,7 +1821,7 @@ auth:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -1879,7 +1879,7 @@ auth:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">436</span>
+    <span class="phpdocumentor-element-found-in__line">445</span>
 
     </aside>
 
@@ -1947,7 +1947,7 @@ auth:
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">424</span>
+    <span class="phpdocumentor-element-found-in__line">433</span>
 
     </aside>
 
@@ -2033,7 +2033,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">448</span>
+    <span class="phpdocumentor-element-found-in__line">457</span>
 
     </aside>
 
@@ -2101,7 +2101,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">521</span>
+    <span class="phpdocumentor-element-found-in__line">526</span>
 
     </aside>
 
@@ -2154,7 +2154,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">534</span>
+    <span class="phpdocumentor-element-found-in__line">539</span>
 
     </aside>
 
@@ -2162,7 +2162,7 @@ matching the search, an error is thrown.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getResourcesBySearchTermsAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GeneratorPromise">GeneratorPromise</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">getResourcesBySearchTermsAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-RepoResourceGeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourceGeneratorPromise">RepoResourceGeneratorPromise</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2204,7 +2204,7 @@ matching the search, an error is thrown.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GeneratorPromise">GeneratorPromise</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-RepoResourceGeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourceGeneratorPromise">RepoResourceGeneratorPromise</abbr></a></span>
             </section>
 
 </article>
@@ -2222,7 +2222,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">490</span>
+    <span class="phpdocumentor-element-found-in__line">495</span>
 
     </aside>
 
@@ -2282,7 +2282,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">504</span>
+    <span class="phpdocumentor-element-found-in__line">509</span>
 
     </aside>
 
@@ -2290,7 +2290,7 @@ matching the search, an error is thrown.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getResourcesBySqlQueryAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GeneratorPromise">GeneratorPromise</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">getResourcesBySqlQueryAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-RepoResourceGeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourceGeneratorPromise">RepoResourceGeneratorPromise</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2339,7 +2339,7 @@ matching the search, an error is thrown.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-GeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\GeneratorPromise">GeneratorPromise</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-promise-RepoResourceGeneratorPromise.html"><abbr title="\acdhOeaw\arche\lib\promise\RepoResourceGeneratorPromise">RepoResourceGeneratorPromise</abbr></a></span>
             </section>
 
 </article>
@@ -2357,7 +2357,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -2393,7 +2393,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">705</span>
+    <span class="phpdocumentor-element-found-in__line">711</span>
 
     </aside>
 
@@ -2468,7 +2468,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">376</span>
+    <span class="phpdocumentor-element-found-in__line">385</span>
 
     </aside>
 
@@ -2549,7 +2549,7 @@ and Repo::REJECT_INCLUDE (include the rejection value in the results).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">688</span>
+    <span class="phpdocumentor-element-found-in__line">694</span>
 
     </aside>
 
@@ -2599,7 +2599,7 @@ repository</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">652</span>
+    <span class="phpdocumentor-element-found-in__line">658</span>
 
     </aside>
 
@@ -2656,7 +2656,7 @@ repository</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">326</span>
+    <span class="phpdocumentor-element-found-in__line">335</span>
 
     </aside>
 
@@ -2738,7 +2738,7 @@ repository</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">337</span>
+    <span class="phpdocumentor-element-found-in__line">346</span>
 
     </aside>
 
@@ -2799,7 +2799,7 @@ repository</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -2835,13 +2835,13 @@ repository</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_extractResourcesFromGraph">
         extractResourcesFromGraph()
-        <a href="classes/acdhOeaw-arche-lib-Repo.html#method_extractResourcesFromGraph" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_extractResourcesFromGraph" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">739</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -2850,7 +2850,7 @@ parsed from a search response.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">extractResourcesFromGraph</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Graph">Graph</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$graph</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">extractResourcesFromGraph</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\quickRdf\Dataset">Dataset</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$graph</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2859,7 +2859,7 @@ parsed from a search response.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$graph</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\quickRdf\Dataset">Dataset</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>graph returned by the parseSearchResponse() method</p>
@@ -2881,7 +2881,7 @@ parsed from a search response.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&gt;</span>
             </section>
 
 </article>
@@ -2899,7 +2899,7 @@ parsed from a search response.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">716</span>
+    <span class="phpdocumentor-element-found-in__line">722</span>
 
     </aside>
 
@@ -2907,7 +2907,7 @@ parsed from a search response.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">parseSearchResponse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resp</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">parseSearchResponse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resp</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\Dataset">Dataset</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2938,7 +2938,7 @@ parsed from a search response.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\Dataset">Dataset</abbr></span>
             </section>
 
 </article>
@@ -2956,14 +2956,14 @@ parsed from a search response.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">sortMatchingResources</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, resource&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$resources</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchOrderProp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">sortMatchingResources</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$resources</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\quickRdf\NamedNode">NamedNode</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchOrderProp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2972,14 +2972,14 @@ parsed from a search response.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$resources</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, resource&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$searchOrderProp</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\quickRdf\NamedNode">NamedNode</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -3004,7 +3004,7 @@ parsed from a search response.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/Repo.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repo.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/Repo.php">Repo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">756</span>
+    <span class="phpdocumentor-element-found-in__line">730</span>
 
     </aside>
 
@@ -3215,7 +3215,7 @@ parsed from a search response.</p>
                                             <li><a href="classes/acdhOeaw-arche-lib-Repo.html#method_sendRequest">sendRequest()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-Repo.html#method_sendRequestAsync">sendRequestAsync()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_setQueryLog">setQueryLog()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-lib-Repo.html#method_extractResourcesFromGraph">extractResourcesFromGraph()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_extractResourcesFromGraph">extractResourcesFromGraph()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-Repo.html#method_parseSearchResponse">parseSearchResponse()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_sortMatchingResources">sortMatchingResources()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-Repo.html#method_withReadHeaders">withReadHeaders()</a></li>

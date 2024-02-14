@@ -159,7 +159,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -236,7 +236,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-RepoTrait.html#property_headers">$headers</a>
     <span>
-                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a>            </span>
+                        &nbsp;: object            </span>
 </dt>
 <dd>An object providing mappings of repository REST API parameters to HTTP headers used by a given repository instance.</dd>
 
@@ -296,14 +296,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_getGraphBySearchTerms">getGraphBySearchTerms()</a>
     <span>
-                                &nbsp;: <abbr title="\EasyRdf\Graph">Graph</abbr>    </span>
+                                &nbsp;: <abbr title="\quickRdf\Dataset">Dataset</abbr>    </span>
 </dt>
 <dd>Returns RDF metadata graph of the search results.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_getGraphBySqlQuery">getGraphBySqlQuery()</a>
     <span>
-                                &nbsp;: <abbr title="\EasyRdf\Graph">Graph</abbr>    </span>
+                                &nbsp;: <abbr title="\quickRdf\Dataset">Dataset</abbr>    </span>
 </dt>
 <dd>Returns RDF metadata graph of the search results.</dd>
 
@@ -349,14 +349,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_getResourcesBySearchTerms">getResourcesBySearchTerms()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceDb">RepoResourceDb</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&gt;    </span>
 </dt>
 <dd>Returns repository resources matching all provided search terms.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_getResourcesBySqlQuery">getResourcesBySqlQuery()</a>
     <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceDb">RepoResourceDb</abbr></a>&gt;    </span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&gt;    </span>
 </dt>
 <dd>Performs a search</dd>
 
@@ -370,7 +370,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_parsePdoStatement">parsePdoStatement()</a>
     <span>
-                                &nbsp;: <abbr title="\EasyRdf\Graph">Graph</abbr>    </span>
+                                &nbsp;: <abbr title="\quickRdf\Dataset">Dataset</abbr>    </span>
 </dt>
 <dd>Parses SQL query results containing resources metadata into an RDF graph.</dd>
 
@@ -386,6 +386,14 @@
                                 &nbsp;: void    </span>
 </dt>
 <dd>Sets a search queries logger</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_extractResourcesFromGraph">extractResourcesFromGraph()</a>
+    <span>
+                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&gt;    </span>
+</dt>
+<dd>Extracts collection of RepoResource objects from the EasyRdf graph being
+parsed from a search response.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_getFtsQuery">getFtsQuery()</a>
@@ -417,12 +425,6 @@ metadata graph edges.</dd>
     <a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_parseMetadataReadMode">parseMetadataReadMode()</a>
     <span>
                                 &nbsp;: array&lt;string|int, int&gt;    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_parseSearchGraph">parseSearchGraph()</a>
-    <span>
-                                &nbsp;: <abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceDb">RepoResourceDb</abbr></a>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
@@ -462,7 +464,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -472,7 +474,7 @@ metadata graph edges.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$resourceClass</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;\\acdhOeaw\\arche\\lib\\RepoResourceDb&#039;</span></code>
+     = <span class="phpdocumentor-signature__default-value">\acdhOeaw\arche\lib\RepoResourceDb::class</span></code>
 
         <section class="phpdocumentor-description"><p>To be used by external libraries extending the RepoResource class funcionality provided by this library.</p>
 </section>
@@ -498,7 +500,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -531,7 +533,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -565,7 +567,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -573,7 +575,7 @@ metadata graph edges.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a></span>
+        <span class="phpdocumentor-signature__type">object</span>
     <span class="phpdocumentor-signature__name">$headers</span>
     </code>
 
@@ -599,7 +601,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
     </aside>
 
@@ -632,7 +634,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -665,7 +667,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -698,7 +700,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -737,7 +739,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -813,7 +815,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -873,7 +875,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -909,7 +911,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">182</span>
+    <span class="phpdocumentor-element-found-in__line">183</span>
 
     </aside>
 
@@ -917,7 +919,7 @@ metadata graph edges.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getGraphBySearchTerms</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">getGraphBySearchTerms</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\Dataset">Dataset</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -944,7 +946,7 @@ metadata graph edges.</dd>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\Dataset">Dataset</abbr></span>
             </section>
 
 </article>
@@ -962,7 +964,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">198</span>
 
     </aside>
 
@@ -970,7 +972,7 @@ metadata graph edges.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getGraphBySqlQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">getGraphBySqlQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\Dataset">Dataset</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1004,7 +1006,7 @@ metadata graph edges.</dd>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\Dataset">Dataset</abbr></span>
             </section>
 
 </article>
@@ -1022,7 +1024,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -1068,7 +1070,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">370</span>
+    <span class="phpdocumentor-element-found-in__line">371</span>
 
     </aside>
 
@@ -1103,7 +1105,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 
     </aside>
 
@@ -1155,7 +1157,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">236</span>
+    <span class="phpdocumentor-element-found-in__line">237</span>
 
     </aside>
 
@@ -1229,7 +1231,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -1287,7 +1289,7 @@ metadata graph edges.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -1373,7 +1375,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -1381,7 +1383,7 @@ matching the search, an error is thrown.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getResourcesBySearchTerms</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceDb">RepoResourceDb</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getResourcesBySearchTerms</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1408,7 +1410,7 @@ matching the search, an error is thrown.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceDb">RepoResourceDb</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&gt;</span>
             </section>
 
 </article>
@@ -1426,7 +1428,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -1434,7 +1436,7 @@ matching the search, an error is thrown.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getResourcesBySqlQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceDb">RepoResourceDb</abbr></a>&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getResourcesBySqlQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parameters</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1468,7 +1470,7 @@ matching the search, an error is thrown.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceDb">RepoResourceDb</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&gt;</span>
             </section>
 
 </article>
@@ -1486,7 +1488,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -1522,7 +1524,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">546</span>
+    <span class="phpdocumentor-element-found-in__line">547</span>
 
     </aside>
 
@@ -1530,7 +1532,7 @@ matching the search, an error is thrown.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">parsePdoStatement</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">parsePdoStatement</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\PDOStatement">PDOStatement</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\Dataset">Dataset</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1550,7 +1552,7 @@ matching the search, an error is thrown.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\quickRdf\Dataset">Dataset</abbr></span>
             </section>
 
 </article>
@@ -1568,7 +1570,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">360</span>
+    <span class="phpdocumentor-element-found-in__line">361</span>
 
     </aside>
 
@@ -1620,7 +1622,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -1654,6 +1656,64 @@ matching the search, an error is thrown.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_extractResourcesFromGraph">
+        extractResourcesFromGraph()
+        <a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_extractResourcesFromGraph" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">122</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Extracts collection of RepoResource objects from the EasyRdf graph being
+parsed from a search response.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">extractResourcesFromGraph</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\quickRdf\Dataset">Dataset</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$graph</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$graph</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\quickRdf\Dataset">Dataset</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>graph returned by the parseSearchResponse() method</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>search configuration object</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getFtsQuery">
         getFtsQuery()
         <a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_getFtsQuery" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1662,7 +1722,7 @@ matching the search, an error is thrown.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">383</span>
+    <span class="phpdocumentor-element-found-in__line">384</span>
 
     </aside>
 
@@ -1709,7 +1769,7 @@ metadata graph edges.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">469</span>
+    <span class="phpdocumentor-element-found-in__line">470</span>
 
     </aside>
 
@@ -1754,7 +1814,7 @@ metadata graph edges.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">526</span>
+    <span class="phpdocumentor-element-found-in__line">527</span>
 
     </aside>
 
@@ -1799,7 +1859,7 @@ metadata graph edges.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">631</span>
+    <span class="phpdocumentor-element-found-in__line">608</span>
 
     </aside>
 
@@ -1847,7 +1907,7 @@ metadata graph edges.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">600</span>
+    <span class="phpdocumentor-element-found-in__line">577</span>
 
     </aside>
 
@@ -1891,58 +1951,6 @@ metadata graph edges.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_parseSearchGraph">
-        parseSearchGraph()
-        <a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_parseSearchGraph" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repodb.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoDb.php">RepoDb.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">580</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">parseSearchGraph</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Graph">Graph</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$graph</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceDb">RepoResourceDb</abbr></a>&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$graph</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$config</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchConfig.html"><abbr title="\acdhOeaw\arche\lib\SearchConfig">SearchConfig</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Generator">Generator</abbr>&lt;string|int, <a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceDb">RepoResourceDb</abbr></a>&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_sortMatchingResources">
         sortMatchingResources()
         <a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_sortMatchingResources" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1951,14 +1959,14 @@ metadata graph edges.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-repotrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoTrait.php">RepoTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">sortMatchingResources</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, resource&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$resources</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchOrderProp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">sortMatchingResources</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$resources</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\quickRdf\NamedNode">NamedNode</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchOrderProp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1967,14 +1975,14 @@ metadata graph edges.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$resources</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, resource&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$searchOrderProp</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\quickRdf\NamedNode">NamedNode</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2129,12 +2137,12 @@ metadata graph edges.</p>
                                             <li><a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_parsePdoStatement">parsePdoStatement()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_runQuery">runQuery()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_setQueryLog">setQueryLog()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_extractResourcesFromGraph">extractResourcesFromGraph()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_getFtsQuery">getFtsQuery()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_getOrderByQuery">getOrderByQuery()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_getPagingQuery">getPagingQuery()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_logQuery">logQuery()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_parseMetadataReadMode">parseMetadataReadMode()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-lib-RepoDb.html#method_parseSearchGraph">parseSearchGraph()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-RepoTrait.html#method_sortMatchingResources">sortMatchingResources()</a></li>
                                     </ul>
             </li>

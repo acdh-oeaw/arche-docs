@@ -156,7 +156,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/RdfClass.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-rdfclass.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/RdfClass.php">RdfClass.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -206,13 +206,13 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/acdhOeaw-arche-schemaImport-Entity.html#property_res">$res</a>
     <span>
-                        &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>            </span>
+                        &nbsp;: <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/acdhOeaw-arche-schemaImport-Entity.html#property_schema">$schema</a>
     <span>
-                        &nbsp;: object            </span>
+                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a>            </span>
 </dt>
 
     </dl>
@@ -238,8 +238,15 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-schemaImport-Entity.html#method_getId">getId()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-schemaImport-Entity.html#method_getObject">getObject()</a>
+    <span>
+                                &nbsp;: <abbr title="\rdfInterface\TermInterface">TermInterface</abbr>|null    </span>
+</dt>
+<dd>Helper for getting an object value for a property passed as a string.</dd>
 
     </dl>
 
@@ -279,7 +286,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+        <span class="phpdocumentor-signature__type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr></span>
     <span class="phpdocumentor-signature__name">$res</span>
     </code>
 
@@ -305,14 +312,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Entity.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-entity.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Entity.php">Entity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">object</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a></span>
     <span class="phpdocumentor-signature__name">$schema</span>
     </code>
 
@@ -343,14 +350,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Entity.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-entity.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Entity.php">Entity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -359,7 +366,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$res</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -391,7 +398,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/RdfClass.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-rdfclass.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/RdfClass.php">RdfClass.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
     </aside>
 
@@ -436,14 +443,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Entity.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-entity.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Entity.php">Entity.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -453,7 +460,53 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getObject">
+        getObject()
+        <a href="classes/acdhOeaw-arche-schemaImport-Entity.html#method_getObject" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Entity.php"><a href="files/arche-schema-ingest-src-acdhoeaw-arche-schemaimport-entity.html"><abbr title="arche-schema-ingest/src/acdhOeaw/arche/schemaImport/Entity.php">Entity.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Helper for getting an object value for a property passed as a string.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getObject</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$property</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>|null</span>
             </section>
 
 </article>
@@ -581,6 +634,7 @@
                                             <li><a href="classes/acdhOeaw-arche-schemaImport-Entity.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-schemaImport-RdfClass.html#method_check">check()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-schemaImport-Entity.html#method_getId">getId()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-schemaImport-Entity.html#method_getObject">getObject()</a></li>
                                     </ul>
             </li>
                     </ul>

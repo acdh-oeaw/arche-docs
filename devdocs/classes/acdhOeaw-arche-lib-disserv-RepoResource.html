@@ -245,7 +245,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_metadata">$metadata</a>
     <span>
-                        &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>|null            </span>
+                        &nbsp;: <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
@@ -264,12 +264,6 @@
     <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_repoInt">$repoInt</a>
     <span>
                         &nbsp;: <a href="classes/acdhOeaw-arche-lib-RepoInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoInterface">RepoInterface</abbr></a>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_url">$url</a>
-    <span>
-                        &nbsp;: string            </span>
 </dt>
 
     </dl>
@@ -333,14 +327,14 @@ returning the metadata.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-disserv-RepoResourceTrait.html#method_getDissServices">getDissServices()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;string, <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-Service.html"><abbr title="\acdhOeaw\arche\lib\disserv\dissemination\Service">Service</abbr></a>&gt;    </span>
 </dt>
 <dd>Returns list of dissemination services available for a resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getGraph">getGraph()</a>
     <span>
-                                &nbsp;: resource    </span>
+                                &nbsp;: <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>    </span>
 </dt>
 <dd>Returns resource metadata.</dd>
 
@@ -354,7 +348,7 @@ returning the metadata.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getMetadata">getMetadata()</a>
     <span>
-                                &nbsp;: resource    </span>
+                                &nbsp;: <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>    </span>
 </dt>
 <dd>Returns resource metadata.</dd>
 
@@ -368,7 +362,7 @@ returning the metadata.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#method_getUri">getUri()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <abbr title="\rdfInterface\TermInterface">TermInterface</abbr>    </span>
 </dt>
 <dd>Returns the repository resource URL.</dd>
 
@@ -419,7 +413,7 @@ returning the metadata.</dd>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>Replaces resource metadata with a given RDF resource graph. A reference
+<dd>Replaces resource metadata with a given RDF graph. A reference
 to the provided metadata is stored meaning future modifications of the
 $metadata object automatically affect the resource metadata.</dd>
 
@@ -508,7 +502,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -536,7 +530,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -564,7 +558,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -608,16 +602,16 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\EasyRdf\Resource">Resource</abbr>|null</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr></span>
     <span class="phpdocumentor-signature__name">$metadata</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
+    </code>
 
     
     
@@ -641,7 +635,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -674,7 +668,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -707,7 +701,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -716,39 +710,6 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-RepoInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoInterface">RepoInterface</abbr></a></span>
     <span class="phpdocumentor-signature__name">$repoInt</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_url">
-        $url
-        <a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_url" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">44</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$url</span>
     </code>
 
     
@@ -778,7 +739,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -831,7 +792,7 @@ $metadata object don&#039;t affect the resource metadata.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">244</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 
     </aside>
 
@@ -901,7 +862,7 @@ to all resources pointing to the deleted one with this RDF property</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">272</span>
+    <span class="phpdocumentor-element-found-in__line">273</span>
 
     </aside>
 
@@ -976,7 +937,7 @@ to all resources pointing to the deleted one with this RDF property</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -1044,7 +1005,7 @@ from the response will be used)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -1080,7 +1041,7 @@ from the response will be used)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -1120,7 +1081,7 @@ from the response will be used)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -1171,7 +1132,7 @@ from the response will be used)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/RepoResourceTrait.php"><a href="files/arche-lib-disserv-src-acdhoeaw-arche-lib-disserv-reporesourcetrait.html"><abbr title="arche-lib-disserv/src/acdhOeaw/arche/lib/disserv/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -1179,7 +1140,7 @@ from the response will be used)</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getDissServices</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getDissServices</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-Service.html"><abbr title="\acdhOeaw\arche\lib\disserv\dissemination\Service">Service</abbr></a>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1189,7 +1150,7 @@ from the response will be used)</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, <a href="classes/acdhOeaw-arche-lib-disserv-dissemination-Service.html"><abbr title="\acdhOeaw\arche\lib\disserv\dissemination\Service">Service</abbr></a>&gt;</span>
             </section>
 
 </article>
@@ -1207,7 +1168,7 @@ from the response will be used)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -1215,7 +1176,7 @@ from the response will be used)</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getGraph</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
+                    <span class="phpdocumentor-signature__name">getGraph</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1253,7 +1214,7 @@ automatically affects the resource metadata.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">resource</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr></span>
             </section>
 
 </article>
@@ -1271,7 +1232,7 @@ automatically affects the resource metadata.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -1307,7 +1268,7 @@ automatically affects the resource metadata.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -1315,7 +1276,7 @@ automatically affects the resource metadata.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">resource</span></code>
+                    <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1362,7 +1323,7 @@ Use the setMetadata() method to write back the changes you made.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">resource</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr></span>
             </section>
 
 </article>
@@ -1380,7 +1341,7 @@ Use the setMetadata() method to write back the changes you made.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -1416,7 +1377,7 @@ Use the setMetadata() method to write back the changes you made.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -1424,7 +1385,7 @@ Use the setMetadata() method to write back the changes you made.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getUri</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getUri</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1434,7 +1395,7 @@ Use the setMetadata() method to write back the changes you made.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr></span>
             </section>
 
 </article>
@@ -1452,7 +1413,7 @@ Use the setMetadata() method to write back the changes you made.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">168</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -1488,7 +1449,7 @@ Use the setMetadata() method to write back the changes you made.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">175</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -1537,7 +1498,7 @@ metadata.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -1568,7 +1529,7 @@ metadata.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">351</span>
+    <span class="phpdocumentor-element-found-in__line">349</span>
 
     </aside>
 
@@ -1657,7 +1618,7 @@ metadata.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">386</span>
+    <span class="phpdocumentor-element-found-in__line">384</span>
 
     </aside>
 
@@ -1745,7 +1706,7 @@ properties are included)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">405</span>
+    <span class="phpdocumentor-element-found-in__line">403</span>
 
     </aside>
 
@@ -1834,17 +1795,17 @@ properties are included)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Replaces resource metadata with a given RDF resource graph. A reference
+        <p class="phpdocumentor-summary">Replaces resource metadata with a given RDF graph. A reference
 to the provided metadata is stored meaning future modifications of the
 $metadata object automatically affect the resource metadata.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setGraph</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setGraph</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1855,8 +1816,8 @@ Use the updateMetadata() method to write them back.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$resource</span>
-                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                <span class="phpdocumentor-signature__argument__name">$metadata</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1904,7 +1865,7 @@ Use the updateMetadata() method to write them back.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesourcetrait.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResourceTrait.php">RepoResourceTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -1914,11 +1875,11 @@ $metadata object don&#039;t affect the resource metadata.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$metadata</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
-        <section class="phpdocumentor-description"><p>New metadata are not automatically written back to the repository.
+        <section class="phpdocumentor-description"><p>New metadata is not automatically written back to the repository.
 Use the <code class="prettyprint">updateMetadata()</code> method to write them back.</p>
 </section>
 
@@ -1926,7 +1887,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$metadata</span>
-                : <span class="phpdocumentor-signature__argument__return-type">resource</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1974,7 +1935,7 @@ Use the <code class="prettyprint">updateMetadata()</code> method to write them b
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
@@ -2061,7 +2022,7 @@ properties are included)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -2150,7 +2111,7 @@ properties are included)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">191</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -2240,7 +2201,7 @@ properties are included)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">210</span>
+    <span class="phpdocumentor-element-found-in__line">214</span>
 
     </aside>
 
@@ -2329,7 +2290,7 @@ properties are included)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">478</span>
+    <span class="phpdocumentor-element-found-in__line">475</span>
 
     </aside>
 
@@ -2400,7 +2361,7 @@ properties are included)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">430</span>
+    <span class="phpdocumentor-element-found-in__line">428</span>
 
     </aside>
 
@@ -2444,7 +2405,7 @@ properties are included)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-reporesource.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/RepoResource.php">RepoResource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">456</span>
+    <span class="phpdocumentor-element-found-in__line">453</span>
 
     </aside>
 
@@ -2629,7 +2590,6 @@ properties are included)</p>
                                                     <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_metaSynced">$metaSynced<a href="classes/acdhOeaw-arche-lib-disserv-RepoResource.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-RepoResource.html#property_repo">$repo<a href="classes/acdhOeaw-arche-lib-disserv-RepoResource.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_repoInt">$repoInt<a href="classes/acdhOeaw-arche-lib-disserv-RepoResource.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-lib-RepoResourceTrait.html#property_url">$url<a href="classes/acdhOeaw-arche-lib-disserv-RepoResource.html"></li>
                                             </ul>
                 </li>
             

@@ -158,7 +158,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/metaLookup/MetaLookupGraph.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metalookup-metalookupgraph.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/metaLookup/MetaLookupGraph.php">MetaLookupGraph.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -222,14 +222,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupGraph.html#property_graph">$graph</a>
     <span>
-                        &nbsp;: <abbr title="\EasyRdf\Graph">Graph</abbr>            </span>
+                        &nbsp;: <abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr>            </span>
 </dt>
 <dd>Graph with all metadata</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupGraph.html#property_idProp">$idProp</a>
     <span>
-                        &nbsp;: string            </span>
+                        &nbsp;: <abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>            </span>
 </dt>
 
     </dl>
@@ -245,12 +245,12 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>Creates a MetaLookupGraph from a given EasyRdf\Graph</dd>
+<dd>Creates a MetaLookupGraph from a given dataset</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-ingest-metaLookup-MetaLookupGraph.html#method_getMetadata">getMetadata()</a>
     <span>
-                                &nbsp;: <abbr title="\EasyRdf\Resource">Resource</abbr>    </span>
+                                &nbsp;: <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>    </span>
 </dt>
 <dd>Searches for metadata of a given file.</dd>
 
@@ -285,7 +285,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/metaLookup/MetaLookupGraph.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metalookup-metalookupgraph.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/metaLookup/MetaLookupGraph.php">MetaLookupGraph.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -319,7 +319,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/metaLookup/MetaLookupGraph.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metalookup-metalookupgraph.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/metaLookup/MetaLookupGraph.php">MetaLookupGraph.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -327,7 +327,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+        <span class="phpdocumentor-signature__type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr></span>
     <span class="phpdocumentor-signature__name">$graph</span>
     </code>
 
@@ -360,7 +360,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr></span>
     <span class="phpdocumentor-signature__name">$idProp</span>
     </code>
 
@@ -391,15 +391,15 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/metaLookup/MetaLookupGraph.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metalookup-metalookupgraph.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/metaLookup/MetaLookupGraph.php">MetaLookupGraph.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Creates a MetaLookupGraph from a given EasyRdf\Graph</p>
+        <p class="phpdocumentor-summary">Creates a MetaLookupGraph from a given dataset</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Graph">Graph</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$graph</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$graph</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idProp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -408,16 +408,14 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$graph</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\EasyRdf\Graph">Graph</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>metadata graph</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$idProp</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -442,7 +440,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/metaLookup/MetaLookupGraph.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-metalookup-metalookupgraph.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/metaLookup/MetaLookupGraph.php">MetaLookupGraph.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -450,7 +448,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifiers</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$require</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">getMetadata</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string|<abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifiers</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$require</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -469,7 +467,7 @@ the interface, it is not used)</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$identifiers</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string|<abbr title="\rdfInterface\NamedNodeInterface">NamedNodeInterface</abbr>&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>file's identifiers (URIs)</p>
@@ -507,7 +505,7 @@ the interface, it is not used)</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\EasyRdf\Resource">Resource</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr></span>
                     &mdash;
                 <section class="phpdocumentor-description"><p>fetched metadata</p>
 </section>
