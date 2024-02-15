@@ -126,6 +126,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#property_meta"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003A\u0024node",
+            "name": "node",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#property_node"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003A\u0024lang",
             "name": "lang",
             "summary": "",
