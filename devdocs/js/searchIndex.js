@@ -8676,6 +8676,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method___construct"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003AgetSmartSearch\u0028\u0029",
+            "name": "getSmartSearch",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_getSmartSearch"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003AgetResourceByIds\u0028\u0029",
             "name": "getResourceByIds",
             "summary": "Tries\u0020to\u0020find\u0020a\u0020single\u0020repository\u0020resource\u0020matching\u0020provided\u0020identifiers.",
