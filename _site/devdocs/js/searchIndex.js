@@ -9681,6 +9681,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_setNamedEntityWeights"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AsetFallbackOrderBy\u0028\u0029",
+            "name": "setFallbackOrderBy",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_setFallbackOrderBy"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AsetQueryLog\u0028\u0029",
             "name": "setQueryLog",
             "summary": "",
@@ -9795,6 +9800,16 @@ Search.appendIndex(
             "name": "phrase",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_phrase"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024orderProperty",
+            "name": "orderProperty",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_orderProperty"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024orderPropertyAsc",
+            "name": "orderPropertyAsc",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_orderPropertyAsc"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024orderExp",
             "name": "orderExp",
