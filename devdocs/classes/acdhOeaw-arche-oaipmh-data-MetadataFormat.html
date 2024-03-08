@@ -135,6 +135,9 @@
         <h2 class="phpdocumentor-content__title">
     MetadataFormat
 
+        <span class="phpdocumentor-element__extends">
+        extends <abbr title="\stdClass">stdClass</abbr>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -203,52 +206,32 @@ protocol and by this implementation).</p>
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_acdhNmsp">$acdhNmsp</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_class">$class</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: string            </span>
 </dt>
+<dd>Class implementing a given metadata format</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_cmdiSchemaProp">$cmdiSchemaProp</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: string            </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_defaultLang">$defaultLang</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_eqProp">$eqProp</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_idNmsp">$idNmsp</a>
-    <span>
-                        &nbsp;: array&lt;string, string&gt;            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_idProp">$idProp</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
+<dd>Used by: CmdiMetadata</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_info">$info</a>
     <span>
                         &nbsp;: <a href="classes/acdhOeaw-arche-oaipmh-data-RepositoryInfo.html"><abbr title="\acdhOeaw\arche\oaipmh\data\RepositoryInfo">RepositoryInfo</abbr></a>            </span>
 </dt>
+<dd>Set by core</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_keepComments">$keepComments</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+<dd>Used by: TemplateMetadata</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_metadataNamespace">$metadataNamespace</a>
@@ -267,32 +250,23 @@ protocol and by this implementation).</p>
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_metaResProp">$metaResProp</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: string            </span>
 </dt>
+<dd>Used by: ResMetadata, CmdiMetadata</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_mode">$mode</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_propNmsp">$propNmsp</a>
+    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_rdfNamespaces">$rdfNamespaces</a>
     <span>
                         &nbsp;: array&lt;string, string&gt;            </span>
 </dt>
+<dd>Used by: TemplateMetadata</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_requestOptions">$requestOptions</a>
     <span>
-                        &nbsp;: array&lt;string, string&gt;            </span>
+                        &nbsp;: array&lt;string, mixed&gt;            </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_resolverNmsp">$resolverNmsp</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
+<dd>Used by: ResMetadata, CmdiMetadata</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_schema">$schema</a>
@@ -302,40 +276,18 @@ protocol and by this implementation).</p>
 <dd>OAI-PMH metadata schema</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_schemaDefault">$schemaDefault</a>
+    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_templatePath">$templatePath</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: string            </span>
 </dt>
+<dd>Used by: TemplateMetadata</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_schemaProp">$schemaProp</a>
+    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_xmlErrors">$xmlErrors</a>
     <span>
-                        &nbsp;: string|null            </span>
+                        &nbsp;: bool            </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_templateDir">$templateDir</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_titleProp">$titleProp</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_uriProp">$uriProp</a>
-    <span>
-                        &nbsp;: string|null            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_valueMaps">$valueMaps</a>
-    <span>
-                        &nbsp;: array&lt;string, string&gt;            </span>
-</dt>
+<dd>Used by: TemplateMetadata</dd>
 
     </dl>
 
@@ -373,39 +325,6 @@ protocol and by this implementation).</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_acdhNmsp">
-        $acdhNmsp
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_acdhNmsp" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">146</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$acdhNmsp</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="property_class">
         $class
         <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_class" class="headerlink"><i class="fas fa-link"></i></a>
@@ -416,18 +335,21 @@ protocol and by this implementation).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Class implementing a given metadata format</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$class</span>
     </code>
 
-    
+        <section class="phpdocumentor-description"><p>Required by: core</p>
+</section>
+
     
     
 
@@ -449,147 +371,16 @@ protocol and by this implementation).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Used by: CmdiMetadata</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$cmdiSchemaProp</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_defaultLang">
-        $defaultLang
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_defaultLang" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">164</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$defaultLang</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_eqProp">
-        $eqProp
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_eqProp" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">104</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$eqProp</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_idNmsp">
-        $idNmsp
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_idNmsp" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">134</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
-    <span class="phpdocumentor-signature__name">$idNmsp</span>
-     = <span class="phpdocumentor-signature__default-value">[]</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_idProp">
-        $idProp
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_idProp" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">140</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$idProp</span>
     </code>
 
     
@@ -614,15 +405,50 @@ protocol and by this implementation).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Set by core</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-oaipmh-data-RepositoryInfo.html"><abbr title="\acdhOeaw\arche\oaipmh\data\RepositoryInfo">RepositoryInfo</abbr></a></span>
     <span class="phpdocumentor-signature__name">$info</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_keepComments">
+        $keepComments
+        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_keepComments" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">101</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Used by: TemplateMetadata</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$keepComments</span>
     </code>
 
     
@@ -647,7 +473,7 @@ protocol and by this implementation).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -659,7 +485,9 @@ protocol and by this implementation).</p>
     <span class="phpdocumentor-signature__name">$metadataNamespace</span>
     </code>
 
-    
+        <section class="phpdocumentor-description"><p>Required by: core</p>
+</section>
+
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -696,7 +524,7 @@ protocol and by this implementation).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -708,7 +536,9 @@ protocol and by this implementation).</p>
     <span class="phpdocumentor-signature__name">$metadataPrefix</span>
     </code>
 
-    
+        <section class="phpdocumentor-description"><p>Required by: core</p>
+</section>
+
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -745,14 +575,15 @@ protocol and by this implementation).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Used by: ResMetadata, CmdiMetadata</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$metaResProp</span>
     </code>
 
@@ -768,9 +599,9 @@ protocol and by this implementation).</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_mode">
-        $mode
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_mode" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_rdfNamespaces">
+        $rdfNamespaces
+        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_rdfNamespaces" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
@@ -778,48 +609,16 @@ protocol and by this implementation).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$mode</span>
-    </code>
+        <p class="phpdocumentor-summary">Used by: TemplateMetadata</p>
 
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_propNmsp">
-        $propNmsp
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_propNmsp" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">68</span>
-
-    </aside>
-
-    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
-    <span class="phpdocumentor-signature__name">$propNmsp</span>
+    <span class="phpdocumentor-signature__name">$rdfNamespaces</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
@@ -844,49 +643,17 @@ protocol and by this implementation).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Used by: ResMetadata, CmdiMetadata</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$requestOptions</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_resolverNmsp">
-        $resolverNmsp
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_resolverNmsp" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">152</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$resolverNmsp</span>
-    </code>
 
     
     
@@ -910,7 +677,7 @@ protocol and by this implementation).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -922,7 +689,9 @@ protocol and by this implementation).</p>
     <span class="phpdocumentor-signature__name">$schema</span>
     </code>
 
-    
+        <section class="phpdocumentor-description"><p>Required by: core, CmdiMetadata</p>
+</section>
+
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -949,9 +718,9 @@ protocol and by this implementation).</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_schemaDefault">
-        $schemaDefault
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_schemaDefault" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_templatePath">
+        $templatePath
+        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_templatePath" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
@@ -959,15 +728,16 @@ protocol and by this implementation).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Used by: TemplateMetadata</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$schemaDefault</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$templatePath</span>
     </code>
 
     
@@ -982,9 +752,9 @@ protocol and by this implementation).</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_schemaProp">
-        $schemaProp
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_schemaProp" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_xmlErrors">
+        $xmlErrors
+        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_xmlErrors" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
@@ -992,147 +762,16 @@ protocol and by this implementation).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Used by: TemplateMetadata</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$schemaProp</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_templateDir">
-        $templateDir
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_templateDir" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">122</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$templateDir</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_titleProp">
-        $titleProp
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_titleProp" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">98</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$titleProp</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_uriProp">
-        $uriProp
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_uriProp" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">80</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string|null</span>
-    <span class="phpdocumentor-signature__name">$uriProp</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_valueMaps">
-        $valueMaps
-        <a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_valueMaps" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">170</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
-    <span class="phpdocumentor-signature__name">$valueMaps</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$xmlErrors</span>
     </code>
 
     
@@ -1162,7 +801,7 @@ protocol and by this implementation).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-data-metadataformat.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/data/MetadataFormat.php">MetadataFormat.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -1305,28 +944,18 @@ protocol and by this implementation).</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_acdhNmsp">$acdhNmsp<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_class">$class<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_cmdiSchemaProp">$cmdiSchemaProp<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_defaultLang">$defaultLang<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_eqProp">$eqProp<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_idNmsp">$idNmsp<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_idProp">$idProp<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_info">$info<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_keepComments">$keepComments<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_metadataNamespace">$metadataNamespace<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_metadataPrefix">$metadataPrefix<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_metaResProp">$metaResProp<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_mode">$mode<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_propNmsp">$propNmsp<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_rdfNamespaces">$rdfNamespaces<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_requestOptions">$requestOptions<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_resolverNmsp">$resolverNmsp<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_schema">$schema<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_schemaDefault">$schemaDefault<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_schemaProp">$schemaProp<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_templateDir">$templateDir<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_titleProp">$titleProp<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_uriProp">$uriProp<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_valueMaps">$valueMaps<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_templatePath">$templatePath<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_xmlErrors">$xmlErrors<a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"></li>
                                             </ul>
                 </li>
             

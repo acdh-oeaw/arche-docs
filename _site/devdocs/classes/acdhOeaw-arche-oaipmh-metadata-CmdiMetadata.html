@@ -261,7 +261,7 @@ to be used while fetching the metadata resource</li>
     <span>
                                 &nbsp;: <abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr>    </span>
 </dt>
-<dd>Returns a SPARQL search query part:
+<dd>Returns a search query part:
 - fetching additional data required by the `__construct()` method (implemented in parent class)
 - assuring that the linked CMDI resource has the right schema</dd>
 
@@ -303,7 +303,7 @@ to be used while fetching the metadata resource</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/ResMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-resmetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/ResMetadata.php">ResMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -336,7 +336,7 @@ to be used while fetching the metadata resource</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/ResMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-resmetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/ResMetadata.php">ResMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -375,7 +375,7 @@ to be used while fetching the metadata resource</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/ResMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-resmetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/ResMetadata.php">ResMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -383,7 +383,7 @@ to be used while fetching the metadata resource</li>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceDb">RepoResourceDb</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchResultRow</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"><abbr title="\acdhOeaw\arche\oaipmh\data\MetadataFormat">MetadataFormat</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-RepoResourceDb.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceDb">RepoResourceDb</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-data-HeaderData.html"><abbr title="\acdhOeaw\arche\oaipmh\data\HeaderData">HeaderData</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchResultRow</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html"><abbr title="\acdhOeaw\arche\oaipmh\data\MetadataFormat">MetadataFormat</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -402,10 +402,10 @@ resource object</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$searchResultRow</span>
-                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-oaipmh-data-HeaderData.html"><abbr title="\acdhOeaw\arche\oaipmh\data\HeaderData">HeaderData</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>SPARQL search query result row</p>
+                    <section class="phpdocumentor-description"><p>search query result row</p>
 </section>
 
             </dd>
@@ -491,7 +491,7 @@ describing this resource</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Returns a SPARQL search query part:
+        <p class="phpdocumentor-summary">Returns a search query part:
 - fetching additional data required by the `__construct()` method (implemented in parent class)
 - assuring that the linked CMDI resource has the right schema</p>
 
@@ -552,7 +552,7 @@ describing this resource</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/ResMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-resmetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/ResMetadata.php">ResMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
