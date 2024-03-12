@@ -9656,11 +9656,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_setRangeFacets"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AsetDateFacetsFormat\u0028\u0029",
-            "name": "setDateFacetsFormat",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_setDateFacetsFormat"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AsetExactWeight\u0028\u0029",
             "name": "setExactWeight",
             "summary": "",
@@ -9810,16 +9805,6 @@ Search.appendIndex(
             "name": "orderPropertyAsc",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_orderPropertyAsc"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024orderExp",
-            "name": "orderExp",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_orderExp"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024dateFacetsFormat",
-            "name": "dateFacetsFormat",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_dateFacetsFormat"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024queryLog",
             "name": "queryLog",
