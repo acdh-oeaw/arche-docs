@@ -9756,11 +9756,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_rangeFacets"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024facetsDefaultWeight",
-            "name": "facetsDefaultWeight",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_facetsDefaultWeight"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024exactWeight",
             "name": "exactWeight",
             "summary": "",
