@@ -9706,6 +9706,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_closeSearch"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AgetInitialFacets\u0028\u0029",
+            "name": "getInitialFacets",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacets"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AgetWeightsWith\u0028\u0029",
             "name": "getWeightsWith",
             "summary": "",
@@ -11576,6 +11581,11 @@ Search.appendIndex(
             "summary": "A\u0020container\u0020for\u0020an\u0020RDF\u0020property\u0020description",
             "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#method___construct"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003AsetOntology\u0028\u0029",
             "name": "setOntology",
             "summary": "",
@@ -11663,7 +11673,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003A\u0024langTag",
             "name": "langTag",
-            "summary": "acdh\u003AlangTag\u0020annotation\u0020property\u0020value",
+            "summary": "is\u0020property\u0020range\u0020http\u003A\/\/www.w3.org\/1999\/02\/22\u002Drdf\u002Dsyntax\u002Dns\u0023langString",
             "url": "classes/acdhOeaw-arche-lib-schema-PropertyDesc.html#property_langTag"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc\u003A\u003A\u0024ordering",
