@@ -12701,6 +12701,11 @@ Search.appendIndex(
             "summary": "Used\u0020by\u003A\u0020TemplateMetadata",
             "url": "classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_rdfNamespaces"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\MetadataFormat\u003A\u003A\u0024valueMaps",
+            "name": "valueMaps",
+            "summary": "Used\u0020by\u003A\u0020TemplateMetadata",
+            "url": "classes/acdhOeaw-arche-oaipmh-data-MetadataFormat.html#property_valueMaps"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\data\\RepositoryInfo",
             "name": "RepositoryInfo",
             "summary": "Container\u0020for\u0020OAI\u002DPMH\u0020repository\u0020information",
