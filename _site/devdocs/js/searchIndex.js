@@ -13161,6 +13161,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#property_valueMapper"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\TemplateMetadata\u003A\u003A\u0024loadedInverse",
+            "name": "loadedInverse",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#property_loadedInverse"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\TemplateMetadata\u003A\u003A\u0024res",
             "name": "res",
             "summary": "Repository\u0020resource\u0020object",
