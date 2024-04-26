@@ -14916,6 +14916,11 @@ Search.appendIndex(
             "summary": "Description\u0020of\u0020NoSuchFile",
             "url": "classes/acdhOeaw-arche-thumbnails-NoSuchFileException.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\NoThumbnailException",
+            "name": "NoThumbnailException",
+            "summary": "Description\u0020of\u0020NoThumbnailException",
+            "url": "classes/acdhOeaw-arche-thumbnails-NoThumbnailException.html"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource",
             "name": "Resource",
             "summary": "Description\u0020of\u0020Resource",
