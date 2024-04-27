@@ -191,6 +191,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Auth.html#property_isAdmin"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Auth\u003A\u003A\u0024isPublic",
+            "name": "isPublic",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Auth.html#property_isPublic"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Auth\u003A\u003AdenyAccess\u0028\u0029",
             "name": "denyAccess",
             "summary": "",
@@ -205,6 +210,11 @@ Search.appendIndex(
             "name": "DEFAULT_DENY",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Auth.html#constant_DEFAULT_DENY"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Auth\u003A\u003ADICT_ADVERTISE",
+            "name": "DICT_ADVERTISE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Auth.html#constant_DICT_ADVERTISE"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Auth\u003A\u003A\u0024controller",
             "name": "controller",
