@@ -201,7 +201,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_ANY">FACET_ANY</a>
     <span>
-        &nbsp;= [self::FACET_MATCH, self::FACET_LINK, self::FACET_LITERAL, self::FACET_OBJECT, self::FACET_CONTINUOUS]                            </span>
+        &nbsp;= [self::FACET_MATCH, self::FACET_LINK, self::FACET_LITERAL, self::FACET_OBJECT, self::FACET_CONTINUOUS, self::FACET_MAP]                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
@@ -229,6 +229,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_MAP">FACET_MAP</a>
+    <span>
+        &nbsp;= &#039;map&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_MATCH">FACET_MATCH</a>
     <span>
         &nbsp;= &#039;matchProperty&#039;                            </span>
@@ -241,9 +247,21 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TEMPTABNAME">TEMPTABNAME</a>
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_FILTERS">TAB_FILTERS</a>
+    <span>
+        &nbsp;= &quot;_filters&quot;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_MATCHES">TAB_MATCHES</a>
     <span>
         &nbsp;= &quot;_matches&quot;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_SEARCH">TAB_SEARCH</a>
+    <span>
+        &nbsp;= &quot;_search&quot;                            </span>
 </dt>
 
     </dl>
@@ -315,6 +333,12 @@
                         &nbsp;: <a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a>            </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_spatialTerm">$spatialTerm</a>
+    <span>
+                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>            </span>
+</dt>
+
     </dl>
 
 <h4 id="toc-methods">
@@ -384,9 +408,57 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_addFacetMatches">addFacetMatches()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_combineSearchQueries">combineSearchQueries()</a>
+    <span>
+                                &nbsp;: <abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_createFiltersTable">createFiltersTable()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getFiltersQuery">getFiltersQuery()</a>
+    <span>
+                                &nbsp;: <abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getFtsQuery">getFtsQuery()</a>
+    <span>
+                                &nbsp;: <abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacetContinues">getInitialFacetContinues()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacetDiscrete">getInitialFacetDiscrete()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacetMap">getInitialFacetMap()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getSpatialQuery">getSpatialQuery()</a>
+    <span>
+                                &nbsp;: <abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
@@ -398,7 +470,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_linkNamedEntities">linkNamedEntities()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: <abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
@@ -429,7 +501,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -438,7 +510,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">FACET_ANY</span>
-    = <span class="phpdocumentor-signature__default-value">[self::FACET_MATCH, self::FACET_LINK, self::FACET_LITERAL, self::FACET_OBJECT, self::FACET_CONTINUOUS]</span>
+    = <span class="phpdocumentor-signature__default-value">[self::FACET_MATCH, self::FACET_LINK, self::FACET_LITERAL, self::FACET_OBJECT, self::FACET_CONTINUOUS, self::FACET_MAP]</span>
 </code>
 
 
@@ -457,7 +529,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -485,7 +557,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -513,7 +585,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -541,7 +613,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -560,6 +632,34 @@
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_FACET_MAP">
+        FACET_MAP
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_MAP" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">FACET_MAP</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;map&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_FACET_MATCH">
         FACET_MATCH
         <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_MATCH" class="headerlink"><i class="fas fa-link"></i></a>
@@ -569,7 +669,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -597,7 +697,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -616,9 +716,37 @@
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_TEMPTABNAME">
-        TEMPTABNAME
-        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TEMPTABNAME" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="constant_TAB_FILTERS">
+        TAB_FILTERS
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_FILTERS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TAB_FILTERS</span>
+    = <span class="phpdocumentor-signature__default-value">&quot;_filters&quot;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TAB_MATCHES">
+        TAB_MATCHES
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_MATCHES" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
 
@@ -633,8 +761,36 @@
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">TEMPTABNAME</span>
+    <span class="phpdocumentor-signature__name">TAB_MATCHES</span>
     = <span class="phpdocumentor-signature__default-value">&quot;_matches&quot;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TAB_SEARCH">
+        TAB_SEARCH
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_SEARCH" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TAB_SEARCH</span>
+    = <span class="phpdocumentor-signature__default-value">&quot;_search&quot;</span>
 </code>
 
 
@@ -669,7 +825,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -702,7 +858,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -735,7 +891,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -768,7 +924,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -801,7 +957,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -834,7 +990,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -867,7 +1023,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -900,7 +1056,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -933,7 +1089,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -966,7 +1122,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -975,6 +1131,39 @@
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a></span>
     <span class="phpdocumentor-signature__name">$schema</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_spatialTerm">
+        $spatialTerm
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_spatialTerm" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$spatialTerm</span>
     </code>
 
     
@@ -1004,7 +1193,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -1059,7 +1248,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">807</span>
+    <span class="phpdocumentor-element-found-in__line">569</span>
 
     </aside>
 
@@ -1090,7 +1279,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">811</span>
+    <span class="phpdocumentor-element-found-in__line">573</span>
 
     </aside>
 
@@ -1149,7 +1338,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">621</span>
+    <span class="phpdocumentor-element-found-in__line">345</span>
 
     </aside>
 
@@ -1194,7 +1383,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">501</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 
     </aside>
 
@@ -1260,7 +1449,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -1350,7 +1539,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -1395,7 +1584,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -1447,7 +1636,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -1492,7 +1681,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">133</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -1529,6 +1718,304 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_addFacetMatches">
+        addFacetMatches()
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_addFacetMatches" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">959</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">addFacetMatches</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$query</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_combineSearchQueries">
+        combineSearchQueries()
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_combineSearchQueries" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">866</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">combineSearchQueries</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$queries</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filteredSearch</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$outName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$queries</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$filteredSearch</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$outName</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createFiltersTable">
+        createFiltersTable()
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_createFiltersTable" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">740</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">createFiltersTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchTerms</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentIds</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$searchTerms</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentIds</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, int&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getFiltersQuery">
+        getFiltersQuery()
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getFiltersQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">851</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getFiltersQuery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getFtsQuery">
+        getFtsQuery()
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getFtsQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">773</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getFtsQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$phrase</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowedProperties</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inBinary</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$phrase</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$allowedProperties</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$inBinary</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getInitialFacetContinues">
+        getInitialFacetContinues()
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacetContinues" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">689</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getInitialFacetContinues</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$facet</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$facet</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getInitialFacetDiscrete">
         getInitialFacetDiscrete()
         <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacetDiscrete" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1537,7 +2024,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">844</span>
+    <span class="phpdocumentor-element-found-in__line">615</span>
 
     </aside>
 
@@ -1581,6 +2068,93 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getInitialFacetMap">
+        getInitialFacetMap()
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacetMap" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">681</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getInitialFacetMap</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getSpatialQuery">
+        getSpatialQuery()
+        <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getSpatialQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">819</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getSpatialQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$term</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowedProperties</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$term</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-SearchTerm.html"><abbr title="\acdhOeaw\arche\lib\SearchTerm">SearchTerm</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$allowedProperties</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getWeightsWith">
         getWeightsWith()
         <a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getWeightsWith" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1589,7 +2163,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">917</span>
+    <span class="phpdocumentor-element-found-in__line">710</span>
 
     </aside>
 
@@ -1648,24 +2222,41 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">932</span>
+    <span class="phpdocumentor-element-found-in__line">907</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">linkNamedEntities</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">linkNamedEntities</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$outName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$query</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$outName</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr></span>
             </section>
 
 </article>
@@ -1683,7 +2274,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php"><a href="files/arche-lib-src-acdhoeaw-arche-lib-smartsearch.html"><abbr title="arche-lib/src/acdhOeaw/arche/lib/SmartSearch.php">SmartSearch.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">936</span>
+    <span class="phpdocumentor-element-found-in__line">725</span>
 
     </aside>
 
@@ -1839,9 +2430,12 @@
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_DISCRETE">FACET_DISCRETE</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_LINK">FACET_LINK</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_LITERAL">FACET_LITERAL</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_MAP">FACET_MAP</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_MATCH">FACET_MATCH</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_OBJECT">FACET_OBJECT</a></li>
-                                                    <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TEMPTABNAME">TEMPTABNAME</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_FILTERS">TAB_FILTERS</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_MATCHES">TAB_MATCHES</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_SEARCH">TAB_SEARCH</a></li>
                                             </ul>
                 </li>
             
@@ -1858,6 +2452,7 @@
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_queryLog">$queryLog<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_repo">$repo<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_schema">$schema<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#property_spatialTerm">$spatialTerm<a href="classes/acdhOeaw-arche-lib-SmartSearch.html"></li>
                                             </ul>
                 </li>
             
@@ -1874,7 +2469,15 @@
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setFacets">setFacets()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setLangWeight">setLangWeight()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_setQueryLog">setQueryLog()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_addFacetMatches">addFacetMatches()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_combineSearchQueries">combineSearchQueries()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_createFiltersTable">createFiltersTable()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getFiltersQuery">getFiltersQuery()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getFtsQuery">getFtsQuery()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacetContinues">getInitialFacetContinues()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacetDiscrete">getInitialFacetDiscrete()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacetMap">getInitialFacetMap()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getSpatialQuery">getSpatialQuery()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_getWeightsWith">getWeightsWith()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_linkNamedEntities">linkNamedEntities()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-SmartSearch.html#method_postprocessFacets">postprocessFacets()</a></li>

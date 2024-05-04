@@ -9701,25 +9701,75 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacetDiscrete"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AgetInitialFacetMap\u0028\u0029",
+            "name": "getInitialFacetMap",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacetMap"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AgetInitialFacetContinues\u0028\u0029",
+            "name": "getInitialFacetContinues",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_getInitialFacetContinues"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AgetWeightsWith\u0028\u0029",
             "name": "getWeightsWith",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_getWeightsWith"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AlinkNamedEntities\u0028\u0029",
-            "name": "linkNamedEntities",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_linkNamedEntities"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003ApostprocessFacets\u0028\u0029",
             "name": "postprocessFacets",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_postprocessFacets"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003ATEMPTABNAME",
-            "name": "TEMPTABNAME",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AcreateFiltersTable\u0028\u0029",
+            "name": "createFiltersTable",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TEMPTABNAME"
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_createFiltersTable"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AgetFtsQuery\u0028\u0029",
+            "name": "getFtsQuery",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_getFtsQuery"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AgetSpatialQuery\u0028\u0029",
+            "name": "getSpatialQuery",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_getSpatialQuery"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AgetFiltersQuery\u0028\u0029",
+            "name": "getFiltersQuery",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_getFiltersQuery"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AcombineSearchQueries\u0028\u0029",
+            "name": "combineSearchQueries",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_combineSearchQueries"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AlinkNamedEntities\u0028\u0029",
+            "name": "linkNamedEntities",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_linkNamedEntities"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AaddFacetMatches\u0028\u0029",
+            "name": "addFacetMatches",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#method_addFacetMatches"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003ATAB_MATCHES",
+            "name": "TAB_MATCHES",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_MATCHES"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003ATAB_FILTERS",
+            "name": "TAB_FILTERS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_FILTERS"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003ATAB_SEARCH",
+            "name": "TAB_SEARCH",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_SEARCH"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AFACET_MATCH",
             "name": "FACET_MATCH",
@@ -9745,6 +9795,11 @@ Search.appendIndex(
             "name": "FACET_CONTINUOUS",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_CONTINUOUS"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AFACET_MAP",
+            "name": "FACET_MAP",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#constant_FACET_MAP"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AFACET_DISCRETE",
             "name": "FACET_DISCRETE",
@@ -9800,6 +9855,11 @@ Search.appendIndex(
             "name": "phrase",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_phrase"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024spatialTerm",
+            "name": "spatialTerm",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#property_spatialTerm"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003A\u0024queryLog",
             "name": "queryLog",
