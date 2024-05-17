@@ -321,6 +321,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method_updateSpatialSearch"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003AreadImageDimensions\u0028\u0029",
+            "name": "readImageDimensions",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method_readImageDimensions"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003AtoBytes\u0028\u0029",
             "name": "toBytes",
             "summary": "",
@@ -340,6 +345,16 @@ Search.appendIndex(
             "name": "size",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#property_size"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003A\u0024imagePxHeight",
+            "name": "imagePxHeight",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#property_imagePxHeight"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003A\u0024imagePxWidth",
+            "name": "imagePxWidth",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#property_imagePxWidth"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003A\u0024tmpPath",
             "name": "tmpPath",
@@ -1655,6 +1670,16 @@ Search.appendIndex(
             "name": "searchCount",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-util-Schema.html#property_searchCount"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\Schema\u003A\u003A\u0024imagePxWidth",
+            "name": "imagePxWidth",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-Schema.html#property_imagePxWidth"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\Schema\u003A\u003A\u0024imagePxHeight",
+            "name": "imagePxHeight",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-Schema.html#property_imagePxHeight"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\util\\Spatial",
             "name": "Spatial",
