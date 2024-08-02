@@ -2636,25 +2636,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre01MaintainDefaultValues"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre02MaintainWkt\u0028\u0029",
-            "name": "pre02MaintainWkt",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre02MaintainOpenAire\u0028\u0029",
+            "name": "pre02MaintainOpenAire",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre02MaintainWkt"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre02MaintainOpenAire"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre03MaintainAccessRights\u0028\u0029",
-            "name": "pre03MaintainAccessRights",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre03MaintainWkt\u0028\u0029",
+            "name": "pre03MaintainWkt",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre03MaintainWkt"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre04MaintainAccessRights\u0028\u0029",
+            "name": "pre04MaintainAccessRights",
             "summary": "Access\u0020rights\u0020should\u0020be\u0020maintained\u0020according\u0020to\u0020the\n\u0060cfg.schema.accessRestriction\u0060\u0020value\u003A",
-            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre03MaintainAccessRights"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre04MaintainAccessRights"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre04MaintainPropertyRange\u0028\u0029",
-            "name": "pre04MaintainPropertyRange",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre05MaintainPropertyRange\u0028\u0029",
+            "name": "pre05MaintainPropertyRange",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre04MaintainPropertyRange"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre05MaintainPropertyRange"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre05NormalizeIds\u0028\u0029",
-            "name": "pre05NormalizeIds",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre06NormalizeIds\u0028\u0029",
+            "name": "pre06NormalizeIds",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre05NormalizeIds"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre06NormalizeIds"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Acheck01TitleProp\u0028\u0029",
             "name": "check01TitleProp",
@@ -2740,6 +2745,11 @@ Search.appendIndex(
             "name": "LITERAL_TYPES",
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#constant_LITERAL_TYPES"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003AOPENAIRE_OAIPMH_SET",
+            "name": "OPENAIRE_OAIPMH_SET",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#constant_OPENAIRE_OAIPMH_SET"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003A\u0024uriNorm",
             "name": "uriNorm",
