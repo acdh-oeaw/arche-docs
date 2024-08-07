@@ -228,6 +228,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#property_parentIds">$parentIds</a>
+    <span>
+                        &nbsp;: array&lt;string|int, int&gt;            </span>
+</dt>
+<dd>Stores ids of all pre-transaction parents of resources affected by the current transaction</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#property_pdo">$pdo</a>
     <span>
                         &nbsp;: <abbr title="\PDO">PDO</abbr>            </span>
@@ -266,6 +273,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_checkEmptyCollections">checkEmptyCollections()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_checkIsNewVersionOf">checkIsNewVersionOf()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -290,6 +303,13 @@ isNewVersionOf links to a resource is forbidden.</dd>
     <span>
                                 &nbsp;: void    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_fetchParentIds">fetchParentIds()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, int&gt;    </span>
+</dt>
+<dd>Returns ids of all pre-transaction parents of resources affected by the current transaction</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_updateCollectionAggregates">updateCollectionAggregates()</a>
@@ -369,7 +389,7 @@ isNewVersionOf links to a resource is forbidden.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -402,7 +422,7 @@ isNewVersionOf links to a resource is forbidden.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -411,6 +431,40 @@ isNewVersionOf links to a resource is forbidden.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-schema-Ontology.html"><abbr title="\acdhOeaw\arche\lib\schema\Ontology">Ontology</abbr></a></span>
     <span class="phpdocumentor-signature__name">$ontology</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_parentIds">
+        $parentIds
+        <a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#property_parentIds" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Stores ids of all pre-transaction parents of resources affected by the current transaction</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, int&gt;</span>
+    <span class="phpdocumentor-signature__name">$parentIds</span>
     </code>
 
     
@@ -435,7 +489,7 @@ isNewVersionOf links to a resource is forbidden.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -468,7 +522,7 @@ isNewVersionOf links to a resource is forbidden.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -501,7 +555,7 @@ isNewVersionOf links to a resource is forbidden.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -539,7 +593,7 @@ isNewVersionOf links to a resource is forbidden.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -608,7 +662,7 @@ isNewVersionOf links to a resource is forbidden.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -646,6 +700,52 @@ isNewVersionOf links to a resource is forbidden.</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_checkEmptyCollections">
+        checkEmptyCollections()
+        <a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_checkEmptyCollections" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">217</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">checkEmptyCollections</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_checkEmptyCollections#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-doorkeeper-DoorkeeperException.html"><abbr title="\acdhOeaw\arche\doorkeeper\DoorkeeperException">DoorkeeperException</abbr></a></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_checkIsNewVersionOf">
         checkIsNewVersionOf()
         <a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_checkIsNewVersionOf" class="headerlink"><i class="fas fa-link"></i></a>
@@ -654,7 +754,7 @@ isNewVersionOf links to a resource is forbidden.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -823,7 +923,7 @@ possible only at the transaction commit.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">263</span>
 
     </aside>
 
@@ -861,6 +961,42 @@ possible only at the transaction commit.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_fetchParentIds">
+        fetchParentIds()
+        <a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_fetchParentIds" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">479</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns ids of all pre-transaction parents of resources affected by the current transaction</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">fetchParentIds</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, int&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, int&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_updateCollectionAggregates">
         updateCollectionAggregates()
         <a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_updateCollectionAggregates" class="headerlink"><i class="fas fa-link"></i></a>
@@ -869,7 +1005,7 @@ possible only at the transaction commit.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">356</span>
+    <span class="phpdocumentor-element-found-in__line">378</span>
 
     </aside>
 
@@ -900,7 +1036,7 @@ possible only at the transaction commit.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php"><a href="files/arche-doorkeeper-src-acdhoeaw-arche-doorkeeper-transaction.html"><abbr title="arche-doorkeeper/src/acdhOeaw/arche/doorkeeper/Transaction.php">Transaction.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">299</span>
+    <span class="phpdocumentor-element-found-in__line">321</span>
 
     </aside>
 
@@ -1039,6 +1175,7 @@ possible only at the transaction commit.</p>
                     <ul class="phpdocumentor-list -clean">
                                                     <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#property_log">$log<a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#property_ontology">$ontology<a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#property_parentIds">$parentIds<a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#property_pdo">$pdo<a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#property_schema">$schema<a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#property_txId">$txId<a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html"></li>
@@ -1050,10 +1187,12 @@ possible only at the transaction commit.</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_checkAutoCreatedResources">checkAutoCreatedResources()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_checkEmptyCollections">checkEmptyCollections()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_checkIsNewVersionOf">checkIsNewVersionOf()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_onTxCommit">onTxCommit()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-doorkeeper-RunTestsTrait.html#method_runTests">runTests()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_updateCollections">updateCollections()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_fetchParentIds">fetchParentIds()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_updateCollectionAggregates">updateCollectionAggregates()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_updateCollectionSize">updateCollectionSize()</a></li>
                                     </ul>

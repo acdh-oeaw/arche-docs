@@ -2636,30 +2636,35 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre01MaintainDefaultValues"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre02MaintainOpenAire\u0028\u0029",
-            "name": "pre02MaintainOpenAire",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre02MaintainEndDates\u0028\u0029",
+            "name": "pre02MaintainEndDates",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre02MaintainOpenAire"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre02MaintainEndDates"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre03MaintainWkt\u0028\u0029",
-            "name": "pre03MaintainWkt",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre03MaintainOpenAire\u0028\u0029",
+            "name": "pre03MaintainOpenAire",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre03MaintainWkt"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre03MaintainOpenAire"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre04MaintainAccessRights\u0028\u0029",
-            "name": "pre04MaintainAccessRights",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre04MaintainWkt\u0028\u0029",
+            "name": "pre04MaintainWkt",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre04MaintainWkt"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre05MaintainAccessRights\u0028\u0029",
+            "name": "pre05MaintainAccessRights",
             "summary": "Access\u0020rights\u0020should\u0020be\u0020maintained\u0020according\u0020to\u0020the\n\u0060cfg.schema.accessRestriction\u0060\u0020value\u003A",
-            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre04MaintainAccessRights"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre05MaintainAccessRights"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre05MaintainPropertyRange\u0028\u0029",
-            "name": "pre05MaintainPropertyRange",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre06MaintainPropertyRange\u0028\u0029",
+            "name": "pre06MaintainPropertyRange",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre05MaintainPropertyRange"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre06MaintainPropertyRange"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre06NormalizeIds\u0028\u0029",
-            "name": "pre06NormalizeIds",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre07NormalizeIds\u0028\u0029",
+            "name": "pre07NormalizeIds",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre06NormalizeIds"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_pre07NormalizeIds"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Acheck01TitleProp\u0028\u0029",
             "name": "check01TitleProp",
@@ -2695,6 +2700,11 @@ Search.appendIndex(
             "name": "check07Biblatex",
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_check07Biblatex"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Acheck08DateRanges\u0028\u0029",
+            "name": "check08DateRanges",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_check08DateRanges"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apost01MaintainCmdiPid\u0028\u0029",
             "name": "post01MaintainCmdiPid",
@@ -2816,6 +2826,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_checkAutoCreatedResources"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003AcheckEmptyCollections\u0028\u0029",
+            "name": "checkEmptyCollections",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_checkEmptyCollections"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003AupdateCollections\u0028\u0029",
             "name": "updateCollections",
             "summary": "",
@@ -2831,10 +2846,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_updateCollectionAggregates"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003AfetchParentIds\u0028\u0029",
+            "name": "fetchParentIds",
+            "summary": "Returns\u0020ids\u0020of\u0020all\u0020pre\u002Dtransaction\u0020parents\u0020of\u0020resources\u0020affected\u0020by\u0020the\u0020current\u0020transaction",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_fetchParentIds"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003ADB_LOCK_TIMEOUT",
             "name": "DB_LOCK_TIMEOUT",
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#constant_DB_LOCK_TIMEOUT"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003A\u0024parentIds",
+            "name": "parentIds",
+            "summary": "Stores\u0020ids\u0020of\u0020all\u0020pre\u002Dtransaction\u0020parents\u0020of\u0020resources\u0020affected\u0020by\u0020the\u0020current\u0020transaction",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#property_parentIds"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003A\u0024txId",
             "name": "txId",
@@ -8885,6 +8910,11 @@ Search.appendIndex(
             "name": "logQuery",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_logQuery"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003ARES_STATE_ACTIVE",
+            "name": "RES_STATE_ACTIVE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-RepoDb.html#constant_RES_STATE_ACTIVE"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003A\u0024resourceClass",
             "name": "resourceClass",
