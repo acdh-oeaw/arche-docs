@@ -11,19 +11,23 @@ jobs:
     - name: development docs
       run: |
         mkdir tmp && cd tmp
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-assets
         git clone --depth 1 https://github.com/acdh-oeaw/arche-biblatex
         git clone --depth 1 https://github.com/acdh-oeaw/arche-core
         git clone --depth 1 https://github.com/acdh-oeaw/arche-dashboard
         git clone --depth 1 https://github.com/acdh-oeaw/arche-doorkeeper
-        git clone --depth 1 https://github.com/acdh-oeaw/arche-gui
-        git clone --depth 1 https://github.com/acdh-oeaw/arche-gui-api
-        git clone --depth 1 https://github.com/acdh-oeaw/arche-mde-api
+        git clone --depth 1 https://github.com/acdh-oeaw/arche_core_gui
+        git clone --depth 1 https://github.com/acdh-oeaw/arche_core_gui_api
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-exif
         git clone --depth 1 https://github.com/acdh-oeaw/arche-fcs
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-iiifmanifest
         git clone --depth 1 https://github.com/acdh-oeaw/arche-lib
         git clone --depth 1 https://github.com/acdh-oeaw/arche-lib-disserv
         git clone --depth 1 https://github.com/acdh-oeaw/arche-lib-ingest
         git clone --depth 1 https://github.com/acdh-oeaw/arche-lib-schema
         git clone --depth 1 https://github.com/acdh-oeaw/arche-mapserver
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-metadata-crawler
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-openrefine
         git clone --depth 1 https://github.com/acdh-oeaw/arche-oaipmh
         git clone --depth 1 https://github.com/acdh-oeaw/arche-resolver
         git clone --depth 1 https://github.com/acdh-oeaw/arche-ref-sources
