@@ -11126,6 +11126,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Controller-DisseminationController.html#property_tmpDir"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\ImprintController",
+            "name": "ImprintController",
+            "summary": "Description\u0020of\u0020MetadataController",
+            "url": "classes/Drupal-arche-core-gui-Controller-ImprintController.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\ImprintController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Controller-ImprintController.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\ImprintController\u003A\u003Adisplay\u0028\u0029",
+            "name": "display",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Controller-ImprintController.html#method_display"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\ImprintController\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "\u007B\u0040inheritdoc\u007D",
+            "url": "classes/Drupal-arche-core-gui-Controller-ImprintController.html#method_create"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\ImprintController\u003A\u003A\u0024httpClient",
+            "name": "httpClient",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Controller-ImprintController.html#property_httpClient"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\MetadataController",
             "name": "MetadataController",
             "summary": "Description\u0020of\u0020MetadataController",
