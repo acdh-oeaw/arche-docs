@@ -11826,6 +11826,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_smartSearch"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003Avcr\u0028\u0029",
+            "name": "vcr",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_vcr"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AsmartSearchAutoComplete\u0028\u0029",
             "name": "smartSearchAutoComplete",
             "summary": "",
@@ -12055,6 +12060,81 @@ Search.appendIndex(
             "name": "requestHash",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#property_requestHash"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController",
+            "name": "VCRController",
+            "summary": "Description\u0020of\u0020VCRController",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003AsetContext\u0028\u0029",
+            "name": "setContext",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#method_setContext"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003AsetBasicPropertys\u0028\u0029",
+            "name": "setBasicPropertys",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#method_setBasicPropertys"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003Asearch\u0028\u0029",
+            "name": "search",
+            "summary": "The\u0020main\u0020search",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#method_search"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003A\u0024aConfig",
+            "name": "aConfig",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#property_aConfig"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003A\u0024sConfig",
+            "name": "sConfig",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#property_sConfig"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003A\u0024context",
+            "name": "context",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#property_context"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#property_schema"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003A\u0024baseUrl",
+            "name": "baseUrl",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#property_baseUrl"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003A\u0024preferredLang",
+            "name": "preferredLang",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#property_preferredLang"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003A\u0024searchInBinaries",
+            "name": "searchInBinaries",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#property_searchInBinaries"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003A\u0024searchPhrase",
+            "name": "searchPhrase",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#property_searchPhrase"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003A\u0024reqFacets",
+            "name": "reqFacets",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#property_reqFacets"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VCRController\u003A\u003A\u0024requestHash",
+            "name": "requestHash",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-VCRController.html#property_requestHash"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VersionsController",
             "name": "VersionsController",
