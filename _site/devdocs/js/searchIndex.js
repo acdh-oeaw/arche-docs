@@ -1361,6 +1361,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_PG_LOCK_FAILURE"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003APG_DEADLOCK",
+            "name": "PG_DEADLOCK",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_PG_DEADLOCK"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003APG_DUPLICATE_KEY",
             "name": "PG_DUPLICATE_KEY",
             "summary": "",
