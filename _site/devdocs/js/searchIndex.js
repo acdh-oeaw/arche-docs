@@ -3991,6 +3991,11 @@ Search.appendIndex(
             "summary": "Creates\u0020an\u0020repository\u0020connection\u0020object.",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#method___construct"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetBaseUrl\u0028\u0029",
+            "name": "getBaseUrl",
+            "summary": "Returns\u0020the\u0020repository\u0020REST\u0020API\u0020base\u0020URL.",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getBaseUrl"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AcreateResource\u0028\u0029",
             "name": "createResource",
             "summary": "Creates\u0020a\u0020repository\u0020resource.",
@@ -4141,6 +4146,16 @@ Search.appendIndex(
             "summary": "Current\u0020transaction\u0020id",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#property_txId"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003A\u0024baseUrl",
+            "name": "baseUrl",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#property_baseUrl"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003A\u0024baseUri",
+            "name": "baseUri",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#property_baseUri"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb",
             "name": "RepoDb",
             "summary": "Provides\u0020a\u0020read\u0020only\u0020access\u0020to\u0020the\u0020repository\u0020on\u0020the\u0020relational\u0020database\u0020level.",
@@ -4155,6 +4170,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003AgetBaseUrl\u0028\u0029",
+            "name": "getBaseUrl",
+            "summary": "Returns\u0020the\u0020repository\u0020REST\u0020API\u0020base\u0020URL.",
+            "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_getBaseUrl"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003AgetSmartSearch\u0028\u0029",
             "name": "getSmartSearch",
@@ -4245,6 +4265,11 @@ Search.appendIndex(
             "name": "resourceClass",
             "summary": "A\u0020class\u0020used\u0020to\u0020instantiate\u0020objects\u0020representing\u0020repository\u0020resources.",
             "url": "classes/acdhOeaw-arche-lib-RepoDb.html#property_resourceClass"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003A\u0024baseUrl",
+            "name": "baseUrl",
+            "summary": "Repository\u0020REST\u0020API\u0020base\u0020URL",
+            "url": "classes/acdhOeaw-arche-lib-RepoDb.html#property_baseUrl"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003A\u0024pdo",
             "name": "pdo",
@@ -4676,11 +4701,6 @@ Search.appendIndex(
             "summary": "A\u0020common\u0020\u0028mostly\u0020boiler\u0020plate\u0029\u0020code\u0020for\u0020classes\u0020implementing\u0020the\u0020RepoInterface.",
             "url": "classes/acdhOeaw-arche-lib-RepoTrait.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003AgetBaseUrl\u0028\u0029",
-            "name": "getBaseUrl",
-            "summary": "Returns\u0020the\u0020repository\u0020REST\u0020API\u0020base\u0020URL.",
-            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#method_getBaseUrl"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003AgetSchema\u0028\u0029",
             "name": "getSchema",
             "summary": "Returns\u0020the\u0020\u0060Schema\u0060\u0020object\u0020defining\u0020repository\u0020entities\u0020to\u0020RDF\u0020property\u0020mappings.",
@@ -4710,11 +4730,6 @@ Search.appendIndex(
             "name": "sortMatchingResources",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#method_sortMatchingResources"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003A\u0024baseUrl",
-            "name": "baseUrl",
-            "summary": "Repository\u0020REST\u0020API\u0020base\u0020URL",
-            "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#property_baseUrl"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003A\u0024headers",
             "name": "headers",
@@ -9221,6 +9236,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_match"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\util\\Value\u003A\u003A\u0024notMatch",
+            "name": "notMatch",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_notMatch"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\util\\Value\u003A\u003A\u0024replace",
             "name": "replace",
             "summary": "",
@@ -11173,12 +11193,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\MetadataController\u003A\u003AdetailView\u0028\u0029",
             "name": "detailView",
-            "summary": "",
+            "summary": "Resource\u0020Metadata\u0020view",
             "url": "classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_detailView"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\MetadataController\u003A\u003AdiscoverView\u0028\u0029",
             "name": "discoverView",
-            "summary": "",
+            "summary": "The\u0020main\u0020discover\/smartsearch\u0020view",
             "url": "classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_discoverView"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\SmartSearchController",
@@ -11868,7 +11888,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003AgetChildData\u0028\u0029",
             "name": "getChildData",
-            "summary": "Child\u0020Datatable\u0020api",
+            "summary": "Child\u0020Datatable\u0020api\u0020\u002D\u0020NOT\u0020IN\u0020USE\u0020NOW\u0021",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#method_getChildData"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003AgetChildTreeData\u0028\u0029",
@@ -11878,8 +11898,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003AgetInverse\u0028\u0029",
             "name": "getInverse",
-            "summary": "",
+            "summary": "Get\u0020the\u0020inverse\u0020data\u0020of\u0020a\u0020resource",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#method_getInverse"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003AgetChildren\u0028\u0029",
+            "name": "getChildren",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#method_getChildren"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003A\u0024apiHelper",
             "name": "apiHelper",
@@ -12015,11 +12040,6 @@ Search.appendIndex(
             "name": "autocomplete",
             "summary": "Search\u0020input\u0020autocomplete",
             "url": "classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_autocomplete"
-        },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\SmartSearchController\u003A\u003A\u0024aConfig",
-            "name": "aConfig",
-            "summary": "",
-            "url": "classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#property_aConfig"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\SmartSearchController\u003A\u003A\u0024sConfig",
             "name": "sConfig",
