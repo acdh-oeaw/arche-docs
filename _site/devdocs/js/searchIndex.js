@@ -11886,24 +11886,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#method___construct"
         },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003AgetChildData\u0028\u0029",
-            "name": "getChildData",
-            "summary": "Child\u0020Datatable\u0020api\u0020\u002D\u0020NOT\u0020IN\u0020USE\u0020NOW\u0021",
-            "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#method_getChildData"
-        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003AgetChildTreeData\u0028\u0029",
             "name": "getChildTreeData",
             "summary": "Child\u0020tree\u0020view\u0020API",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#method_getChildTreeData"
         },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003AgetInverse\u0028\u0029",
-            "name": "getInverse",
-            "summary": "Get\u0020the\u0020inverse\u0020data\u0020of\u0020a\u0020resource",
-            "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#method_getInverse"
-        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003AgetChildren\u0028\u0029",
             "name": "getChildren",
-            "summary": "",
+            "summary": "Fetch\u0020the\u0020children\u0020data",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#method_getChildren"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003A\u0024apiHelper",
