@@ -228,6 +228,48 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_actors_involved">$actors_involved</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_coverage">$coverage</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_curation">$curation</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_dates">$dates</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_ontologyJsHelper">$ontologyJsHelper</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_relations_other_projects">$relations_other_projects</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_right_access">$right_access</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_rootTableData">$rootTableData</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -254,10 +296,17 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getOntologyJs">getOntologyJs()</a>
+    <span>
+                                &nbsp;: <abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getRootTable">getRootTable()</a>
     <span>
                                 &nbsp;: <abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr>    </span>
 </dt>
+<dd>Root table view function</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_changeAPILanguage">changeAPILanguage()</a>
@@ -275,9 +324,22 @@ session lang params to get the desired lang string translation</dd>
 <dd>Get the site actual language</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getOntologyJsData">getOntologyJsData()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getRootTableData">getRootTableData()</a>
     <span>
                                 &nbsp;: void    </span>
+</dt>
+<dd>Generate the root table data</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_isCustomClass">isCustomClass()</a>
+    <span>
+                                &nbsp;: string    </span>
 </dt>
 
     </dl>
@@ -563,6 +625,237 @@ session lang params to get the desired lang string translation</dd>
             phpdocumentor-element
             -property
             -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_actors_involved">
+        $actors_involved
+        <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_actors_involved" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">17</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$actors_involved</span>
+     = <span class="phpdocumentor-signature__default-value">array(&#039;hasPrincipalInvestigator&#039;, &#039;hasContact&#039;, &#039;hasCreator&#039;, &#039;hasAuthor&#039;, &#039;hasEditor&#039;, &#039;hasContributor&#039;, &#039;hasFunder&#039;, &#039;hasLicensor&#039;, &#039;hasMetadataCreator&#039;, &#039;hasDigitisingAgent&#039;)</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_coverage">
+        $coverage
+        <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_coverage" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">24</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$coverage</span>
+     = <span class="phpdocumentor-signature__default-value">array(&#039;hasRelatedDiscipline&#039;, &#039;hasCoverage&#039;, &#039;hasActor&#039;, &#039;hasSpatialCoverage&#039;, &#039;hasSubject&#039;, &#039;hasTemporalCoverage&#039;, &#039;hasTemporalCoverageIdentifier&#039;, &#039;hasCoverageEndDate&#039;, &#039;hasCoverageStartDate&#039;)</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_curation">
+        $curation
+        <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_curation" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$curation</span>
+     = <span class="phpdocumentor-signature__default-value">array(&#039;hasDepositor&#039;, &#039;hasAvailableDate&#039;, &#039;hasPid&#039;, &#039;hasNumberOfItems&#039;, &#039;hasBinarySize&#039;, &#039;hasFormat&#039;, &#039;hasLocationPath&#039;, &#039;hasLandingPage&#039;, &#039;hasCurator&#039;, &#039;hasHosting&#039;, &#039;hasSubmissionDate&#039;, &#039;hasAcceptedDate&#039;, &#039;hasTransferDate&#039;, &#039;hasTransferMethod&#039;, &#039;hasUpdateDate&#039;)</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_dates">
+        $dates
+        <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_dates" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$dates</span>
+     = <span class="phpdocumentor-signature__default-value">array(&#039;hasDate&#039;, &#039;hasStartDate&#039;, &#039;hasEndDate&#039;, &#039;hasCreatedDate&#039;, &#039;hasCreatedStartDate&#039;, &#039;hasCreatedEndDate&#039;, &#039;hasCollectedStartDate&#039;, &#039;hasCollectedEndDate&#039;, &#039;hasCreatedStartDateOriginal&#039;, &#039;hasCreatedEndDateOriginal&#039;)</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_ontologyJsHelper">
+        $ontologyJsHelper
+        <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_ontologyJsHelper" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">14</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$ontologyJsHelper</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_relations_other_projects">
+        $relations_other_projects
+        <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_relations_other_projects" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$relations_other_projects</span>
+     = <span class="phpdocumentor-signature__default-value">array(&#039;relation&#039;, &#039;hasRelatedProject&#039;, &#039;hasRelatedCollection&#039;, &#039;continues&#039;, &#039;isContinuedBy&#039;, &#039;documents&#039;, &#039;isDocumentedBy&#039;, &#039;hasDerivedPublication&#039;, &#039;hasMetadata&#039;, &#039;isMetadataFor&#039;, &#039;hasSource&#039;, &#039;isSourceOf&#039;, &#039;isNewVersionOf&#039;, &#039;isPreviousVersionOf&#039;, &#039;hasPart&#039;, &#039;isPartOf&#039;, &#039;hasTitleImage&#039;, &#039;isTitleImageOf&#039;, &#039;hasVersionInfo&#039;)</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_right_access">
+        $right_access
+        <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_right_access" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$right_access</span>
+     = <span class="phpdocumentor-signature__default-value">array(&#039;hasOwner&#039;, &#039;hasRightsHolder&#039;, &#039;hasLicense&#039;, &#039;hasAccessRestriction&#039;, &#039;hasRestrictionRole&#039;, &#039;hasLicenseSummary&#039;, &#039;hasAccessRestrictionSummary&#039;)</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_rootTableData">
@@ -575,7 +868,7 @@ session lang params to get the desired lang string translation</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
@@ -646,7 +939,7 @@ session lang params to get the desired lang string translation</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -669,6 +962,51 @@ session lang params to get the desired lang string translation</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getOntologyJs">
+        getOntologyJs()
+        <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getOntologyJs" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">148</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getOntologyJs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getRootTable">
         getRootTable()
         <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getRootTable" class="headerlink"><i class="fas fa-link"></i></a>
@@ -677,11 +1015,12 @@ session lang params to get the desired lang string translation</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Root table view function</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getRootTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span></code>
@@ -793,6 +1132,51 @@ session lang params to get the desired lang string translation</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getOntologyJsData">
+        getOntologyJsData()
+        <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getOntologyJsData" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">168</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getOntologyJsData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getRootTableData">
         getRootTableData()
         <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getRootTableData" class="headerlink"><i class="fas fa-link"></i></a>
@@ -801,11 +1185,12 @@ session lang params to get the desired lang string translation</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Generate the root table data</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">getRootTableData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
@@ -827,6 +1212,51 @@ session lang params to get the desired lang string translation</p>
     
 
     
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isCustomClass">
+        isCustomClass()
+        <a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_isCustomClass" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/OntologyController.php"><a href="files/arche-core-gui-api-src-controller-ontologycontroller.html"><abbr title="arche_core_gui_api/src/Controller/OntologyController.php">OntologyController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">isCustomClass</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
             </section>
 
@@ -949,6 +1379,13 @@ session lang params to get the desired lang string translation</p>
                                                     <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_repoDb">$repoDb<a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html"></li>
                                                     <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_schema">$schema<a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html"></li>
                                                     <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_siteLang">$siteLang<a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_actors_involved">$actors_involved<a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_coverage">$coverage<a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_curation">$curation<a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_dates">$dates<a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_ontologyJsHelper">$ontologyJsHelper<a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_relations_other_projects">$relations_other_projects<a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_right_access">$right_access<a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html"></li>
                                                     <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_rootTableData">$rootTableData<a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html"></li>
                                                     <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_rootTableHelper">$rootTableHelper<a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html"></li>
                                             </ul>
@@ -958,10 +1395,13 @@ session lang params to get the desired lang string translation</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getOntologyJs">getOntologyJs()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getRootTable">getRootTable()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_changeAPILanguage">changeAPILanguage()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_getCurrentLanguage">getCurrentLanguage()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getOntologyJsData">getOntologyJsData()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getRootTableData">getRootTableData()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_isCustomClass">isCustomClass()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -11803,12 +11803,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AtopCollections\u0028\u0029",
             "name": "topCollections",
-            "summary": "",
+            "summary": "Home\u0020page\u0020topcollections\u0020slider\u0020endpoint",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_topCollections"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AtopCollectionsDT\u0028\u0029",
             "name": "topCollectionsDT",
-            "summary": "",
+            "summary": "Top\u0020collections\u0020datatable\u0020view\u0020\u002D\u0020not\u0020in\u0020use\u0020anymore\u003F",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_topCollectionsDT"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AexpertData\u0028\u0029",
@@ -11818,17 +11818,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AsearchCoordinates\u0028\u0029",
             "name": "searchCoordinates",
-            "summary": "",
+            "summary": "Smartsearch\u0020MAP\u0020coordinates\u0020\u002D\u0020not\u0020in\u0020use\u0020anymore\u003F",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_searchCoordinates"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AbreadcrumbData\u0028\u0029",
             "name": "breadcrumbData",
-            "summary": "",
+            "summary": "Breadcrumb\u0020endpoint",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_breadcrumbData"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AversionsList\u0028\u0029",
             "name": "versionsList",
-            "summary": "",
+            "summary": "Resource\u0020versions\u0020data\u0020endpoint",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_versionsList"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AchildData\u0028\u0029",
@@ -11838,12 +11838,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003ArprDT\u0028\u0029",
             "name": "rprDT",
-            "summary": "",
+            "summary": "Related\u0020resources\u0020and\u0020publications\u0020endpoint",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_rprDT"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003ApublicationsDT\u0028\u0029",
             "name": "publicationsDT",
-            "summary": "",
+            "summary": "Publications\u0020datatable\u0020endpoint",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_publicationsDT"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AsmartSearch\u0028\u0029",
@@ -11853,7 +11853,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003Avcr\u0028\u0029",
             "name": "vcr",
-            "summary": "",
+            "summary": "CLARIN\u0020VCR",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_vcr"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AsmartSearchAutoComplete\u0028\u0029",
@@ -11878,8 +11878,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003ArootTable\u0028\u0029",
             "name": "rootTable",
-            "summary": "",
+            "summary": "Root\u0020table\u0020api\u0020endpoint\u003A\u0020\/browser\/api\/rootTable\/en",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_rootTable"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AontologyJs\u0028\u0029",
+            "name": "ontologyJs",
+            "summary": "Create\u0020the\u0020Ontology\u0020html\u0020table\u0020for\u0020the\u0020CKEDITOR",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_ontologyJs"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController",
             "name": "ChildController",
@@ -11986,25 +11991,75 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003AisCustomClass\u0028\u0029",
+            "name": "isCustomClass",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_isCustomClass"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003AgetRootTable\u0028\u0029",
             "name": "getRootTable",
-            "summary": "",
+            "summary": "Root\u0020table\u0020view\u0020function",
             "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getRootTable"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003AgetRootTableData\u0028\u0029",
             "name": "getRootTableData",
-            "summary": "",
+            "summary": "Generate\u0020the\u0020root\u0020table\u0020data",
             "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getRootTableData"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003AgetOntologyJs\u0028\u0029",
+            "name": "getOntologyJs",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getOntologyJs"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003AgetOntologyJsData\u0028\u0029",
+            "name": "getOntologyJsData",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#method_getOntologyJsData"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003A\u0024rootTableHelper",
             "name": "rootTableHelper",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_rootTableHelper"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003A\u0024ontologyJsHelper",
+            "name": "ontologyJsHelper",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_ontologyJsHelper"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003A\u0024rootTableData",
             "name": "rootTableData",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_rootTableData"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003A\u0024actors_involved",
+            "name": "actors_involved",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_actors_involved"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003A\u0024coverage",
+            "name": "coverage",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_coverage"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003A\u0024right_access",
+            "name": "right_access",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_right_access"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003A\u0024dates",
+            "name": "dates",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_dates"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003A\u0024relations_other_projects",
+            "name": "relations_other_projects",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_relations_other_projects"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController\u003A\u003A\u0024curation",
+            "name": "curation",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-OntologyController.html#property_curation"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\SearchBlockController",
             "name": "SearchBlockController",
@@ -12405,6 +12460,41 @@ Search.appendIndex(
             "name": "breadcrumbs",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Helper-InverseTableHelper.html#property_breadcrumbs"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\OntologyJsHelper",
+            "name": "OntologyJsHelper",
+            "summary": "Description\u0020of\u0020RootTableHelper\u0020Class",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-OntologyJsHelper.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\OntologyJsHelper\u003A\u003AcreateHtml\u0028\u0029",
+            "name": "createHtml",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-OntologyJsHelper.html#method_createHtml"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\OntologyJsHelper\u003A\u003AcreateHeader\u0028\u0029",
+            "name": "createHeader",
+            "summary": "The\u0020root\u0020table\u0020header\u0020html\u0020code",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-OntologyJsHelper.html#method_createHeader"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\OntologyJsHelper\u003A\u003AcreateHtmlTable\u0028\u0029",
+            "name": "createHtmlTable",
+            "summary": "Create\u0020the\u0020response\u0020html\u0020string",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-OntologyJsHelper.html#method_createHtmlTable"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\OntologyJsHelper\u003A\u003AcheckCardinality\u0028\u0029",
+            "name": "checkCardinality",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-OntologyJsHelper.html#method_checkCardinality"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\OntologyJsHelper\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-OntologyJsHelper.html#property_data"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\OntologyJsHelper\u003A\u003A\u0024lang",
+            "name": "lang",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-OntologyJsHelper.html#property_lang"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\RootTableHelper",
             "name": "RootTableHelper",
