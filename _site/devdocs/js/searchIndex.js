@@ -5261,6 +5261,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_SEARCH"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003ATAB_PARENTS",
+            "name": "TAB_PARENTS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-SmartSearch.html#constant_TAB_PARENTS"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\SmartSearch\u003A\u003AFACET_MATCH",
             "name": "FACET_MATCH",
             "summary": "",
