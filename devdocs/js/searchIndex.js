@@ -366,6 +366,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method_toBytes"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003ATS_VECTOR_MAX_LEN",
+            "name": "TS_VECTOR_MAX_LEN",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#constant_TS_VECTOR_MAX_LEN"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003A\u0024id",
             "name": "id",
             "summary": "",
@@ -8841,16 +8846,6 @@ Search.appendIndex(
             "summary": "Creates\u0020\u003Cmetadata\u003E\u0020element\u0020by\u0020filling\u0020in\u0020an\u0020XML\u0020template\u0020with\u0020values\nread\u0020from\u0020the\u0020repository\u0020resource\u0027s\u0020metadata.",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\TemplateMetadata\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Creates\u0020a\u0020metadata\u0020object\u0020for\u0020a\u0020given\u0020repository\u0020resource.",
-            "url": "classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method___construct"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\TemplateMetadata\u003A\u003AgetXml\u0028\u0029",
-            "name": "getXml",
-            "summary": "Creates\u0020resource\u0027s\u0020XML\u0020metadata",
-            "url": "classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_getXml"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\TemplateMetadata\u003A\u003AextendSearchFilterQuery\u0028\u0029",
             "name": "extendSearchFilterQuery",
             "summary": "Allows\u0020to\u0020extend\u0020a\u0020search\u0020query\u0020with\u0020additional\u0020clauses\u0020specific\u0020to\u0020the\ngiven\u0020metadata\u0020source.",
@@ -8860,6 +8855,21 @@ Search.appendIndex(
             "name": "extendSearchDataQuery",
             "summary": "Allows\u0020to\u0020extend\u0020a\u0020search\u0020query\u0020with\u0020additional\u0020clauses\u0020specific\u0020to\u0020the\ngiven\u0020metadata\u0020source.",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_extendSearchDataQuery"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\TemplateMetadata\u003A\u003AclearDataset\u0028\u0029",
+            "name": "clearDataset",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_clearDataset"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\TemplateMetadata\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Creates\u0020a\u0020metadata\u0020object\u0020for\u0020a\u0020given\u0020repository\u0020resource.",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\TemplateMetadata\u003A\u003AgetXml\u0028\u0029",
+            "name": "getXml",
+            "summary": "Creates\u0020resource\u0027s\u0020XML\u0020metadata",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_getXml"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\TemplateMetadata\u003A\u003AprocessElement\u0028\u0029",
             "name": "processElement",
@@ -8905,6 +8915,11 @@ Search.appendIndex(
             "name": "loadMetadata",
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_loadMetadata"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\TemplateMetadata\u003A\u003AgetSpecialValue\u0028\u0029",
+            "name": "getSpecialValue",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_getSpecialValue"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\TemplateMetadata\u003A\u003APREDICATE_REGEX",
             "name": "PREDICATE_REGEX",

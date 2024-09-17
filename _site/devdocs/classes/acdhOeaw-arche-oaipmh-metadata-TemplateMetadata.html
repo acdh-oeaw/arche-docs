@@ -226,13 +226,13 @@ take a look on https://github.com/acdh-oeaw/arche-oaipmh/blob/master/doc/Templat
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#constant_IF_VALUE_REGEX">IF_VALUE_REGEX</a>
     <span>
-        &nbsp;= &#039;(==|!=|starts|ends|contains|&gt;|&lt;|&gt;=|&lt;=|regex) +(?:&quot;([^&quot;]*)&quot;|\&#039;([^\&#039;]*)\&#039;|([0-9]+[.]?[0-9]*)|(&#039; . self::PREDICATE_REGEX . &#039;))&#039;                            </span>
+        &nbsp;= &#039;(==|!=|starts|ends|contains|&gt;|&lt;|&gt;=|&lt;=|regex) +(?:&quot;([^&quot;]*)&quot;|\&#039;([^\&#039;]*)\&#039;|([0-9]+[.]?[0-9]*)|(&#039; . self::PREDICATE_REGEX . &#039;)|(OAIID|URI|URL|PARENT))&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#constant_PREDICATE_REGEX">PREDICATE_REGEX</a>
     <span>
-        &nbsp;= &#039;[-_a-zA-Z0-9]+:[^ )]*&#039;                            </span>
+        &nbsp;= &#039;[-_a-zA-Z0-9]+:[^ )]*|CURNODE&#039;                            </span>
 </dt>
 
     </dl>
@@ -329,6 +329,12 @@ take a look on https://github.com/acdh-oeaw/arche-oaipmh/blob/master/doc/Templat
 <dd>Creates a metadata object for a given repository resource.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_clearDataset">clearDataset()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_extendSearchDataQuery">extendSearchDataQuery()</a>
     <span>
                                 &nbsp;: <abbr title="\zozlak\queryPart\QueryPart">QueryPart</abbr>    </span>
@@ -367,6 +373,12 @@ given metadata source.</dd>
     <a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_fetchValues">fetchValues()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_getSpecialValue">getSpecialValue()</a>
+    <span>
+                                &nbsp;: <abbr title="\rdfInterface\TermInterface">TermInterface</abbr>|string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
@@ -492,7 +504,7 @@ given metadata source.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">IF_VALUE_REGEX</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;(==|!=|starts|ends|contains|&gt;|&lt;|&gt;=|&lt;=|regex) +(?:&quot;([^&quot;]*)&quot;|\&#039;([^\&#039;]*)\&#039;|([0-9]+[.]?[0-9]*)|(&#039; . self::PREDICATE_REGEX . &#039;))&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;(==|!=|starts|ends|contains|&gt;|&lt;|&gt;=|&lt;=|regex) +(?:&quot;([^&quot;]*)&quot;|\&#039;([^\&#039;]*)\&#039;|([0-9]+[.]?[0-9]*)|(&#039; . self::PREDICATE_REGEX . &#039;)|(OAIID|URI|URL|PARENT))&#039;</span>
 </code>
 
 
@@ -520,7 +532,7 @@ given metadata source.</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">PREDICATE_REGEX</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;[-_a-zA-Z0-9]+:[^ )]*&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;[-_a-zA-Z0-9]+:[^ )]*|CURNODE&#039;</span>
 </code>
 
 
@@ -588,7 +600,7 @@ given metadata source.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -622,7 +634,7 @@ given metadata source.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -688,7 +700,7 @@ given metadata source.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -721,7 +733,7 @@ given metadata source.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -755,7 +767,7 @@ given metadata source.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -788,7 +800,7 @@ given metadata source.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -855,7 +867,7 @@ given metadata source.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -888,7 +900,7 @@ given metadata source.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -926,7 +938,7 @@ given metadata source.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -982,6 +994,37 @@ describing this resource</p>
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_clearDataset">
+        clearDataset()
+        <a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_clearDataset" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">95</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">clearDataset</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_extendSearchDataQuery">
         extendSearchDataQuery()
         <a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_extendSearchDataQuery" class="headerlink"><i class="fas fa-link"></i></a>
@@ -990,7 +1033,7 @@ describing this resource</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">191</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -1043,7 +1086,7 @@ is not enforced.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -1096,7 +1139,7 @@ is not enforced.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -1137,7 +1180,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">274</span>
 
     </aside>
 
@@ -1182,7 +1225,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">340</span>
+    <span class="phpdocumentor-element-found-in__line">351</span>
 
     </aside>
 
@@ -1227,7 +1270,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">414</span>
+    <span class="phpdocumentor-element-found-in__line">425</span>
 
     </aside>
 
@@ -1264,6 +1307,51 @@ element).</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getSpecialValue">
+        getSpecialValue()
+        <a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_getSpecialValue" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">519</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getSpecialValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$val</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>|string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$val</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>|string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_loadDocument">
         loadDocument()
         <a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_loadDocument" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1272,7 +1360,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">253</span>
+    <span class="phpdocumentor-element-found-in__line">258</span>
 
     </aside>
 
@@ -1303,7 +1391,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">473</span>
+    <span class="phpdocumentor-element-found-in__line">474</span>
 
     </aside>
 
@@ -1365,7 +1453,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">195</span>
+    <span class="phpdocumentor-element-found-in__line">200</span>
 
     </aside>
 
@@ -1406,7 +1494,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">349</span>
+    <span class="phpdocumentor-element-found-in__line">360</span>
 
     </aside>
 
@@ -1447,7 +1535,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">328</span>
+    <span class="phpdocumentor-element-found-in__line">339</span>
 
     </aside>
 
@@ -1488,7 +1576,7 @@ element).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-templatemetadata.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/TemplateMetadata.php">TemplateMetadata.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">242</span>
+    <span class="phpdocumentor-element-found-in__line">247</span>
 
     </aside>
 
@@ -1656,12 +1744,14 @@ element).</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_clearDataset">clearDataset()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_extendSearchDataQuery">extendSearchDataQuery()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_extendSearchFilterQuery">extendSearchFilterQuery()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_getXml">getXml()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_evaluateIf">evaluateIf()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_expand">expand()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_fetchValues">fetchValues()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_getSpecialValue">getSpecialValue()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_loadDocument">loadDocument()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_loadMetadata">loadMetadata()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-TemplateMetadata.html#method_processElement">processElement()</a></li>
