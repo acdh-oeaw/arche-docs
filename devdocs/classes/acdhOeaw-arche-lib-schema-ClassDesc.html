@@ -234,7 +234,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-schema-ClassDesc.html#property_properties">$properties</a>
     <span>
-                        &nbsp;: array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html"><abbr title="\acdhOeaw\arche\lib\schema\PropertyDesc">PropertyDesc</abbr></a>&gt;            </span>
+                        &nbsp;: array&lt;string, <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html"><abbr title="\acdhOeaw\arche\lib\schema\PropertyDesc">PropertyDesc</abbr></a>&gt;            </span>
 </dt>
 <dd>Associative array of class properties (property URIs as keys, if
 a property has many URIs, it will exist under all of them - use the
@@ -278,7 +278,7 @@ a property has many URIs, it will exist under all of them - use the
     <span>
                                 &nbsp;: array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html"><abbr title="\acdhOeaw\arche\lib\schema\PropertyDesc">PropertyDesc</abbr></a>&gt;    </span>
 </dt>
-<dd>Returns distinct set of class properties</dd>
+<dd>Returns a distinct set of class properties</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-lib-schema-BaseDesc.html#method_getPropInLang">getPropInLang()</a>
@@ -497,7 +497,7 @@ a property has many URIs, it will exist under all of them - use the
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html"><abbr title="\acdhOeaw\arche\lib\schema\PropertyDesc">PropertyDesc</abbr></a>&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, <a href="classes/acdhOeaw-arche-lib-schema-PropertyDesc.html"><abbr title="\acdhOeaw\arche\lib\schema\PropertyDesc">PropertyDesc</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$properties</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -569,7 +569,7 @@ a property has many URIs, it will exist under all of them - use the
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$d</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ids</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nmsp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$skipNmsp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">object|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$d</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ids</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nmsp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$skipNmsp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -578,7 +578,7 @@ a property has many URIs, it will exist under all of them - use the
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$d</span>
-                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -732,7 +732,7 @@ a property has many URIs, it will exist under all of them - use the
 
     </aside>
 
-        <p class="phpdocumentor-summary">Returns distinct set of class properties</p>
+        <p class="phpdocumentor-summary">Returns a distinct set of class properties</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>

@@ -6888,7 +6888,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\ClassDesc\u003A\u003AgetProperties\u0028\u0029",
             "name": "getProperties",
-            "summary": "Returns\u0020distinct\u0020set\u0020of\u0020class\u0020properties",
+            "summary": "Returns\u0020a\u0020distinct\u0020set\u0020of\u0020class\u0020properties",
             "url": "classes/acdhOeaw-arche-lib-schema-ClassDesc.html#method_getProperties"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\ClassDesc\u003A\u003A\u0024class",
