@@ -9966,6 +9966,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-openrefine-Service.html#property_pdo"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Crawler",
+            "name": "Crawler",
+            "summary": "Description\u0020of\u0020Crawler",
+            "url": "classes/acdhOeaw-arche-refSources-Crawler.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Crawler\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-Crawler.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Crawler\u003A\u003Acrawl\u0028\u0029",
+            "name": "crawl",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-Crawler.html#method_crawl"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Crawler\u003A\u003AprocessEntity\u0028\u0029",
+            "name": "processEntity",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-Crawler.html#method_processEntity"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Crawler\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-Crawler.html#property_schema"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Crawler\u003A\u003A\u0024mappings",
+            "name": "mappings",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-Crawler.html#property_mappings"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Crawler\u003A\u003A\u0024normalizer",
+            "name": "normalizer",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-Crawler.html#property_normalizer"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Crawler\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-Crawler.html#property_log"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityFile",
             "name": "NamedEntityFile",
             "summary": "Description\u0020of\u0020RefResourceFile",
@@ -10000,11 +10040,6 @@ Search.appendIndex(
             "name": "iter",
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityFile.html#property_iter"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityFile\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-refSources-NamedEntityFile.html#property_repo"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityInterface",
             "name": "NamedEntityInterface",
@@ -10075,11 +10110,6 @@ Search.appendIndex(
             "name": "schema",
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorFile.html#property_schema"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorFile\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorFile.html#property_repo"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorFile\u003A\u003A\u0024filters",
             "name": "filters",
@@ -10205,11 +10235,6 @@ Search.appendIndex(
             "name": "updateMetadata",
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityTrait.html#method_updateMetadata"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityTrait\u003A\u003A\u0024repo",
-            "name": "repo",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-refSources-NamedEntityTrait.html#property_repo"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping",
             "name": "PropertyMapping",
@@ -10351,6 +10376,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#property_skip"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping\u003A\u003A\u0024preferredLangs",
+            "name": "preferredLangs",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#property_preferredLangs"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping\u003A\u003A\u0024value",
             "name": "value",
             "summary": "",
@@ -10401,6 +10431,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#method_resolveAndMerge"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003AgetDbNames\u0028\u0029",
+            "name": "getDbNames",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#method_getDbNames"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003AparseConfig\u0028\u0029",
+            "name": "parseConfig",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#method_parseConfig"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003AgetId\u0028\u0029",
             "name": "getId",
             "summary": "",
@@ -10420,6 +10460,11 @@ Search.appendIndex(
             "name": "idProp",
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#property_idProp"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003A\u0024dbNames",
+            "name": "dbNames",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#property_dbNames"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003A\u0024rules",
             "name": "rules",
