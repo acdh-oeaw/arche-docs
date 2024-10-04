@@ -11441,6 +11441,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020repo\u0020identifier",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getRepoID"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetRootID\u0028\u0029",
+            "name": "getRootID",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getRootID"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetAccessRestriction\u0028\u0029",
             "name": "getAccessRestriction",
             "summary": "Get\u0020the\u0020accessrestriction\u0020url\u0020and\u0020title",
@@ -11956,6 +11961,11 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020Ontology\u0020html\u0020table\u0020for\u0020the\u0020CKEDITOR",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_ontologyJs"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AnextPrevItem\u0028\u0029",
+            "name": "nextPrevItem",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_nextPrevItem"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController",
             "name": "ChildController",
             "summary": "Description\u0020of\u0020ArcheBaseController",
@@ -11975,6 +11985,11 @@ Search.appendIndex(
             "name": "getChildren",
             "summary": "Fetch\u0020the\u0020children\u0020data",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#method_getChildren"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003AgetNextPrevItem\u0028\u0029",
+            "name": "getNextPrevItem",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#method_getNextPrevItem"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003A\u0024apiHelper",
             "name": "apiHelper",
@@ -12500,6 +12515,11 @@ Search.appendIndex(
             "name": "changePropertyToShortcut",
             "summary": "change\u0020the\u0020long\u0020proeprty\u0020urls\u0020inside\u0020the\u0020resource\u0020array",
             "url": "classes/Drupal-arche-core-gui-api-Helper-ArcheCoreHelper.html#method_changePropertyToShortcut"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\ArcheCoreHelper\u003A\u003AextractPrevNextItem\u0028\u0029",
+            "name": "extractPrevNextItem",
+            "summary": "Fetch\u0020the\u0020previous\u0020and\u0020next\u0020item\u0020from\u0020the\u0020child\u0020list",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-ArcheCoreHelper.html#method_extractPrevNextItem"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\ArcheCoreHelper\u003A\u003A\u0024prefixesToChange",
             "name": "prefixesToChange",
