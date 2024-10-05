@@ -11381,6 +11381,11 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020identifiers\u0020which\u0020are\u0020not\u0020acdh\u0020related",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getNonAcdhIdentifiers"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetPlaceIds\u0028\u0029",
+            "name": "getPlaceIds",
+            "summary": "Use\u0020geonames\u0020ID,\u0020if\u0020no\u0020geonames\u0020then\u0020whatever\u0020is\u0020not\u0020ARCHE\u0020domain,\u0020else\u0020ARCHE\u0020domain",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getPlaceIds"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetNonAcdhApiIdentifiers\u0028\u0029",
             "name": "getNonAcdhApiIdentifiers",
             "summary": "Get\u0020all\u0020identifiers\u0020which\u0020are\u0020not\u0020acdh\u0020api\u0020related",
@@ -11518,7 +11523,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetPolygon\u0028\u0029",
             "name": "getPolygon",
-            "summary": "",
+            "summary": "Get\u0020Polygon\u0020data\u0020fpr\u0020map",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getPolygon"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetMapType\u0028\u0029",
@@ -11581,6 +11586,11 @@ Search.appendIndex(
             "summary": "Return\u0020the\u0020metadata\u0020view\u0020right\u0020box\u0020License\u0020card\u0020content",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getLicenseData"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetDataByPropertyList\u0028\u0029",
+            "name": "getDataByPropertyList",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getDataByPropertyList"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetCreditsData\u0028\u0029",
             "name": "getCreditsData",
             "summary": "Return\u0020the\u0020metadata\u0020view\u0020right\u0020box\u0020Credits\u0020card\u0020content",
@@ -11590,6 +11600,11 @@ Search.appendIndex(
             "name": "getSizeData",
             "summary": "Return\u0020the\u0020metadata\u0020view\u0020right\u0020box\u0020Size\u0020card\u0020content",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getSizeData"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetPlaceAddress\u0028\u0029",
+            "name": "getPlaceAddress",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getPlaceAddress"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetCollectionTechnicalData\u0028\u0029",
             "name": "getCollectionTechnicalData",
