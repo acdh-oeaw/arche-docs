@@ -11466,11 +11466,6 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020titleimage\u0020URL",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getTitleImageUrl"
         },                {
-            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AisTitleImage\u0028\u0029",
-            "name": "isTitleImage",
-            "summary": "Check\u0020if\u0020we\u0020have\u0020a\u0020titleimage\u0020id\u0020or\u0020not",
-            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_isTitleImage"
-        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetAcdhType\u0028\u0029",
             "name": "getAcdhType",
             "summary": "Get\u0020the\u0020acdh\u0020type\u0020string",
