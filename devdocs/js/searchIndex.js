@@ -11583,7 +11583,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetDataByPropertyList\u0028\u0029",
             "name": "getDataByPropertyList",
-            "summary": "",
+            "summary": "If\u0020we\u0020need\u0020an\u0020array\u0020of\u0020propertys\u0020data",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getDataByPropertyList"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetCreditsData\u0028\u0029",
