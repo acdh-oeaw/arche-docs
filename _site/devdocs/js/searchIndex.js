@@ -11186,6 +11186,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\DisseminationController\u003A\u003AcollectionDownloadScript\u0028\u0029",
+            "name": "collectionDownloadScript",
+            "summary": "Return\u0020the\u0020collection\u0020download\u0020python\u0020script",
+            "url": "classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_collectionDownloadScript"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\DisseminationController\u003A\u003AprocessCDLData\u0028\u0029",
+            "name": "processCDLData",
+            "summary": "Get\u0020the\u0020pyton\u0020file\u0020and\u0020change\u0020the\u0020content",
+            "url": "classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_processCDLData"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\DisseminationController\u003A\u003AchangeCDLSText\u0028\u0029",
+            "name": "changeCDLSText",
+            "summary": "Chnage\u0020the\u0020pyton\u0020file\u0020content",
+            "url": "classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_changeCDLSText"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\DisseminationController\u003A\u003AthreedView\u0028\u0029",
             "name": "threedView",
             "summary": "This\u0020function\u0020is\u0020called\u0020if\u0020the\u0020user\u0020is\u0020jumping\u0020inside\u0020the\u0020arche\u0020content,\nit\u0020will\u0020rerender\u0020the\u0020metadata\u0020view",
@@ -11210,6 +11225,11 @@ Search.appendIndex(
             "name": "audioView",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_audioView"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\DisseminationController\u003A\u003AfetchBasicData\u0028\u0029",
+            "name": "fetchBasicData",
+            "summary": "We\u0020have\u0020to\u0020fetch\u0020the\u0020basic\u0020data\u0020for\u0020the\u0020resource\u0020\u0028title,\u0020description,\u0020etc.",
+            "url": "classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_fetchBasicData"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\DisseminationController\u003A\u003AgetDissServices\u0028\u0029",
             "name": "getDissServices",
@@ -11455,16 +11475,6 @@ Search.appendIndex(
             "name": "getAccessRestriction",
             "summary": "Get\u0020the\u0020accessrestriction\u0020url\u0020and\u0020title",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getAccessRestriction"
-        },                {
-            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetTitleImage\u0028\u0029",
-            "name": "getTitleImage",
-            "summary": "get\u0020the\u0020title\u0020image\u0020url",
-            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getTitleImage"
-        },                {
-            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetTitleImageUrl\u0028\u0029",
-            "name": "getTitleImageUrl",
-            "summary": "Get\u0020the\u0020titleimage\u0020URL",
-            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getTitleImageUrl"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetAcdhType\u0028\u0029",
             "name": "getAcdhType",
@@ -11931,6 +11941,11 @@ Search.appendIndex(
             "summary": "Publications\u0020datatable\u0020endpoint",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_publicationsDT"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AspatialDT\u0028\u0029",
+            "name": "spatialDT",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_spatialDT"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AsmartSearch\u0028\u0029",
             "name": "smartSearch",
             "summary": "",
@@ -12028,8 +12043,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AgetPublicationsDT\u0028\u0029",
             "name": "getPublicationsDT",
-            "summary": "",
+            "summary": "The\u0020publications\u0020data\u0020table\u0020datasource",
             "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getPublicationsDT"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AgetSpatialDT\u0028\u0029",
+            "name": "getSpatialDT",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getSpatialDT"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003A\u0024apiHelper",
             "name": "apiHelper",
@@ -12440,6 +12460,11 @@ Search.appendIndex(
             "name": "breadcrumbs",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Helper-ArcheBreadcrumbHelper.html#property_breadcrumbs"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\ArcheBreadcrumbHelper\u003A\u003A\u0024resources",
+            "name": "resources",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-ArcheBreadcrumbHelper.html#property_resources"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\ArcheCoreHelper",
             "name": "ArcheCoreHelper",

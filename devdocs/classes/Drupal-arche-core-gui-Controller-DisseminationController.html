@@ -270,6 +270,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_collectionDownloadScript">collectionDownloadScript()</a>
+    <span>
+                                &nbsp;: <abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr>    </span>
+</dt>
+<dd>Return the collection download python script</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_iiifView">iiifView()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -298,6 +305,20 @@ it will rerender the metadata view</dd>
 session lang params to get the desired lang string translation</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_changeCDLSText">changeCDLSText()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Chnage the pyton file content</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_fetchBasicData">fetchBasicData()</a>
+    <span>
+                                &nbsp;: object    </span>
+</dt>
+<dd>We have to fetch the basic data for the resource (title, description, etc.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_getCurrentLanguage">getCurrentLanguage()</a>
     <span>
                                 &nbsp;: <abbr title="\Drupal\arche_core_gui\Controller\type">type</abbr>    </span>
@@ -310,6 +331,13 @@ session lang params to get the desired lang string translation</dd>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Get the available diss services for a given resource</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_processCDLData">processCDLData()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Get the pyton file and change the content</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_setTmpDir">setTmpDir()</a>
@@ -681,7 +709,7 @@ session lang params to get the desired lang string translation</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/DisseminationController.php"><a href="files/arche-core-gui-src-controller-disseminationcontroller.html"><abbr title="arche_core_gui/src/Controller/DisseminationController.php">DisseminationController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -714,6 +742,52 @@ session lang params to get the desired lang string translation</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_collectionDownloadScript">
+        collectionDownloadScript()
+        <a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_collectionDownloadScript" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/DisseminationController.php"><a href="files/arche-core-gui-src-controller-disseminationcontroller.html"><abbr title="arche_core_gui/src/Controller/DisseminationController.php">DisseminationController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">29</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return the collection download python script</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">collectionDownloadScript</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$identifier</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_iiifView">
         iiifView()
         <a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_iiifView" class="headerlink"><i class="fas fa-link"></i></a>
@@ -722,7 +796,7 @@ session lang params to get the desired lang string translation</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/DisseminationController.php"><a href="files/arche-core-gui-src-controller-disseminationcontroller.html"><abbr title="arche_core_gui/src/Controller/DisseminationController.php">DisseminationController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -763,7 +837,7 @@ session lang params to get the desired lang string translation</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/DisseminationController.php"><a href="files/arche-core-gui-src-controller-disseminationcontroller.html"><abbr title="arche_core_gui/src/Controller/DisseminationController.php">DisseminationController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -804,7 +878,7 @@ session lang params to get the desired lang string translation</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/DisseminationController.php"><a href="files/arche-core-gui-src-controller-disseminationcontroller.html"><abbr title="arche_core_gui/src/Controller/DisseminationController.php">DisseminationController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -886,6 +960,107 @@ session lang params to get the desired lang string translation</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_changeCDLSText">
+        changeCDLSText()
+        <a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_changeCDLSText" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/DisseminationController.php"><a href="files/arche-core-gui-src-controller-disseminationcontroller.html"><abbr title="arche_core_gui/src/Controller/DisseminationController.php">DisseminationController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Chnage the pyton file content</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">changeCDLSText</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$text</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repoUrl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$text</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$repoUrl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fetchBasicData">
+        fetchBasicData()
+        <a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_fetchBasicData" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/DisseminationController.php"><a href="files/arche-core-gui-src-controller-disseminationcontroller.html"><abbr title="arche_core_gui/src/Controller/DisseminationController.php">DisseminationController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">158</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">We have to fetch the basic data for the resource (title, description, etc.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">fetchBasicData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">object</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p>.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$identifier</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">object</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getCurrentLanguage">
         getCurrentLanguage()
         <a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_getCurrentLanguage" class="headerlink"><i class="fas fa-link"></i></a>
@@ -930,7 +1105,7 @@ session lang params to get the desired lang string translation</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/DisseminationController.php"><a href="files/arche-core-gui-src-controller-disseminationcontroller.html"><abbr title="arche_core_gui/src/Controller/DisseminationController.php">DisseminationController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -968,6 +1143,52 @@ session lang params to get the desired lang string translation</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_processCDLData">
+        processCDLData()
+        <a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_processCDLData" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/DisseminationController.php"><a href="files/arche-core-gui-src-controller-disseminationcontroller.html"><abbr title="arche_core_gui/src/Controller/DisseminationController.php">DisseminationController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get the pyton file and change the content</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">processCDLData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repoUrl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$repoUrl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setTmpDir">
         setTmpDir()
         <a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_setTmpDir" class="headerlink"><i class="fas fa-link"></i></a>
@@ -976,7 +1197,7 @@ session lang params to get the desired lang string translation</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/DisseminationController.php"><a href="files/arche-core-gui-src-controller-disseminationcontroller.html"><abbr title="arche_core_gui/src/Controller/DisseminationController.php">DisseminationController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -1123,12 +1344,16 @@ session lang params to get the desired lang string translation</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_audioView">audioView()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_collectionDownloadScript">collectionDownloadScript()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_iiifView">iiifView()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_pdfView">pdfView()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_threedView">threedView()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_changeAPILanguage">changeAPILanguage()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_changeCDLSText">changeCDLSText()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_fetchBasicData">fetchBasicData()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_getCurrentLanguage">getCurrentLanguage()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_getDissServices">getDissServices()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_processCDLData">processCDLData()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_setTmpDir">setTmpDir()</a></li>
                                     </ul>
             </li>
