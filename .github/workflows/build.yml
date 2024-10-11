@@ -18,6 +18,7 @@ jobs:
         git clone --depth 1 https://github.com/acdh-oeaw/arche_core_gui_api
         git clone --depth 1 https://github.com/acdh-oeaw/arche-dashboard
         git clone --depth 1 https://github.com/acdh-oeaw/arche-doorkeeper
+        git clone --depth 1 https://github.com/acdh-oeaw/arche-diss-cache
         git clone --depth 1 https://github.com/acdh-oeaw/arche-exif
         git clone --depth 1 https://github.com/acdh-oeaw/arche-fcs
         git clone --depth 1 https://github.com/acdh-oeaw/arche-iiifmanifest
@@ -35,7 +36,7 @@ jobs:
         git clone --depth 1 https://github.com/acdh-oeaw/arche-thumbnails
         git clone --depth 1 https://github.com/acdh-oeaw/uriNormalizer
         mkdir devdocs
-        docker run --rm -v $(pwd):/data phpdoc/phpdoc:3.3 -d arche-assets/src -d arche-biblatex/src -d arche-core/src -d arche_core_gui/src -d arche_core_gui_api/src -d arche-dashboard/src -d arche-doorkeeper/src -d arche-exif/src -d arche-fcs/src -d arche-iiifmanifest/src -d arche-lib/src -d arche-lib-disserv/src -d arche-lib-ingest/src -d arche-lib-schema/src -d arche-mapserver/src -d arche-metadata-crawler/src -d arche-openrefine/src -d arche-oaipmh/src -d arche-ref-sources/src -d arche-resolver/src -d arche-schema-ingest/src -d arche-thumbnails/src -d uriNormalizer -t devdocs
+        docker run --rm -v $(pwd):/data phpdoc/phpdoc:3.3 -d arche-assets/src -d arche-biblatex/src -d arche-core/src -d arche_core_gui/src -d arche_core_gui_api/src -d arche-dashboard/src -d arche-diss-cache/src -d arche-doorkeeper/src -d arche-exif/src -d arche-fcs/src -d arche-iiifmanifest/src -d arche-lib/src -d arche-lib-disserv/src -d arche-lib-ingest/src -d arche-lib-schema/src -d arche-mapserver/src -d arche-metadata-crawler/src -d arche-openrefine/src -d arche-oaipmh/src -d arche-ref-sources/src -d arche-resolver/src -d arche-schema-ingest/src -d arche-thumbnails/src -d uriNormalizer -t devdocs
         cd ..
         rm -fR devdocs
         cp -fR tmp/devdocs .
