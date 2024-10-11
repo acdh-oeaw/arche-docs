@@ -271,11 +271,25 @@ Because of the special path handling, the basic language selector is not working
 <dd>The Child tree view api endpoint</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_contributedDT">contributedDT()</a>
+    <span>
+                                &nbsp;: <abbr title="\Drupal\arche_core_gui_api\Controller\type">type</abbr>    </span>
+</dt>
+<dd>Person contributed DT</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_expertData">expertData()</a>
     <span>
                                 &nbsp;: <abbr title="\Symfony\Component\HttpFoundation\JsonResponse">JsonResponse</abbr>    </span>
 </dt>
 <dd>Get all metadata for the given resource</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_involvedDT">involvedDT()</a>
+    <span>
+                                &nbsp;: <abbr title="\Drupal\arche_core_gui_api\Controller\type">type</abbr>    </span>
+</dt>
+<dd>Organisation invvoled DT</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_nextPrevItem">nextPrevItem()</a>
@@ -296,6 +310,12 @@ Because of the special path handling, the basic language selector is not working
                                 &nbsp;: <abbr title="\Drupal\arche_core_gui_api\Controller\type">type</abbr>    </span>
 </dt>
 <dd>Publications datatable endpoint</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_relatedDT">relatedDT()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_rootTable">rootTable()</a>
@@ -339,8 +359,9 @@ Because of the special path handling, the basic language selector is not working
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_spatialDT">spatialDT()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: <abbr title="\Drupal\arche_core_gui_api\Controller\type">type</abbr>    </span>
 </dt>
+<dd>Place spatial DT</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_topCollections">topCollections()</a>
@@ -722,7 +743,7 @@ session lang params to get the desired lang string translation</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
     </aside>
 
@@ -875,7 +896,7 @@ Because of the special path handling, the basic language selector is not working
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 
     </aside>
 
@@ -884,6 +905,59 @@ Because of the special path handling, the basic language selector is not working
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">childTreeData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\arche_core_gui_api\Controller\type">type</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$identifier</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\arche_core_gui_api\Controller\type">type</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_contributedDT">
+        contributedDT()
+        <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_contributedDT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">141</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Person contributed DT</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">contributedDT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\arche_core_gui_api\Controller\type">type</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -973,6 +1047,59 @@ Because of the special path handling, the basic language selector is not working
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_involvedDT">
+        involvedDT()
+        <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_involvedDT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">152</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Organisation invvoled DT</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">involvedDT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\arche_core_gui_api\Controller\type">type</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$identifier</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\arche_core_gui_api\Controller\type">type</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_nextPrevItem">
         nextPrevItem()
         <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_nextPrevItem" class="headerlink"><i class="fas fa-link"></i></a>
@@ -981,7 +1108,7 @@ Because of the special path handling, the basic language selector is not working
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">203</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -1036,7 +1163,7 @@ Because of the special path handling, the basic language selector is not working
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">198</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 
     </aside>
 
@@ -1127,6 +1254,54 @@ Because of the special path handling, the basic language selector is not working
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_relatedDT">
+        relatedDT()
+        <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_relatedDT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">157</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">relatedDT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$identifier</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_rootTable">
         rootTable()
         <a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_rootTable" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1135,7 +1310,7 @@ Because of the special path handling, the basic language selector is not working
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">221</span>
 
     </aside>
 
@@ -1280,7 +1455,7 @@ Because of the special path handling, the basic language selector is not working
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">163</span>
 
     </aside>
 
@@ -1315,7 +1490,7 @@ Because of the special path handling, the basic language selector is not working
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -1360,7 +1535,7 @@ Because of the special path handling, the basic language selector is not working
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
@@ -1395,14 +1570,15 @@ Because of the special path handling, the basic language selector is not working
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Place spatial DT</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">spatialDT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">spatialDT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\arche_core_gui_api\Controller\type">type</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1427,7 +1603,11 @@ Because of the special path handling, the basic language selector is not working
 
     
 
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\arche_core_gui_api\Controller\type">type</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1542,7 +1722,7 @@ Because of the special path handling, the basic language selector is not working
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ApiController.php"><a href="files/arche-core-gui-api-src-controller-apicontroller.html"><abbr title="arche_core_gui_api/src/Controller/ApiController.php">ApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
     </aside>
 
@@ -1863,10 +2043,13 @@ session lang params to get the desired lang string translation</p>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_breadcrumbData">breadcrumbData()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_childData">childData()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_childTreeData">childTreeData()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_contributedDT">contributedDT()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_expertData">expertData()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_involvedDT">involvedDT()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_nextPrevItem">nextPrevItem()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_ontologyJs">ontologyJs()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_publicationsDT">publicationsDT()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_relatedDT">relatedDT()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_rootTable">rootTable()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_rprDT">rprDT()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_searchCoordinates">searchCoordinates()</a></li>
