@@ -11116,6 +11116,11 @@ Search.appendIndex(
             "summary": "Description\u0020of\u0020FileToLargeException",
             "url": "classes/acdhOeaw-arche-thumbnails-FileToLargeException.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\FileToLargeException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-FileToLargeException.html#method___construct"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\handler\\Fallback",
             "name": "Fallback",
             "summary": "A\u0020fallback\u0020thumbnail\u0020handler\u0020creating\u0020a\u0020document\u002Dlike\u0020icon\u0020filled\u0020with\nthe\u0020resource\u0027s\u0020mime\u0020type",
@@ -11251,145 +11256,145 @@ Search.appendIndex(
             "summary": "Description\u0020of\u0020NoSuchFile",
             "url": "classes/acdhOeaw-arche-thumbnails-NoSuchFileException.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\NoSuchFileException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-NoSuchFileException.html#method___construct"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\NoThumbnailException",
             "name": "NoThumbnailException",
             "summary": "Description\u0020of\u0020NoThumbnailException",
             "url": "classes/acdhOeaw-arche-thumbnails-NoThumbnailException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\NoThumbnailException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-NoThumbnailException.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource",
             "name": "Resource",
             "summary": "Description\u0020of\u0020Resource",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AresolveUrl\u0028\u0029",
-            "name": "resolveUrl",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_resolveUrl"
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AcacheHandler\u0028\u0029",
+            "name": "cacheHandler",
+            "summary": "Gets\u0020the\u0020requested\u0020repository\u0020resource\u0020metadata\u0020and\u0020converts\u0020it\u0020to\u0020the\u0020thumbnail\u0027s\nservice\u0020ResourceMeta\u0020object.",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_cacheHandler"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetThumbnail\u0028\u0029",
-            "name": "getThumbnail",
-            "summary": "Returns\u0020path\u0020to\u0020the\u0020resource\u0020thumbnail\u0020in\u0020a\u0020given\u0020dimensions.",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getThumbnail"
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetThumbnailPath\u0028\u0029",
+            "name": "getThumbnailPath",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getThumbnailPath"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetRefFilePath\u0028\u0029",
+            "name": "getRefFilePath",
+            "summary": "Returns\u0020the\u0020path\u0020to\u0020the\u0020full\u0020resolution\u0020image.",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getRefFilePath"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetMeta\u0028\u0029",
             "name": "getMeta",
-            "summary": "Returns\u0020resource\u0027s\u0020basic\u0020metadata\u0020\u0028URL,\u0020mime\u0020type,\u0020size,\nmodification\u0020date,\u0020etc.\u0029",
+            "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getMeta"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetResourcePath\u0028\u0029",
-            "name": "getResourcePath",
-            "summary": "Returns\u0020path\u0020to\u0020the\u0020file\u0020storing\u0020a\u0020repository\u0020resource\u0020payload.",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getResourcePath"
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgenerateThumbnail\u0028\u0029",
+            "name": "generateThumbnail",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_generateThumbnail"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetThumbnailPath\u0028\u0029",
-            "name": "getThumbnailPath",
-            "summary": "Gets\u0020path\u0020to\u0020an\u0020already\u0020cached\u0020resource\u0020thumbnail\u0020of\u0020a\u0020given\u0020dimensions.",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getThumbnailPath"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetCachedFiles\u0028\u0029",
-            "name": "getCachedFiles",
-            "summary": "List\u0020cached\u0020files\u0020for\u0020a\u0020given\u0020resource.",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getCachedFiles"
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AinitHandlers\u0028\u0029",
+            "name": "initHandlers",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_initHandlers"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetFilePath\u0028\u0029",
             "name": "getFilePath",
-            "summary": "Returns\u0020expected\u0020cached\u0020file\u0020location\u0020\u0028but\u0020doesn\u0027t\u0020assure\u0020such\u0020a\u0020file\u0020exists\u0029.",
+            "summary": "Returns\u0020expected\u0020cached\u0020file\u0020location\u0020\u0028doesn\u0027t\u0020assure\u0020such\u0020a\u0020file\u0020exists\u0029.",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getFilePath"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AfetchResourceFile\u0028\u0029",
-            "name": "fetchResourceFile",
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AfetchResourceBinary\u0028\u0029",
+            "name": "fetchResourceBinary",
             "summary": "Fetches\u0020original\u0020resource",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_fetchResourceFile"
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_fetchResourceBinary"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AmaintainMetadataCache\u0028\u0029",
-            "name": "maintainMetadataCache",
-            "summary": "Fetches\u0020resource\u0027s\u0020metadata\u0020into\u0020\u0024this\u002D\u003Emeta\n\u0028from\u0020the\u0020database\u0020or,\u0020when\u0020needed,\u0020from\u0020the\u0020repository\u0029",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_maintainMetadataCache"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AmaintainDb\u0028\u0029",
-            "name": "maintainDb",
-            "summary": "Assures\u0020database\u0020contains\u0020all\u0020the\u0020tables",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_maintainDb"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024client",
-            "name": "client",
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003ADEFAULT_MAX_FILE_SIZE_MB",
+            "name": "DEFAULT_MAX_FILE_SIZE_MB",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_client"
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#constant_DEFAULT_MAX_FILE_SIZE_MB"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024config",
-            "name": "config",
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024logStatic",
+            "name": "logStatic",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_config"
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_logStatic"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024url",
-            "name": "url",
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024schema",
+            "name": "schema",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_url"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024pdo",
-            "name": "pdo",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_pdo"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024meta",
-            "name": "meta",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_meta"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024defaultHandler",
-            "name": "defaultHandler",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_defaultHandler"
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_schema"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024handlers",
             "name": "handlers",
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_handlers"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceInterface",
-            "name": "ResourceInterface",
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024defaultHandler",
+            "name": "defaultHandler",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-ResourceInterface.html"
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_defaultHandler"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceInterface\u003A\u003AgetMeta\u0028\u0029",
-            "name": "getMeta",
-            "summary": "Returns\u0020resource\u0027s\u0020basic\u0020metadata\u0020\u0028URL,\u0020mime\u0020type,\u0020size,\nmodification\u0020date,\u0020etc.\u0029",
-            "url": "classes/acdhOeaw-arche-thumbnails-ResourceInterface.html#method_getMeta"
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_config"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceInterface\u003A\u003AgetResourcePath\u0028\u0029",
-            "name": "getResourcePath",
-            "summary": "Returns\u0020path\u0020to\u0020the\u0020file\u0020storing\u0020a\u0020repository\u0020resource\u0020payload.",
-            "url": "classes/acdhOeaw-arche-thumbnails-ResourceInterface.html#method_getResourcePath"
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024meta",
+            "name": "meta",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_meta"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceInterface\u003A\u003AgetCachedFiles\u0028\u0029",
-            "name": "getCachedFiles",
-            "summary": "List\u0020files\u0020cached\u0020for\u0020a\u0020resource.",
-            "url": "classes/acdhOeaw-arche-thumbnails-ResourceInterface.html#method_getCachedFiles"
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_log"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024tmpId",
+            "name": "tmpId",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_tmpId"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta",
             "name": "ResourceMeta",
             "summary": "Description\u0020of\u0020ResourceMeta",
             "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003AfromDatasetNode\u0028\u0029",
+            "name": "fromDatasetNode",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#method___construct"
+            "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#method_fromDatasetNode"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003Adeserialize\u0028\u0029",
+            "name": "deserialize",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#method_deserialize"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003Aserialize\u0028\u0029",
+            "name": "serialize",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#method_serialize"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003A\u0024url",
             "name": "url",
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#property_url"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003A\u0024checkDate",
-            "name": "checkDate",
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003A\u0024realUrl",
+            "name": "realUrl",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#property_checkDate"
+            "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#property_realUrl"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003A\u0024repoHash",
             "name": "repoHash",
@@ -11406,15 +11411,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#property_sizeMb"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003A\u0024realUrl",
-            "name": "realUrl",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#property_realUrl"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003A\u0024class",
             "name": "class",
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#property_class"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003A\u0024modDate",
+            "name": "modDate",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#property_modDate"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ThumbnailException",
+            "name": "ThumbnailException",
+            "summary": "Description\u0020of\u0020ThumbnailException",
+            "url": "classes/acdhOeaw-arche-thumbnails-ThumbnailException.html"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\ArcheBaseController",
             "name": "ArcheBaseController",
@@ -11911,15 +11921,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getPlaceAddress"
         },                {
-            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetCollectionTechnicalData\u0028\u0029",
-            "name": "getCollectionTechnicalData",
-            "summary": "Return\u0020the\u0020metadata\u0020view\u0020right\u0020box\u0020getCollectionTechnicalData\u0020card\u0020content",
-            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getCollectionTechnicalData"
-        },                {
-            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetResMetaTechnicalData\u0028\u0029",
-            "name": "getResMetaTechnicalData",
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetTechnicalData\u0028\u0029",
+            "name": "getTechnicalData",
             "summary": "Return\u0020the\u0020metadata\u0020view\u0020right\u0020box\u0020getResMetaTechnicalData\u0020card\u0020content",
-            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getResMetaTechnicalData"
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getTechnicalData"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AhasVersion\u0028\u0029",
             "name": "hasVersion",

@@ -134,9 +134,6 @@
                             </ul>
         </div>
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <a href="classes/acdhOeaw-arche-thumbnails-ResourceInterface.html"><abbr title="\acdhOeaw\arche\thumbnails\ResourceInterface">ResourceInterface</abbr></a>                    </span>
     
     </h2>
 
@@ -148,7 +145,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -183,17 +180,23 @@
 
 
 
-    <h4 id="toc-interfaces">
-        Interfaces
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/acdhOeaw-arche-thumbnails-ResourceInterface.html"><abbr title="\acdhOeaw\arche\thumbnails\ResourceInterface">ResourceInterface</abbr></a></dt>    </dl>
 
 
 
 
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#constant_DEFAULT_MAX_FILE_SIZE_MB">DEFAULT_MAX_FILE_SIZE_MB</a>
+    <span>
+        &nbsp;= 100                            </span>
+</dt>
+
+    </dl>
 
 
 <h4 id="toc-properties">
@@ -202,10 +205,16 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_client">$client</a>
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_logStatic">$logStatic</a>
     <span>
-                        &nbsp;: <abbr title="\GuzzleHttp\Client">Client</abbr>            </span>
+                        &nbsp;: <abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_schema">$schema</a>
+    <span>
+                        &nbsp;: object            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
@@ -227,19 +236,19 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_log">$log</a>
+    <span>
+                        &nbsp;: <abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_meta">$meta</a>
     <span>
                         &nbsp;: <a href="classes/acdhOeaw-arche-thumbnails-ResourceMeta.html"><abbr title="\acdhOeaw\arche\thumbnails\ResourceMeta">ResourceMeta</abbr></a>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_pdo">$pdo</a>
-    <span>
-                        &nbsp;: <abbr title="\PDO">PDO</abbr>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_url">$url</a>
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_tmpId">$tmpId</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
@@ -259,74 +268,56 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getCachedFiles">getCachedFiles()</a>
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_cacheHandler">cacheHandler()</a>
     <span>
-                                &nbsp;: array&lt;string, array&lt;string|int, string&gt;&gt;    </span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a>    </span>
 </dt>
-<dd>List cached files for a given resource.</dd>
+<dd>Gets the requested repository resource metadata and converts it to the thumbnail&#039;s
+service ResourceMeta object.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getMeta">getMeta()</a>
     <span>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-thumbnails-ResourceMeta.html"><abbr title="\acdhOeaw\arche\thumbnails\ResourceMeta">ResourceMeta</abbr></a>    </span>
 </dt>
-<dd>Returns resource&#039;s basic metadata (URL, mime type, size,
-modification date, etc.)</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getResourcePath">getResourcePath()</a>
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getRefFilePath">getRefFilePath()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Returns path to the file storing a repository resource payload.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getThumbnail">getThumbnail()</a>
-    <span>
-                                &nbsp;: string|false    </span>
-</dt>
-<dd>Returns path to the resource thumbnail in a given dimensions.</dd>
+<dd>Returns the path to the full resolution image.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getThumbnailPath">getThumbnailPath()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Gets path to an already cached resource thumbnail of a given dimensions.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_fetchResourceFile">fetchResourceFile()</a>
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_fetchResourceBinary">fetchResourceBinary()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Fetches original resource</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_generateThumbnail">generateThumbnail()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getFilePath">getFilePath()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>Returns expected cached file location (but doesn&#039;t assure such a file exists).</dd>
+<dd>Returns expected cached file location (doesn&#039;t assure such a file exists).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_maintainDb">maintainDb()</a>
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_initHandlers">initHandlers()</a>
     <span>
                                 &nbsp;: void    </span>
-</dt>
-<dd>Assures database contains all the tables</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_maintainMetadataCache">maintainMetadataCache()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Fetches resource&#039;s metadata into $this-&gt;meta
-(from the database or, when needed, from the repository)</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_resolveUrl">resolveUrl()</a>
-    <span>
-                                &nbsp;: string    </span>
 </dt>
 
     </dl>
@@ -335,6 +326,41 @@ modification date, etc.)</dd>
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DEFAULT_MAX_FILE_SIZE_MB">
+        DEFAULT_MAX_FILE_SIZE_MB
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#constant_DEFAULT_MAX_FILE_SIZE_MB" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DEFAULT_MAX_FILE_SIZE_MB</span>
+    = <span class="phpdocumentor-signature__default-value">100</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
@@ -347,12 +373,12 @@ modification date, etc.)</dd>
         class="
             phpdocumentor-element
             -property
-            -private
+            -public
             -static                                            "
 >
-    <h4 class="phpdocumentor-element__name" id="property_client">
-        $client
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_client" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_logStatic">
+        $logStatic
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_logStatic" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
@@ -360,15 +386,48 @@ modification date, etc.)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type"><abbr title="\GuzzleHttp\Client">Client</abbr></span>
-    <span class="phpdocumentor-signature__name">$client</span>
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr></span>
+    <span class="phpdocumentor-signature__name">$logStatic</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_schema">
+        $schema
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_schema" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">53</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">object</span>
+    <span class="phpdocumentor-signature__name">$schema</span>
     </code>
 
     
@@ -393,7 +452,7 @@ modification date, etc.)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -426,7 +485,7 @@ modification date, etc.)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -459,7 +518,7 @@ modification date, etc.)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -469,6 +528,39 @@ modification date, etc.)</dd>
         <span class="phpdocumentor-signature__type">array&lt;string|int, <a href="classes/acdhOeaw-arche-thumbnails-handler-HandlerInterface.html"><abbr title="\acdhOeaw\arche\thumbnails\handler\HandlerInterface">HandlerInterface</abbr></a>&gt;</span>
     <span class="phpdocumentor-signature__name">$handlers</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_log">
+        $log
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_log" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null</span>
+    <span class="phpdocumentor-signature__name">$log</span>
+    </code>
 
     
     
@@ -492,7 +584,7 @@ modification date, etc.)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -515,9 +607,9 @@ modification date, etc.)</dd>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_pdo">
-        $pdo
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_pdo" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_tmpId">
+        $tmpId
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_tmpId" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
@@ -525,40 +617,7 @@ modification date, etc.)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\PDO">PDO</abbr></span>
-    <span class="phpdocumentor-signature__name">$pdo</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_url">
-        $url
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_url" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -566,7 +625,7 @@ modification date, etc.)</dd>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$url</span>
+    <span class="phpdocumentor-signature__name">$tmpId</span>
     </code>
 
     
@@ -596,14 +655,14 @@ modification date, etc.)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-thumbnails-ResourceMeta.html"><abbr title="\acdhOeaw\arche\thumbnails\ResourceMeta">ResourceMeta</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$log</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -611,8 +670,8 @@ modification date, etc.)</dd>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$meta</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-thumbnails-ResourceMeta.html"><abbr title="\acdhOeaw\arche\thumbnails\ResourceMeta">ResourceMeta</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -620,6 +679,13 @@ modification date, etc.)</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$config</span>
                 : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$log</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -634,43 +700,45 @@ modification date, etc.)</dd>
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+                                    -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getCachedFiles">
-        getCachedFiles()
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getCachedFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_cacheHandler">
+        cacheHandler()
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_cacheHandler" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">List cached files for a given resource.</p>
+        <p class="phpdocumentor-summary">Gets the requested repository resource metadata and converts it to the thumbnail&#039;s
+service ResourceMeta object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getCachedFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$order</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string|int, string&gt;&gt;</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">cacheHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$param</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
-        <section class="phpdocumentor-description"><p>Returnes 2D array with first dimension indicating available widths and
-second dimension listing heights available for a given width. Both dimensions
-are encoded as strings left-padded with zeros up to 5 digits length.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$order</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                <span class="phpdocumentor-signature__argument__name">$res</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>\SCANDIR_SORT_ASCENDING or SCANDIR_SORT_DESCENDING</p>
-</section>
-
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$param</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
             </dd>
             </dl>
 
@@ -678,7 +746,7 @@ are encoded as strings left-padded with zeros up to 5 digits length.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string, array&lt;string|int, string&gt;&gt;</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a></span>
             </section>
 
 </article>
@@ -696,13 +764,11 @@ are encoded as strings left-padded with zeros up to 5 digits length.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Returns resource&#039;s basic metadata (URL, mime type, size,
-modification date, etc.)</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getMeta</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-thumbnails-ResourceMeta.html"><abbr title="\acdhOeaw\arche\thumbnails\ResourceMeta">ResourceMeta</abbr></a></span></code>
@@ -725,88 +791,35 @@ modification date, etc.)</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getResourcePath">
-        getResourcePath()
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getResourcePath" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getRefFilePath">
+        getRefFilePath()
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getRefFilePath" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Returns path to the file storing a repository resource payload.</p>
+        <p class="phpdocumentor-summary">Returns the path to the full resolution image.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getResourcePath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getRefFilePath</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
-    
+        <section class="phpdocumentor-description"><p>Downloads the resource content if needed.</p>
+</section>
+
     
     
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getThumbnail">
-        getThumbnail()
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getThumbnail" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">117</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Returns path to the resource thumbnail in a given dimensions.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getThumbnail</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$width</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$height</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|false</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-        <section class="phpdocumentor-description"><p>Always returns a proper path.</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$width</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$height</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string|false</span>
             </section>
 
 </article>
@@ -824,58 +837,37 @@ modification date, etc.)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Gets path to an already cached resource thumbnail of a given dimensions.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getThumbnailPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$width</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$height</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getThumbnailPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$width</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$height</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
-        <section class="phpdocumentor-description"><p>If $width and $height are not specified, returns path to the original resource file.</p>
-<p>If the thumbnail of a given dimensions is not yet cached, a
-\acdhOeaw\arche\thumbnails\NoSuchFileException exception is thrown but the resource
-in original dimensions can be assumed to be always available.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$width</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$height</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getThumbnailPath#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/acdhOeaw-arche-thumbnails-NoSuchFileException.html"><abbr title="\acdhOeaw\arche\thumbnails\NoSuchFileException">NoSuchFileException</abbr></a></span>
-                                                            
-                                             
-                                    </dd>
-                                            </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -889,15 +881,15 @@ in original dimensions can be assumed to be always available.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_fetchResourceFile">
-        fetchResourceFile()
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_fetchResourceFile" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_fetchResourceBinary">
+        fetchResourceBinary()
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_fetchResourceBinary" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">247</span>
+    <span class="phpdocumentor-element-found-in__line">245</span>
 
     </aside>
 
@@ -905,16 +897,26 @@ in original dimensions can be assumed to be always available.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">fetchResourceFile</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">fetchResourceBinary</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_fetchResourceFile#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_fetchResourceBinary#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -928,11 +930,69 @@ in original dimensions can be assumed to be always available.</p>
                                     </dd>
                                             </dl>
 
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_generateThumbnail">
+        generateThumbnail()
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_generateThumbnail" class="headerlink"><i class="fas fa-link"></i></a>
 
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">173</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">generateThumbnail</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refPath</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$width</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$height</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$refPath</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$width</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$height</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -952,7 +1012,7 @@ in original dimensions can be assumed to be always available.</p>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Returns expected cached file location (but doesn&#039;t assure such a file exists).</p>
+        <p class="phpdocumentor-summary">Returns expected cached file location (doesn&#039;t assure such a file exists).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -960,9 +1020,7 @@ in original dimensions can be assumed to be always available.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
-        <section class="phpdocumentor-description"><p>If $width or $height are not specified, returns path to the original reference file.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -995,23 +1053,22 @@ in original dimensions can be assumed to be always available.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_maintainDb">
-        maintainDb()
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_maintainDb" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_initHandlers">
+        initHandlers()
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_initHandlers" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">413</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Assures database contains all the tables</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">maintainDb</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">initHandlers</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1020,84 +1077,6 @@ in original dimensions can be assumed to be always available.</p>
     
 
     
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_maintainMetadataCache">
-        maintainMetadataCache()
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_maintainMetadataCache" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">275</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Fetches resource&#039;s metadata into $this-&gt;meta
-(from the database or, when needed, from the repository)</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">maintainMetadataCache</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_resolveUrl">
-        resolveUrl()
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_resolveUrl" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">57</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">resolveUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$url</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
 </article>
             </section>
 
@@ -1204,21 +1183,29 @@ in original dimensions can be assumed to be always available.</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#toc-constants">Constants</a></li>
                                                             <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#toc-properties">Properties</a></li>
                                                             <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#constant_DEFAULT_MAX_FILE_SIZE_MB">DEFAULT_MAX_FILE_SIZE_MB</a></li>
+                                            </ul>
+                </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_client">$client<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_logStatic">$logStatic<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_schema">$schema<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_config">$config<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_defaultHandler">$defaultHandler<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_handlers">$handlers<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_log">$log<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_meta">$meta<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_pdo">$pdo<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_url">$url<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_tmpId">$tmpId<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
                                             </ul>
                 </li>
             
@@ -1226,16 +1213,14 @@ in original dimensions can be assumed to be always available.</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getCachedFiles">getCachedFiles()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_cacheHandler">cacheHandler()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getMeta">getMeta()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getResourcePath">getResourcePath()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getThumbnail">getThumbnail()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getRefFilePath">getRefFilePath()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getThumbnailPath">getThumbnailPath()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_fetchResourceFile">fetchResourceFile()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_fetchResourceBinary">fetchResourceBinary()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_generateThumbnail">generateThumbnail()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getFilePath">getFilePath()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_maintainDb">maintainDb()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_maintainMetadataCache">maintainMetadataCache()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_resolveUrl">resolveUrl()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_initHandlers">initHandlers()</a></li>
                                     </ul>
             </li>
                     </ul>
