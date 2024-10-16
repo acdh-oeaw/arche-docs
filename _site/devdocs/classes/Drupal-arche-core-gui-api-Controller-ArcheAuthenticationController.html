@@ -118,13 +118,13 @@
                                 <section>
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/drupal.html">Drupal</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/drupal-arche-core-gui.html">arche_core_gui</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/drupal-arche-core-gui-controller.html">Controller</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/drupal-arche-core-gui-api.html">arche_core_gui_api</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/drupal-arche-core-gui-api-controller.html">Controller</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    MetadataController
+    ArcheAuthenticationController
 
         <span class="phpdocumentor-element__extends">
         extends <a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html"><abbr title="\Drupal\arche_core_gui\Controller\ArcheBaseController">ArcheBaseController</abbr></a>
@@ -146,19 +146,19 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/MetadataController.php"><a href="files/arche-core-gui-src-controller-metadatacontroller.html"><abbr title="arche_core_gui/src/Controller/MetadataController.php">MetadataController.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ArcheAuthenticationController.php"><a href="files/arche-core-gui-api-src-controller-archeauthenticationcontroller.html"><abbr title="arche_core_gui_api/src/Controller/ArcheAuthenticationController.php">ArcheAuthenticationController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Description of MetadataController</p>
+            <p class="phpdocumentor-summary">Description of ArcheAuthenticationController</p>
 
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -177,7 +177,7 @@
 
 <h3 id="toc">
     Table of Contents
-    <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
@@ -191,7 +191,7 @@
 
 <h4 id="toc-properties">
     Properties
-    <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
@@ -243,41 +243,31 @@
                         &nbsp;: mixed            </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#property_actualPage">$actualPage</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
     </dl>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method___construct">__construct()</a>
+    <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_detailAjaxView">detailAjaxView()</a>
+    <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#method_checkUserPermission">checkUserPermission()</a>
     <span>
-                                &nbsp;: <abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr>    </span>
+                                &nbsp;: mixed    </span>
 </dt>
-<dd>This function is called if the user is jumping inside the arche content,
-it will rerender the metadata view</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_detailView">detailView()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Resource Metadata view</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_discoverView">discoverView()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>The main discover/smartsearch view</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_changeAPILanguage">changeAPILanguage()</a>
@@ -305,7 +295,7 @@ session lang params to get the desired lang string translation</dd>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -572,12 +562,45 @@ session lang params to get the desired lang string translation</dd>
     
 
 </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_actualPage">
+        $actualPage
+        <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#property_actualPage" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ArcheAuthenticationController.php"><a href="files/arche-core-gui-api-src-controller-archeauthenticationcontroller.html"><abbr title="arche_core_gui_api/src/Controller/ArcheAuthenticationController.php">ArcheAuthenticationController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">15</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$actualPage</span>
+    </code>
+
+    
+    
+    
+
+</article>
             </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -588,11 +611,11 @@ session lang params to get the desired lang string translation</dd>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/MetadataController.php"><a href="files/arche-core-gui-src-controller-metadatacontroller.html"><abbr title="arche_core_gui/src/Controller/MetadataController.php">MetadataController.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ArcheAuthenticationController.php"><a href="files/arche-core-gui-api-src-controller-archeauthenticationcontroller.html"><abbr title="arche_core_gui_api/src/Controller/ArcheAuthenticationController.php">ArcheAuthenticationController.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">17</span>
 
@@ -617,24 +640,22 @@ session lang params to get the desired lang string translation</dd>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_detailAjaxView">
-        detailAjaxView()
-        <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_detailAjaxView" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_checkUserPermission">
+        checkUserPermission()
+        <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#method_checkUserPermission" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/MetadataController.php"><a href="files/arche-core-gui-src-controller-metadatacontroller.html"><abbr title="arche_core_gui/src/Controller/MetadataController.php">MetadataController.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/ArcheAuthenticationController.php"><a href="files/arche-core-gui-api-src-controller-archeauthenticationcontroller.html"><abbr title="arche_core_gui_api/src/Controller/ArcheAuthenticationController.php">ArcheAuthenticationController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">This function is called if the user is jumping inside the arche content,
-it will rerender the metadata view</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">detailAjaxView</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">checkUserPermission</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userData</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -642,8 +663,15 @@ it will rerender the metadata view</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$identifier</span>
+                <span class="phpdocumentor-signature__argument__name">$resId</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$userData</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -652,103 +680,7 @@ it will rerender the metadata view</p>
 
     
 
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_detailView">
-        detailView()
-        <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_detailView" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/MetadataController.php"><a href="files/arche-core-gui-src-controller-metadatacontroller.html"><abbr title="arche_core_gui/src/Controller/MetadataController.php">MetadataController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">62</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Resource Metadata view</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">detailView</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$identifier</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$identifier</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_discoverView">
-        discoverView()
-        <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_discoverView" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/MetadataController.php"><a href="files/arche-core-gui-src-controller-metadatacontroller.html"><abbr title="arche_core_gui/src/Controller/MetadataController.php">MetadataController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">105</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">The main discover/smartsearch view</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">discoverView</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Drupal\arche_core_gui\Controller\type">type</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$str</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Drupal\arche_core_gui\Controller\type">type</abbr></span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
 </article>
                     <article
         class="phpdocumentor-element
@@ -835,7 +767,7 @@ session lang params to get the desired lang string translation</p>
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/arche_core_gui/src/Controller/MetadataController.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/arche_core_gui_api/src/Controller/ArcheAuthenticationController.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -934,32 +866,31 @@ session lang params to get the desired lang string translation</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                            <li><a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#toc-methods">Methods</a></li>
+                                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_config">$config<a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html"></li>
-                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_helper">$helper<a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html"></li>
-                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_model">$model<a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html"></li>
-                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_ontology">$ontology<a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html"></li>
-                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_pdo">$pdo<a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html"></li>
-                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_repoDb">$repoDb<a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html"></li>
-                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_schema">$schema<a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html"></li>
-                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_siteLang">$siteLang<a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_config">$config<a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_helper">$helper<a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_model">$model<a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_ontology">$ontology<a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_pdo">$pdo<a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_repoDb">$repoDb<a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_schema">$schema<a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_siteLang">$siteLang<a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html"></li>
+                                                    <li><a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#property_actualPage">$actualPage<a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html"></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_detailAjaxView">detailAjaxView()</a></li>
-                                            <li><a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_detailView">detailView()</a></li>
-                                            <li><a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_discoverView">discoverView()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#method_checkUserPermission">checkUserPermission()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_changeAPILanguage">changeAPILanguage()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_getCurrentLanguage">getCurrentLanguage()</a></li>
                                     </ul>
@@ -981,7 +912,7 @@ session lang params to get the desired lang string translation</p>
     </section>
 </section>
         </div>
-        <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

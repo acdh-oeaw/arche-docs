@@ -11326,15 +11326,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#constant_DEFAULT_MAX_FILE_SIZE_MB"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024logStatic",
-            "name": "logStatic",
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AREAL_URL_PROP",
+            "name": "REAL_URL_PROP",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_logStatic"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024schema",
-            "name": "schema",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_schema"
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#constant_REAL_URL_PROP"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024handlers",
             "name": "handlers",
@@ -11876,6 +11871,11 @@ Search.appendIndex(
             "summary": "Check\u0020if\u0020the\u0020resource\u0020is\u0020a\u0020pdf\u0020file",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_isPDF"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AisUserLoggedIn\u0028\u0029",
+            "name": "isUserLoggedIn",
+            "summary": "Check\u0020if\u0020the\u0020user\u0020is\u0020logged\u0020in\u0020or\u0020not",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_isUserLoggedIn"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AisPublic\u0028\u0029",
             "name": "isPublic",
             "summary": "Check\u0020the\u0020resource\u0020is\u0020public\u0020or\u0020not",
@@ -12311,6 +12311,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_nextPrevItem"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AcheckUserPersmission\u0028\u0029",
+            "name": "checkUserPersmission",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_checkUserPersmission"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController",
+            "name": "ArcheAuthenticationController",
+            "summary": "Description\u0020of\u0020ArcheAuthenticationController",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController\u003A\u003AcheckUserPermission\u0028\u0029",
+            "name": "checkUserPermission",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#method_checkUserPermission"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController\u003A\u003A\u0024actualPage",
+            "name": "actualPage",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#property_actualPage"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController",
             "name": "ChildController",
             "summary": "Description\u0020of\u0020ArcheBaseController",
@@ -12335,11 +12360,6 @@ Search.appendIndex(
             "name": "getNextPrevItem",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#method_getNextPrevItem"
-        },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003A\u0024apiHelper",
-            "name": "apiHelper",
-            "summary": "",
-            "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#property_apiHelper"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController",
             "name": "InverseDataController",
@@ -12391,11 +12411,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_relatedDT"
         },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003A\u0024apiHelper",
-            "name": "apiHelper",
-            "summary": "",
-            "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#property_apiHelper"
-        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController",
             "name": "MetadataController",
             "summary": "Description\u0020of\u0020ArcheBaseController",
@@ -12430,11 +12445,6 @@ Search.appendIndex(
             "name": "getExpertData",
             "summary": "Metadata\u0020view\u0020expert\u0020DT\u0020content",
             "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#method_getExpertData"
-        },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController\u003A\u003A\u0024apiHelper",
-            "name": "apiHelper",
-            "summary": "",
-            "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#property_apiHelper"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController",
             "name": "OntologyController",
@@ -12731,11 +12741,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-VersionsController.html#method_getVersions"
         },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VersionsController\u003A\u003A\u0024apiHelper",
-            "name": "apiHelper",
-            "summary": "",
-            "url": "classes/Drupal-arche-core-gui-api-Controller-VersionsController.html#property_apiHelper"
-        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\VersionsController\u003A\u003A\u0024prev",
             "name": "prev",
             "summary": "",
@@ -12765,21 +12770,6 @@ Search.appendIndex(
             "name": "helper",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-VersionsController.html#property_helper"
-        },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\ApiHelper",
-            "name": "ApiHelper",
-            "summary": "",
-            "url": "classes/Drupal-arche-core-gui-api-Helper-ApiHelper.html"
-        },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\ApiHelper\u003A\u003AgetLangValue\u0028\u0029",
-            "name": "getLangValue",
-            "summary": "",
-            "url": "classes/Drupal-arche-core-gui-api-Helper-ApiHelper.html#method_getLangValue"
-        },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\ApiHelper\u003A\u003AgetAcdhIdValue\u0028\u0029",
-            "name": "getAcdhIdValue",
-            "summary": "Fetch\u0020the\u0020acdih\u0020from\u0020the\u0020results",
-            "url": "classes/Drupal-arche-core-gui-api-Helper-ApiHelper.html#method_getAcdhIdValue"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\ArcheBreadcrumbHelper",
             "name": "ArcheBreadcrumbHelper",
