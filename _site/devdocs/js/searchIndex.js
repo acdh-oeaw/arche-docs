@@ -236,6 +236,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Auth.html#method_denyAccess"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Auth\u003A\u003Alogout\u0028\u0029",
+            "name": "logout",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Auth.html#method_logout"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Auth\u003A\u003ADEFAULT_ALLOW",
             "name": "DEFAULT_ALLOW",
             "summary": "",
@@ -11891,6 +11896,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020defined\u0020property\u0020String\u0020values",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getDataString"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetDataArrayString\u0028\u0029",
+            "name": "getDataArrayString",
+            "summary": "Fetch\u0020property\u0020which\u0020has\u0020more\u0020than\u0020one\u0020value\u0020as\u0020array\u0020or\u0020as\u0020string",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getDataArrayString"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AisContactDetails\u0028\u0029",
             "name": "isContactDetails",
             "summary": "",
@@ -12328,8 +12338,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController\u003A\u003AcheckUserPermission\u0028\u0029",
             "name": "checkUserPermission",
-            "summary": "",
+            "summary": "check\u0020the\u0020logged\u0020or\u0020not\u0020logged\u0020user\u0020rights\u0020and\u0020the\u0020actual\u0020resource\u0020rights",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#method_checkUserPermission"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController\u003A\u003A\u0024roles",
+            "name": "roles",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#property_roles"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController\u003A\u003A\u0024actualPage",
             "name": "actualPage",
