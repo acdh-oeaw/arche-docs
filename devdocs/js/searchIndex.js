@@ -11523,17 +11523,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\DisseminationController\u003A\u003AiiifView\u0028\u0029",
             "name": "iiifView",
-            "summary": "",
+            "summary": "Image\u0020viewer\u0020dissemination\u0020view",
             "url": "classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_iiifView"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\DisseminationController\u003A\u003ApdfView\u0028\u0029",
             "name": "pdfView",
-            "summary": "",
+            "summary": "The\u0020PDF\u0020viewer\u0020dissemination\u0020view",
             "url": "classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_pdfView"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\DisseminationController\u003A\u003AaudioView\u0028\u0029",
             "name": "audioView",
-            "summary": "",
+            "summary": "The\u0020Audio\u0020player\u0020dissemination\u0020view",
             "url": "classes/Drupal-arche-core-gui-Controller-DisseminationController.html#method_audioView"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\DisseminationController\u003A\u003AfetchBasicData\u0028\u0029",
@@ -12018,12 +12018,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ThreeDObject\u003A\u003AdownloadFile\u0028\u0029",
             "name": "downloadFile",
-            "summary": "",
+            "summary": "Download\u0020the\u00203d\u0020model",
             "url": "classes/Drupal-arche-core-gui-Object-ThreeDObject.html#method_downloadFile"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ThreeDObject\u003A\u003AdoTheRequest\u0028\u0029",
             "name": "doTheRequest",
-            "summary": "",
+            "summary": "Send\u0020the\u0020request\u0020to\u0020download\u0020the\u00203d\u0020file\u0020into\u0020the\u0020server",
             "url": "classes/Drupal-arche-core-gui-Object-ThreeDObject.html#method_doTheRequest"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ThreeDObject\u003A\u003AgetHeaderData\u0028\u0029",
@@ -12340,6 +12340,16 @@ Search.appendIndex(
             "name": "checkUserPermission",
             "summary": "check\u0020the\u0020logged\u0020or\u0020not\u0020logged\u0020user\u0020rights\u0020and\u0020the\u0020actual\u0020resource\u0020rights",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#method_checkUserPermission"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController\u003A\u003AcheckHttpLogin\u0028\u0029",
+            "name": "checkHttpLogin",
+            "summary": "Check\u0020if\u0020the\u0020user\u0020logged\u0020in\u0020with\u0020httpd",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#method_checkHttpLogin"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController\u003A\u003AcheckShibbolethLogin\u0028\u0029",
+            "name": "checkShibbolethLogin",
+            "summary": "Check\u0020if\u0020the\u0020user\u0020logged\u0020in\u0020with\u0020Shibboleth",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#method_checkShibbolethLogin"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController\u003A\u003A\u0024roles",
             "name": "roles",
