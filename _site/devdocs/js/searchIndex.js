@@ -36,10 +36,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-UriNormRules.html#property_data"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\BiblatexException",
+            "name": "BiblatexException",
+            "summary": "Description\u0020of\u0020BiblatexException",
+            "url": "classes/acdhOeaw-arche-biblatex-BiblatexException.html"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource",
             "name": "Resource",
             "summary": "Maps\u0020ARCHE\u0020resource\u0020metadata\u0020to\u0020a\u0020BibLaTeX\u0020bibliographic\u0020entry.",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AcacheHandler\u0028\u0029",
+            "name": "cacheHandler",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_cacheHandler"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
@@ -146,6 +156,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#property_res"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#property_schema"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003A\u0024log",
             "name": "log",
             "summary": "",
@@ -240,6 +255,11 @@ Search.appendIndex(
             "name": "logout",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Auth.html#method_logout"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Auth\u003A\u003AgetCookieHeaderValue\u0028\u0029",
+            "name": "getCookieHeaderValue",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Auth.html#method_getCookieHeaderValue"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Auth\u003A\u003ADEFAULT_ALLOW",
             "name": "DEFAULT_ALLOW",
@@ -881,6 +901,21 @@ Search.appendIndex(
             "summary": "Description\u0020of\u0020RepoException",
             "url": "classes/acdhOeaw-arche-core-RepoException.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RepoException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RepoException.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RepoException\u003A\u003AgetHeaders\u0028\u0029",
+            "name": "getHeaders",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RepoException.html#method_getHeaders"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RepoException\u003A\u003A\u0024headers",
+            "name": "headers",
+            "summary": "HTTP\u0020response\u0020headers\u0020to\u0020be\u0020set",
+            "url": "classes/acdhOeaw-arche-core-RepoException.html#property_headers"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Resource",
             "name": "Resource",
             "summary": "Description\u0020of\u0020Resource",
@@ -1085,6 +1120,11 @@ Search.appendIndex(
             "name": "setHeader",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-RestController.html#method_setHeader"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AsetHeaders\u0028\u0029",
+            "name": "setHeaders",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RestController.html#method_setHeaders"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\RestController\u003A\u003AaddHeader\u0028\u0029",
             "name": "addHeader",
@@ -2920,6 +2960,11 @@ Search.appendIndex(
             "name": "serialize",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_serialize"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003Asend\u0028\u0029",
+            "name": "send",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_send"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003A\u0024body",
             "name": "body",
