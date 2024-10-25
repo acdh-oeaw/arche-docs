@@ -2986,6 +2986,81 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_hit"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service",
+            "name": "Service",
+            "summary": "Wrapper\u0020handling\u0020boilerplate\u0020code\u0020around\u0020the\u0020ARCHE\u0020microservice\u0020initialization",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003AsetCallback\u0028\u0029",
+            "name": "setCallback",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_setCallback"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003AgetConfig\u0028\u0029",
+            "name": "getConfig",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_getConfig"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003AgetLog\u0028\u0029",
+            "name": "getLog",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_getLog"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003AserveRequest\u0028\u0029",
+            "name": "serveRequest",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_serveRequest"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#property_config"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#property_log"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003A\u0024clbck",
+            "name": "clbck",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#property_clbck"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ServiceException",
+            "name": "ServiceException",
+            "summary": "Description\u0020of\u0020ServiceException",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ServiceException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ServiceException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ServiceException.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ServiceException\u003A\u003AgetHeaders\u0028\u0029",
+            "name": "getHeaders",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ServiceException.html#method_getHeaders"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ServiceException\u003A\u003A\u0024headers",
+            "name": "headers",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ServiceException.html#property_headers"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\UnauthorizedException",
+            "name": "UnauthorizedException",
+            "summary": "Description\u0020of\u0020UnauthorizedException",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-UnauthorizedException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\UnauthorizedException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-UnauthorizedException.html#method___construct"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\CheckAttribute",
             "name": "CheckAttribute",
             "summary": "Attribute\u0020used\u0020to\u0020mark\u0020check\u0020methods",
@@ -11465,6 +11540,11 @@ Search.appendIndex(
             "name": "modDate",
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#property_modDate"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta\u003A\u003A\u0024aclRead",
+            "name": "aclRead",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-ResourceMeta.html#property_aclRead"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ThumbnailException",
             "name": "ThumbnailException",
