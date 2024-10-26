@@ -3016,6 +3016,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_serveRequest"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003AprocessException\u0028\u0029",
+            "name": "processException",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_processException"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
@@ -4115,6 +4120,96 @@ Search.appendIndex(
             "name": "type",
             "summary": "",
             "url": "classes/acdhOeaw-cql-Token.html#property_type"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\IiifException",
+            "name": "IiifException",
+            "summary": "Description\u0020of\u0020IiifException",
+            "url": "classes/acdhOeaw-arche-iiifManifest-IiifException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource",
+            "name": "Resource",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AcacheHandler\u0028\u0029",
+            "name": "cacheHandler",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_cacheHandler"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AgetOutput\u0028\u0029",
+            "name": "getOutput",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getOutput"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AgetImageInfoUrl\u0028\u0029",
+            "name": "getImageInfoUrl",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getImageInfoUrl"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AgetManifestTitle\u0028\u0029",
+            "name": "getManifestTitle",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getManifestTitle"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AfindFirstResource\u0028\u0029",
+            "name": "findFirstResource",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_findFirstResource"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AgetImageList\u0028\u0029",
+            "name": "getImageList",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getImageList"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AgetManifest\u0028\u0029",
+            "name": "getManifest",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getManifest"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AgetNextSbj\u0028\u0029",
+            "name": "getNextSbj",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getNextSbj"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AMODE_IMAGE",
+            "name": "MODE_IMAGE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_IMAGE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AMODE_IMAGES",
+            "name": "MODE_IMAGES",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_IMAGES"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AMODE_MANIFEST",
+            "name": "MODE_MANIFEST",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_MANIFEST"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003A\u0024meta",
+            "name": "meta",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#property_meta"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#property_config"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#property_schema"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#property_log"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\AuthInterface",
             "name": "AuthInterface",
@@ -13570,6 +13665,11 @@ Search.appendIndex(
             "name": "cql",
             "summary": "",
             "url": "namespaces/acdhoeaw-cql.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest",
+            "name": "iiifManifest",
+            "summary": "",
+            "url": "namespaces/acdhoeaw-arche-iiifmanifest.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib",
             "name": "lib",
