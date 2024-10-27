@@ -3361,6 +3361,66 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#property_log"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif\\ExifException",
+            "name": "ExifException",
+            "summary": "Description\u0020of\u0020IiifException",
+            "url": "classes/acdhOeaw-arche-exif-ExifException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource",
+            "name": "Resource",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-exif-Resource.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003AcacheHandler\u0028\u0029",
+            "name": "cacheHandler",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-exif-Resource.html#method_cacheHandler"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-exif-Resource.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003AgetOutput\u0028\u0029",
+            "name": "getOutput",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-exif-Resource.html#method_getOutput"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003AgetLocalFilePath\u0028\u0029",
+            "name": "getLocalFilePath",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-exif-Resource.html#method_getLocalFilePath"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003AdownloadResource\u0028\u0029",
+            "name": "downloadResource",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-exif-Resource.html#method_downloadResource"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003ADWNLD_CHUNK",
+            "name": "DWNLD_CHUNK",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-exif-Resource.html#constant_DWNLD_CHUNK"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003A\u0024meta",
+            "name": "meta",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-exif-Resource.html#property_meta"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-exif-Resource.html#property_config"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-exif-Resource.html#property_schema"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-exif-Resource.html#property_log"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\fcs\\ClarinException",
             "name": "ClarinException",
             "summary": "Description\u0020of\u0020ClarinException",
@@ -13655,6 +13715,11 @@ Search.appendIndex(
             "name": "doorkeeper",
             "summary": "",
             "url": "namespaces/acdhoeaw-arche-doorkeeper.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\exif",
+            "name": "exif",
+            "summary": "",
+            "url": "namespaces/acdhoeaw-arche-exif.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\fcs",
             "name": "fcs",

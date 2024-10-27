@@ -119,7 +119,7 @@
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-arche.html">arche</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-arche-iiifmanifest.html">iiifManifest</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-arche-exif.html">exif</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
@@ -143,7 +143,7 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-exif/src/acdhOeaw/arche/exif/Resource.php"><a href="files/arche-exif-src-acdhoeaw-arche-exif-resource.html"><abbr title="arche-exif/src/acdhOeaw/arche/exif/Resource.php">Resource.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">43</span>
 
@@ -157,7 +157,7 @@
 
 <h3 id="toc">
     Table of Contents
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
@@ -169,26 +169,14 @@
 
 <h4 id="toc-constants">
     Constants
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_IMAGE">MODE_IMAGE</a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#constant_DWNLD_CHUNK">DWNLD_CHUNK</a>
     <span>
-        &nbsp;= &#039;image&#039;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_IMAGES">MODE_IMAGES</a>
-    <span>
-        &nbsp;= &#039;images&#039;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_MANIFEST">MODE_MANIFEST</a>
-    <span>
-        &nbsp;= &#039;manifest&#039;                            </span>
+        &nbsp;= 10485760                            </span>
 </dt>
 
     </dl>
@@ -196,30 +184,30 @@
 
 <h4 id="toc-properties">
     Properties
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#property_config">$config</a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#property_config">$config</a>
     <span>
                         &nbsp;: object            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#property_log">$log</a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#property_log">$log</a>
     <span>
                         &nbsp;: <abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#property_meta">$meta</a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#property_meta">$meta</a>
     <span>
                         &nbsp;: <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#property_schema">$schema</a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#property_schema">$schema</a>
     <span>
                         &nbsp;: <a href="classes/acdhOeaw-arche-lib-Schema.html"><abbr title="\acdhOeaw\arche\lib\Schema">Schema</abbr></a>            </span>
 </dt>
@@ -228,62 +216,38 @@
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method___construct">__construct()</a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_cacheHandler">cacheHandler()</a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#method_cacheHandler">cacheHandler()</a>
     <span>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getOutput">getOutput()</a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#method_getOutput">getOutput()</a>
     <span>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_findFirstResource">findFirstResource()</a>
-    <span>
-                                &nbsp;: <abbr title="array{0: \rdfInterface\TermInterface, 1: \rdfInterface\TermInterface}">TermInterface}</abbr>    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getImageInfoUrl">getImageInfoUrl()</a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#method_downloadResource">downloadResource()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getImageList">getImageList()</a>
+    <a href="classes/acdhOeaw-arche-exif-Resource.html#method_getLocalFilePath">getLocalFilePath()</a>
     <span>
                                 &nbsp;: string    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getManifest">getManifest()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getManifestTitle">getManifestTitle()</a>
-    <span>
-                                &nbsp;: array&lt;string, string&gt;    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getNextSbj">getNextSbj()</a>
-    <span>
-                                &nbsp;: <abbr title="\rdfInterface\TermInterface">TermInterface</abbr>|null    </span>
 </dt>
 
     </dl>
@@ -295,18 +259,18 @@
     <section class="phpdocumentor-constants">
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
-            <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/acdhOeaw-arche-exif-Resource.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_MODE_IMAGE">
-        MODE_IMAGE
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_IMAGE" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="constant_DWNLD_CHUNK">
+        DWNLD_CHUNK
+        <a href="classes/acdhOeaw-arche-exif-Resource.html#constant_DWNLD_CHUNK" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-exif/src/acdhOeaw/arche/exif/Resource.php"><a href="files/arche-exif-src-acdhoeaw-arche-exif-resource.html"><abbr title="arche-exif/src/acdhOeaw/arche/exif/Resource.php">Resource.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">45</span>
 
@@ -316,64 +280,8 @@
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">MODE_IMAGE</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;image&#039;</span>
-</code>
-
-
-    
-    
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_MODE_IMAGES">
-        MODE_IMAGES
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_IMAGES" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">46</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">MODE_IMAGES</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;images&#039;</span>
-</code>
-
-
-    
-    
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_MODE_MANIFEST">
-        MODE_MANIFEST
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_MANIFEST" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">47</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">MODE_MANIFEST</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;manifest&#039;</span>
+    <span class="phpdocumentor-signature__name">DWNLD_CHUNK</span>
+    = <span class="phpdocumentor-signature__default-value">10485760</span>
 </code>
 
 
@@ -388,7 +296,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/acdhOeaw-arche-exif-Resource.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -400,15 +308,15 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_config">
         $config
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#property_config" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-arche-exif-Resource.html#property_config" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-exif/src/acdhOeaw/arche/exif/Resource.php"><a href="files/arche-exif-src-acdhoeaw-arche-exif-resource.html"><abbr title="arche-exif/src/acdhOeaw/arche/exif/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -433,15 +341,15 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_log">
         $log
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#property_log" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-arche-exif-Resource.html#property_log" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-exif/src/acdhOeaw/arche/exif/Resource.php"><a href="files/arche-exif-src-acdhoeaw-arche-exif-resource.html"><abbr title="arche-exif/src/acdhOeaw/arche/exif/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -466,15 +374,15 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_meta">
         $meta
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#property_meta" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-arche-exif-Resource.html#property_meta" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-exif/src/acdhOeaw/arche/exif/Resource.php"><a href="files/arche-exif-src-acdhoeaw-arche-exif-resource.html"><abbr title="arche-exif/src/acdhOeaw/arche/exif/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -499,15 +407,15 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_schema">
         $schema
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#property_schema" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-arche-exif-Resource.html#property_schema" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-exif/src/acdhOeaw/arche/exif/Resource.php"><a href="files/arche-exif-src-acdhoeaw-arche-exif-resource.html"><abbr title="arche-exif/src/acdhOeaw/arche/exif/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -528,7 +436,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/acdhOeaw-arche-exif-Resource.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -539,13 +447,13 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-arche-exif-Resource.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-exif/src/acdhOeaw/arche/exif/Resource.php"><a href="files/arche-exif-src-acdhoeaw-arche-exif-resource.html"><abbr title="arche-exif/src/acdhOeaw/arche/exif/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -594,13 +502,13 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_cacheHandler">
         cacheHandler()
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_cacheHandler" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-arche-exif-Resource.html#method_cacheHandler" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-exif/src/acdhOeaw/arche/exif/Resource.php"><a href="files/arche-exif-src-acdhoeaw-arche-exif-resource.html"><abbr title="arche-exif/src/acdhOeaw/arche/exif/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -660,35 +568,25 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getOutput">
         getOutput()
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getOutput" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-arche-exif-Resource.html#method_getOutput" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-exif/src/acdhOeaw/arche/exif/Resource.php"><a href="files/arche-exif-src-acdhoeaw-arche-exif-resource.html"><abbr title="arche-exif/src/acdhOeaw/arche/exif/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getOutput</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mode</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">getOutput</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$mode</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
             <section>
@@ -703,57 +601,22 @@
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_findFirstResource">
-        findFirstResource()
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_findFirstResource" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_downloadResource">
+        downloadResource()
+        <a href="classes/acdhOeaw-arche-exif-Resource.html#method_downloadResource" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-exif/src/acdhOeaw/arche/exif/Resource.php"><a href="files/arche-exif-src-acdhoeaw-arche-exif-resource.html"><abbr title="arche-exif/src/acdhOeaw/arche/exif/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">findFirstResource</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="array{0: \rdfInterface\TermInterface, 1: \rdfInterface\TermInterface}">TermInterface}</abbr></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="array{0: \rdfInterface\TermInterface, 1: \rdfInterface\TermInterface}">TermInterface}</abbr></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getImageInfoUrl">
-        getImageInfoUrl()
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getImageInfoUrl" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">95</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">getImageInfoUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">downloadResource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resUrl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -761,7 +624,7 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$id</span>
+                <span class="phpdocumentor-signature__argument__name">$resUrl</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -783,22 +646,22 @@
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getImageList">
-        getImageList()
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getImageList" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getLocalFilePath">
+        getLocalFilePath()
+        <a href="classes/acdhOeaw-arche-exif-Resource.html#method_getLocalFilePath" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-exif/src/acdhOeaw/arche/exif/Resource.php"><a href="files/arche-exif-src-acdhoeaw-arche-exif-resource.html"><abbr title="arche-exif/src/acdhOeaw/arche/exif/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">getImageList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$firstRes</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collectionRes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getLocalFilePath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resUrl</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nmspCfg</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -806,15 +669,15 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$firstRes</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr></span>
+                <span class="phpdocumentor-signature__argument__name">$resUrl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$collectionRes</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr></span>
+                <span class="phpdocumentor-signature__argument__name">$nmspCfg</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -826,155 +689,6 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getManifest">
-        getManifest()
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getManifest" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">172</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">getManifest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$firstRes</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collectionRes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$firstRes</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$collectionRes</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getManifestTitle">
-        getManifestTitle()
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getManifestTitle" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">103</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">getManifestTitle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\LiteralInterface">LiteralInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$x</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$x</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\LiteralInterface">LiteralInterface</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getNextSbj">
-        getNextSbj()
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getNextSbj" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php"><a href="files/arche-iiifmanifest-src-acdhoeaw-arche-iiifmanifest-resource.html"><abbr title="arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">265</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">getNextSbj</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\termTemplates\PredicateTemplate">PredicateTemplate</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collectionTmpl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>|null</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$data</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetInterface">DatasetInterface</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$collectionTmpl</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\termTemplates\PredicateTemplate">PredicateTemplate</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>|null</span>
             </section>
 
 </article>
@@ -984,7 +698,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/arche-iiifmanifest/src/acdhOeaw/arche/iiifManifest/Resource.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/arche-exif/src/acdhOeaw/arche/exif/Resource.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -1083,42 +797,36 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                        <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#toc-constants">Constants</a></li>
-                                                            <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#toc-methods">Methods</a></li>
+                                        <li><a href="classes/acdhOeaw-arche-exif-Resource.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/acdhOeaw-arche-exif-Resource.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/acdhOeaw-arche-exif-Resource.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_IMAGE">MODE_IMAGE</a></li>
-                                                    <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_IMAGES">MODE_IMAGES</a></li>
-                                                    <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_MANIFEST">MODE_MANIFEST</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-exif-Resource.html#constant_DWNLD_CHUNK">DWNLD_CHUNK</a></li>
                                             </ul>
                 </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#property_config">$config<a href="classes/acdhOeaw-arche-iiifManifest-Resource.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#property_log">$log<a href="classes/acdhOeaw-arche-iiifManifest-Resource.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#property_meta">$meta<a href="classes/acdhOeaw-arche-iiifManifest-Resource.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#property_schema">$schema<a href="classes/acdhOeaw-arche-iiifManifest-Resource.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-exif-Resource.html#property_config">$config<a href="classes/acdhOeaw-arche-exif-Resource.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-exif-Resource.html#property_log">$log<a href="classes/acdhOeaw-arche-exif-Resource.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-exif-Resource.html#property_meta">$meta<a href="classes/acdhOeaw-arche-exif-Resource.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-exif-Resource.html#property_schema">$schema<a href="classes/acdhOeaw-arche-exif-Resource.html"></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_cacheHandler">cacheHandler()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getOutput">getOutput()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_findFirstResource">findFirstResource()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getImageInfoUrl">getImageInfoUrl()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getImageList">getImageList()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getManifest">getManifest()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getManifestTitle">getManifestTitle()</a></li>
-                                            <li><a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getNextSbj">getNextSbj()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-exif-Resource.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-exif-Resource.html#method_cacheHandler">cacheHandler()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-exif-Resource.html#method_getOutput">getOutput()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-exif-Resource.html#method_downloadResource">downloadResource()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-exif-Resource.html#method_getLocalFilePath">getLocalFilePath()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -1138,7 +846,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/acdhOeaw-arche-iiifManifest-Resource.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/acdhOeaw-arche-exif-Resource.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
