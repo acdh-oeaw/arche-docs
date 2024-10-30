@@ -12166,6 +12166,11 @@ Search.appendIndex(
             "summary": "Check\u0020the\u0020resource\u0020is\u0020public\u0020or\u0020not",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_isPublic"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetResourceAccessLevel\u0028\u0029",
+            "name": "getResourceAccessLevel",
+            "summary": "Get\u0020the\u0020actual\u0020resource\u0020access\u0020level\u0020for\u0020the\u0020user\u0020login\u0020check",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getResourceAccessLevel"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetVCRData\u0028\u0029",
             "name": "getVCRData",
             "summary": "Create\u0020the\u0020VCR\u0020data\u0020json\u0020string\nREDMINE\u0020ID\u003A\u0020\u002319076",
@@ -12280,6 +12285,11 @@ Search.appendIndex(
             "name": "publicAccessTitle",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#property_publicAccessTitle"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003A\u0024accessLevels",
+            "name": "accessLevels",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#property_accessLevels"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ThreeDObject",
             "name": "ThreeDObject",
@@ -12693,7 +12703,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AgetGeneralInverseByProperty\u0028\u0029",
             "name": "getGeneralInverseByProperty",
-            "summary": "",
+            "summary": "Create\u0020the\u0020general\u0020inverse\u0020\u0020property\u0020table\u0020data",
             "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getGeneralInverseByProperty"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AgetSpatialDT\u0028\u0029",
@@ -12890,6 +12900,11 @@ Search.appendIndex(
             "name": "autocomplete",
             "summary": "Search\u0020input\u0020autocomplete",
             "url": "classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_autocomplete"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\SmartSearchController\u003A\u003AupdateSearchHistoryCookie\u0028\u0029",
+            "name": "updateSearchHistoryCookie",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_updateSearchHistoryCookie"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\SmartSearchController\u003A\u003A\u0024sConfig",
             "name": "sConfig",
