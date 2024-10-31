@@ -12213,7 +12213,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetPlaceAddress\u0028\u0029",
             "name": "getPlaceAddress",
-            "summary": "",
+            "summary": "Place\u0020view\u0020Address\u0020section",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getPlaceAddress"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetTechnicalData\u0028\u0029",
@@ -12561,6 +12561,11 @@ Search.appendIndex(
             "summary": "Organisation\u0020invvoled\u0020DT",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_involvedDT"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AhasMembersDT\u0028\u0029",
+            "name": "hasMembersDT",
+            "summary": "Organisation\u0020inverse\u0020of\u0020ismemberof",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_hasMembersDT"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003ArelatedDT\u0028\u0029",
             "name": "relatedDT",
             "summary": "",
@@ -12720,6 +12725,11 @@ Search.appendIndex(
             "name": "involvedDT",
             "summary": "Organisations\u0020involved\u0020in\u0020data",
             "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_involvedDT"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AhasMembersDT\u0028\u0029",
+            "name": "hasMembersDT",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_hasMembersDT"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003ArelatedDT\u0028\u0029",
             "name": "relatedDT",
