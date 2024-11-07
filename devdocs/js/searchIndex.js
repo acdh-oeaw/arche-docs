@@ -2901,6 +2901,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#method_getResponse"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003AgetLastResponseKey\u0028\u0029",
+            "name": "getLastResponseKey",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#method_getLastResponseKey"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003AhashParams\u0028\u0029",
             "name": "hashParams",
             "summary": "Public\u0020only\u0020to\u0020simplify\u0020the\u0020testing.",
@@ -2940,6 +2945,11 @@ Search.appendIndex(
             "name": "log",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#property_log"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003A\u0024lastResponseKey",
+            "name": "lastResponseKey",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#property_lastResponseKey"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem",
             "name": "ResponseCacheItem",
@@ -3030,6 +3040,11 @@ Search.appendIndex(
             "name": "log",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#property_log"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003A\u0024cacheDb",
+            "name": "cacheDb",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#property_cacheDb"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003A\u0024clbck",
             "name": "clbck",
@@ -11990,6 +12005,11 @@ Search.appendIndex(
             "name": "getNonAcdhIdentifiers",
             "summary": "Get\u0020all\u0020identifiers\u0020which\u0020are\u0020not\u0020acdh\u0020related",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getNonAcdhIdentifiers"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetVocabsIdentifiers\u0028\u0029",
+            "name": "getVocabsIdentifiers",
+            "summary": "Collect\u0020Vocabs\u0020identifiers\u0020for\u0020concept",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getVocabsIdentifiers"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetPlaceIds\u0028\u0029",
             "name": "getPlaceIds",
