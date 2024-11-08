@@ -2691,10 +2691,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-CacheInterface.html#method_get"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CacheInterface\u003A\u003AgetKeys\u0028\u0029",
+            "name": "getKeys",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CacheInterface.html#method_getKeys"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CacheInterface\u003A\u003Aset\u0028\u0029",
             "name": "set",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-CacheInterface.html#method_set"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CacheInterface\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CacheInterface.html#method_delete"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CacheItem",
             "name": "CacheItem",
@@ -2731,10 +2741,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-CachePdo.html#method_get"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CachePdo\u003A\u003AgetKeys\u0028\u0029",
+            "name": "getKeys",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CachePdo.html#method_getKeys"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CachePdo\u003A\u003Aset\u0028\u0029",
             "name": "set",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-CachePdo.html#method_set"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CachePdo\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CachePdo.html#method_delete"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CachePdo\u003A\u003AmaintainDb\u0028\u0029",
             "name": "maintainDb",
@@ -2910,6 +2930,16 @@ Search.appendIndex(
             "name": "hashParams",
             "summary": "Public\u0020only\u0020to\u0020simplify\u0020the\u0020testing.",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#method_hashParams"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003ApruneCacheForResource\u0028\u0029",
+            "name": "pruneCacheForResource",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#method_pruneCacheForResource"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003AHASH_ALGO",
+            "name": "HASH_ALGO",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#constant_HASH_ALGO"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003A\u0024cache",
             "name": "cache",
