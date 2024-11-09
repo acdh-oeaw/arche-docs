@@ -12596,6 +12596,11 @@ Search.appendIndex(
             "summary": "Publications\u0020datatable\u0020endpoint",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_publicationsDT"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AcollectionContentDT\u0028\u0029",
+            "name": "collectionContentDT",
+            "summary": "ConceptScheme\u0020collection\u0020content\u0020datatable",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_collectionContentDT"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AspatialDT\u0028\u0029",
             "name": "spatialDT",
             "summary": "Place\u0020spatial\u0020DT",
@@ -12618,12 +12623,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003ArelatedDT\u0028\u0029",
             "name": "relatedDT",
-            "summary": "",
+            "summary": "Related\u0020resources\u0020data\u0020table",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_relatedDT"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AsmartSearch\u0028\u0029",
             "name": "smartSearch",
-            "summary": "",
+            "summary": "The\u0020magic\u0020smart\u0020search\u0020function",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_smartSearch"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003Avcr\u0028\u0029",
@@ -12663,13 +12668,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AnextPrevItem\u0028\u0029",
             "name": "nextPrevItem",
-            "summary": "",
+            "summary": "Get\u0020the\u0020next\u0020and\u0020previous\u0020child\u0020elements",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_nextPrevItem"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AcheckUserPersmission\u0028\u0029",
             "name": "checkUserPersmission",
-            "summary": "",
+            "summary": "Check\u0020the\u0020user\u0020permission\u0020of\u0020the\u0020actual\u0020resource",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_checkUserPersmission"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003Aget3DURL\u0028\u0029",
+            "name": "get3DURL",
+            "summary": "Download\u0020and\u0020get\u0020the\u00203d\u0020object\u0020file\u0020url",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_get3DURL"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController",
             "name": "ArcheAuthenticationController",
@@ -12756,6 +12766,11 @@ Search.appendIndex(
             "summary": "The\u0020publications\u0020data\u0020table\u0020datasource",
             "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getPublicationsDT"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AgetCollectionContentDT\u0028\u0029",
+            "name": "getCollectionContentDT",
+            "summary": "ContentScheme\u0020data\u0020DT",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getCollectionContentDT"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AgetGeneralInverseByProperty\u0028\u0029",
             "name": "getGeneralInverseByProperty",
             "summary": "Create\u0020the\u0020general\u0020inverse\u0020\u0020property\u0020table\u0020data",
@@ -12820,6 +12835,16 @@ Search.appendIndex(
             "name": "getExpertData",
             "summary": "Metadata\u0020view\u0020expert\u0020DT\u0020content",
             "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#method_getExpertData"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController\u003A\u003Aget3dUrl\u0028\u0029",
+            "name": "get3dUrl",
+            "summary": "DOwnload\u0020the\u00203d\u0020Object\u0020file\u0020and\u0020return\u0020the\u0020url.",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#method_get3dUrl"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController\u003A\u003A\u0024helper",
+            "name": "helper",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#property_helper"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController",
             "name": "OntologyController",
