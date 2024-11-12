@@ -12256,6 +12256,16 @@ Search.appendIndex(
             "summary": "Return\u0020the\u0020metadata\u0020view\u0020right\u0020box\u0020Credits\u0020card\u0020content",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getCreditsData"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetProjectDetailsData\u0028\u0029",
+            "name": "getProjectDetailsData",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getProjectDetailsData"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetFundingData\u0028\u0029",
+            "name": "getFundingData",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getFundingData"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetSizeData\u0028\u0029",
             "name": "getSizeData",
             "summary": "Return\u0020the\u0020metadata\u0020view\u0020right\u0020box\u0020Size\u0020card\u0020content",
