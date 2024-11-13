@@ -11761,6 +11761,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method___construct"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\ArcheBaseController\u003A\u003AcheckTmpDirs\u0028\u0029",
+            "name": "checkTmpDirs",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_checkTmpDirs"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\ArcheBaseController\u003A\u003AchangeAPILanguage\u0028\u0029",
             "name": "changeAPILanguage",
             "summary": "If\u0020the\u0020API\u0020needs\u0020a\u0020different\u0020response\u0020language\u0020then\u0020we\u0020have\u0020to\u0020change\u0020the\nsession\u0020lang\u0020params\u0020to\u0020get\u0020the\u0020desired\u0020lang\u0020string\u0020translation",
