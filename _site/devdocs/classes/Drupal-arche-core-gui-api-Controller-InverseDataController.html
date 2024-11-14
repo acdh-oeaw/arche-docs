@@ -249,7 +249,7 @@
 <dd>Persons contributed to data</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getCollectionContentDT">getCollectionContentDT()</a>
+    <a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getCollectionConceptDT">getCollectionConceptDT()</a>
     <span>
                                 &nbsp;: <abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr>    </span>
 </dt>
@@ -288,6 +288,12 @@
                                 &nbsp;: <abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr>    </span>
 </dt>
 <dd>Organisations involved in data</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_isPartOfDT">isPartOfDT()</a>
+    <span>
+                                &nbsp;: <abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr>    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_relatedDT">relatedDT()</a>
@@ -712,9 +718,9 @@ session lang params to get the desired lang string translation</dd>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getCollectionContentDT">
-        getCollectionContentDT()
-        <a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getCollectionContentDT" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_getCollectionConceptDT">
+        getCollectionConceptDT()
+        <a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getCollectionConceptDT" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
@@ -728,7 +734,7 @@ session lang params to get the desired lang string translation</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getCollectionContentDT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchProps</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">getCollectionConceptDT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchProps</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1028,6 +1034,65 @@ session lang params to get the desired lang string translation</dd>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">involvedDT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchProps</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$searchProps</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isPartOfDT">
+        isPartOfDT()
+        <a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_isPartOfDT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/InverseDataController.php"><a href="files/arche-core-gui-api-src-controller-inversedatacontroller.html"><abbr title="arche_core_gui_api/src/Controller/InverseDataController.php">InverseDataController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">516</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isPartOfDT</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$searchProps</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Response">Response</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1517,12 +1582,13 @@ session lang params to get the desired lang string translation</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_contributedDT">contributedDT()</a></li>
-                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getCollectionContentDT">getCollectionContentDT()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getCollectionConceptDT">getCollectionConceptDT()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getPublicationsDT">getPublicationsDT()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getRprDT">getRprDT()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getSpatialDT">getSpatialDT()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_hasMembersDT">hasMembersDT()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_involvedDT">involvedDT()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_isPartOfDT">isPartOfDT()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_relatedDT">relatedDT()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_changeAPILanguage">changeAPILanguage()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_checkTmpDirs">checkTmpDirs()</a></li>

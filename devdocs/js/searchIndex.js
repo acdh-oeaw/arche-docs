@@ -12611,10 +12611,10 @@ Search.appendIndex(
             "summary": "Publications\u0020datatable\u0020endpoint",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_publicationsDT"
         },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AcollectionContentDT\u0028\u0029",
-            "name": "collectionContentDT",
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AcollectionConceptDT\u0028\u0029",
+            "name": "collectionConceptDT",
             "summary": "ConceptScheme\u0020collection\u0020content\u0020datatable",
-            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_collectionContentDT"
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_collectionConceptDT"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AspatialDT\u0028\u0029",
             "name": "spatialDT",
@@ -12640,6 +12640,11 @@ Search.appendIndex(
             "name": "relatedDT",
             "summary": "Related\u0020resources\u0020data\u0020table",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_relatedDT"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AisPartOfDT\u0028\u0029",
+            "name": "isPartOfDT",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_isPartOfDT"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AsmartSearch\u0028\u0029",
             "name": "smartSearch",
@@ -12781,10 +12786,10 @@ Search.appendIndex(
             "summary": "The\u0020publications\u0020data\u0020table\u0020datasource",
             "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getPublicationsDT"
         },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AgetCollectionContentDT\u0028\u0029",
-            "name": "getCollectionContentDT",
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AgetCollectionConceptDT\u0028\u0029",
+            "name": "getCollectionConceptDT",
             "summary": "ContentScheme\u0020data\u0020DT",
-            "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getCollectionContentDT"
+            "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getCollectionConceptDT"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AgetGeneralInverseByProperty\u0028\u0029",
             "name": "getGeneralInverseByProperty",
@@ -12815,6 +12820,11 @@ Search.appendIndex(
             "name": "relatedDT",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_relatedDT"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AisPartOfDT\u0028\u0029",
+            "name": "isPartOfDT",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_isPartOfDT"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController",
             "name": "MetadataController",
