@@ -456,6 +456,86 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Describe.html#method_options"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download",
+            "name": "Download",
+            "summary": "Class\u0020handling\u0020the\u0020batch\u0020download\u0020endpoint",
+            "url": "classes/acdhOeaw-arche-core-Download.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#method_get"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003Aoptions\u0028\u0029",
+            "name": "options",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#method_options"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003AfetchParentsMeta\u0028\u0029",
+            "name": "fetchParentsMeta",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#method_fetchParentsMeta"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003AcollectChildren\u0028\u0029",
+            "name": "collectChildren",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#method_collectChildren"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003AcheckAccessRights\u0028\u0029",
+            "name": "checkAccessRights",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#method_checkAccessRights"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003ACONTENT_TYPE",
+            "name": "CONTENT_TYPE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#constant_CONTENT_TYPE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003ADEFAULT_COMPRESSION_METHOD",
+            "name": "DEFAULT_COMPRESSION_METHOD",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#constant_DEFAULT_COMPRESSION_METHOD"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003ADEFAULT_COMPRESSION_LEVEL",
+            "name": "DEFAULT_COMPRESSION_LEVEL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#constant_DEFAULT_COMPRESSION_LEVEL"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003ADEFAULT_STRICT",
+            "name": "DEFAULT_STRICT",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#constant_DEFAULT_STRICT"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003ADEFAULT_FILE_NAME",
+            "name": "DEFAULT_FILE_NAME",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#constant_DEFAULT_FILE_NAME"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003AFORBIDDEN_FILENAME_CHARS_REGEX",
+            "name": "FORBIDDEN_FILENAME_CHARS_REGEX",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#constant_FORBIDDEN_FILENAME_CHARS_REGEX"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003AFORBIDDEN_FILENAME_CHARS_REPLACE",
+            "name": "FORBIDDEN_FILENAME_CHARS_REPLACE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#constant_FORBIDDEN_FILENAME_CHARS_REPLACE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003A\u0024parents",
+            "name": "parents",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#property_parents"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003A\u0024parentQuery",
+            "name": "parentQuery",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#property_parentQuery"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Download\u003A\u003A\u0024parentQueryParam",
+            "name": "parentQueryParam",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Download.html#property_parentQueryParam"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\DuplicatedKeyException",
             "name": "DuplicatedKeyException",
             "summary": "Description\u0020of\u0020RepoException",
@@ -3275,6 +3355,11 @@ Search.appendIndex(
             "name": "LITERAL_TYPES",
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#constant_LITERAL_TYPES"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003ASAFE_TYPES",
+            "name": "SAFE_TYPES",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#constant_SAFE_TYPES"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003AOPENAIRE_OAIPMH_SET",
             "name": "OPENAIRE_OAIPMH_SET",
