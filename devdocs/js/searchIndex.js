@@ -12136,6 +12136,11 @@ Search.appendIndex(
             "summary": "Use\u0020geonames\u0020ID,\u0020if\u0020no\u0020geonames\u0020then\u0020whatever\u0020is\u0020not\u0020ARCHE\u0020domain,\u0020else\u0020ARCHE\u0020domain",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getPlaceIds"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetConceptAndSchemeIdentifiers\u0028\u0029",
+            "name": "getConceptAndSchemeIdentifiers",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getConceptAndSchemeIdentifiers"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetNonAcdhApiIdentifiers\u0028\u0029",
             "name": "getNonAcdhApiIdentifiers",
             "summary": "Get\u0020all\u0020identifiers\u0020which\u0020are\u0020not\u0020acdh\u0020api\u0020related",
@@ -12380,6 +12385,11 @@ Search.appendIndex(
             "name": "formatBytes",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_formatBytes"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AisConceptOrConceptScheme\u0028\u0029",
+            "name": "isConceptOrConceptScheme",
+            "summary": "Providing\u0020the\u0020Concept\u0020and\u0020ConceptScheme\u0020identifier",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_isConceptOrConceptScheme"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003A\u0024config",
             "name": "config",
