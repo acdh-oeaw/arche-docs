@@ -13806,6 +13806,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizerTest.html#method_testChronontology"
         },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerTest\u003A\u003AtestRor\u0028\u0029",
+            "name": "testRor",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerTest.html#method_testRor"
+        },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerTest\u003A\u003AtestArche\u0028\u0029",
             "name": "testArche",
             "summary": "",
