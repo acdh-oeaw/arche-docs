@@ -12111,6 +12111,11 @@ Search.appendIndex(
             "summary": "Change\u0020property\u0020data",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_setData"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AaddExternalURL\u0028\u0029",
+            "name": "addExternalURL",
+            "summary": "If\u0020the\u0020property\u0020is\u0020concept\u0020or\u0020conceptscheme,\u0020then\u0020we\u0020have\u0020to\u0020add\nan\u0020extrnal\u0020url\u0020property.",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_addExternalURL"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetTitle\u0028\u0029",
             "name": "getTitle",
             "summary": "Get\u0020the\u0020Resource\u0020title",
