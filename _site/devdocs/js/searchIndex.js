@@ -10976,10 +10976,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#method_getProperty"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping\u003A\u003Afilter\u0028\u0029",
-            "name": "filter",
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping\u003A\u003AfilterAndReplace\u0028\u0029",
+            "name": "filterAndReplace",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#method_filter"
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#method_filterAndReplace"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping\u003A\u003AassureType\u0028\u0029",
+            "name": "assureType",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#method_assureType"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping\u003A\u003AprocessLang\u0028\u0029",
             "name": "processLang",
@@ -11086,6 +11091,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#property_skip"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping\u003A\u003A\u0024replace",
+            "name": "replace",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#property_replace"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping\u003A\u003A\u0024datatype",
+            "name": "datatype",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMapping.html#property_datatype"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping\u003A\u003A\u0024preferredLangs",
             "name": "preferredLangs",
             "summary": "",
@@ -11160,6 +11175,11 @@ Search.appendIndex(
             "name": "getClasses",
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#method_getClasses"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003AWIKIDATA_INSTANCE_OF",
+            "name": "WIKIDATA_INSTANCE_OF",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-PropertyMappings.html#constant_WIKIDATA_INSTANCE_OF"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMappings\u003A\u003A\u0024normalizer",
             "name": "normalizer",
