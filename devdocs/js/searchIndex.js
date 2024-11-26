@@ -10771,11 +10771,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityInterface.html#method_getMetadata"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityInterface\u003A\u003AupdateMetadata\u0028\u0029",
-            "name": "updateMetadata",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-refSources-NamedEntityInterface.html#method_updateMetadata"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorFile",
             "name": "NamedEntityIteratorFile",
             "summary": "Description\u0020of\u0020NamedEntityIteratorFile",
@@ -10796,10 +10791,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorFile.html#method_getNamedEntities"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorFile\u003A\u003AgetCount\u0028\u0029",
-            "name": "getCount",
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorFile\u003A\u003Acount\u0028\u0029",
+            "name": "count",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorFile.html#method_getCount"
+            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorFile.html#method_count"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorFile\u003A\u003AgetIdProp\u0028\u0029",
             "name": "getIdProp",
@@ -10851,11 +10846,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorInterface.html#method_getNamedEntities"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorInterface\u003A\u003AgetCount\u0028\u0029",
-            "name": "getCount",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorInterface.html#method_getCount"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorRepo",
             "name": "NamedEntityIteratorRepo",
             "summary": "Description\u0020of\u0020NamedEntityIteratorRepo",
@@ -10876,10 +10866,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorRepo.html#method_getNamedEntities"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorRepo\u003A\u003AgetCount\u0028\u0029",
-            "name": "getCount",
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorRepo\u003A\u003Acount\u0028\u0029",
+            "name": "count",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorRepo.html#method_getCount"
+            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorRepo.html#method_count"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorRepo\u003A\u003A\u0024repo",
             "name": "repo",
@@ -10936,15 +10926,30 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityRepo.html#property_repo"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityTrait",
-            "name": "NamedEntityTrait",
-            "summary": "Description\u0020of\u0020NamedEntityTrait",
-            "url": "classes/acdhOeaw-arche-refSources-NamedEntityTrait.html"
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\ProcessEntityResult",
+            "name": "ProcessEntityResult",
+            "summary": "Description\u0020of\u0020ProcessEntityResult",
+            "url": "classes/acdhOeaw-arche-refSources-ProcessEntityResult.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityTrait\u003A\u003AupdateMetadata\u0028\u0029",
-            "name": "updateMetadata",
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\ProcessEntityResult\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-refSources-NamedEntityTrait.html#method_updateMetadata"
+            "url": "classes/acdhOeaw-arche-refSources-ProcessEntityResult.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\ProcessEntityResult\u003A\u003A\u0024entity",
+            "name": "entity",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-ProcessEntityResult.html#property_entity"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\ProcessEntityResult\u003A\u003A\u0024newData",
+            "name": "newData",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-ProcessEntityResult.html#property_newData"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\ProcessEntityResult\u003A\u003A\u0024oldData",
+            "name": "oldData",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-ProcessEntityResult.html#property_oldData"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\PropertyMapping",
             "name": "PropertyMapping",
