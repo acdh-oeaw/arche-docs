@@ -10716,6 +10716,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-Crawler.html#property_log"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Merger",
+            "name": "Merger",
+            "summary": "Description\u0020of\u0020Merger",
+            "url": "classes/acdhOeaw-arche-refSources-Merger.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Merger\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-Merger.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Merger\u003A\u003Amerge\u0028\u0029",
+            "name": "merge",
+            "summary": "Merges\u0020subjects\u0020sharing\u0020same\u0020identifers\u0020using\u0020only\u0020the\u0020local\u0020data",
+            "url": "classes/acdhOeaw-arche-refSources-Merger.html#method_merge"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Merger\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "Performs\u0020an\u0020update\u0020against\u0020the\u0020repository",
+            "url": "classes/acdhOeaw-arche-refSources-Merger.html#method_update"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Merger\u003A\u003AmergeInto\u0028\u0029",
+            "name": "mergeInto",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-Merger.html#method_mergeInto"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Merger\u003A\u003A\u0024repo",
+            "name": "repo",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-Merger.html#property_repo"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Merger\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-Merger.html#property_schema"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\Merger\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-Merger.html#property_log"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityFile",
             "name": "NamedEntityFile",
             "summary": "Description\u0020of\u0020RefResourceFile",
@@ -10935,11 +10975,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-ProcessEntityResult.html#method___construct"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\ProcessEntityResult\u003A\u003A\u0024entity",
-            "name": "entity",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-refSources-ProcessEntityResult.html#property_entity"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\ProcessEntityResult\u003A\u003A\u0024newData",
             "name": "newData",
