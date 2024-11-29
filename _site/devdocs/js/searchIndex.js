@@ -11921,6 +11921,11 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020site\u0020actual\u0020language",
             "url": "classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_getCurrentLanguage"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\ArcheBaseController\u003A\u003AredirectOldDetailView\u0028\u0029",
+            "name": "redirectOldDetailView",
+            "summary": "we\u0020have\u0020to\u0020redirect\u0020the\u0020old\u0020metadata\u0020url\u0020to\u0020the\u0020new\u0020one\nold\u003A\u0020oeaw_detail\u0020new\u003A\u0020metadata",
+            "url": "classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_redirectOldDetailView"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\ArcheBaseController\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
