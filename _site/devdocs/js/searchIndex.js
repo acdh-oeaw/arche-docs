@@ -12821,6 +12821,11 @@ Search.appendIndex(
             "summary": "Place\u0020spatial\u0020DT",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_spatialDT"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AassociatedProjectsDT\u0028\u0029",
+            "name": "associatedProjectsDT",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_associatedProjectsDT"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AcontributedDT\u0028\u0029",
             "name": "contributedDT",
             "summary": "Person\u0020contributed\u0020DT",
@@ -13000,6 +13005,11 @@ Search.appendIndex(
             "name": "getSpatialDT",
             "summary": "Place\u0020inverse\u0020table\u0020data",
             "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getSpatialDT"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AgetAssociatedProjectsDT\u0028\u0029",
+            "name": "getAssociatedProjectsDT",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getAssociatedProjectsDT"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AcontributedDT\u0028\u0029",
             "name": "contributedDT",
