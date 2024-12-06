@@ -12963,7 +12963,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController\u003A\u003AgetNextPrevItem\u0028\u0029",
             "name": "getNextPrevItem",
-            "summary": "",
+            "summary": "Create\u0020previos\/next\u0020item",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ChildController.html#method_getNextPrevItem"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController",
