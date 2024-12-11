@@ -3306,6 +3306,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_check08DateRanges"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Acheck09Kulturpool\u0028\u0029",
+            "name": "check09Kulturpool",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_check09Kulturpool"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apost01MaintainCmdiPid\u0028\u0029",
             "name": "post01MaintainCmdiPid",
             "summary": "CMDI\u0020records\u0020must\u0020have\u0020their\u0020very\u0020own\u0020PIDs\u0020but\u0020this\u0020requires\u0020special\u0020handling\nas\u0020in\u0020ARCHE\u0020CMDI\u0020is\u0020just\u0020a\u0020metadata\u0020serialization\u0020format\u0020and\u0020not\u0020a\u0020separate\nrepository\u0020resource.",
@@ -3365,6 +3370,16 @@ Search.appendIndex(
             "name": "OPENAIRE_OAIPMH_SET",
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#constant_OPENAIRE_OAIPMH_SET"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003AKULTURPOOL_OAIPMH_SET",
+            "name": "KULTURPOOL_OAIPMH_SET",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#constant_KULTURPOOL_OAIPMH_SET"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003APROP_TAG",
+            "name": "PROP_TAG",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#constant_PROP_TAG"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003A\u0024uriNorm",
             "name": "uriNorm",
@@ -3436,6 +3451,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_checkEmptyCollections"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003AcheckHasNextItem\u0028\u0029",
+            "name": "checkHasNextItem",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_checkHasNextItem"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003AupdateCollections\u0028\u0029",
             "name": "updateCollections",
             "summary": "",
@@ -3451,10 +3471,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_updateCollectionAggregates"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003AfetchParentIds\u0028\u0029",
-            "name": "fetchParentIds",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003AfetchPreTransactionParentIds\u0028\u0029",
+            "name": "fetchPreTransactionParentIds",
             "summary": "Returns\u0020ids\u0020of\u0020all\u0020pre\u002Dtransaction\u0020parents\u0020of\u0020resources\u0020affected\u0020by\u0020the\u0020current\u0020transaction",
-            "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_fetchParentIds"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_fetchPreTransactionParentIds"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003ADB_LOCK_TIMEOUT",
             "name": "DB_LOCK_TIMEOUT",
