@@ -13631,6 +13631,11 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020response\u0020html\u0020string",
             "url": "classes/Drupal-arche-core-gui-api-Helper-RootTableHelper.html#method_createRootTableHtml"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\RootTableHelper\u003A\u003AformatRange\u0028\u0029",
+            "name": "formatRange",
+            "summary": "Format\u0020the\u0020range\u0020values\u0020for\u0020the\u0020better\u0020readability",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-RootTableHelper.html#method_formatRange"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\RootTableHelper\u003A\u003A\u0024data",
             "name": "data",
             "summary": "",
