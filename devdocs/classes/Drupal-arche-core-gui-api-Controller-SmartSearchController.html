@@ -377,6 +377,12 @@ session lang params to get the desired lang string translation</dd>
 <dd>The first load or after reset search, which provides only facets</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_postprocessResources">postprocessResources()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_setBasicPropertys">setBasicPropertys()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -386,6 +392,12 @@ session lang params to get the desired lang string translation</dd>
     <a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_setContext">setContext()</a>
     <span>
                                 &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_triples2resourceObjects">triples2resourceObjects()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
@@ -989,7 +1001,7 @@ session lang params to get the desired lang string translation</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/SmartSearchController.php"><a href="files/arche-core-gui-api-src-controller-smartsearchcontroller.html"><abbr title="arche_core_gui_api/src/Controller/SmartSearchController.php">SmartSearchController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">409</span>
+    <span class="phpdocumentor-element-found-in__line">442</span>
 
     </aside>
 
@@ -1035,7 +1047,7 @@ session lang params to get the desired lang string translation</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/SmartSearchController.php"><a href="files/arche-core-gui-api-src-controller-smartsearchcontroller.html"><abbr title="arche_core_gui_api/src/Controller/SmartSearchController.php">SmartSearchController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">396</span>
+    <span class="phpdocumentor-element-found-in__line">429</span>
 
     </aside>
 
@@ -1114,7 +1126,7 @@ old: oeaw_detail new: metadata</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/SmartSearchController.php"><a href="files/arche-core-gui-api-src-controller-smartsearchcontroller.html"><abbr title="arche_core_gui_api/src/Controller/SmartSearchController.php">SmartSearchController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -1203,7 +1215,7 @@ session lang params to get the desired lang string translation</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/SmartSearchController.php"><a href="files/arche-core-gui-api-src-controller-smartsearchcontroller.html"><abbr title="arche_core_gui_api/src/Controller/SmartSearchController.php">SmartSearchController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">358</span>
+    <span class="phpdocumentor-element-found-in__line">391</span>
 
     </aside>
 
@@ -1280,7 +1292,7 @@ session lang params to get the desired lang string translation</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/SmartSearchController.php"><a href="files/arche-core-gui-api-src-controller-smartsearchcontroller.html"><abbr title="arche_core_gui_api/src/Controller/SmartSearchController.php">SmartSearchController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">373</span>
+    <span class="phpdocumentor-element-found-in__line">406</span>
 
     </aside>
 
@@ -1390,6 +1402,47 @@ session lang params to get the desired lang string translation</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_postprocessResources">
+        postprocessResources()
+        <a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_postprocessResources" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/SmartSearchController.php"><a href="files/arche-core-gui-api-src-controller-smartsearchcontroller.html"><abbr title="arche_core_gui_api/src/Controller/SmartSearchController.php">SmartSearchController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">352</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">postprocessResources</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resources</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resources</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setBasicPropertys">
         setBasicPropertys()
         <a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_setBasicPropertys" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1462,6 +1515,58 @@ session lang params to get the desired lang string translation</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_triples2resourceObjects">
+        triples2resourceObjects()
+        <a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_triples2resourceObjects" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/SmartSearchController.php"><a href="files/arche-core-gui-api-src-controller-smartsearchcontroller.html"><abbr title="arche_core_gui_api/src/Controller/SmartSearchController.php">SmartSearchController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">360</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">triples2resourceObjects</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$triplesIterator</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$totalCount</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$triplesIterator</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$totalCount</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_updateSearchHistoryCookie">
         updateSearchHistoryCookie()
         <a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_updateSearchHistoryCookie" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1470,7 +1575,7 @@ session lang params to get the desired lang string translation</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui_api/src/Controller/SmartSearchController.php"><a href="files/arche-core-gui-api-src-controller-smartsearchcontroller.html"><abbr title="arche_core_gui_api/src/Controller/SmartSearchController.php">SmartSearchController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">455</span>
+    <span class="phpdocumentor-element-found-in__line">488</span>
 
     </aside>
 
@@ -1633,8 +1738,10 @@ session lang params to get the desired lang string translation</p>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_getCachedData">getCachedData()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_getCurrentLanguage">getCurrentLanguage()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_initialSearch">initialSearch()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_postprocessResources">postprocessResources()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_setBasicPropertys">setBasicPropertys()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_setContext">setContext()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_triples2resourceObjects">triples2resourceObjects()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_updateSearchHistoryCookie">updateSearchHistoryCookie()</a></li>
                                     </ul>
             </li>

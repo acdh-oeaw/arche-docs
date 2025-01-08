@@ -13221,6 +13221,16 @@ Search.appendIndex(
             "summary": "The\u0020main\u0020search",
             "url": "classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_search"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\SmartSearchController\u003A\u003ApostprocessResources\u0028\u0029",
+            "name": "postprocessResources",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_postprocessResources"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\SmartSearchController\u003A\u003Atriples2resourceObjects\u0028\u0029",
+            "name": "triples2resourceObjects",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-SmartSearchController.html#method_triples2resourceObjects"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\SmartSearchController\u003A\u003AcacheResults\u0028\u0029",
             "name": "cacheResults",
             "summary": "Cache\u0020the\u0020search\u0020results",
