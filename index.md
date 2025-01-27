@@ -15,6 +15,7 @@ layout: default
 
 # Technical Guides
 
+* [OpenAPI](https://www.openapis.org/) [specification of the arche-core API](https://app.swaggerhub.com/apis/zozlak/arche)
 * [Metadata API performance](aux/metadata_api_performance.html)
 * [Dissemination services](aux/dissemination_services.html)
 * [Parallel ingestion](aux/parallel_ingestion.html)
