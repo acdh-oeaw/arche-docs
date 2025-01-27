@@ -16,7 +16,10 @@ This is less pronounced in the latest arche-core versions but still noticeable.
 
 # Test results
 
-A few tests were performed on a copy of the ARCHE production instance containing 336k resources and 11.8M triples.
+A few tests were performed on a copy of the ARCHE production instance containing:
+
+* 336k resources and 11.8M triples for versions up to 3.8.
+* 756k resources and 17.4M triples for version 5.5
 
 ## Formats comparison for current arche-core version
 
@@ -27,7 +30,7 @@ options(scipen = 100)
 theme_set(theme_light())
 d = readr::read_csv('metadata_api_performance.csv') %>%
   mutate(
-    version = factor(sub('[.][0-9]+[.]0$', '', version), c('1.9', '1.10', '2.0', '3.0', '3.4', '3.7', '3.8')),
+    version = factor(sub('[.][0-9]+[.]0$', '', version), c('1.9', '1.10', '2.0', '3.0', '3.4', '3.7', '3.8', '5.5')),
     time1M = 10^6 * time / count,
     countF = factor(count)
   )
@@ -60,6 +63,8 @@ d %>%
   larger triples count just a streaming JSON-LD serializer is used.
 
 ## Performance changes across arche-core versions
+
+**Please note the y scales of plots below use different scale for each format.**
 
 ```{r byVersion, echo=FALSE, message=FALSE, warning=FALSE, fig.width=8}
 d %>%
