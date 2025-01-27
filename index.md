@@ -26,6 +26,11 @@ layout: default
 * [Metadata API guide](aux/metadata_api_for_programmers.html)
 * [Search API guide](aux/search_api_for_programmers.html)
 
+# Metadata and ingestion guides
+
+* [Batch preparation of metadata for ingestion](https://github.com/acdh-oeaw/arche-metadata-crawler/blob/master/docs/walktrough.md)
+* [Batch data ingestion](https://github.com/acdh-oeaw/arche-ingest/blob/master/README.md)
+
 # Components
 
 | library | links | description | development&nbsp;status |
