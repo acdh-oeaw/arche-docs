@@ -131,10 +131,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_LITERAL"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ATYPE_EPRINT",
-            "name": "TYPE_EPRINT",
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ATYPE_NOT_LINKED_ID",
+            "name": "TYPE_NOT_LINKED_ID",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_EPRINT"
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_NOT_LINKED_ID"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ATYPE_URL",
             "name": "TYPE_URL",
