@@ -146,7 +146,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -218,12 +218,6 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_pidPass">$pidPass</a>
-    <span>
-                        &nbsp;: bool            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_repo">$repo</a>
     <span>
                         &nbsp;: <a href="classes/acdhOeaw-arche-lib-Repo.html"><abbr title="\acdhOeaw\arche\lib\Repo">Repo</abbr></a>            </span>
@@ -258,6 +252,15 @@
     <span>
                         &nbsp;: int            </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_versioningMetaFunc">$versioningMetaFunc</a>
+    <span>
+                        &nbsp;: callable            </span>
+</dt>
+<dd>A callable with signature
+`function(\rdfInterface\DatasetNodeInterface $resourceMeta, \acdhOeaw\arche\lib\Schema $repositoryMetaSchema): array{0: \rdfInterface\DatasetNodeInterface $oldVersionMeta, 1: \rdfInterface\DatasetNodeInterface $newVersionMeta}
+generating new and old version metadata based on the current version metadata</dd>
 
     </dl>
 
@@ -382,7 +385,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -415,7 +418,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -448,7 +451,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -481,7 +484,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -491,39 +494,6 @@ contents.</dd>
         <span class="phpdocumentor-signature__type">int|null</span>
     <span class="phpdocumentor-signature__name">$n</span>
      = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_pidPass">
-        $pidPass
-        <a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_pidPass" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">63</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$pidPass</span>
-    </code>
 
     
     
@@ -547,7 +517,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -580,7 +550,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -613,7 +583,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -646,7 +616,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -679,7 +649,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -712,7 +682,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -721,6 +691,42 @@ contents.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$versioning</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_versioningMetaFunc">
+        $versioningMetaFunc
+        <a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_versioningMetaFunc" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A callable with signature
+`function(\rdfInterface\DatasetNodeInterface $resourceMeta, \acdhOeaw\arche\lib\Schema $repositoryMetaSchema): array{0: \rdfInterface\DatasetNodeInterface $oldVersionMeta, 1: \rdfInterface\DatasetNodeInterface $newVersionMeta}
+generating new and old version metadata based on the current version metadata</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">callable</span>
+    <span class="phpdocumentor-signature__name">$versioningMetaFunc</span>
     </code>
 
     
@@ -750,7 +756,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -805,7 +811,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -840,7 +846,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -875,7 +881,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -883,7 +889,7 @@ contents.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">upload</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sizeLimit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">-1</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$skipMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">Indexer::SKIP_NONE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$versioning</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">Indexer::VERSIONING_NONE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pidPass</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meterId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">upload</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sizeLimit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">-1</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$skipMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">Indexer::SKIP_NONE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$versioning</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">Indexer::VERSIONING_NONE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$versioningMetaFunc</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meterId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-RepoResource.html"><abbr title="\acdhOeaw\arche\lib\RepoResource">RepoResource</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -912,11 +918,15 @@ contents.</dd>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pidPass</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$versioningMetaFunc</span>
+                : <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>a callable with signature
+`function(\rdfInterface\DatasetNodeInterface $resourceMeta): array{0: \rdfInterface\DatasetNodeInterface $oldVersionMeta, 1: \rdfInterface\DatasetNodeInterface $newVersionMeta}
+generating new and old version metadata based on the current version metadata</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$meterId</span>
@@ -953,7 +963,7 @@ contents.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -961,7 +971,7 @@ contents.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">uploadAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sizeLimit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">-1</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$skipMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">Indexer::SKIP_NONE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$versioning</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">Indexer::VERSIONING_NONE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pidPass</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meterId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">uploadAsync</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sizeLimit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">-1</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$skipMode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">Indexer::SKIP_NONE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$versioning</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">Indexer::VERSIONING_NONE</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$versioningMetaFunc</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meterId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -998,11 +1008,15 @@ Indexer::VERSIONING_ALWAYS</p>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pidPass</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$versioningMetaFunc</span>
+                : <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>a callable with signature
+`function(\rdfInterface\DatasetNodeInterface $resourceMeta, \acdhOeaw\arche\lib\Schema $repositoryMetaSchema): array{0: \rdfInterface\DatasetNodeInterface $oldVersionMeta, 1: \rdfInterface\DatasetNodeInterface $newVersionMeta}
+generating new and old version metadata based on the current version metadata</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$meterId</span>
@@ -1038,7 +1052,7 @@ progress information is displayed)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">301</span>
+    <span class="phpdocumentor-element-found-in__line">289</span>
 
     </aside>
 
@@ -1071,7 +1085,7 @@ exists, it won&#039;t be overwritten.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">256</span>
+    <span class="phpdocumentor-element-found-in__line">244</span>
 
     </aside>
 
@@ -1106,7 +1120,7 @@ exists, it won&#039;t be overwritten.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">270</span>
+    <span class="phpdocumentor-element-found-in__line">258</span>
 
     </aside>
 
@@ -1153,7 +1167,7 @@ contents.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">277</span>
+    <span class="phpdocumentor-element-found-in__line">265</span>
 
     </aside>
 
@@ -1198,7 +1212,7 @@ contents.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">287</span>
+    <span class="phpdocumentor-element-found-in__line">275</span>
 
     </aside>
 
@@ -1233,7 +1247,7 @@ contents.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -1278,7 +1292,7 @@ contents.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -1313,7 +1327,7 @@ contents.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-file.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">292</span>
+    <span class="phpdocumentor-element-found-in__line">280</span>
 
     </aside>
 
@@ -1451,13 +1465,13 @@ contents.</p>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_meta">$meta<a href="classes/acdhOeaw-arche-lib-ingest-File.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_meterId">$meterId<a href="classes/acdhOeaw-arche-lib-ingest-File.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_n">$n<a href="classes/acdhOeaw-arche-lib-ingest-File.html"></li>
-                                                    <li><a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_pidPass">$pidPass<a href="classes/acdhOeaw-arche-lib-ingest-File.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_repo">$repo<a href="classes/acdhOeaw-arche-lib-ingest-File.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_repoRes">$repoRes<a href="classes/acdhOeaw-arche-lib-ingest-File.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_sizeLimit">$sizeLimit<a href="classes/acdhOeaw-arche-lib-ingest-File.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_skipMode">$skipMode<a href="classes/acdhOeaw-arche-lib-ingest-File.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_uploadsCount">$uploadsCount<a href="classes/acdhOeaw-arche-lib-ingest-File.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_versioning">$versioning<a href="classes/acdhOeaw-arche-lib-ingest-File.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-ingest-File.html#property_versioningMetaFunc">$versioningMetaFunc<a href="classes/acdhOeaw-arche-lib-ingest-File.html"></li>
                                             </ul>
                 </li>
             

@@ -6661,10 +6661,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_versioning"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024pidPass",
-            "name": "pidPass",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_pidPass"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024versioningMetaFunc",
+            "name": "versioningMetaFunc",
+            "summary": "A\u0020callable\u0020with\u0020signature\n\u0060function\u0028\\rdfInterface\\DatasetNodeInterface\u0020\u0024resourceMeta,\u0020\\acdhOeaw\\arche\\lib\\Schema\u0020\u0024repositoryMetaSchema\u0029\u003A\u0020array\u007B0\u003A\u0020\\rdfInterface\\DatasetNodeInterface\u0020\u0024oldVersionMeta,\u00201\u003A\u0020\\rdfInterface\\DatasetNodeInterface\u0020\u0024newVersionMeta\u007D\ngenerating\u0020new\u0020and\u0020old\u0020version\u0020metadata\u0020based\u0020on\u0020the\u0020current\u0020version\u0020metadata",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_versioningMetaFunc"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024meterId",
             "name": "meterId",
@@ -6816,16 +6816,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_VERSIONING_DATE"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003APID_KEEP",
-            "name": "PID_KEEP",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_PID_KEEP"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003APID_PASS",
-            "name": "PID_PASS",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_PID_PASS"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AERRMODE_FAIL",
             "name": "ERRMODE_FAIL",
             "summary": "",
@@ -6931,10 +6921,10 @@ Search.appendIndex(
             "summary": "Should\u0020new\u0020versions\u0020of\u0020binary\u0020resources\u0020already\u0020existing\u0020in\u0020the\u0020repository\nbe\u0020created\u0020\u0028if\u0020not,\u0020an\u0020existing\u0020resource\u0020is\u0020simply\u0020overwritten\u0029.",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_versioningMode"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024pidPass",
-            "name": "pidPass",
-            "summary": "Should\u0020PIDs\u0020\u0028epic\u0020handles\u0029\u0020be\u0020migrated\u0020to\u0020the\u0020new\u0020version\u0020of\u0020a\u0020resource\nduring\u0020versioning.",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_pidPass"
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024versioningMetaFunc",
+            "name": "versioningMetaFunc",
+            "summary": "A\u0020callable\u0020with\u0020signature\n\u0060function\u0028\\rdfInterface\\DatasetNodeInterface\u0020\u0024resourceMeta,\u0020\\acdhOeaw\\arche\\lib\\Schema\u0020\u0024repositoryMetaSchema\u0029\u003A\u0020array\u007B0\u003A\u0020\\rdfInterface\\DatasetNodeInterface\u0020\u0024oldVersionMeta,\u00201\u003A\u0020\\rdfInterface\\DatasetNodeInterface\u0020\u0024newVersionMeta\u007D\ngenerating\u0020new\u0020and\u0020old\u0020version\u0020metadata\u0020based\u0020on\u0020the\u0020current\u0020version\u0020metadata",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_versioningMetaFunc"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024metaLookup",
             "name": "metaLookup",
