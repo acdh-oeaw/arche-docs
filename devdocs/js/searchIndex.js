@@ -5458,7 +5458,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003AextractResourcesFromGraph\u0028\u0029",
             "name": "extractResourcesFromGraph",
-            "summary": "Extracts\u0020collection\u0020of\u0020RepoResource\u0020objects\u0020from\u0020the\u0020EasyRdf\u0020graph\u0020being\nparsed\u0020from\u0020a\u0020search\u0020response.",
+            "summary": "Extracts\u0020collection\u0020of\u0020RepoResource\u0020objects\u0020from\u0020the\u0020metadata\u0020graph\u0020being\nparsed\u0020from\u0020a\u0020search\u0020response.",
             "url": "classes/acdhOeaw-arche-lib-RepoTrait.html#method_extractResourcesFromGraph"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoTrait\u003A\u003AsortMatchingResources\u0028\u0029",
@@ -12346,6 +12346,11 @@ Search.appendIndex(
             "summary": "Get\u0020all\u0020data",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getExpertTableData"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetPublicationDataTable\u0028\u0029",
+            "name": "getPublicationDataTable",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getPublicationDataTable"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetFormattedDateByProperty\u0028\u0029",
             "name": "getFormattedDateByProperty",
             "summary": "Format\u0020the\u0020date\u0020values\u0020for\u0020the\u0020twig\u0020template",
@@ -12565,6 +12570,11 @@ Search.appendIndex(
             "name": "accessLevels",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#property_accessLevels"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003A\u0024publicationTableProperties",
+            "name": "publicationTableProperties",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#property_publicationTableProperties"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ThreeDObject",
             "name": "ThreeDObject",
