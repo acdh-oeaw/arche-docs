@@ -6666,6 +6666,11 @@ Search.appendIndex(
             "summary": "A\u0020callable\u0020with\u0020signature\n\u0060function\u0028\\rdfInterface\\DatasetNodeInterface\u0020\u0024resourceMeta,\u0020\\acdhOeaw\\arche\\lib\\Schema\u0020\u0024repositoryMetaSchema\u0029\u003A\u0020array\u007B0\u003A\u0020\\rdfInterface\\DatasetNodeInterface\u0020\u0024oldVersionMeta,\u00201\u003A\u0020\\rdfInterface\\DatasetNodeInterface\u0020\u0024newVersionMeta\u007D\ngenerating\u0020new\u0020and\u0020old\u0020version\u0020metadata\u0020based\u0020on\u0020the\u0020current\u0020version\u0020metadata",
             "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_versioningMetaFunc"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024versioningRefFunc",
+            "name": "versioningRefFunc",
+            "summary": "A\u0020callable\u0020with\u0020signature\n\u0060function\u0028\\acdhOeaw\\arche\\lib\\RepoResource\u0020\u0024old,\u0020\\acdhOeaw\\arche\\lib\\RepoResource\u0020\u0024old\u0020\u0024new\u0029\u003A\u0020void\nfixing\u0020references\u0020to\u0020the\u0020old\u0020resource\u0020\u0028or\u0020doing\u0020any\u0020other\u0020versioning\u002Drelated\nmetadata\u0020processing\u0020which\u0020requires\u0020the\u0020new\u0020version\u0020resource\u0020to\u0020be\u0020already\u0020created\u0029",
+            "url": "classes/acdhOeaw-arche-lib-ingest-File.html#property_versioningRefFunc"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\File\u003A\u003A\u0024meterId",
             "name": "meterId",
             "summary": "",
@@ -6925,6 +6930,11 @@ Search.appendIndex(
             "name": "versioningMetaFunc",
             "summary": "A\u0020callable\u0020with\u0020signature\n\u0060function\u0028\\rdfInterface\\DatasetNodeInterface\u0020\u0024resourceMeta,\u0020\\acdhOeaw\\arche\\lib\\Schema\u0020\u0024repositoryMetaSchema\u0029\u003A\u0020array\u007B0\u003A\u0020\\rdfInterface\\DatasetNodeInterface\u0020\u0024oldVersionMeta,\u00201\u003A\u0020\\rdfInterface\\DatasetNodeInterface\u0020\u0024newVersionMeta\u007D\ngenerating\u0020new\u0020and\u0020old\u0020version\u0020metadata\u0020based\u0020on\u0020the\u0020current\u0020version\u0020metadata",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_versioningMetaFunc"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024versioningRefFunc",
+            "name": "versioningRefFunc",
+            "summary": "A\u0020callable\u0020with\u0020signature\n\u0060function\u0028\\acdhOeaw\\arche\\lib\\RepoResource\u0020\u0024old,\u0020\\acdhOeaw\\arche\\lib\\RepoResource\u0020\u0024old\u0020\u0024new\u0029\u003A\u0020void\nfixing\u0020references\u0020to\u0020the\u0020old\u0020resource\u0020\u0028or\u0020doing\u0020any\u0020other\u0020versioning\u002Drelated\nmetadata\u0020processing\u0020which\u0020requires\u0020the\u0020new\u0020version\u0020resource\u0020to\u0020be\u0020already\u0020created\u0029",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_versioningRefFunc"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024metaLookup",
             "name": "metaLookup",
@@ -12861,11 +12871,6 @@ Search.appendIndex(
             "summary": "Organisation\u0020inverse\u0020of\u0020ismemberof",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_hasMembersDT"
         },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003ArelatedDT\u0028\u0029",
-            "name": "relatedDT",
-            "summary": "Related\u0020resources\u0020data\u0020table",
-            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_relatedDT"
-        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AisPartOfDT\u0028\u0029",
             "name": "isPartOfDT",
             "summary": "",
@@ -13045,11 +13050,6 @@ Search.appendIndex(
             "name": "hasMembersDT",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_hasMembersDT"
-        },                {
-            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003ArelatedDT\u0028\u0029",
-            "name": "relatedDT",
-            "summary": "",
-            "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_relatedDT"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AisPartOfDT\u0028\u0029",
             "name": "isPartOfDT",

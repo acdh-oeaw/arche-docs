@@ -451,6 +451,16 @@ generating new and old version metadata based on the current version metadata</d
 <dd>Should new versions of binary resources already existing in the repository
 be created (if not, an existing resource is simply overwritten).</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_versioningRefFunc">$versioningRefFunc</a>
+    <span>
+                        &nbsp;: callable|null            </span>
+</dt>
+<dd>A callable with signature
+`function(\acdhOeaw\arche\lib\RepoResource $old, \acdhOeaw\arche\lib\RepoResource $old $new): void
+fixing references to the old resource (or doing any other versioning-related
+metadata processing which requires the new version resource to be already created)</dd>
+
     </dl>
 
 <h4 id="toc-methods">
@@ -1447,7 +1457,7 @@ to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -1481,7 +1491,7 @@ to form a binary id.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
@@ -1550,7 +1560,7 @@ object) be skipped.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">204</span>
 
     </aside>
 
@@ -1584,7 +1594,7 @@ object) be skipped.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">199</span>
+    <span class="phpdocumentor-element-found-in__line">209</span>
 
     </aside>
 
@@ -1706,7 +1716,7 @@ resources will be created.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 
     </aside>
 
@@ -1793,6 +1803,43 @@ be created (if not, an existing resource is simply overwritten).</p>
     
 
 </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_versioningRefFunc">
+        $versioningRefFunc
+        <a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_versioningRefFunc" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">182</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A callable with signature
+`function(\acdhOeaw\arche\lib\RepoResource $old, \acdhOeaw\arche\lib\RepoResource $old $new): void
+fixing references to the old resource (or doing any other versioning-related
+metadata processing which requires the new version resource to be already created)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">callable|null</span>
+    <span class="phpdocumentor-signature__name">$versioningRefFunc</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+    
+    
+    
+
+</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -1815,7 +1862,7 @@ be created (if not, an existing resource is simply overwritten).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -1902,7 +1949,7 @@ resource identifiers from file/directory paths (see above).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">460</span>
+    <span class="phpdocumentor-element-found-in__line">476</span>
 
     </aside>
 
@@ -2006,7 +2053,7 @@ error occurs</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">267</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -2060,7 +2107,7 @@ don't want to do that for performance reasons).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">335</span>
+    <span class="phpdocumentor-element-found-in__line">351</span>
 
     </aside>
 
@@ -2109,7 +2156,7 @@ configuration property.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">323</span>
+    <span class="phpdocumentor-element-found-in__line">339</span>
 
     </aside>
 
@@ -2158,7 +2205,7 @@ configuration property.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">404</span>
+    <span class="phpdocumentor-element-found-in__line">420</span>
 
     </aside>
 
@@ -2206,7 +2253,7 @@ configuration property.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">355</span>
+    <span class="phpdocumentor-element-found-in__line">371</span>
 
     </aside>
 
@@ -2270,7 +2317,7 @@ one of Indexer::MATCH and Indexer::SKIP)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">377</span>
+    <span class="phpdocumentor-element-found-in__line">393</span>
 
     </aside>
 
@@ -2318,7 +2365,7 @@ be created for each subdirectory (`$isFlat` equals to `false`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">416</span>
+    <span class="phpdocumentor-element-found-in__line">432</span>
 
     </aside>
 
@@ -2381,7 +2428,7 @@ be created for each subdirectory (`$isFlat` equals to `false`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">427</span>
+    <span class="phpdocumentor-element-found-in__line">443</span>
 
     </aside>
 
@@ -2436,7 +2483,7 @@ be created for each subdirectory (`$isFlat` equals to `false`).</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">250</span>
+    <span class="phpdocumentor-element-found-in__line">260</span>
 
     </aside>
 
@@ -2483,7 +2530,7 @@ parameter) directory.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">287</span>
+    <span class="phpdocumentor-element-found-in__line">297</span>
 
     </aside>
 
@@ -2542,7 +2589,7 @@ only resources.</li>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">393</span>
+    <span class="phpdocumentor-element-found-in__line">409</span>
 
     </aside>
 
@@ -2595,7 +2642,7 @@ matter their size</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">305</span>
+    <span class="phpdocumentor-element-found-in__line">319</span>
 
     </aside>
 
@@ -2604,7 +2651,7 @@ should be simply overwritten with a new binary payload.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setVersioning</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$versioningMode</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$versioningMetaFunc</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">setVersioning</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$versioningMode</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$versioningMetaFunc</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$versioningRefFunc</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"><abbr title="\acdhOeaw\arche\lib\ingest\Indexer">Indexer</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2630,6 +2677,18 @@ Indexer::VERSIONING_DATE</p>
                     <section class="phpdocumentor-description"><p>a callable with signature
 `function(\rdfInterface\DatasetNodeInterface $resourceMeta, \acdhOeaw\arche\lib\Schema $repositoryMetaSchema): array{0: \rdfInterface\DatasetNodeInterface $oldVersionMeta, 1: \rdfInterface\DatasetNodeInterface $newVersionMeta}
 generating new and old version metadata based on the current version metadata</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$versioningRefFunc</span>
+                : <span class="phpdocumentor-signature__argument__return-type">callable</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>a callable with signature
+`function(\acdhOeaw\arche\lib\RepoResource $old, \acdhOeaw\arche\lib\RepoResource $old $new): void
+fixing references to the old resource (or doing any other versioning-related
+metadata processing which requires the new version resource to be already created)</p>
 </section>
 
             </dd>
@@ -2672,7 +2731,7 @@ generating new and old version metadata based on the current version metadata</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">574</span>
+    <span class="phpdocumentor-element-found-in__line">590</span>
 
     </aside>
 
@@ -2717,7 +2776,7 @@ generating new and old version metadata based on the current version metadata</p
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php"><a href="files/arche-lib-ingest-src-acdhoeaw-arche-lib-ingest-indexer.html"><abbr title="arche-lib-ingest/src/acdhOeaw/arche/lib/ingest/Indexer.php">Indexer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">540</span>
+    <span class="phpdocumentor-element-found-in__line">556</span>
 
     </aside>
 
@@ -2913,6 +2972,7 @@ limit.</p>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_uriNorm">$uriNorm<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_versioningMetaFunc">$versioningMetaFunc<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_versioningMode">$versioningMode<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html#property_versioningRefFunc">$versioningRefFunc<a href="classes/acdhOeaw-arche-lib-ingest-Indexer.html"></li>
                                             </ul>
                 </li>
             
