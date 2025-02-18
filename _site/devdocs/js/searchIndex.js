@@ -11536,6 +11536,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-schemaImport-Ontology.html#method_removeObsoleteChildren"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003APROLONG_TIMEOUT",
+            "name": "PROLONG_TIMEOUT",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-schemaImport-Ontology.html#constant_PROLONG_TIMEOUT"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003A\u0024collections",
             "name": "collections",
             "summary": "restrictions\u0020go\u0020first\u0020as\u0020checkRestriction\u0028\u0029\u0020can\u0020affect\u0020the\u0020whole\u0020graph",
@@ -12146,6 +12151,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Controller-SmartSearchController.html#method_display"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\EventSubscriber\\ExceptionSubscriber",
+            "name": "ExceptionSubscriber",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-EventSubscriber-ExceptionSubscriber.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\EventSubscriber\\ExceptionSubscriber\u003A\u003AgetSubscribedEvents\u0028\u0029",
+            "name": "getSubscribedEvents",
+            "summary": "\u007B\u0040inheritdoc\u007D",
+            "url": "classes/Drupal-arche-core-gui-EventSubscriber-ExceptionSubscriber.html#method_getSubscribedEvents"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\EventSubscriber\\ExceptionSubscriber\u003A\u003AonException\u0028\u0029",
+            "name": "onException",
+            "summary": "Reacts\u0020to\u0020exceptions.",
+            "url": "classes/Drupal-arche-core-gui-EventSubscriber-ExceptionSubscriber.html#method_onException"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Helper\\ArcheCoreHelper",
             "name": "ArcheCoreHelper",
             "summary": "Description\u0020of\u0020ArcheCoreHelper\u0020Static\u0020Class",
@@ -12360,6 +12380,11 @@ Search.appendIndex(
             "name": "getPublicationDataTable",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getPublicationDataTable"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AnormalizeDateString\u0028\u0029",
+            "name": "normalizeDateString",
+            "summary": "php\u00208.2\u0020xdebig\u0020dynamic\u0020property\u0020issues\u0020with\u0020negative\u0020numbers",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_normalizeDateString"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetFormattedDateByProperty\u0028\u0029",
             "name": "getFormattedDateByProperty",
@@ -14255,6 +14280,11 @@ Search.appendIndex(
             "name": "arche_core_gui",
             "summary": "",
             "url": "namespaces/drupal-arche-core-gui.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\EventSubscriber",
+            "name": "EventSubscriber",
+            "summary": "",
+            "url": "namespaces/drupal-arche-core-gui-eventsubscriber.html"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Helper",
             "name": "Helper",
