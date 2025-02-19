@@ -1131,6 +1131,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Resource.html#method_deleteResources"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Resource\u003A\u003AcancelResourceCreation\u0028\u0029",
+            "name": "cancelResourceCreation",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Resource.html#method_cancelResourceCreation"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Resource\u003A\u003ASTATE_ACTIVE",
             "name": "STATE_ACTIVE",
             "summary": "",
