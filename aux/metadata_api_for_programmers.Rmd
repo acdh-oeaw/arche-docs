@@ -134,7 +134,7 @@ So which values it can take?
 The full description of the **readMode** consists of four digits separated by an underscore: `{children depth}_{parents depth}_{pointed to}_{pointed from}`, where:
 
 * `{children depth}` and `{parents depth}` specify how far from the **_requested resource_** in the repository structure we want go (by following the RDF property indicated by the `parentProperty` request parameter)
-* `{pointed to}` and `{pointed from}` are binary flags (they take only values od `0` or `1`) and indicate if resources pointed by the **_requested resource_** and pointing to the **_requested resource_** should be included, respectively
+* `{pointed to}` and `{pointed from}` are binary flags (they take only values od `0` or `1`) and indicate if resources pointed by/pointing to all the resource collected according to the rules from the previous point should be included.
 
 ## Examples
 
@@ -149,7 +149,7 @@ Let's take a following sample repository structure (circles are resources with t
 * readMode `0_2_0_0` matches the _requested resource_ (`R0`) and its parents up to the second order (`R1` and `R2`).
 * readMode `1_0_0_0` matches the _requested resource_ (`R0`) and its first order children (`R3` and `R4`).
 * readMode `2_0_0_0` matches the _requested resource_ (`R0`) and its children up to the second order (`R3`, `R4`, `R5` and `R6`).
-* readMode `2_1_1_0` is a union of results for `2_0_0_0` (`R0`, `R3`, `R4`, `R5`, `R6`), `0_1_0_0` (`R0`, `R2`) and `0_0_1_0` (`R0`, `R2`, `R10`, `R12`) so all in all it covers `R0`, `R2`, `R3`, `R4`, `R5`, `R6`, `R10` and `R12`
+* readMode `2_1_1_0` is a union of results for `2_0_0_0` (`R0`, `R3`, `R4`, `R5`, `R6`), `0_1_0_0` (`R0`, `R2`) which is then extended by all resources this union resources' point to (`R0`, `R1` `R2`, `R10`, `R11`, `R12`) so all in all it covers `R0`, `R1`, `R2`, `R3`, `R4`, `R5`, `R6`, `R10`, `R11` and `R12`
 
 ## readMode shorthands
 
