@@ -2861,6 +2861,81 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-CachePdo.html#property_driver"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache",
+            "name": "FileCache",
+            "summary": "Helper\u0020functions\u0020for\u0020managing\u0020files\u0020cache",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003AmintPath\u0028\u0029",
+            "name": "mintPath",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#method_mintPath"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003AgetRefFilePath\u0028\u0029",
+            "name": "getRefFilePath",
+            "summary": "Returns\u0020the\u0020path\u0020to\u0020the\u0020original\u0020repository\u0020resource.",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#method_getRefFilePath"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003AfetchResourceBinary\u0028\u0029",
+            "name": "fetchResourceBinary",
+            "summary": "Fetches\u0020original\u0020resource",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#method_fetchResourceBinary"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003Aclean\u0028\u0029",
+            "name": "clean",
+            "summary": "Assures\u0020caches\u0020doesn\u0027t\u0020exceed\u0020a\u0020given\u0020size.",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#method_clean"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003ABY_MOD_TIME",
+            "name": "BY_MOD_TIME",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#constant_BY_MOD_TIME"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003ABY_SIZE",
+            "name": "BY_SIZE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#constant_BY_SIZE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003AREF_FILE_NAME",
+            "name": "REF_FILE_NAME",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#constant_REF_FILE_NAME"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003A\u0024dir",
+            "name": "dir",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#property_dir"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#property_log"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003A\u0024localAccess",
+            "name": "localAccess",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#property_localAccess"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCacheException",
+            "name": "FileCacheException",
+            "summary": "Description\u0020of\u0020FileCacheException",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCacheException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCacheException\u003A\u003ANO_BINARY",
+            "name": "NO_BINARY",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCacheException.html#constant_NO_BINARY"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCacheException\u003A\u003ANO_FILE",
+            "name": "NO_FILE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCacheException.html#constant_NO_FILE"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\RepoResourceCacheItem",
             "name": "RepoResourceCacheItem",
             "summary": "",
@@ -3110,6 +3185,11 @@ Search.appendIndex(
             "name": "hit",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_hit"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003A\u0024file",
+            "name": "file",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_file"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service",
             "name": "Service",
@@ -11616,36 +11696,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-schemaImport-Restriction.html#property_id"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ClearCache",
-            "name": "ClearCache",
-            "summary": "Description\u0020of\u0020ClearCache",
-            "url": "classes/acdhOeaw-arche-thumbnails-ClearCache.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ClearCache\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-ClearCache.html#method___construct"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ClearCache\u003A\u003Aclean\u0028\u0029",
-            "name": "clean",
-            "summary": "Assures\u0020caches\u0020doesn\u0027t\u0020exceed\u0020a\u0020given\u0020size.",
-            "url": "classes/acdhOeaw-arche-thumbnails-ClearCache.html#method_clean"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ClearCache\u003A\u003ABY_MOD_TIME",
-            "name": "BY_MOD_TIME",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-ClearCache.html#constant_BY_MOD_TIME"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ClearCache\u003A\u003ABY_SIZE",
-            "name": "BY_SIZE",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-ClearCache.html#constant_BY_SIZE"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ClearCache\u003A\u003A\u0024dir",
-            "name": "dir",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-ClearCache.html#property_dir"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\FileToLargeException",
             "name": "FileToLargeException",
             "summary": "Description\u0020of\u0020FileToLargeException",
@@ -11821,14 +11871,14 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method___construct"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetThumbnailPath\u0028\u0029",
-            "name": "getThumbnailPath",
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetResponse\u0028\u0029",
+            "name": "getResponse",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getThumbnailPath"
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getResponse"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetRefFilePath\u0028\u0029",
             "name": "getRefFilePath",
-            "summary": "Returns\u0020the\u0020path\u0020to\u0020the\u0020full\u0020resolution\u0020image.",
+            "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getRefFilePath"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetMeta\u0028\u0029",
@@ -11850,11 +11900,6 @@ Search.appendIndex(
             "name": "getFilePath",
             "summary": "Returns\u0020expected\u0020cached\u0020file\u0020location\u0020\u0028doesn\u0027t\u0020assure\u0020such\u0020a\u0020file\u0020exists\u0029.",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getFilePath"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AfetchResourceBinary\u0028\u0029",
-            "name": "fetchResourceBinary",
-            "summary": "Fetches\u0020original\u0020resource",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_fetchResourceBinary"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003ADEFAULT_MAX_FILE_SIZE_MB",
             "name": "DEFAULT_MAX_FILE_SIZE_MB",
@@ -11890,6 +11935,11 @@ Search.appendIndex(
             "name": "log",
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_log"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024refFilePath",
+            "name": "refFilePath",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_refFilePath"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024tmpId",
             "name": "tmpId",
