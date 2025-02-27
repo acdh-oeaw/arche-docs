@@ -4416,6 +4416,116 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-cql-Token.html#property_type"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\ClearCache",
+            "name": "ClearCache",
+            "summary": "Description\u0020of\u0020ClearCache",
+            "url": "classes/acdhOeaw-arche-glb-ClearCache.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\ClearCache\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-ClearCache.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\ClearCache\u003A\u003Aclean\u0028\u0029",
+            "name": "clean",
+            "summary": "Assures\u0020caches\u0020doesn\u0027t\u0020exceed\u0020a\u0020given\u0020size.",
+            "url": "classes/acdhOeaw-arche-glb-ClearCache.html#method_clean"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\ClearCache\u003A\u003ABY_MOD_TIME",
+            "name": "BY_MOD_TIME",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-ClearCache.html#constant_BY_MOD_TIME"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\ClearCache\u003A\u003ABY_SIZE",
+            "name": "BY_SIZE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-ClearCache.html#constant_BY_SIZE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\ClearCache\u003A\u003A\u0024dir",
+            "name": "dir",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-ClearCache.html#property_dir"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource",
+            "name": "Resource",
+            "summary": "Description\u0020of\u0020Resource",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003AcacheHandler\u0028\u0029",
+            "name": "cacheHandler",
+            "summary": "Gets\u0020the\u0020requested\u0020repository\u0020resource\u0020metadata\u0020and\u0020converts\u0020it\u0020to\u0020the\u0020thumbnail\u0027s\nservice\u0020ResourceMeta\u0020object.",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#method_cacheHandler"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003AgetResponse\u0028\u0029",
+            "name": "getResponse",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#method_getResponse"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003AcheckMeta\u0028\u0029",
+            "name": "checkMeta",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#method_checkMeta"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003AgenerateThumbnail\u0028\u0029",
+            "name": "generateThumbnail",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#method_generateThumbnail"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003Asimplify\u0028\u0029",
+            "name": "simplify",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#method_simplify"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003AgetStatistics\u0028\u0029",
+            "name": "getStatistics",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#method_getStatistics"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003ArunGltf\u0028\u0029",
+            "name": "runGltf",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#method_runGltf"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003AgetThumbnailPath\u0028\u0029",
+            "name": "getThumbnailPath",
+            "summary": "Returns\u0020expected\u0020cached\u0020file\u0020location\u0020\u0028doesn\u0027t\u0020assure\u0020such\u0020a\u0020file\u0020exists\u0029.",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#method_getThumbnailPath"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003ADEFAULT_MAX_FILE_SIZE_MB",
+            "name": "DEFAULT_MAX_FILE_SIZE_MB",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#constant_DEFAULT_MAX_FILE_SIZE_MB"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003ADEFAULT_MIN_FILE_SIZE_MB",
+            "name": "DEFAULT_MIN_FILE_SIZE_MB",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#constant_DEFAULT_MIN_FILE_SIZE_MB"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003AMIME",
+            "name": "MIME",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#constant_MIME"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003A\u0024resUrl",
+            "name": "resUrl",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#property_resUrl"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#property_config"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#property_log"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\IiifException",
             "name": "IiifException",
             "summary": "Description\u0020of\u0020IiifException",
@@ -14185,6 +14295,11 @@ Search.appendIndex(
             "name": "cql",
             "summary": "",
             "url": "namespaces/acdhoeaw-cql.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb",
+            "name": "glb",
+            "summary": "",
+            "url": "namespaces/acdhoeaw-arche-glb.html"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\iiifManifest",
             "name": "iiifManifest",
