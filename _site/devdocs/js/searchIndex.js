@@ -4416,36 +4416,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-cql-Token.html#property_type"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\glb\\ClearCache",
-            "name": "ClearCache",
-            "summary": "Description\u0020of\u0020ClearCache",
-            "url": "classes/acdhOeaw-arche-glb-ClearCache.html"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\glb\\ClearCache\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-glb-ClearCache.html#method___construct"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\glb\\ClearCache\u003A\u003Aclean\u0028\u0029",
-            "name": "clean",
-            "summary": "Assures\u0020caches\u0020doesn\u0027t\u0020exceed\u0020a\u0020given\u0020size.",
-            "url": "classes/acdhOeaw-arche-glb-ClearCache.html#method_clean"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\glb\\ClearCache\u003A\u003ABY_MOD_TIME",
-            "name": "BY_MOD_TIME",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-glb-ClearCache.html#constant_BY_MOD_TIME"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\glb\\ClearCache\u003A\u003ABY_SIZE",
-            "name": "BY_SIZE",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-glb-ClearCache.html#constant_BY_SIZE"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\glb\\ClearCache\u003A\u003A\u0024dir",
-            "name": "dir",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-glb-ClearCache.html#property_dir"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\glb\\Resource",
             "name": "Resource",
             "summary": "Description\u0020of\u0020Resource",
@@ -4465,11 +4435,6 @@ Search.appendIndex(
             "name": "getResponse",
             "summary": "",
             "url": "classes/acdhOeaw-arche-glb-Resource.html#method_getResponse"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003AcheckMeta\u0028\u0029",
-            "name": "checkMeta",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-glb-Resource.html#method_checkMeta"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003AgenerateThumbnail\u0028\u0029",
             "name": "generateThumbnail",
@@ -4491,6 +4456,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-glb-Resource.html#method_runGltf"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003AcheckMetadata\u0028\u0029",
+            "name": "checkMetadata",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#method_checkMetadata"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003AgetThumbnailPath\u0028\u0029",
             "name": "getThumbnailPath",
             "summary": "Returns\u0020expected\u0020cached\u0020file\u0020location\u0020\u0028doesn\u0027t\u0020assure\u0020such\u0020a\u0020file\u0020exists\u0029.",
@@ -4511,10 +4481,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-glb-Resource.html#constant_MIME"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003A\u0024resUrl",
-            "name": "resUrl",
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003A\u0024url",
+            "name": "url",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-glb-Resource.html#property_resUrl"
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#property_url"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003A\u0024meta",
+            "name": "meta",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#property_meta"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003A\u0024config",
             "name": "config",
