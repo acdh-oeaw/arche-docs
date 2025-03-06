@@ -12571,6 +12571,11 @@ Search.appendIndex(
             "summary": "Add\u0020Multipolygon\u0020string\u0020for\u0020the\u0020polygon\u0020dataset,\u0020othwerwise\u0020the\u0020js\u0020plugin\u0020cant\u0020handle\u0020it",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getPolygonData"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AisGLB3DObject\u0028\u0029",
+            "name": "isGLB3DObject",
+            "summary": "Check\u0020the\u0020resource\u0020is\u0020a\u00203d\u0020object",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_isGLB3DObject"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003Ais3DObject\u0028\u0029",
             "name": "is3DObject",
             "summary": "Check\u0020the\u0020resource\u0020is\u0020a\u00203d\u0020object",
