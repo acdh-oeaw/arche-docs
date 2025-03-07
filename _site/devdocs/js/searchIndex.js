@@ -826,6 +826,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-MetadataGui.html#method_formatResource"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\MetadataGui\u003A\u003ANO_TYPE",
+            "name": "NO_TYPE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-MetadataGui.html#constant_NO_TYPE"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\MetadataGui\u003A\u003ACHILD_PROP",
             "name": "CHILD_PROP",
             "summary": "",
@@ -6971,6 +6976,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_SKIP_BINARY_EXIST"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003ASKIP_SPECIAL",
+            "name": "SKIP_SPECIAL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_SKIP_SPECIAL"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AVERSIONING_NONE",
             "name": "VERSIONING_NONE",
             "summary": "",
@@ -7015,6 +7025,11 @@ Search.appendIndex(
             "name": "NETWORKERROR_SLEEP",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_NETWORKERROR_SLEEP"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003ASKIP_SPECIAL_REGEX",
+            "name": "SKIP_SPECIAL_REGEX",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_SKIP_SPECIAL_REGEX"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003A\u0024debug",
             "name": "debug",
