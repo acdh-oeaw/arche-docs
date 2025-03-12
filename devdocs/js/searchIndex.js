@@ -3566,6 +3566,11 @@ Search.appendIndex(
             "summary": "Returns\u0020ids\u0020of\u0020all\u0020pre\u002Dtransaction\u0020parents\u0020of\u0020resources\u0020affected\u0020by\u0020the\u0020current\u0020transaction",
             "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_fetchPreTransactionParentIds"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003AgetPropertyType\u0028\u0029",
+            "name": "getPropertyType",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Transaction.html#method_getPropertyType"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Transaction\u003A\u003ADB_LOCK_TIMEOUT",
             "name": "DB_LOCK_TIMEOUT",
             "summary": "",
