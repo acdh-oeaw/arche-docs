@@ -10348,7 +10348,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\Oai\u003A\u003AoaiListRecordRaw\u0028\u0029",
             "name": "oaiListRecordRaw",
-            "summary": "Returns\u0020a\u0020single\u0020metadata\u0020record\u0020without\u0020any\u0020OAI\u0020structures",
+            "summary": "Prints\u0020a\u0020single\u0020metadata\u0020record\u0020without\u0020any\u0020OAI\u0020structures",
             "url": "classes/acdhOeaw-arche-oaipmh-Oai.html#method_oaiListRecordRaw"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\Oai\u003A\u003AoaiListSets\u0028\u0029",
