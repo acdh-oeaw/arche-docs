@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2025-02-24" />
+<meta name="date" content="2025-03-18" />
 
 <title>ARCHE Metadata API for programmers</title>
 
@@ -421,7 +421,7 @@ display: none;
 
 
 <h1 class="title toc-ignore">ARCHE Metadata API for programmers</h1>
-<h4 class="date">2025-02-24</h4>
+<h4 class="date">2025-03-18</h4>
 
 </div>
 
@@ -615,11 +615,21 @@ where:</p>
 <li><code>{children depth}</code> and <code>{parents depth}</code>
 specify how far from the <strong><em>requested resource</em></strong> in
 the repository structure we want go (by following the RDF property
-indicated by the <code>parentProperty</code> request parameter)</li>
-<li><code>{pointed to}</code> and <code>{pointed from}</code> are binary
-flags (they take only values od <code>0</code> or <code>1</code>) and
-indicate if resources pointed by/pointing to all the resource collected
-according to the rules from the previous point should be included.</li>
+indicated by the <code>parentProperty</code> request parameter). All
+resources matched that way, including the <strong><em>requested
+resource</em></strong>, create the <strong><em>matched resources
+set</em></strong>.</li>
+<li><code>{pointed to}</code> is a binary flag (<code>0</code> or
+<code>1</code>) indicating if metadata of resources pointed by
+<strong><em>matched resources set</em></strong> should be included.</li>
+<li><code>{pointed from}</code> takes a value of <code>0</code>,
+<code>-1</code> or <code>1</code>. <code>0</code> does not include any
+aditional metadata. <code>-1</code> included all the triples pointing to
+the <strong><em>matched resources set</em></strong> but does not include
+any other metadata of resources pointing to the <strong><em>matched
+resources set</em></strong>. <code>1</code> includes full metadata of
+resources pointing to the <strong><em>matched resources
+set</em></strong>.</li>
 </ul>
 <div id="examples" class="section level2">
 <h2>Examples</h2>
@@ -662,6 +672,12 @@ resources this union resources’ point to (<code>R0</code>,
 <code>R1</code>, <code>R2</code>, <code>R3</code>, <code>R4</code>,
 <code>R5</code>, <code>R6</code>, <code>R10</code>, <code>R11</code> and
 <code>R12</code></li>
+<li>readMode <code>0_0_0_-1</code> matches the <em>requested
+resource</em> (<code>R0</code>) and all triples pointing to it - the
+triples from <code>R3</code>, <code>R4</code>, <code>R9</code> and
+<code>R13</code> - but does not include any other metadata triples of
+resources <code>R3</code>, <code>R4</code>, <code>R9</code> and
+<code>R13</code>.</li>
 </ul>
 </div>
 <div id="readmode-shorthands" class="section level2">
