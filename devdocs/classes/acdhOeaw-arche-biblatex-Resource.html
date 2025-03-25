@@ -145,17 +145,18 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">Maps ARCHE resource metadata to a BibLaTeX bibliographic entry.</p>
 
-    <section class="phpdocumentor-description"><p>Fro BibTeX/BibLaTeX bibliographic entry reference see:</p>
+    <section class="phpdocumentor-description"><p>Fro BibTeX/BibLaTeX/CSL bibliographic entry reference see:</p>
 <ul>
 <li>https://www.bibtex.com/g/bibtex-format/#fields</li>
 <li>chapter 8 of http://tug.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf</li>
 <li>https://mirror.kumi.systems/ctan/macros/latex/contrib/biblatex/doc/biblatex.pdf</li>
+<li>https://docs.citationstyles.org/en/stable/specification.html#appendix-iv-variables</li>
 </ul>
 </section>
 
@@ -198,21 +199,33 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_CSL_SCHEMA_URL">CSL_SCHEMA_URL</a>
+    <span>
+        &nbsp;= &#039;https://raw.githubusercontent.com/citation-style-language/schema/refs/heads/master/schemas/input/csl-data.json&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_BIBLATEX">MIME_BIBLATEX</a>
+    <span>
+        &nbsp;= &#039;application/x-bibtex&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_CSL_JSON">MIME_CSL_JSON</a>
+    <span>
+        &nbsp;= &#039;application/vnd.citationstyles.csl+json&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_JSON">MIME_JSON</a>
+    <span>
+        &nbsp;= &#039;application/json&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_NO_OVERRIDE">NO_OVERRIDE</a>
     <span>
         &nbsp;= &#039;NOOVERRIDE&#039;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_SRC_PARENT">SRC_PARENT</a>
-    <span>
-        &nbsp;= &#039;parent&#039;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_SRC_TOP_COLLECTION">SRC_TOP_COLLECTION</a>
-    <span>
-        &nbsp;= &#039;topCollection&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
@@ -225,6 +238,18 @@
     <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_CURRENT_DATE">TYPE_CURRENT_DATE</a>
     <span>
         &nbsp;= &#039;currentDate&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_DATE">TYPE_DATE</a>
+    <span>
+        &nbsp;= &#039;date&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_ID">TYPE_ID</a>
+    <span>
+        &nbsp;= &#039;id&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
@@ -334,10 +359,46 @@
                                 &nbsp;: string    </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_getCsl">getCsl()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverrides">applyOverrides()</a>
     <span>
                                 &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverridesBiblatex">applyOverridesBiblatex()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverridesCsl">applyOverridesCsl()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_biblatex2Csl">biblatex2Csl()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_biblatexPersons2CslPersons">biblatexPersons2CslPersons()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, array&lt;string, string&gt;&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_csl2Biblatex">csl2Biblatex()</a>
+    <span>
+                                &nbsp;: string|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
@@ -362,25 +423,31 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_formatParent">formatParent()</a>
     <span>
-                                &nbsp;: string|null    </span>
+                                &nbsp;: string|array&lt;string|int, mixed&gt;|null    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_formatPerson">formatPerson()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: array&lt;string, string&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_formatPersons">formatPersons()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: array&lt;string|int, array&lt;string, string&gt;&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_formatProperty">formatProperty()</a>
     <span>
-                                &nbsp;: string|null    </span>
+                                &nbsp;: string|array&lt;string|int, mixed&gt;|null    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_getCslPropertyType">getCslPropertyType()</a>
+    <span>
+                                &nbsp;: string    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
@@ -402,6 +469,118 @@
 
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CSL_SCHEMA_URL">
+        CSL_SCHEMA_URL
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_CSL_SCHEMA_URL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CSL_SCHEMA_URL</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;https://raw.githubusercontent.com/citation-style-language/schema/refs/heads/master/schemas/input/csl-data.json&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MIME_BIBLATEX">
+        MIME_BIBLATEX
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_BIBLATEX" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">MIME_BIBLATEX</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;application/x-bibtex&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MIME_CSL_JSON">
+        MIME_CSL_JSON
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_CSL_JSON" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">MIME_CSL_JSON</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;application/vnd.citationstyles.csl+json&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MIME_JSON">
+        MIME_JSON
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_JSON" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">MIME_JSON</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;application/json&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_NO_OVERRIDE">
         NO_OVERRIDE
         <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_NO_OVERRIDE" class="headerlink"><i class="fas fa-link"></i></a>
@@ -411,7 +590,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -430,62 +609,6 @@
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_SRC_PARENT">
-        SRC_PARENT
-        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_SRC_PARENT" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">67</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">SRC_PARENT</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;parent&#039;</span>
-</code>
-
-
-    
-    
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_SRC_TOP_COLLECTION">
-        SRC_TOP_COLLECTION
-        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_SRC_TOP_COLLECTION" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">68</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">SRC_TOP_COLLECTION</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;topCollection&#039;</span>
-</code>
-
-
-    
-    
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_TYPE_CONST">
         TYPE_CONST
         <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_CONST" class="headerlink"><i class="fas fa-link"></i></a>
@@ -495,7 +618,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -523,7 +646,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -542,6 +665,62 @@
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TYPE_DATE">
+        TYPE_DATE
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_DATE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TYPE_DATE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;date&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TYPE_ID">
+        TYPE_ID
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_ID" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">72</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TYPE_ID</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;id&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_TYPE_LITERAL">
         TYPE_LITERAL
         <a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_LITERAL" class="headerlink"><i class="fas fa-link"></i></a>
@@ -551,7 +730,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -579,7 +758,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -607,7 +786,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -635,7 +814,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -679,7 +858,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -712,7 +891,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -745,7 +924,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -778,7 +957,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -811,7 +990,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -844,7 +1023,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -877,7 +1056,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -910,7 +1089,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -948,7 +1127,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -1003,7 +1182,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -1069,14 +1248,66 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getBiblatex</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$override</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getBiblatex</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$override</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$lang</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$override</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCsl">
+        getCsl()
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_getCsl" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">117</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getCsl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lang</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$override</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">object|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mapping</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1098,8 +1329,8 @@
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$property</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                <span class="phpdocumentor-signature__argument__name">$mapping</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1110,7 +1341,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             </section>
 
 </article>
@@ -1128,14 +1359,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">applyOverrides</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$fields</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$override</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">applyOverrides</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$fields</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$override</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1144,7 +1375,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fields</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, string&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1159,23 +1390,253 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverrides#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
-                                    </dd>
-                                            </dl>
 
     
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_applyOverridesBiblatex">
+        applyOverridesBiblatex()
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverridesBiblatex" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">222</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">applyOverridesBiblatex</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$fields</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$biblatex</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$fields</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$biblatex</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_applyOverridesCsl">
+        applyOverridesCsl()
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverridesCsl" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">210</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">applyOverridesCsl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$fields</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$csl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$fields</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$csl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_biblatex2Csl">
+        biblatex2Csl()
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_biblatex2Csl" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">517</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">biblatex2Csl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dict</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$val</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$dict</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$val</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_biblatexPersons2CslPersons">
+        biblatexPersons2CslPersons()
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_biblatexPersons2CslPersons" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">526</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">biblatexPersons2CslPersons</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$src</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, array&lt;string, string&gt;&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$src</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, array&lt;string, string&gt;&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_csl2Biblatex">
+        csl2Biblatex()
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_csl2Biblatex" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">513</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">csl2Biblatex</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dict</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$val</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$dict</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$val</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1191,7 +1652,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">402</span>
+    <span class="phpdocumentor-element-found-in__line">484</span>
 
     </aside>
 
@@ -1236,7 +1697,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">314</span>
+    <span class="phpdocumentor-element-found-in__line">362</span>
 
     </aside>
 
@@ -1314,19 +1775,29 @@ literal values in other language are discarded.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">248</span>
+    <span class="phpdocumentor-element-found-in__line">313</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">formatKey</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">formatKey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$keyCfg</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$keyCfg</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
 
             <section>
@@ -1349,14 +1820,14 @@ literal values in other language are discarded.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">386</span>
+    <span class="phpdocumentor-element-found-in__line">455</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">formatParent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+                    <span class="phpdocumentor-signature__name">formatParent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|array&lt;string|int, mixed&gt;|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1364,15 +1835,15 @@ literal values in other language are discarded.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$type</span>
+                <span class="phpdocumentor-signature__argument__name">$key</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$property</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$definition</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1383,7 +1854,7 @@ literal values in other language are discarded.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string|null</span>
+        <span class="phpdocumentor-signature__response_type">string|array&lt;string|int, mixed&gt;|null</span>
             </section>
 
 </article>
@@ -1401,14 +1872,14 @@ literal values in other language are discarded.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">276</span>
+    <span class="phpdocumentor-element-found-in__line">439</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">formatPerson</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$person</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">formatPerson</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$person</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1428,7 +1899,7 @@ literal values in other language are discarded.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span>
             </section>
 
 </article>
@@ -1446,14 +1917,14 @@ literal values in other language are discarded.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">370</span>
+    <span class="phpdocumentor-element-found-in__line">418</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">formatPersons</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$properties</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>|string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">formatPersons</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$properties</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\TermInterface">TermInterface</abbr>|string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, array&lt;string, string&gt;&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1480,7 +1951,7 @@ literal values in other language are discarded.</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, array&lt;string, string&gt;&gt;</span>
             </section>
 
 </article>
@@ -1498,20 +1969,27 @@ literal values in other language are discarded.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">269</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">formatProperty</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+                    <span class="phpdocumentor-signature__name">formatProperty</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$definition</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|array&lt;string|int, mixed&gt;|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$definition</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
@@ -1522,25 +2000,55 @@ literal values in other language are discarded.</p>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_formatProperty#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\RuntimeException">RuntimeException</abbr></span>
-                                                            
-                                             
-                                    </dd>
-                                            </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string|null</span>
+        <span class="phpdocumentor-signature__response_type">string|array&lt;string|int, mixed&gt;|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCslPropertyType">
+        getCslPropertyType()
+        <a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_getCslPropertyType" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">488</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getCslPropertyType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$property</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
             </section>
 
 </article>
@@ -1558,7 +2066,7 @@ literal values in other language are discarded.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php"><a href="files/arche-biblatex-src-acdhoeaw-arche-biblatex-resource.html"><abbr title="arche-biblatex/src/acdhOeaw/arche/biblatex/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">288</span>
+    <span class="phpdocumentor-element-found-in__line">336</span>
 
     </aside>
 
@@ -1702,11 +2210,15 @@ literal values in other language are discarded.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_CSL_SCHEMA_URL">CSL_SCHEMA_URL</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_BIBLATEX">MIME_BIBLATEX</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_CSL_JSON">MIME_CSL_JSON</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_JSON">MIME_JSON</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_NO_OVERRIDE">NO_OVERRIDE</a></li>
-                                                    <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_SRC_PARENT">SRC_PARENT</a></li>
-                                                    <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_SRC_TOP_COLLECTION">SRC_TOP_COLLECTION</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_CONST">TYPE_CONST</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_CURRENT_DATE">TYPE_CURRENT_DATE</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_DATE">TYPE_DATE</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_ID">TYPE_ID</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_LITERAL">TYPE_LITERAL</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_NOT_LINKED_ID">TYPE_NOT_LINKED_ID</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_PERSON">TYPE_PERSON</a></li>
@@ -1734,7 +2246,13 @@ literal values in other language are discarded.</p>
                                             <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_cacheHandler">cacheHandler()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_getBiblatex">getBiblatex()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_getCsl">getCsl()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverrides">applyOverrides()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverridesBiblatex">applyOverridesBiblatex()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverridesCsl">applyOverridesCsl()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_biblatex2Csl">biblatex2Csl()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_biblatexPersons2CslPersons">biblatexPersons2CslPersons()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_csl2Biblatex">csl2Biblatex()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_escapeBiblatex">escapeBiblatex()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_formatAll">formatAll()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_formatKey">formatKey()</a></li>
@@ -1742,6 +2260,7 @@ literal values in other language are discarded.</p>
                                             <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_formatPerson">formatPerson()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_formatPersons">formatPersons()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_formatProperty">formatProperty()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_getCslPropertyType">getCslPropertyType()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-biblatex-Resource.html#method_getLiteral">getLiteral()</a></li>
                                     </ul>
             </li>

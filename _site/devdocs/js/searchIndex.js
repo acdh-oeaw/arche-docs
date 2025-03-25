@@ -56,6 +56,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method___construct"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AgetCsl\u0028\u0029",
+            "name": "getCsl",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_getCsl"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AgetBiblatex\u0028\u0029",
             "name": "getBiblatex",
             "summary": "",
@@ -66,6 +71,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverrides"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AapplyOverridesCsl\u0028\u0029",
+            "name": "applyOverridesCsl",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverridesCsl"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AapplyOverridesBiblatex\u0028\u0029",
+            "name": "applyOverridesBiblatex",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_applyOverridesBiblatex"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AformatProperty\u0028\u0029",
             "name": "formatProperty",
             "summary": "",
@@ -75,11 +90,6 @@ Search.appendIndex(
             "name": "formatKey",
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_formatKey"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AformatPerson\u0028\u0029",
-            "name": "formatPerson",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_formatPerson"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AgetLiteral\u0028\u0029",
             "name": "getLiteral",
@@ -96,6 +106,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_formatPersons"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AformatPerson\u0028\u0029",
+            "name": "formatPerson",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_formatPerson"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AformatParent\u0028\u0029",
             "name": "formatParent",
             "summary": "",
@@ -105,6 +120,31 @@ Search.appendIndex(
             "name": "escapeBiblatex",
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_escapeBiblatex"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AgetCslPropertyType\u0028\u0029",
+            "name": "getCslPropertyType",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_getCslPropertyType"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003Acsl2Biblatex\u0028\u0029",
+            "name": "csl2Biblatex",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_csl2Biblatex"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003Abiblatex2Csl\u0028\u0029",
+            "name": "biblatex2Csl",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_biblatex2Csl"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AbiblatexPersons2CslPersons\u0028\u0029",
+            "name": "biblatexPersons2CslPersons",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_biblatexPersons2CslPersons"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ACSL_SCHEMA_URL",
+            "name": "CSL_SCHEMA_URL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_CSL_SCHEMA_URL"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ANO_OVERRIDE",
             "name": "NO_OVERRIDE",
@@ -126,6 +166,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_CURRENT_DATE"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ATYPE_DATE",
+            "name": "TYPE_DATE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_DATE"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ATYPE_LITERAL",
             "name": "TYPE_LITERAL",
             "summary": "",
@@ -141,15 +186,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_URL"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ASRC_PARENT",
-            "name": "SRC_PARENT",
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ATYPE_ID",
+            "name": "TYPE_ID",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_SRC_PARENT"
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_TYPE_ID"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ASRC_TOP_COLLECTION",
-            "name": "SRC_TOP_COLLECTION",
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AMIME_BIBLATEX",
+            "name": "MIME_BIBLATEX",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_SRC_TOP_COLLECTION"
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_BIBLATEX"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AMIME_CSL_JSON",
+            "name": "MIME_CSL_JSON",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_CSL_JSON"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AMIME_JSON",
+            "name": "MIME_JSON",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_JSON"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003A\u0024res",
             "name": "res",
