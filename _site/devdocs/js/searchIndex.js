@@ -4611,10 +4611,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getImageList"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AguessMode\u0028\u0029",
+            "name": "guessMode",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_guessMode"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AgetCustomManifest\u0028\u0029",
+            "name": "getCustomManifest",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getCustomManifest"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AgetManifest\u0028\u0029",
             "name": "getManifest",
             "summary": "",
             "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getManifest"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AgetCollection\u0028\u0029",
+            "name": "getCollection",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getCollection"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AgetNextSbj\u0028\u0029",
             "name": "getNextSbj",
@@ -4635,6 +4650,21 @@ Search.appendIndex(
             "name": "MODE_MANIFEST",
             "summary": "",
             "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_MANIFEST"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AMODE_COLLECTION",
+            "name": "MODE_COLLECTION",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_COLLECTION"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AMODE_AUTO",
+            "name": "MODE_AUTO",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODE_AUTO"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AMODES",
+            "name": "MODES",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODES"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003A\u0024meta",
             "name": "meta",
