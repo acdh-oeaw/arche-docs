@@ -56,6 +56,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method___construct"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ArenderCslTemplate\u0028\u0029",
+            "name": "renderCslTemplate",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_renderCslTemplate"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AgetCsl\u0028\u0029",
             "name": "getCsl",
             "summary": "",
@@ -205,6 +210,11 @@ Search.appendIndex(
             "name": "MIME_JSON",
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_MIME_JSON"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AVALID_MIME",
+            "name": "VALID_MIME",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_VALID_MIME"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003A\u0024res",
             "name": "res",
@@ -12796,6 +12806,11 @@ Search.appendIndex(
             "summary": "Providing\u0020the\u0020Concept\u0020and\u0020ConceptScheme\u0020identifier",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_isConceptOrConceptScheme"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetSpatialCoordinates\u0028\u0029",
+            "name": "getSpatialCoordinates",
+            "summary": "fetch\u0020the\u0020right\u0020side\u0020map\u0020box\u0020data\u0020for\u0020the\u0020hasSpatialCoverage\u0020property\nredmine\u003A\u0020\u002324313",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getSpatialCoordinates"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
@@ -12860,6 +12875,66 @@ Search.appendIndex(
             "name": "publicationTableProperties",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#property_publicationTableProperties"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\SpatialMapData",
+            "name": "SpatialMapData",
+            "summary": "Description\u0020of\u0020ThreeDObject",
+            "url": "classes/Drupal-arche-core-gui-Object-SpatialMapData.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\SpatialMapData\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-SpatialMapData.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\SpatialMapData\u003A\u003AgetData\u0028\u0029",
+            "name": "getData",
+            "summary": "Return\u0020the\u0020result\u0020array\u0020with\u0020data\u0020and\u0020type",
+            "url": "classes/Drupal-arche-core-gui-Object-SpatialMapData.html#method_getData"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\SpatialMapData\u003A\u003AdoTheRequest\u0028\u0029",
+            "name": "doTheRequest",
+            "summary": "Guzzle\u0020api\u0020request\u0020to\u0020fetch\u0020the\u0020other\u0020resource\u0020map\u0020data\u0020by\u0020id",
+            "url": "classes/Drupal-arche-core-gui-Object-SpatialMapData.html#method_doTheRequest"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\SpatialMapData\u003A\u003AgetMapTypeSpatial\u0028\u0029",
+            "name": "getMapTypeSpatial",
+            "summary": "get\u0020the\u0020map\u0020type",
+            "url": "classes/Drupal-arche-core-gui-Object-SpatialMapData.html#method_getMapTypeSpatial"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\SpatialMapData\u003A\u003AgetPolygon\u0028\u0029",
+            "name": "getPolygon",
+            "summary": "Add\u0020Multipolygon\u0020string\u0020for\u0020the\u0020polygon\u0020dataset,\u0020othwerwise\u0020the\u0020js\u0020plugin\u0020cant\u0020handle\u0020it",
+            "url": "classes/Drupal-arche-core-gui-Object-SpatialMapData.html#method_getPolygon"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\SpatialMapData\u003A\u003AgetCoordinates\u0028\u0029",
+            "name": "getCoordinates",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-SpatialMapData.html#method_getCoordinates"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\SpatialMapData\u003A\u003AcheckMultiPolygonMapString\u0028\u0029",
+            "name": "checkMultiPolygonMapString",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-SpatialMapData.html#method_checkMultiPolygonMapString"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\SpatialMapData\u003A\u003A\u0024client",
+            "name": "client",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-SpatialMapData.html#property_client"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\SpatialMapData\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-SpatialMapData.html#property_url"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\SpatialMapData\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-SpatialMapData.html#property_id"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\SpatialMapData\u003A\u003A\u0024mapData",
+            "name": "mapData",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-SpatialMapData.html#property_mapData"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ThreeDObject",
             "name": "ThreeDObject",
@@ -13206,6 +13281,11 @@ Search.appendIndex(
             "summary": "Download\u0020and\u0020get\u0020the\u00203d\u0020object\u0020file\u0020url",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_get3DURL"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AgetCoordinates\u0028\u0029",
+            "name": "getCoordinates",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_getCoordinates"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController",
             "name": "ArcheAuthenticationController",
             "summary": "Description\u0020of\u0020ArcheAuthenticationController",
@@ -13370,6 +13450,11 @@ Search.appendIndex(
             "name": "get3dUrl",
             "summary": "DOwnload\u0020the\u00203d\u0020Object\u0020file\u0020and\u0020return\u0020the\u0020url.",
             "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#method_get3dUrl"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController\u003A\u003AgetCoordinates\u0028\u0029",
+            "name": "getCoordinates",
+            "summary": "Get\u0020just\u0020the\u0020coordinates\u0020for\u0020the\u0020detail\u0020view\u0020map\u0020box",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#method_getCoordinates"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController\u003A\u003A\u0024helper",
             "name": "helper",
