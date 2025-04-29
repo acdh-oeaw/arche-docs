@@ -256,6 +256,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#property_mapping"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003A\u0024cache",
+            "name": "cache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#property_cache"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Auth",
             "name": "Auth",
             "summary": "Description\u0020of\u0020Auth",
