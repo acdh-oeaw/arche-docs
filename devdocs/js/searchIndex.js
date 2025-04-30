@@ -3471,6 +3471,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_check09Kulturpool"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Acheck10NextItem\u0028\u0029",
+            "name": "check10NextItem",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_check10NextItem"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apost01MaintainCmdiPid\u0028\u0029",
             "name": "post01MaintainCmdiPid",
             "summary": "CMDI\u0020records\u0020must\u0020have\u0020their\u0020very\u0020own\u0020PIDs\u0020but\u0020this\u0020requires\u0020special\u0020handling\nas\u0020in\u0020ARCHE\u0020CMDI\u0020is\u0020just\u0020a\u0020metadata\u0020serialization\u0020format\u0020and\u0020not\u0020a\u0020separate\nrepository\u0020resource.",
@@ -12706,6 +12711,11 @@ Search.appendIndex(
             "summary": "Check\u0020if\u0020the\u0020resource\u0020supports\u0020IIIF\u0020viewer",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_isIIIF"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AisTEI\u0028\u0029",
+            "name": "isTEI",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_isTEI"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AisBinary\u0028\u0029",
             "name": "isBinary",
             "summary": "check\u0020if\u0020the\u0020Resource\u0020is\u0020an\u0020uploaded\u0020binary",
@@ -12780,6 +12790,11 @@ Search.appendIndex(
             "name": "getFundingData",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getFundingData"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetBinarySize\u0028\u0029",
+            "name": "getBinarySize",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html#method_getBinarySize"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Object\\ResourceCoreObject\u003A\u003AgetSizeData\u0028\u0029",
             "name": "getSizeData",
