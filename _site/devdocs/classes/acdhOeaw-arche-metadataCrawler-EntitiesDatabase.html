@@ -195,13 +195,13 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-metadataCrawler-EntitiesDatabase.html#property_byClass">$byClass</a>
     <span>
-                        &nbsp;: array&lt;string, array&lt;string, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;&gt;            </span>
+                        &nbsp;: array&lt;string, array&lt;string, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>|null&gt;&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-metadataCrawler-EntitiesDatabase.html#property_byId">$byId</a>
     <span>
-                        &nbsp;: array&lt;string, <abbr title="\acdhOeaw\arche\metadataCrawler\DateasetNodeInterface">DateasetNodeInterface</abbr>&gt;            </span>
+                        &nbsp;: array&lt;string, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
@@ -263,7 +263,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-metadataCrawler-EntitiesDatabase.html#method_getEntitiesOfClass">getEntitiesOfClass()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;string|int, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -309,14 +309,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string, array&lt;string, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, array&lt;string, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>|null&gt;&gt;</span>
     <span class="phpdocumentor-signature__name">$byClass</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -342,14 +342,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type">array&lt;string, <abbr title="\acdhOeaw\arche\metadataCrawler\DateasetNodeInterface">DateasetNodeInterface</abbr>&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;</span>
     <span class="phpdocumentor-signature__name">$byId</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -375,7 +375,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -408,7 +408,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
@@ -422,6 +422,22 @@
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/acdhOeaw-arche-metadataCrawler-EntitiesDatabase.html#property_ontology#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">phpstan-ignore</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>property.onlyWritten</p>
+</section>
+
+                                    </dd>
+                                            </dl>
 
 </article>
                     <article
@@ -441,7 +457,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -479,7 +495,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -534,7 +550,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -583,7 +599,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -635,7 +651,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
@@ -687,7 +703,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
@@ -722,14 +738,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getEntitiesOfClass</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getEntitiesOfClass</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -749,7 +765,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;</span>
             </section>
 
 </article>
@@ -767,7 +783,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 
     </aside>
 
@@ -819,14 +835,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php"><a href="files/arche-metadata-crawler-src-acdhoeaw-arche-metadatacrawler-entitiesdatabase.html"><abbr title="arche-metadata-crawler/src/acdhOeaw/arche/metadataCrawler/EntitiesDatabase.php">EntitiesDatabase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">checkAndMap</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$map</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$msg</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">checkAndMap</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>|null&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$map</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$msg</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -849,7 +865,7 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$map</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, <abbr title="\rdfInterface\DatasetNodeInterface">DatasetNodeInterface</abbr>|null&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 

@@ -3551,6 +3551,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#property_uriNorm"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003A\u0024checkRanges",
+            "name": "checkRanges",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#property_checkRanges"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003A\u0024meta",
             "name": "meta",
             "summary": "",
@@ -8816,11 +8821,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-EntityListWorksheet.html#property_classes"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\EntityListWorksheet\u003A\u003A\u0024log",
-            "name": "log",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-EntityListWorksheet.html#property_log"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker",
             "name": "MetadataChecker",
             "summary": "Description\u0020of\u0020MetadataChecker",
@@ -8840,6 +8840,11 @@ Search.appendIndex(
             "name": "checkClass",
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#method_checkClass"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003AcheckForLocalEntities\u0028\u0029",
+            "name": "checkForLocalEntities",
+            "summary": "Removes\u0020\u0022Failed\u0020to\u0020fetch\u0020RDF\u0020data\u0020from\u0020\u007BURI\u007D\u0022\u0020errors\u0020related\u0020to\u0020locally\u0020defined\u0020entities\n\u0028having\u0020a\u0020given\u0020subject\u0020or\u0020identifier\u0029.",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#method_checkForLocalEntities"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003AcheckNamedEntity\u0028\u0029",
             "name": "checkNamedEntity",
@@ -8961,20 +8966,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataCrawler.html#property_entitiesDb"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataCrawler\u003A\u003A\u0024idgen",
-            "name": "idgen",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataCrawler.html#property_idgen"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataCrawler\u003A\u003A\u0024idProp",
             "name": "idProp",
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataCrawler.html#property_idProp"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataCrawler\u003A\u003A\u0024files",
-            "name": "files",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataCrawler.html#property_files"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataCrawler\u003A\u003A\u0024metaPrimary",
             "name": "metaPrimary",
@@ -9071,11 +9066,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataHorizontal.html#property_idPrefix"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataHorizontal\u003A\u003A\u0024log",
-            "name": "log",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataHorizontal.html#property_log"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataHorizontal\u003A\u003A\u0024mapping",
             "name": "mapping",
             "summary": "",
@@ -9151,6 +9141,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataSpreadsheetTrait.html#property_horizontal"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataSpreadsheetTrait\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataSpreadsheetTrait.html#property_log"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataVertical",
             "name": "MetadataVertical",
             "summary": "Description\u0020of\u0020MetadataVertical",
@@ -9215,11 +9210,6 @@ Search.appendIndex(
             "name": "idgen",
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataVertical.html#property_idgen"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataVertical\u003A\u003A\u0024log",
-            "name": "log",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataVertical.html#property_log"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataVertical\u003A\u003A\u0024meta",
             "name": "meta",
@@ -9375,11 +9365,6 @@ Search.appendIndex(
             "name": "ID_ONLY_CLASSES",
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-TemplateCreator.html#constant_ID_ONLY_CLASSES"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\TemplateCreator\u003A\u003AAGENT_CLASS",
-            "name": "AGENT_CLASS",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-TemplateCreator.html#constant_AGENT_CLASS"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\TemplateCreator\u003A\u003ASTYLES",
             "name": "STYLES",
