@@ -12276,6 +12276,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#property_schema"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\CartController",
+            "name": "CartController",
+            "summary": "Description\u0020of\u0020MetadataController",
+            "url": "classes/Drupal-arche-core-gui-Controller-CartController.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\CartController\u003A\u003AshowContent\u0028\u0029",
+            "name": "showContent",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Controller-CartController.html#method_showContent"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\DisseminationController",
             "name": "DisseminationController",
             "summary": "Description\u0020of\u0020MetadataController",
@@ -13016,6 +13026,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-PathProcessor-ArcheGuiPathProcessor.html#method_processInbound"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Plugin\\Block\\CartBlock",
+            "name": "CartBlock",
+            "summary": "Provides\u0020a\u0020\u0027CartBlock\u0027\u0020block.",
+            "url": "classes/Drupal-arche-core-gui-Plugin-Block-CartBlock.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Plugin\\Block\\CartBlock\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "Class\u0020block",
+            "url": "classes/Drupal-arche-core-gui-Plugin-Block-CartBlock.html#method_build"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Plugin\\Block\\LangSwitcherBlock",
             "name": "LangSwitcherBlock",
             "summary": "Provides\u0020a\u0020\u0027LangSwitcherBlock\u0027\u0020block.",
@@ -13100,6 +13120,26 @@ Search.appendIndex(
             "name": "getComposerFile",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-TwigExtension-ComposerTwigExtension.html#method_getComposerFile"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\GetInstanceTwigExtension",
+            "name": "GetInstanceTwigExtension",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-GetInstanceTwigExtension.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\GetInstanceTwigExtension\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "\u007B\u0040inheritdoc\u007D\nThis\u0020function\u0020must\u0020return\u0020the\u0020name\u0020of\u0020the\u0020extension.\u0020It\u0020must\u0020be\u0020unique.",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-GetInstanceTwigExtension.html#method_getName"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\GetInstanceTwigExtension\u003A\u003AgetFunctions\u0028\u0029",
+            "name": "getFunctions",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-GetInstanceTwigExtension.html#method_getFunctions"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\GetInstanceTwigExtension\u003A\u003Aget_arche_instance\u0028\u0029",
+            "name": "get_arche_instance",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-GetInstanceTwigExtension.html#method_get_arche_instance"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\SessionTwigExtension",
             "name": "SessionTwigExtension",
