@@ -34,7 +34,7 @@ There are two kinds of lock in arche-core:
 * Request level locks. They prevent interference between parallel requests within the same transaction. 
   A request level lock is released at the end of a given request handling.
 
-It's woth noting that **just referring to an already existing repository resource doesn't acquire a lock on it**
+It's worth noting that **just referring to an already existing repository resource doesn't acquire a lock on it**
 but **referring to a non-existing repository resource creates it and acquires a lock on it**.
 
 Let's consider three scenarios:
@@ -117,10 +117,10 @@ An intuitive way of doing that could be:
 
 Unfortunately this approach works only if we are sure that a resource can not be created in between of the search and update operations (a so-called atomicity guarantee).
 **The arche-core REST API does not provide us such a guarantee.**
-It means it is possible that you will search for a resource, get no result, then try to create it and get the `HTTP 400 unique constraint violation` meaning a resource has been created by another parallel request in between of your search and create requests.
+It means it is possible that you will search for a resource, get no result, then try to create it and get the `HTTP 409 Conflict` meaning a resource has been created by another parallel request in between of your search and create requests.
 As a consequence you must trap such an error and act accordingly - try to update the resources instead.
 
-Taking this into account **an optimal approach is to always try to create a resource and switch back to update once you get the `HTTP 400 unique constraint violation` response.** This way the create-or-update operation is always executed with 1 (create) or 2 (failed to create, then update) requests. In comparison the search-update-or-create approach with the creation failure handling requires from 2 (search and update, search and successful create) to 3 (search, failed to create, update) requests per resource.
+Taking this into account **an optimal approach is to always try to create a resource and switch back to update once you get the `HTTP 409 Conflict` response.** This way the create-or-update operation is always executed with 1 (create) or 2 (failed to create, then update) requests. In comparison the search-update-or-create approach with the creation failure handling requires from 2 (search and update, search and successful create) to 3 (search, failed to create, update) requests per resource.
 
 You may wonder how big is the risk of actually running into such conflicts.
 It depends on how dense is the ingested RDF metadata graph (how many edges it has), how many parallel requests are used and what is the ingestion order.
@@ -128,7 +128,7 @@ From mathematical perspective trying to ingest any complete subgraph (complete w
 For example assuming all resources you are ingesting have an RDF property denoting the same author, it is for sure you will run into at least one *created in the meantime* conflict. And if you have a graph of N resources where every resource points to the other (with any property), it is just impossible to ingest it in parallel.
 Summing up the risk of running into the *created in the meantime* conflict when using parallel requests is high and your code must be prepared for handling conflict errors, e.g. by trying to reingest the resource.
 
-Finally it is worth noting that the problem described above is valid also for single-requests-at-once transactions as the *creation between a search and a create* may be also caused by another transaction. Anyway this scenario is pretty rare because the probability of creation/update of exactly same resource at exactly same time between multiple transactions is very low. If two transactions try to create/update the same resource a conflict is far more probable outcome (see the section on locks above).
+Finally it is worth noting that the problem described above is valid also for single-requests-at-once transactions as the *creation between a search and a create* may be also caused by another transaction. Anyway this scenario is pretty rare because the probability of creation/update of exactly same resource at exactly same time between multiple transactions is low. If two transactions try to create/update the same resource a locks conflict is far more probable outcome (see the section on locks above).
 
 ## How many parallel requests make sense?
 
@@ -137,7 +137,7 @@ As a rule of thumb no more than 10 for metadata ingestion and no more than 3 for
 The details are quite complex but let's try to dig a little into them.
 
 First, by ingesting in parallel we can only reduce an impact of a network latency and a delay introduced by a server-side processing.
-If the bottleneck is somewhere else, e.g. it's network's troughput, we won't benefit from the parallelization.
+If the bottleneck is somewhere else, e.g. it's network's troughput or the repository storage troughput/IOPS, we won't benefit from the parallelization.
 This is exactly why the expected benefit for binary ingestion is much lower than for metadata one.
 
 Second problem is the synchronization overhead.
@@ -147,14 +147,14 @@ This overhead grows faster than the gain from the parallelization and at some po
 
 It's worth noting that:
 
-* The more time-consuming the server-side processing is, the more space for parallelization.
+* The more time-consuming the server-side processing is, the higher parallelization can be achieved.
   E.g. if you don't run any pre-resource-modification plugins in your repository you will stop benefiting from the parallelization much earlier than if you run time-consuming plugins.
-  (it's simple - the bigger locks-unrelated overhead you have on the server side, the biggest is the performance gap to be filled up by the growing synchronization overhead)
+  (it's simple - the bigger locks-unrelated overhead you have on the server side, the bigger is the performance gap to be filled up by the growing synchronization overhead)
 * To avoid "the locks spiral of death" (situation when locks are obtained slower than new lock request come leading to the whole database stall) arche-core acquires locks with a timeout.
   When the timeout is reached, just an `HTTP 409 Conflict` is returned.
   It means in practice you won't observe single request handling time growing infinitely once you increase number of parallel requests.
-  At some point you will just start getting (very quick) `HTTP 409 Conflict` responses which you must handle on your own (by basically reducing number of parallel requests and trying to send a request again).
-    * Depending on the underlying database speed it should be able to handle from few to few dozens locks per second. The default timeout is 1 second but it can be tuned by the repository admin (e.g. a fast database with 2 seconds timeout should be able to handle around 150 locks per second while a slow database with a 0.25 second timeout may have problems handling even two parallel requests at once).
+  At some point you will just start getting `HTTP 409 Conflict` responses which you must handle on your own (by basically reducing number of parallel requests and trying to send a request again).
+    * Depending on the underlying database storage speed the database should be able to handle from few to few dozens locks per second. The default timeout is 1 second but it can be tuned by the repository admin (e.g. a repository with a fast NVMe database storage and 2 seconds timeout should be able to handle around 150 locks per second while a repository with a slow HDD database storage and 0.25 second timeout may have problems handling even two parallel requests at once).
 
 ## arche-lib utils for parallel requests
 
