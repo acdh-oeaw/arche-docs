@@ -6586,6 +6586,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceInterface.html#constant_QUERY_DISSERV"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\ServiceInterface\u003A\u003AFORMAT_QUERY_PARAM",
+            "name": "FORMAT_QUERY_PARAM",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceInterface.html#constant_FORMAT_QUERY_PARAM"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\ServiceTrait",
             "name": "ServiceTrait",
             "summary": "Description\u0020of\u0020ServiceTrait",
@@ -6658,8 +6663,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\ServiceTrait\u003A\u003A\u0024param",
             "name": "param",
-            "summary": "Parameters\u0020list",
+            "summary": "Query\u0020parameters\u0020list",
             "url": "classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#property_param"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\ServiceTrait\u003A\u003A\u0024queryParam",
+            "name": "queryParam",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-disserv-dissemination-ServiceTrait.html#property_queryParam"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\ServiceTrait\u003A\u003A\u0024loadParamFromMeta",
             "name": "loadParamFromMeta",
@@ -6695,6 +6705,21 @@ Search.appendIndex(
             "name": "transform",
             "summary": "Returns\u0020base64\u0020encoded\u0020value",
             "url": "classes/acdhOeaw-arche-lib-disserv-dissemination-transformation-Base64Encode.html#method_transform"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\transformation\\EmptyIf",
+            "name": "EmptyIf",
+            "summary": "Conditionally\u0020removes\u0020parameter\u0020value",
+            "url": "classes/acdhOeaw-arche-lib-disserv-dissemination-transformation-EmptyIf.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\transformation\\EmptyIf\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "Returns\u0020transformation\u0020name",
+            "url": "classes/acdhOeaw-arche-lib-disserv-dissemination-transformation-EmptyIf.html#method_getName"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\transformation\\EmptyIf\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "Returns\u0020empty\u0020value\u0020if\u0020query\u0020parameter\u0020of\u0020a\u0020given\u0020name\u0020has\u0020a\u0020given\u0020value\n\u0020\u0020or\u0020just\u0020is\u0020not\u0020empty\u0020if\u0020the\u0020\u0024value\u0020is\u0020empty",
+            "url": "classes/acdhOeaw-arche-lib-disserv-dissemination-transformation-EmptyIf.html#method_transform"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\transformation\\iTransformation",
             "name": "iTransformation",
@@ -6740,6 +6765,21 @@ Search.appendIndex(
             "name": "transform",
             "summary": "Returns\u0020raw\u0020URL\u0020decoded\u0020value\u0020from\u0020the\u0020acdh\u0020identifier.",
             "url": "classes/acdhOeaw-arche-lib-disserv-dissemination-transformation-RemoveProtocol.html#method_transform"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\transformation\\Replace",
+            "name": "Replace",
+            "summary": "Runs\u0020str_replace\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-disserv-dissemination-transformation-Replace.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\transformation\\Replace\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "Returns\u0020transformation\u0020name",
+            "url": "classes/acdhOeaw-arche-lib-disserv-dissemination-transformation-Replace.html#method_getName"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\transformation\\Replace\u003A\u003Atransform\u0028\u0029",
+            "name": "transform",
+            "summary": "Returns\u0020str_replace\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-disserv-dissemination-transformation-Replace.html#method_transform"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\disserv\\dissemination\\transformation\\SetParam",
             "name": "SetParam",
