@@ -11856,10 +11856,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-schemaImport-Ontology.html#method_removeObsoleteChildren"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003AaddMissingTechnicalResources\u0028\u0029",
+            "name": "addMissingTechnicalResources",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-schemaImport-Ontology.html#method_addMissingTechnicalResources"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003APROLONG_TIMEOUT",
             "name": "PROLONG_TIMEOUT",
             "summary": "",
             "url": "classes/acdhOeaw-arche-schemaImport-Ontology.html#constant_PROLONG_TIMEOUT"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003ANAMESPACES",
+            "name": "NAMESPACES",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-schemaImport-Ontology.html#constant_NAMESPACES"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\schemaImport\\Ontology\u003A\u003A\u0024collections",
             "name": "collections",
