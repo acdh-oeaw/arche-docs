@@ -14181,10 +14181,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizer.html#method_fetchUrl"
         },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003AprocessJsonObject\u0028\u0029",
+            "name": "processJsonObject",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizer.html#method_processJsonObject"
+        },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003AsetCache\u0028\u0029",
             "name": "setCache",
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizer.html#method_setCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003AFORMAT_JSON",
+            "name": "FORMAT_JSON",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizer.html#constant_FORMAT_JSON"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024obj",
             "name": "obj",
