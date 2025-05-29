@@ -11261,6 +11261,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorInterface.html#method_getNamedEntities"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorInterface\u003A\u003AFILTER_CLASS",
+            "name": "FILTER_CLASS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorInterface.html#constant_FILTER_CLASS"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorInterface\u003A\u003AFILTER_ID",
+            "name": "FILTER_ID",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorInterface.html#constant_FILTER_ID"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorInterface\u003A\u003AFILTER_MIN_MOD_DATE",
+            "name": "FILTER_MIN_MOD_DATE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorInterface.html#constant_FILTER_MIN_MOD_DATE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorInterface\u003A\u003AFILTER_NO_PROPERTY",
+            "name": "FILTER_NO_PROPERTY",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorInterface.html#constant_FILTER_NO_PROPERTY"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorRepo",
             "name": "NamedEntityIteratorRepo",
             "summary": "Description\u0020of\u0020NamedEntityIteratorRepo",
@@ -11286,6 +11306,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorRepo.html#method_count"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorRepo\u003A\u003APOST_FILTERS",
+            "name": "POST_FILTERS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorRepo.html#constant_POST_FILTERS"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorRepo\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "",
@@ -11296,10 +11321,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorRepo.html#property_schema"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorRepo\u003A\u003A\u0024searchTerms",
-            "name": "searchTerms",
+            "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorRepo\u003A\u003A\u0024query",
+            "name": "query",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorRepo.html#property_searchTerms"
+            "url": "classes/acdhOeaw-arche-refSources-NamedEntityIteratorRepo.html#property_query"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\refSources\\NamedEntityIteratorRepo\u003A\u003A\u0024searchConfig",
             "name": "searchConfig",
