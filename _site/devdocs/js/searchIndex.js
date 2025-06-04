@@ -141,6 +141,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_biblatex2Csl"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AgetMapping\u0028\u0029",
+            "name": "getMapping",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_getMapping"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AbiblatexPersons2CslPersons\u0028\u0029",
             "name": "biblatexPersons2CslPersons",
             "summary": "",
@@ -215,6 +220,16 @@ Search.appendIndex(
             "name": "VALID_MIME",
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_VALID_MIME"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AMAPPING_DEFAULT",
+            "name": "MAPPING_DEFAULT",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_MAPPING_DEFAULT"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ABIBLATEX_SPECIAL",
+            "name": "BIBLATEX_SPECIAL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_BIBLATEX_SPECIAL"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003A\u0024res",
             "name": "res",
