@@ -3726,16 +3726,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-exif-Resource.html#method_getOutput"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003AgetLocalFilePath\u0028\u0029",
-            "name": "getLocalFilePath",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-exif-Resource.html#method_getLocalFilePath"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003AdownloadResource\u0028\u0029",
-            "name": "downloadResource",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-exif-Resource.html#method_downloadResource"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\exif\\Resource\u003A\u003ADWNLD_CHUNK",
             "name": "DWNLD_CHUNK",
             "summary": "",
