@@ -12358,7 +12358,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\CartController",
             "name": "CartController",
-            "summary": "Description\u0020of\u0020MetadataController",
+            "summary": "Description\u0020of\u0020CartController",
             "url": "classes/Drupal-arche-core-gui-Controller-CartController.html"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\CartController\u003A\u003AshowContent\u0028\u0029",
@@ -13411,6 +13411,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_getCoordinates"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AcartDT\u0028\u0029",
+            "name": "cartDT",
+            "summary": "Check\u0020the\u0020cart\u0020items\u0020and\u0020update\u0020the\u0020cookie",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_cartDT"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController",
             "name": "ArcheAuthenticationController",
             "summary": "Description\u0020of\u0020ArcheAuthenticationController",
@@ -13445,6 +13450,26 @@ Search.appendIndex(
             "name": "actualPage",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ArcheAuthenticationController.html#property_actualPage"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\CartController",
+            "name": "CartController",
+            "summary": "Description\u0020of\u0020ArcheBaseController",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-CartController.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\CartController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-CartController.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\CartController\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-CartController.html#method_execute"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\CartController\u003A\u003A\u0024helper",
+            "name": "helper",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-CartController.html#property_helper"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ChildController",
             "name": "ChildController",
@@ -14050,6 +14075,81 @@ Search.appendIndex(
             "name": "resources",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Helper-ArcheCoreHelper.html#property_resources"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper",
+            "name": "CartHelper",
+            "summary": "Description\u0020of\u0020CartHelper\u0020Static\u0020Class",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#method___construct"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003AcheckCartContent\u0028\u0029",
+            "name": "checkCartContent",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#method_checkCartContent"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003AcreateNewCookiData\u0028\u0029",
+            "name": "createNewCookiData",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#method_createNewCookiData"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003AcheckCartItems\u0028\u0029",
+            "name": "checkCartItems",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#method_checkCartItems"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003AaddMetaInfo\u0028\u0029",
+            "name": "addMetaInfo",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#method_addMetaInfo"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003AbuildNestedNoChildrenKey\u0028\u0029",
+            "name": "buildNestedNoChildrenKey",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#method_buildNestedNoChildrenKey"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003AextractParents\u0028\u0029",
+            "name": "extractParents",
+            "summary": "Generate\u0020the\u0020parent\u0020data",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#method_extractParents"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003AfetchParentValues\u0028\u0029",
+            "name": "fetchParentValues",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#method_fetchParentValues"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#property_config"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003A\u0024schema",
+            "name": "schema",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#property_schema"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003A\u0024repoDb",
+            "name": "repoDb",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#property_repoDb"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003A\u0024pdo",
+            "name": "pdo",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#property_pdo"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003A\u0024breadcrumbs",
+            "name": "breadcrumbs",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#property_breadcrumbs"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\CartHelper\u003A\u003A\u0024resources",
+            "name": "resources",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-CartHelper.html#property_resources"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\InverseTableHelper",
             "name": "InverseTableHelper",
