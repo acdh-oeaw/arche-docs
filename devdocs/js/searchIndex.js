@@ -13391,6 +13391,11 @@ Search.appendIndex(
             "summary": "Create\u0020the\u0020Ontology\u0020html\u0020table\u0020for\u0020the\u0020CKEDITOR",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_ontologyJs"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AacceptedFormatsTable\u0028\u0029",
+            "name": "acceptedFormatsTable",
+            "summary": "Static\u0020text\u0020accepted\u0020formats\u0020file\u0020table",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_acceptedFormatsTable"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AnextPrevItem\u0028\u0029",
             "name": "nextPrevItem",
             "summary": "Get\u0020the\u0020next\u0020and\u0020previous\u0020child\u0020elements",
@@ -13606,10 +13611,20 @@ Search.appendIndex(
             "summary": "Get\u0020just\u0020the\u0020coordinates\u0020for\u0020the\u0020detail\u0020view\u0020map\u0020box",
             "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#method_getCoordinates"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController\u003A\u003AgetAcceptedFormats\u0028\u0029",
+            "name": "getAcceptedFormats",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#method_getAcceptedFormats"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController\u003A\u003A\u0024helper",
             "name": "helper",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#property_helper"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController\u003A\u003A\u0024acceptedFormatsHelper",
+            "name": "acceptedFormatsHelper",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#property_acceptedFormatsHelper"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\OntologyController",
             "name": "OntologyController",
@@ -13950,6 +13965,36 @@ Search.appendIndex(
             "name": "helper",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-VersionsController.html#property_helper"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\AcceptedFormatsHelper",
+            "name": "AcceptedFormatsHelper",
+            "summary": "Description\u0020of\u0020AcceptedFormatsHelper\u0020Class",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-AcceptedFormatsHelper.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\AcceptedFormatsHelper\u003A\u003AcreateHtml\u0028\u0029",
+            "name": "createHtml",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-AcceptedFormatsHelper.html#method_createHtml"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\AcceptedFormatsHelper\u003A\u003AcreateHeader\u0028\u0029",
+            "name": "createHeader",
+            "summary": "The\u0020root\u0020table\u0020header\u0020html\u0020code",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-AcceptedFormatsHelper.html#method_createHeader"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\AcceptedFormatsHelper\u003A\u003AcreateHtmlTable\u0028\u0029",
+            "name": "createHtmlTable",
+            "summary": "Create\u0020the\u0020response\u0020html\u0020string",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-AcceptedFormatsHelper.html#method_createHtmlTable"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\AcceptedFormatsHelper\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-AcceptedFormatsHelper.html#property_data"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\AcceptedFormatsHelper\u003A\u003A\u0024lang",
+            "name": "lang",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Helper-AcceptedFormatsHelper.html#property_lang"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Helper\\ArcheBreadcrumbHelper",
             "name": "ArcheBreadcrumbHelper",
