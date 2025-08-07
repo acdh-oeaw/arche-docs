@@ -3051,6 +3051,11 @@ Search.appendIndex(
             "summary": "Loads\u0020current\u0020metadata\u0020from\u0020the\u0020repository.",
             "url": "classes/acdhOeaw-arche-lib-dissCache-RepoResourceCacheItem.html#method_loadMetadata"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\RepoResourceCacheItem\u003A\u003AgetRepo\u0028\u0029",
+            "name": "getRepo",
+            "summary": "Returns\u0020repository\u0020connection\u0020object\u0020associated\u0020with\u0020the\u0020given\u0020resource\u0020object.",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-RepoResourceCacheItem.html#method_getRepo"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\RepoResourceCacheItem\u003A\u003A\u0024parser",
             "name": "parser",
             "summary": "",
@@ -4601,6 +4606,11 @@ Search.appendIndex(
             "summary": "Description\u0020of\u0020IiifException",
             "url": "classes/acdhOeaw-arche-iiifManifest-IiifException.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\NoNextItemException",
+            "name": "NoNextItemException",
+            "summary": "Description\u0020of\u0020NoNextItemException",
+            "url": "classes/acdhOeaw-arche-iiifManifest-NoNextItemException.html"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource",
             "name": "Resource",
             "summary": "",
@@ -4630,6 +4640,11 @@ Search.appendIndex(
             "name": "getManifestTitle",
             "summary": "",
             "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_getManifestTitle"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AfindFirstResourceNoNextItem\u0028\u0029",
+            "name": "findFirstResourceNoNextItem",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#method_findFirstResourceNoNextItem"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003AfindFirstResource\u0028\u0029",
             "name": "findFirstResource",
@@ -4696,6 +4711,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#constant_MODES"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003A\u0024res",
+            "name": "res",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#property_res"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003A\u0024meta",
             "name": "meta",
             "summary": "",
@@ -4715,6 +4735,16 @@ Search.appendIndex(
             "name": "log",
             "summary": "",
             "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#property_log"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003A\u0024searchOrder",
+            "name": "searchOrder",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#property_searchOrder"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\Resource\u003A\u003A\u0024searchOrderProperty",
+            "name": "searchOrderProperty",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-iiifManifest-Resource.html#property_searchOrderProperty"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\AuthInterface",
             "name": "AuthInterface",
