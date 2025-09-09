@@ -8911,20 +8911,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#method_check"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003AcheckClass\u0028\u0029",
-            "name": "checkClass",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#method_checkClass"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003AcheckForLocalEntities\u0028\u0029",
             "name": "checkForLocalEntities",
             "summary": "Removes\u0020\u0022Failed\u0020to\u0020fetch\u0020RDF\u0020data\u0020from\u0020\u007BURI\u007D\u0022\u0020errors\u0020related\u0020to\u0020locally\u0020defined\u0020entities\n\u0028having\u0020a\u0020given\u0020subject\u0020or\u0020identifier\u0029.",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#method_checkForLocalEntities"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003AcheckNamedEntity\u0028\u0029",
-            "name": "checkNamedEntity",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#method_checkNamedEntity"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003A\u0024ontology",
             "name": "ontology",
