@@ -3196,6 +3196,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#constant_HASH_ALGO"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003AHARD_TTL_MULTIPLIER",
+            "name": "HARD_TTL_MULTIPLIER",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#constant_HARD_TTL_MULTIPLIER"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003A\u0024cache",
             "name": "cache",
             "summary": "",
@@ -3215,6 +3220,11 @@ Search.appendIndex(
             "name": "ttlResource",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#property_ttlResource"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003A\u0024hardTtlResource",
+            "name": "hardTtlResource",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#property_hardTtlResource"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003A\u0024ttlResponse",
             "name": "ttlResponse",
@@ -3495,6 +3505,11 @@ Search.appendIndex(
             "name": "check10NextItem",
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_check10NextItem"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Acheck11Parent\u0028\u0029",
+            "name": "check11Parent",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_check11Parent"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apost01MaintainCmdiPid\u0028\u0029",
             "name": "post01MaintainCmdiPid",
