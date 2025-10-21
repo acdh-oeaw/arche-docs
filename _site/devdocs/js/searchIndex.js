@@ -13551,6 +13551,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getInverse"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AgetRprBasicDT\u0028\u0029",
+            "name": "getRprBasicDT",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_getRprBasicDT"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AextractNotInversePropertyData\u0028\u0029",
+            "name": "extractNotInversePropertyData",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_extractNotInversePropertyData"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003AgetRprDT\u0028\u0029",
             "name": "getRprDT",
             "summary": "Get\u0020Related\u0020Collections\u0020and\u0020Resources",
@@ -13600,6 +13610,11 @@ Search.appendIndex(
             "name": "isPartOfDT",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#method_isPartOfDT"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\InverseDataController\u003A\u003A\u0024helper",
+            "name": "helper",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-InverseDataController.html#property_helper"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController",
             "name": "MetadataController",
