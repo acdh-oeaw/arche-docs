@@ -406,6 +406,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method_getStorageDir"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003AinitGdalFFI\u0028\u0029",
+            "name": "initGdalFFI",
+            "summary": "Tries\u0020to\u0020initialize\u0020the\u0020GDAL\u0027s\u0020FFI\u0020interface.",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method_initGdalFFI"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
@@ -466,6 +471,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method_updateSpatialSearch"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003AupdateSpatialSearchPostgis\u0028\u0029",
+            "name": "updateSpatialSearchPostgis",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method_updateSpatialSearchPostgis"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003AupdateSpatialSearchGdal\u0028\u0029",
+            "name": "updateSpatialSearchGdal",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#method_updateSpatialSearchGdal"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003AreadImageDimensions\u0028\u0029",
             "name": "readImageDimensions",
             "summary": "",
@@ -480,6 +495,26 @@ Search.appendIndex(
             "name": "TS_VECTOR_MAX_LEN",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#constant_TS_VECTOR_MAX_LEN"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003AGDAL_PATHS",
+            "name": "GDAL_PATHS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#constant_GDAL_PATHS"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003AGDAL_CDEF",
+            "name": "GDAL_CDEF",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#constant_GDAL_CDEF"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003AGDAL_READONLY",
+            "name": "GDAL_READONLY",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#constant_GDAL_READONLY"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003A\u0024gdal",
+            "name": "gdal",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#property_gdal"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003A\u0024id",
             "name": "id",
@@ -510,6 +545,11 @@ Search.appendIndex(
             "name": "tmpPath",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#property_tmpPath"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\BinaryPayload\u003A\u003A\u0024gdalRaster",
+            "name": "gdalRaster",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-BinaryPayload.html#property_gdalRaster"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\ConflictException",
             "name": "ConflictException",
@@ -1986,6 +2026,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-util-Spatial.html#method_isInputBinary"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\Spatial\u003A\u003AisInputRaster\u0028\u0029",
+            "name": "isInputRaster",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-Spatial.html#method_isInputRaster"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\util\\Spatial\u003A\u003A\u0024query",
             "name": "query",
             "summary": "",
@@ -1995,6 +2040,11 @@ Search.appendIndex(
             "name": "binary",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-util-Spatial.html#property_binary"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\Spatial\u003A\u003A\u0024raster",
+            "name": "raster",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-Spatial.html#property_raster"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\util\\SpatialInterface",
             "name": "SpatialInterface",
@@ -2010,6 +2060,11 @@ Search.appendIndex(
             "name": "isInputBinary",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-util-SpatialInterface.html#method_isInputBinary"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\util\\SpatialInterface\u003A\u003AisInputRaster\u0028\u0029",
+            "name": "isInputRaster",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-util-SpatialInterface.html#method_isInputRaster"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\util\\Triple",
             "name": "Triple",

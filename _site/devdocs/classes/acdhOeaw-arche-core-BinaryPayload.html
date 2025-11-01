@@ -145,7 +145,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -191,6 +191,40 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#constant_GDAL_CDEF">GDAL_CDEF</a>
+    <span>
+        &nbsp;= &#039;
+        typedef void *GDALDatasetH;
+        typedef void *OGRSpatialReferenceH;
+        typedef enum {GA_ReadOnly = 0, GA_Update = 1} GDALAccess;
+        typedef enum {CE_None = 0, CE_Log = 1, CE_Warning = 2, CE_Failure = 3, CE_Fatal = 4} CPLErr;
+        
+        void GDALAllRegister();
+        
+        GDALDatasetH GDALOpen(const char *pszFilename, int eAccess);
+        
+        int GDALGetRasterXSize(GDALDatasetH);
+        int GDALGetRasterYSize(GDALDatasetH);
+        CPLErr GDALGetGeoTransform(GDALDatasetH, double*);
+        OGRSpatialReferenceH GDALGetSpatialRef(GDALDatasetH);
+
+        const char *OSRGetAuthorityCode(OGRSpatialReferenceH hSRS, const char *pszTargetKey);
+    &#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#constant_GDAL_PATHS">GDAL_PATHS</a>
+    <span>
+        &nbsp;= [&#039;/usr/lib/libgdal.so.*&#039;, &#039;/usr/lib64/libgdal.so.*&#039;, &#039;/usr/lib/*/libgdal.so.*&#039;, &#039;/usr/lib64/*/libgdal.so.*&#039;]                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#constant_GDAL_READONLY">GDAL_READONLY</a>
+    <span>
+        &nbsp;= 0                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#constant_TS_VECTOR_MAX_LEN">TS_VECTOR_MAX_LEN</a>
     <span>
         &nbsp;= 1048575                            </span>
@@ -205,6 +239,18 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#property_gdal">$gdal</a>
+    <span>
+                        &nbsp;: <abbr title="\FFI">FFI</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#property_gdalRaster">$gdalRaster</a>
+    <span>
+                        &nbsp;: <abbr title="\FFI\CData">CData</abbr>            </span>
+</dt>
+
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#property_hash">$hash</a>
     <span>
@@ -298,6 +344,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_initGdalFFI">initGdalFFI()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Tries to initialize the GDAL&#039;s FFI interface.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_restore">restore()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -339,6 +392,18 @@
                                 &nbsp;: void    </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_updateSpatialSearchGdal">updateSpatialSearchGdal()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_updateSpatialSearchPostgis">updateSpatialSearchPostgis()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
     </dl>
 
 
@@ -352,6 +417,106 @@
 
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GDAL_CDEF">
+        GDAL_CDEF
+        <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#constant_GDAL_CDEF" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GDAL_CDEF</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;
+        typedef void *GDALDatasetH;
+        typedef void *OGRSpatialReferenceH;
+        typedef enum {GA_ReadOnly = 0, GA_Update = 1} GDALAccess;
+        typedef enum {CE_None = 0, CE_Log = 1, CE_Warning = 2, CE_Failure = 3, CE_Fatal = 4} CPLErr;
+        
+        void GDALAllRegister();
+        
+        GDALDatasetH GDALOpen(const char *pszFilename, int eAccess);
+        
+        int GDALGetRasterXSize(GDALDatasetH);
+        int GDALGetRasterYSize(GDALDatasetH);
+        CPLErr GDALGetGeoTransform(GDALDatasetH, double*);
+        OGRSpatialReferenceH GDALGetSpatialRef(GDALDatasetH);
+
+        const char *OSRGetAuthorityCode(OGRSpatialReferenceH hSRS, const char *pszTargetKey);
+    &#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GDAL_PATHS">
+        GDAL_PATHS
+        <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#constant_GDAL_PATHS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GDAL_PATHS</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;/usr/lib/libgdal.so.*&#039;, &#039;/usr/lib64/libgdal.so.*&#039;, &#039;/usr/lib/*/libgdal.so.*&#039;, &#039;/usr/lib64/*/libgdal.so.*&#039;]</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GDAL_READONLY">
+        GDAL_READONLY
+        <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#constant_GDAL_READONLY" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GDAL_READONLY</span>
+    = <span class="phpdocumentor-signature__default-value">0</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_TS_VECTOR_MAX_LEN">
         TS_VECTOR_MAX_LEN
         <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#constant_TS_VECTOR_MAX_LEN" class="headerlink"><i class="fas fa-link"></i></a>
@@ -361,7 +526,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -393,6 +558,72 @@
             phpdocumentor-element
             -property
             -private
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_gdal">
+        $gdal
+        <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#property_gdal" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type"><abbr title="\FFI">FFI</abbr></span>
+    <span class="phpdocumentor-signature__name">$gdal</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_gdalRaster">
+        $gdalRaster
+        <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#property_gdalRaster" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">133</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\FFI\CData">CData</abbr></span>
+    <span class="phpdocumentor-signature__name">$gdalRaster</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_hash">
@@ -405,7 +636,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -438,7 +669,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -471,7 +702,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -504,7 +735,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -537,7 +768,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -570,7 +801,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -608,7 +839,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">135</span>
 
     </aside>
 
@@ -649,7 +880,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -680,7 +911,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">303</span>
 
     </aside>
 
@@ -721,7 +952,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">260</span>
+    <span class="phpdocumentor-element-found-in__line">331</span>
 
     </aside>
 
@@ -766,7 +997,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">219</span>
 
     </aside>
 
@@ -824,7 +1055,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">268</span>
+    <span class="phpdocumentor-element-found-in__line">339</span>
 
     </aside>
 
@@ -876,7 +1107,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">198</span>
+    <span class="phpdocumentor-element-found-in__line">269</span>
 
     </aside>
 
@@ -911,7 +1142,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -967,6 +1198,55 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_initGdalFFI">
+        initGdalFFI()
+        <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_initGdalFFI" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">95</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Tries to initialize the GDAL&#039;s FFI interface.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">initGdalFFI</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$gdalSoPath</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p>Using the GDAL allows efficient image dimensions extraction and raster
+files spatial indexing.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$gdalSoPath</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_restore">
@@ -977,7 +1257,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">243</span>
+    <span class="phpdocumentor-element-found-in__line">314</span>
 
     </aside>
 
@@ -1022,7 +1302,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -1053,7 +1333,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">280</span>
+    <span class="phpdocumentor-element-found-in__line">351</span>
 
     </aside>
 
@@ -1088,7 +1368,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">382</span>
+    <span class="phpdocumentor-element-found-in__line">498</span>
 
     </aside>
 
@@ -1119,7 +1399,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">390</span>
+    <span class="phpdocumentor-element-found-in__line">520</span>
 
     </aside>
 
@@ -1164,7 +1444,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">313</span>
+    <span class="phpdocumentor-element-found-in__line">384</span>
 
     </aside>
 
@@ -1199,7 +1479,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">363</span>
+    <span class="phpdocumentor-element-found-in__line">434</span>
 
     </aside>
 
@@ -1207,6 +1487,78 @@
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
                     <span class="phpdocumentor-signature__name">updateSpatialSearch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-core-util-SpatialInterface.html"><abbr title="\acdhOeaw\arche\core\util\SpatialInterface">SpatialInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spatial</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$spatial</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-core-util-SpatialInterface.html"><abbr title="\acdhOeaw\arche\core\util\SpatialInterface">SpatialInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_updateSpatialSearchGdal">
+        updateSpatialSearchGdal()
+        <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_updateSpatialSearchGdal" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">468</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">updateSpatialSearchGdal</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_updateSpatialSearchPostgis">
+        updateSpatialSearchPostgis()
+        <a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_updateSpatialSearchPostgis" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php"><a href="files/arche-core-src-acdhoeaw-arche-core-binarypayload.html"><abbr title="arche-core/src/acdhOeaw/arche/core/BinaryPayload.php">BinaryPayload.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">449</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">updateSpatialSearchPostgis</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-core-util-SpatialInterface.html"><abbr title="\acdhOeaw\arche\core\util\SpatialInterface">SpatialInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$spatial</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1339,6 +1691,9 @@
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#constant_GDAL_CDEF">GDAL_CDEF</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#constant_GDAL_PATHS">GDAL_PATHS</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#constant_GDAL_READONLY">GDAL_READONLY</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#constant_TS_VECTOR_MAX_LEN">TS_VECTOR_MAX_LEN</a></li>
                                             </ul>
                 </li>
@@ -1346,6 +1701,8 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#property_gdal">$gdal<a href="classes/acdhOeaw-arche-core-BinaryPayload.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#property_gdalRaster">$gdalRaster<a href="classes/acdhOeaw-arche-core-BinaryPayload.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#property_hash">$hash<a href="classes/acdhOeaw-arche-core-BinaryPayload.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#property_id">$id<a href="classes/acdhOeaw-arche-core-BinaryPayload.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#property_imagePxHeight">$imagePxHeight<a href="classes/acdhOeaw-arche-core-BinaryPayload.html"></li>
@@ -1366,6 +1723,7 @@
                                             <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_getPath">getPath()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_getRequestMetadata">getRequestMetadata()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_getStorageDir">getStorageDir()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_initGdalFFI">initGdalFFI()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_restore">restore()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_upload">upload()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_getRequestMetadataRaw">getRequestMetadataRaw()</a></li>
@@ -1373,6 +1731,8 @@
                                             <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_toBytes">toBytes()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_updateFts">updateFts()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_updateSpatialSearch">updateSpatialSearch()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_updateSpatialSearchGdal">updateSpatialSearchGdal()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-core-BinaryPayload.html#method_updateSpatialSearchPostgis">updateSpatialSearchPostgis()</a></li>
                                     </ul>
             </li>
                     </ul>
