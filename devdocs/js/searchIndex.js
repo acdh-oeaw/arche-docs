@@ -1121,6 +1121,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-RepoException.html#method_getHeaders"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\RepoException\u003A\u003ATOO_MANY_CONNECTIONS",
+            "name": "TOO_MANY_CONNECTIONS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-RepoException.html#constant_TOO_MANY_CONNECTIONS"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\RepoException\u003A\u003A\u0024headers",
             "name": "headers",
             "summary": "HTTP\u0020response\u0020headers\u0020to\u0020be\u0020set",
@@ -1476,10 +1481,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Search.html#method_options"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\core\\Search\u003A\u003A\u0024pdo",
-            "name": "pdo",
+            "fqsen": "\\acdhOeaw\\arche\\core\\TooManyConnectionsException",
+            "name": "TooManyConnectionsException",
+            "summary": "Description\u0020of\u0020TooManyConnectionsException",
+            "url": "classes/acdhOeaw-arche-core-TooManyConnectionsException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\TooManyConnectionsException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-core-Search.html#property_pdo"
+            "url": "classes/acdhOeaw-arche-core-TooManyConnectionsException.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Transaction",
             "name": "Transaction",
@@ -1591,6 +1601,11 @@ Search.appendIndex(
             "summary": "Executes\u0020a\u0020given\u0020PDO\u0020statement\u0020trapping\u0020the\u0020lock\u0020timeout\u0020and\u0020foreign\u0020key\ndatabase\u0020exceptions\u0020and\u0020turning\u0020them\u0020it\u0020into\u0020the\u0020\u0060ConflictException\u0060.",
             "url": "classes/acdhOeaw-arche-core-Transaction.html#method_executeQuery"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003AinitPdo\u0028\u0029",
+            "name": "initPdo",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#method_initPdo"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003ASTATE_NOTX",
             "name": "STATE_NOTX",
             "summary": "",
@@ -1650,6 +1665,11 @@ Search.appendIndex(
             "name": "PG_WRONG_BINARY_VALUE",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_PG_WRONG_BINARY_VALUE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003APG_TOO_MANY_CONNECTIONS",
+            "name": "PG_TOO_MANY_CONNECTIONS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-Transaction.html#constant_PG_TOO_MANY_CONNECTIONS"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\Transaction\u003A\u003ALOCK_TIMEOUT_DEFAULT",
             "name": "LOCK_TIMEOUT_DEFAULT",
@@ -1770,6 +1790,11 @@ Search.appendIndex(
             "name": "TYPE_INET",
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-TransactionController.html#constant_TYPE_INET"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\TransactionController\u003A\u003ATOO_MANY_CONNECTIONS",
+            "name": "TOO_MANY_CONNECTIONS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-TransactionController.html#constant_TOO_MANY_CONNECTIONS"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\TransactionController\u003A\u003A\u0024configFile",
             "name": "configFile",
