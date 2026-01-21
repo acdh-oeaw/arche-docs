@@ -14481,9 +14481,14 @@ Search.appendIndex(
             "summary": "Fetches\u0020RDF\u0020metadata\u0020for\u0020a\u0020given\u0020URI.",
             "url": "classes/acdhOeaw-UriNormalizer.html#method_fetch"
         },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003AfetchUrlRetry\u0028\u0029",
+            "name": "fetchUrlRetry",
+            "summary": "Try\u0020to\u0020fetch\u0020a\u0020response\u0020to\u0020a\u0020given\u0020request\u0020handling\u0020retries.",
+            "url": "classes/acdhOeaw-UriNormalizer.html#method_fetchUrlRetry"
+        },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003AfetchUrl\u0028\u0029",
             "name": "fetchUrl",
-            "summary": "",
+            "summary": "Try\u0020to\u0020fetch\u0020a\u0020given\u0020request\u0020following\u0020redirects",
             "url": "classes/acdhOeaw-UriNormalizer.html#method_fetchUrl"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003AprocessJsonObject\u0028\u0029",
@@ -14530,6 +14535,11 @@ Search.appendIndex(
             "name": "dataFactory",
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizer.html#property_dataFactory"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizer\u003A\u003A\u0024retryCfg",
+            "name": "retryCfg",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizer.html#property_retryCfg"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerCache",
             "name": "UriNormalizerCache",
@@ -14595,6 +14605,61 @@ Search.appendIndex(
             "name": "UriNormalizerException",
             "summary": "Description\u0020of\u0020UriNormalizerException",
             "url": "classes/acdhOeaw-UriNormalizerException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig",
+            "name": "UriNormalizerRetryConfig",
+            "summary": "Container\u0020for\u0020URL\u0020resolution\u0020retry\u0020settings",
+            "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig\u003A\u003Aretry\u0028\u0029",
+            "name": "retry",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html#method_retry"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig\u003A\u003Asleep\u0028\u0029",
+            "name": "sleep",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html#method_sleep"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig\u003A\u003ASCALE_CONST",
+            "name": "SCALE_CONST",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html#constant_SCALE_CONST"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig\u003A\u003ASCALE_MULTI",
+            "name": "SCALE_MULTI",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html#constant_SCALE_MULTI"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig\u003A\u003ASCALE_POWER",
+            "name": "SCALE_POWER",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html#constant_SCALE_POWER"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig\u003A\u003A\u0024number",
+            "name": "number",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html#property_number"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig\u003A\u003A\u0024delay",
+            "name": "delay",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html#property_delay"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig\u003A\u003A\u0024scale",
+            "name": "scale",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html#property_scale"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig\u003A\u003A\u0024on",
+            "name": "on",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html#property_on"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerRule",
             "name": "UriNormalizerRule",
@@ -14686,11 +14751,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizerTest.html#method_testGazetteer"
         },                {
-            "fqsen": "\\acdhOeaw\\UriNormalizerTest\u003A\u003AtestPleiades\u0028\u0029",
-            "name": "testPleiades",
-            "summary": "",
-            "url": "classes/acdhOeaw-UriNormalizerTest.html#method_testPleiades"
-        },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerTest\u003A\u003AtestViaf\u0028\u0029",
             "name": "testViaf",
             "summary": "",
@@ -14770,6 +14830,11 @@ Search.appendIndex(
             "name": "testFetchCache",
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizerTest.html#method_testFetchCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerTest\u003A\u003AtestRetry\u0028\u0029",
+            "name": "testRetry",
+            "summary": "Tests\u0020retry\u0020behavior.",
+            "url": "classes/acdhOeaw-UriNormalizerTest.html#method_testRetry"
         },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerTest\u003A\u003AID_PROP",
             "name": "ID_PROP",
