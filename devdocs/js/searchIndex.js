@@ -3696,6 +3696,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#property_log"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003A\u0024retryCfg",
+            "name": "retryCfg",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#property_retryCfg"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\RunTestsTrait",
             "name": "RunTestsTrait",
             "summary": "Description\u0020of\u0020RunTestsTrait",
