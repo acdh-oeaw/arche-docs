@@ -10351,6 +10351,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_AGG_MAX"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\util\\Value\u003A\u003AAGG_JOIN",
+            "name": "AGG_JOIN",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_AGG_JOIN"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\util\\Value\u003A\u003AAGG",
             "name": "AGG",
             "summary": "",
@@ -10495,6 +10500,11 @@ Search.appendIndex(
             "name": "aggregate",
             "summary": "",
             "url": "classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_aggregate"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\util\\Value\u003A\u003A\u0024split",
+            "name": "split",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_split"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\metadata\\util\\Value\u003A\u003A\u0024required",
             "name": "required",

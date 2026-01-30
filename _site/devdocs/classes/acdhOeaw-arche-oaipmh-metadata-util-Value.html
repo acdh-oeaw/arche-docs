@@ -229,13 +229,19 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_AGG">AGG</a>
     <span>
-        &nbsp;= &#039;`^(?:&#039; . self::AGG_NONE . &#039;|(?:&#039; . self::AGG_MIN . &#039;|&#039; . self::AGG_MAX . &#039;)(?:,.*)?)`&#039;                            </span>
+        &nbsp;= &#039;`^(?:&#039; . self::AGG_NONE . &#039;|(?:&#039; . self::AGG_MIN . &#039;|&#039; . self::AGG_MAX . &#039;|&#039; . self::AGG_JOIN . &#039;)(?:,[a-z]*(?:,.*)?)?)$`&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_AGG_DEFAULT">AGG_DEFAULT</a>
     <span>
         &nbsp;= self::AGG_NONE                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_AGG_JOIN">AGG_JOIN</a>
+    <span>
+        &nbsp;= &#039;join&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
@@ -428,6 +434,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_split">$split</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_valueLangs">$valueLangs</a>
     <span>
                         &nbsp;: array&lt;string|int, string&gt;            </span>
@@ -505,7 +517,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -533,7 +545,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -561,7 +573,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -589,7 +601,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -617,7 +629,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -626,7 +638,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">AGG</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;`^(?:&#039; . self::AGG_NONE . &#039;|(?:&#039; . self::AGG_MIN . &#039;|&#039; . self::AGG_MAX . &#039;)(?:,.*)?)`&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;`^(?:&#039; . self::AGG_NONE . &#039;|(?:&#039; . self::AGG_MIN . &#039;|&#039; . self::AGG_MAX . &#039;|&#039; . self::AGG_JOIN . &#039;)(?:,[a-z]*(?:,.*)?)?)$`&#039;</span>
 </code>
 
 
@@ -645,7 +657,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -655,6 +667,34 @@
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">AGG_DEFAULT</span>
     = <span class="phpdocumentor-signature__default-value">self::AGG_NONE</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_AGG_JOIN">
+        AGG_JOIN
+        <a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_AGG_JOIN" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">AGG_JOIN</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;join&#039;</span>
 </code>
 
 
@@ -757,7 +797,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -785,7 +825,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -813,7 +853,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -841,7 +881,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -869,7 +909,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -897,7 +937,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -925,7 +965,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -953,7 +993,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
     </aside>
 
@@ -981,7 +1021,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -1009,7 +1049,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -1037,7 +1077,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -1065,7 +1105,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -1093,7 +1133,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
@@ -1121,7 +1161,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -1149,7 +1189,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -1177,7 +1217,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -1221,7 +1261,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
     </aside>
 
@@ -1254,7 +1294,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -1287,7 +1327,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
     </aside>
 
@@ -1320,7 +1360,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -1353,7 +1393,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
@@ -1386,7 +1426,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -1419,7 +1459,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
@@ -1452,7 +1492,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">149</span>
 
     </aside>
 
@@ -1485,7 +1525,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -1518,7 +1558,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">145</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
@@ -1551,7 +1591,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
@@ -1561,6 +1601,39 @@
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$required</span>
      = <span class="phpdocumentor-signature__default-value">self::REQ_DEFAULT</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_split">
+        $split
+        <a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_split" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">154</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$split</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
     
     
@@ -1584,7 +1657,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -1617,7 +1690,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
 
     </aside>
 
@@ -1655,7 +1728,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">235</span>
+    <span class="phpdocumentor-element-found-in__line">255</span>
 
     </aside>
 
@@ -1690,7 +1763,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -1742,7 +1815,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -1787,7 +1860,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">250</span>
+    <span class="phpdocumentor-element-found-in__line">270</span>
 
     </aside>
 
@@ -1835,7 +1908,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">240</span>
+    <span class="phpdocumentor-element-found-in__line">260</span>
 
     </aside>
 
@@ -1870,7 +1943,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php"><a href="files/arche-oaipmh-src-acdhoeaw-arche-oaipmh-metadata-util-value.html"><abbr title="arche-oaipmh/src/acdhOeaw/arche/oaipmh/metadata/util/Value.php">Value.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -2023,6 +2096,7 @@
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_ACTION_OVERWRITE">ACTION_OVERWRITE</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_AGG">AGG</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_AGG_DEFAULT">AGG_DEFAULT</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_AGG_JOIN">AGG_JOIN</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_AGG_MAX">AGG_MAX</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_AGG_MIN">AGG_MIN</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#constant_AGG_NONE">AGG_NONE</a></li>
@@ -2059,6 +2133,7 @@
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_path">$path<a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_replace">$replace<a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_required">$required<a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_split">$split<a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_valueLangs">$valueLangs<a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html#property_values">$values<a href="classes/acdhOeaw-arche-oaipmh-metadata-util-Value.html"></li>
                                             </ul>
