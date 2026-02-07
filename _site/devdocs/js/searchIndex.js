@@ -121,11 +121,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_formatParent"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AescapeBiblatex\u0028\u0029",
-            "name": "escapeBiblatex",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_escapeBiblatex"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AgetCslPropertyType\u0028\u0029",
             "name": "getCslPropertyType",
             "summary": "",
