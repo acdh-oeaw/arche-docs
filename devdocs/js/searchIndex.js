@@ -666,6 +666,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-DuplicatedKeyException.html#method___construct"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\DuplicatedKeyException\u003A\u003AgetExistingResourceId\u0028\u0029",
+            "name": "getExistingResourceId",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-DuplicatedKeyException.html#method_getExistingResourceId"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\core\\DuplicatedKeyException\u003A\u003A\u0024existingResourceId",
+            "name": "existingResourceId",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-core-DuplicatedKeyException.html#property_existingResourceId"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\core\\handler\\MetadataManager",
             "name": "MetadataManager",
             "summary": "Description\u0020of\u0020MetadataManager",
@@ -4971,6 +4981,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-exception-Conflict.html#method___construct"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\Conflict\u003A\u003AgetExistingUri\u0028\u0029",
+            "name": "getExistingUri",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-exception-Conflict.html#method_getExistingUri"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\Conflict\u003A\u003A\u0024existingUri",
+            "name": "existingUri",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-exception-Conflict.html#property_existingUri"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\Deleted",
             "name": "Deleted",
             "summary": "Exception\u0020representing\u0020the\u0020HTTP\u0020410\u0020Gone\u0020return\u0020code",
@@ -5005,6 +5025,16 @@ Search.appendIndex(
             "name": "RepoLibException",
             "summary": "Description\u0020of\u0020RepoLibException",
             "url": "classes/acdhOeaw-arche-lib-exception-RepoLibException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\TooManyRequests",
+            "name": "TooManyRequests",
+            "summary": "Description\u0020of\u0020TooManyRequests",
+            "url": "classes/acdhOeaw-arche-lib-exception-TooManyRequests.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\exception\\TooManyRequests\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-exception-TooManyRequests.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\promise\\GraphPromise",
             "name": "GraphPromise",
