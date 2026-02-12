@@ -5181,6 +5181,11 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020repository\u0020REST\u0020API\u0020base\u0020URL.",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getBaseUrl"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AgetVersion\u0028\u0029",
+            "name": "getVersion",
+            "summary": "Returns\u0020repository\u0027s\u0020arche\u002Dcore\u0020major.minor\u0020version.",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_getVersion"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AcreateResource\u0028\u0029",
             "name": "createResource",
             "summary": "Creates\u0020a\u0020repository\u0020resource.",
@@ -5340,6 +5345,11 @@ Search.appendIndex(
             "name": "baseUri",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#property_baseUri"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003A\u0024version",
+            "name": "version",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#property_version"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb",
             "name": "RepoDb",
@@ -7336,10 +7346,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_ERRMODE_CONTINUE"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003ANETWORKERROR_SLEEP",
-            "name": "NETWORKERROR_SLEEP",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003ASLEEP_RETRY",
+            "name": "SLEEP_RETRY",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_NETWORKERROR_SLEEP"
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_SLEEP_RETRY"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003ASKIP_SPECIAL_REGEX",
             "name": "SKIP_SPECIAL_REGEX",
@@ -7576,10 +7586,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#constant_ERRMODE_INCLUDE"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003ANETWORKERROR_SLEEP",
-            "name": "NETWORKERROR_SLEEP",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003ASLEEP_RETRY",
+            "name": "SLEEP_RETRY",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#constant_NETWORKERROR_SLEEP"
+            "url": "classes/acdhOeaw-arche-lib-ingest-MetadataCollection.html#constant_SLEEP_RETRY"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\MetadataCollection\u003A\u003AALLOWED_CONFLICT_REASONS_REGEX",
             "name": "ALLOWED_CONFLICT_REASONS_REGEX",
