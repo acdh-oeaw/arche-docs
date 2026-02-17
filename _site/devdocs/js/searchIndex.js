@@ -14656,6 +14656,21 @@ Search.appendIndex(
             "summary": "Description\u0020of\u0020UriNormalizerException",
             "url": "classes/acdhOeaw-UriNormalizerException.html"
         },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerException.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerException\u003A\u003AgetUri\u0028\u0029",
+            "name": "getUri",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerException.html#method_getUri"
+        },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerException\u003A\u003A\u0024uri",
+            "name": "uri",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerException.html#property_uri"
+        },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig",
             "name": "UriNormalizerRetryConfig",
             "summary": "Container\u0020for\u0020URL\u0020resolution\u0020retry\u0020settings",
