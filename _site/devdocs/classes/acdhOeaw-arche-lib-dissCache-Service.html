@@ -252,6 +252,13 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_getClearCache">getClearCache()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Provides a standardized way to determine if the cache should be invalidated</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_getConfig">getConfig()</a>
     <span>
                                 &nbsp;: object    </span>
@@ -277,6 +284,12 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_setCallback">setCallback()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_setCacheControlHeader">setCacheControlHeader()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -312,7 +325,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-service.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -345,7 +358,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-service.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -378,7 +391,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-service.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -411,7 +424,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-service.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -449,7 +462,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-service.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -480,6 +493,59 @@
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getClearCache">
+        getClearCache()
+        <a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_getClearCache" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-service.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php">Service.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Provides a standardized way to determine if the cache should be invalidated</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getClearCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$httpCacheControl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$noCacheQueryParam</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;noCache&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$httpCacheControl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$noCacheQueryParam</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;noCache&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_getConfig">
@@ -490,7 +556,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-service.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -525,7 +591,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-service.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -560,7 +626,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-service.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -605,14 +671,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-service.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">serveRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$param</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clearCache</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">serveRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$param</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clearCache</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -635,8 +701,8 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$clearCache</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+                : <span class="phpdocumentor-signature__argument__return-type">bool|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -664,7 +730,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-service.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php">Service.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -689,6 +755,47 @@ where the <code class="prettyprint">$param</code> will passed from the <code cla
 <code class="prettyprint">$param</code> parameter.</p>
 </section>
 
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setCacheControlHeader">
+        setCacheControlHeader()
+        <a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_setCacheControlHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-service.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/Service.php">Service.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">202</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">setCacheControlHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$response</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$response</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
             </dd>
             </dl>
 
@@ -820,11 +927,13 @@ where the <code class="prettyprint">$param</code> will passed from the <code cla
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_getClearCache">getClearCache()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_getConfig">getConfig()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_getLog">getLog()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_processException">processException()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_serveRequest">serveRequest()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_setCallback">setCallback()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-dissCache-Service.html#method_setCacheControlHeader">setCacheControlHeader()</a></li>
                                     </ul>
             </li>
                     </ul>

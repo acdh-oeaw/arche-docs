@@ -3111,6 +3111,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-FileCacheException.html#constant_NO_FILE"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCacheException\u003A\u003ATOO_LARGE",
+            "name": "TOO_LARGE",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCacheException.html#constant_TOO_LARGE"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\RepoResourceCacheItem",
             "name": "RepoResourceCacheItem",
             "summary": "",
@@ -3356,6 +3361,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_send"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003AsendCompressed\u0028\u0029",
+            "name": "sendCompressed",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_sendCompressed"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003AOUTPUT_CHUNK",
+            "name": "OUTPUT_CHUNK",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#constant_OUTPUT_CHUNK"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003A\u0024body",
             "name": "body",
             "summary": "",
@@ -3386,6 +3401,11 @@ Search.appendIndex(
             "summary": "Wrapper\u0020handling\u0020boilerplate\u0020code\u0020around\u0020the\u0020ARCHE\u0020microservice\u0020initialization",
             "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003AgetClearCache\u0028\u0029",
+            "name": "getClearCache",
+            "summary": "Provides\u0020a\u0020standardized\u0020way\u0020to\u0020determine\u0020if\u0020the\u0020cache\u0020should\u0020be\u0020invalidated",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_getClearCache"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
@@ -3415,6 +3435,11 @@ Search.appendIndex(
             "name": "processException",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_processException"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003AsetCacheControlHeader\u0028\u0029",
+            "name": "setCacheControlHeader",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_setCacheControlHeader"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003A\u0024config",
             "name": "config",
