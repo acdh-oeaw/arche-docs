@@ -19,5 +19,5 @@ group :jekyll_plugins do
 end
 
 # Security advisories
-gem "nokogiri", ">= 1.11.4"
+gem "nokogiri", ">= 1.19.0"
 
