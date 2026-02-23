@@ -42,10 +42,10 @@ jobs:
         rm -fR devdocs
         cp -fR tmp/devdocs .
         sudo rm -fR tmp
-    - uses: mxschmitt/action-tmate@v3
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.4
+    - uses: mxschmitt/action-tmate@v3
     - uses: limjh16/jekyll-action-ts@v2
       with:
         enable_cache: true
