@@ -45,8 +45,8 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.4
-    - uses: mxschmitt/action-tmate@v3
-    - #uses: limjh16/jekyll-action-ts@v2
+    #- uses: mxschmitt/action-tmate@v3
+    - uses: limjh16/jekyll-action-ts@v2
       with:
         enable_cache: true
     - name: commit and push
