@@ -166,9 +166,9 @@ Every *dissemination service* defines its own URL template.
 The URL template may contain a two kinds of placeholders:
 
 * Predefined parameters:
-    * `{RES_URI}` - the full URL of the resource, e.g. https://arche.acdh.oeaw.ac.at/api/109787.
-    * `{RES_ID}` - the internal numeric identifier of the resource (the number at the end of its URL), e.g. `109787`.
-    * `{nmsp_ID}` - a resource's identifier in the `nmsp` namespace.\
+    * `RES_URI` - the full URL of the resource, e.g. https://arche.acdh.oeaw.ac.at/api/109787.
+    * `RES_ID` - the internal numeric identifier of the resource (the number at the end of its URL), e.g. `109787`.
+    * `ID@nmsp`, e.g. `ID@cmdi - a resource's identifier in the `nmsp` namespace.\
       The namespace has to be defined in the configuration file under `schema.namespaces.{nmsp}`. 
       See e.g. [here](https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/schema.yaml).
 * Parameters defined by you - see the chapter below.

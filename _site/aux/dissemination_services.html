@@ -22,7 +22,7 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"Documentation for the ARCHE repository software stack","headline":"Dissemination services","url":"/arche-docs/aux/dissemination_services.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=3065148de794f34edc84ab442afa69804989f395">
+    <link rel="stylesheet" href="/arche-docs/assets/css/style.css?v=5ef1dc3ea01773bd141db03755b3a94dce29f5ca">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -253,10 +253,10 @@ While it allows to handle most common scenarios, it can’t express complex rule
 <ul>
   <li>Predefined parameters:
     <ul>
-      <li><code class="language-plaintext highlighter-rouge">{RES_URI}</code> - the full URL of the resource, e.g. https://arche.acdh.oeaw.ac.at/api/109787.</li>
-      <li><code class="language-plaintext highlighter-rouge">{RES_ID}</code> - the internal numeric identifier of the resource (the number at the end of its URL), e.g. <code class="language-plaintext highlighter-rouge">109787</code>.</li>
-      <li><code class="language-plaintext highlighter-rouge">{nmsp_ID}</code> - a resource’s identifier in the <code class="language-plaintext highlighter-rouge">nmsp</code> namespace.<br />
-The namespace has to be defined in the configuration file under <code class="language-plaintext highlighter-rouge">schema.namespaces.{nmsp}</code>. 
+      <li><code class="language-plaintext highlighter-rouge">RES_URI</code> - the full URL of the resource, e.g. https://arche.acdh.oeaw.ac.at/api/109787.</li>
+      <li><code class="language-plaintext highlighter-rouge">RES_ID</code> - the internal numeric identifier of the resource (the number at the end of its URL), e.g. <code class="language-plaintext highlighter-rouge">109787</code>.</li>
+      <li><code class="language-plaintext highlighter-rouge">ID@nmsp</code>, e.g. <code class="language-plaintext highlighter-rouge">ID@cmdi - a resource's identifier in the </code>nmsp<code class="language-plaintext highlighter-rouge"> namespace.\
+The namespace has to be defined in the configuration file under </code>schema.namespaces.{nmsp}`. 
 See e.g. <a href="https://github.com/acdh-oeaw/arche-docker-config/blob/arche/yaml/schema.yaml">here</a>.</li>
     </ul>
   </li>
