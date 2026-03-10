@@ -51,6 +51,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_cacheHandler"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003AnegotiateFormat\u0028\u0029",
+            "name": "negotiateFormat",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#method_negotiateFormat"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
@@ -220,6 +225,11 @@ Search.appendIndex(
             "name": "MAPPING_DEFAULT",
             "summary": "",
             "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_MAPPING_DEFAULT"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ANO_MATCH_FORMAT",
+            "name": "NO_MATCH_FORMAT",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-biblatex-Resource.html#constant_NO_MATCH_FORMAT"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\biblatex\\Resource\u003A\u003ABIBLATEX_SPECIAL",
             "name": "BIBLATEX_SPECIAL",
@@ -3401,10 +3411,10 @@ Search.appendIndex(
             "summary": "Wrapper\u0020handling\u0020boilerplate\u0020code\u0020around\u0020the\u0020ARCHE\u0020microservice\u0020initialization",
             "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003AgetClearCache\u0028\u0029",
-            "name": "getClearCache",
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003AgetNoCache\u0028\u0029",
+            "name": "getNoCache",
             "summary": "Provides\u0020a\u0020standardized\u0020way\u0020to\u0020determine\u0020if\u0020the\u0020cache\u0020should\u0020be\u0020invalidated",
-            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_getClearCache"
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_getNoCache"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
@@ -3425,6 +3435,11 @@ Search.appendIndex(
             "name": "getLog",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_getLog"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003AsetCacheDb\u0028\u0029",
+            "name": "setCacheDb",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-Service.html#method_setCacheDb"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\Service\u003A\u003AserveRequest\u0028\u0029",
             "name": "serveRequest",
