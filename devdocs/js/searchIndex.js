@@ -14041,6 +14041,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html#property_on"
         },                {
+            "fqsen": "\\acdhOeaw\\UriNormalizerRetryConfig\u003A\u003A\u0024certVerify",
+            "name": "certVerify",
+            "summary": "",
+            "url": "classes/acdhOeaw-UriNormalizerRetryConfig.html#property_certVerify"
+        },                {
             "fqsen": "\\acdhOeaw\\UriNormalizerRule",
             "name": "UriNormalizerRule",
             "summary": "A\u0020container\u0020for\u0020a\u0020URI\u0020normalization\u0020rule",
