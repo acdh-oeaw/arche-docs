@@ -2351,6 +2351,11 @@ Search.appendIndex(
             "summary": "Assures\u0020caches\u0020doesn\u0027t\u0020exceed\u0020a\u0020given\u0020size.",
             "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#method_clean"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003AMB",
+            "name": "MB",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#constant_MB"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003ABY_MOD_TIME",
             "name": "BY_MOD_TIME",
             "summary": "",
