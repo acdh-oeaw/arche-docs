@@ -72,6 +72,10 @@
                 <a href="namespaces/acdhoeaw-dissservice.html" class="">dissService</a>
                 
             </li>
+                    <li>
+                <a href="namespaces/acdhoeaw-urinormalizer.html" class="">uriNormalizer</a>
+                
+            </li>
             </ul>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -114,6 +118,7 @@
                                 <section>
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-urinormalizer.html">uriNormalizer</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
@@ -140,7 +145,7 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">40</span>
 
@@ -153,7 +158,7 @@ for the UriNormalizer class.</p>
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -172,7 +177,7 @@ for the UriNormalizer class.</p>
 
 <h3 id="toc">
     Table of Contents
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
@@ -180,7 +185,7 @@ for the UriNormalizer class.</p>
 
     <h4 id="toc-interfaces">
         Interfaces
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <dl class="phpdocumentor-table-of-contents">
@@ -189,22 +194,41 @@ for the UriNormalizer class.</p>
 
 
 
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#constant_DEFAULT_TTL">DEFAULT_TTL</a>
+    <span>
+        &nbsp;= &quot;P1D&quot;                            </span>
+</dt>
+
+    </dl>
 
 
 <h4 id="toc-properties">
     Properties
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#property_memCache">$memCache</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#property_defaultTtl">$defaultTtl</a>
+    <span>
+                        &nbsp;: <abbr title="\DateInterval">DateInterval</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#property_memCache">$memCache</a>
     <span>
                         &nbsp;: array&lt;string, mixed&gt;            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#property_pdo">$pdo</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#property_pdo">$pdo</a>
     <span>
                         &nbsp;: <abbr title="\PDO">PDO</abbr>            </span>
 </dt>
@@ -213,60 +237,66 @@ for the UriNormalizer class.</p>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#method___construct">__construct()</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#method_clear">clear()</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_asDateInterval">asDateInterval()</a>
+    <span>
+                                &nbsp;: <abbr title="\DateInterval">DateInterval</abbr>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_clear">clear()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#method_delete">delete()</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_delete">delete()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#method_deleteMultiple">deleteMultiple()</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_deleteMultiple">deleteMultiple()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#method_get">get()</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_get">get()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#method_getMultiple">getMultiple()</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_getMultiple">getMultiple()</a>
     <span>
                                 &nbsp;: iterable&lt;string|int, mixed&gt;    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#method_has">has()</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_has">has()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#method_set">set()</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_set">set()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-UriNormalizerCache.html#method_setMultiple">setMultiple()</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_setMultiple">setMultiple()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
@@ -277,12 +307,47 @@ for the UriNormalizer class.</p>
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DEFAULT_TTL">
+        DEFAULT_TTL
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#constant_DEFAULT_TTL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DEFAULT_TTL</span>
+    = <span class="phpdocumentor-signature__default-value">&quot;P1D&quot;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/acdhOeaw-UriNormalizerCache.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -292,17 +357,50 @@ for the UriNormalizer class.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_memCache">
-        $memCache
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#property_memCache" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_defaultTtl">
+        $defaultTtl
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#property_defaultTtl" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\DateInterval">DateInterval</abbr></span>
+    <span class="phpdocumentor-signature__name">$defaultTtl</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_memCache">
+        $memCache
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#property_memCache" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -327,15 +425,15 @@ for the UriNormalizer class.</p>
 >
     <h4 class="phpdocumentor-element__name" id="property_pdo">
         $pdo
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#property_pdo" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#property_pdo" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -356,7 +454,7 @@ for the UriNormalizer class.</p>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/acdhOeaw-UriNormalizerCache.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -367,20 +465,20 @@ for the UriNormalizer class.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sqliteFile</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sqliteFile</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|string|<abbr title="\DateInterval">DateInterval</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$defaultTtl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::DEFAULT_TTL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -394,6 +492,13 @@ for the UriNormalizer class.</p>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$defaultTtl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|string|<abbr title="\DateInterval">DateInterval</abbr></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::DEFAULT_TTL</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -404,17 +509,62 @@ for the UriNormalizer class.</p>
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_asDateInterval">
+        asDateInterval()
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_asDateInterval" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">asDateInterval</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|string|<abbr title="\DateInterval">DateInterval</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\DateInterval">DateInterval</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|string|<abbr title="\DateInterval">DateInterval</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\DateInterval">DateInterval</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_clear">
         clear()
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#method_clear" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_clear" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -443,13 +593,13 @@ for the UriNormalizer class.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_delete">
         delete()
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -488,13 +638,13 @@ for the UriNormalizer class.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_deleteMultiple">
         deleteMultiple()
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#method_deleteMultiple" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_deleteMultiple" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -533,13 +683,13 @@ for the UriNormalizer class.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_get">
         get()
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -581,13 +731,13 @@ for the UriNormalizer class.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_getMultiple">
         getMultiple()
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#method_getMultiple" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_getMultiple" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -633,13 +783,13 @@ for the UriNormalizer class.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_has">
         has()
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#method_has" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_has" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -678,13 +828,13 @@ for the UriNormalizer class.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_set">
         set()
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#method_set" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_set" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -737,13 +887,13 @@ for the UriNormalizer class.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_setMultiple">
         setMultiple()
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#method_setMultiple" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_setMultiple" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizer-urinormalizercache.html"><abbr title="uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php">UriNormalizerCache.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">160</span>
 
     </aside>
 
@@ -787,7 +937,7 @@ for the UriNormalizer class.</p>
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/uriNormalizer/src/acdhOeaw/UriNormalizerCache.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/uriNormalizer/src/acdhOeaw/uriNormalizer/UriNormalizerCache.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -886,31 +1036,40 @@ for the UriNormalizer class.</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                            <li><a href="classes/acdhOeaw-UriNormalizerCache.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/acdhOeaw-UriNormalizerCache.html#toc-methods">Methods</a></li>
+                                        <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#constant_DEFAULT_TTL">DEFAULT_TTL</a></li>
+                                            </ul>
+                </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/acdhOeaw-UriNormalizerCache.html#property_memCache">$memCache<a href="classes/acdhOeaw-UriNormalizerCache.html"></li>
-                                                    <li><a href="classes/acdhOeaw-UriNormalizerCache.html#property_pdo">$pdo<a href="classes/acdhOeaw-UriNormalizerCache.html"></li>
+                                                    <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#property_defaultTtl">$defaultTtl<a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html"></li>
+                                                    <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#property_memCache">$memCache<a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html"></li>
+                                                    <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#property_pdo">$pdo<a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html"></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/acdhOeaw-UriNormalizerCache.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/acdhOeaw-UriNormalizerCache.html#method_clear">clear()</a></li>
-                                            <li><a href="classes/acdhOeaw-UriNormalizerCache.html#method_delete">delete()</a></li>
-                                            <li><a href="classes/acdhOeaw-UriNormalizerCache.html#method_deleteMultiple">deleteMultiple()</a></li>
-                                            <li><a href="classes/acdhOeaw-UriNormalizerCache.html#method_get">get()</a></li>
-                                            <li><a href="classes/acdhOeaw-UriNormalizerCache.html#method_getMultiple">getMultiple()</a></li>
-                                            <li><a href="classes/acdhOeaw-UriNormalizerCache.html#method_has">has()</a></li>
-                                            <li><a href="classes/acdhOeaw-UriNormalizerCache.html#method_set">set()</a></li>
-                                            <li><a href="classes/acdhOeaw-UriNormalizerCache.html#method_setMultiple">setMultiple()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_asDateInterval">asDateInterval()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_clear">clear()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_delete">delete()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_deleteMultiple">deleteMultiple()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_get">get()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_getMultiple">getMultiple()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_has">has()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_set">set()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#method_setMultiple">setMultiple()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -930,7 +1089,7 @@ for the UriNormalizer class.</p>
     </section>
 </section>
         </div>
-        <a href="classes/acdhOeaw-UriNormalizerCache.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

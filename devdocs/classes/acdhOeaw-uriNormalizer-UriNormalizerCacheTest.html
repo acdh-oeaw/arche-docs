@@ -72,6 +72,10 @@
                 <a href="namespaces/acdhoeaw-dissservice.html" class="">dissService</a>
                 
             </li>
+                    <li>
+                <a href="namespaces/acdhoeaw-urinormalizer.html" class="">uriNormalizer</a>
+                
+            </li>
             </ul>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -114,12 +118,16 @@
                                 <section>
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw.html">acdhOeaw</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/acdhoeaw-urinormalizer.html">uriNormalizer</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    UriNormalizerRule
+    UriNormalizerCacheTest
 
+        <span class="phpdocumentor-element__extends">
+        extends <abbr title="\PHPUnit\Framework\TestCase">TestCase</abbr>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -137,19 +145,19 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizerrule.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php">UriNormalizerRule.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/tests/UriNormalizerCacheTest.php"><a href="files/urinormalizer-tests-urinormalizercachetest.html"><abbr title="uriNormalizer/tests/UriNormalizerCacheTest.php">UriNormalizerCacheTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">A container for a URI normalization rule</p>
+            <p class="phpdocumentor-summary">Description of IndexerTest</p>
 
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/acdhOeaw-UriNormalizerRule.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -168,7 +176,7 @@
 
 <h3 id="toc">
     Table of Contents
-    <a href="classes/acdhOeaw-UriNormalizerRule.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
@@ -180,54 +188,29 @@
 
 
 
-<h4 id="toc-properties">
-    Properties
-    <a href="classes/acdhOeaw-UriNormalizerRule.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
-
-</h4>
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-UriNormalizerRule.html#property_format">$format</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-UriNormalizerRule.html#property_match">$match</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-UriNormalizerRule.html#property_replace">$replace</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/acdhOeaw-UriNormalizerRule.html#property_resolve">$resolve</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-
-    </dl>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/acdhOeaw-UriNormalizerRule.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-UriNormalizerRule.html#method___construct">__construct()</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#method_testMemoryOnly">testMemoryOnly()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/acdhOeaw-UriNormalizerRule.html#method_factory">factory()</a>
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#method_testSqlite">testSqlite()</a>
     <span>
-                                &nbsp;: self    </span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#method_initCache">initCache()</a>
+    <span>
+                                &nbsp;: <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html"><abbr title="\acdhOeaw\uriNormalizer\UriNormalizerCache">UriNormalizerCache</abbr></a>    </span>
 </dt>
 
     </dl>
@@ -238,150 +221,11 @@
         
 
         
-    <section class="phpdocumentor-properties">
-        <h3 class="phpdocumentor-elements__header" id="properties">
-            Properties
-            <a href="classes/acdhOeaw-UriNormalizerRule.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_format">
-        $format
-        <a href="classes/acdhOeaw-UriNormalizerRule.html#property_format" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizerrule.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php">UriNormalizerRule.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">53</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$format</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_match">
-        $match
-        <a href="classes/acdhOeaw-UriNormalizerRule.html#property_match" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizerrule.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php">UriNormalizerRule.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">52</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$match</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_replace">
-        $replace
-        <a href="classes/acdhOeaw-UriNormalizerRule.html#property_replace" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizerrule.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php">UriNormalizerRule.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">52</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$replace</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_resolve">
-        $resolve
-        <a href="classes/acdhOeaw-UriNormalizerRule.html#property_resolve" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizerrule.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php">UriNormalizerRule.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">53</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$resolve</span>
-    </code>
-
-    
-    
-    
-
-</article>
-            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/acdhOeaw-UriNormalizerRule.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -390,58 +234,27 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/acdhOeaw-UriNormalizerRule.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_testMemoryOnly">
+        testMemoryOnly()
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#method_testMemoryOnly" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizerrule.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php">UriNormalizerRule.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/tests/UriNormalizerCacheTest.php"><a href="files/urinormalizer-tests-urinormalizercachetest.html"><abbr title="uriNormalizer/tests/UriNormalizerCacheTest.php">UriNormalizerCacheTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$match</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$replace</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resolve</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">testMemoryOnly</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$match</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$replace</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$resolve</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$format</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
+    
     
 
     
@@ -450,24 +263,55 @@
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_factory">
-        factory()
-        <a href="classes/acdhOeaw-UriNormalizerRule.html#method_factory" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_testSqlite">
+        testSqlite()
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#method_testSqlite" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php"><a href="files/urinormalizer-src-acdhoeaw-urinormalizerrule.html"><abbr title="uriNormalizer/src/acdhOeaw/UriNormalizerRule.php">UriNormalizerRule.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/tests/UriNormalizerCacheTest.php"><a href="files/urinormalizer-tests-urinormalizercachetest.html"><abbr title="uriNormalizer/tests/UriNormalizerCacheTest.php">UriNormalizerCacheTest.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">factory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">self|<abbr title="\stdClass">stdClass</abbr>|array&lt;string, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rule</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                    <span class="phpdocumentor-signature__name">testSqlite</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_initCache">
+        initCache()
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#method_initCache" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="uriNormalizer/tests/UriNormalizerCacheTest.php"><a href="files/urinormalizer-tests-urinormalizercachetest.html"><abbr title="uriNormalizer/tests/UriNormalizerCacheTest.php">UriNormalizerCacheTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">initCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$withDb</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clear</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html"><abbr title="\acdhOeaw\uriNormalizer\UriNormalizerCache">UriNormalizerCache</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -475,8 +319,15 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$rule</span>
-                : <span class="phpdocumentor-signature__argument__return-type">self|<abbr title="\stdClass">stdClass</abbr>|array&lt;string, string&gt;</span>
+                <span class="phpdocumentor-signature__argument__name">$withDb</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$clear</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -487,7 +338,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self</span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCache.html"><abbr title="\acdhOeaw\uriNormalizer\UriNormalizerCache">UriNormalizerCache</abbr></a></span>
             </section>
 
 </article>
@@ -497,7 +348,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/uriNormalizer/src/acdhOeaw/UriNormalizerRule.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/uriNormalizer/tests/UriNormalizerCacheTest.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -596,26 +447,17 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                            <li><a href="classes/acdhOeaw-UriNormalizerRule.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/acdhOeaw-UriNormalizerRule.html#toc-methods">Methods</a></li>
+                                                                                <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
-                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
-                <li>
-                    <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/acdhOeaw-UriNormalizerRule.html#property_format">$format<a href="classes/acdhOeaw-UriNormalizerRule.html"></li>
-                                                    <li><a href="classes/acdhOeaw-UriNormalizerRule.html#property_match">$match<a href="classes/acdhOeaw-UriNormalizerRule.html"></li>
-                                                    <li><a href="classes/acdhOeaw-UriNormalizerRule.html#property_replace">$replace<a href="classes/acdhOeaw-UriNormalizerRule.html"></li>
-                                                    <li><a href="classes/acdhOeaw-UriNormalizerRule.html#property_resolve">$resolve<a href="classes/acdhOeaw-UriNormalizerRule.html"></li>
-                                            </ul>
-                </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/acdhOeaw-UriNormalizerRule.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/acdhOeaw-UriNormalizerRule.html#method_factory">factory()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#method_testMemoryOnly">testMemoryOnly()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#method_testSqlite">testSqlite()</a></li>
+                                            <li><a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#method_initCache">initCache()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -635,7 +477,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/acdhOeaw-UriNormalizerRule.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/acdhOeaw-uriNormalizer-UriNormalizerCacheTest.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
