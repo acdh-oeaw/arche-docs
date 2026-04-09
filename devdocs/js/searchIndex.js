@@ -8406,6 +8406,11 @@ Search.appendIndex(
             "summary": "Removes\u0020\u0022Failed\u0020to\u0020fetch\u0020RDF\u0020data\u0020from\u0020\u007BURI\u007D\u0022\u0020errors\u0020related\u0020to\u0020locally\u0020defined\u0020entities\n\u0028having\u0020a\u0020given\u0020subject\u0020or\u0020identifier\u0029.",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#method_checkForLocalEntities"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003AURI_NORMALIZER_TTL",
+            "name": "URI_NORMALIZER_TTL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#constant_URI_NORMALIZER_TTL"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003A\u0024ontology",
             "name": "ontology",
             "summary": "",
