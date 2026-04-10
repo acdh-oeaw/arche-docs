@@ -14246,6 +14246,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-uriNormalizer-UriNormalizerTest.html#method_testArche"
         },                {
+            "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizerTest\u003A\u003AtestRism\u0028\u0029",
+            "name": "testRism",
+            "summary": "",
+            "url": "classes/acdhOeaw-uriNormalizer-UriNormalizerTest.html#method_testRism"
+        },                {
             "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizerTest\u003A\u003AtestResource\u0028\u0029",
             "name": "testResource",
             "summary": "",
