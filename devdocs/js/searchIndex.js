@@ -12946,6 +12946,11 @@ Search.appendIndex(
             "summary": "Check\u0020the\u0020cart\u0020items\u0020and\u0020update\u0020the\u0020cookie",
             "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_cartDT"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ApiController\u003A\u003AfrontendStat\u0028\u0029",
+            "name": "frontendStat",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-ApiController.html#method_frontendStat"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\ArcheAuthenticationController",
             "name": "ArcheAuthenticationController",
             "summary": "Description\u0020of\u0020ArcheAuthenticationController",
@@ -13155,6 +13160,11 @@ Search.appendIndex(
             "name": "getAcceptedFormats",
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#method_getAcceptedFormats"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController\u003A\u003AgetFrontendStat\u0028\u0029",
+            "name": "getFrontendStat",
+            "summary": "Generate\u0020statistics\u0020data\u0020for\u0020the\u0020frontend",
+            "url": "classes/Drupal-arche-core-gui-api-Controller-MetadataController.html#method_getFrontendStat"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui_api\\Controller\\MetadataController\u003A\u003A\u0024helper",
             "name": "helper",
