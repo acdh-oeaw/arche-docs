@@ -2536,6 +2536,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-RepoWrapperRepoInterface.html#method_getModificationTimestamp"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\RepoWrapperRepoInterface\u003A\u003AassureRepo\u0028\u0029",
+            "name": "assureRepo",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-RepoWrapperRepoInterface.html#method_assureRepo"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\RepoWrapperRepoInterface\u003A\u003A\u0024configPath",
+            "name": "configPath",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-RepoWrapperRepoInterface.html#property_configPath"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\RepoWrapperRepoInterface\u003A\u003A\u0024repo",
             "name": "repo",
             "summary": "",
