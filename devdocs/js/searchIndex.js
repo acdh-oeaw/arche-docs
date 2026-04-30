@@ -10231,11 +10231,6 @@ Search.appendIndex(
             "summary": "Resumption\u0020token\u0020value\u0020used",
             "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_resumptionToken"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003A\u0024resumptionCursor",
-            "name": "resumptionCursor",
-            "summary": "Value\u0020of\u0020the\u0020resumptionCursor\u0020attribute\u0020read\u0020from\u0020the\u0020resumption\u0020dump\u0020file",
-            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#property_resumptionCursor"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003A\u0024resumptionCount",
             "name": "resumptionCount",
             "summary": "Total\u0020number\u0020of\u0020resources\u0020of\u0020the\u0020original\u0020search\u0020read\u0020from\u0020the\u0020resumption\u0020dump\u0020file",
