@@ -10171,19 +10171,19 @@ Search.appendIndex(
             "summary": "Performs\u0020search\u0020using\u0020given\u0020filter\u0020values.",
             "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_find"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AgetIdFilter\u0028\u0029",
-            "name": "getIdFilter",
-            "summary": "Creates\u0020SPARQL\u0020query\u0020clause\u0020implementing\u0020the\u0020id\u0020filter.",
-            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getIdFilter"
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AgetIdQuery\u0028\u0029",
+            "name": "getIdQuery",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getIdQuery"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AgetDateFilter\u0028\u0029",
             "name": "getDateFilter",
-            "summary": "Creates\u0020SPARQL\u0020clauses\u0020implementing\u0020the\u0020date\u0020filter.",
+            "summary": "Creates\u0020clauses\u0020implementing\u0020the\u0020date\u0020filter.",
             "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getDateFilter"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AgetSetFilter\u0028\u0029",
             "name": "getSetFilter",
-            "summary": "Creates\u0020SPARQL\u0020clause\u0020implementing\u0020the\u0020set\u0020filter.",
+            "summary": "Creates\u0020clause\u0020implementing\u0020the\u0020set\u0020filter.",
             "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_getSetFilter"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AsetLogger\u0028\u0029",
@@ -10195,6 +10195,21 @@ Search.appendIndex(
             "name": "setMetadataFormat",
             "summary": "Sets\u0020metadata\u0020format\u0020configuration",
             "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#method_setMetadataFormat"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AID_IDENTIFIERS",
+            "name": "ID_IDENTIFIERS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#constant_ID_IDENTIFIERS"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AID_METADATA",
+            "name": "ID_METADATA",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#constant_ID_METADATA"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003AID_TABLES",
+            "name": "ID_TABLES",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-oaipmh-search-BaseSearch.html#constant_ID_TABLES"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\oaipmh\\search\\BaseSearch\u003A\u003A\u0024format",
             "name": "format",
