@@ -2871,6 +2871,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method___construct"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003AsetResource\u0028\u0029",
+            "name": "setResource",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_setResource"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Apre01MaintainDefaultValues\u0028\u0029",
             "name": "pre01MaintainDefaultValues",
             "summary": "",
@@ -3045,6 +3050,11 @@ Search.appendIndex(
             "name": "checkRanges",
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#property_checkRanges"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003A\u0024cacheDir",
+            "name": "cacheDir",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#property_cacheDir"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003A\u0024meta",
             "name": "meta",
@@ -4541,6 +4551,11 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020Repo\u0020instance\u0020from\u0020any\u0020URL\u0020pointing\u0020\u0028also\u0020trough\u0020redirects\u0029\nto\u0020a\u0020valid\u0020REST\u0020API\u0020endpoint.",
             "url": "classes/acdhOeaw-arche-lib-Repo.html#method_factoryFromUrl"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003AfindBaseUrl\u0028\u0029",
+            "name": "findBaseUrl",
+            "summary": "Resolves\u0020any\u0020URI\u0020poinitng\u0020to\u0020an\u0020ARCHE\u0020repository\u0020REST\u0020interface\u0020to\u0020the\u0020repository\u0027s\nbase\u0020URL.",
+            "url": "classes/acdhOeaw-arche-lib-Repo.html#method_findBaseUrl"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\Repo\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "Creates\u0020an\u0020repository\u0020connection\u0020object.",
@@ -4730,6 +4745,11 @@ Search.appendIndex(
             "name": "factory",
             "summary": "Creates\u0020a\u0020repository\u0020object\u0020instance\u0020from\u0020a\u0020given\u0020configuration\u0020file.",
             "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_factory"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003AfactoryFromUrl\u0028\u0029",
+            "name": "factoryFromUrl",
+            "summary": "Creates\u0020a\u0020repository\u0020object\u0020instance\u0020from\u0020a\u0020repository\u0020URL\u0020and\u0020a\u0020database\u0020connection.",
+            "url": "classes/acdhOeaw-arche-lib-RepoDb.html#method_factoryFromUrl"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\RepoDb\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
@@ -7781,6 +7801,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#property_restrictions"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003A\u0024vocabularyCache",
+            "name": "vocabularyCache",
+            "summary": "Cache\u0020for\u0020getVocabularyValues\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#property_vocabularyCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003A\u0024vocabularyCacheGet",
+            "name": "vocabularyCacheGet",
+            "summary": "Cache\u0020for\u0020getVocabularyValue\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#property_vocabularyCacheGet"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\Ontology\u003A\u003A\u0024vocabularyCacheCheck",
+            "name": "vocabularyCacheCheck",
+            "summary": "Cache\u0020for\u0020checkVocabularyValue\u0028\u0029",
+            "url": "classes/acdhOeaw-arche-lib-schema-Ontology.html#property_vocabularyCacheCheck"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\schema\\PropertyDesc",
             "name": "PropertyDesc",
             "summary": "A\u0020container\u0020for\u0020an\u0020RDF\u0020property\u0020description",
@@ -8401,6 +8436,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-EntityListWorksheet.html#property_classes"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\InitUtil",
+            "name": "InitUtil",
+            "summary": "Description\u0020of\u0020InitUtil",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-InitUtil.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\InitUtil\u003A\u003AgetRepoOntology\u0028\u0029",
+            "name": "getRepoOntology",
+            "summary": "Tries\u0020to\u0020initialized\u0020Repo\u0020and\u0020Ontology\u0020using\u0020a\u0020direct\u0020database\u0020connection\nwith\u0020connection\u0020parameters\u0020read\u0020from\u0020the\u0020ARCHE_DB_CONN_STR\u0020env\u0020var.",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-InitUtil.html#method_getRepoOntology"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker",
             "name": "MetadataChecker",
             "summary": "Description\u0020of\u0020MetadataChecker",
@@ -8426,6 +8471,21 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#constant_URI_NORMALIZER_TTL"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003A\u0024cacheDir",
+            "name": "cacheDir",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#property_cacheDir"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003A\u0024resolveCfg",
+            "name": "resolveCfg",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#property_resolveCfg"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003A\u0024meta",
+            "name": "meta",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#property_meta"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003A\u0024ontology",
             "name": "ontology",
             "summary": "",
@@ -8440,26 +8500,6 @@ Search.appendIndex(
             "name": "log",
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#property_log"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003A\u0024normalizers",
-            "name": "normalizers",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#property_normalizers"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003A\u0024checkRanges",
-            "name": "checkRanges",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#property_checkRanges"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003A\u0024vocabularies",
-            "name": "vocabularies",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#property_vocabularies"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataChecker\u003A\u003A\u0024meta",
-            "name": "meta",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataChecker.html#property_meta"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataCrawler",
             "name": "MetadataCrawler",
