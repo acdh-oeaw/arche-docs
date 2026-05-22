@@ -13901,6 +13901,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-api-Helper-RootTableHelper.html#property_lang"
         },                {
+            "fqsen": "\\acdhOeaw\\uriNormalizer\\NotFoundException",
+            "name": "NotFoundException",
+            "summary": "Description\u0020of\u0020NotFoundException",
+            "url": "classes/acdhOeaw-uriNormalizer-NotFoundException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\uriNormalizer\\NotFoundException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-uriNormalizer-NotFoundException.html#method___construct"
+        },                {
             "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizer",
             "name": "UriNormalizer",
             "summary": "A\u0020simply\u0020utility\u0020class\u0020normalizing\u0020the\u0020URIs",
@@ -14365,6 +14375,11 @@ Search.appendIndex(
             "name": "testRetry",
             "summary": "Tests\u0020retry\u0020behavior.",
             "url": "classes/acdhOeaw-uriNormalizer-UriNormalizerTest.html#method_testRetry"
+        },                {
+            "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizerTest\u003A\u003AtestCache404\u0028\u0029",
+            "name": "testCache404",
+            "summary": "Test\u0027s\u0020if\u0020HTTP\u0020404\u0020responses\u0020are\u0020cached",
+            "url": "classes/acdhOeaw-uriNormalizer-UriNormalizerTest.html#method_testCache404"
         },                {
             "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizerTest\u003A\u003AID_PROP",
             "name": "ID_PROP",
