@@ -11906,6 +11906,11 @@ Search.appendIndex(
             "summary": "we\u0020have\u0020to\u0020redirect\u0020the\u0020old\u0020metadata\u0020url\u0020to\u0020the\u0020new\u0020one\nold\u003A\u0020oeaw_detail\u0020new\u003A\u0020metadata",
             "url": "classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_redirectOldDetailView"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\ArcheBaseController\u003A\u003AdisplayAccessibilityPage\u0028\u0029",
+            "name": "displayAccessibilityPage",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_displayAccessibilityPage"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\ArcheBaseController\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
