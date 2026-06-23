@@ -7056,6 +7056,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_SKIP_SPECIAL"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003ASKIP_DIRECTORY",
+            "name": "SKIP_DIRECTORY",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-ingest-Indexer.html#constant_SKIP_DIRECTORY"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\ingest\\Indexer\u003A\u003AVERSIONING_NONE",
             "name": "VERSIONING_NONE",
             "summary": "",
