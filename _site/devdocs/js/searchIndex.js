@@ -3401,6 +3401,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#constant_PROP_TAG"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003AURI_RESOLVE_HEADERS",
+            "name": "URI_RESOLVE_HEADERS",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#constant_URI_RESOLVE_HEADERS"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003A\u0024uriNorm",
             "name": "uriNorm",
             "summary": "",
@@ -14370,6 +14375,11 @@ Search.appendIndex(
             "name": "FORMAT_JSON",
             "summary": "",
             "url": "classes/acdhOeaw-uriNormalizer-UriNormalizer.html#constant_FORMAT_JSON"
+        },                {
+            "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizer\u003A\u003AUSER_AGENT",
+            "name": "USER_AGENT",
+            "summary": "",
+            "url": "classes/acdhOeaw-uriNormalizer-UriNormalizer.html#constant_USER_AGENT"
         },                {
             "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizer\u003A\u003A\u0024obj",
             "name": "obj",
