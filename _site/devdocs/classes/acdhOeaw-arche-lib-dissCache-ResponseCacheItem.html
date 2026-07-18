@@ -146,7 +146,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
@@ -195,6 +195,12 @@
     <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#constant_ETAG_HASH">ETAG_HASH</a>
     <span>
         &nbsp;= &#039;xxh128&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#constant_NO_COMPRESSION">NO_COMPRESSION</a>
+    <span>
+        &nbsp;= &#039;image/*, audio/*, video/*, application/zip, application/gzip, application/x-bzip2, application/x-bzip, application/x-lzma&#039;                            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
@@ -249,7 +255,19 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_resourceTimestamp">$resourceTimestamp</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_responseCode">$responseCode</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_responseTimestamp">$responseTimestamp</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
@@ -275,6 +293,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_getTtl">getTtl()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_send">send()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -285,6 +309,13 @@
     <span>
                                 &nbsp;: string    </span>
 </dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_unify">unify()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Testing helper</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_withHit">withHit()</a>
@@ -299,6 +330,14 @@
                                 &nbsp;: self    </span>
 </dt>
 <dd>Helper for tests</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_getCompressFromContentTypeHeader">getCompressFromContentTypeHeader()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Automatically detects if it makes sense to compress the output
+based on the response format provided in the conte-type response header.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_getFileHash">getFileHash()</a>
@@ -334,7 +373,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -353,6 +392,34 @@
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_NO_COMPRESSION">
+        NO_COMPRESSION
+        <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#constant_NO_COMPRESSION" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">NO_COMPRESSION</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;image/*, audio/*, video/*, application/zip, application/gzip, application/x-bzip2, application/x-bzip, application/x-lzma&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_OUTPUT_CHUNK">
         OUTPUT_CHUNK
         <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#constant_OUTPUT_CHUNK" class="headerlink"><i class="fas fa-link"></i></a>
@@ -362,7 +429,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -406,7 +473,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -439,7 +506,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -472,7 +539,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -505,7 +572,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -538,7 +605,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -571,7 +638,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -580,6 +647,39 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$lastModified</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_resourceTimestamp">
+        $resourceTimestamp
+        <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_resourceTimestamp" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$resourceTimestamp</span>
     </code>
 
     
@@ -604,7 +704,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -614,6 +714,39 @@
         <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$responseCode</span>
      = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_responseTimestamp">
+        $responseTimestamp
+        <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_responseTimestamp" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$responseTimestamp</span>
+    </code>
 
     
     
@@ -642,14 +775,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$responseCode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string, string|array&lt;string|int, string&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$etag</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lastModified</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$responseCode</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string, string|array&lt;string|int, string&gt;&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$headers</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hit</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$etag</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$lastModified</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$responseTimestamp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resourceTimestamp</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -705,6 +838,20 @@
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$responseTimestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resourceTimestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
             </dl>
 
     
@@ -725,14 +872,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">deserialize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">deserialize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$createdDate</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resourceTimestamp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -742,6 +889,20 @@
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$data</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$createdDate</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resourceTimestamp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -762,6 +923,58 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getTtl">
+        getTtl()
+        <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_getTtl" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">133</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getTtl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resourceTtl</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$responseTtl</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resourceTtl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$responseTtl</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_send">
         send()
         <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_send" class="headerlink"><i class="fas fa-link"></i></a>
@@ -770,14 +983,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">send</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$compress</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">send</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$compress</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -786,8 +999,8 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$compress</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+                : <span class="phpdocumentor-signature__argument__return-type">bool|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -811,7 +1024,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -838,6 +1051,52 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_unify">
+        unify()
+        <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_unify" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">152</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Testing helper</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">unify</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">self&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resp</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resp</span>
+                : <span class="phpdocumentor-signature__argument__return-type">self</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_withHit">
         withHit()
         <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_withHit" class="headerlink"><i class="fas fa-link"></i></a>
@@ -846,7 +1105,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -892,7 +1151,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -930,6 +1189,43 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getCompressFromContentTypeHeader">
+        getCompressFromContentTypeHeader()
+        <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_getCompressFromContentTypeHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">217</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Automatically detects if it makes sense to compress the output
+based on the response format provided in the conte-type response header.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getCompressFromContentTypeHeader</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getFileHash">
         getFileHash()
         <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_getFileHash" class="headerlink"><i class="fas fa-link"></i></a>
@@ -938,7 +1234,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">201</span>
 
     </aside>
 
@@ -973,7 +1269,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php"><a href="files/arche-diss-cache-src-acdhoeaw-arche-lib-disscache-responsecacheitem.html"><abbr title="arche-diss-cache/src/acdhOeaw/arche/lib/dissCache/ResponseCacheItem.php">ResponseCacheItem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
@@ -1114,6 +1410,7 @@
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#constant_ETAG_HASH">ETAG_HASH</a></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#constant_NO_COMPRESSION">NO_COMPRESSION</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#constant_OUTPUT_CHUNK">OUTPUT_CHUNK</a></li>
                                             </ul>
                 </li>
@@ -1127,7 +1424,9 @@
                                                     <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_headers">$headers<a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_hit">$hit<a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_lastModified">$lastModified<a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_resourceTimestamp">$resourceTimestamp<a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_responseCode">$responseCode<a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_responseTimestamp">$responseTimestamp<a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"></li>
                                             </ul>
                 </li>
             
@@ -1136,10 +1435,13 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_deserialize">deserialize()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_getTtl">getTtl()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_send">send()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_serialize">serialize()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_unify">unify()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_withHit">withHit()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_withLastModified">withLastModified()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_getCompressFromContentTypeHeader">getCompressFromContentTypeHeader()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_getFileHash">getFileHash()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_sendCompressed">sendCompressed()</a></li>
                                     </ul>

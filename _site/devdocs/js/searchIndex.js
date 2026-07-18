@@ -2591,6 +2591,91 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-core-util-TriplesIterator.html#property_cache"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig",
+            "name": "AuthConfig",
+            "summary": "Container\u0020for\u0020authorization\u0020config.",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003AfromConfig\u0028\u0029",
+            "name": "fromConfig",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#method_fromConfig"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003AgetUserPswd\u0028\u0029",
+            "name": "getUserPswd",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#method_getUserPswd"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003AgetTrustedHeaderRole\u0028\u0029",
+            "name": "getTrustedHeaderRole",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#method_getTrustedHeaderRole"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003AgetClient\u0028\u0029",
+            "name": "getClient",
+            "summary": "Returns\u0020a\u0020guzzle\u0020client\u0020setting\u0020the\u0020HTTP\u0020basic\u0020authorization\u003A\n\u002D\u0020if\u0020non\u002Dempty\u0020credentials\u0020are\u0020passed\u0020as\u0020a\u0020parameter,\u0020they\u0020are\u0020used\u0020as\u0020they\u0020are\n\u002D\u0020otherwise\u0020if\u0020\u0024this\u002D\u003EpassBasicAuth\u0020is\u0020set,\u0020the\u0020request\u0020HTTP\u0020basic\u0020credentials\n\u0020\u0020are\u0020used\u0020\u0028also\u0020if\u0020they\u0020are\u0020not\u0020set\u0020or\u0020empty\u0029\n\u002D\u0020otherwise\u0020\u0024this\u002D\u003EdefaultAuth\u0020credentials\u0020are\u0020used\u0020\u0028also\u0020if\u0020they\u0020are\u0020empty\u0029",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#method_getClient"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003ADEFAULT_AUTH_TTL",
+            "name": "DEFAULT_AUTH_TTL",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#constant_DEFAULT_AUTH_TTL"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003ADEFAULT_PSWD_COST",
+            "name": "DEFAULT_PSWD_COST",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#constant_DEFAULT_PSWD_COST"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003A\u0024aclReadProperty",
+            "name": "aclReadProperty",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#property_aclReadProperty"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003A\u0024publicRole",
+            "name": "publicRole",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#property_publicRole"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003A\u0024academicRole",
+            "name": "academicRole",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#property_academicRole"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003A\u0024roleTrustedHeader",
+            "name": "roleTrustedHeader",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#property_roleTrustedHeader"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003A\u0024adminRole",
+            "name": "adminRole",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#property_adminRole"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003A\u0024authTtl",
+            "name": "authTtl",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#property_authTtl"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003A\u0024passwordCost",
+            "name": "passwordCost",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#property_passwordCost"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003A\u0024passBasicAuth",
+            "name": "passBasicAuth",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#property_passBasicAuth"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\AuthConfig\u003A\u003A\u0024defaultAuth",
+            "name": "defaultAuth",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-AuthConfig.html#property_defaultAuth"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CacheInterface",
             "name": "CacheInterface",
             "summary": "",
@@ -2620,6 +2705,16 @@ Search.appendIndex(
             "name": "CacheItem",
             "summary": "Description\u0020of\u0020CacheItem",
             "url": "classes/acdhOeaw-arche-lib-dissCache-CacheItem.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CacheItem\u003A\u003AgetAge\u0028\u0029",
+            "name": "getAge",
+            "summary": "Returns\u0020cache\u0020item\u0027s\u0020age\u0020in\u0020seconds",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CacheItem.html#method_getAge"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CacheItem\u003A\u003AgetCreatedTimestamp\u0028\u0029",
+            "name": "getCreatedTimestamp",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CacheItem.html#method_getCreatedTimestamp"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CacheItem\u003A\u003A\u0024id",
             "name": "id",
@@ -2666,6 +2761,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-CachePdo.html#method_delete"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CachePdo\u003A\u003Aprune\u0028\u0029",
+            "name": "prune",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CachePdo.html#method_prune"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CachePdo\u003A\u003AmaintainDb\u0028\u0029",
             "name": "maintainDb",
             "summary": "",
@@ -2686,10 +2786,70 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-CachePdo.html#property_driver"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CallbackContextInterface",
+            "name": "CallbackContextInterface",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CallbackContextInterface.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CallbackContextInterface\u003A\u003AgetLog\u0028\u0029",
+            "name": "getLog",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CallbackContextInterface.html#method_getLog"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CallbackContextInterface\u003A\u003AgetFileCache\u0028\u0029",
+            "name": "getFileCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CallbackContextInterface.html#method_getFileCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CallbackContextInterface\u003A\u003AgetNoCache\u0028\u0029",
+            "name": "getNoCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CallbackContextInterface.html#method_getNoCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CallbackContextStub",
+            "name": "CallbackContextStub",
+            "summary": "Stub\u0020object\u0020implementing\u0020CallbackContextInterface\u0020to\u0020be\u0020used\u0020in\u0020tests",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CallbackContextStub.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CallbackContextStub\u003A\u003AgetFileCache\u0028\u0029",
+            "name": "getFileCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CallbackContextStub.html#method_getFileCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CallbackContextStub\u003A\u003AgetLog\u0028\u0029",
+            "name": "getLog",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CallbackContextStub.html#method_getLog"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CallbackContextStub\u003A\u003AgetNoCache\u0028\u0029",
+            "name": "getNoCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CallbackContextStub.html#method_getNoCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CallbackContextStub\u003A\u003A\u0024fileCache",
+            "name": "fileCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CallbackContextStub.html#property_fileCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CallbackContextStub\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CallbackContextStub.html#property_log"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\CallbackContextStub\u003A\u003A\u0024noCache",
+            "name": "noCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-CallbackContextStub.html#property_noCache"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache",
             "name": "FileCache",
-            "summary": "Helper\u0020functions\u0020for\u0020managing\u0020files\u0020cache",
+            "summary": "Local\u0020cache\u0020for\u0020repository\u0020resource\u0020binary\u0020payloads.",
             "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003AfromConfig\u0028\u0029",
+            "name": "fromConfig",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#method_fromConfig"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
@@ -2705,6 +2865,11 @@ Search.appendIndex(
             "name": "getRefFilePath",
             "summary": "Returns\u0020the\u0020path\u0020to\u0020the\u0020original\u0020repository\u0020resource.",
             "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#method_getRefFilePath"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003AgetResourceBinaryPath\u0028\u0029",
+            "name": "getResourceBinaryPath",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#method_getResourceBinaryPath"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003AfetchResourceBinary\u0028\u0029",
             "name": "fetchResourceBinary",
@@ -2736,10 +2901,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#constant_REF_FILE_NAME"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003ADEFAULT_MAX_DOWNLOAD_SIZE_MB",
+            "name": "DEFAULT_MAX_DOWNLOAD_SIZE_MB",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#constant_DEFAULT_MAX_DOWNLOAD_SIZE_MB"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003A\u0024dir",
             "name": "dir",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#property_dir"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003A\u0024authConfig",
+            "name": "authConfig",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#property_authConfig"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003A\u0024log",
             "name": "log",
@@ -2750,6 +2925,16 @@ Search.appendIndex(
             "name": "localAccess",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#property_localAccess"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003A\u0024maxDwnldSizeMB",
+            "name": "maxDwnldSizeMB",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#property_maxDwnldSizeMB"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCache\u003A\u003A\u0024mimeProperty",
+            "name": "mimeProperty",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCache.html#property_mimeProperty"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCacheException",
             "name": "FileCacheException",
@@ -2770,6 +2955,26 @@ Search.appendIndex(
             "name": "TOO_LARGE",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-FileCacheException.html#constant_TOO_LARGE"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCacheException\u003A\u003AUNAUTHORIZED",
+            "name": "UNAUTHORIZED",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCacheException.html#constant_UNAUTHORIZED"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\FileCacheException\u003A\u003AFORBIDDEN",
+            "name": "FORBIDDEN",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-FileCacheException.html#constant_FORBIDDEN"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ForbiddenException",
+            "name": "ForbiddenException",
+            "summary": "Description\u0020of\u0020ForbiddenException",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ForbiddenException.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ForbiddenException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ForbiddenException.html#method___construct"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\RepoResourceCacheItem",
             "name": "RepoResourceCacheItem",
@@ -2810,6 +3015,11 @@ Search.appendIndex(
             "name": "serializer",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-RepoResourceCacheItem.html#property_serializer"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\RepoResourceCacheItem\u003A\u003A\u0024cacheTimestamp",
+            "name": "cacheTimestamp",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-RepoResourceCacheItem.html#property_cacheTimestamp"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\RepoWrapperGuzzle",
             "name": "RepoWrapperGuzzle",
@@ -2946,6 +3156,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#method_pruneCacheForResource"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003AgetLog\u0028\u0029",
+            "name": "getLog",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#method_getLog"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003AgetFileCache\u0028\u0029",
+            "name": "getFileCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#method_getFileCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003AgetNoCache\u0028\u0029",
+            "name": "getNoCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#method_getNoCache"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003AcheckAuth\u0028\u0029",
+            "name": "checkAuth",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#method_checkAuth"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003AgetClientRoles\u0028\u0029",
+            "name": "getClientRoles",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#method_getClientRoles"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003AHASH_ALGO",
             "name": "HASH_ALGO",
             "summary": "",
@@ -2981,6 +3216,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#property_hardTtlResource"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003A\u0024authConfig",
+            "name": "authConfig",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#property_authConfig"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003A\u0024fileCache",
+            "name": "fileCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#property_fileCache"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003A\u0024ttlResponse",
             "name": "ttlResponse",
             "summary": "",
@@ -3000,6 +3245,11 @@ Search.appendIndex(
             "name": "lastResponseKey",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#property_lastResponseKey"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCache\u003A\u003A\u0024noCache",
+            "name": "noCache",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCache.html#property_noCache"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem",
             "name": "ResponseCacheItem",
@@ -3026,10 +3276,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_send"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003AgetTtl\u0028\u0029",
+            "name": "getTtl",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_getTtl"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003AwithHit\u0028\u0029",
             "name": "withHit",
             "summary": "Helper\u0020for\u0020tests",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_withHit"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003Aunify\u0028\u0029",
+            "name": "unify",
+            "summary": "Testing\u0020helper",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_unify"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003AwithLastModified\u0028\u0029",
             "name": "withLastModified",
@@ -3046,6 +3306,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_getFileHash"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003AgetCompressFromContentTypeHeader\u0028\u0029",
+            "name": "getCompressFromContentTypeHeader",
+            "summary": "Automatically\u0020detects\u0020if\u0020it\u0020makes\u0020sense\u0020to\u0020compress\u0020the\u0020output\nbased\u0020on\u0020the\u0020response\u0020format\u0020provided\u0020in\u0020the\u0020conte\u002Dtype\u0020response\u0020header.",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#method_getCompressFromContentTypeHeader"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003AOUTPUT_CHUNK",
             "name": "OUTPUT_CHUNK",
             "summary": "",
@@ -3056,6 +3321,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#constant_ETAG_HASH"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003ANO_COMPRESSION",
+            "name": "NO_COMPRESSION",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#constant_NO_COMPRESSION"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003A\u0024etag",
             "name": "etag",
             "summary": "",
@@ -3065,6 +3335,16 @@ Search.appendIndex(
             "name": "lastModified",
             "summary": "",
             "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_lastModified"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003A\u0024responseTimestamp",
+            "name": "responseTimestamp",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_responseTimestamp"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003A\u0024resourceTimestamp",
+            "name": "resourceTimestamp",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html#property_resourceTimestamp"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\lib\\dissCache\\ResponseCacheItem\u003A\u003A\u0024body",
             "name": "body",
