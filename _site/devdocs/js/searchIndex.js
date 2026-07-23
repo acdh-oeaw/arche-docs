@@ -8906,6 +8906,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-container-PropertyMapping.html#property_row"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\container\\PropertyMapping\u003A\u003A\u0024graph",
+            "name": "graph",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-container-PropertyMapping.html#property_graph"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\container\\WorksheetConfig",
             "name": "WorksheetConfig",
             "summary": "Description\u0020of\u0020WorksheetConfig",
@@ -9376,10 +9381,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataSpreadsheetTrait.html#method_getValue"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataSpreadsheetTrait\u003A\u003AgetPropertyLang\u0028\u0029",
-            "name": "getPropertyLang",
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataSpreadsheetTrait\u003A\u003AgetPropertyLangGraph\u0028\u0029",
+            "name": "getPropertyLangGraph",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataSpreadsheetTrait.html#method_getPropertyLang"
+            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataSpreadsheetTrait.html#method_getPropertyLangGraph"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataSpreadsheetTrait\u003A\u003AmapReferenceCols\u0028\u0029",
             "name": "mapReferenceCols",
@@ -9440,6 +9445,11 @@ Search.appendIndex(
             "name": "getPaths",
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataVertical.html#method_getPaths"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataVertical\u003A\u003AOWL_THING",
+            "name": "OWL_THING",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataVertical.html#constant_OWL_THING"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataVertical\u003A\u003AHEADER_ROW_MAX",
             "name": "HEADER_ROW_MAX",
@@ -9505,6 +9515,61 @@ Search.appendIndex(
             "name": "firstRow",
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataVertical.html#property_firstRow"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\SortedDataset",
+            "name": "SortedDataset",
+            "summary": "Class\u0020used\u0020to\u0020provide\u0020a\u0020transparent\u0020sorting\u0020of\u0020a\u0020dataset\u0020by\u0020subject",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-SortedDataset.html"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\SortedDataset\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-SortedDataset.html#method___construct"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\SortedDataset\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-SortedDataset.html#method_current"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\SortedDataset\u003A\u003Akey\u0028\u0029",
+            "name": "key",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-SortedDataset.html#method_key"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\SortedDataset\u003A\u003Anext\u0028\u0029",
+            "name": "next",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-SortedDataset.html#method_next"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\SortedDataset\u003A\u003Arewind\u0028\u0029",
+            "name": "rewind",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-SortedDataset.html#method_rewind"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\SortedDataset\u003A\u003Avalid\u0028\u0029",
+            "name": "valid",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-SortedDataset.html#method_valid"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\SortedDataset\u003A\u003A\u0024n",
+            "name": "n",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-SortedDataset.html#property_n"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\SortedDataset\u003A\u003A\u0024sbjIter",
+            "name": "sbjIter",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-SortedDataset.html#property_sbjIter"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\SortedDataset\u003A\u003A\u0024quadIter",
+            "name": "quadIter",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-SortedDataset.html#property_quadIter"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\SortedDataset\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-SortedDataset.html#property_data"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\TemplateCreator",
             "name": "TemplateCreator",
