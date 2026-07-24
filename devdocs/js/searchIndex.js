@@ -14716,6 +14716,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-uriNormalizer-UriNormalizer.html#method_setCache"
         },                {
+            "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizer\u003A\u003AvalidateUri\u0028\u0029",
+            "name": "validateUri",
+            "summary": "",
+            "url": "classes/acdhOeaw-uriNormalizer-UriNormalizer.html#method_validateUri"
+        },                {
             "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizer\u003A\u003AFORMAT_JSON",
             "name": "FORMAT_JSON",
             "summary": "",
@@ -14725,6 +14730,11 @@ Search.appendIndex(
             "name": "USER_AGENT",
             "summary": "",
             "url": "classes/acdhOeaw-uriNormalizer-UriNormalizer.html#constant_USER_AGENT"
+        },                {
+            "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizer\u003A\u003ARULES_RESOLVER",
+            "name": "RULES_RESOLVER",
+            "summary": "",
+            "url": "classes/acdhOeaw-uriNormalizer-UriNormalizer.html#constant_RULES_RESOLVER"
         },                {
             "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizer\u003A\u003A\u0024obj",
             "name": "obj",
@@ -15061,6 +15071,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-uriNormalizer-UriNormalizerTest.html#method_testRism"
         },                {
+            "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizerTest\u003A\u003AtestResolver\u0028\u0029",
+            "name": "testResolver",
+            "summary": "",
+            "url": "classes/acdhOeaw-uriNormalizer-UriNormalizerTest.html#method_testResolver"
+        },                {
             "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizerTest\u003A\u003AtestResource\u0028\u0029",
             "name": "testResource",
             "summary": "",
@@ -15105,6 +15120,11 @@ Search.appendIndex(
             "name": "testCache404",
             "summary": "Test\u0027s\u0020if\u0020HTTP\u0020404\u0020responses\u0020are\u0020cached",
             "url": "classes/acdhOeaw-uriNormalizer-UriNormalizerTest.html#method_testCache404"
+        },                {
+            "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizerTest\u003A\u003AtestNotUri\u0028\u0029",
+            "name": "testNotUri",
+            "summary": "",
+            "url": "classes/acdhOeaw-uriNormalizer-UriNormalizerTest.html#method_testNotUri"
         },                {
             "fqsen": "\\acdhOeaw\\uriNormalizer\\UriNormalizerTest\u003A\u003AID_PROP",
             "name": "ID_PROP",
