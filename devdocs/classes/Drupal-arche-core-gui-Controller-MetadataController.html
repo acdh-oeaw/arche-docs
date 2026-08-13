@@ -187,6 +187,19 @@
 
 
 
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -private">
+    <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#constant_LINKSET_SERVICE_URL">LINKSET_SERVICE_URL</a>
+    <span>
+        &nbsp;= &#039;https://arche-linkset.acdh.oeaw.ac.at/&#039;                            </span>
+</dt>
+
+    </dl>
 
 
 <h4 id="toc-properties">
@@ -302,6 +315,13 @@ old: oeaw_detail new: metadata</dd>
 session lang params to get the desired lang string translation</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_attachLinksetSignposting">attachLinksetSignposting()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Advertise the reusable ARCHE linkset service for this landing page.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_checkTmpDirs">checkTmpDirs()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -314,12 +334,54 @@ session lang params to get the desired lang string translation</dd>
 </dt>
 <dd>Get the site actual language</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_getLinksetLinks">getLinksetLinks()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Build linkset service URLs for both supported serializations.</dd>
+
     </dl>
 
 
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -private ">
+    <h4 class="phpdocumentor-element__name" id="constant_LINKSET_SERVICE_URL">
+        LINKSET_SERVICE_URL
+        <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#constant_LINKSET_SERVICE_URL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/MetadataController.php"><a href="files/arche-core-gui-src-controller-metadatacontroller.html"><abbr title="arche_core_gui/src/Controller/MetadataController.php">MetadataController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">17</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">LINKSET_SERVICE_URL</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;https://arche-linkset.acdh.oeaw.ac.at/&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
@@ -614,7 +676,7 @@ session lang params to get the desired lang string translation</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/MetadataController.php"><a href="files/arche-core-gui-src-controller-metadatacontroller.html"><abbr title="arche_core_gui/src/Controller/MetadataController.php">MetadataController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
@@ -645,7 +707,7 @@ session lang params to get the desired lang string translation</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/MetadataController.php"><a href="files/arche-core-gui-src-controller-metadatacontroller.html"><abbr title="arche_core_gui/src/Controller/MetadataController.php">MetadataController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -692,7 +754,7 @@ it will rerender the metadata view</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/MetadataController.php"><a href="files/arche-core-gui-src-controller-metadatacontroller.html"><abbr title="arche_core_gui/src/Controller/MetadataController.php">MetadataController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -738,7 +800,7 @@ it will rerender the metadata view</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/MetadataController.php"><a href="files/arche-core-gui-src-controller-metadatacontroller.html"><abbr title="arche_core_gui/src/Controller/MetadataController.php">MetadataController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -893,6 +955,55 @@ session lang params to get the desired lang string translation</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_attachLinksetSignposting">
+        attachLinksetSignposting()
+        <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_attachLinksetSignposting" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/MetadataController.php"><a href="files/arche-core-gui-src-controller-metadatacontroller.html"><abbr title="arche_core_gui/src/Controller/MetadataController.php">MetadataController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">116</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Advertise the reusable ARCHE linkset service for this landing page.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">attachLinksetSignposting</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$build</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html"><abbr title="\Drupal\arche_core_gui\Object\ResourceCoreObject">ResourceCoreObject</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$build</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resource</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Drupal-arche-core-gui-Object-ResourceCoreObject.html"><abbr title="\Drupal\arche_core_gui\Object\ResourceCoreObject">ResourceCoreObject</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_checkTmpDirs">
         checkTmpDirs()
         <a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_checkTmpDirs" class="headerlink"><i class="fas fa-link"></i></a>
@@ -951,6 +1062,52 @@ session lang params to get the desired lang string translation</p>
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Drupal\arche_core_gui\Controller\type">type</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getLinksetLinks">
+        getLinksetLinks()
+        <a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_getLinksetLinks" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche_core_gui/src/Controller/MetadataController.php"><a href="files/arche-core-gui-src-controller-metadatacontroller.html"><abbr title="arche_core_gui/src/Controller/MetadataController.php">MetadataController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">141</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Build linkset service URLs for both supported serializations.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getLinksetLinks</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resourceUri</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$resourceUri</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             </section>
 
 </article>
@@ -1059,10 +1216,17 @@ session lang params to get the desired lang string translation</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#toc-constants">Constants</a></li>
                                                             <li><a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#toc-properties">Properties</a></li>
                                                             <li><a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#constant_LINKSET_SERVICE_URL">LINKSET_SERVICE_URL</a></li>
+                                            </ul>
+                </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
@@ -1088,8 +1252,10 @@ session lang params to get the desired lang string translation</p>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_displayAccessibilityPage">displayAccessibilityPage()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_redirectOldDetailView">redirectOldDetailView()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_changeAPILanguage">changeAPILanguage()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_attachLinksetSignposting">attachLinksetSignposting()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_checkTmpDirs">checkTmpDirs()</a></li>
                                             <li><a href="classes/Drupal-arche-core-gui-Controller-ArcheBaseController.html#method_getCurrentLanguage">getCurrentLanguage()</a></li>
+                                            <li><a href="classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_getLinksetLinks">getLinksetLinks()</a></li>
                                     </ul>
             </li>
                     </ul>

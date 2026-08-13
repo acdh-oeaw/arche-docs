@@ -12786,10 +12786,25 @@ Search.appendIndex(
             "summary": "Resource\u0020Metadata\u0020view",
             "url": "classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_detailView"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\MetadataController\u003A\u003AattachLinksetSignposting\u0028\u0029",
+            "name": "attachLinksetSignposting",
+            "summary": "Advertise\u0020the\u0020reusable\u0020ARCHE\u0020linkset\u0020service\u0020for\u0020this\u0020landing\u0020page.",
+            "url": "classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_attachLinksetSignposting"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\MetadataController\u003A\u003AgetLinksetLinks\u0028\u0029",
+            "name": "getLinksetLinks",
+            "summary": "Build\u0020linkset\u0020service\u0020URLs\u0020for\u0020both\u0020supported\u0020serializations.",
+            "url": "classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_getLinksetLinks"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\MetadataController\u003A\u003AdiscoverView\u0028\u0029",
             "name": "discoverView",
             "summary": "The\u0020main\u0020discover\/smartsearch\u0020view",
             "url": "classes/Drupal-arche-core-gui-Controller-MetadataController.html#method_discoverView"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\Controller\\MetadataController\u003A\u003ALINKSET_SERVICE_URL",
+            "name": "LINKSET_SERVICE_URL",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-Controller-MetadataController.html#constant_LINKSET_SERVICE_URL"
         },                {
             "fqsen": "\\Drupal\\arche_core_gui\\Controller\\SmartSearchController",
             "name": "SmartSearchController",
