@@ -3581,10 +3581,10 @@ Search.appendIndex(
             "summary": "If\u0020a\u0020property\u0020is\u0020in\u0020the\u0020ontology\u0020namespace\u0020it\u0020has\u0020to\u0020be\u0020part\u0020of\u0020the\u0020ontology.",
             "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_check06UnknownProperties"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Acheck07Biblatex\u0028\u0029",
-            "name": "check07Biblatex",
+            "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Acheck07CustomCitation\u0028\u0029",
+            "name": "check07CustomCitation",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_check07Biblatex"
+            "url": "classes/acdhOeaw-arche-doorkeeper-Resource.html#method_check07CustomCitation"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\doorkeeper\\Resource\u003A\u003Acheck08DateRanges\u0028\u0029",
             "name": "check08DateRanges",
