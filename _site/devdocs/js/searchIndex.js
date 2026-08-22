@@ -13526,6 +13526,61 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Drupal-arche-core-gui-TwigExtension-ComposerTwigExtension.html#method_getComposerFile"
         },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\DisplayMarkdown",
+            "name": "DisplayMarkdown",
+            "summary": "",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-DisplayMarkdown.html"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\DisplayMarkdown\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "\u007B\u0040inheritdoc\u007D",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-DisplayMarkdown.html#method_getName"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\DisplayMarkdown\u003A\u003AgetFilters\u0028\u0029",
+            "name": "getFilters",
+            "summary": "\u007B\u0040inheritdoc\u007D",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-DisplayMarkdown.html#method_getFilters"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\DisplayMarkdown\u003A\u003AdisplayMarkdown\u0028\u0029",
+            "name": "displayMarkdown",
+            "summary": "Render\u0020a\u0020scalar\u0020or\u0020common\u0020metadata\u0020array\u0020value\u0020as\u0020safe\u0020Markdown\u0020HTML.",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-DisplayMarkdown.html#method_displayMarkdown"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\DisplayMarkdown\u003A\u003ArenderMarkdown\u0028\u0029",
+            "name": "renderMarkdown",
+            "summary": "Convert\u0020Markdown\u0020text\u0020to\u0020sanitized\u0020HTML.",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-DisplayMarkdown.html#method_renderMarkdown"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\DisplayMarkdown\u003A\u003ArenderMarkdownFallback\u0028\u0029",
+            "name": "renderMarkdownFallback",
+            "summary": "Render\u0020common\u0020Markdown\u0020syntax\u0020when\u0020league\/commonmark\u0020is\u0020unavailable.",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-DisplayMarkdown.html#method_renderMarkdownFallback"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\DisplayMarkdown\u003A\u003ArenderInlineMarkdown\u0028\u0029",
+            "name": "renderInlineMarkdown",
+            "summary": "Render\u0020inline\u0020Markdown\u0020safely.",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-DisplayMarkdown.html#method_renderInlineMarkdown"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\DisplayMarkdown\u003A\u003AnormalizeMarkdownInput\u0028\u0029",
+            "name": "normalizeMarkdownInput",
+            "summary": "Normalize\u0020escaped\u0020newlines\u0020commonly\u0020found\u0020in\u0020JSON\u002Dderived\u0020metadata.",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-DisplayMarkdown.html#method_normalizeMarkdownInput"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\DisplayMarkdown\u003A\u003AnormalizeInlineBulletList\u0028\u0029",
+            "name": "normalizeInlineBulletList",
+            "summary": "Convert\u0020metadata\u002Dstyle\u0020inline\u0020bullets\u0020into\u0020valid\u0020Markdown\u0020list\u0020lines.",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-DisplayMarkdown.html#method_normalizeInlineBulletList"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\DisplayMarkdown\u003A\u003AallowedMarkdownTags\u0028\u0029",
+            "name": "allowedMarkdownTags",
+            "summary": "HTML\u0020tags\u0020allowed\u0020after\u0020Markdown\u0020conversion.",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-DisplayMarkdown.html#method_allowedMarkdownTags"
+        },                {
+            "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\DisplayMarkdown\u003A\u003AnormalizeValue\u0028\u0029",
+            "name": "normalizeValue",
+            "summary": "Normalize\u0020metadata\u0020values\u0020before\u0020Drupal\u0020text\u002Dformat\u0020processing.",
+            "url": "classes/Drupal-arche-core-gui-TwigExtension-DisplayMarkdown.html#method_normalizeValue"
+        },                {
             "fqsen": "\\Drupal\\arche_core_gui\\TwigExtension\\GetInstanceTwigExtension",
             "name": "GetInstanceTwigExtension",
             "summary": "",
