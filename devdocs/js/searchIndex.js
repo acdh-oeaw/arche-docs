@@ -12446,6 +12446,11 @@ Search.appendIndex(
             "summary": "Gets\u0020the\u0020requested\u0020repository\u0020resource\u0020metadata\u0020and\u0020converts\u0020it\u0020to\u0020the\u0020thumbnail\u0027s\nservice\u0020ResourceMeta\u0020object.",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_cacheHandler"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AgetResourceMeta\u0028\u0029",
+            "name": "getResourceMeta",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getResourceMeta"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
@@ -12481,11 +12486,6 @@ Search.appendIndex(
             "summary": "Returns\u0020expected\u0020cached\u0020file\u0020location\u0020\u0028doesn\u0027t\u0020assure\u0020such\u0020a\u0020file\u0020exists\u0029.",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#method_getFilePath"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003ADEFAULT_MAX_FILE_SIZE_MB",
-            "name": "DEFAULT_MAX_FILE_SIZE_MB",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#constant_DEFAULT_MAX_FILE_SIZE_MB"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003AREAL_URL_PROP",
             "name": "REAL_URL_PROP",
             "summary": "",
@@ -12501,21 +12501,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_defaultHandler"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024config",
-            "name": "config",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_config"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024meta",
-            "name": "meta",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_meta"
-        },                {
-            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024log",
-            "name": "log",
-            "summary": "",
-            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_log"
-        },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024refFilePath",
             "name": "refFilePath",
             "summary": "",
@@ -12525,6 +12510,26 @@ Search.appendIndex(
             "name": "tmpId",
             "summary": "",
             "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_tmpId"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_log"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024meta",
+            "name": "meta",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_meta"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024config",
+            "name": "config",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_config"
+        },                {
+            "fqsen": "\\acdhOeaw\\arche\\thumbnails\\Resource\u003A\u003A\u0024context",
+            "name": "context",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-thumbnails-Resource.html#property_context"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\thumbnails\\ResourceMeta",
             "name": "ResourceMeta",

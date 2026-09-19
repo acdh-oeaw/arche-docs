@@ -191,12 +191,6 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#constant_DEFAULT_MAX_FILE_SIZE_MB">DEFAULT_MAX_FILE_SIZE_MB</a>
-    <span>
-        &nbsp;= 100                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#constant_REAL_URL_PROP">REAL_URL_PROP</a>
     <span>
         &nbsp;= &#039;http://real/url&#039;                            </span>
@@ -215,6 +209,12 @@
     <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_config">$config</a>
     <span>
                         &nbsp;: object            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_context">$context</a>
+    <span>
+                        &nbsp;: <a href="classes/acdhOeaw-arche-lib-dissCache-CallbackContextInterface.html"><abbr title="\acdhOeaw\arche\lib\dissCache\CallbackContextInterface">CallbackContextInterface</abbr></a>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
@@ -288,6 +288,12 @@ service ResourceMeta object.</dd>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getResourceMeta">getResourceMeta()</a>
+    <span>
+                                &nbsp;: <a href="classes/acdhOeaw-arche-thumbnails-ResourceMeta.html"><abbr title="\acdhOeaw\arche\thumbnails\ResourceMeta">ResourceMeta</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getResponse">getResponse()</a>
     <span>
                                 &nbsp;: <a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a>    </span>
@@ -325,34 +331,6 @@ service ResourceMeta object.</dd>
 
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_DEFAULT_MAX_FILE_SIZE_MB">
-        DEFAULT_MAX_FILE_SIZE_MB
-        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#constant_DEFAULT_MAX_FILE_SIZE_MB" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">48</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">DEFAULT_MAX_FILE_SIZE_MB</span>
-    = <span class="phpdocumentor-signature__default-value">100</span>
-</code>
-
-
-    
-    
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_REAL_URL_PROP">
         REAL_URL_PROP
         <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#constant_REAL_URL_PROP" class="headerlink"><i class="fas fa-link"></i></a>
@@ -362,7 +340,7 @@ service ResourceMeta object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -406,7 +384,7 @@ service ResourceMeta object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -415,6 +393,39 @@ service ResourceMeta object.</dd>
     <span class="phpdocumentor-signature__visibility">private</span>
         <span class="phpdocumentor-signature__type">object</span>
     <span class="phpdocumentor-signature__name">$config</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_context">
+        $context
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_context" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">117</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/acdhOeaw-arche-lib-dissCache-CallbackContextInterface.html"><abbr title="\acdhOeaw\arche\lib\dissCache\CallbackContextInterface">CallbackContextInterface</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$context</span>
     </code>
 
     
@@ -439,7 +450,7 @@ service ResourceMeta object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -472,7 +483,7 @@ service ResourceMeta object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
     </aside>
 
@@ -505,7 +516,7 @@ service ResourceMeta object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -538,7 +549,7 @@ service ResourceMeta object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -571,7 +582,7 @@ service ResourceMeta object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -604,7 +615,7 @@ service ResourceMeta object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -642,14 +653,14 @@ service ResourceMeta object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-thumbnails-ResourceMeta.html"><abbr title="\acdhOeaw\arche\thumbnails\ResourceMeta">ResourceMeta</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$log</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-thumbnails-ResourceMeta.html"><abbr title="\acdhOeaw\arche\thumbnails\ResourceMeta">ResourceMeta</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$meta</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-dissCache-CallbackContextInterface.html"><abbr title="\acdhOeaw\arche\lib\dissCache\CallbackContextInterface">CallbackContextInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -671,8 +682,8 @@ service ResourceMeta object.</dd>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$log</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null</span>
+                <span class="phpdocumentor-signature__argument__name">$context</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-dissCache-CallbackContextInterface.html"><abbr title="\acdhOeaw\arche\lib\dissCache\CallbackContextInterface">CallbackContextInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -697,7 +708,7 @@ service ResourceMeta object.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -706,7 +717,7 @@ service ResourceMeta object.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">cacheHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$param</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$schema</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$log</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">cacheHandler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$param</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-dissCache-CallbackContextInterface.html"><abbr title="\acdhOeaw\arche\lib\dissCache\CallbackContextInterface">CallbackContextInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-lib-dissCache-ResponseCacheItem.html"><abbr title="\acdhOeaw\arche\lib\dissCache\ResponseCacheItem">ResponseCacheItem</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -728,16 +739,16 @@ service ResourceMeta object.</p>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$schema</span>
-                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                <span class="phpdocumentor-signature__argument__name">$context</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-dissCache-CallbackContextInterface.html"><abbr title="\acdhOeaw\arche\lib\dissCache\CallbackContextInterface">CallbackContextInterface</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$log</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Log\LoggerInterface">LoggerInterface</abbr>|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -765,7 +776,7 @@ service ResourceMeta object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
     </aside>
 
@@ -800,7 +811,7 @@ service ResourceMeta object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">155</span>
 
     </aside>
 
@@ -825,6 +836,65 @@ service ResourceMeta object.</p>
         class="phpdocumentor-element
             -method
             -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getResourceMeta">
+        getResourceMeta()
+        <a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getResourceMeta" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getResourceMeta</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$res</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-dissCache-CallbackContextInterface.html"><abbr title="\acdhOeaw\arche\lib\dissCache\CallbackContextInterface">CallbackContextInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-thumbnails-ResourceMeta.html"><abbr title="\acdhOeaw\arche\thumbnails\ResourceMeta">ResourceMeta</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$res</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-RepoResourceInterface.html"><abbr title="\acdhOeaw\arche\lib\RepoResourceInterface">RepoResourceInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$context</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/acdhOeaw-arche-lib-dissCache-CallbackContextInterface.html"><abbr title="\acdhOeaw\arche\lib\dissCache\CallbackContextInterface">CallbackContextInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type">object</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/acdhOeaw-arche-thumbnails-ResourceMeta.html"><abbr title="\acdhOeaw\arche\thumbnails\ResourceMeta">ResourceMeta</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_getResponse">
@@ -835,7 +905,7 @@ service ResourceMeta object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -887,7 +957,7 @@ service ResourceMeta object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -942,7 +1012,7 @@ service ResourceMeta object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">233</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -995,7 +1065,7 @@ service ResourceMeta object.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php"><a href="files/arche-thumbnails-src-acdhoeaw-arche-thumbnails-resource.html"><abbr title="arche-thumbnails/src/acdhOeaw/arche/thumbnails/Resource.php">Resource.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">215</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -1125,7 +1195,6 @@ service ResourceMeta object.</p>
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#constant_DEFAULT_MAX_FILE_SIZE_MB">DEFAULT_MAX_FILE_SIZE_MB</a></li>
                                                     <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#constant_REAL_URL_PROP">REAL_URL_PROP</a></li>
                                             </ul>
                 </li>
@@ -1134,6 +1203,7 @@ service ResourceMeta object.</p>
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_config">$config<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
+                                                    <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_context">$context<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_defaultHandler">$defaultHandler<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_handlers">$handlers<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
                                                     <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#property_log">$log<a href="classes/acdhOeaw-arche-thumbnails-Resource.html"></li>
@@ -1150,6 +1220,7 @@ service ResourceMeta object.</p>
                                             <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_cacheHandler">cacheHandler()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getMeta">getMeta()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getRefFilePath">getRefFilePath()</a></li>
+                                            <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getResourceMeta">getResourceMeta()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getResponse">getResponse()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_generateThumbnail">generateThumbnail()</a></li>
                                             <li><a href="classes/acdhOeaw-arche-thumbnails-Resource.html#method_getFilePath">getFilePath()</a></li>
