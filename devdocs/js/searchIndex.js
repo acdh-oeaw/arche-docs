@@ -4716,6 +4716,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-glb-Resource.html#property_url"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003A\u0024log",
+            "name": "log",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#property_log"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003A\u0024meta",
             "name": "meta",
             "summary": "",
@@ -4726,10 +4731,10 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-glb-Resource.html#property_config"
         },                {
-            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003A\u0024log",
-            "name": "log",
+            "fqsen": "\\acdhOeaw\\arche\\glb\\Resource\u003A\u003A\u0024context",
+            "name": "context",
             "summary": "",
-            "url": "classes/acdhOeaw-arche-glb-Resource.html#property_log"
+            "url": "classes/acdhOeaw-arche-glb-Resource.html#property_context"
         },                {
             "fqsen": "\\acdhOeaw\\arche\\iiifManifest\\IiifException",
             "name": "IiifException",
