@@ -9181,6 +9181,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataCrawler.html#method_readMetadata"
         },                {
+            "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataCrawler\u003A\u003AreadMetadataSpreadsheet\u0028\u0029",
+            "name": "readMetadataSpreadsheet",
+            "summary": "",
+            "url": "classes/acdhOeaw-arche-metadataCrawler-MetadataCrawler.html#method_readMetadataSpreadsheet"
+        },                {
             "fqsen": "\\acdhOeaw\\arche\\metadataCrawler\\MetadataCrawler\u003A\u003AaddMetaSecondary\u0028\u0029",
             "name": "addMetaSecondary",
             "summary": "",
